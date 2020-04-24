@@ -35,6 +35,9 @@ if __name__ == '__main__':
                 # Assigns meta data to the cast object ie: latitude, longitude, Sounder Depth, Meteorological data, ect
                 p_tk.pfile_meta(cast, datafile)
 
+                # Writes the pfile as a cnv
+                p_tk.writeCNV(cast, df, datafile)
+
             except Exception as e:
                 print("Error Reading File\n" + e)
         else:
