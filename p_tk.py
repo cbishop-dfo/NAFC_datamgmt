@@ -560,10 +560,9 @@ def writeCNV(cast, df, datafile):
             "\n")
 
     count = 0
-    for c in cast.columns.split(" "):
+    df = df.dropna(axis=1)
+    for c in df:
         writer.write("# name " + count.__str__() + " = " + c + "\n")
         count = count + 1
     writer.write("*END*\n")
-
-    df = df.dropna(axis=1)
     writer.write(df.to_string(header=False, index=False))
