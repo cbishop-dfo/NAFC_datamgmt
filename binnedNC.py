@@ -11,49 +11,16 @@ try:
     import netCDF4 as nc
 except:
     pass
+"""
+Script that takes a cnv file bins the data and writes out a netcdf file
+
+*IMPORTANT: Scan need to be the first column in the dataframe/datafile in order for modifyDF function to remove upcast. 
+
+"""
+
 
 def modifyDF(cast, df):
-    """
-    cast.hasDepth = False
 
-
-    # loop through Instrument array to dynamically get the indexes for each data column.
-    for row in cast.InstrumentInfo:
-        if row.lower().__contains__("pressure") and not cast.isPressure:
-            cast.isPressure = True
-            sRow = row.split(" ")
-            pressureIndex = int(sRow[2])
-        elif row.lower().__contains__("depth") and not cast.isPressure:
-            cast.isPressure = True
-            cast.hasDepth = True
-            sRow = row.split(" ")
-            pressureIndex = int(sRow[2])
-
-
-    # sorting the data into salinity, temperature and depth
-    lastDepth = -1
-    tempdf = df
-    df.set_index(cast.ColumnNames[0], inplace=True)
-
-
-
-    for data in tempdf.values:
-        d = data
-        depth = float(data[pressureIndex])
-        # Take downcast only.
-        if depth - lastDepth > 0:
-            lastDepth = depth
-            continue
-        else:
-            # Remove updcast rows.
-            name = cast.ColumnNames[pressureIndex]
-            df.drop(data[0], axis=1)
-            #df.droplevel(df[name] == depth, axis=1)
-
-
-    #xr = xarray.Dataset.from_dataframe(df)
-    #xr.to_netcdf('test.nc')
-    """
     # Typically the pressure/depth index
     pressureIndex = 1
     for row in cast.InstrumentInfo:
@@ -74,32 +41,64 @@ def modifyDF(cast, df):
     # df['bin'] = pd.cut(df[cast.ColumnNames[pressureIndex]].astype(float), bins)
     # df = df.dropna(axis='rows')
     print("Binning")
+
+    # Here we are dropping any of the upcast values
     lastdepth = 0
+    # array to hold the scans to drop *IMPORTANT: Scans need to be the first column in the dataframe
     toDrop = []
     for d in df.values:
         current = float(d[pressureIndex])
         if float(current) > lastdepth:
             lastdepth = current
         else:
-            # Append scans to drop
+            # Append scans to drop, SCAN MUST BE FIRST COLUMN IN DATAFRAME
             toDrop.append(int(d[0]))
-    """
-    newdf = []
-    for d in df.values:
-        if d[0] in toDrop:
-            continue
-        else:
-            newdf.append(d)
-    """
 
     for s in toDrop:
         i = df.loc[df['scan'].astype(float) == float(s)].index
         index = i.values
         df = df.drop(index[0])
-    # df.drop(df.loc[df['scan'].astype(float).any(tuple(toDrop))].index, inplace=True)
-    bins = list(range(100))
-    df.groupby(pd.cut(df[cast.ColumnNames[pressureIndex]].astype(float), bins)).mean()
+
+    bins = []
+    depths = []
+    # Create bin with specified intervals and steps
+    for i in range(0, 1001, 1):
+        bins.append(i + 0.5)
+
+    """
+    #bins.append(1000)
+    for i in range(1000, 5000, 10):
+        bins.append(i)
+    """
+    count = 0
+    for b in bins:
+        depths.append(b + 0.5)
+
+        """
+        if count < 1001:
+            depths.append(b + 0.5)
+            count = count + 1
+        else:
+            nd = b + 5
+            depths.append(nd)
+            count = count + 1
+        """
+    # Here we bin all the data and calculate the mean for each bin
     df = df.groupby(pd.cut(df[cast.ColumnNames[pressureIndex]].astype(float), bins)).mean()
+    
+    # Had 1 too many values at end
+    depths.pop()
+
+    # Create
+    #s = df.values.shape[0]
+    #newpres = []
+    #for s in range(s):
+    #    newpres.append(s + 1)
+
+    # Replace mean pressures with bin values
+    df[cast.ColumnNames[pressureIndex]] = depths
+
+    # Drop all empty rows
     df = df.dropna(axis=0)
 
     return df
@@ -108,7 +107,7 @@ def NCWrite(cast, df):
     ####################################################################################################
     # NETCDF CREATION HERE:
     ####################################################################################################
-    nc_outfile = cast.datafile.replace(".cnv", "").replace(".CNV", "") + ".nc"
+    nc_outfile = cast.datafile.replace(".cnv", "").replace(".CNV", "") + "BINNED.nc"
     nc_out = nc.Dataset(nc_outfile, 'w', format='NETCDF3_CLASSIC')
     nc_out.Conventions = 'CF-1.6'
     nc_out.title = 'AZMP netCDF file'
