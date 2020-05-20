@@ -167,7 +167,7 @@ def pfile_to_dataframe(cast, filename):
     cast.columns = cast.header[-1]
     cast.header = cast.header[:-1]
 
-    d = cast.data[0]
+    #d = cast.data[0]
 
     # clean columns
     cast.columns = re.sub('\n', '', cast.columns)
@@ -573,3 +573,19 @@ def writeCNV(cast, df, datafile):
         count = count + 1
     writer.write("*END*\n")
     writer.write(df.to_string(header=False, index=False))
+
+###########################################################################################################
+def rewritePFile(cast, df, datafile):
+    newfile = datafile.__str__() + "_modified"
+    f = open(newfile, "w+")
+    df = df.dropna(axis=1)
+
+    for h in cast.header:
+        f.writelines(h)
+    colNames = ""
+    for c in cast.ColumnNames:
+        colNames = colNames + "   " + c
+    f.write(colNames)
+    f.write("\n")
+    f.write("-- DATA --\n")
+    f.write(df.to_string(header=False, index=False))
