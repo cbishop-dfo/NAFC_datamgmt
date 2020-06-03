@@ -1,0 +1,5 @@
+SiteCode,SiteName,Latitude,Longitude,DeploymentSiteDepth,DeploymentDepth,DeploymentDate,DeploymentTime,RecoveredDate,TimeOfRecovery,SamplingSize,InstrumentNum,InstrumentType,Path
+102,MELROSE TRINITY BAY,48.47,53.04,010,027,1996-07-02,19:00:00,1996-09-14,15:00:00,060,005502,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\10m\MTR_1_1996_07_02.rpf
+102,null,48.47,53.04,10.00,27.00,1996-07-02,19:00:00.00,1996-09-14,15:00:00.00,3600.0000,005502,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\10m\MTR_2_1996_07_02.rpf
+102,MELROSE TRINITY BAY,48.47,53.04,010,028,1997-06-20,20:00:00,1997-10-27,17:00:00,060,007937,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\10m\MTR_3_1997_06_20.rpf
+102,null,48.47,53.04,10.00,28.00,1997-05-20,20:00:00.00,1997-10-27,17:00:00.00,3600.0000,007937,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\10m\MTR_4_1997_05_20.rpf

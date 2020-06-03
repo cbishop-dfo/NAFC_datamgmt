@@ -1,0 +1,3 @@
+SiteCode,SiteName,Latitude,Longitude,DeploymentSiteDepth,DeploymentDepth,DeploymentDate,DeploymentTime,RecoveredDate,TimeOfRecovery,SamplingSize,InstrumentNum,InstrumentType,Path
+102,Bay dEspoir Little Crow Head,47.80,55.83,070,086,1997-10-03,16:00:00,1998-04-04,18:00:00,060,003814,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\70m\MTR_1_1997_10_03.rpf
+102,null,47.8,55.83,70.00,86.00,1997-10-04,17:00:00.00,1998-04-04,18:00:00.00,3600.0000,003814,MINILOG-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\70m\MTR_2_1997_10_04.rpf

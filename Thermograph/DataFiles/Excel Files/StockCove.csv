@@ -1,0 +1,126 @@
+SiteCode,SiteName,Latitude,Longitude,DeploymentSiteDepth,DeploymentDepth,DeploymentDate,DeploymentTime,RecoveredDate,TimeOfRecovery,SamplingSize,InstrumentNum,InstrumentType,Path
+110,STOCK COVE,48.71,53.76,9,null,25/07/1988,7:00:00 PM,17/11/1988,1:30:00 PM,null,63304,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_24_1988_07_25.rpf
+110,STOCK COVE,48.71,53.76,9,null,25/07/1988,6:35:00 PM,17/11/1988,2:00:00 PM,null,63315,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_40_1988_07_25.rpf
+110,null,48.71,53.76,9,9,25/07/1988,7:00:00 PM,11/01/1989,4:00:00 AM,10800,63304,RYANTHERMOGRAPH,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_58_1988_07_25.rpf
+110,null,48.71,53.76,9,9,25/07/1988,8:00:00 PM,17/11/1988,8:00:00 AM,7200,63315,RYANTHERMOGRAPH,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_66_1988_07_25.rpf
+110,STOCK COVE,48.78,53.76,9,null,17/11/1988,2:10:00 PM,11/01/1989,4:00:00 PM,null,63304,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_57_1988_11_17.rpf
+110,null,48.71,53.76,9,9,15/05/1989,3:00:00 PM,25/09/1989,2:00:00 PM,3600,3261,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_97_1989_05_15.rpf
+110,null,48.71,53.76,9,9,25/09/1989,5:00:00 PM,22/11/1989,7:00:00 PM,3600,4360,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_117_1989_09_25.rpf
+110,null,48.71,53.76,9,9,24/11/1989,12:00:00 PM,18/04/1990,3:00:00 PM,3600,4323,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_67_1989_11_24.rpf
+110,null,48.71,53.76,9,9,18/04/1990,5:00:00 PM,17/09/1990,5:00:00 PM,3600,5458,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_50_1990_04_18.rpf
+110,null,48.71,53.76,10,10,17/09/1990,6:00:00 PM,19/11/1990,6:00:00 PM,3600,3260,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_14_1990_09_17.rpf
+110,null,48.71,53.76,9,9,19/11/1990,8:00:00 PM,06/05/1991,12:00:00 PM,3600,3262,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_101_1990_11_19.rpf
+110,null,48.71,53.76,9,9,06/05/1991,6:00:00 PM,26/05/1992,5:00:00 PM,3600,3287,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_3_1991_05_06.rpf
+110,null,48.71,53.76,9,9,23/08/1991,4:00:00 PM,27/11/1991,5:00:00 PM,3600,5516,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_84_1991_08_23.rpf
+110,null,48.71,53.76,9,9,26/05/1992,7:00:00 PM,20/08/1992,3:00:00 PM,3600,3213,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_41_1992_05_26.rpf
+110,null,48.71,53.76,9,9,20/08/1992,4:00:00 PM,24/11/1992,5:00:00 PM,3600,7873,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_53_1992_08_20.rpf
+110,null,48.71,53.76,10,10,24/11/1992,6:00:00 PM,05/05/1993,5:00:00 PM,3600,7819,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_85_1992_11_24.rpf
+110,null,48.71,53.76,10,10,05/05/1993,6:00:00 PM,26/08/1993,4:00:00 PM,3600,3267,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_92_1993_05_05.rpf
+110,null,48.71,53.76,10,10,26/08/1993,5:00:00 PM,01/12/1993,6:00:00 PM,3600,5475,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_104_1993_08_26.rpf
+110,null,48.71,53.76,10,10,26/08/1993,5:00:00 PM,01/12/1993,6:00:00 PM,3600,7938,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_9_1993_08_26.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,10,10,01/12/1993,6:00:00 PM,04/05/1994,5:00:00 PM,60,7940,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_108_1993_12_01.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,10,10,01/12/1993,6:00:00 PM,04/05/1994,5:00:00 PM,60,6644,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_15_1993_12_01.rpf
+110,null,48.71,53.76,10,10,01/12/1993,6:00:00 PM,04/05/1994,5:00:00 PM,3600,7940,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_17_1993_12_01.rpf
+110,null,48.71,53.76,10,10,01/12/1993,6:00:00 PM,04/05/1994,5:00:00 PM,3600,6644,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_73_1993_12_01.rpf
+110,null,48.71,53.76,9,9,04/05/1994,7:00:00 PM,10/08/1994,1:00:00 PM,3600,3213,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_55_1994_05_04.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,04/05/1994,7:00:00 PM,10/08/1994,1:00:00 PM,60,3213,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_61_1994_05_04.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,10/08/1994,2:00:00 PM,30/11/1994,5:00:00 PM,60,8968,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_119_1994_08_10.rpf
+110,null,48.71,53.76,9,9,10/08/1994,2:00:00 PM,30/11/1994,5:00:00 PM,3600,8964,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_48_1994_08_10.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,10/08/1994,2:00:00 PM,30/11/1994,5:00:00 PM,60,8964,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_72_1994_08_10.rpf
+110,null,48.71,53.76,9,9,10/08/1994,2:00:00 PM,30/11/1994,5:00:00 PM,3600,8968,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_96_1994_08_10.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,30/11/1994,6:00:00 PM,31/05/1995,2:00:00 PM,60,3287,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_11_1994_11_30.rpf
+110,null,48.71,53.76,9,9,30/11/1994,6:00:00 PM,31/05/1995,2:00:00 PM,3600,3287,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_16_1994_11_30.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,30/11/1994,6:00:00 PM,07/02/1995,6:00:00 PM,60,3264,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_54_1994_11_30.rpf
+110,null,48.71,53.76,9,9,30/11/1994,6:00:00 PM,07/02/1995,6:00:00 PM,3600,3264,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_74_1994_11_30.rpf
+110,STOCK COVE BONAVISTA BAY,47.71,53.76,9,9,31/05/1995,5:00:00 PM,20/09/1995,5:00:00 PM,60,5475,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_111_1995_05_31.rpf
+110,null,48.71,53.76,9,9,31/05/1995,5:00:00 PM,20/09/1995,4:00:00 PM,3600,7938,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_22_1995_05_31.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,31/05/1995,5:00:00 PM,20/09/1995,4:00:00 PM,60,7938,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_29_1995_05_31.rpf
+110,null,47.71,53.76,9,9,31/05/1995,5:00:00 PM,20/09/1995,5:00:00 PM,3600,5475,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_34_1995_05_31.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,20/09/1995,5:00:00 PM,22/11/1995,5:00:00 PM,60,6598,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_102_1995_09_20.rpf
+110,null,48.71,53.76,9,9,20/09/1995,5:00:00 PM,22/11/1995,5:00:00 PM,3600,6598,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_10_1995_09_20.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,20/09/1995,5:00:00 PM,22/11/1995,5:00:00 PM,60,7934,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_19_1995_09_20.rpf
+110,null,48.71,53.76,9,9,20/09/1995,5:00:00 PM,22/11/1995,5:00:00 PM,3600,7934,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_95_1995_09_20.rpf
+110,null,48.71,53.76,9,9,22/11/1995,6:00:00 PM,21/04/1996,4:00:00 PM,3600,00C163,SEAMONMINI,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_105_1995_11_22.rpf
+110,null,48.71,53.76,9,9,22/11/1995,6:00:00 PM,22/04/1996,5:00:00 PM,3600,3267,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_124_1995_11_22.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,22/11/1995,6:00:00 PM,22/04/1996,5:00:00 PM,60,3267,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_7_1995_11_22.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,22/11/1995,6:00:00 PM,21/04/1996,4:00:00 PM,60,00C163,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_86_1995_11_22.rpf
+110,null,48.71,53.76,9,9,22/04/1996,6:00:00 PM,03/09/1996,5:00:00 PM,3600,3266,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_115_1996_04_22.rpf
+110,null,48.71,53.76,9,9,22/04/1996,6:00:00 PM,03/09/1996,5:00:00 PM,3600,3263,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_59_1996_04_22.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,22/04/1996,6:00:00 PM,03/09/1996,5:00:00 PM,60,3266,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_87_1996_04_22.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,22/04/1996,6:00:00 PM,03/09/1996,5:00:00 PM,60,3263,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_94_1996_04_22.rpf
+110,null,48.71,53.76,9,9,03/09/1996,6:00:00 PM,27/11/1996,3:00:00 PM,3600,8979,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_25_1996_09_03.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,03/09/1996,6:00:00 PM,27/11/1996,3:00:00 PM,60,5477,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_65_1996_09_03.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,03/09/1996,6:00:00 PM,27/11/1996,3:00:00 PM,60,8979,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_89_1996_09_03.rpf
+110,null,48.71,53.76,9,9,03/09/1996,6:00:00 PM,27/11/1996,3:00:00 PM,3600,5477,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_90_1996_09_03.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,27/11/1996,4:00:00 PM,01/06/1997,12:00:00 PM,60,8957,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_44_1996_11_27.rpf
+110,null,48.71,53.76,9,9,27/11/1996,4:00:00 PM,01/06/1997,12:00:00 PM,3600,8957,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_81_1996_11_27.rpf
+110,null,48.71,53.76,9,9,10/05/1997,12:00:00 PM,16/09/1997,4:00:00 PM,3600,3287,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_13_1997_05_10.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,10/05/1997,12:00:00 PM,16/09/1997,4:00:00 PM,60,3287,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_99_1997_05_10.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,16/09/1997,6:00:00 PM,12/10/1997,9:00:00 PM,60,6592,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_1_1997_09_16.rpf
+110,null,48.71,53.76,9,9,16/09/1997,6:00:00 PM,26/11/1997,4:00:00 PM,3600,4351,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_56_1997_09_16.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,16/09/1997,6:00:00 PM,26/11/1997,4:00:00 PM,60,4351,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_6_1997_09_16.rpf
+110,null,48.71,53.76,9,9,16/09/1997,6:00:00 PM,12/10/1997,9:00:00 PM,3600,6592,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_93_1997_09_16.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,26/11/1997,7:00:00 PM,16/05/1998,3:00:00 AM,60,6645,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_5_1997_11_26.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,26/11/1997,7:00:00 PM,16/05/1998,3:00:00 AM,60,6788,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_60_1997_11_26.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,19/05/1998,7:00:00 PM,08/09/1998,5:00:00 PM,60,8969,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_20_1998_05_19.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,19/05/1998,7:00:00 PM,08/09/1998,5:00:00 PM,60,8979,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_62_1998_05_19.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,08/09/1998,6:00:00 PM,24/11/1998,6:00:00 PM,60,7946,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_18_1998_09_08.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,08/09/1998,6:00:00 PM,11/11/1998,5:00:00 PM,60,6788,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_46_1998_09_08.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,24/11/1998,6:00:00 PM,13/05/1999,5:00:00 PM,60,7939,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_23_1998_11_24.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,24/11/1998,6:00:00 PM,13/05/1999,12:00:00 PM,60,4353,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_31_1998_11_24.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,13/05/1999,6:00:00 PM,18/08/1999,5:00:00 PM,60,6437,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_36_1999_05_13.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,13/05/1999,6:00:00 PM,18/08/1999,5:00:00 PM,60,3260,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_78_1999_05_13.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,18/08/1999,6:00:00 PM,10/11/1999,4:00:00 PM,60,5475,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_120_1999_08_18.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,18/08/1999,6:00:00 PM,10/11/1999,4:00:00 PM,60,5458,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_42_1999_08_18.rpf
+null,Stock Cove,null,null,null,null,07/11/1999,1:00:00 PM,01/06/2000,null,null,3260,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_28_1999_11_07.rpf
+null,Stock Cove,null,null,null,null,23/05/2000,1:00:00 PM,18/09/2000,null,null,3263,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_107_2000_05_23.rpf
+null,Stock Cove Sept,null,null,null,null,11/09/2000,1:00:00 PM,06/12/2000,null,null,8969,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_76_2000_09_11.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,12/09/2000,6:00:00 PM,22/11/2000,6:00:00 PM,60,3837,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_121_2000_09_12.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,22/11/2000,6:00:00 PM,16/05/2001,7:00:00 AM,60,3827,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_30_2000_11_22.rpf
+null,Stock cove Nov,null,null,null,null,22/11/2000,1:00:00 PM,25/05/2001,null,null,3287,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_63_2000_11_22.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,22/05/2001,7:00:00 PM,12/09/2001,6:00:00 PM,60,6246,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_4_2001_05_22.rpf
+null,Stock Cove,null,null,null,null,10/09/2001,1:00:00 PM,06/12/2001,null,null,7927,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_109_2001_09_10.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,12/09/2001,7:00:00 PM,06/11/2001,7:00:00 PM,60,7818,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_79_2001_09_12.rpf
+null,Stock Cove,null,null,null,null,06/11/2001,1:00:00 PM,22/05/2002,null,null,6782,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_68_2001_11_06.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,06/11/2001,7:00:00 PM,13/05/2002,5:00:00 PM,60,3287,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_80_2001_11_06.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,13/05/2002,8:00:00 PM,23/09/2002,6:00:00 PM,60,4323,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_51_2002_05_13.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,23/09/2002,7:00:00 PM,20/11/2002,6:00:00 PM,60,7944,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_118_2002_09_23.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,20/11/2002,3:00:00 PM,06/05/2003,5:00:00 PM,60,3264,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_122_2002_11_20.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,06/05/2003,6:00:00 PM,26/08/2003,6:00:00 PM,60,8972,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_27_2003_05_06.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,26/08/2003,7:00:00 PM,12/11/2003,5:00:00 PM,60,7943,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_125_2003_08_26.rpf
+null,Stock Cove,null,null,null,null,18/05/2004,12:00:00 PM,16/11/2004,1:40:39 PM,0.041666667,3810,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_70_2004_05_18.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,23/05/2004,2:00:00 PM,09/10/2004,7:00:00 PM,60,7928,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_77_2004_05_23.rpf
+null,Stock Cove,null,null,null,null,07/05/2005,12:00:00 PM,16/05/2005,5:19:19 PM,0.010416667,3810,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_52_2005_05_07.rpf
+null,Stock Cove,null,null,null,null,18/05/2005,12:00:00 PM,21/11/2005,3:04:29 PM,0.041666667,2185,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_106_2005_05_18.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,03/06/2005,8:00:00 PM,10/10/2005,4:00:00 PM,60,2185,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_116_2005_06_03.rpf
+null,Stock Cove,null,null,null,null,18/05/2006,12:00:00 PM,06/11/2006,7:17:49 PM,0.041666667,7411,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_2_2006_05_18.rpf
+null,Stock Cove,null,null,null,null,18/05/2006,12:00:00 PM,06/11/2006,7:05:19 PM,0.041666667,454,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_64_2006_05_18.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,20/05/2006,6:00:00 PM,01/11/2006,4:00:00 PM,60,454,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_12_2006_05_20.rpf
+null,Stock Cove,null,null,null,null,15/05/2007,12:00:00 PM,29/10/2007,3:34:19 PM,0.041666667,9498,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_38_2007_05_15.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,19/05/2007,5:00:00 PM,07/10/2007,5:00:00 PM,60,008A09,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_43_2007_05_19.rpf
+null,Stock Cove,null,null,null,null,06/10/2007,12:00:00 PM,06/09/2008,11:00:00 AM,0.041666667,3726,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_88_2007_10_06.rpf
+null,Stock Cove,null,null,null,null,17/05/2008,12:00:00 PM,06/10/2008,3:27:29 PM,0.041666667,3429,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_114_2008_05_17.rpf
+110,STOCK COVE BONAVISTA BAY,48.71,53.76,9,9,19/05/2008,2:00:00 PM,05/10/2008,1:00:00 PM,60,8972,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_75_2008_05_19.rpf
+null,Stock Cove,null,null,null,null,15/05/2009,12:00:00 PM,19/11/2009,12:37:19 PM,0.041666667,3429,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_112_2009_05_15.rpf
+null,Stock Cove,null,null,null,null,15/05/2009,1:00:00 PM,19/11/2009,null,null,6598,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_69_2009_05_15.rpf
+null,STOCK COVE,null,null,null,null,02/10/2009,1:08:57 PM,10/08/2011,8:08:57 PM,0.041666667,4738,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_21_2009_10_02.rpf
+null,Stock Cove,null,null,null,null,11/05/2010,1:00:00 PM,19/11/2010,null,null,6598,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_123_2010_05_11.rpf
+null,Stock Cove,null,null,null,null,11/05/2010,12:00:00 PM,19/11/2010,3:06:09 PM,0.041666667,3429,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_8_2010_05_11.rpf
+null,STOCK COVE,null,null,null,null,08/10/2010,12:00:00 PM,13/09/2011,6:29:39 PM,0.041666667,5535,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_91_2010_10_08.rpf
+null,Stock Cove,null,null,null,null,15/05/2011,12:00:00 PM,13/10/2011,1:11:09 PM,0.041666667,3429,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_71_2011_05_15.rpf
+null,Stock Cove,null,null,null,null,15/05/2011,1:00:00 PM,03/10/2011,null,null,6744,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_82_2011_05_15.rpf
+null,STOCK COVE,null,null,null,null,24/09/2011,12:00:00 PM,14/09/2012,1:39:39 PM,0.041666667,5535,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_110_2011_09_24.rpf
+null,Stock Cove,null,null,null,null,12/05/2012,1:00:00 PM,02/10/2012,null,null,7935,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_45_2012_05_12.rpf
+null,STOCK COVE,null,null,null,null,12/05/2012,12:00:00 PM,02/10/2012,11:33:39 AM,0.041666667,4738,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_98_2012_05_12.rpf
+null,STOCK COVE Sept,null,null,null,null,13/09/2012,12:00:00 PM,05/10/2014,10:00:53 PM,0.041678241,353788,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_103_2012_09_13.rpf
+null,Stock Cove,null,null,null,null,13/05/2013,12:00:00 PM,06/02/2014,3:00:00 PM,0.041666667,354453,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_39_2013_05_13.rpf
+null,Stock Cove (Over-winter,null,null,null,null,20/09/2013,12:00:00 PM,05/10/2014,11:38:00 PM,0.000694444,354546,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_47_2013_09_20.rpf
+null,Stock Cove (Summer,null,null,null,null,19/06/2014,12:00:00 PM,09/11/2015,5:00:00 PM,0.041666667,353784,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_32_2014_06_19.rpf
+null,Stock Cove Overwinter,null,null,null,null,16/09/2014,12:00:00 PM,09/11/2015,5:00:00 PM,0.041666667,355651,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_33_2014_09_16.rpf
+null,Stock Cove (summer),null,null,null,null,18/05/2015,12:00:00 PM,09/11/2015,5:00:00 PM,0.041666667,356315,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_83_2015_05_18.rpf
+null,Stock Cove,null,null,null,null,23/10/2015,4:00:00 PM,11/10/2018,11:00:00 AM,0.041666667,354537,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_113_2015_10_23.rpf
+null,Stock Cv. SUMMER,null,null,null,null,15/05/2016,12:00:00 PM,13/01/2017,12:00:00 PM,0.041666667,356308,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_100_2016_05_15.rpf
+null,Stock Cove,null,null,null,null,22/10/2016,5:00:00 PM,11/10/2018,11:00:00 AM,0.041666667,351099,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_35_2016_10_22.rpf
+null,Stock Cove - Summer,null,null,null,null,01/07/2017,1:00:00 AM,25/10/2017,3:30:00 PM,0.010416667,353791,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_37_2017_07_01.rpf
+null,Stock Cove,null,null,null,null,25/10/2017,6:00:00 PM,11/10/2018,11:00:00 AM,0.041666667,353782,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_49_2017_10_25.rpf
+null,Stock Cove (Summer),null,null,null,null,01/07/2018,8:14:36 PM,11/10/2018,11:14:36 AM,0.041666667,355654,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\StockCove\MTR_26_2018_07_01.rpf

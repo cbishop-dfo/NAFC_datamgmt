@@ -1,0 +1,101 @@
+SiteCode,SiteName,Latitude,Longitude,DeploymentSiteDepth,DeploymentDepth,DeploymentDate,DeploymentTime,RecoveredDate,TimeOfRecovery,SamplingSize,InstrumentNum,InstrumentType,Path
+245,null,48.71,53.76,4.5,4.5,18/06/1969,10:00:00 AM,04/07/1969,6:00:00 PM,14400,1181,RYAN,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_8_1969_06_18.rpf
+262,null,48.71,53.76,27,27,27/11/1969,11:30:00 AM,10/12/1969,11:30:00 PM,14400,1189,RYAN,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_11_1969_11_27.rpf
+261,null,48.71,53.76,27,27,18/12/1969,3:30:00 PM,12/01/1970,3:30:00 AM,14400,1184,RYAN,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_66_1969_12_18.rpf
+118,null,47.9,54.21,3,15,01/08/1978,5:00:00 PM,07/09/1978,5:00:00 AM,14400,19120,RYAN,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_97_1978_08_01.rpf
+118,null,49.41,54.83,10,10,11/01/1989,6:00:00 PM,15/05/1989,6:00:00 PM,10800,63383,RYANTHERMOGRAPH,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_33_1989_01_11.rpf
+118,null,49.41,54.83,9,9,16/05/1989,2:00:00 AM,19/04/1990,12:00:00 PM,3600,3264,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_72_1989_05_16.rpf
+118,null,49.41,54.83,9,9,26/09/1989,1:00:00 PM,25/11/1989,2:00:00 PM,3600,4361,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_16_1989_09_26.rpf
+118,null,49.41,54.83,9,9,19/04/1990,2:00:00 PM,18/09/1990,11:00:00 AM,3600,5456,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_24_1990_04_19.rpf
+118,null,49.41,54.83,10,10,18/09/1990,1:00:00 PM,21/11/1990,7:00:00 PM,3600,3261,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_40_1990_09_18.rpf
+118,null,49.41,54.83,9,9,21/11/1990,8:00:00 PM,07/05/1991,12:00:00 PM,3600,3213,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_41_1990_11_21.rpf
+118,null,49.41,54.83,9,9,07/05/1991,2:00:00 PM,22/08/1991,2:00:00 PM,3600,4323,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_60_1991_05_07.rpf
+118,null,49.41,54.83,9,9,22/08/1991,4:00:00 PM,28/11/1991,2:00:00 PM,3600,6596,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_49_1991_08_22.rpf
+118,null,49.41,54.83,9,9,28/11/1991,3:00:00 PM,27/05/1992,12:00:00 PM,3600,4325,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_68_1991_11_28.rpf
+118,null,49.41,54.83,9,9,27/05/1992,1:00:00 PM,11/08/1992,1:00:00 PM,3600,3262,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_44_1992_05_27.rpf
+118,null,49.41,54.83,9,9,21/08/1992,4:00:00 PM,25/11/1992,2:00:00 PM,3600,7880,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_50_1992_08_21.rpf
+118,null,49.41,54.83,9,9,25/11/1992,3:00:00 PM,06/05/1993,2:00:00 PM,3600,7818,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_15_1992_11_25.rpf
+118,null,49.41,54.83,9,9,06/05/1993,3:00:00 PM,27/08/1993,2:00:00 PM,3600,3263,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_69_1993_05_06.rpf
+118,null,49.41,54.83,9,9,27/08/1993,3:00:00 PM,02/12/1993,3:00:00 PM,3600,8962,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_20_1993_08_27.rpf
+118,null,49.41,54.83,9,9,27/08/1993,3:00:00 PM,02/12/1993,3:00:00 PM,3600,6598,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_75_1993_08_27.rpf
+118,null,49.41,54.83,9,9,02/12/1993,4:00:00 PM,05/05/1994,12:00:00 PM,3600,3264,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_12_1993_12_02.rpf
+118,null,49.41,54.83,9,9,02/12/1993,4:00:00 PM,05/05/1994,12:00:00 PM,3600,7819,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_63_1993_12_02.rpf
+118,COMFORT COVE,49.41,54.83,9,9,02/12/1993,4:00:00 PM,05/05/1994,12:00:00 PM,60,7819,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_81_1993_12_02.rpf
+118,COMFORT COVE,49.41,54.83,9,9,02/12/1993,4:00:00 PM,05/05/1994,12:00:00 PM,60,3264,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_95_1993_12_02.rpf
+118,COMFORT COVE,49.41,54.83,9,9,05/05/1994,3:00:00 PM,09/08/1994,4:00:00 PM,60,3260,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_22_1994_05_05.rpf
+118,COMFORT COVE,49.41,54.83,9,9,09/08/1994,5:00:00 PM,26/11/1994,5:00:00 PM,60,8975,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_61_1994_08_09.rpf
+118,null,49.41,54.83,9,9,09/08/1994,5:00:00 PM,26/11/1994,5:00:00 PM,3600,8975,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_65_1994_08_09.rpf
+118,COMFORT COVE,49.41,54.83,9,9,10/08/1994,5:00:00 PM,01/12/1994,5:00:00 PM,60,8972,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_100_1994_08_10.rpf
+118,null,49.41,54.83,9,9,10/08/1994,5:00:00 PM,01/12/1994,5:00:00 PM,3600,8972,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_74_1994_08_10.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,01/12/1994,4:00:00 PM,01/06/1995,2:00:00 PM,60,3260,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_26_1994_12_01.rpf
+118,null,49.41,54.83,9,9,01/12/1994,4:00:00 PM,01/06/1995,2:00:00 PM,3600,4360,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_6_1994_12_01.rpf
+118,null,49.41,54.83,9,9,01/12/1994,4:00:00 PM,01/06/1995,2:00:00 PM,3600,3260,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_79_1994_12_01.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,01/12/1994,4:00:00 PM,01/06/1995,2:00:00 PM,60,4360,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_7_1994_12_01.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,01/06/1995,3:00:00 PM,21/09/1995,1:00:00 PM,60,8967,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_21_1995_06_01.rpf
+118,null,49.41,54.83,9,9,01/06/1995,3:00:00 PM,21/09/1995,1:00:00 PM,3600,008A0A,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_64_1995_06_01.rpf
+118,null,49.41,54.83,9,9,01/06/1995,3:00:00 PM,21/09/1995,1:00:00 PM,3600,8967,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_70_1995_06_01.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,01/06/1995,3:00:00 PM,21/09/1995,1:00:00 PM,60,008A0A,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_91_1995_06_01.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,21/09/1995,3:00:00 PM,23/11/1995,4:00:00 PM,60,008A08,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_31_1995_09_21.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,21/09/1995,3:00:00 PM,23/11/1995,4:00:00 PM,60,8958,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_32_1995_09_21.rpf
+118,null,49.41,54.83,9,9,21/09/1995,3:00:00 PM,23/11/1995,4:00:00 PM,3600,8958,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_92_1995_09_21.rpf
+118,null,49.41,54.83,9,9,21/09/1995,3:00:00 PM,23/11/1995,4:00:00 PM,3600,008A08,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_93_1995_09_21.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,23/11/1995,4:00:00 PM,24/04/1996,2:00:00 PM,60,7939,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_14_1995_11_23.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,23/11/1995,4:00:00 PM,24/04/1996,2:00:00 PM,60,3264,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_34_1995_11_23.rpf
+118,null,49.41,54.83,9,9,23/11/1995,4:00:00 PM,24/04/1996,2:00:00 PM,3600,3264,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_56_1995_11_23.rpf
+118,null,49.41,54.83,9,9,23/11/1995,4:00:00 PM,24/04/1996,2:00:00 PM,3600,7939,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_87_1995_11_23.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,24/04/1996,3:00:00 PM,01/08/1996,11:00:00 PM,60,4333,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_43_1996_04_24.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,24/04/1996,2:00:00 PM,03/09/1996,11:00:00 PM,60,3213,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_46_1996_04_24.rpf
+118,null,49.41,54.83,9,9,24/04/1996,3:00:00 PM,01/08/1996,11:00:00 PM,3600,4333,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_48_1996_04_24.rpf
+118,null,49.41,54.83,9,9,24/04/1996,3:00:00 PM,04/09/1996,2:00:00 PM,3600,3213,SEAMONUTR-A,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_99_1996_04_24.rpf
+118,null,49.41,54.83,9,9,04/09/1996,3:00:00 PM,28/11/1996,3:00:00 PM,3600,008A09,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_39_1996_09_04.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,04/09/1996,3:00:00 PM,28/11/1996,3:00:00 PM,60,008A09,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_45_1996_09_04.rpf
+118,null,49.41,54.83,9,9,04/09/1996,2:00:00 PM,28/11/1996,2:00:00 PM,3600,6782,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_52_1996_09_04.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,04/09/1996,2:00:00 PM,28/11/1996,2:00:00 PM,60,6782,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_94_1996_09_04.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,29/11/1996,4:00:00 PM,08/05/1997,2:00:00 PM,60,5475,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_1_1996_11_29.rpf
+118,null,49.41,54.83,9,9,29/11/1996,4:00:00 PM,08/05/1997,2:00:00 PM,3600,5475,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_30_1996_11_29.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,29/11/1996,4:00:00 PM,08/05/1997,2:00:00 PM,60,7880,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_84_1996_11_29.rpf
+118,null,49.41,54.83,9,9,29/11/1996,4:00:00 PM,08/05/1997,2:00:00 PM,3600,7880,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_90_1996_11_29.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,08/05/1997,3:00:00 PM,17/09/1997,3:00:00 PM,60,008A09,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_96_1997_05_08.rpf
+118,null,49.41,54.83,9,9,08/05/1997,3:00:00 PM,17/09/1997,3:00:00 PM,3600,008A09,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_9_1997_05_08.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,17/09/1997,4:00:00 PM,27/11/1997,2:00:00 PM,60,8959,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_35_1997_09_17.rpf
+118,null,49.41,54.83,9,9,17/09/1997,4:00:00 PM,27/11/1997,2:00:00 PM,3600,8959,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_53_1997_09_17.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,17/09/1997,4:00:00 PM,27/11/1997,2:00:00 PM,60,4354,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_77_1997_09_17.rpf
+118,null,49.41,54.83,9,9,17/09/1997,4:00:00 PM,27/11/1997,2:00:00 PM,3600,4354,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_89_1997_09_17.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,20/05/1998,3:00:00 PM,09/09/1998,1:00:00 PM,60,8955,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_13_1998_05_20.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,20/05/1998,3:00:00 PM,09/09/1998,1:00:00 PM,60,5477,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_19_1998_05_20.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,09/09/1998,2:00:00 PM,25/11/1998,3:00:00 PM,60,3266,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_29_1998_09_09.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,09/09/1998,2:00:00 PM,25/11/1998,3:00:00 PM,60,8961,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_80_1998_09_09.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,25/11/1998,4:00:00 PM,13/05/1999,8:00:00 AM,60,4357,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_42_1998_11_25.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,25/11/1998,4:00:00 PM,25/04/1999,12:00:00 PM,60,8966,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_51_1998_11_25.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,13/05/1999,2:00:00 PM,18/08/1999,1:00:00 PM,60,3287,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_71_1999_05_13.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,13/05/1999,1:00:00 PM,18/08/1999,1:00:00 PM,60,4346,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_83_1999_05_13.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,18/08/1999,2:00:00 PM,11/11/1999,2:00:00 PM,60,8971,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_59_1999_08_18.rpf
+118,COMFORT COVE NOTRE DAME BAY,49.41,54.83,9,9,18/08/1999,2:00:00 PM,11/11/1999,2:00:00 PM,60,7821,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_76_1999_08_18.rpf
+null,Comfort Cove,null,null,null,null,07/11/1999,1:00:00 PM,01/06/2000,null,null,3287,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_55_1999_11_07.rpf
+118,COMFORT COVE,49.41,54.83,9,9,25/05/2000,2:00:00 PM,14/09/2000,8:00:00 PM,60,4360,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_4_2000_05_25.rpf
+null,Comfort Cove Sept,null,null,null,null,11/09/2000,1:00:00 PM,25/05/2001,null,null,5476,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_37_2000_09_11.rpf
+118,COMFORT COVE,49.41,54.83,9,9,14/09/2000,9:00:00 PM,23/05/2001,1:00:00 PM,60,3820,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_62_2000_09_14.rpf
+null,,null,null,null,null,22/11/2000,1:00:00 PM,06/12/2001,null,null,4360,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_82_2000_11_22.rpf
+118,COMFORT COVE,49.41,54.83,9,9,05/12/2000,4:00:00 PM,23/05/2001,1:00:00 PM,60,6441,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_38_2000_12_05.rpf
+null,,null,null,null,null,10/09/2001,1:00:00 PM,06/12/2001,null,null,7873,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_47_2001_09_10.rpf
+118,COMFORT COVE,49.41,54.83,9,9,18/09/2001,2:00:00 PM,07/11/2001,2:00:00 PM,60,6641,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_54_2001_09_18.rpf
+null,Comfort Cove,null,null,null,null,06/11/2001,1:00:00 PM,22/05/2002,null,null,5459,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_2_2001_11_06.rpf
+118,COMFORT COVE,49.41,54.83,9,9,07/11/2001,3:00:00 PM,14/05/2002,12:00:00 PM,60,7937,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_28_2001_11_07.rpf
+118,COMFORT COVE,49.41,54.83,9,9,14/05/2002,2:00:00 PM,24/09/2002,12:00:00 PM,60,7943,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_58_2002_05_14.rpf
+118,COMFORT COVE,49.41,54.83,9,9,25/09/2002,11:00:00 PM,21/11/2002,2:00:00 PM,60,7937,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_27_2002_09_25.rpf
+118,COMFORT COVE,49.41,54.83,9,9,21/11/2002,3:00:00 PM,30/04/2003,11:00:00 PM,60,7873,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_25_2002_11_21.rpf
+118,COMFORT COVE,49.41,54.83,10,10,07/05/2003,2:00:00 PM,28/08/2003,2:00:00 PM,60,7935,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_3_2003_05_07.rpf
+118,COMFORT COVE,49.41,54.83,9,9,28/08/2003,3:00:00 PM,13/11/2003,3:00:00 PM,60,7929,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_73_2003_08_28.rpf
+null,Comfort Cove,null,null,null,null,18/05/2005,12:00:00 PM,21/11/2005,1:28:39 PM,0.041666667,2186,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_17_2005_05_18.rpf
+118,COMFORT COVE,49.41,54.83,9,9,23/05/2005,1:00:00 PM,06/11/2005,5:00:00 PM,60,8955,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_36_2005_05_23.rpf
+118,COMFORT COVE,49.41,54.83,9,9,23/05/2005,1:00:00 PM,06/11/2005,5:00:00 PM,60,2186,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_98_2005_05_23.rpf
+null,Comfort Cove,null,null,null,null,18/05/2006,12:00:00 PM,06/11/2006,6:50:29 PM,0.041666667,9376,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_85_2006_05_18.rpf
+null,Comfort Cove,null,null,null,null,18/05/2006,12:00:00 PM,06/11/2006,6:44:29 PM,0.041666667,9380,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_88_2006_05_18.rpf
+118,COMFORT COVE,49.41,54.83,9,9,28/05/2006,4:00:00 PM,28/10/2006,8:00:00 PM,60,9376,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_86_2006_05_28.rpf
+null,Comfort Cove,null,null,null,null,15/05/2007,1:00:00 PM,09/11/2009,null,null,7820,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_18_2007_05_15.rpf
+null,Comfort Cove,null,null,null,null,15/05/2007,12:00:00 PM,15/04/2008,11:00:00 AM,0.041666667,9380,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_5_2007_05_15.rpf
+null,Comfort Cove,null,null,null,null,20/05/2008,12:00:00 PM,17/11/2008,1:01:09 PM,0.041666667,4933,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_67_2008_05_20.rpf
+118,COMFORT COVE,49.41,54.83,9,9,22/05/2008,10:00:00 PM,02/11/2008,1:00:00 PM,60,7934,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_10_2008_05_22.rpf
+null,Comfort Cove,null,null,null,null,15/05/2011,12:00:00 PM,23/09/2011,11:34:39 AM,0.041666667,3417,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_57_2011_05_15.rpf
+null,Comfort Cove,null,null,null,null,12/05/2012,1:00:00 PM,06/02/2013,null,null,008A0B,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_23_2012_05_12.rpf
+null,COMFORT COVE,null,null,null,null,12/05/2012,12:00:00 PM,06/02/2013,5:14:29 PM,0.041666667,5539,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Comfort Cove\MTR_78_2012_05_12.rpf

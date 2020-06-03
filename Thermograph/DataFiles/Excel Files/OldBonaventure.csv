@@ -1,0 +1,62 @@
+SiteCode,SiteName,Latitude,Longitude,DeploymentSiteDepth,DeploymentDepth,DeploymentDate,DeploymentTime,RecoveredDate,TimeOfRecovery,SamplingSize,InstrumentNum,InstrumentType,Path
+100,null,48.71,53.76,9,9,15/04/1980,10:30:00 AM,14/07/1980,6:30:00 PM,14400,60730,RYAN,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_14_1980_04_15.rpf
+100,OLD BONAVENTURE,48.28,53.42,9,null,07/06/1989,12:00:00 PM,07/08/1989,8:00:00 AM,null,63328,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_13_1989_06_07.rpf
+100,null,48.28,53.42,9,22,08/06/1989,12:00:00 AM,07/08/1989,8:00:00 AM,14400,63328,RYANTHERMOGRAPH,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_30_1989_06_08.rpf
+100,OLD BONAVENTURE,48.16,53.25,10,null,15/06/1990,10:30:00 AM,27/08/1990,1:30:00 PM,null,63282,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_58_1990_06_15.rpf
+100,null,48.28,53.42,10,22,15/06/1990,12:00:00 PM,27/08/1990,6:00:00 AM,7200,63282,RYANTHERMOGRAPH,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_59_1990_06_15.rpf
+100,Old Bonaventure,48.28,53.42,10,null,16/06/1991,1:00:00 PM,27/09/1991,7:30:00 PM,null,61524,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_18_1991_06_16.rpf
+100,null,48.28,53.42,10,22,16/06/1991,1:00:00 PM,26/09/1991,5:00:00 AM,14400,61524,RYANTHERMOGRAPH,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_21_1991_06_16.rpf
+100,OLD BONAVENTURE,48.28,53.42,10,null,15/06/1992,5:35:00 PM,20/08/1992,6:50:00 AM,null,63424,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_34_1992_06_15.rpf
+100,null,48.28,53.42,10,22,15/06/1992,7:00:00 PM,20/08/1992,5:00:00 AM,7200,63424,RYANTHERMOGRAPH,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_50_1992_06_15.rpf
+100,null,48.28,53.42,10,22,21/06/1993,11:00:00 AM,07/09/1993,11:00:00 AM,3600,6741,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_5_1993_06_21.rpf
+100,null,48.28,53.42,10,22,19/05/1994,8:00:00 PM,13/09/1994,10:00:00 AM,3600,7937,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_20_1994_05_19.rpf
+100,OLD BONAVENTURE,48.28,53.42,10,22,19/05/1994,8:00:00 PM,13/09/1994,10:00:00 AM,60,7937,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_54_1994_05_19.rpf
+100,OLD BONAVENTURE,48.28,53.42,10,null,05/07/1995,12:00:00 PM,14/07/1995,8:00:00 AM,null,7927,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_56_1995_07_05.rpf
+100,null,48.28,53.42,10,40,16/07/1995,8:00:00 PM,26/09/1995,1:00:00 PM,3600,7927,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_22_1995_07_16.rpf
+100,OLD BONAVENTURE,48.28,53.42,10,40,16/07/1995,8:00:00 PM,26/09/1995,1:00:00 PM,60,7927,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_39_1995_07_16.rpf
+100,OLD BONAVENTURE,48.28,53.42,10,null,16/07/1995,8:00:00 PM,26/09/1995,1:00:00 PM,null,7927,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_53_1995_07_16.rpf
+100,OLD BONAVENTURE,48.28,53.14,10,40,26/05/1996,2:00:00 PM,21/09/1996,4:00:00 PM,60,8956,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_49_1996_05_26.rpf
+100,null,48.28,53.42,10,40,01/06/1996,12:00:00 PM,21/09/1996,4:00:00 PM,3600,8956,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_43_1996_06_01.rpf
+100,null,48.28,53.42,10,22,04/06/1997,1:00:00 PM,25/10/1997,6:00:00 PM,3600,7930,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_27_1997_06_04.rpf
+100,OLD BONAVENTURE,48.28,53.42,10,22,04/06/1997,1:00:00 PM,25/10/1997,6:00:00 PM,60,7930,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_2_1997_06_04.rpf
+100,null,47.71,56.04,60,70,03/10/1997,8:00:00 PM,04/04/1998,1:00:00 PM,3600,3812,MINILOG-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_11_1997_10_03.rpf
+100,null,47.71,56.04,5,70,03/10/1997,8:00:00 PM,04/04/1998,1:00:00 PM,3600,3829,MINILOG-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_16_1997_10_03.rpf
+100,Bay dEspoir Copper Head,47.71,56.04,67,70,03/10/1997,8:00:00 PM,04/04/1998,2:00:00 PM,60,3833,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_17_1997_10_03.rpf
+100,null,47.71,56.04,40,70,03/10/1997,8:00:00 PM,04/04/1998,1:00:00 PM,3600,3815,MINILOG-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_19_1997_10_03.rpf
+100,Bay dEspoir Copper Head,47.71,56.04,25,70,03/10/1997,8:00:00 PM,04/04/1998,1:00:00 PM,60,3837,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_1_1997_10_03.rpf
+100,null,47.71,56.04,50,70,03/10/1997,8:00:00 PM,04/04/1998,1:00:00 PM,3600,3813,MINILOG-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_25_1997_10_03.rpf
+100,Bay dEspoir Copper Head,47.71,56.04,50,70,03/10/1997,8:00:00 PM,04/04/1998,1:00:00 PM,60,3813,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_26_1997_10_03.rpf
+100,null,47.71,56.04,25,70,03/10/1997,8:00:00 PM,04/04/1998,1:00:00 PM,3600,3837,MINILOG-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_32_1997_10_03.rpf
+100,Bay dEspoir Copper Head,47.71,56.04,40,70,03/10/1997,8:00:00 PM,04/04/1998,1:00:00 PM,60,3815,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_35_1997_10_03.rpf
+100,Bay dEspoir Copper Head,47.71,56.04,20,70,03/10/1997,8:00:00 PM,04/04/1998,1:00:00 PM,60,3869,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_37_1997_10_03.rpf
+100,Bay dEspoir Copper Head,47.71,56.04,60,70,03/10/1997,8:00:00 PM,04/04/1998,1:00:00 PM,60,3812,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_3_1997_10_03.rpf
+100,null,47.71,56.04,15,70,03/10/1997,8:00:00 PM,04/04/1998,1:00:00 PM,3600,3818,MINILOG-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_42_1997_10_03.rpf
+100,Bay dEspoir Copper Head,47.71,56.04,15,70,03/10/1997,8:00:00 PM,04/04/1998,1:00:00 PM,60,3818,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_48_1997_10_03.rpf
+100,null,47.71,56.04,20,70,03/10/1997,8:00:00 PM,04/04/1998,1:00:00 PM,3600,3869,MINILOG-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_61_1997_10_03.rpf
+100,null,47.71,56.04,67,70,03/10/1997,8:00:00 PM,04/04/1998,2:00:00 PM,3600,3833,MINILOG-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_6_1997_10_03.rpf
+100,OLD BONAVENTURE,48.28,53.42,10,40,18/06/1999,12:00:00 PM,06/11/1999,4:00:00 PM,60,008AOB,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_24_1999_06_18.rpf
+100,OLD BONAVENTURE,48.28,53.42,9,9,20/05/2000,1:00:00 PM,19/11/2000,11:00:00 PM,60,8971,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_15_2000_05_20.rpf
+100,OLD BONAVENTURE,48.25,53.42,9,9,17/06/2001,5:00:00 PM,12/10/2001,5:00:00 PM,60,6743,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_36_2001_06_17.rpf
+100,OLD BONAVENTURE,48.25,53.42,9,9,31/05/2002,12:00:00 PM,10/11/2002,2:00:00 PM,60,7935,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_31_2002_05_31.rpf
+null,Old Bonaventure,null,null,null,null,19/05/2003,12:00:00 PM,17/12/2003,6:34:49 PM,0.041666667,3810,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_57_2003_05_19.rpf
+100,OLD BONAVENTURE,48.25,53.42,10,40,31/05/2003,3:00:00 PM,08/11/2003,2:00:00 PM,60,3810,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_7_2003_05_31.rpf
+null,Old Bonaventure,null,null,null,null,18/05/2004,12:00:00 PM,12/11/2004,12:59:59 PM,0.041666667,4348,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_10_2004_05_18.rpf
+100,OLD BONAVENTURE,48.28,53.42,10,10,26/05/2004,7:00:00 PM,24/10/2004,12:00:00 PM,60,4348,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_51_2004_05_26.rpf
+null,Old Bonaventure,null,null,null,null,18/05/2005,12:00:00 PM,21/11/2005,5:10:49 PM,0.041666667,457,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_44_2005_05_18.rpf
+100,OLD BONAVENTURE,48.28,53.42,10,10,01/06/2005,11:00:00 PM,06/11/2005,1:00:00 PM,60,457,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_33_2005_06_01.rpf
+null,Old Bonaventure,null,null,null,null,18/05/2006,12:00:00 PM,06/11/2006,2:00:09 PM,0.041666667,463,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_9_2006_05_18.rpf
+100,OLD BONAVENTURE,48.28,53.42,10,10,06/06/2006,5:00:00 PM,23/09/2006,6:00:00 PM,60,463,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_41_2006_06_06.rpf
+null,Old Bonaventure,null,null,null,null,15/05/2007,12:00:00 PM,29/10/2007,4:07:19 PM,0.041666667,3738,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_45_2007_05_15.rpf
+100,OLD BONAVENTURE,48.28,53.42,10,10,01/06/2007,10:00:00 PM,07/10/2007,6:00:00 PM,60,7935,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_4_2007_06_01.rpf
+null,Old Bonaventure,null,null,null,null,20/05/2008,12:00:00 PM,17/11/2008,6:21:49 PM,0.041666667,1177,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_12_2008_05_20.rpf
+100,OLD BONAVENTURE,48.28,53.42,10,10,12/06/2008,12:00:00 PM,01/10/2008,11:00:00 AM,60,6597,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_8_2008_06_12.rpf
+null,Old Bonaventure,null,null,null,null,15/05/2009,12:00:00 PM,09/11/2009,4:53:09 PM,0.041666667,3422,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_38_2009_05_15.rpf
+null,Old Bonaventure,null,null,null,null,11/05/2010,1:00:00 PM,19/11/2010,null,null,7818,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_23_2010_05_11.rpf
+null,Old Bonaventure,null,null,null,null,15/05/2011,12:00:00 PM,14/11/2011,5:07:39 PM,0.041666667,3427,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_60_2011_05_15.rpf
+null,Old Bonaventure,null,null,null,null,12/05/2012,1:00:00 PM,06/02/2013,null,null,6744,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_47_2012_05_12.rpf
+null,Old Bonaventure,null,null,null,null,13/05/2013,12:00:00 PM,06/02/2014,3:00:00 PM,0.041666667,354450,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_40_2013_05_13.rpf
+null,OLD BONAVENTURE,null,null,null,null,21/05/2014,12:00:00 PM,21/11/2014,9:00:00 AM,0.041666667,353782,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_52_2014_05_21.rpf
+null,Old Bonaventure,null,null,null,null,18/05/2015,12:00:00 PM,09/12/2015,3:00:00 PM,0.041666667,356308,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_46_2015_05_18.rpf
+null,Old Bonaventure,null,null,null,null,15/05/2016,12:00:00 PM,13/01/2017,12:00:00 PM,0.041666667,355658,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_29_2016_05_15.rpf
+null,Old Bonaventure,null,null,null,null,08/06/2017,12:00:00 PM,27/11/2017,7:00:00 PM,0.041666667,351101,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_28_2017_06_08.rpf
+null,Old Bonaventure,null,null,null,null,02/06/2018,3:32:30 PM,07/10/2018,11:32:30 AM,0.041666667,353791,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\OldBonaventure\MTR_55_2018_06_02.rpf

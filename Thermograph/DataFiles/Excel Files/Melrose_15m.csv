@@ -1,0 +1,36 @@
+SiteCode,SiteName,Latitude,Longitude,DeploymentSiteDepth,DeploymentDepth,DeploymentDate,DeploymentTime,RecoveredDate,TimeOfRecovery,SamplingSize,InstrumentNum,InstrumentType,Path
+102,null,48.47,53.04,15,45,11/06/1989,1:00:00 AM,18/10/1989,5:00:00 AM,3600,63820,RYANTHERMOGRAPH,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_1_1989_06_11.rpf
+102,MELROSETRINITY BAY,48.47,53.04,15,null,11/06/1989,0::00,18/10/1989,12:00:00 PM,null,63820,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_33_1989_06_11.rpf
+102,null,47.8,55.83,15,86,04/10/1997,5:00:00 PM,04/04/1998,6:00:00 PM,3600,3868,MINILOG-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_25_1997_10_04.rpf
+102,MELROSE TRINITY BAY,48.47,53.04,15,31,02/06/1998,10:00:00 PM,30/10/1998,12:00:00 PM,60,3267,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_32_1998_06_02.rpf
+102,MELROSE TRINITY BAY,48.47,53.04,15,0,16/06/1999,10:00:00 PM,29/09/1999,11:00:00 AM,60,008AOA,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_3_1999_06_16.rpf
+102,MELROSE TRINITY BAY,48.47,53.04,15,0,30/09/1999,6:00:00 PM,08/11/1999,6:00:00 PM,60,00C163,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_13_1999_09_30.rpf
+102,MELROSE TRINITY BAY,48.47,53.04,15,15,13/06/2001,7:00:00 PM,06/10/2001,11:00:00 AM,60,8972,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_15_2001_06_13.rpf
+102,MELROSE TRINITY BAY,48.47,53.04,15,40,04/06/2002,2:00:00 PM,12/09/2002,4:00:00 PM,60,7944,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_4_2002_06_04.rpf
+102,MELROSE TRINITY BAY,48.47,53.04,15,40,15/09/2002,3:00:00 PM,25/10/2002,12:00:00 PM,60,8956,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_34_2002_09_15.rpf
+null,,null,null,null,null,19/05/2003,12:00:00 PM,12/01/2004,6:12:49 PM,0.041666667,3864,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_22_2003_05_19.rpf
+102,MELROSE TRINITY BAY,48.47,53.04,15,31,21/05/2003,2:00:00 PM,03/11/2003,6:00:00 PM,60,3864,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_28_2003_05_21.rpf
+null,,null,null,null,null,18/05/2004,12:00:00 PM,16/11/2004,3:45:09 PM,0.041666667,3864,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_14_2004_05_18.rpf
+102,MELROSE TRINITY BAY,48.47,53.04,15,31,25/05/2004,8:00:00 PM,25/10/2004,4:00:00 PM,60,3864,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_7_2004_05_25.rpf
+null,Melrose Metre,null,null,null,null,18/05/2005,12:00:00 PM,22/11/2005,2:29:19 PM,0.041666667,9503,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_30_2005_05_18.rpf
+102,MELROSE TRINITY BAY,48.47,53.04,15,15,26/05/2005,1:00:00 PM,17/11/2005,1:00:00 PM,60,9503,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_31_2005_05_26.rpf
+null,Melrose,null,null,null,null,18/05/2006,12:00:00 PM,06/11/2006,3:05:09 PM,0.041666667,3740,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_16_2006_05_18.rpf
+102,MELROSE TRINITY BAY,48.47,53.04,15,15,25/05/2006,7:00:00 PM,18/09/2006,4:00:00 PM,60,3740,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_24_2006_05_25.rpf
+null,Melrose,null,null,null,null,15/05/2007,12:00:00 PM,29/10/2007,2:54:39 PM,0.041666667,9504,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_21_2007_05_15.rpf
+102,MELROSE TRINITY BAY,48.47,53.04,15,15,08/06/2007,9:00:00 PM,19/10/2007,4:00:00 PM,60,8973,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_12_2007_06_08.rpf
+null,Melrose,null,null,null,null,20/05/2008,12:00:00 PM,17/11/2008,1:57:39 PM,0.041666667,1173,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_8_2008_05_20.rpf
+102,MELROSE TRINITY BAY,48.47,53.04,15,15,30/05/2008,6:00:00 PM,16/10/2008,12:00:00 PM,60,7818,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_29_2008_05_30.rpf
+null,melrose metre fall,null,null,null,null,27/09/2008,12:00:00 PM,17/11/2008,1:43:49 PM,0.041666667,4595,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_2_2008_09_27.rpf
+null,Melrose,null,null,null,null,15/05/2009,12:00:00 PM,09/11/2009,3:07:29 PM,0.041666667,2276,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_6_2009_05_15.rpf
+null,Melrose,null,null,null,null,15/05/2009,1:00:00 PM,09/11/2009,null,null,7818,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_9_2009_05_15.rpf
+null,Melrose,null,null,null,null,11/05/2010,1:00:00 PM,19/11/2010,null,null,7928,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_17_2010_05_11.rpf
+null,Melrose,null,null,null,null,11/05/2010,12:00:00 PM,18/11/2010,5:27:39 PM,0.041666667,4928,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_5_2010_05_11.rpf
+null,Melrose,null,null,null,null,15/05/2011,12:00:00 PM,14/11/2011,3:32:29 PM,0.041666667,4928,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_27_2011_05_15.rpf
+null,Melrose M,null,null,null,null,15/05/2011,1:00:00 PM,15/11/2011,null,null,7928,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_35_2011_05_15.rpf
+null,Melrose M,null,null,null,null,12/05/2012,1:00:00 PM,16/11/2012,null,null,7928,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_10_2012_05_12.rpf
+null,Melrose,null,null,null,null,13/05/2013,12:00:00 PM,06/02/2014,3:00:00 PM,0.041666667,354449,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_26_2013_05_13.rpf
+null,MELROSE,null,null,null,null,21/05/2014,12:00:00 PM,19/12/2014,1:00:00 PM,0.041666667,354446,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_11_2014_05_21.rpf
+null,Melrose,null,null,null,null,18/05/2015,12:00:00 PM,09/11/2015,5:00:00 PM,0.041666667,356310,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_23_2015_05_18.rpf
+null,Melrose,null,null,null,null,15/05/2016,12:00:00 PM,15/06/2017,2:00:00 PM,0.041666667,354543,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_20_2016_05_15.rpf
+null,Melrose -,null,null,null,null,28/06/2017,7:00:00 PM,18/10/2017,3:00:00 AM,0.041666667,353785,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_19_2017_06_28.rpf
+null,Melrose,null,null,null,null,15/06/2018,2:27:52 PM,10/10/2018,11:27:52 AM,0.041666667,353783,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Melrose\15m\MTR_18_2018_06_15.rpf

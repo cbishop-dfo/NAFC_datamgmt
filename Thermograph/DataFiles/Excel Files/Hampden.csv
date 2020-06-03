@@ -1,0 +1,56 @@
+SiteCode,SiteName,Latitude,Longitude,DeploymentSiteDepth,DeploymentDepth,DeploymentDate,DeploymentTime,RecoveredDate,TimeOfRecovery,SamplingSize,InstrumentNum,InstrumentType,Path
+179,null,47.9,54.21,3,15,19/08/1976,3:15:00 PM,20/09/1976,3:15:00 AM,14400,9110,RYAN,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_55_1976_08_19.rpf
+179,null,49.55,56.83,9,18,17/06/1991,7:00:00 PM,14/08/1991,1:00:00 AM,21600,63326,RYANTHERMOGRAPH,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_28_1991_06_17.rpf
+179,HamptonWhite Bay,49.55,58.83,9,null,17/06/1991,7:00:00 PM,14/08/1991,6:00:00 PM,null,63326,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_47_1991_06_17.rpf
+179,HAMPTON WHITE BAY,49.55,56.83,9,null,17/06/1991,7:00:00 PM,14/08/1991,2:26:00 AM,null,63326,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_5_1991_06_17.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,null,10/06/1992,3:00:00 PM,27/08/1992,2:29:00 PM,null,62882,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_25_1992_06_10.rpf
+179,null,49.55,56.83,10,70,10/06/1992,3:00:00 PM,27/08/1992,12:00:00 PM,10800,62882,RYANTHERMOGRAPH,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_49_1992_06_10.rpf
+179,null,49.55,56.83,10,70,14/06/1993,9:00:00 PM,14/09/1993,3:00:00 PM,3600,3260,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_27_1993_06_14.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,70,22/06/1994,9:00:00 PM,06/09/1994,9:00:00 AM,60,5459,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_36_1994_06_22.rpf
+179,null,49.55,56.83,10,70,22/06/1994,9:00:00 PM,06/09/1994,9:00:00 AM,3600,5459,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_41_1994_06_22.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,10,27/06/1995,8:00:00 PM,07/10/1995,6:00:00 PM,60,8954,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_52_1995_06_27.rpf
+179,null,49.55,56.83,10,10,27/06/1995,8:00:00 PM,07/10/1995,6:00:00 PM,3600,8954,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_7_1995_06_27.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,70,30/05/1996,5:00:00 PM,05/09/1996,12:00:00 PM,60,8959,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_15_1996_05_30.rpf
+179,null,49.55,56.83,10,70,07/06/1996,7:00:00 PM,05/09/1996,6:00:00 PM,3600,8959,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_39_1996_06_07.rpf
+null,,null,null,null,null,15/05/1997,1:00:00 PM,19/01/1998,null,null,6594,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_23_1997_05_15.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,70,24/06/1997,8:00:00 PM,19/11/1997,10:00:00 AM,60,6594,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_22_1997_06_24.rpf
+179,null,49.55,56.83,10,70,24/06/1997,8:00:00 PM,19/11/1997,10:00:00 AM,3600,6594,SEAMONUTR-B,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_50_1997_06_24.rpf
+null,Hampden,null,null,null,null,25/05/1998,1:00:00 PM,03/12/1998,null,null,5516,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_20_1998_05_25.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,9,46,24/06/1998,11:00:00 PM,20/11/1998,5:00:00 PM,60,5516,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_43_1998_06_24.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,9,0,17/06/1999,2:00:00 PM,15/11/1999,2:00:00 PM,60,4354,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_13_1999_06_17.rpf
+null,STEAD MAY HAMPDEN,null,null,null,null,15/05/2000,12:00:00 PM,24/10/2000,1:34:59 PM,0.041666667,3830,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_26_2000_05_15.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,55,14/06/2000,4:00:00 PM,16/10/2000,3:00:00 PM,60,3830,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_29_2000_06_14.rpf
+null,HAMPDEN,null,null,null,null,23/05/2001,1:00:00 PM,28/01/2002,null,null,008A09,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_19_2001_05_23.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,46,21/06/2001,11:00:00 PM,27/11/2001,12:00:00 PM,60,008A09,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_35_2001_06_21.rpf
+null,Hampden,null,null,null,null,27/05/2002,12:00:00 PM,12/12/2002,2:05:39 PM,0.041666667,3810,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_18_2002_05_27.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,46,26/06/2002,4:00:00 PM,21/11/2002,4:00:00 PM,60,3810,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_54_2002_06_26.rpf
+null,HAmpden,null,null,null,null,01/05/2003,1:00:00 PM,08/12/2003,null,null,7818,null,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_11_2003_05_01.rpf
+null,Hampden,null,null,null,null,01/05/2003,12:00:00 PM,08/12/2003,4:34:29 PM,0.041666667,3812,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_46_2003_05_01.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,46,13/06/2003,6:00:00 PM,08/11/2003,4:00:00 PM,60,7818,Hugrun,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_12_2003_06_13.rpf
+null,Hampden,null,null,null,null,15/05/2004,12:00:00 PM,07/01/2005,5:56:29 PM,0.041666667,4355,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_37_2004_05_15.rpf
+null,Hampden,null,null,null,null,15/05/2004,12:00:00 PM,07/01/2005,4:40:19 PM,0.041666667,3820,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_8_2004_05_15.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,10,25/06/2004,10:00:00 PM,23/11/2004,2:00:00 PM,60,4355,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_24_2004_06_25.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,46,25/06/2004,10:00:00 PM,23/11/2004,2:00:00 PM,60,3820,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_6_2004_06_25.rpf
+null,Hampden,null,null,null,null,18/05/2005,12:00:00 PM,15/12/2005,1:32:39 PM,0.041666667,9377,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_16_2005_05_18.rpf
+null,Hampden,null,null,null,null,18/05/2005,12:00:00 PM,15/12/2005,2:13:19 PM,0.041666667,7417,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_3_2005_05_18.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,10,22/06/2005,4:00:00 PM,16/11/2005,12:00:00 PM,60,7417,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_34_2005_06_22.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,10,22/06/2005,4:00:00 PM,16/11/2005,12:00:00 PM,60,9377,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_48_2005_06_22.rpf
+null,Hampden,null,null,null,null,18/05/2006,12:00:00 PM,06/11/2006,1:22:29 PM,0.041666667,1178,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_32_2006_05_18.rpf
+null,Hampden,null,null,null,null,18/05/2006,12:00:00 PM,06/11/2006,1:26:09 PM,0.041666667,7414,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_40_2006_05_18.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,10,02/06/2006,1:00:00 PM,30/10/2006,1:00:00 PM,60,7414,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_1_2006_06_02.rpf
+null,Hampden,null,null,null,null,15/05/2007,12:00:00 PM,30/10/2007,12:45:49 PM,0.041666667,9368,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_4_2007_05_15.rpf
+179,HAMPDEN WHITE BAY,49.55,56.83,10,10,15/06/2007,1:00:00 PM,25/10/2007,4:00:00 PM,60,9368,Minilog,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_44_2007_06_15.rpf
+null,Hampden,null,null,null,null,17/05/2008,12:00:00 PM,03/11/2008,6:56:49 PM,0.041666667,3430,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_2_2008_05_17.rpf
+null,Hampden,null,null,null,null,17/05/2008,12:00:00 PM,03/11/2008,7:08:09 PM,0.041666667,3723,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_45_2008_05_17.rpf
+null,Hampden,null,null,null,null,01/06/2009,12:00:00 PM,13/11/2009,2:34:39 PM,0.041666667,6291,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_38_2009_06_01.rpf
+null,Hampden,null,null,null,null,01/06/2009,12:00:00 PM,13/11/2009,1:30:29 PM,0.041666667,3420,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_51_2009_06_01.rpf
+null,Hampden,null,null,null,null,11/05/2010,12:00:00 PM,15/11/2010,4:27:49 PM,0.041666667,6292,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_14_2010_05_11.rpf
+null,Hampden,null,null,null,null,11/05/2010,12:00:00 PM,15/11/2010,4:14:09 PM,0.041666667,5532,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_9_2010_05_11.rpf
+null,Hampden,null,null,null,null,15/05/2011,12:00:00 PM,17/11/2011,3:06:09 PM,0.041666667,5532,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_10_2011_05_15.rpf
+null,Hampden,null,null,null,null,15/05/2011,12:00:00 PM,17/11/2011,2:56:59 PM,0.041666667,6292,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_31_2011_05_15.rpf
+null,hAMPDEN,null,null,null,null,12/05/2012,12:00:00 PM,06/02/2013,4:23:09 PM,0.041666667,4740,Minilog-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_17_2012_05_12.rpf
+null,HAMPDEN,null,null,null,null,21/05/2014,12:00:00 PM,19/12/2014,1:00:00 PM,0.041666667,354531,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_42_2014_05_21.rpf
+null,Hampden,null,null,null,null,18/05/2015,12:00:00 PM,09/11/2015,5:00:00 PM,0.041666667,356306,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_53_2015_05_18.rpf
+null,Hampden,null,null,null,null,15/05/2016,12:00:00 PM,13/01/2017,12:00:00 PM,0.041666667,354452,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_33_2016_05_15.rpf
+null,Hampden,null,null,null,null,04/07/2017,12:00:00 AM,05/11/2017,10:00:00 AM,0.041666667,351107,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_21_2017_07_04.rpf
+null,Hampden,null,null,null,null,16/06/2018,3:25:23 PM,06/11/2018,12:25:23 PM,0.041666667,355652,Minilog-II-T,C:\Users\KennedyDy\Desktop\Kennedy\Fixed\Headlands_New\Hampden\MTR_30_2018_06_16.rpf
