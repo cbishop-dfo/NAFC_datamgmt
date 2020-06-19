@@ -1,0 +1,34 @@
+#example commands to find highlands data files:
+#
+#Headlands sites: (see Lcoation.csv in /u01/data/seabird/moored_data/THERMOGRAPHS_1998_onward  for full site list)
+
+#!OLD BONAVENTURE,100,48.28,-53.42 
+#!BRISTOL'S HOPE,101,47.73,-53.18 
+#!"MELROSE, TRINITY BAY",102,48.47,-53.04 #there are two depths for this site.
+#!UPPER GULLIES (FOXTRAP),106,47.51,-53.06 
+#!"STOCK COVE, BONAVISTA BAY",110,48.71,-53.76 
+#!CAPE FREELS (Lumsden),114,49.29,-53.53 
+#!"COMFORT COV#E, NOTRE DAME BAY",118,49.41,-54.83 
+#!ARNOLD'S COVE,127,47.75,-54 
+#!"HAMPDEN, WHITE BAY",179,49.55,-56.83
+#
+
+#notes on timing:
+
+#only PIPE to 1997
+#only   PRO to 1998 - 2007/8
+#ASC* for 2008 to 2012 
+#.csv for 2013 onward     (minlog-II)
+
+
+
+find /data/seabird/moored_data/THERMOGRAPHS_1998_onward/MTR_HERDED/clean/PRO/ -type f -name 110\*.PRO -exec cp --backup=t '{}' . \;
+
+find -L /data/seabird/moored_data/THERMOGRAPHS_1998_onward/MTR_HERDED/clean/PIPE -type f -name \*_110_\*.pipe -exec cp --backup=t '{}' . \;
+
+find -L /data/seabird/moored_data/THERMOGRAPHS_1998_onward/MTR_HERDED/raw/hugrun_1997_2012/ -type f -name 110\*.DAT -exec cp --backup=t '{}' . \;
+
+cp --backup=t `find /data/seabird/moored_data/THERMOGRAPHS_1998_onward/MTR_HERDED/raw/MINILOG_I/ -name Asc\* -exec grep -l -i  stock '{}' \;`  .
+
+
+
