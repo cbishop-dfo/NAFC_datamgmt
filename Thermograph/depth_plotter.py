@@ -2,6 +2,7 @@ import sqlite3
 from sqlite3 import Error
 import datetime
 import matplotlib.pyplot as plt
+plt.switch_backend('TkAgg')
 
 
 __author__ = 'KennedyDyl'

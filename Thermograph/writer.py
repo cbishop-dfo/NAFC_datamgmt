@@ -227,10 +227,29 @@ def write_rpf(conn):
         rowid = row[0]
         d.execute("select * from Data where deployment_id is '{dv}'".format(dv=rowid))
         datar = d.fetchall()
+        timeisgood = False
         for dat in datar:
             data.data.append(dat)
-            f.write(data.data[data.data.__len__() - 1][4] + " " + data.data[data.data.__len__() - 1][3] + " " +
-                    data.data[data.data.__len__() - 1][2] + "\n")
+            checktime = data.data[data.data.__len__() - 1][3].split(":")
+            if checktime.__len__() == 3:
+                timeisgood = True
+
+            elif checktime.__len__() == 4:
+                timeisgood = False
+
+
+            if timeisgood:
+
+                f.write(data.data[data.data.__len__() - 1][4] + " " + data.data[data.data.__len__() - 1][3] + " " +
+                        data.data[data.data.__len__() - 1][2] + "\n")
+
+            elif not timeisgood:
+                # Correct time by removing milliseconds
+                fixedtime = checktime[0] + ":" + checktime[1] + ":" + checktime[2]
+                f.write(data.data[data.data.__len__() - 1][4] + " " + fixedtime + " " +
+                        data.data[data.data.__len__() - 1][2] + "\n")
+
+
 
 
 ###########################################################################################################
@@ -382,7 +401,7 @@ def main():
 
     def setDirectory():
         # default path
-        database = 'Thermo_db.sqlite'
+        database = 'thermo.db'
 
         print("Would you like to change database?")
         print(" Current path: " + database + "\n y/n")

@@ -205,7 +205,7 @@ def writeData(data):
 ###########################################################################################################
 
 
-# Writes meta data and thermo data into new trimmed .rpf file.
+# Writes meta data and thermo data into new .rpf file.
 def sample_rpf(data):
     currentSample = 0
     lastSample = 0

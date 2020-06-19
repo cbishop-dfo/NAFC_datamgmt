@@ -1107,7 +1107,7 @@ if __name__ == '__main__':
     pathname = dir_path.replace("\\", '/').split('/')
 
     DatabaseFile = 'thermo.db'
-    selection = input("Current Database Path: " + DatabaseFile + "\nWould you like to change the Database?    Y / N")
+    selection = input("Current Database Path: " + DatabaseFile + "\nWould you like to change the Database?    Y / N\n")
 
     if selection.lower() == "n":
         DatabaseFile = "thermo.db"
@@ -1149,3 +1149,4 @@ if __name__ == '__main__':
             print("File Not Supported...")
 
     print("******************************")
+    x = input("Press Enter To End: ")

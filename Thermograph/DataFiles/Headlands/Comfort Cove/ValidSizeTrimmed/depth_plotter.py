@@ -3,7 +3,8 @@ from sqlite3 import Error
 import datetime
 import pandas as pd
 import matplotlib
-# matplotlib.use("WXAgg")
+matplotlib.use("AxAgg")
+
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates

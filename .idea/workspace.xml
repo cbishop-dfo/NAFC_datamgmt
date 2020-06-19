@@ -2,73 +2,530 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/ValidSizeTrimmed/Appended.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/ValidSizeTrimmed/Appended.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/ValidSizeTrimmed/Appended.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/ValidSizeTrimmed/Appended.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/ValidSizeTrimmed/Minilog-II-T_350863_20171127_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/ValidSizeTrimmed/Minilog-II-T_353781_101_20181026.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/ValidSizeTrimmed/Minilog-II-T_353781_101_20191115.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/ValidSizeTrimmed/Minilog-II-T_354445_20140206_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/ValidSizeTrimmed/Minilog-II-T_354526_20141121_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/ValidSizeTrimmed/Minilog-II-T_356313_20151109_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/ValidSizeTrimmed/Minilog-II-T_4294967295_20170113_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/ValidSizeTrimmed/thermo.db" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/ValidSizeTrimmed/thermo.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/Appended.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/Appended.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/Appended.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/Appended.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_10_1998_06_06.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_10_1998_06_06.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_11_2002_05_28.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_11_2002_05_28.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_12_2010_05_11.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_12_2010_05_11.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_12_2010_05_11_trimmed.rpf" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_12_2010_05_11_trimmed.rpf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_13_2004_06_03.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_13_2004_06_03.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_14_2005_05_18.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_14_2005_05_18.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_14_2005_05_18_trimmed.rpf" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_14_2005_05_18_trimmed.rpf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_15_2005_05_29.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_15_2005_05_29.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_17_1989_05_31.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_17_1989_05_31.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_18_1999_06_13.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_18_1999_06_13.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_19_2006_06_01.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_19_2006_06_01.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_1_2008_05_25.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_1_2008_05_25.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_20_2000_05_16.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_20_2000_05_16.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_2_2009_05_15.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_2_2009_05_15.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_2_2009_05_15_trimmed.rpf" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_2_2009_05_15_trimmed.rpf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_3_2003_05_26.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_3_2003_05_26.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_4_2006_05_18.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_4_2006_05_18.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_4_2006_05_18_trimmed.rpf" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_4_2006_05_18_trimmed.rpf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_5_2011_05_15.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_5_2011_05_15.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_5_2011_05_15_trimmed.rpf" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_5_2011_05_15_trimmed.rpf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_6_2004_05_18.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_6_2004_05_18.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_6_2004_05_18_trimmed.rpf" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_6_2004_05_18_trimmed.rpf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_7_2003_05_19.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_7_2003_05_19.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_7_2003_05_19_trimmed.rpf" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_7_2003_05_19_trimmed.rpf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_8_2012_05_12.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_8_2012_05_12.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_8_2012_05_12_trimmed.rpf" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_8_2012_05_12_trimmed.rpf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_9_2007_06_15.rpf_trimmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/MTR_9_2007_06_15.rpf_trimmed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/Minilog-II-T_353787_20171127_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/Minilog-II-T_354448_20170113_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/Minilog-II-T_354452_20140206_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/Minilog-II-T_354452_20141121_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/Minilog-II-T_354452_20151110_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/Minilog-II-T_355648_114_20181010.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/Minilog-II-T_355648_114_20191017.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/thermo.db" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/ValidSizeTrimmed/thermo.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/ValidSizeTrimmed/Appended.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/ValidSizeTrimmed/Appended.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/ValidSizeTrimmed/Appended.rpf" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/ValidSizeTrimmed/Appended.rpf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/ValidSizeTrimmed/Minilog-II-T_351100_20140206_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/ValidSizeTrimmed/Minilog-II-T_351100_20151110_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/ValidSizeTrimmed/Minilog-II-T_353789_20171127_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/ValidSizeTrimmed/Minilog-II-T_354444_20141121_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/ValidSizeTrimmed/Minilog-II-T_355646_114_20181010.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/ValidSizeTrimmed/Minilog-II-T_355646_114_20191017.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/ValidSizeTrimmed/Minilog-II-T_355647_20170113_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/ValidSizeTrimmed/thermo.db" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/ValidSizeTrimmed/thermo.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/ValidSizeTrimmed/Appended.png" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/ValidSizeTrimmed/Appended.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/ValidSizeTrimmed/Appended.rpf" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/ValidSizeTrimmed/Appended.rpf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/ValidSizeTrimmed/Minilog-II-T_351100_20141121_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/ValidSizeTrimmed/Minilog-II-T_351106_20170113_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/ValidSizeTrimmed/Minilog-II-T_351106_20171127_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/ValidSizeTrimmed/Minilog-II-T_354446_20140206_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/ValidSizeTrimmed/Minilog-II-T_356308_106_20181028.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/ValidSizeTrimmed/Minilog-II-T_356308_106_20191019.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/ValidSizeTrimmed/Minilog-II-T_356316_20151109_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/ValidSizeTrimmed/thermo.db" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/ValidSizeTrimmed/thermo.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/Appended.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_13_1998_05_23.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_15_2006_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_17_1988_09_27.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_21_1990_05_10.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_22_2004_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_24_1998_09_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_25_2017_06_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_26_2002_04_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_27_2000_01_24.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_29_2004_05_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_2_1989_05_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_32_2018_05_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_33_1995_06_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_34_1990_01_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_35_2016_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_36_1992_06_10.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_37_1991_10_09.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_38_1992_12_10.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_39_2009_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_40_1996_01_30.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_41_2001_11_06.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_42_2008_05_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_43_1993_12_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_44_2014_05_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_45_2012_05_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_46_1996_05_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_48_2013_05_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_49_2000_06_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_51_1989_09_14.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_53_1989_01_24.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_54_1991_04_24.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_55_1994_12_14.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_57_1997_05_09.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_58_1978_01_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_59_2000_05_23.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_61_2007_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_64_1996_09_06.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_65_2011_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_66_1991_12_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_68_1996_12_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_72_2005_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_73_2015_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_75_1997_09_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_76_2000_11_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_79_2010_05_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_82_1998_02_17.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_83_2001_12_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_84_2006_05_24.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_85_1999_05_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_86_1993_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_87_2003_05_05.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_88_1998_12_14.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_89_2008_05_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_8_2002_12_06.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_90_1990_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_92_2002_06_30.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_94_1992_10_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_95_1995_09_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Arnolds Cove/RawData/MTR_97_2000_01_10.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_10_2008_05_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_11_1980_09_23.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_12_1994_06_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_13_2003_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_14_2006_06_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_15_1997_05_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_16_1993_06_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_17_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_18_2009_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_19_2002_06_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_20_2004_05_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_21_2005_05_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_22_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_23_2001_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_24_2003_05_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_25_2005_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_26_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_27_1990_05_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_28_2012_05_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_29_1992_05_27.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_2_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_30_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_31_1989_05_31.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_33_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_34_2006_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_35_1998_06_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_36_1991_05_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_37_2008_05_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_38_1996_06_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_39_2010_05_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_3_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_42_1999_06_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_43_2005_05_07.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_44_1979_04_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_45_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_46_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_48_2004_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_49_1995_06_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_4_2000_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_51_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_52_2007_06_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_53_2007_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_7_1990_05_31.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_8_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Bristols Hope/RawData/MTR_9_1994_06_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_100_1994_08_10.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_10_2008_05_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_11_1969_11_27.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_13_1998_05_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_14_1995_11_23.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_15_1992_11_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_16_1989_09_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_17_2005_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_1_1996_11_29.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_20_1993_08_27.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_21_1995_06_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_22_1994_05_05.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_24_1990_04_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_25_2002_11_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_26_1994_12_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_27_2002_09_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_28_2001_11_07.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_2_2001_11_06.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_32_1995_09_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_33_1989_01_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_35_1997_09_17.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_37_2000_09_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_38_2000_12_05.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_3_2003_05_07.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_40_1990_09_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_41_1990_11_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_42_1998_11_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_44_1992_05_27.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_45_1996_09_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_46_1996_04_24.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_47_2001_09_10.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_49_1991_08_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_4_2000_05_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_50_1992_08_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_54_2001_09_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_55_1999_11_07.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_57_2011_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_58_2002_05_14.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_59_1999_08_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_5_2007_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_60_1991_05_07.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_61_1994_08_09.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_62_2000_09_14.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_66_1969_12_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_67_2008_05_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_68_1991_11_28.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_69_1993_05_06.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_71_1999_05_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_72_1989_05_16.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_73_2003_08_28.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_78_2012_05_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_80_1998_09_09.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_82_2000_11_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_86_2006_05_28.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_88_2006_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_8_1969_06_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_91_1995_06_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_94_1996_09_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_95_1993_12_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_96_1997_05_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_97_1978_08_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/RawData/MTR_98_2005_05_23.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/ValidSizeTrimmed/depth_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Comfort Cove/ValidSizeTrimmed/depth_plotter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_10_2011_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_11_2003_05_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_12_2003_06_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_13_1999_06_17.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_15_1996_05_30.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_17_2012_05_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_18_2002_05_27.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_19_2001_05_23.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_1_2006_06_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_20_1998_05_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_21_2017_07_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_22_1997_06_24.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_23_1997_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_25_1992_06_10.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_26_2000_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_27_1993_06_14.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_29_2000_06_14.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_30_2018_06_16.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_32_2006_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_33_2016_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_35_2001_06_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_36_1994_06_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_37_2004_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_38_2009_06_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_39_1996_06_07.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_3_2005_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_42_2014_05_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_43_1998_06_24.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_44_2007_06_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_45_2008_05_17.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_47_1991_06_17.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_48_2005_06_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_52_1995_06_27.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_53_2015_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_54_2002_06_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_6_2004_06_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_8_2004_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Hampden/RawData/MTR_9_2010_05_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_10_1998_06_06.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_11_2002_05_28.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_12_2010_05_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_13_2004_06_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_14_2005_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_15_2005_05_29.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_16_2005_05_07.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_17_1989_05_31.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_18_1999_06_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_19_2006_06_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_1_2008_05_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_20_2000_05_16.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_2_2009_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_3_2003_05_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_4_2006_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_5_2011_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_6_2004_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_7_2003_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_8_2012_05_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/15m/RawData/MTR_9_2007_06_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_10_2009_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_12_2011_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_13_2004_06_05.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_14_2008_05_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_15_2003_05_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_16_2001_05_23.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_17_2004_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_18_2002_05_28.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_19_1998_06_06.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_1_1989_05_31.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_20_2003_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_21_2012_05_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_2_2010_05_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_3_2007_06_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_4_2000_05_16.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_5_2006_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_6_1999_06_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_7_2005_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_8_2005_05_29.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Lumsden/5m/RawData/MTR_9_2006_06_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/10m/RawData/MTR_1_1996_07_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/10m/RawData/MTR_2_1996_07_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/10m/RawData/MTR_3_1997_06_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/10m/RawData/MTR_4_1997_05_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_10_2012_05_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_11_2014_05_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_12_2007_06_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_13_1999_09_30.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_14_2004_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_15_2001_06_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_16_2006_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_17_2010_05_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_18_2018_06_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_19_2017_06_28.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_1_1989_06_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_20_2016_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_21_2007_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_22_2003_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_23_2015_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_24_2006_05_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_25_1997_10_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_26_2013_05_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_27_2011_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_28_2003_05_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_29_2008_05_30.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_2_2008_09_27.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_30_2005_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_31_2005_05_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_32_1998_06_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_34_2002_09_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_3_1999_06_16.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_4_2002_06_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_7_2004_05_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_8_2008_05_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/15m/RawData/MTR_9_2009_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/20m/RawData/MTR_1_1997_10_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/20m/RawData/MTR_2_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/20m/RawData/MTR_3_1996_07_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/20m/RawData/MTR_4_1996_07_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/25m/RawData/MTR_1_1995_06_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/25m/RawData/MTR_2_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/25m/RawData/MTR_3_1995_06_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/25m/RawData/MTR_4_1997_10_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/40m/RawData/MTR_1_1997_10_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/40m/RawData/MTR_2_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/50m/RawData/MTR_1_1997_10_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/50m/RawData/MTR_2_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_10_2005_05_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_11_1997_06_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_12_2015_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_13_2001_06_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_14_2013_05_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_15_1999_09_30.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_16_1995_06_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_17_2016_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_18_2003_05_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_1_1997_06_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_20_2017_06_28.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_22_2005_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_23_2006_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_24_2010_05_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_25_2012_05_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_27_2002_06_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_28_2018_06_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_2_2007_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_30_2008_05_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_31_1999_06_16.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_33_2004_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_34_2008_05_30.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_35_2009_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_36_2004_05_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_38_2003_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_39_1989_06_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_3_1998_06_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_4_2011_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_5_2014_05_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_6_2007_06_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_7_2008_09_27.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_8_2012_09_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/5m/RawData/MTR_9_2002_09_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/60m/RawData/MTR_1_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/60m/RawData/MTR_2_1997_10_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/70m/RawData/MTR_1_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/70m/RawData/MTR_2_1997_10_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/83m/RawData/MTR_1_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Melrose/83m/RawData/MTR_2_1997_10_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_10_2004_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_12_2008_05_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_14_1980_04_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_15_2000_05_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_16_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_17_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_1_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_21_1991_06_16.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_23_2010_05_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_24_1999_06_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_26_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_28_2017_06_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_29_2016_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_2_1997_06_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_30_1989_06_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_31_2002_05_31.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_33_2005_06_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_34_1992_06_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_35_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_36_2001_06_17.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_37_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_38_2009_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_39_1995_07_16.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_3_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_40_2013_05_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_41_2006_06_06.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_44_2005_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_45_2007_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_46_2015_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_47_2012_05_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_48_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_49_1996_05_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_4_2007_06_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_51_2004_05_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_52_2014_05_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_54_1994_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_55_2018_06_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_56_1995_07_05.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_57_2003_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_58_1990_06_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_5_1993_06_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_60_2011_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_61_1997_10_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_7_2003_05_31.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_8_2008_06_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/OldBonaventure/RawData/MTR_9_2006_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_100_2016_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_101_1990_11_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_103_2012_09_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_106_2005_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_107_2000_05_23.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_108_1993_12_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_109_2001_09_10.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_110_2011_09_24.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_112_2009_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_113_2015_10_23.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_114_2008_05_17.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_116_2005_06_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_117_1989_09_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_118_2002_09_23.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_119_1994_08_10.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_11_1994_11_30.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_120_1999_08_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_121_2000_09_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_122_2002_11_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_125_2003_08_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_12_2006_05_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_14_1990_09_17.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_18_1998_09_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_19_1995_09_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_1_1997_09_16.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_20_1998_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_21_2009_10_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_23_1998_11_24.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_24_1988_07_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_26_2018_07_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_27_2003_05_06.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_28_1999_11_07.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_29_1995_05_31.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_2_2006_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_30_2000_11_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_32_2014_06_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_33_2014_09_16.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_35_2016_10_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_37_2017_07_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_38_2007_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_39_2013_05_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_3_1991_05_06.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_40_1988_07_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_41_1992_05_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_43_2007_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_44_1996_11_27.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_47_2013_09_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_49_2017_10_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_4_2001_05_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_50_1990_04_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_51_2002_05_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_52_2005_05_07.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_53_1992_08_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_57_1988_11_17.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_58_1988_07_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_5_1997_11_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_61_1994_05_04.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_65_1996_09_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_66_1988_07_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_67_1989_11_24.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_70_2004_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_71_2011_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_75_2008_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_76_2000_09_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_77_2004_05_23.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_78_1999_05_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_79_2001_09_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_7_1995_11_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_80_2001_11_06.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_83_2015_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_84_1991_08_23.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_85_1992_11_24.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_88_2007_10_06.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_8_2010_05_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_91_2010_10_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_92_1993_05_05.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_94_1996_04_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_97_1989_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_98_2012_05_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_99_1997_05_10.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/StockCove/RawData/MTR_9_1993_08_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_10_1995_06_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_12_2014_05_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_15_1998_05_30.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_16_2005_05_07.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_17_2005_05_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_18_2016_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_19_1968_10_30.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_1_2001_05_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_20_2004_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_21_2000_05_17.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_22_1991_06_03.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_23_2006_06_01.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_24_2007_05_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_25_2003_05_25.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_26_1992_06_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_27_2002_05_28.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_29_2017_06_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_30_1967_12_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_31_1989_05_30.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_32_1999_06_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_33_1996_05_28.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_35_2009_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_36_2010_05_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_37_1997_06_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_39_1994_06_08.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_3_2004_05_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_41_2018_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_4_1993_06_07.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_5_2015_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_6_2013_05_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_7_1990_05_26.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/UpperGullies/RawData/MTR_8_1979_03_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_10_1998_05_29.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_11_2014_05_21.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_12_2001_05_16.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_14_2003_05_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_15_2003_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_17_2013_05_13.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_18_2004_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_19_2002_05_31.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_1_2006_05_31.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_20_2015_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_21_2010_05_11.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_24_2007_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_25_1975_08_27.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_27_1995_06_22.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_28_2016_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_29_2009_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_2_2005_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_30_2000_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_31_1994_06_05.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_32_2005_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_33_1997_06_02.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_34_2011_05_15.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_35_2018_05_23.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_36_2012_05_12.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_5_2008_05_20.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_7_2017_06_14.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_8_2006_05_18.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/MTR_9_2004_05_19.rpf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/Ingestor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/Ingestor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/checkSample.py" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/checkSample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/depth_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/depth_plotter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thermograph/writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Thermograph/writer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,15 +534,46 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Thermograph/depth_plotter.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Thermograph/generic_writer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+            <state>
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Thermograph/Ingestor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Thermograph/meta_to_csv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/Lib/_strptime.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="533">
+              <caret line="361" selection-start-line="361" selection-end-line="361" />
             </state>
           </provider>
         </entry>
@@ -95,9 +583,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Thermograph/depth_plotter.py" />
+        <option value="$PROJECT_DIR$/Thermograph/checkSample.py" />
+        <option value="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/RPF/checkSample.py" />
+        <option value="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/RPF/writer.py" />
+        <option value="$PROJECT_DIR$/Thermograph/writer.py" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="990" />
+    <option name="width" value="1928" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -146,7 +645,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.writer (1)">
+    <configuration name="checkSample" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/RPF" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/RPF/checkSample.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="depth_plotter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,8 +688,53 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="writer (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/RPF" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/RPF/writer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="writer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Thermograph" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Thermograph/writer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.writer (1)" />
+        <item itemvalue="Python.writer" />
+        <item itemvalue="Python.checkSample" />
         <item itemvalue="Python.depth_plotter" />
       </list>
     </recent_temporary>
@@ -204,26 +769,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32936078" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" />
-      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -235,8 +801,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Thermograph/depth_plotter.py</url>
-          <line>61</line>
+          <line>62</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Thermograph/Ingestor.py</url>
+          <line>288</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/RPF/checkSample.py</url>
+          <line>234</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/RPF/writer.py</url>
+          <line>247</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -247,10 +828,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Thermograph/depth_plotter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        <state relative-caret-position="204">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thermograph/generic_writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thermograph/Ingestor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thermograph/checkSample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="251" column="4" selection-start-line="251" selection-start-column="4" selection-end-line="251" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/Lib/_strptime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="361" selection-start-line="361" selection-end-line="361" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/RPF/checkSample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="234" column="20" selection-start-line="234" selection-start-column="20" selection-end-line="234" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/RPF/writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="255" lean-forward="true" selection-end-line="427" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thermograph/writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="427" selection-start-line="427" selection-end-line="427" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thermograph/meta_to_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
