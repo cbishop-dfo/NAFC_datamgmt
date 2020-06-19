@@ -8,7 +8,7 @@ __author__ = 'KennedyDyl'
 
 '''
 Script to read in thermograph files(.rpf), trim them and write them back out as well as save trimmed plot.
-created by Dylan Kennedy, 2019-06-25
+created by Dylan Kennedy, 2019-06-17
 
 Script takes all files in the current directory and searches for the .rpf files.
 rpf files are read into the Deployment class and opens a trimming plot.
