@@ -1,0 +1,22 @@
+* SBE-911 Data File
+* Filename = 39185086.p2018
+** QA Applied: converted from pfile to CNV.
+** VESSEL/TRIP/SEQ STN: 39185086
+** LATITUDE:  47  0.00
+** LONGITUDE:  -48 37.00 
+** DATE: 2018-04-21 03:20:00
+** SOUNDING DEPTH: 0121
+** PROBE TYPE: S1221
+** CTD NUMBER: 051
+** COMMENTS:   FC-11
+# name 0 = scan
+# name 1 = pres
+# name 2 = temp
+# name 3 = cond
+# name 4 = sal
+# name 5 = sigt
+# name 6 = oxy
+# name 7 = flor
+# name 8 = par
+*END*
+ 2  0.023  -0.0713  2.70143  32.3982  26.0094  7.8448  12.5452  1.5860
