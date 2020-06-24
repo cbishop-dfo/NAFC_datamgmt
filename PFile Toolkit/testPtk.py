@@ -19,7 +19,10 @@ if __name__ == '__main__':
             try:
                 # Creates the cast object
                 cast = p_tk.Cast(datafile)
-                cast.QA = "** QA Applied: converted from pfile to CNV."
+
+                # Adds QA text to be written to the new CNV, just append any wanted text to cast.QA
+                cast.QA = []
+                cast.QA.append("** QA Applied: converted from pfile to CNV.")
 
                 # Records the header info
                 p_tk.read_pFile(cast, datafile)

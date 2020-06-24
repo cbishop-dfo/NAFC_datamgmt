@@ -517,7 +517,8 @@ def writeCNV(cast, df, datafile):
     writer.write("* " + cast.InstrumentName + " Data File\n" +
                  "* Filename = " + datafile + "\n")
     try:
-        writer.write(cast.QA + "\n")
+        for QA in cast.QA:
+            writer.write(QA + "\n")
     except:
         print("QA Not Applied")
 

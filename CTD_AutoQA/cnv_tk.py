@@ -240,7 +240,10 @@ def cnv_meta(cast, datafile):
 
 def getInstrumentName(cast, refFile):
 
-    dfs = pd.read_excel(refFile, sheet_name="Sheet1")
+    try:
+        dfs = pd.read_excel(refFile, sheet_name="Sheet1")
+    except:
+        dfs = pd.read_excel("../Resources/CTD Instrument Info.xlsx", sheet_name="Sheet1")
     #dfs = pd.read_csv(refFile, sep=" ", header=None)
 
 
@@ -252,7 +255,10 @@ def getInstrumentName(cast, refFile):
 
 def getShipName(cast):
 
-    Ships = open("ships.txt")
+    try:
+        Ships = open("ships.txt")
+    except:
+        Ships = open("../Resources/ships.txt")
 
     for shipName in Ships:
         number = shipName.replace("\n", "").split()[0]
