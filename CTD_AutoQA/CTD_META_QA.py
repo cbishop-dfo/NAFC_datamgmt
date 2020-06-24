@@ -14,6 +14,7 @@ def QAMeta(cast, df):
 
     cast.hasNullDF = df.isnull().values.any()
 
+    # if no null in df and meta has all variables not empty strings then file is good
     if not cast.hasNullDF and cast.goodMETA:
         print("QA Successful")
     else:

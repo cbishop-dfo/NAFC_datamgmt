@@ -5,6 +5,7 @@ import pandas as pd
 import datetime
 import xlrd
 import os
+import dir_tk
 
 class Cast(object):
 
@@ -216,7 +217,21 @@ def pfile_to_dataframe(cast, filename):
                         index = index + 1
         except Exception as e:
             print(e)
-            continue
+            dir_path = os.path.dirname(os.path.realpath(__file__))
+            dirName = dir_path
+            os.chdir(dirName)
+            dir_tk.createProblemFolder()
+            newfile = filename.__str__() + "_errorIndex"
+            f = open(newfile, "w+")
+            for h in cast.header:
+                f.writelines(h)
+            colNames = ""
+            for c in cast.ColumnNames:
+                colNames = colNames + "   " + c
+            f.write(colNames)
+            f.write("\n" + e.__str__())
+            break
+            #continue
 
     for column in Dictionary:
         try:
