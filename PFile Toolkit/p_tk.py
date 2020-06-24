@@ -516,6 +516,11 @@ def writeCNV(cast, df, datafile):
     writer = open(newfile, "w+")
     writer.write("* " + cast.InstrumentName + " Data File\n" +
                  "* Filename = " + datafile + "\n")
+    try:
+        writer.write(cast.QA + "\n")
+    except:
+        print("QA Not Applied")
+
     writer.write("** VESSEL/TRIP/SEQ STN: " + cast.id.__str__() +
             #"\n** VESSEL NAME: " + cast.ShipName.__str__() +
             #"\n** VESSEL NUMBER: " + cast.ship.__str__() +

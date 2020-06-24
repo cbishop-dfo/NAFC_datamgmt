@@ -19,6 +19,7 @@ if __name__ == '__main__':
             try:
                 # Creates the cast object
                 cast = p_tk.Cast(datafile)
+                cast.QA = "** QA Applied: converted from pfile to CNV."
 
                 # Records the header info
                 p_tk.read_pFile(cast, datafile)
