@@ -319,6 +319,7 @@ if __name__ == '__main__':
     dirName = dir_path
 
     files = dir_tk.getListOfFiles(dirName)
+    isbinned = input("Would you like the data to be binned?\nY / N\n")
     for f in files:
         # changes Dir back to original after writing to trimmed sub folder
         os.chdir(dirName)
@@ -330,7 +331,8 @@ if __name__ == '__main__':
             df = cnv_tk.cnv_to_dataframe(cast)
             #df = modifyDF(cast, df)
             #df = cnv_tk.cnv_sig_dataframe(cast)
-            df = modifyDF(cast, df)
+            if isbinned.lower().__contains__("y"):
+                df = modifyDF(cast, df)
             NCWrite(cast, df)
             #input("Hold, Press enter to load next file")
 
