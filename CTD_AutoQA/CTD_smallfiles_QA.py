@@ -2,6 +2,15 @@ import os
 import cnv_tk
 import dir_tk
 
+"""
+checks for pressure column
+checks that column has more than 15 nan values
+checks that df has at least 2 valid columns excluding scan
+
+Writes failed QA scripts to log.txt in ProblemFiles Folder 
+
+"""
+
 def QADataframe(cast, df):
     hasPressure = False
     validColumnCount = False

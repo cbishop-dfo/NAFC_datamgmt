@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+            <state relative-caret-position="-85">
+              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -92,14 +92,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Problem_Files/log.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CTD_AutoQA/39185086.cnv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="272">
               <caret line="26" column="77" lean-forward="true" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
             </state>
           </provider>
@@ -142,8 +137,8 @@
         <option value="$PROJECT_DIR$/PFile Toolkit/p_tk.py" />
         <option value="$PROJECT_DIR$/binnedNC.py" />
         <option value="$PROJECT_DIR$/cnv_tk.py" />
-        <option value="$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/39185086.cnv" />
+        <option value="$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py" />
       </list>
     </option>
   </component>
@@ -436,18 +431,26 @@
       <option name="project" value="LOCAL" />
       <updated>1593512113010</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added QA for data frame&#10;-checks for pressure column&#10;-checks that column has more than 15 nan values&#10;-checks that df has at least 2 valid columns excluding scan&#10;&#10;Writes failed QA scripts to log.txt in ProblemFiles Folder">
+      <created>1593520148704</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1593520148704</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -471,7 +474,8 @@
     <MESSAGE value="Pfile toolkit checks for index error and writes to problem folder if detected while converting to cnv." />
     <MESSAGE value="Binned writer now has option of using raw DF or Binned DF for NC files" />
     <MESSAGE value="updated mid layer in binnedWriter" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated mid layer in binnedWriter" />
+    <MESSAGE value="Added QA for data frame&#10;-checks for pressure column&#10;-checks that column has more than 15 nan values&#10;-checks that df has at least 2 valid columns excluding scan&#10;&#10;Writes failed QA scripts to log.txt in ProblemFiles Folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added QA for data frame&#10;-checks for pressure column&#10;-checks that column has more than 15 nan values&#10;-checks that df has at least 2 valid columns excluding scan&#10;&#10;Writes failed QA scripts to log.txt in ProblemFiles Folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -558,7 +562,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py</url>
-          <line>30</line>
+          <line>39</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
@@ -760,23 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem_Files/39185086.cnv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CTD_META_QA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -787,9 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Problem_Files/log.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/PFile Toolkit/39200100.cnv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -797,10 +781,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Problem_Files/39185086.cnv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem_Files/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="53" lean-forward="true" selection-start-column="53" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CTD_AutoQA/39185086.cnv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="272">
           <caret line="26" column="77" lean-forward="true" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
