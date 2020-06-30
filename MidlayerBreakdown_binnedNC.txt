@@ -1,0 +1,30 @@
+prdm - Pressure
+t090c - Temperature
+t190c - Secondary Temperature
+c0s/m - Conductivity
+c1s/m - Secondary Conductivity
+cond - Conductivity
+cstarat0 - Transmissometer attenuation [l per m]
+cstartr0 - Transmissometer transmission [%]
+depth - Depth 
+flag - Flag
+fleco-afl - Chlorophyll A Fluorescence
+flor - Fluorescence
+oxsatml/l - Oxygen Saturation
+oxy - Oxygen Saturation
+par - Irradiance
+par/sat/log - Photosynthetic Active Radiation
+ph - pH
+pres - Pressure
+sal - Salinity
+sal00 - Salinity
+sal11 - Secondary Salinity
+sbeox0ml/l - Oxygen
+sbeox0v - Oxygen Raw
+sbeox1ml/l - Secondary Oxygen
+sbeox1v - Secondary Oxygen Raw
+sigma-t00 - Density
+sigma-t11 - Secondary Density
+sigt - Density
+temp - Temperature
+wetcdom - CDOM Fluorescence

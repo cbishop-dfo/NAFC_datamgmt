@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/binnedNC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1572">
-              <caret line="231" column="123" lean-forward="true" selection-start-line="231" selection-start-column="123" selection-end-line="231" selection-end-column="123" />
+            <state relative-caret-position="2286">
+              <caret line="249" column="66" lean-forward="true" selection-start-line="249" selection-start-column="66" selection-end-line="249" selection-end-column="66" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -79,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <state relative-caret-position="-296">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -135,10 +134,10 @@
         <option value="$PROJECT_DIR$/CTD_AutoQA/CTD_META_QA.py" />
         <option value="$PROJECT_DIR$/PFile Toolkit/testPtk.py" />
         <option value="$PROJECT_DIR$/PFile Toolkit/p_tk.py" />
-        <option value="$PROJECT_DIR$/binnedNC.py" />
         <option value="$PROJECT_DIR$/cnv_tk.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/39185086.cnv" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py" />
+        <option value="$PROJECT_DIR$/binnedNC.py" />
       </list>
     </option>
   </component>
@@ -173,6 +172,11 @@
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="Main CTD Scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
               <item name="PFile Toolkit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -189,6 +193,11 @@
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="Git" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="Thermograph" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -438,19 +447,25 @@
       <option name="project" value="LOCAL" />
       <updated>1593520148704</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added QA for data frame&#10;-checks for pressure column&#10;-checks that column has more than 15 nan values&#10;-checks that df has at least 2 valid columns excluding scan&#10;&#10;Writes failed QA scripts to log.txt in ProblemFiles Folder">
+      <created>1593520191179</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1593520191179</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -720,16 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/binnedNC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1572">
-          <caret line="231" column="123" lean-forward="true" selection-start-line="231" selection-start-column="123" selection-end-line="231" selection-end-column="123" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1637858127/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-108">
@@ -804,10 +809,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        <state relative-caret-position="-296">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binnedNC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2286">
+          <caret line="249" column="66" lean-forward="true" selection-start-line="249" selection-start-column="66" selection-end-line="249" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
