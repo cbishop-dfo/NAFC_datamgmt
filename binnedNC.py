@@ -125,12 +125,6 @@ def NCWrite(cast, df):
     nc_out.time_of_cast = cast.CastDatetime
     nc_out.format_of_time = "YYYY-MM-DD HH:MM:SS"
 
-
-    # process histroy:
-    #read = conn.cursor()
-    #read.execute("SELECT Line FROM Header Where cid like '{castID}'".format(castID=cast.id))
-    #header = read.fetchall()
-    # TODO: Filter history out of header if necessary.
     history = []
     # Here we are adding all header info into the history
     for h in cast.header:
@@ -154,109 +148,120 @@ def NCWrite(cast, df):
     latitudes = nc_out.createVariable('latitude', np.float32, ('time'), zlib=True)
     longitudes = nc_out.createVariable('longitude', np.float32, ('time'), zlib=True)
     sounder_depths = nc_out.createVariable('sounder_depth', np.float32, ('time'), zlib=True)
-    metdata = nc_out.createVariable('metdata', 'c', ('time'), zlib=True)
-
-
 
     Dictionary = {}
     for c in cast.ColumnNames:
         name = c.replace("/", "+")
-        Dictionary[c] = [nc_out.createVariable(name, np.float32, ('level'), zlib=True, fill_value=-9999)]
-        #cast.ColumnNames.append(c)
+        if c.lower().__eq__('prdm'):
+            Dictionary['Pressure'] = [nc_out.createVariable('Pressure', np.float32, ('level'), zlib=True, fill_value=-9999), name]
 
-    # Create 2D variables
-    """
-    temp = nc_out.createVariable('temperature', np.float32, ('level'), zlib=True, fill_value=-9999)
-    sal = nc_out.createVariable('salinity', np.float32, ('level'), zlib=True, fill_value=-9999)
-    cond = nc_out.createVariable('conductivity', np.float32, ('level'), zlib=True, fill_value=-9999)
-    sigt = nc_out.createVariable('sigma-t', np.float32, ('level'), zlib=True, fill_value=-9999)
-    o2 = nc_out.createVariable('oxygen', np.float32, ('level'), zlib=True, fill_value=-9999)
-    fluo = nc_out.createVariable('fluorescence', np.float32, ('level'), zlib=True, fill_value=-9999)
-    par = nc_out.createVariable('irradiance', np.float32, ('level'), zlib=True, fill_value=-9999)
-    ph = nc_out.createVariable('ph', np.float32, ('level'), zlib=True, fill_value=-9999)
-    """
-    """
-    # Variable Attributes
-    read = conn.cursor()
-    read.execute("SELECT * FROM Meteor Where cid like '{castID}'".format(castID=cast.id))
-    meteor = read.fetchall()
-    met = []
-    for m in meteor:
-        for n in m:
-            met.append(n)
-    metdata.cloud = met[2]
-    metdata.wind_direction = met[3]
-    metdata.wind_speed_kts = met[4]
-    metdata.WW_code = met[5]
-    metdata.BarometricPressure_mb = met[6]
-    metdata.Wet_air_temp = met[7]
-    metdata.Dry_air_temp = met[8]
-    metdata.Wave_period = met[9]
-    metdata.Wave_height = met[10]
-    metdata.Swell_direction = met[11]
-    metdata.Swell_height = met[12]
-    metdata.Ice_conc = met[13]
-    metdata.Ice_stage = met[14]
-    metdata.Icebergs = met[15]
-    """
+        elif c.lower().__eq__('t090c'):
+            Dictionary['Temperature'] = [nc_out.createVariable('Temperature', np.float32, ('level'), zlib=True, fill_value=-9999), name]
 
-    """
-    latitudes.units = 'degree_north'
-    longitudes.units = 'degree_east'
-    times.units = 'hours since 1900-01-01 00:00:00'
-    times.calendar = 'gregorian'
-    levels.units = 'dbar'
-    levels.standard_name = "pressure"
-    levels.valid_min = 0
-    temp.units = 'Celsius'
-    temp.long_name = "Water Temperature"  # (may be use to label plots)
-    temp.standard_name = "sea_water_temperature"
-    sal.long_name = "Practical Salinity"
-    sal.standard_name = "sea_water_salinity"
-    sal.units = "1"
-    sal.valid_min = 0
-    sigt.standard_name = "sigma_t"
-    sigt.long_name = "Sigma-t"
-    sigt.units = "Kg m-3"
-    o2.long_name = "Dissolved Oxygen Concentration";
-    o2.standard_name = "oxygen_concentration";
-    o2.units = "ml L-1";
-    cond.long_name = "Water Conductivity";
-    cond.standard_name = "sea_water_conductivity";
-    cond.units = "S m-1";
-    fluo.long_name = "Chl-a Fluorescence";
-    fluo.standard_name = "concentration_of_chlorophyll_in_sea_water";
-    fluo.units = "mg m-3";
-    par.long_name = "Irradiance";
-    par.standard_name = "irradiance";
-    par.units = "umol photons m-2 s-1";
-    ph.long_name = "water PH";
-    ph.standard_name = "PH";
-    ph.units = "unitless";
-    # fill structure
-    # TODO: Check SBE Column names and extra P file columns
-    """
+        elif c.lower().__eq__('t190c'):
+            Dictionary['Secondary Temperature'] = [nc_out.createVariable('Secondary Temperature', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('c0s/m'):
+           Dictionary['Conductivity'] = [nc_out.createVariable('Conductivity', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('c1s/m'):
+           Dictionary['Secondary Conductivity'] = [nc_out.createVariable('Secondary Conductivity', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('cond'):
+            Dictionary['Conductivity'] = [nc_out.createVariable('Conductivity', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('cstarat0'):
+           Dictionary['Transmissometer attenuation [l per m]'] = [nc_out.createVariable('Transmissometer attenuation [l per m]', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('cstartr0'):
+           Dictionary['Transmissometer transmission [%]'] = [nc_out.createVariable('Transmissometer transmission [%]', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('depth'):
+            Dictionary['Depth'] = [nc_out.createVariable('Depth', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('flag'):
+            Dictionary['Flag'] = [nc_out.createVariable('Flag', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('fleco-afl'):
+            Dictionary['Chlorophyll A Fluorescence'] = [nc_out.createVariable('Chlorophyll A Fluorescence', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('flor'):
+            Dictionary['Fluorescence'] = [nc_out.createVariable('Fluorescence', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('oxsatml/l'):
+            Dictionary['Oxygen Saturation'] = [nc_out.createVariable('Oxygen Saturation', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('oxy'):
+            Dictionary['Oxygen Saturation'] = [nc_out.createVariable('Oxygen Saturation', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('par'):
+            Dictionary['Irradiance'] = [nc_out.createVariable('Irradiance', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('par/sat/log'):
+          Dictionary['Photosynthetic Active Radiation'] = [nc_out.createVariable('Photosynthetic Active Radiation', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('ph'):
+            Dictionary['pH'] = [nc_out.createVariable('pH', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('pres'):
+            Dictionary['Pressure'] = [nc_out.createVariable('Pressure', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sal'):
+            Dictionary['Salinity'] = [nc_out.createVariable('Salinity', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sal00'):
+           Dictionary['Salinity'] = [nc_out.createVariable('Salinity', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sal11'):
+           Dictionary['Secondary Salinity'] = [nc_out.createVariable('Secondary Salinity', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sbeox0ml/l'):
+           Dictionary['Oxygen'] = [nc_out.createVariable('Oxygen', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sbeox0v'):
+           Dictionary['Oxygen Raw'] = [nc_out.createVariable('Oxygen Raw', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sbeox1ml/l'):
+           Dictionary['Secondary Oxygen'] = [nc_out.createVariable('Secondary Oxygen', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sbeox1v'):
+           Dictionary['Secondary Oxygen Raw'] = [nc_out.createVariable('Secondary Oxygen Raw', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('scan'):
+            continue
+            #Dictionary['Scan'] = [nc_out.createVariable('Scan', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sigma-t00'):
+           Dictionary['Density'] = [nc_out.createVariable('Density', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sigma-t11'):
+           Dictionary['Secondary Density'] = [nc_out.createVariable('Secondary Density', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sigt'):
+            Dictionary['Density'] = [nc_out.createVariable('Density', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('temp'):
+            Dictionary['Temperature'] = [nc_out.createVariable('Temperature', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('wetcdom'):
+           Dictionary['CDOM Fluorescence'] = [nc_out.createVariable('CDOM Fluorescence', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        else:
+            Dictionary[c] = [nc_out.createVariable(name, np.float32, ('level'), zlib=True, fill_value=-9999),
+                                      name]
+            print("UNKNOWN VARIABLE: " + c.__str__())
+            input("HALT...Press Enter To Continue")
+
     times.units = 'hours since 1900-01-01 00:00:00'
     times.calendar = 'gregorian'
 
     #temp[:] = df["temp"].values
     for d in Dictionary:
-        name = d.replace("+", "/")
-        x = df[name].values
-        v =Dictionary[d][0]
-        v[:] = df[name].values
-        Dictionary[d][0][:] = df[name].values
-        #d[:] = df[d].values
-    """
-    sal[:] = df["sal"].values
-    cond[:] = df["cond"].values
-    sigt[:] = df["sigt"].values
-    o2[:] = df["oxy"].values
-    fluo[:] = df["flor"].values
-    par[:] = df["par"].values
-    ph[:] = df["pH"].values
-    """
-
+        index = Dictionary[d][1]
+        index = index.replace("+", "/")
+        v = Dictionary[d][0]
+        v[:] = df[index].values
+        Dictionary[d][0][:] = df[index].values
 
     # Fill cast info
     latitudes[:] = cast.Latitude
@@ -266,7 +271,8 @@ def NCWrite(cast, df):
     try:
         date = datetime.datetime.strptime(cast.CastDatetime, '%Y-%m-%d %H:%M:%S')
     except:
-        date = datetime.datetime.strptime(cast.CastDatetime, '%Y-%m-%d %H:%M')
+        cast.CastDatetime = cast.CastDatetime + ":00"
+        date = datetime.datetime.strptime(cast.CastDatetime, '%Y-%m-%d %H:%M:%S')
     times[:] = nc.date2num(date, units=times.units, calendar=times.calendar)
 
     # Typically the pressure/depth index
@@ -285,31 +291,6 @@ def NCWrite(cast, df):
             break
     Pbin = np.array(df[cast.ColumnNames[pressureIndex]], dtype='float64')
     levels[:] = Pbin
-
-    #TODO: finish implementing binning here
-
-
-
-
-
-    """
-    ####### ######## ###########
-
-    Tlist = []
-    P = np.array(df[cast.ColumnNames[pressureIndex]], dtype='float64')
-
-    Ibtm = np.argmax(P)
-    digitized = np.digitize(P[0:Ibtm], Pbin)  # <- this is awesome!
-
-    X = np.array(df['t090C'])
-    Tlist.append([X[0:Ibtm][digitized == i].mean() for i in range(0, len(Pbin))])
-    print("digitized")
-
-
-    ####### ######## ###########
-    """
-
-
     nc_out.close()
 
 
