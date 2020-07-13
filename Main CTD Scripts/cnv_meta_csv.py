@@ -16,18 +16,18 @@ def writeMetaToCNV(cast, df):
     for f in files:
         if f == 'CNV_META.csv':
             fileExists = True
-
+    row = [datafile, cast.ship, cast.trip, cast.station, cast.Latitude, cast.Longitude, cast.CastDatetime, cast.Instrument, cast.comment]
     if fileExists:
         with open('CNV_META.csv', 'a', newline='') as csvfile:
             writer = csv.writer(csvfile, delimiter=',')
-            writer.writerow([datafile, cast.Latitude,cast.Longitude, cast.CastDatetime, cast.Instrument, cast.comment])
+            writer.writerow([datafile, cast.ship, cast.trip, cast.station, cast.Latitude, cast.Longitude, cast.CastDatetime, cast.Instrument, cast.comment])
             print(datafile)
 
     elif not fileExists:
         with open('CNV_META.csv', 'w+', newline='') as csvfile:
             writer = csv.writer(csvfile, delimiter=',')
-            writer.writerow(["Filename", "Latitude", "Longitude", "Time", "SerialNumber", "Comments"])
-            writer.writerow([datafile, cast.Latitude, cast.Longitude, cast.CastDatetime, cast.Instrument, cast.comment])
+            writer.writerow(["Filename", "Ship", "Trip", "Station", "Latitude", "Longitude", "Time", "SerialNumber", "Comments"])
+            writer.writerow(row)
             files.append('CNV_META.csv')
 
 
