@@ -18,8 +18,11 @@ def QAMeta(cast, df):
     if not cast.hasNullDF and cast.goodMETA:
         print("QA Successful")
     else:
-        print("QA Failed \nDF: " + cast.goodDF.__str__() + " META: " + cast.goodMETA.__str__())
         dir_tk.createProblemFolder()
+        f = open("metalog.txt", 'a+')
+        line = "QA Failed \nDF: " + cast.goodDF.__str__() + " META: " + cast.goodMETA.__str__()
+        f.write(line)
+        print("QA Failed \nDF: " + cast.goodDF.__str__() + " META: " + cast.goodMETA.__str__())
         cnv_tk.cnv_write(cast, df, ext=".error")
 
 if __name__ == '__main__':
