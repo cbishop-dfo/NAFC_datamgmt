@@ -32,7 +32,7 @@ def QADataframe(cast, df):
         elif c.lower() == "pressure":
             hasPressure = True
 
-    if number_of_columns > 2:
+    if number_of_columns >= 2:
         validColumnCount = True
 
     # Checking data frame for null values
