@@ -182,7 +182,7 @@ def cnv_meta(cast, datafile):
                 l = line.split()
                 cast.CastDatetime = l[2] + " " + l[3]
 
-            elif line.upper().__contains__("LATITUDE") or line.upper().__contains__("LAT"):
+            elif line.upper() == "LATITUDE" or line.upper() == "LAT":
                 line = line.lower().replace("n", "")
                 lat = line.split(":")[1].lstrip().rstrip()
                 if lat.__len__() >= 5 and not lat.__contains__(" "):
@@ -190,7 +190,7 @@ def cnv_meta(cast, datafile):
                     y = lat[2:4] + "." + lat[4:]
                     lat = x + " " + y
                 cast.Latitude = convertLatLong(lat.split())
-            elif line.upper().__contains__("LONGITUDE") or line.upper().__contains__("LON"):
+            elif line.upper() == "LONGITUDE" or line.upper() == "LON":
                 isNeg = False
                 if line.__contains__("-"):
                     isNeg = True
@@ -203,24 +203,24 @@ def cnv_meta(cast, datafile):
                 if not isNeg:
                     lon = "-" + lon
                 cast.Longitude = convertLatLong(lon.split())
-            elif line.upper().__contains__("SOUNDING"):
+            elif line.upper() == "SOUNDING":
                 cast.SounderDepth = line.split(":")[1]
-            elif line.upper().__contains__("COMMENTS"):
+            elif line.upper() == "COMMENTS":
                 cast.comment = line.split(":")[1]
-            elif line.upper().__contains__("PROBE"):
+            elif line.upper() == "PROBE":
                 cast.Instrument = line.split(":")[1]
-            elif line.upper().__contains__("YEAR"):
+            elif line.upper() == "YEAR":
                 year = line.split(":")[1].rstrip().lstrip()
-            elif line.upper().__contains__("MONTH"):
+            elif line.upper() == "MONTH":
                 month = line.split(":")[1].rstrip().lstrip()
-            elif line.upper().__contains__("DAY"):
+            elif line.upper() == "DAY":
                 day = line.split(":")[1].rstrip().lstrip()
-            elif line.upper().__contains__("HOURS/MIN"):
+            elif line.upper() == "HOURS/MIN":
                 time = line.split(":")[1].rstrip().lstrip()
                 time = time[0:2] + ":" + time[2:4]
                 casttime = year + "-" + month + "-" + day + " " + time
                 cast.CastDatetime = casttime
-            elif line.upper().__contains__("FORMAT"):
+            elif line.upper() == "FORMAT":
                 cast.castType = line.split(":")[1]
 
         elif line.startswith("* "):
