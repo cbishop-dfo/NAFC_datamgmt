@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Main CTD Scripts/cnv_to_df.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main CTD Scripts/CTD_Map.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main CTD Scripts/Met_GUI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main CTD Scripts/Universal_CTD_Database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main CTD Scripts/Universal_CTD_Reader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main CTD Scripts/Universal_CTD_Writer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main CTD Scripts/cnvDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main CTD Scripts/cnvDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CTD_AutoQA/39185086.cnv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CTD_AutoQA/cnv_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTD_AutoQA/cnv_tk.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +50,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PFile Toolkit/Universal_CTD_Reader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            <state relative-caret-position="66">
+              <caret line="768" column="4" selection-start-line="768" selection-start-column="4" selection-end-line="768" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CTD_META_QA.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -65,18 +72,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Thermograph/createDB.py">
+        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/cnv_tk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="202">
+              <caret line="179" column="47" lean-forward="true" selection-start-line="179" selection-start-column="47" selection-end-line="179" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/03378004.cnv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main CTD Scripts/1179001.cnv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cnv_tk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1653">
+            <state relative-caret-position="540">
               <caret line="533" column="55" lean-forward="true" selection-start-line="533" selection-start-column="55" selection-end-line="533" selection-end-column="55" />
             </state>
           </provider>
@@ -115,7 +140,6 @@
         <option value="$PROJECT_DIR$/Thermograph/DataFiles/Headlands/Winterton/RawData/RPF/writer.py" />
         <option value="$PROJECT_DIR$/Thermograph/writer.py" />
         <option value="$USER_HOME$/OneDrive/Desktop/test/testPtk.py" />
-        <option value="$PROJECT_DIR$/CTD_AutoQA/cnv_tk.py" />
         <option value="$PROJECT_DIR$/CNV Toolkit/cnv_tk.py" />
         <option value="$PROJECT_DIR$/PFile Toolkit/testPtk.py" />
         <option value="$PROJECT_DIR$/PFile Toolkit/p_tk.py" />
@@ -128,6 +152,7 @@
         <option value="$PROJECT_DIR$/Main CTD Scripts/cnvDB.py" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/Universal_CTD_Writer.py" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/cnv_to_df.py" />
+        <option value="$PROJECT_DIR$/CTD_AutoQA/cnv_tk.py" />
       </list>
     </option>
   </component>
@@ -227,8 +252,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cnv_to_df">
-    <configuration name="CTD_smallfiles_QA" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.CTD_META_QA">
+    <configuration name="CTD_META_QA" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -240,7 +265,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CTD_AutoQA/CTD_META_QA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -291,7 +316,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cnv_meta_csv" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="cnv_tk" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -299,11 +324,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main CTD Scripts" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CTD_AutoQA" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main CTD Scripts/cnv_meta_csv.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CTD_AutoQA/cnv_tk.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -335,11 +360,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CTD_META_QA" />
+        <item itemvalue="Python.cnv_tk" />
         <item itemvalue="Python.cnv_to_df" />
         <item itemvalue="Python.cnvDB" />
         <item itemvalue="Python.binnedNC" />
-        <item itemvalue="Python.cnv_meta_csv" />
-        <item itemvalue="Python.CTD_smallfiles_QA" />
       </list>
     </recent_temporary>
   </component>
@@ -494,7 +519,21 @@
       <option name="project" value="LOCAL" />
       <updated>1594928549534</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="db changes and prototype reader">
+      <created>1595346891956</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1595346891956</updated>
+    </task>
+    <task id="LOCAL-00022" summary="db changes and prototype reader">
+      <created>1595346936108</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1595346936108</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -506,8 +545,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -535,7 +574,8 @@
     <MESSAGE value="added script to write cnv meta to cnv" />
     <MESSAGE value="fixed meta log file" />
     <MESSAGE value="changed &lt; to &lt;=" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed &lt; to &lt;=" />
+    <MESSAGE value="db changes and prototype reader" />
+    <option name="LAST_COMMIT_MESSAGE" value="db changes and prototype reader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -645,6 +685,11 @@
           <line>593</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CTD_AutoQA/cnv_tk.py</url>
+          <line>278</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -654,9 +699,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Thermograph/DataFiles/README.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Thermograph/depth_plotter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -727,13 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="172" selection-start-line="172" selection-end-line="172" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/cnv_tk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="653" column="24" lean-forward="true" selection-start-line="653" selection-start-column="24" selection-end-line="653" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -892,16 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CTD_META_QA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/ships.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-615" />
@@ -945,16 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/cnv_meta_csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1002,16 +1017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PFile Toolkit/Universal_CTD_Reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main CTD Scripts/cnv_to_df.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1022,10 +1027,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PFile Toolkit/Universal_CTD_Reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="768" column="4" selection-start-line="768" selection-start-column="4" selection-end-line="768" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/cnv_meta_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/1179001.cnv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cnv_tk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1653">
+        <state relative-caret-position="540">
           <caret line="533" column="55" lean-forward="true" selection-start-line="533" selection-start-column="55" selection-end-line="533" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/03378004.cnv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/cnv_tk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="179" column="47" lean-forward="true" selection-start-line="179" selection-start-column="47" selection-end-line="179" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CTD_META_QA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

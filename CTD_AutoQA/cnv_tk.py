@@ -182,7 +182,7 @@ def cnv_meta(cast, datafile):
                 l = line.split()
                 cast.CastDatetime = l[2] + " " + l[3]
 
-            elif line.upper().__contains__("LATITUDE") or line.upper().__contains__("LAT"):
+            elif line.upper().__contains__("LATITUDE") or line.upper() == "LAT":
                 line = line.lower().replace("n", "")
                 lat = line.split(":")[1].lstrip().rstrip()
                 if lat.__len__() >= 5 and not lat.__contains__(" "):
@@ -190,7 +190,7 @@ def cnv_meta(cast, datafile):
                     y = lat[2:4] + "." + lat[4:]
                     lat = x + " " + y
                 cast.Latitude = convertLatLong(lat.split())
-            elif line.upper().__contains__("LONGITUDE") or line.upper().__contains__("LON"):
+            elif line.upper().__contains__("LONGITUDE") or line.upper() == "LON":
                 isNeg = False
                 if line.__contains__("-"):
                     isNeg = True
