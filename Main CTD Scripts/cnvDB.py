@@ -35,7 +35,7 @@ ie: ALTER TABLE SBE_Data ADD Sal_11 Text;
 def main():
     def setDirectory():
         # default path for DB.
-        database = 'CTD.db'
+        database = 'CNV.db'
 
         print("Would you like to change database location?")
         print(" Current path: " + database + "\n y/n")
@@ -67,20 +67,13 @@ def main():
                                 SounderDepth text,
                                 Instrument text,
                                 InstrumentName text,
-                                FishSet text,
-                                CastType text,
                                 Comment text,
                                 NumScans text,
                                 SamplingRate text,
-                                FileType text,
                                 ChannelCount text,
                                 DataChannels text,
-                                Downcast text,
-                                Subsample text,
                                 MinDepth text,
                                 MaxDepth text,
-                                FishingStrata text,
-                                Met text,
                                 CastDatetime text,
                                 File text,
                                 Language text,
@@ -97,66 +90,32 @@ def main():
     create_data_table = """CREATE TABLE IF NOT EXISTS Data(
                                did INTEGER NOT NULL,
                                cid INTEGER NOT NULL,
-                               Pressure
-                               Depth 
-                               Temperature
-                               Secondary Temperature
-                               Conductivity
-                               Secondary Conductivity
-                               Transmissometer attenuation
-                               Transmissometer transmission
-                               Flag
-                               Chlorophyll A Fluorescence
-                               Fluorescence
-                               Oxygen Saturation
-                               Irradiance
-                               Photosynthetic Active Radiation
-                               pH
-                               Salinity
-                               Secondary Salinity
-                               Oxygen
-                               Oxygen Raw
-                               Secondary Oxygen
-                               Secondary Oxygen Raw
-                               Density
-                               Secondary Density
-                               CDOM Fluorescence
+                               Pressure float,
+                               Depth  float,
+                               Temperature float,
+                               SecondaryTemperature float,
+                               Conductivity float,
+                               SecondaryConductivity float,
+                               TransmissometerAttenuation float,
+                               TransmissometerTransmission float,
+                               Flag float,
+                               ChlorophyllAFluorescence float,
+                               Fluorescence float,
+                               OxygenSaturation float,
+                               Irradiance float,
+                               PhotosyntheticActiveRadiation float,
+                               pH float,
+                               Salinity float,
+                               SecondarySalinity float,
+                               Oxygen float,
+                               OxygenRaw float,
+                               SecondaryOxygen float,
+                               SecondaryOxygenRaw float,
+                               Density float,
+                               SecondaryDensity float,
+                               CDOMFluorescence float,
                                PRIMARY KEY (did),                                                                    
                                FOREIGN KEY (cid) REFERENCES Casts(id));"""
-
-    create_sbe_data_table = """CREATE TABLE IF NOT EXISTS SBE_Data(
-                              sid INTEGER NOT NULL,
-                              cid INTEGER NOT NULL,
-                              Scan real,
-                              PrdM	 real,
-                              T090C real,
-                              T190C real,
-                              C0S_m real,
-                              C1S_m real,
-                              Sbeox0V real,
-                              Ph	 real,
-                              Ph2 real,
-                              Sbeox1V real,
-                              Par	 real,
-                              Par_sat_log real,
-                              Par_log real,
-                              flSP real,
-                              FlSPuv0 real,
-                              Upoly0 real,
-                              Sbeox0ML_L	 real,
-                              Sbeox1ML_L real,
-                              Sal00 real,
-                              Sal11 real,
-                              Sigma_t00 real,
-                              Sigma_t11 real,
-                              OxsatML_L real,
-                              FlECO_AFL real,
-                              Tv290C real,
-                              WetCDOM real,
-                              CStarAt0 real,
-                              CStarTr0 real,
-                              PRIMARY KEY (sid),                                                                    
-                              FOREIGN KEY (cid) REFERENCES Casts(id));"""
 
     # Table to keep record of all Header Data
     create_header_table = """CREATE TABLE Header(
@@ -182,27 +141,6 @@ def main():
                             FOREIGN KEY (cid) REFERENCES Casts(id)
                             );"""
 
-    # Table to keep record of all Header Data
-    create_Meteor_table = """CREATE TABLE Meteor(
-                            Mkey INTEGER PRIMARY KEY,
-                            cid INTEGER,
-                            Cloud text,
-                            WinDir text,
-                            WinSPD text,
-                            wwCode text,
-                            BarPres text,
-                            TempWet text,
-                            TempDry text,
-                            WavPeroid text,
-                            WavHeight text,
-                            SwellDir text,
-                            SwellPeroid text,
-                            SwellHeight text,
-                            IceConc text,
-                            IceStage text,
-                            IceBerg text,
-                            FOREIGN KEY (cid) REFERENCES Casts(id)
-                            );"""
 
     # Table to keep record of any changes to the data
     create_log_table = """CREATE TABLE CastLog(
@@ -227,34 +165,20 @@ def main():
                                 Instrument_new text,
                                 InstrumentName_old text,
                                 InstrumentName_new text,
-                                FishSet_old text,
-                                FishSet_new text,
-                                CastType_old text,
-                                CastType_new text,
                                 Comment_old text,
                                 Comment_new text,
                                 NumScans_old text,
                                 NumScans_new text,
                                 SamplingRate_old text,
                                 SamplingRate_new text,
-                                FileType_old text,
-                                FileType_new text,
                                 ChannelCount_old text,
                                 ChannelCount_new text,
                                 DataChannels_old text,
                                 DataChannels_new text,
-                                Downcast_old text,
-                                Downcast_new text,
-                                Subsample_old text,
-                                Subsample_new text,
                                 MinDepth_old text,
                                 MinDepth_new text,
                                 MaxDepth_old text,
                                 MaxDepth_new text,
-                                FishingStrata_old text,
-                                FishingStrata_new text,
-                                Met_old text,
-                                Met_new text,
                                 CastDatetime_old text,
                                 CastDatetime_new text,
                                 File_old text,
@@ -301,34 +225,20 @@ def main():
                                 Instrument_new,
                                 InstrumentName_old,
                                 InstrumentName_new,
-                                FishSet_old,
-                                FishSet_new,
-                                CastType_old,
-                                CastType_new,
                                 Comment_old,
                                 Comment_new,
                                 NumScans_old,
                                 NumScans_new,
                                 SamplingRate_old,
                                 SamplingRate_new,
-                                FileType_old,
-                                FileType_new,
                                 ChannelCount_old,
                                 ChannelCount_new,
                                 DataChannels_old,
                                 DataChannels_new,
-                                Downcast_old,
-                                Downcast_new,
-                                Subsample_old,
-                                Subsample_new,
                                 MinDepth_old,
                                 MinDepth_new,
                                 MaxDepth_old,
                                 MaxDepth_new,
-                                FishingStrata_old,
-                                FishingStrata_new,
-                                Met_old,
-                                Met_new,
                                 CastDatetime_old,
                                 CastDatetime_new,
                                 File_old,
@@ -369,34 +279,20 @@ def main():
                                     new.Instrument,
                                     old.InstrumentName,
                                     new.InstrumentName,
-                                    old.FishSet,
-                                    new.FishSet,
-                                    old.CastType,
-                                    new.CastType,
                                     old.Comment,
                                     new.Comment,
                                     old.NumScans,
                                     new.NumScans,
                                     old.SamplingRate,
                                     new.SamplingRate,
-                                    old.FileType,
-                                    new.FileType,
                                     old.ChannelCount,
                                     new.ChannelCount,
                                     old.DataChannels,
                                     new.DataChannels,
-                                    old.Downcast,
-                                    new.Downcast,
-                                    old.Subsample,
-                                    new.Subsample,
                                     old.MinDepth,
                                     new.MinDepth,
                                     old.MaxDepth,
                                     new.MaxDepth,
-                                    old.FishingStrata,
-                                    new.FishingStrata,
-                                    old.Met,
-                                    new.Met,
                                     old.CastDatetime,
                                     new.CastDatetime,
                                     old.File,
@@ -432,20 +328,13 @@ def main():
                                     SounderDepth_new,
                                     Instrument_new,
                                     InstrumentName_new,
-                                    FishSet_new,
-                                    CastType_new,
                                     Comment_new,
                                     NumScans_new,
                                     SamplingRate_new,
-                                    FileType_new,
                                     ChannelCount_new,
                                     DataChannels_new,
-                                    Downcast_new,
-                                    Subsample_new,
                                     MinDepth_new,
                                     MaxDepth_new,
-                                    FishingStrata_new,
-                                    Met_new,
                                     CastDatetime_new,
                                     File_new,
                                     Language_new,
@@ -469,20 +358,13 @@ def main():
                                     new.SounderDepth,
                                     new.Instrument,
                                     new.InstrumentName,
-                                    new.FishSet,
-                                    new.CastType,
                                     new.Comment,
                                     new.NumScans,
                                     new.SamplingRate,
-                                    new.FileType,
                                     new.ChannelCount,
                                     new.DataChannels,
-                                    new.Downcast,
-                                    new.Subsample,
                                     new.MinDepth,
                                     new.MaxDepth,
-                                    new.FishingStrata,
-                                    new.Met,
                                     new.CastDatetime,
                                     new.File,
                                     new.Language,
@@ -511,20 +393,13 @@ def main():
                                     SounderDepth_old,
                                     Instrument_old,
                                     InstrumentName_old,
-                                    FishSet_old,
-                                    CastType_old,
                                     Comment_old,
                                     NumScans_old,
                                     SamplingRate_old,
-                                    FileType_old,
                                     ChannelCount_old,
                                     DataChannels_old,
-                                    Downcast_old,
-                                    Subsample_old,
                                     MinDepth_old,
                                     MaxDepth_old,
-                                    FishingStrata_old,
-                                    Met_old,
                                     CastDatetime_old,
                                     File_old,
                                     Language_old,
@@ -547,20 +422,13 @@ def main():
                                     old.SounderDepth,
                                     old.Instrument,
                                     old.InstrumentName,
-                                    old.FishSet,
-                                    old.CastType,
                                     old.Comment,
                                     old.NumScans,
                                     old.SamplingRate,
-                                    old.FileType,
                                     old.ChannelCount,
                                     old.DataChannels,
-                                    old.Downcast,
-                                    old.Subsample,
                                     old.MinDepth,
                                     old.MaxDepth,
-                                    old.FishingStrata,
-                                    old.Met,
                                     old.CastDatetime,
                                     old.File,
                                     old.Language,
@@ -576,12 +444,10 @@ def main():
 
     if conn is not None:
         c.execute(create_cast_table)
-        c.execute(create_sbe_data_table)
         c.execute(create_data_table)
         c.execute(create_header_table)
         c.execute(create_software_table)
         c.execute(create_instrumentinfo_table)
-        c.execute(create_Meteor_table)
         c.execute(create_log_table)
         c.execute(create_trigger_update)
         c.execute(create_trigger_insert)
