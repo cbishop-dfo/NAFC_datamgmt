@@ -1,8 +1,8 @@
 import os
 import tkinter as tk
 from tkinter import filedialog
-import cnv_tk
-import dir_tk
+from Toolkits import cnv_tk
+from Toolkits import dir_tk
 
 """
 Test script 

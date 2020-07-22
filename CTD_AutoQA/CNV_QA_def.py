@@ -4,7 +4,7 @@ Created on Thu May 21 21:10:38 2020
 
 @author: BISHOPC
 """
-import cnv_tk
+from Toolkits import cnv_tk
 import numpy as np
 import pandas as pd
 
