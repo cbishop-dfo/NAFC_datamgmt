@@ -1123,30 +1123,36 @@ if __name__ == '__main__':
 
     files = getListOfFiles(dirName)
     for f in files:
-        datafile = f
-        if datafile.lower().endswith(".dat"):
-            read_hugrun(datafile)
+        try:
 
-        elif datafile.lower().endswith(".pro"):
-            read_pro(datafile)
+            datafile = f
+            if datafile.lower().endswith(".dat"):
+                read_hugrun(datafile)
 
-        elif datafile.lower().endswith(".pipe"):
-            read_pipe(datafile)
+            elif datafile.lower().endswith(".pro"):
+                read_pro(datafile)
 
-        elif datafile.lower().endswith(".csv"):
-            read_mini_two(datafile)
+            elif datafile.lower().endswith(".pipe"):
+                read_pipe(datafile)
 
-        elif datafile.lower().endswith(".rpf"):
-            read_rpf(datafile)
+            elif datafile.lower().endswith(".csv"):
+                read_mini_two(datafile)
 
-        elif datafile.lower().endswith(".json"):
-            read_json(datafile)
+            elif datafile.lower().endswith(".rpf"):
+                read_rpf(datafile)
 
-        elif datafile.lower().__contains__("asc"):
-            read_mini_one(datafile)
+            elif datafile.lower().endswith(".json"):
+                read_json(datafile)
 
-        else:
-            print("File Not Supported...")
+            elif datafile.lower().__contains__("asc"):
+                read_mini_one(datafile)
+
+            else:
+                print("File Not Supported...")
+        except Exception as e:
+            print(e)
+            err = input("Error Reading File: " + datafile)
+            continue
 
     print("******************************")
     x = input("Press Enter To End: ")

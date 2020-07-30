@@ -1,5 +1,9 @@
 import sqlite3
 from sqlite3 import Error
+
+"""
+Toolkit containing methods useful for Database operations
+"""
 ###########################################################################################################
 def setDirectory(database='CTD.db'):
 

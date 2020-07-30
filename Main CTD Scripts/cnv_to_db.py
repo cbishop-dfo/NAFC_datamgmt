@@ -11,7 +11,6 @@ from Toolkits import cnv_tk
 from Toolkits import dir_tk
 from Toolkits import db_tk
 
-
 __author__ = 'KennedyDyl'
 
 ###########################################################################################################
@@ -178,8 +177,7 @@ if __name__ == '__main__':
                 df = cnv_tk.cnv_to_dataframe(cast)
                 cast.DataLimit = len(df.index)
 
-                # TODO: Take user input as option
-                cast.directory = 'CNV.db'
+                cast.directory = db_tk.setDirectory()
 
                 database(cast, df)
             except Exception as e:
