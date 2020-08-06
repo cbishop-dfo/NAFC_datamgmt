@@ -162,7 +162,8 @@ def pfile_to_dataframe(cast, filename):
                 line = re.sub('\n', '', line)
                 line = line.strip()
                 line = re.sub(' +', ' ', line)
-                cast.data.append(line.split(' '))
+                if not line == "":
+                    cast.data.append(line.split(' '))
 
     # Read columns & remove last line of header
     cast.columns = cast.header[-1]
@@ -236,7 +237,8 @@ def pfile_to_dataframe(cast, filename):
     for column in Dictionary:
         try:
             df[column] = Dictionary[column]
-        except:
+        except Exception as e:
+            print(e.__str__())
             df[column] = np.nan
     return df
 
