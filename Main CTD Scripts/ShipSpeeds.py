@@ -1,7 +1,6 @@
 import os
 from Toolkits import cnv_tk
 from Toolkits import dir_tk
-import numpy as np
 import pandas as pd
 from Toolkits import db_tk
 
