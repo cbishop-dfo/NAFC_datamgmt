@@ -182,27 +182,33 @@ def cnv_meta(cast, datafile):
                 l = line.split()
                 cast.CastDatetime = l[2] + " " + l[3]
 
-            elif line.upper() == "LATITUDE" or line.upper() == "LAT":
-                line = line.lower().replace("n", "")
-                lat = line.split(":")[1].lstrip().rstrip()
-                if lat.__len__() >= 5 and not lat.__contains__(" "):
-                    x = lat[0:2]
-                    y = lat[2:4] + "." + lat[4:]
-                    lat = x + " " + y
-                cast.Latitude = convertLatLong(lat.split())
-            elif line.upper() == "LONGITUDE" or line.upper() == "LON":
-                isNeg = False
-                if line.__contains__("-"):
-                    isNeg = True
-                line = line.lower().replace("w", "")
-                lon = line.split(":")[1].lstrip().rstrip()
-                if lon.__len__() >= 5 and not lon.__contains__(" "):
-                    x = lon[0:2]
-                    y = lon[2:4] + "." + lon[4:]
-                    lon = x + " " + y
-                if not isNeg:
-                    lon = "-" + lon
-                cast.Longitude = convertLatLong(lon.split())
+            elif line.upper().__contains__("LATITUDE") or line.upper().__contains__("LAT"):
+                try:
+                    line = line.lower().replace("n", "")
+                    lat = line.split(":")[1].lstrip().rstrip()
+                    if lat.__len__() >= 5 and not lat.__contains__(" "):
+                        x = lat[0:2]
+                        y = lat[2:4] + "." + lat[4:]
+                        lat = x + " " + y
+                    cast.Latitude = convertLatLong(lat.split())
+                except Exception as e:
+                    print("Error Reading Longitude: " + e.__str__() + "\nLine: " + line.__str__())
+            elif line.upper().__contains__("LONGITUDE") or line.upper().__contains__("LON"):
+                try:
+                    isNeg = False
+                    if line.__contains__("-"):
+                        isNeg = True
+                    line = line.lower().replace("w", "")
+                    lon = line.split(":")[1].lstrip().rstrip()
+                    if lon.__len__() >= 5 and not lon.__contains__(" "):
+                        x = lon[0:2]
+                        y = lon[2:4] + "." + lon[4:]
+                        lon = x + " " + y
+                    if not isNeg:
+                        lon = "-" + lon
+                    cast.Longitude = convertLatLong(lon.split())
+                except Exception as e:
+                    print("Error Reading Longitude: " + e.__str__() + "\nLine: " + line.__str__())
             elif line.upper() == "SOUNDING":
                 cast.SounderDepth = line.split(":")[1]
             elif line.upper() == "COMMENTS":
