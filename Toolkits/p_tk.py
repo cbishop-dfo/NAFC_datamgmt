@@ -356,7 +356,12 @@ def getShipName(cast):
     try:
         Ships = open("ships.txt")
     except:
-        Ships = open("../Resources/ships.txt")
+        try:
+            Ships = open("../Resources/ships.txt")
+        except Exception as e:
+            print(e.__str__())
+            return
+
 
     for shipName in Ships:
         number = shipName.replace("\n", "").split()[0]
@@ -452,13 +457,18 @@ def getInstrumentName(cast, refFile):
     try:
         dfs = pd.read_excel(refFile, sheet_name="Sheet1")
     except:
-        dfs = pd.read_excel("../Resources/CTD Instrument Info.xlsx", sheet_name="Sheet1")
+        try:
+            dfs = pd.read_excel("../Resources/CTD Instrument Info.xlsx", sheet_name="Sheet1")
+        except Exception as e:
+            print(e.__str__())
     #dfs = pd.read_csv(refFile, sep=" ", header=None)
 
-
-    for i in dfs.index:
-        if cast.Instrument.__contains__(dfs['Serial Number (SN)'][i].__str__()):
-            cast.InstrumentName = dfs['Instrument Type (SBE-CTD)'][i]
+    try:
+        for i in dfs.index:
+            if cast.Instrument.__contains__(dfs['Serial Number (SN)'][i].__str__()):
+                cast.InstrumentName = dfs['Instrument Type (SBE-CTD)'][i]
+    except Exception as e:
+        print(e.__str__())
 
 ###########################################################################################################
 

@@ -20,7 +20,7 @@ def writeMetaToCNV(cast, df):
     if fileExists:
         with open('CNV_META.csv', 'a', newline='') as csvfile:
             writer = csv.writer(csvfile, delimiter=',')
-            writer.writerow([datafile, cast.ship, cast.trip, cast.station, cast.Latitude, cast.Longitude, cast.CastDatetime, cast.Instrument, cast.comment])
+            writer.writerow(row)
             print(datafile)
 
     elif not fileExists:

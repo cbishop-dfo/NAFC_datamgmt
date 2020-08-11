@@ -209,11 +209,11 @@ def cnv_meta(cast, datafile):
                     cast.Longitude = convertLatLong(lon.split())
                 except Exception as e:
                     print("Error Reading Longitude: " + e.__str__() + "\nLine: " + line.__str__())
-            elif line.upper() == "SOUNDING":
+            elif line.upper().__contains__("SOUNDING"):
                 cast.SounderDepth = line.split(":")[1]
-            elif line.upper() == "COMMENTS":
+            elif line.upper().__contains__("COMMENTS"):
                 cast.comment = line.split(":")[1]
-            elif line.upper() == "PROBE":
+            elif line.upper().__contains__("PROBE"):
                 cast.Instrument = line.split(":")[1]
             elif line.upper() == "YEAR":
                 year = line.split(":")[1].rstrip().lstrip()
