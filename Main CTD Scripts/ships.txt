@@ -1,4 +1,4 @@
-92
+106
 00	unknown		xxx	.	-9  .
 01	a.t.cameron	xxx	.	03 AT
 02	gadus		gadus	VC9450	20 GA
@@ -42,9 +42,9 @@
 40	whaler          whal	.	-9  .
 41	sentinal	sent	.	-9  .
 42	aclare		aclare	VC8218	-9  .
-44	lindsey		lind    VC4959  -9  .
-45	grenfell        gren    CGJY    -9  .
-48	cape_ballard	ballard .	48  .
+44  lindsey		lind    VC4959  -9  .
+45  grenfell        gren    CGJY    -9  .
+48	cape_ballard	ballard VCXB	48  .
 49	pennysmart	ps	VOFG	49  .
 50	naka		naka50	.	-9  .
 51	naka		naka51	.	-9  .
@@ -53,11 +53,20 @@
 54	gilbertbay	gbmpa	.	-9  .
 55	discovery	discovery	.	-9  .
 59	pearkes		pearkes	.	-99 .
-60 	Celtic Explorer
-61	Vladykov
-62	Aqviq
-63	Kinkuk
-64	Katsheshuk
+60	celtic_explorer	cel	EIGB	-99 .
+61	vladykov	vlad	.	-99 .
+62	aqviq		aqv	VOLT	-99 .
+63	kinguk		kinguk	VOLZ	-99 .
+64	katsheshuk	katsheshuk	VAAI	-99	.
+65  martha_black    martha
+66  EcoSciences ecosci  .   -99 .
+70	aquaculture	aqua	.	-99	.
+71  aquaculture2    aqua2   .   -99 .
+72  aquaculture3    aqua3   .   -99 .
+75  viking_s27  viks    .   -99 .
+76  Cartier     cart    .   -99 .
+77  Cabot       cabot   .   -99 .
+79  james_cook  cook    .   -99 .
 80	afap80		afap80	.	-9  .
 81	afap81		afap81	.	-9  .
 82	afap82		afap82	.	-9  .
@@ -66,11 +75,13 @@
 85	afap85		afap85	.	-9  .
 86	afap86		afap86	.	-9  .
 89	afap89		afap89	.	-9  .
-90	meds		meds	.	-9  .
+90	meds_data	meds90	.	-9  .
 91	olabs		olabs	.	-9  .
 92	french		doc	.	-9  .
 93	osc		osc	.	-9  .
 94	spanish		spanish	.	-9  .
+95	meds_data	meds95	.	-9  .
+96	meds_data	meds96	.	-9  .
 AA	sent_AA		AA	.	-9  .
 AB	sent_AB		AB	.	-9  .
 AC	sent_AC		AC	.	-9  .

@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import math
-
+import seawater as sw
 """
 Toolkit for creating cast object types from cnv files
 cnv_to_dataframe: dynamically creates a pandas dataframe based on the fields within the datafile
@@ -120,15 +120,35 @@ def getFilename(datafile):
 
 ###########################################################################################################
 
-def calculateDepth(press):
-
-    g = 9.780318
+def calculateDepth(press, latitude):
+    """
+    x = math.pow(math.sin(latitude/57.29578), 2)
+    g = 9.780318*(1*(5.2788*math.pow(10, -3)+2.36*math.pow(10, -5)*x)*x)+1.092*math.pow(10, -6)*press
 
     depth = ((((-1.82*math.pow(10, -15)* press +2.279*math.pow(10,-10))
                *press-2.2512*math.pow(10,-5))
                *press+9.72659)*press)/g
 
     return depth
+    """
+    depth = sw.dpth(107.051, latitude)
+    return depth
+
+###########################################################################################################
+
+def calculatePress(depth, latitude):
+    """
+    x = math.pow(math.sin(latitude / 57.29578), 2)
+    partial_g = 9.780318 * (1 * (5.2788 * math.pow(10, -3) + 2.36 * math.pow(10, -5) * x) * x)+1.092*math.pow(10, -6)
+
+    press = ((((-1.82*math.pow(10, -15) +2.279*math.pow(10,-10))
+               -2.2512*math.pow(10,-5))
+               +9.72659))/(depth*partial_g)
+
+    return press
+    """
+    press = sw.pres(depth, latitude)
+    return press
 
 ###########################################################################################################
 def cnv_ascii(cast):
@@ -159,15 +179,25 @@ def cnv_ascii(cast):
 # Stores all data in Cast object
 def cnv_meta(cast, datafile):
     f = open(datafile)
+    filetype_v2 = False # bool to tell if file uses different format type
     isData = False
     for line in f:
         line = line.replace("\n", "")
         if isData:
             cast.data.append(line.replace("\n", "").lstrip().rstrip().split())
+        if line.__contains__("System UpLoad Time"):
+            filetype_v2 = True
+            tempdate = line.split("=")[1].split()
+            convertDate(cast, tempdate)
         elif line.__contains__("** "):
             cast.userInput.append(line)
             if line.upper().__contains__("VESSEL"):
-                if line.__contains__("_"):
+                if filetype_v2:
+                    l = line.split(":")[1].lstrip().rstrip().split("_")
+                    cast.ship = l[0]
+                    cast.trip = l[1]
+                    cast.station = l[2]
+                elif line.__contains__("_"):
                     l = line.split(":")[1].split("_")
                     cast.ship = l[0][0:4]
                     cast.trip = l[0][4:7]
@@ -581,7 +611,7 @@ def cnv_sig_dataframe(cast):
             depth = float(data[pressureIndex])
         else:
             # Note: here we are converting pressure to depth
-            depth = calculateDepth(float(data[pressureIndex]))
+            depth = calculateDepth(float(data[pressureIndex]), cast.latitude)
 
         # Take downcast only.
         if depth - lastDepth > 0:
