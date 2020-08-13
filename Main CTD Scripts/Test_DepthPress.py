@@ -16,9 +16,9 @@ if __name__ == '__main__':
             print("Reading: " + datafile)
             cast = cnv_tk.Cast(datafile)
             cnv_tk.cnv_meta(cast, datafile)
-            df = cnv_tk.cnv_to_dataframe(cast)
-            d = cnv_tk.calculateDepth(107.051, cast.Latitude)
-            p = cnv_tk.calculatePress(d, cast.Latitude)
+
+            # df_press_depth creates a dataframe with both pressure and depth
+            df = cnv_tk.df_press_depth(cast)
             print()
 
 

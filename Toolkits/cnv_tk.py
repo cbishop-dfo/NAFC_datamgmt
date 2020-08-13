@@ -131,7 +131,7 @@ def calculateDepth(press, latitude):
 
     return depth
     """
-    depth = sw.dpth(107.051, latitude)
+    depth = sw.dpth(press, latitude)
     return depth
 
 ###########################################################################################################
@@ -420,6 +420,80 @@ def cnv_to_dataframe(cast):
         except Exception as e:
             print(e)
             continue
+
+    for column in Dictionary:
+        try:
+            df[column] = Dictionary[column]
+        except:
+            df[column] = np.nan
+    return df
+
+
+
+
+###########################################################################################################
+
+# Dynamically creates a data frame based on the columns provided in the datafile, returns the data frame
+def df_press_depth(cast):
+
+    df = pd.DataFrame()
+    allColumns = []
+    colNumber = -1
+    hasPress = False
+    pressIndex = -1
+    hasDepth = False
+    depthIndex = -1
+    for n in cast.InstrumentInfo:
+        if n.__contains__("name"):
+            colNumber = colNumber + 1
+            if n.lower().__contains__("depth"):
+                hasDepth = True
+                depthIndex = colNumber
+            if n.lower().__contains__("pressure"):
+                hasPress = True
+                pressIndex = colNumber
+            col = n.split()
+            allColumns.append(col[4].replace(":", ""))
+
+    #TODO: FIX NAME POSITION IN HEADER
+
+    # Add Depth Column
+    if hasPress and not hasDepth:
+        colNumber = colNumber + 1
+        cast.InstrumentInfo.append("# name " + colNumber.__str__() +" = depSM: Depth [salt water, m]")
+        allColumns.append("depSM")
+    # Add Pressure Column
+    if hasDepth and not hasPress:
+        colNumber = colNumber + 1
+        cast.InstrumentInfo.append("# name " + colNumber.__str__() + " = prDM: Pressure, Digiquartz [db]")
+        allColumns.append("prDM")
+
+
+    Dictionary = {}
+    for c in allColumns:
+        Dictionary[c] = []
+        cast.ColumnNames.append(c)
+
+    for dat in cast.data:
+        try:
+            index = 0
+            for i in allColumns:
+                Dictionary[i].append(dat[index])
+                index = index + 1
+
+        except Exception as e:
+            try:
+                if depthIndex > -1:
+                    d = dat[depthIndex]
+                    press = calculatePress((float(d)), cast.Latitude)
+                    Dictionary[i].append(press)
+                if pressIndex > -1:
+                    p = dat[pressIndex]
+                    dep = calculateDepth((float(p)), cast.Latitude)
+                    Dictionary[i].append(dep)
+            except Exception as e:
+                print(e.__str__())
+                continue
 
     for column in Dictionary:
         try:
