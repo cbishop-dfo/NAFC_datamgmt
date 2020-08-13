@@ -1,6 +1,7 @@
 from Toolkits import cnv_tk
 from Toolkits import dir_tk
 import os
+import pandas as pd
 import seawater as sw
 
 if __name__ == '__main__':
@@ -19,6 +20,10 @@ if __name__ == '__main__':
 
             # df_press_depth creates a dataframe with both pressure and depth
             df = cnv_tk.df_press_depth(cast)
+            rdf = pd.DataFrame()
+            rdf["newCol"] = df['scan']
+            x = pd.concat([df, rdf])
+
             print()
 
 

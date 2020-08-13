@@ -189,7 +189,7 @@ def cnv_meta(cast, datafile):
             filetype_v2 = True
             tempdate = line.split("=")[1].split()
             convertDate(cast, tempdate)
-        elif line.__contains__("** "):
+        elif line.__contains__("** ") or line.__contains__("**"):
             cast.userInput.append(line)
             if line.upper().__contains__("VESSEL"):
                 if filetype_v2:
