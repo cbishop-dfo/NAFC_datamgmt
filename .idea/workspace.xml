@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Main CTD Scripts/Tester.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main CTD Scripts/Test_DepthPress.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toolkits/cnv_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/cnv_tk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main CTD Scripts/Tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main CTD Scripts/Tester.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main CTD Scripts/Tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="135" column="43" selection-start-line="135" selection-start-column="43" selection-end-line="135" selection-end-column="43" />
+            <state relative-caret-position="340">
+              <caret line="23" column="43" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="23" selection-end-column="43" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -184,6 +181,7 @@
         <option value="$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py" />
         <option value="$PROJECT_DIR$/Toolkits/cnv_tk.py" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/Test_DepthPress.py" />
+        <option value="$PROJECT_DIR$/Main CTD Scripts/Tester.py" />
       </list>
     </option>
   </component>
@@ -238,7 +236,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Test_DepthPress">
+  <component name="RunManager" selected="Python.Tester">
     <configuration name="Test_DepthPress" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,6 +250,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\dylan\PycharmProjects\Workspace\Git\Main CTD Scripts\Tester.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tester" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main CTD Scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main CTD Scripts/Tester.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -302,27 +321,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ctdviewer_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main CTD Scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main CTD Scripts/ctdviewer_v2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="ctdviewer_v3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -346,11 +344,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Tester" />
         <item itemvalue="Python.Test_DepthPress" />
         <item itemvalue="Python.cnv_meta_csv" />
         <item itemvalue="Python.ctdviewer_v2 (1)" />
         <item itemvalue="Python.ctdviewer_v3" />
-        <item itemvalue="Python.ctdviewer_v2" />
       </list>
     </recent_temporary>
   </component>
@@ -575,19 +573,41 @@
       <option name="project" value="LOCAL" />
       <updated>1597332885769</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Added method StandardizedDF to cnv toolkit to create df using midlayer names for columns.&#10;&#10;Also Reuploaded Binned Writer">
+      <created>1597415097042</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1597415097042</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Added method StandardizedDF to cnv toolkit to create df using midlayer names for columns.">
+      <created>1597415214800</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1597415214800</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added method StandardizedDF to cnv toolkit to create df using midlayer names for columns.">
+      <created>1597415298561</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1597415298561</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2803838" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2803838" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -664,7 +684,9 @@
     <MESSAGE value="Upadted cnv toolkit to process new files&#10;Upadted cnv toolkit to convert depths and pressures&#10;Updated ships text file" />
     <MESSAGE value="added df_press_depth: creates a dataframe with both pressure and depth" />
     <MESSAGE value="Fixed bug in code with &quot;** &quot; vs &quot;**&quot; for reading header input" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug in code with &quot;** &quot; vs &quot;**&quot; for reading header input" />
+    <MESSAGE value="Added method StandardizedDF to cnv toolkit to create df using midlayer names for columns.&#10;&#10;Also Reuploaded Binned Writer" />
+    <MESSAGE value="Added method StandardizedDF to cnv toolkit to create df using midlayer names for columns." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added method StandardizedDF to cnv toolkit to create df using midlayer names for columns." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -771,13 +793,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Main CTD Scripts/Tester.py</url>
-          <line>141</line>
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Main CTD Scripts/Tester.py</url>
-          <line>119</line>
-          <option name="timeStamp" value="89" />
+          <line>23</line>
+          <option name="timeStamp" value="96" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1119,8 +1136,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main CTD Scripts/Tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="135" column="43" selection-start-line="135" selection-start-column="43" selection-end-line="135" selection-end-column="43" />
+        <state relative-caret-position="340">
+          <caret line="23" column="43" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="23" selection-end-column="43" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>

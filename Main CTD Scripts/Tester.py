@@ -1,9 +1,6 @@
 from Toolkits import cnv_tk
 from Toolkits import dir_tk
 import os
-import pandas as pd
-import seawater as sw
-
 
 if __name__ == '__main__':
     dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -21,7 +18,6 @@ if __name__ == '__main__':
 
             # df_press_depth creates a dataframe with both pressure and depth
             df = cnv_tk.df_press_depth(cast)
-            col = df.columns._values
 
             # StandardizedDF takes an existing dataframe and returns a df with converted column names to match Midlayer.
             sdf = cnv_tk.StandardizedDF(df)
