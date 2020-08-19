@@ -846,115 +846,189 @@ def FetchCastObject(cast, conn):
 ###########################################################################################################
 
 # Creates dataframe using midlayer variables as the columns in order to standardize the column names
-def StandardizedDF(df):
+def StandardizedDF(cast, df):
 
     col = df.columns._values
     newdf = pd.DataFrame()
+    oldName = ""
+    newName = ""
+    qa = False
 
     # for c in cast.ColumnNames:
     for c in col:
+        qa = True
         name = c.replace("/", "+")
         if c.lower().__eq__('prdm'):
             newdf['Pressure'] = df[c].values
+            oldName = c
+            newName = 'Pressure'
 
         elif c.lower().__eq__('t090c'):
             newdf['Temperature'] = df[c].values
+            oldName = c
+            newName = 'Temperature'
 
         elif c.lower().__eq__('t190c'):
             newdf['Secondary Temperature'] = df[c].values
+            oldName = c
+            newName = 'Secondary Temperature'
 
         elif c.lower().__eq__('c0s/m'):
             newdf['Conductivity'] = df[c].values
+            oldName = c
+            newName = 'Conductivity'
 
         elif c.lower().__eq__('c1s/m'):
             newdf['Secondary Conductivity'] = df[c].values
+            oldName = c
+            newName = 'Secondary Conductivity'
 
         elif c.lower().__eq__('cond'):
             newdf['Conductivity'] = df[c].values
+            oldName = c
+            newName = 'Conductivity'
 
         elif c.lower().__eq__('cstarat0'):
             newdf['Transmissometer attenuation'] = df[c].values
+            oldName = c
+            newName = 'Transmissometer attenuation'
 
         elif c.lower().__eq__('cstartr0'):
             newdf['Transmissometer transmission'] = df[c].values
+            oldName = c
+            newName = 'Transmissometer transmission'
 
         elif c.lower().__eq__('depth'):
             newdf['Depth'] = df[c].values
+            oldName = c
+            newName = 'Depth'
 
         elif c.lower().__eq__('flag'):
             newdf['Flag'] = df[c].values
+            oldName = c
+            newName = 'Flag'
 
         elif c.lower().__eq__('fleco-afl'):
             newdf['Chlorophyll A Fluorescence'] = df[c].values
+            oldName = c
+            newName = 'Chlorophyll A Fluorescence'
 
         elif c.lower().__eq__('flor'):
             newdf['Fluorescence'] = df[c].values
+            oldName = c
+            newName = 'Fluorescence'
 
         elif c.lower().__eq__('oxsatml/l'):
             newdf['Oxygen Saturation'] = df[c].values
+            oldName = c
+            newName = 'Oxygen Saturation'
 
         elif c.lower().__eq__('oxy'):
             newdf['Oxygen Saturation'] = df[c].values
+            oldName = c
+            newName = 'Oxygen Saturation'
 
         elif c.lower().__eq__('par'):
             newdf['Irradiance'] = df[c].values
+            oldName = c
+            newName = 'Irradiance'
 
         elif c.lower().__eq__('par/sat/log'):
             newdf['Photosynthetic Active Radiation'] = df[c].values
+            oldName = c
+            newName = 'Photosynthetic Active Radiation'
 
         elif c.lower().__eq__('ph'):
             newdf['pH'] = df[c].values
+            oldName = c
+            newName = 'pH'
 
         elif c.lower().__eq__('pres'):
             newdf['Pressure'] = df[c].values
+            oldName = c
+            newName = 'Pressure'
 
         elif c.lower().__eq__('sal'):
             newdf['Salinity'] = df[c].values
+            oldName = c
+            newName = 'Salinity'
 
         elif c.lower().__eq__('sal00'):
             newdf['Salinity'] = df[c].values
+            oldName = c
+            newName = 'Salinity'
 
         elif c.lower().__eq__('sal11'):
             newdf['Secondary Salinity'] = df[c].values
+            oldName = c
+            newName = 'Secondary Salinity'
 
         elif c.lower().__eq__('sbeox0ml/l'):
             newdf['Oxygen'] = df[c].values
+            oldName = c
+            newName = 'Oxygen'
 
         elif c.lower().__eq__('sbeox0v'):
             newdf['Oxygen Raw'] = df[c].values
+            oldName = c
+            newName = 'Oxygen Raw'
 
         elif c.lower().__eq__('sbeox1ml/l'):
             newdf['Secondary Oxygen'] = df[c].values
+            oldName = c
+            newName = 'Secondary Oxygen'
 
         elif c.lower().__eq__('sbeox1v'):
             newdf['Secondary Oxygen Raw'] = df[c].values
+            oldName = c
+            newName = 'Secondary Oxygen Raw'
 
         elif c.lower().__eq__('scan'):
             newdf['scan'] = df[c].values
-            continue
-            # Dictionary['Scan'] = [nc_out.createVariable('Scan', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            qa = False
 
         elif c.lower().__eq__('sigma-t00'):
             newdf['Density'] = df[c].values
+            oldName = c
+            newName = 'Density'
 
         elif c.lower().__eq__('sigma-t11'):
             newdf['Secondary Density'] = df[c].values
+            oldName = c
+            newName = 'Secondary Density'
 
         elif c.lower().__eq__('sigt'):
             newdf['Density'] = df[c].values
+            oldName = c
+            newName = 'Density'
 
         elif c.lower().__eq__('temp'):
             newdf['Temperature'] = df[c].values
+            oldName = c
+            newName = 'Temperature'
 
         elif c.lower().__eq__('wetcdom'):
             newdf['CDOM Fluorescence'] = df[c].values
+            oldName = c
+            newName = 'CDOM Fluorescence'
 
         elif c.lower().__eq__('depsm'):
             newdf['Depth'] = df[c].values
+            oldName = c
+            newName = 'Depth'
+
+        elif c.lower().__eq__('tv290c'):
+            newdf['Temperature'] = df[c].values
+            oldName = c
+            newName = 'Temperature'
 
         else:
             newdf[c] = df[c].values
-            print("UNKNOWN VARIABLE: " + c.__str__())\
+            qa = False
+            print("UNKNOWN VARIABLE: " + c.__str__())
+        if qa:
+            QA = "** QA Applied: variable " + oldName + " renamed to " + newName
+            cast.userInput.append(QA)
 
     return newdf
 

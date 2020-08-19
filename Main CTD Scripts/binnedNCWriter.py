@@ -280,6 +280,10 @@ def NCWrite(cast, df):
             Dictionary['CDOM Fluorescence'] = [
                 nc_out.createVariable('CDOM Fluorescence', np.float32, ('level'), zlib=True, fill_value=-9999), name]
 
+        elif c.lower().__eq__('tv290c'):
+            Dictionary['Temperature'] = [
+                nc_out.createVariable('Temperature', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
         else:
             Dictionary[c] = [nc_out.createVariable(name, np.float32, ('level'), zlib=True, fill_value=-9999),
                              name]

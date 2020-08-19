@@ -20,7 +20,7 @@ if __name__ == '__main__':
             df = cnv_tk.df_press_depth(cast)
 
             # StandardizedDF takes an existing dataframe and returns a df with converted column names to match Midlayer.
-            sdf = cnv_tk.StandardizedDF(df)
+            sdf = cnv_tk.StandardizedDF(cast, df)
             print()
 
 
