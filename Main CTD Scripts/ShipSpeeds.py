@@ -3,6 +3,7 @@ from Toolkits import cnv_tk
 from Toolkits import dir_tk
 import pandas as pd
 from Toolkits import db_tk
+import datetime
 from geopy import distance
 from geopy import Point
 
@@ -51,6 +52,47 @@ def CreateDistanceArray(df):
 
 
 ###########################################################################################################
+# Calculate speed in km/h
+def CreateSpeedArray(df):
+    lastTime = -999
+    currentTime = -999
+    speeds = []
+    deltatime = ""
+
+    for d in df.values:
+        try:
+
+            if lastTime == -999:
+                date = d[1]
+                lastTime = datetime.datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
+                speeds.append(0)
+            else:
+                date = d[1]
+                try:
+                    currentTime = datetime.datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
+                except Exception as e:
+                    print("\nERROR with Station: " + d[0] + " Date: " + date + "\n" + e.__str__() +
+                          "\nAttempting to fix datetime...")
+                    fixdate = d[1] + ":00"
+                    currentTime = datetime.datetime.strptime(fixdate, '%Y-%m-%d %H:%M:%S')
+                    print("\nDatetime changed from " + date + " to " + fixdate + "\n")
+
+
+                time_delta = (currentTime - lastTime)
+                total_seconds = time_delta.total_seconds()
+                speed = total_seconds/3600 * d[4]
+                speeds.append(speed)
+                lastTime = currentTime
+        except Exception as e:
+            print(e.__str__())
+
+    return speeds
+
+
+
+###########################################################################################################
+
+
 
 if __name__ == '__main__':
 
@@ -77,6 +119,8 @@ if __name__ == '__main__':
     df = pd.DataFrame.from_dict(Dictionary)
     distanceArray = CreateDistanceArray(df)
     df["Distance"] = distanceArray
+    speedArray = CreateSpeedArray(df)
+    df["Speeds"] = speedArray
 
     # Any additional code you wish to write using the dataframe can go HERE:
 
