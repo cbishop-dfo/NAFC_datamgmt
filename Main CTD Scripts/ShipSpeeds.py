@@ -3,6 +3,9 @@ from Toolkits import cnv_tk
 from Toolkits import dir_tk
 import pandas as pd
 from Toolkits import db_tk
+from geopy import distance
+from geopy import Point
+
 
 # Creates dictionary to be used on each file in directory
 def createDict():
@@ -28,6 +31,27 @@ def PopulateDict(cast, Dictionary):
 ###########################################################################################################
 
 
+def CreateDistanceArray(df):
+    lastPoint = -999
+    currentPoint = -999
+    distances = []
+    for d in df.values:
+
+        if lastPoint == -999:
+            lastPoint = d[2].__str__() + " " + d[3].__str__()
+            distances.append(0)
+        else:
+            currentPoint = d[2].__str__() + " " + d[3].__str__()
+            result = distance.distance(lastPoint, currentPoint).kilometers
+            distances.append(result)
+            lastPoint = currentPoint
+
+    return distances
+
+
+
+###########################################################################################################
+
 if __name__ == '__main__':
 
     dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -37,6 +61,8 @@ if __name__ == '__main__':
     Dictionary = createDict()
 
     files = dir_tk.getListOfFiles(dirName)
+    lastPoint = ""
+    currentPoint = ""
     for f in files:
         # changes Dir back to original after writing to trimmed sub folder
         os.chdir(dirName)
@@ -49,6 +75,9 @@ if __name__ == '__main__':
 
     # Creating pandas dataframe from dictionary containing info from all files
     df = pd.DataFrame.from_dict(Dictionary)
+    distanceArray = CreateDistanceArray(df)
+    df["Distance"] = distanceArray
 
     # Any additional code you wish to write using the dataframe can go HERE:
+
     print("Complete!")
