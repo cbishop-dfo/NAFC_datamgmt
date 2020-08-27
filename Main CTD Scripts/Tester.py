@@ -1,5 +1,8 @@
 from Toolkits import cnv_tk
 from Toolkits import dir_tk
+import pandas as pd
+import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 import os
 
 if __name__ == '__main__':
@@ -21,6 +24,31 @@ if __name__ == '__main__':
 
             # StandardizedDF takes an existing dataframe and returns a df with converted column names to match Midlayer.
             sdf = cnv_tk.StandardizedDF(cast, df)
+
+            # Creates Binned df for Igoss
+            sigdf = cnv_tk.cnv_sig_dataframe(cast)
+            #cnv_tk.cnv_igoss(cast, sigdf)
+
+            x = sdf["Depth"]
+            y = sdf["Temperature"]
+            a = sigdf["Depth"]
+            b = sigdf["Temperature"]
+
+
+            fig = go.Figure()
+
+            # Add traces
+            fig.add_trace(go.Scatter(x=sdf["Depth"], y=sdf["Temperature"],
+                                     mode='markers',
+                                     name='All Depths'))
+            fig.add_trace(go.Scatter(x=sigdf["Depth"], y=sigdf["Temperature"],
+                                     mode='lines+markers',
+                                     name='Selected Depths'))
+
+
+            fig.show()
+
+
             print()
 
 

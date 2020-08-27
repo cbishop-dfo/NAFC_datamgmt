@@ -611,12 +611,12 @@ def cnv_igoss(cast, df):
     lon_to_deg_min = templon[0] + (float(templon[1]) * 60).__str__()
     # dropping any '-' because sign denoted by quadrant
     qlat_lon = q + lat_to_deg_min.replace("-", "")[:5] + " " + lon_to_deg_min.replace("-", "")[:5]
-    k1 = cast.k1  # TODO: check values for k1 and k2
+    k1 = cast.k1  # TODO: check values for k1 always assuming significant depths
     if not cast.isSalinity:
         cast.k2 = "0"
     k2 = cast.k2
     info = "888" + k1 + k2
-    header = dmy + " " + hourmin + " " + qlat_lon + " " + info + "\n"
+    header = dmy + " " + hourmin + " " + qlat_lon + " " + info + "\n" # TODO: + ????? after info find unknown header
     writer.writelines(header)
     # dep tmp sal
     # depth whole num
@@ -705,7 +705,7 @@ def cnv_sig_dataframe(cast):
             depth = float(data[pressureIndex])
         else:
             # Note: here we are converting pressure to depth
-            depth = calculateDepth(float(data[pressureIndex]), cast.latitude)
+            depth = calculateDepth(float(data[pressureIndex]), cast.Latitude)
 
         # Take downcast only.
         if depth - lastDepth > 0:
@@ -719,18 +719,6 @@ def cnv_sig_dataframe(cast):
             # Continue instead of break in case of error/bobbing with readings.
             continue
 
-    """
-    TODO: Select only significant depths for the arrays 
-    calculate current and previous slopes
-    if slope threshold is outside range
-    then add the data to the revised array
-    else check next slope.
-
-    last, current = [depth, temp, slope]
-
-    slope     = ( y2 - y1 ) / ( x2 - x1 )
-    intercept = y1 - (slope) * x1 
-    """
     temp = list(zip(depthArray, temperatureArray, salinityArray))
     sigData = []
 
