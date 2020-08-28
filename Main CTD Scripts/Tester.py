@@ -38,10 +38,10 @@ if __name__ == '__main__':
             fig = go.Figure()
 
             # Add traces
-            fig.add_trace(go.Scatter(x=sdf["Depth"], y=sdf["Temperature"],
+            fig.add_trace(go.Scatter(x=sdf["Temperature"], y=sdf["Depth"],
                                      mode='markers',
                                      name='All Depths'))
-            fig.add_trace(go.Scatter(x=sigdf["Depth"], y=sigdf["Temperature"],
+            fig.add_trace(go.Scatter(x=sigdf["Temperature"], y=sigdf["Depth"],
                                      mode='lines+markers',
                                      name='Selected Depths'))
 

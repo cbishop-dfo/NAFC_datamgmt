@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main CTD Scripts/Tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main CTD Scripts/Tester.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toolkits/cnv_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/cnv_tk.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="613" column="17" selection-start-line="613" selection-start-column="17" selection-end-line="613" selection-end-column="17" />
+            <state relative-caret-position="17">
+              <caret line="532" column="39" lean-forward="true" selection-start-line="532" selection-start-column="39" selection-end-line="532" selection-end-column="39" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -30,10 +30,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main CTD Scripts/tel210_2020_004.cnv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main CTD Scripts/Tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+            <state relative-caret-position="510">
+              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -41,47 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/_plotly_utils/basevalidators.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="284" selection-start-line="284" selection-end-line="284" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/plotly/graph_objs/_scatter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="2271" column="8" selection-start-line="2271" selection-start-column="8" selection-end-line="2271" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/plotly/basedatatypes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="4184" selection-start-line="4184" selection-end-line="4184" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/plotly/express/_core.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="1401" selection-start-line="1401" selection-end-line="1401" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="268">
+              <caret line="84" column="55" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -92,20 +65,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/pandas/core/internals/construction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="321">
               <caret line="610" selection-start-line="610" selection-end-line="610" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main CTD Scripts/tel210_2020_002.cnv">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main CTD Scripts/tel210_2020_003.cnv">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -172,9 +135,9 @@
         <option value="$PROJECT_DIR$/Main CTD Scripts/ships.txt" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/Test_DepthPress.py" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py" />
-        <option value="$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py" />
-        <option value="$PROJECT_DIR$/Main CTD Scripts/Tester.py" />
         <option value="$PROJECT_DIR$/Toolkits/cnv_tk.py" />
+        <option value="$PROJECT_DIR$/Main CTD Scripts/Tester.py" />
+        <option value="$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py" />
       </list>
     </option>
   </component>
@@ -189,6 +152,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,7 +204,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Tester">
+  <component name="RunManager" selected="Python.ShipSpeeds">
     <configuration name="ShipSpeeds" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -367,8 +330,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Tester" />
         <item itemvalue="Python.ShipSpeeds" />
+        <item itemvalue="Python.Tester" />
         <item itemvalue="Python.Test_DepthPress" />
         <item itemvalue="Python.cnv_meta_csv" />
         <item itemvalue="Python.ctdviewer_v2 (1)" />
@@ -645,14 +608,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598342516899</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Updated IGOSS reader&#10;Added IGOSS viewer for individual files">
+      <created>1598534360768</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1598534360768</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2803838" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2835821" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -714,7 +684,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Trimmed files" />
     <MESSAGE value="Applied QA txt to writer, writer will now check for cast.QA str" />
     <MESSAGE value="created prototype for CTD_META_QA&#10;updated cnv_tk" />
     <MESSAGE value="Pfile toolkit checks for index error and writes to problem folder if detected while converting to cnv." />
@@ -739,7 +708,8 @@
     <MESSAGE value="added QA changes made to user input, can now see when df variables were changed&#10;added new column to midlayer check" />
     <MESSAGE value="Added Distance calculation and values to dataframe" />
     <MESSAGE value="Added Distance calculation and values to dataframe&#10;Added Speed calculation and values to dataframe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Distance calculation and values to dataframe&#10;Added Speed calculation and values to dataframe" />
+    <MESSAGE value="Updated IGOSS reader&#10;Added IGOSS viewer for individual files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated IGOSS reader&#10;Added IGOSS viewer for individual files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -851,8 +821,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py</url>
-          <line>126</line>
-          <option name="timeStamp" value="103" />
+          <line>130</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="111" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -863,16 +838,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PFile/Universal_CTD_Writer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="844">
-          <caret line="737" column="38" selection-start-line="735" selection-start-column="4" selection-end-line="737" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main CTD Scripts/cnvDB.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
@@ -1114,10 +1079,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/pandas/core/internals/construction.py">
+    <entry file="file://$USER_HOME$/anaconda3/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="610" selection-start-line="610" selection-end-line="610" />
+        <state relative-caret-position="168">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/_plotly_utils/basevalidators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4590">
+          <caret line="284" selection-start-line="284" selection-end-line="284" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/plotly/graph_objs/_scatter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38590">
+          <caret line="2271" column="8" selection-start-line="2271" selection-start-column="8" selection-end-line="2271" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/plotly/basedatatypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70924">
+          <caret line="4184" selection-start-line="4184" selection-end-line="4184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/plotly/express/_core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23562">
+          <caret line="1401" selection-start-line="1401" selection-end-line="1401" />
         </state>
       </provider>
     </entry>
@@ -1127,67 +1120,46 @@
     <entry file="file://$PROJECT_DIR$/Main CTD Scripts/tel210_2020_003.cnv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py">
+    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/pandas/core/internals/construction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="321">
+          <caret line="610" selection-start-line="610" selection-end-line="610" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="532" column="39" lean-forward="true" selection-start-line="532" selection-start-column="39" selection-end-line="532" selection-end-column="39" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/Lib/codecs.py">
+    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/tel210_2020_004.cnv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="320" selection-start-line="320" selection-end-line="320" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/plotly/express/_core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1401" selection-start-line="1401" selection-end-line="1401" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/plotly/basedatatypes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="4184" selection-start-line="4184" selection-end-line="4184" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/plotly/graph_objs/_scatter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="2271" column="8" selection-start-line="2271" selection-start-column="8" selection-end-line="2271" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/_plotly_utils/basevalidators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="284" selection-start-line="284" selection-end-line="284" />
+        <state relative-caret-position="255">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main CTD Scripts/Tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        <state relative-caret-position="510">
+          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
+    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="613" column="17" selection-start-line="613" selection-start-column="17" selection-end-line="613" selection-end-column="17" />
+        <state relative-caret-position="268">
+          <caret line="84" column="55" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

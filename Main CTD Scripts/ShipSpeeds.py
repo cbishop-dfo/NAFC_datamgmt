@@ -57,6 +57,7 @@ def CreateSpeedArray(df):
     lastTime = -999
     currentTime = -999
     speeds = []
+    deltat = []
     deltatime = ""
 
     for d in df.values:
@@ -66,6 +67,7 @@ def CreateSpeedArray(df):
                 date = d[1]
                 lastTime = datetime.datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
                 speeds.append(0)
+                deltat.append(0)
             else:
                 date = d[1]
                 try:
@@ -80,13 +82,17 @@ def CreateSpeedArray(df):
 
                 time_delta = (currentTime - lastTime)
                 total_seconds = time_delta.total_seconds()
-                speed = total_seconds/3600 * d[4]
-                speeds.append(speed)
+                speed = d[4]/(total_seconds/3600)
+                speeds.append(speed*0.539957)
+                deltat.append(total_seconds)
                 lastTime = currentTime
         except Exception as e:
             print(e.__str__())
 
-    return speeds
+    print("Speeds: ")
+    for s in speeds:
+        print(s)
+    return [speeds, deltat]
 
 
 
@@ -118,9 +124,10 @@ if __name__ == '__main__':
     # Creating pandas dataframe from dictionary containing info from all files
     df = pd.DataFrame.from_dict(Dictionary)
     distanceArray = CreateDistanceArray(df)
-    df["Distance"] = distanceArray
+    df["Distance (km)"] = distanceArray
     speedArray = CreateSpeedArray(df)
-    df["Speeds"] = speedArray
+    df["Speeds (Knots)"] = speedArray[0]
+    df["Delta Time(seconds)"] = speedArray[1]
 
     # Any additional code you wish to write using the dataframe can go HERE:
 
