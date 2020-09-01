@@ -2,11 +2,8 @@ import os
 from Toolkits import cnv_tk
 from Toolkits import dir_tk
 import pandas as pd
-from Toolkits import db_tk
 import datetime
 from geopy import distance
-from geopy import Point
-
 
 # Creates dictionary to be used on each file in directory
 def createDict():
@@ -94,11 +91,7 @@ def CreateSpeedArray(df):
         print(s)
     return [speeds, deltat]
 
-
-
 ###########################################################################################################
-
-
 
 if __name__ == '__main__':
 

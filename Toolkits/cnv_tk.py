@@ -181,6 +181,8 @@ def cnv_meta(cast, datafile):
     f = open(datafile)
     filetype_v2 = False # bool to tell if file uses different format type
     isData = False
+    xbt = False
+
     for line in f:
         line = line.replace("\n", "")
         if isData:
@@ -192,7 +194,7 @@ def cnv_meta(cast, datafile):
         elif line.__contains__("** ") or line.__contains__("**"):
             cast.userInput.append(line)
             if line.upper().__contains__("VESSEL"):
-                if filetype_v2:
+                if filetype_v2 or xbt:
                     l = line.split(":")[1].lstrip().rstrip().split("_")
                     cast.ShipName = l[0][:-3]
                     getShipNumber(cast)
@@ -261,6 +263,8 @@ def cnv_meta(cast, datafile):
                 cast.castType = line.split(":")[1]
 
         elif line.startswith("* "):
+            if line.upper().__contains__("XBT"):
+                xbt = True
             cast.software.append(line)
         elif line.startswith("# "):
             cast.InstrumentInfo.append(line)
@@ -317,7 +321,7 @@ def getShipNumber(cast):
         Ships = open("../Resources/ships.txt")
 
     for shipName in Ships:
-        name = shipName.replace("\n", "").split()[2]
+        name = shipName.replace("\n", "").split()[2].lower()
         try:
             number = shipName.replace("\n", "").split()[0]
         except:
@@ -616,7 +620,20 @@ def cnv_igoss(cast, df):
         cast.k2 = "0"
     k2 = cast.k2
     info = "888" + k1 + k2
-    header = dmy + " " + hourmin + " " + qlat_lon + " " + info + "\n" # TODO: + ????? after info find unknown header
+    inst = ""
+    if not cast.Instrument == "":
+        if cast.Instrument.upper().__contains__("XBT") and cast.Instrument.upper().__contains__("05"):
+            inst = "011"
+        elif cast.Instrument.upper().__contains__("XBT") and cast.Instrument.upper().__contains__("06"):
+            inst = "032"
+        elif cast.Instrument.upper().__contains__("XBT") and cast.Instrument.upper().__contains__("07"):
+            inst = "042"
+        elif cast.Instrument.upper().__contains__("XBT") and cast.Instrument.upper().__contains__("10"):
+            inst = "061"
+        else:
+            inst = "099"
+
+    header = dmy + " " + hourmin + " " + qlat_lon + " " + info + " 83" + inst + "\n"
     writer.writelines(header)
     # dep tmp sal
     # depth whole num
