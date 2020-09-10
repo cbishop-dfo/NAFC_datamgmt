@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/PFile/ctdviewer_v3.py" line="53" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="added ship speed dataframe to csv" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,13 +13,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-391">
+            <state relative-caret-position="17">
               <caret line="638" column="21" selection-start-line="638" selection-start-column="21" selection-end-line="638" selection-end-column="21" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="117" column="43" lean-forward="true" selection-start-line="117" selection-start-column="43" selection-end-line="117" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,9 +165,9 @@
         <option value="$PROJECT_DIR$/Main CTD Scripts/ships.txt" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/Test_DepthPress.py" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py" />
-        <option value="$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/Tester.py" />
         <option value="$PROJECT_DIR$/Toolkits/cnv_tk.py" />
+        <option value="$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py" />
       </list>
     </option>
   </component>
@@ -172,7 +182,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,6 +208,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -624,14 +634,28 @@
       <option name="project" value="LOCAL" />
       <updated>1598976132337</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="added ship speed dataframe to csv">
+      <created>1599767598523</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1599767598523</updated>
+    </task>
+    <task id="LOCAL-00042" summary="added ship speed dataframe to csv">
+      <created>1599767647601</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1599767647601</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2867804" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28997868" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -693,7 +717,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Pfile toolkit checks for index error and writes to problem folder if detected while converting to cnv." />
     <MESSAGE value="Binned writer now has option of using raw DF or Binned DF for NC files" />
     <MESSAGE value="updated mid layer in binnedWriter" />
     <MESSAGE value="Added QA for data frame&#10;-checks for pressure column&#10;-checks that column has more than 15 nan values&#10;-checks that df has at least 2 valid columns excluding scan&#10;&#10;Writes failed QA scripts to log.txt in ProblemFiles Folder" />
@@ -718,7 +741,8 @@
     <MESSAGE value="Updated IGOSS reader&#10;Added IGOSS viewer for individual files" />
     <MESSAGE value="Made changes to speeds&#10;converted speeds to knots and added to dataframe" />
     <MESSAGE value="Finished IGOSS.py&#10;- added missing header" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished IGOSS.py&#10;- added missing header" />
+    <MESSAGE value="added ship speed dataframe to csv" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ship speed dataframe to csv" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -820,7 +844,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py</url>
-          <line>126</line>
+          <line>127</line>
           <option name="timeStamp" value="105" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1048,16 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/webapp/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1100,7 +1114,7 @@
     <entry file="file://$PROJECT_DIR$/Main CTD Scripts/Tester.py" />
     <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
+        <state relative-caret-position="17">
           <caret line="638" column="21" selection-start-line="638" selection-start-column="21" selection-end-line="638" selection-end-column="21" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -1157,6 +1171,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main CTD Scripts/tel210_2020_002.cnv">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="117" column="43" lean-forward="true" selection-start-line="117" selection-start-column="43" selection-end-line="117" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
