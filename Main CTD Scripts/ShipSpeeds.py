@@ -121,7 +121,7 @@ if __name__ == '__main__':
     speedArray = CreateSpeedArray(df)
     df["Speeds (Knots)"] = speedArray[0]
     df["Delta Time(seconds)"] = speedArray[1]
-    df.to_csv("ShipSpeeds.csv")
+    df.to_csv("ShipSpeeds.csv", index=False)
 
     # Any additional code you wish to write using the dataframe can go HERE:
 
