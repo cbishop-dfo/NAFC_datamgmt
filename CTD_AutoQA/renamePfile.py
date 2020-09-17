@@ -34,7 +34,8 @@ if __name__ == '__main__':
         # changes Dir back to original after writing to trimmed sub folder
         os.chdir(dirName)
         datafile = f
-        if not datafile.lower().__contains__("."):
+        if datafile.lower().__contains__(".p") and not datafile.lower().__contains__(".py"):
+            print(datafile)
             shipName = f.split("_")[0]
             shipCode = ''.join(i for i in shipName if not i.isdigit())
             shipNum = getShipNumber(shipCode)
