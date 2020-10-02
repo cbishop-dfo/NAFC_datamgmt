@@ -1,12 +1,14 @@
+import sys
+sys.path.append('C://Users//dylan//PycharmProjects//Workspace//Git')
+# sys.path.append('C://Users//dylan//PycharmProjects//Workspace//Git//Toolkits')
+# sys.path.append('C://Users//dylan//PycharmProjects//Workspace//Git//Resources')
 from Toolkits import cnv_tk
 from Toolkits import dir_tk
 import os
 import datetime
 import time as tt
 import numpy as np
-import xarray
 import pandas as pd
-import sqlite3
 
 try:
     import netCDF4 as nc
@@ -104,6 +106,20 @@ def modifyDF(cast, df):
 
 
 def NCWrite(cast, df):
+    """
+    Takes Cast object and dataframe and creates a NETCDF using a standard naming scheme for the variables
+    Variable names are converted to a standard name from cast.ColumnNames which is populated during function call
+    df = cnv_tk.cnv_to_dataframe(cast)
+
+    To create and populate needed params:
+    cast = cnv_tk.Cast(datafile)        # Creates an empty Cast type object
+    cnv_tk.cnv_meta(cast, datafile)     # Populates meta variables and data arrays within the Cast object
+    df = cnv_tk.cnv_to_dataframe(cast)  # Creates and returns a pandas dataframe using data from cast
+
+    :param cast:
+    :param df:
+    :return:
+    """
     ####################################################################################################
     # NETCDF CREATION HERE:
     ####################################################################################################
