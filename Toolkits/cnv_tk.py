@@ -196,7 +196,7 @@ def cnv_meta(cast, datafile):
             if line.upper().__contains__("VESSEL"):
                 if filetype_v2 or xbt:
                     l = line.split(":")[1].lstrip().rstrip().split("_")
-                    cast.ShipName = l[0][:-3]
+                    cast.ShipName = l[0][:-3].lower()
                     getShipNumber(cast)
                     cast.trip = l[0][-3:]
                     cast.station = l[2]

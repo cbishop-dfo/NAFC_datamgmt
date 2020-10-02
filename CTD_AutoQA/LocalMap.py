@@ -132,7 +132,7 @@ if __name__ == '__main__':
     # Output DF to Map
     px.set_mapbox_access_token("pk.eyJ1IjoiZG1rMzI0IiwiYSI6ImNrZnJ4cmQ0ZDAyZ3EyenMzbzd4b2xlOGsifQ.IEmRP5lFSKW1nyeonj0lLQ")
     fig = px.scatter_mapbox(df, lat="Latitude", lon="Longitude", color="Speeds (Knots)", mapbox_style="satellite", size="Distance (km)",
-                            hover_data=["Filename", "Distance (km)", "Speeds (Knots)","Delta Time(seconds)"],
-                            color_continuous_scale=px.colors.sequential.Bluered, size_max=15, zoom=10)
+                            hover_data=["Filename", "Station", "Distance (km)", "Speeds (Knots)","Delta Time(seconds)"],
+                            color_continuous_scale=px.colors.sequential.Bluered, size_max=15, zoom=5)
     fig.show()
     print("Complete!")
