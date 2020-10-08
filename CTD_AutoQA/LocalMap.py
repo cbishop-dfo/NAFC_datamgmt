@@ -9,6 +9,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
+
 # Creates dictionary to be used on each file in directory
 def createDict():
 
@@ -105,20 +106,29 @@ if __name__ == '__main__':
     # Creating dictionary to store each files specified data to later convert to pandas Dataframe
     Dictionary = createDict()
 
-    files = dir_tk.getListOfFiles(dirName)
+    #files = dir_tk.getListOfFiles(dirName)
+    isSelected = True
+    files = dir_tk.selectFiles(dirName)
     lastPoint = ""
     currentPoint = ""
     FileArray = []
     for f in files:
         # changes Dir back to original after writing to trimmed sub folder
         os.chdir(dirName)
-        datafile = f
-        if datafile.lower().endswith(".cnv"):
+        datafile = f.name
+        if isSelected:
             print("Reading: " + datafile)
             cast = cnv_tk.Cast(datafile)
             cnv_tk.cnv_meta(cast, datafile)
             PopulateDict(cast, Dictionary)
             FileArray.append(datafile)
+        else:
+            if datafile.lower().endswith(".cnv"):
+                print("Reading: " + datafile)
+                cast = cnv_tk.Cast(datafile)
+                cnv_tk.cnv_meta(cast, datafile)
+                PopulateDict(cast, Dictionary)
+                FileArray.append(datafile)
 
     # Creating pandas dataframe from dictionary containing info from all files
     df = pd.DataFrame.from_dict(Dictionary)

@@ -101,7 +101,8 @@ if __name__ == '__main__':
     # Creating dictionary to store each files specified data to later convert to pandas Dataframe
     Dictionary = createDict()
 
-    files = dir_tk.getListOfFiles(dirName)
+    #iles = dir_tk.getListOfFiles(dirName)
+    files = dir_tk.selectFiles()
     lastPoint = ""
     currentPoint = ""
     for f in files:

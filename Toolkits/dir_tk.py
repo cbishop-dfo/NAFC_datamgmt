@@ -1,4 +1,8 @@
 import os
+from tkinter.filedialog import askopenfiles
+from tkinter import *
+from tkinter import ttk
+from tkinter.filedialog import askopenfilename
 
 ###########################################################################################################
 
@@ -29,3 +33,6 @@ def getListOfFiles(dirName):
     return allFiles
 
 ###########################################################################################################
+def selectFiles(dirName):
+    file = askopenfiles(mode='r')
+    return file

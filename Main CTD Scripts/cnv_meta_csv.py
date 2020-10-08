@@ -11,7 +11,7 @@ import sqlite3
 
 def writeMetaToCNV(cast, df):
 
-
+    # TODO: Change file name to be unique ship+trip_META.csv
     fileExists = False
     for f in files:
         if f == 'CNV_META.csv':
