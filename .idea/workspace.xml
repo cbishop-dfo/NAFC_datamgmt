@@ -4,9 +4,29 @@
     <bookmark url="file://$PROJECT_DIR$/PFile/ctdviewer_v3.py" line="53" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
+    <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="Changed cnv meta header to include ID and CruiseID&#10;also changed csv file names to match trips">
+      <change afterPath="$PROJECT_DIR$/Main CTD Scripts/AZMP_master_META.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main CTD Scripts/cnv_meta_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main CTD Scripts/cnv_meta_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/01_tel200_2019_004.xbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/1179001.cnv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/1179001.cnv.nc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/19000000.cnv.nc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/39200100.cnv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/39200100.cnv.nc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/39200100.p2019" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/79001001.cnv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/79001001.cnv.nc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/79001001.cnv.simple" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/79001002.D19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/79001003.D19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/79001004.D19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/79001008.cnv.nc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/79001008.cnv.simple" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/79001010.cnv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/79001010.cnv.nc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/79001010.cnv.simple" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/79001_IGOSS.DTA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleFiles/tel200_IGOSS.DTA" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,50 +37,69 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
+        <entry file="file://$PROJECT_DIR$/Main CTD Scripts/cnv_meta_csv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="205" column="41" lean-forward="true" selection-start-line="205" selection-start-column="41" selection-end-line="205" selection-end-column="41" />
+            <state relative-caret-position="697">
+              <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Main CTD Scripts/AZMP_master_META.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConvertedPFiles/39200100.p2019">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConvertedPFiles/39200100.cnv">
+        <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1637858127/_csv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Main CTD Scripts/cnv_meta_csv.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="48" column="45" lean-forward="true" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+            <state relative-caret-position="299">
+              <caret line="99" column="4" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/tel210_2020_005.cnv">
+        <entry file="file://$PROJECT_DIR$/Main CTD Scripts/CNV_META.csv">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Toolkits/dir_tk.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/Lib/tkinter/filedialog.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="554">
+              <caret line="403" lean-forward="true" selection-start-line="403" selection-end-line="403" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CTD_AutoQA/LocalMap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="120" column="40" lean-forward="true" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="40" />
+            <state relative-caret-position="68">
+              <caret line="4" column="27" lean-forward="true" selection-start-line="3" selection-end-line="4" selection-end-column="27" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -71,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CTD_AutoQA/ShipSpeeds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="113" column="20" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
+            <state relative-caret-position="450">
+              <caret line="112" column="41" lean-forward="true" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -161,6 +200,7 @@
         <option value="$PROJECT_DIR$/Web/webapp/webapp/settings.py" />
         <option value="$PROJECT_DIR$/ConvertedPFiles/cnv_meta_csv.py" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/cnv_meta_csv.py" />
+        <option value="$PROJECT_DIR$/Main CTD Scripts/AZMP_master_META.py" />
       </list>
     </option>
   </component>
@@ -173,7 +213,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,6 +243,24 @@
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="SampleFiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="SampleFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="CNV" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="SampleFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="CNV" type="462c0819:PsiDirectoryNode" />
+              <item name="210_2020" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
               <item name="Web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -230,6 +287,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,7 +306,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cnv_meta_csv">
+  <component name="RunManager" selected="Python.AZMP_master_META">
+    <configuration name="AZMP_master_META" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main CTD Scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main CTD Scripts/AZMP_master_META.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="LocalMap" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -283,27 +362,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CTD_AutoQA/ShipSpeeds.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="binnedNCWriter" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main CTD Scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -356,11 +414,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AZMP_master_META" />
         <item itemvalue="Python.cnv_meta_csv" />
         <item itemvalue="Python.cnv_meta_csv (1)" />
         <item itemvalue="Python.LocalMap" />
         <item itemvalue="Python.ShipSpeeds (1)" />
-        <item itemvalue="Python.binnedNCWriter" />
       </list>
     </recent_temporary>
   </component>
@@ -374,13 +432,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591206340805</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Uploaded datafiles to Thermograph and fixed directory">
-      <created>1591206583227</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1591206583227</updated>
     </task>
     <task id="LOCAL-00002" summary="Uploaded datafiles to Thermograph and fixed directory">
       <created>1591645049482</created>
@@ -718,18 +769,26 @@
       <option name="project" value="LOCAL" />
       <updated>1602183581644</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Changed cnv meta header to include ID and CruiseID&#10;also changed csv file names to match trips">
+      <created>1602184657035</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1602184657035</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31556502" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31876332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3347779" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3347779" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -786,7 +845,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Breakdown of column naming for the binnedNC writer" />
     <MESSAGE value="added script to write cnv meta to cnv" />
     <MESSAGE value="fixed meta log file" />
     <MESSAGE value="changed &lt; to &lt;=" />
@@ -811,7 +869,8 @@
     <MESSAGE value="added script to rename new pfile filenames to old name scheme" />
     <MESSAGE value="Created Local Map plot" />
     <MESSAGE value="File selection changed&#10;WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="File selection changed&#10;WIP" />
+    <MESSAGE value="Changed cnv meta header to include ID and CruiseID&#10;also changed csv file names to match trips" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed cnv meta header to include ID and CruiseID&#10;also changed csv file names to match trips" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -936,7 +995,19 @@
           <line>120</line>
           <option name="timeStamp" value="127" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Main CTD Scripts/AZMP_master_META.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -945,18 +1016,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/Tester.py" />
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/ShipSpeeds.py" />
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/39210_IGOSS.DTA">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/README.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/CTD_AutoQA/39210004.p2020" />
     <entry file="file://$PROJECT_DIR$/PFile/testPtk.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1123,26 +1182,6 @@
     <entry file="file://$USER_HOME$/anaconda3/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/Lib/tkinter/filedialog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="400" column="4" selection-start-line="400" selection-start-column="4" selection-end-line="400" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/CNV_META.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Toolkits/dir_tk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/webapp/CTDHeaders/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1205,33 +1244,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/tel210_2020_005.cnv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/LocalMap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="120" column="40" lean-forward="true" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/ShipSpeeds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="113" column="20" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ConvertedPFiles/cnv_meta_csv.py" />
     <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="205" column="41" lean-forward="true" selection-start-line="205" selection-start-column="41" selection-end-line="205" selection-end-column="41" />
+        <state relative-caret-position="3434">
+          <caret line="205" column="41" selection-start-line="205" selection-start-column="41" selection-end-line="205" selection-end-column="41" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -1244,21 +1261,83 @@
     <entry file="file://$PROJECT_DIR$/ConvertedPFiles/39200100.cnv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConvertedPFiles/cnv_meta_csv.py">
+    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/tel210_2020_005.cnv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/210_IGOSS.DTA">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/ShipSpeeds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="450">
+          <caret line="112" column="41" lean-forward="true" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/LocalMap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="3" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toolkits/dir_tk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/Lib/tkinter/filedialog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="403" lean-forward="true" selection-start-line="403" selection-end-line="403" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/CNV_META.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1637858127/_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="99" column="4" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main CTD Scripts/cnv_meta_csv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="48" column="45" lean-forward="true" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+        <state relative-caret-position="697">
+          <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleFiles/CNV/210_2020/tel210_2020_001.cnv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/AZMP_master_META.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
