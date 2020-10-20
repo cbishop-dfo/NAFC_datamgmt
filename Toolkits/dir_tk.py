@@ -33,6 +33,6 @@ def getListOfFiles(dirName):
     return allFiles
 
 ###########################################################################################################
-def selectFiles(dirName):
+def selectFiles():
     file = askopenfiles(mode='r')
     return file
