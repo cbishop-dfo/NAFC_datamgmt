@@ -132,9 +132,14 @@ def CreateDF():
 
 
 ###########################################################################################################
+def CreateCSV(df):
+    # Output DF to csv
+    name = input("Enter Name For CSV File: ")
+    df.to_csv(name, index=False, header=True)
+
+###########################################################################################################
+
 if __name__ == '__main__':
     # Create dataframe
     df = CreateDF()
-
-    # Output DF to csv
-    df.to_csv("ShipSpeeds.csv", index=False, header=True)
+    CreateCSV(df)

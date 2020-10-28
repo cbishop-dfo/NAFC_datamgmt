@@ -106,8 +106,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CTD_AutoQA/ShipSpeeds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-394">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="362">
+              <caret line="137" column="45" lean-forward="true" selection-start-line="137" selection-start-column="45" selection-end-line="137" selection-end-column="45" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -196,8 +196,8 @@
         <option value="$PROJECT_DIR$/Toolkits/dir_tk.py" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/cnv_meta_csv.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/Merge_CSV.py" />
-        <option value="$PROJECT_DIR$/CTD_AutoQA/ShipSpeeds.py" />
         <option value="$USER_HOME$/OneDrive/Desktop/NCWriter/Script/TestSpeeds.py" />
+        <option value="$PROJECT_DIR$/CTD_AutoQA/ShipSpeeds.py" />
       </list>
     </option>
   </component>
@@ -303,7 +303,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TestSpeeds">
+  <component name="RunManager" selected="Python.ShipSpeeds">
     <configuration name="AZMP_master_META" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -411,8 +411,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.TestSpeeds" />
         <item itemvalue="Python.ShipSpeeds" />
+        <item itemvalue="Python.TestSpeeds" />
         <item itemvalue="Python.Merge_CSV" />
         <item itemvalue="Python.cnv_meta_csv (1)" />
         <item itemvalue="Python.AZMP_master_META" />
@@ -429,13 +429,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591206340805</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Uploaded datafiles to Thermograph and fixed directory">
-      <created>1592549962744</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1592549962744</updated>
     </task>
     <task id="LOCAL-00005" summary="Uploaded datafiles to Thermograph and fixed directory">
       <created>1592550504096</created>
@@ -773,7 +766,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603182505893</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Added return function for dataframe&#10;ShipSpeeds df can now be used in outside scripts with CreateDF()">
+      <created>1603874346807</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1603874346807</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -785,8 +785,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3347779" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39869988" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3347779" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -842,7 +842,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed &lt; to &lt;=" />
     <MESSAGE value="db changes and prototype reader" />
     <MESSAGE value="temp fixed to parameter check" />
     <MESSAGE value="Changed checks in cnv_meta in toolkit to avoid type conflict/error" />
@@ -867,7 +866,8 @@
     <MESSAGE value="Changed cnv meta header to include ID and CruiseID&#10;also changed csv file names to match trips" />
     <MESSAGE value="Added script to append all meta csv file to a master csv" />
     <MESSAGE value="Added Merge script for xlsx files&#10;Added file reading options to cnv_meta script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Merge script for xlsx files&#10;Added file reading options to cnv_meta script" />
+    <MESSAGE value="Added return function for dataframe&#10;ShipSpeeds df can now be used in outside scripts with CreateDF()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added return function for dataframe&#10;ShipSpeeds df can now be used in outside scripts with CreateDF()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1314,8 +1314,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CTD_AutoQA/ShipSpeeds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-394">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="362">
+          <caret line="137" column="45" lean-forward="true" selection-start-line="137" selection-start-column="45" selection-end-line="137" selection-end-column="45" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
