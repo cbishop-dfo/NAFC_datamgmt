@@ -113,7 +113,7 @@ if __name__ == '__main__':
     currentPoint = ""
     FileArray = []
     for f in files:
-        # changes Dir back to original after writing to trimmed sub folder
+        # changes Dir back to original after writing to sub folder
         os.chdir(dirName)
         datafile = f.name
         if isSelected:
