@@ -91,24 +91,26 @@ def CreateSpeedArray(df):
         print(s)
     return [speeds, deltat]
 
+
 ###########################################################################################################
-
-if __name__ == '__main__':
-
+def CreateDF():
     dir_path = os.path.dirname(os.path.realpath(__file__))
     dirName = dir_path
 
     # Creating dictionary to store each files specified data to later convert to pandas Dataframe
     Dictionary = createDict()
 
-    #iles = dir_tk.getListOfFiles(dirName)
+    # files = dir_tk.getListOfFiles(dirName)
     files = dir_tk.selectFiles()
     lastPoint = ""
     currentPoint = ""
     for f in files:
         # changes Dir back to original after writing to trimmed sub folder
         os.chdir(dirName)
-        datafile = f
+        try:
+            datafile = f.name
+        except:
+            datafile = f
         if datafile.lower().endswith(".cnv"):
             print("Reading: " + datafile)
             cast = cnv_tk.Cast(datafile)
@@ -123,9 +125,16 @@ if __name__ == '__main__':
     df["Speeds (Knots)"] = speedArray[0]
     df["Delta Time(seconds)"] = speedArray[1]
 
-    # Output DF to csv
-    df.to_csv("ShipSpeeds.csv", index=False, header=True)
-
     # Any additional code you wish to write using the dataframe can go HERE:
 
     print("Complete!")
+    return df
+
+
+###########################################################################################################
+if __name__ == '__main__':
+    # Create dataframe
+    df = CreateDF()
+
+    # Output DF to csv
+    df.to_csv("ShipSpeeds.csv", index=False, header=True)
