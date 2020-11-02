@@ -36,3 +36,18 @@ def getListOfFiles(dirName):
 def selectFiles():
     file = askopenfiles(mode='r')
     return file
+
+###########################################################################################################
+
+def confirmSelection(dirName=os.path.dirname(os.path.realpath(__file__))):
+    select = input("Choose method for file selection\n[1] Read Files From: " + dirName + "\n[2] Manually Select Files\n")
+    if select == "1":
+        files = getListOfFiles(dirName)
+        return files
+    if select == "2":
+        files = selectFiles()
+        return files
+    else:
+        print("Invalid Input")
+        select = input("Choose method for file selection\n[1] Read Files From: " + dirName + "\n[2] Manually Select Files\n")
+        confirmSelection(select)

@@ -4,6 +4,7 @@ from Toolkits import dir_tk
 import pandas as pd
 import datetime
 from geopy import distance
+import plotly.express as px
 
 # Creates dictionary to be used on each file in directory
 def createDict():
@@ -91,29 +92,33 @@ def CreateSpeedArray(df):
         print(s)
     return [speeds, deltat]
 
+
 ###########################################################################################################
+def CreateDF(dirName):
 
-if __name__ == '__main__':
-
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    dirName = dir_path
 
     # Creating dictionary to store each files specified data to later convert to pandas Dataframe
     Dictionary = createDict()
 
-    #iles = dir_tk.getListOfFiles(dirName)
-    files = dir_tk.selectFiles()
+    # files = dir_tk.getListOfFiles(dirName)
+    # files = dir_tk.selectFiles()
+    files = dir_tk.confirmSelection(dirName)
+    FileArray = []
     lastPoint = ""
     currentPoint = ""
     for f in files:
         # changes Dir back to original after writing to trimmed sub folder
         os.chdir(dirName)
-        datafile = f
+        try:
+            datafile = f.name
+        except:
+            datafile = f
         if datafile.lower().endswith(".cnv"):
             print("Reading: " + datafile)
             cast = cnv_tk.Cast(datafile)
             cnv_tk.cnv_meta(cast, datafile)
             PopulateDict(cast, Dictionary)
+            FileArray.append(datafile)
 
     # Creating pandas dataframe from dictionary containing info from all files
     df = pd.DataFrame.from_dict(Dictionary)
@@ -122,10 +127,44 @@ if __name__ == '__main__':
     speedArray = CreateSpeedArray(df)
     df["Speeds (Knots)"] = speedArray[0]
     df["Delta Time(seconds)"] = speedArray[1]
-
-    # Output DF to csv
-    df.to_csv("ShipSpeeds.csv", index=False, header=True)
+    df["Filename"] = FileArray
 
     # Any additional code you wish to write using the dataframe can go HERE:
 
     print("Complete!")
+    return df
+
+
+###########################################################################################################
+def CreateCSV(df):
+    # Output DF to csv
+    name = input("Enter Name For CSV File: ")
+    df.to_csv(name, index=False, header=True)
+
+###########################################################################################################
+
+def plotMap(df):
+
+    # Output DF to Map
+    px.set_mapbox_access_token(
+        "pk.eyJ1IjoiZG1rMzI0IiwiYSI6ImNrZnJ4cmQ0ZDAyZ3EyenMzbzd4b2xlOGsifQ.IEmRP5lFSKW1nyeonj0lLQ")
+    fig = px.scatter_mapbox(df, lat="Latitude", lon="Longitude", color="Speeds (Knots)", mapbox_style="satellite",
+                            size="Distance (km)",
+                            hover_data=["Filename", "Station", "Distance (km)", "Speeds (Knots)",
+                                        "Delta Time(seconds)"],
+                            color_continuous_scale=px.colors.sequential.Bluered, size_max=15, zoom=5)
+    fig.show()
+
+###########################################################################################################
+
+if __name__ == '__main__':
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    dirName = dir_path
+
+    # Create dataframe
+    df = CreateDF(dirName)
+    # Plot dataframe
+    plotMap(df)
+    # Create CSV of dataframe
+    CreateCSV(df)
+
