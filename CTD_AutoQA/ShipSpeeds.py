@@ -167,4 +167,3 @@ if __name__ == '__main__':
     plotMap(df)
     # Create CSV of dataframe
     CreateCSV(df)
-
