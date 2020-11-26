@@ -1,0 +1,100 @@
+import pandas as pd
+
+# Creates a df of ships number, name long, and name short
+# Creates and returns a pandas dataframe for ships
+# indexes  ------------------------
+# [0] - instrument name
+# [1] - instrument number
+# Method has been added to cnv_toolkit 2020-11-16
+def createInstrumentDF():
+    inst = [
+        ['SBE-25', '36'],
+        ['SBE-25', '38'],
+        ['SBE-25', '78'],
+        ['SBE-25', '118'],
+        ['SBE-25', '129'],
+        ['SBE-25', '212'],
+        ['SBE-9 Plus', '277'],
+        ['SBE-911 plus', '277'],
+        ['SBE-19', '279'],
+        ['SBE-19', '280'],
+        ['SBE-19', '281'],
+        ['SBE-19', '298'],
+        ['SBE-9 Plus', '344'],
+        ['SBE-911 plus', '344'],
+        ['SBE-911 plus', '394'],
+        ['SBE-911 plus', '453'],
+        ['SBE-911 plus', '454'],
+        ['SBE-911 plus', '455'],
+        ['SBE-911 plus', '580'],
+        ['SBE-911 plus', '581'],
+        ['SBE-911 plus', '582'],
+        ['SBE-911 plus', '583'],
+        ['SBE-911 plus', '673'],
+        ['SBE-911 plus', '674'],
+        ['SBE-911 plus', '688'],
+        ['SBE-911 plus', '689'],
+        ['SBE-911 plus', '690'],
+        ['SBE-911 plus', '691'],
+        ['SBE-911 plus', '845'],
+        ['SBE-911 plus', '846'],
+        ['SBE-911 plus', '847'],
+        ['SBE-911 plus', '910'],
+        ['SBE-911 plus', '911'],
+        ['SBE-911 plus', '912'],
+        ['SBE-25 plus', '1003'],
+        ['SBE-25 plus', '1019'],
+        ['SBE-25 plus', '1020'],
+        ['SBE-25 plus', '1021'],
+        ['SBE-9 Plus', '1146'],
+        ['SBE-911', '1221'],
+        ['SBE-911', '1237'],
+        ['SBE-911', '1238'],
+        ['SBE-911', '1308'],
+        ['SBE-911', '1309'],
+        ['SBE-911', '1310'],
+        ['SBE-911', '1311'],
+        ['SBE-911', '1312'],
+        ['SBE-911', '1313'],
+        ['SBE-911', '1314'],
+        ['SBE-911', '1315'],
+        ['SBE-911', '1316'],
+        ['SBE-911', '1317'],
+        ['SBE-911', '1318'],
+        ['SBE-911', '1319'],
+        ['SBE-911', '1483'],
+        ['SBE-911', '2245'],
+        ['SBE-911', '2246'],
+        ['SBE-911', '2247'],
+        ['SBE-911', '2248'],
+        ['SBE-37-SM Microcats', '3555'],
+        ['SBE-19 plus', '4016'],
+        ['SBE-19 plus', '4017'],
+        ['SBE-19 plus', '4018'],
+        ['SBE-19 plus', '4019'],
+        ['SBE-19 plus', '4020'],
+        ['SBE-37-SMP Microcats', '4256'],
+        ['SBE-37-SMP Microcats', '4257'],
+        ['SBE-37-SMP Microcats', '4288'],
+        ['SBE-37-SMP Microcats', '4289'],
+        ['SBE-37-SMP Microcats', '4449'],
+        ['SBE-37-SMP Microcats', '4450'],
+        ['SBE-37-SMP Microcats', '4451'],
+        ['SBE-37-SMP Microcats', '4452'],
+        ['SBE-37-SMP Microcats', '4516'],
+        ['SBE-37-SMP Microcats', '4517'],
+        ['SBE-37-SMP Microcats', '4578'],
+        ['SBE-37-SMP Microcats', '4579'],
+        ['SBE-37-SMP Microcats', '4580'],
+        ['SBE-37-SMP Microcats', '4581'],
+        ['SBE-37-SMP Microcats', '4582'],
+        ['SBE-37-SMP Microcats', '4684'],
+        ['SBE-37-SMP Microcats', '4777']]
+
+    inst_df = pd.DataFrame.from_records(inst)
+    return inst_df
+
+
+if __name__ == '__main__':
+    df = createInstrumentDF()
+    print()

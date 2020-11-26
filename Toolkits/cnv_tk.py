@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import math
 import seawater as sw
+from Toolkits import ships_tk
+from Toolkits import inst_tk
 """
 Toolkit for creating cast object types from cnv files
 cnv_to_dataframe: dynamically creates a pandas dataframe based on the fields within the datafile
@@ -275,12 +277,19 @@ def cnv_meta(cast, datafile):
         else:
             isData = True
     getShipName(cast)
-    getInstrumentName(cast, "CTD Instrument Info.xlsx")
+    getInstrumentName(cast)
 
 ###########################################################################################################
 
-def getInstrumentName(cast, refFile):
+def getInstrumentName(cast, instDF=inst_tk.createInstrumentDF()):
 
+    number = ''.join(c for c in cast.Instrument if c.isdigit())
+    i = instDF[instDF[1].str.match(number)]
+    iname = i.values[0][0]
+    cast.InstrumentName = iname
+
+"""
+    # old method
     try:
         dfs = pd.read_excel(refFile, sheet_name="Sheet1")
     except:
@@ -293,134 +302,11 @@ def getInstrumentName(cast, refFile):
     for i in dfs.index:
         if cast.Instrument.__contains__(dfs['Serial Number (SN)'][i].__str__()):
             cast.InstrumentName = dfs['Instrument Type (SBE-CTD)'][i]
+"""
 
 ###########################################################################################################
 
-def createShipDF():
-    # Creates a df of ships number, name long, and name short
-    # Creates and returns a pandas dataframe for ships
-    # indexes  ------------------------
-    # [0] - ship number
-    # [1] - ship name long
-    # [2] - ship name short
-
-    ships = [
-        ['00', 'unknown', 'xxx'],
-        ['01', 'a.t.cameron', 'xxx'],
-        ['02', 'gadus', 'gadus'],
-        ['03', 'shamook', 'sham'],
-        ['04', 'marinus', 'mar'],
-        ['05', 'kenda', 'ken'],
-        ['06', 'martin&phillip', 'xxx'],
-        ['07', 'zagreb', 'xxx'],
-        ['08', 'burin_bay', 'xxx'],
-        ['09', 'nfld_hawk', 'hawk'],
-        ['10', 'tman', 'tman'],
-        ['11', 'hammond', 'ham'],
-        ['12', 'needler', 'need'],
-        ['13', 'cindy_elizabeth', 'xxx'],
-        ['14', 'balder_cabot', 'xxx'],
-        ['15', 'specials', 'spec'],
-        ['16', 'e.e.prince', 'xxx'],
-        ['17', 'lake_melville', 'xxx'],
-        ['18', 'dawson', 'dawson'],
-        ['19', 'karl&jackie', 'xxx'],
-        ['20', 'hudson', 'hud'],
-        ['21', 'parizeau', 'par'],
-        ['22', 'petrel', 'petrel'],
-        ['23', 'cormorant', 'corm'],
-        ['24', 'bernier', 'bern'],
-        ['25', 'hood', 'hood'],
-        ['26', 'mares', 'mar'],
-        ['27', 'ccg206', 'ccg'],
-        ['28', 'adair', 'adair'],
-        ['29', 'lauzier', 'lauz'],
-        ['30', 'nfld_lynx', 'lynx'],
-        ['31', 'kingfisher', 'kfisher'],
-        ['32', 'surf', 'surf'],
-        ['33', 'roger', 'roger'],
-        ['34', 'explorer', 'exp'],
-        ['35', 'zandvoort', 'zand'],
-        ['36', 'aharvey', 'har'],
-        ['37', 'larsen', 'lar'],
-        ['38', 'gilbert', 'gil'],
-        ['39', 'teleost', 'tel'],
-        ['40', 'whaler', 'whal'],
-        ['41', 'sentinal', 'sent'],
-        ['42', 'aclare', 'aclare'],
-        ['44', 'lindsey', 'lind'],
-        ['45', 'grenfell', 'gren'],
-        ['48', 'cape_ballard', 'ballard'],
-        ['49', 'pennysmart', 'ps'],
-        ['50', 'naka', 'naka50'],
-        ['51', 'naka', 'naka51'],
-        ['52', 'naka', 'naka52'],
-        ['53', 'naka', 'naka53'],
-        ['54', 'gilbertbay', 'gbmpa'],
-        ['55', 'discovery', 'discovery'],
-        ['59', 'pearkes', 'pearkes'],
-        ['60', 'celtic_explorer', 'cel'],
-        ['61', 'vladykov', 'vlad'],
-        ['62', 'aqviq', 'aqv'],
-        ['63', 'kinguk', 'kinguk'],
-        ['64', 'katsheshuk', 'katsheshuk'],
-        ['65', 'martha_black', 'martha'],
-        ['66', 'EcoSciences', 'ecosci'],
-        ['70', 'aquaculture', 'aqua'],
-        ['71', 'aquaculture2', 'aqua2'],
-        ['72', 'aquaculture3', 'aqua3'],
-        ['75', 'viking_s27', 'viks'],
-        ['76', 'Cartier', 'cart'],
-        ['77', 'Cabot', 'cabot'],
-        ['79', 'james_cook', 'cook'],
-        ['80', 'afap80', 'afap80'],
-        ['81', 'afap81', 'afap81'],
-        ['82', 'afap82', 'afap82'],
-        ['83', 'afap83', 'afap83'],
-        ['84', 'afap84', 'afap84'],
-        ['85', 'afap85', 'afap85'],
-        ['86', 'afap86', 'afap86'],
-        ['89', 'afap89', 'afap89'],
-        ['90', 'meds_data', 'meds90'],
-        ['91', 'olabs', 'olabs'],
-        ['92', 'french', 'doc'],
-        ['93', 'osc', 'osc'],
-        ['94', 'spanish', 'spanish'],
-        ['95', 'meds_data', 'meds95'],
-        ['96', 'meds_data', 'meds96'],
-        ['AA', 'sent_AA', 'AA'],
-        ['AB', 'sent_AB', 'AB'],
-        ['AC', 'sent_AC', 'AC'],
-        ['AD', 'sent_AD', 'AD'],
-        ['AE', 'sent_AE', 'AE'],
-        ['AF', 'sent_AF', 'AF'],
-        ['AG', 'sent_AG', 'AG'],
-        ['AH', 'sent_AH', 'AH'],
-        ['AI', 'sent_AI', 'AI'],
-        ['AJ', 'sent_AJ', 'AJ'],
-        ['AK', 'sent_AK', 'AK'],
-        ['AL', 'sent_AL', 'AL'],
-        ['AM', 'sent_AM', 'AM'],
-        ['AN', 'sent_AN', 'AN'],
-        ['AO', 'sent_AO', 'AO'],
-        ['AP', 'sent_AP', 'AP'],
-        ['AQ', 'sent_AQ', 'AQ'],
-        ['AR', 'sent_AR', 'AR'],
-        ['AS', 'sent_AS', 'AS'],
-        ['AT', 'sent_AT', 'AT'],
-        ['AU', 'sent_AU', 'AU'],
-        ['AV', 'sent_AV', 'AV'],
-        ['AW', 'sent_AW', 'AW'],
-        ['AX', 'sent_AX', 'AX'],
-        ['AY', 'sent_AY', 'AY'],
-        ['AZ', 'sent_AZ', 'AZ']]
-
-    ship_df = pd.DataFrame.from_records(ships)
-    return ship_df
-
-###########################################################################################################
-
-def getShipName(cast, shipDF=createShipDF()):
+def getShipName(cast, shipDF=ships_tk.createShipDF()):
 
     s = shipDF[shipDF[0].str.match(cast.ship.__str__())]
     sname = s.values[0][2]
@@ -448,7 +334,7 @@ def getShipName(cast, shipDF=createShipDF()):
 
 ###########################################################################################################
 
-def getShipNumber(cast, shipDF=createShipDF()):
+def getShipNumber(cast, shipDF=ships_tk.createShipDF()):
 
     s = shipDF[shipDF[2].str.match(cast.ShipName.__str__())]
     snumber = s.values[0][0]

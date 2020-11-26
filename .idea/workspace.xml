@@ -4,13 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/PFile/ctdviewer_v3.py" line="53" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="Added method for Ship speed plotter&#10;- plotMap(df)">
-      <change afterPath="$PROJECT_DIR$/CTD_AutoQA/instList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CTD_AutoQA/ships.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main CTD Scripts/CFNetCDF_Binned" afterDir="false" />
+    <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Toolkits/inst_tk.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTD_AutoQA/ShipSpeeds.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTD_AutoQA/ShipSpeeds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CTD_AutoQA/ships.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/ships_tk.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Toolkits/cnv_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/cnv_tk.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,34 +19,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Toolkits/dir_tk.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="41" column="56" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/ShipSpeeds.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="6" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6341">
-              <caret line="373" selection-start-line="373" selection-end-line="373" />
+            <state relative-caret-position="413">
+              <caret line="374" column="58" lean-forward="true" selection-start-line="374" selection-start-column="58" selection-end-line="374" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -57,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda3/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5236">
+            <state relative-caret-position="169">
               <caret line="309" selection-start-line="309" selection-end-line="309" />
             </state>
           </provider>
@@ -66,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CTD_AutoQA/instList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+            <state relative-caret-position="289">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -76,31 +49,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SampleFiles/CNV/210_2020/tel210_2020_008.cnv">
+        <entry file="file://$PROJECT_DIR$/Toolkits/ships_tk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+            <state relative-caret-position="204">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/ships.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2643">
-              <caret line="428" column="6" selection-start-line="428" selection-start-column="6" selection-end-line="428" selection-end-column="6" />
+            <state relative-caret-position="34">
+              <caret line="281" selection-start-line="281" selection-end-line="288" selection-end-column="31" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -109,15 +70,39 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/tempShipfile.txt">
+        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/LocalMap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SampleFiles/CNV/210_2020/tel210_2020_001.cnv">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main CTD Scripts/ships.txt">
+        <entry file="file://$PROJECT_DIR$/Toolkits/inst_tk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+            <state relative-caret-position="447">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PFile/p_tk.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7531">
+              <caret line="443" column="31" lean-forward="true" selection-start-line="443" selection-start-column="31" selection-end-line="443" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,6 +131,10 @@
       <find>software</find>
       <find>show</find>
       <find>Resour</find>
+      <find>instrument Info</find>
+      <find>getIns</find>
+      <find>&quot;CTD Instrument Info.xlsx&quot;</find>
+      <find>CTD Instrument Info.xlsx</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,8 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Thermograph/writer.py" />
-        <option value="$USER_HOME$/OneDrive/Desktop/test/testPtk.py" />
         <option value="$PROJECT_DIR$/PFile Toolkit/testPtk.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/39185086.cnv" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/cnvDB.py" />
@@ -204,7 +191,9 @@
         <option value="$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/instList.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/ships.py" />
+        <option value="$PROJECT_DIR$/Toolkits/inst_tk.py" />
         <option value="$PROJECT_DIR$/Toolkits/cnv_tk.py" />
+        <option value="$PROJECT_DIR$/PFile/p_tk.py" />
       </list>
     </option>
   </component>
@@ -217,7 +206,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,6 +227,11 @@
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="Git" type="462c0819:PsiDirectoryNode" />
               <item name="Main CTD Scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="PFile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
@@ -279,17 +272,11 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="Toolkits" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Git" type="462c0819:PsiDirectoryNode" />
-              <item name="Web" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,27 +309,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CTD_AutoQA/ShipSpeeds.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestSpeeds" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/OneDrive/Desktop/NCWriter/Script" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/OneDrive/Desktop/NCWriter/Script/TestSpeeds.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -393,6 +359,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="inst_tk" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Toolkits" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Toolkits/inst_tk.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ships" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -405,7 +392,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CTD_AutoQA/ships.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\dylan\PycharmProjects\Workspace\Git\Toolkits\ships_tk.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -417,10 +404,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.binnedNCWriter" />
+        <item itemvalue="Python.inst_tk" />
         <item itemvalue="Python.ships" />
         <item itemvalue="Python.instList" />
         <item itemvalue="Python.ShipSpeeds" />
-        <item itemvalue="Python.TestSpeeds" />
       </list>
     </recent_temporary>
   </component>
@@ -434,13 +421,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591206340805</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Added Trimmed files">
-      <created>1592596058098</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1592596058098</updated>
     </task>
     <task id="LOCAL-00008" summary="Applied QA txt to writer, writer will now check for cast.QA str">
       <created>1593027668762</created>
@@ -778,20 +758,27 @@
       <option name="project" value="LOCAL" />
       <updated>1603900953097</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Added ships.py methods to cnv_toolkit&#10;Method added: createShipDF()&#10;returns dataframe of ship info&#10;&#10;dataframe[0] - ship number&#10;dataframe[1] - ship name long&#10;dataframe[2] - ship name short">
+      <created>1605541430188</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1605541430188</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1119403" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1130064" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3347779" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39869988" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3347779" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -847,7 +834,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed checks in cnv_meta in toolkit to avoid type conflict/error" />
     <MESSAGE value="Created Prototype Server for webapp&#10;Setup basic HTML and HTTP requests and App URLs for server&#10;Created Reader for CNV db&#10;Cleaned up toolkit file locations and updated imports accordingly" />
     <MESSAGE value="update" />
     <MESSAGE value="updated toolkits and added ctdviewer version 3&#10;also updated cnv meta csv (fixed error in row)" />
@@ -872,7 +858,8 @@
     <MESSAGE value="Added return function for dataframe&#10;ShipSpeeds df can now be used in outside scripts with CreateDF()" />
     <MESSAGE value="Added method for csvwriter&#10;- CreateCSV(df)" />
     <MESSAGE value="Added method for Ship speed plotter&#10;- plotMap(df)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added method for Ship speed plotter&#10;- plotMap(df)" />
+    <MESSAGE value="Added ships.py methods to cnv_toolkit&#10;Method added: createShipDF()&#10;returns dataframe of ship info&#10;&#10;dataframe[0] - ship number&#10;dataframe[1] - ship name long&#10;dataframe[2] - ship name short" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ships.py methods to cnv_toolkit&#10;Method added: createShipDF()&#10;returns dataframe of ship info&#10;&#10;dataframe[0] - ship number&#10;dataframe[1] - ship name long&#10;dataframe[2] - ship name short" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1008,14 +995,14 @@
           <option name="timeStamp" value="143" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Toolkits/cnv_tk.py</url>
-          <line>452</line>
-          <option name="timeStamp" value="147" />
+          <url>file://$PROJECT_DIR$/Toolkits/inst_tk.py</url>
+          <line>99</line>
+          <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Toolkits/cnv_tk.py</url>
-          <line>425</line>
-          <option name="timeStamp" value="148" />
+          <line>288</line>
+          <option name="timeStamp" value="154" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1033,21 +1020,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/pandas/core/internals/construction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9605">
-          <caret line="610" selection-start-line="610" selection-end-line="610" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/tel210_2020_081.cnv" />
-    <entry file="file://$USER_HOME$/OneDrive/Desktop/NCWriter/Script/Find.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Thermograph/depth_plotter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3429">
@@ -1171,9 +1143,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CTD_AutoQA/tel210_2020_005.cnv" />
     <entry file="file://$PROJECT_DIR$/Main CTD Scripts/210_IGOSS.DTA" />
-    <entry file="file://$PROJECT_DIR$/SampleFiles/CNV/210_2020/tel210_2020_001.cnv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main CTD Scripts/CNV_META.csv" />
     <entry file="file://$PROJECT_DIR$/ConvertedPFiles/39200_META.csv">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1237,23 +1206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/LocalMap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/CFNetCDF_Binned">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="68" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Toolkits/dir_tk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -1274,17 +1226,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py">
+    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/ships.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6341">
-          <caret line="373" selection-start-line="373" selection-end-line="373" />
+        <state relative-caret-position="442">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/Lib/codecs.py">
+    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/tempShipfile.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/CFNetCDF_Binned">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5236">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -1295,45 +1250,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/tempShipfile.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/ships.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CTD_AutoQA/instList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/ships.py">
+    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/LocalMap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="57" />
+        <state relative-caret-position="-51">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="374" column="58" lean-forward="true" selection-start-line="374" selection-start-column="58" selection-end-line="374" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toolkits/ships_tk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2643">
-          <caret line="428" column="6" selection-start-line="428" selection-start-column="6" selection-end-line="428" selection-end-column="6" />
+        <state relative-caret-position="34">
+          <caret line="281" selection-start-line="281" selection-end-line="288" selection-end-column="31" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PFile/p_tk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7531">
+          <caret line="443" column="31" lean-forward="true" selection-start-line="443" selection-start-column="31" selection-end-line="443" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toolkits/temp_inst.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toolkits/inst_tk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleFiles/CNV/210_2020/tel210_2020_001.cnv">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
