@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import math
 import seawater as sw
+from Toolkits import ships_tk
+from Toolkits import inst_tk
 """
 Toolkit for creating cast object types from cnv files
 cnv_to_dataframe: dynamically creates a pandas dataframe based on the fields within the datafile
@@ -275,12 +277,19 @@ def cnv_meta(cast, datafile):
         else:
             isData = True
     getShipName(cast)
-    getInstrumentName(cast, "CTD Instrument Info.xlsx")
+    getInstrumentName(cast)
 
 ###########################################################################################################
 
-def getInstrumentName(cast, refFile):
+def getInstrumentName(cast, instDF=inst_tk.createInstrumentDF()):
 
+    number = ''.join(c for c in cast.Instrument if c.isdigit())
+    i = instDF[instDF[1].str.match(number)]
+    iname = i.values[0][0]
+    cast.InstrumentName = iname
+
+"""
+    # old method
     try:
         dfs = pd.read_excel(refFile, sheet_name="Sheet1")
     except:
@@ -293,11 +302,17 @@ def getInstrumentName(cast, refFile):
     for i in dfs.index:
         if cast.Instrument.__contains__(dfs['Serial Number (SN)'][i].__str__()):
             cast.InstrumentName = dfs['Instrument Type (SBE-CTD)'][i]
+"""
 
 ###########################################################################################################
 
-def getShipName(cast):
+def getShipName(cast, shipDF=ships_tk.createShipDF()):
 
+    s = shipDF[shipDF[0].str.match(cast.ship.__str__())]
+    sname = s.values[0][2]
+    cast.ShipName = sname
+"""
+    # old method
     try:
         Ships = open("ships.txt")
     except:
@@ -315,11 +330,17 @@ def getShipName(cast):
         if number == cast.ship:
             cast.ShipName = name
             break
+"""
 
 ###########################################################################################################
 
-def getShipNumber(cast):
+def getShipNumber(cast, shipDF=ships_tk.createShipDF()):
 
+    s = shipDF[shipDF[2].str.match(cast.ShipName.__str__())]
+    snumber = s.values[0][0]
+    cast.ship = snumber
+"""
+    # old method
     try:
         Ships = open("ships.txt")
     except:
@@ -337,7 +358,7 @@ def getShipNumber(cast):
         if name == cast.ShipName:
             cast.ship = number
             break
-
+"""
 ###########################################################################################################
 
 

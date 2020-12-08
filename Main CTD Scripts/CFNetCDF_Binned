@@ -1,7 +1,5 @@
 import sys
 sys.path.append('C://Users//dylan//PycharmProjects//Workspace//Git')
-# sys.path.append('C://Users//dylan//PycharmProjects//Workspace//Git//Toolkits')
-# sys.path.append('C://Users//dylan//PycharmProjects//Workspace//Git//Resources')
 from Toolkits import cnv_tk
 from Toolkits import dir_tk
 import os
@@ -352,16 +350,12 @@ if __name__ == '__main__':
     dir_path = os.path.dirname(os.path.realpath(__file__))
     dirName = dir_path
 
-    #files = dir_tk.getListOfFiles(dirName)
-    files = dir_tk.confirmSelection()
+    files = dir_tk.getListOfFiles(dirName)
     isbinned = input("Would you like the data to be binned?\nY / N\n")
     for f in files:
         # changes Dir back to original after writing to trimmed sub folder
         os.chdir(dirName)
-        try:
-            datafile = f.name
-        except:
-            datafile = f
+        datafile = f
         if datafile.lower().endswith(".cnv"):
             print("Reading: " + datafile)
             cast = cnv_tk.Cast(datafile)

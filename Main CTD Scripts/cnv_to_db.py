@@ -104,20 +104,22 @@ def database(cast, df):
 
     # Casts Table
     if not isMeta(cast):
+        id = cast.ship.__str__() + cast.trip.__str__() + cast.station.__str__()
+        cast.id = int(id)
         c.execute("INSERT INTO 'Casts' ('id', 'Ship', 'ShipName', 'Trip', 'Station', 'Latitude', 'Longitude', 'SounderDepth', 'Instrument', 'InstrumentName',"
                   " 'Comment', 'NumScans', 'SamplingRate', 'ChannelCount', 'DataChannels',"
                   " 'MinDepth', 'MaxDepth', 'CastDatetime', 'File', 'Language', 'Encoding', 'Contact', 'Country', 'MaintenanceContact', 'OrgName', 'DataLimit' )"
                   " VALUES ( '{ID}', '{ship}', '{shipName}', '{trip}', '{sett}', '{lat}', '{long}', '{depth}', '{ins}', '{insname}', "
                   " '{comment}', '{numscan}', '{sample}', '{chnlcount}', '{datchannels}',"
                   " '{mind}', '{maxd}', '{date}', '{fil}', '{lang}', '{enc}', '{cnt}', '{coun}', '{mcnt}', '{onam}', '{dlmt}')" \
-                  .format(ID=cast.id, ship=cast.ship, shipName=cast.ShipName, trip=cast.trip, sett=cast.station, lat=cast.Latitude, long=cast.Longitude,
-                          depth=cast.SounderDepth, ins=cast.Instrument, fishset=cast.setNumber, casttype=cast.castType,
-                          comment=cast.comment, numscan=cast.NumScans, sample=cast.SamplingRate, insname=cast.InstrumentName,
-                          filetype=cast.filetype, chnlcount=cast.channelCount, datchannels=cast.dataChannels,
-                          dcast=cast.downcast, sub=cast.subsample, mind=cast.minDepth, maxd=cast.maxDepth,
-                          fstrata=cast.fishingStrata, meta=cast.metData, date=cast.CastDatetime, fil=datafile,
+                  .format(ID=cast.id, ship=cast.ship.__str__(), shipName=cast.ShipName.__str__(), trip=cast.trip.__str__(), sett=cast.station.__str__(), lat=cast.Latitude.__str__(), long=cast.Longitude.__str__(),
+                          depth=cast.SounderDepth.__str__(), ins=cast.Instrument.__str__(), fishset=cast.setNumber.__str__(), casttype=cast.castType.__str__(),
+                          comment=cast.comment.__str__(), numscan=cast.NumScans.__str__(), sample=cast.SamplingRate.__str__(), insname=cast.InstrumentName.__str__(),
+                          filetype=cast.filetype.__str__(), chnlcount=cast.channelCount.__str__(), datchannels=cast.dataChannels.__str__(),
+                          dcast=cast.downcast.__str__(), sub=cast.subsample.__str__(), mind=cast.minDepth.__str__(), maxd=cast.maxDepth.__str__(),
+                          fstrata=cast.fishingStrata.__str__(), meta=cast.metData.__str__(), date=cast.CastDatetime.__str__(), fil=datafile.__str__(),
                           lang=cast.language, enc=cast.encoding, cnt=cast.PointOfContact, coun=cast.Country,
-                          mcnt=cast.MaintenanceContact, onam=cast.OrgName, dlmt=cast.DataLimit))
+                          mcnt=cast.MaintenanceContact.__str__(), onam=cast.OrgName.__str__(), dlmt=cast.DataLimit))
 
         # User Input Table
         for l in cast.userInput:
@@ -141,7 +143,7 @@ def database(cast, df):
 
         conn.commit()
         #TODO: implement df into db for cnv
-        # df2sqlite(df)
+        #df2sqlite(cast, df)
 
 ###########################################################################################################
 
@@ -165,6 +167,7 @@ if __name__ == '__main__':
     if select.__eq__("1"):
         files = dir_tk.getListOfFiles(dirName)
 
+    directory = db_tk.setDirectory()
     for f in files:
 
         os.chdir(dirName)
@@ -176,17 +179,16 @@ if __name__ == '__main__':
                 cnv_tk.cnv_meta(cast, datafile)
                 df = cnv_tk.cnv_to_dataframe(cast)
                 cast.DataLimit = len(df.index)
-
-                cast.directory = db_tk.setDirectory()
-
+                cast.directory = directory
                 database(cast, df)
+                print(datafile + "added")
             except Exception as e:
                 os.chdir(dirName)
                 dir_tk.createProblemFolder()
                 newfile = datafile.replace(".cnv", "_") + "_cnv.error"
-                print("Error Reading File")
-                f = open(newfile, "w")
-                f.write(e.__str__())
+                print("Error Reading File: " + e.__str__())
+                #f = open(newfile, "w")
+                #f.write(e.__str__())
 
 
         else:
