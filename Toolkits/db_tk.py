@@ -5,17 +5,17 @@ from sqlite3 import Error
 Toolkit containing methods useful for Database operations
 """
 ###########################################################################################################
-def setDirectory(database='CTD.db'):
+def setDirectory(database='CNV.db'):
 
     print("Would you like to change database?")
-    print(" Current path: " + database + "\n [1] Yes / [0] No")
+    print(" Current path: " + database + "\n [1] Yes / [2] No")
     select = input()
-    if int(select) == 1:
+    if select == "1" or select.lower() == "y":
         print("Input new path:")
         database = input()
         print("\nNew Path: " + database + "\n")
         return database
-    elif int(select) == 0:
+    elif select == "2" or select.lower() == "n":
         return database
     else:
         print("Please Choose [1] Yes / [0] No ...\n")
