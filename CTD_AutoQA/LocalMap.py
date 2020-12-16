@@ -8,6 +8,9 @@ from geopy import distance
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+"""
+Old version. This script has been incorporated into ShipSpeeds.py
+"""
 
 
 # Creates dictionary to be used on each file in directory
@@ -108,7 +111,7 @@ if __name__ == '__main__':
 
     #files = dir_tk.getListOfFiles(dirName)
     isSelected = True
-    files = dir_tk.selectFiles(dirName)
+    files = dir_tk.selectFiles()
     lastPoint = ""
     currentPoint = ""
     FileArray = []
@@ -117,11 +120,12 @@ if __name__ == '__main__':
         os.chdir(dirName)
         datafile = f.name
         if isSelected:
-            print("Reading: " + datafile)
-            cast = cnv_tk.Cast(datafile)
-            cnv_tk.cnv_meta(cast, datafile)
-            PopulateDict(cast, Dictionary)
-            FileArray.append(datafile)
+            if datafile.lower().endswith(".cnv"):
+                print("Reading: " + datafile)
+                cast = cnv_tk.Cast(datafile)
+                cnv_tk.cnv_meta(cast, datafile)
+                PopulateDict(cast, Dictionary)
+                FileArray.append(datafile)
         else:
             if datafile.lower().endswith(".cnv"):
                 print("Reading: " + datafile)
