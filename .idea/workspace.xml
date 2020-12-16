@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CTD_AutoQA/findStation27.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTD_AutoQA/LocalMap.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTD_AutoQA/LocalMap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toolkits/cnv_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/cnv_tk.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/DashScr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web/DashScr.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CTD_AutoQA/findStation27.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
-              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="1076">
+              <caret line="115" column="36" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="36" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -431,20 +428,6 @@
       <option name="presentableId" value="Default" />
       <updated>1591206340805</updated>
     </task>
-    <task id="LOCAL-00014" summary="Added QA for data frame&#10;-checks for pressure column&#10;-checks that column has more than 15 nan values&#10;-checks that df has at least 2 valid columns excluding scan&#10;&#10;Writes failed QA scripts to log.txt in ProblemFiles Folder">
-      <created>1593520148704</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1593520148704</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Added QA for data frame&#10;-checks for pressure column&#10;-checks that column has more than 15 nan values&#10;-checks that df has at least 2 valid columns excluding scan&#10;&#10;Writes failed QA scripts to log.txt in ProblemFiles Folder">
-      <created>1593520191179</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1593520191179</updated>
-    </task>
     <task id="LOCAL-00016" summary="Breakdown of column naming for the binnedNC writer">
       <created>1593521738607</created>
       <option name="number" value="00016" />
@@ -774,7 +757,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607453932394</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Added Script to locate station 27 and write files to subfolder">
+      <created>1608137837829</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1608137837829</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Updated">
+      <created>1608137896035</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1608137896035</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -843,8 +840,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added method StandardizedDF to cnv toolkit to create df using midlayer names for columns.&#10;&#10;Also Reuploaded Binned Writer" />
-    <MESSAGE value="Added method StandardizedDF to cnv toolkit to create df using midlayer names for columns." />
     <MESSAGE value="added QA changes made to user input, can now see when df variables were changed&#10;added new column to midlayer check" />
     <MESSAGE value="Added Distance calculation and values to dataframe" />
     <MESSAGE value="Added Distance calculation and values to dataframe&#10;Added Speed calculation and values to dataframe" />
@@ -868,7 +863,9 @@
     <MESSAGE value="Updated Script For Generating INST file" />
     <MESSAGE value="Made Changes for XBT reading and counting Vertical casts" />
     <MESSAGE value="Updated Webapp to dynamically populate data table from database, also made changes to database reading." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Webapp to dynamically populate data table from database, also made changes to database reading." />
+    <MESSAGE value="Added Script to locate station 27 and write files to subfolder" />
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1395,8 +1392,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CTD_AutoQA/findStation27.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="1076">
+          <caret line="115" column="36" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="36" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

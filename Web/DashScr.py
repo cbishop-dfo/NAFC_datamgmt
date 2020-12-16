@@ -19,8 +19,14 @@ dff = df.copy()
 for col in dff:
     dff[col] = dff[col].replace('', np.nan).dropna()
 dff = dff.dropna(how='all', axis=1)
+del dff["Encoding"]
+del dff["Contact"]
+del dff["Language"]
+del dff["MaintenanceContact"]
 
 app = dash.Dash(__name__)
+server = app.server
+app.title = "DFO | CTD Meta Data"
 
 theme =  {
     'dark': True,
