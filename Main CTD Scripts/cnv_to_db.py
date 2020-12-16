@@ -106,6 +106,9 @@ def database(cast, df):
     if not isMeta(cast):
         id = cast.ship.__str__() + cast.trip.__str__() + cast.station.__str__()
         cast.id = int(id)
+        # Remove full path from file and only include filename in database
+        OGfile = datafile.split("/")
+        OGfile = OGfile[OGfile.__len__()-1]
         c.execute("INSERT INTO 'Casts' ('id', 'Ship', 'ShipName', 'Trip', 'Station', 'Latitude', 'Longitude', 'SounderDepth', 'Instrument', 'InstrumentName',"
                   " 'Comment', 'NumScans', 'SamplingRate', 'ChannelCount', 'DataChannels',"
                   " 'MinDepth', 'MaxDepth', 'CastDatetime', 'File', 'Language', 'Encoding', 'Contact', 'Country', 'MaintenanceContact', 'OrgName', 'DataLimit' )"
@@ -117,7 +120,7 @@ def database(cast, df):
                           comment=cast.comment.__str__(), numscan=cast.NumScans.__str__(), sample=cast.SamplingRate.__str__(), insname=cast.InstrumentName.__str__(),
                           filetype=cast.filetype.__str__(), chnlcount=cast.channelCount.__str__(), datchannels=cast.dataChannels.__str__(),
                           dcast=cast.downcast.__str__(), sub=cast.subsample.__str__(), mind=cast.minDepth.__str__(), maxd=cast.maxDepth.__str__(),
-                          fstrata=cast.fishingStrata.__str__(), meta=cast.metData.__str__(), date=cast.CastDatetime.__str__(), fil=datafile.__str__(),
+                          fstrata=cast.fishingStrata.__str__(), meta=cast.metData.__str__(), date=cast.CastDatetime.__str__(), fil=OGfile.__str__(),
                           lang=cast.language, enc=cast.encoding, cnt=cast.PointOfContact, coun=cast.Country,
                           mcnt=cast.MaintenanceContact.__str__(), onam=cast.OrgName.__str__(), dlmt=cast.DataLimit))
 
@@ -155,23 +158,13 @@ if __name__ == '__main__':
 
 
 
-    print("Files to Process\n[1] All Files In Current Directory\n[2] Manual File Select")
-    select = input()
-
-    if select.__eq__("2"):
-        root = tk.Tk()
-        root.withdraw()
-        files = filedialog.askopenfilenames(title='Choose files')
-        print(files)
-
-    if select.__eq__("1"):
-        files = dir_tk.getListOfFiles(dirName)
+    files = dir_tk.confirmSelection()
 
     directory = db_tk.setDirectory()
     for f in files:
 
         os.chdir(dirName)
-        datafile = f
+        datafile = f.name
         if datafile.lower().endswith(".cnv"):
             try:
                 print("Reading: " + datafile)
@@ -181,7 +174,7 @@ if __name__ == '__main__':
                 cast.DataLimit = len(df.index)
                 cast.directory = directory
                 database(cast, df)
-                print(datafile + "added")
+
             except Exception as e:
                 os.chdir(dirName)
                 dir_tk.createProblemFolder()

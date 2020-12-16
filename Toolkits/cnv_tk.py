@@ -249,6 +249,13 @@ def cnv_meta(cast, datafile):
             elif line.upper().__contains__("COMMENTS"):
                 cast.comment = line.split(":")[1]
             elif line.upper().__contains__("PROBE"):
+                if xbt:
+                    cast.InstrumentName = line.split(":")[1].strip()
+                else:
+                    cast.Instrument = line.split(":")[1]
+            elif line.upper().__contains__("VNET"):
+                cast.VNET = line.split(":")[1]
+            elif line.upper().__contains__("XBT NUMBER"):
                 cast.Instrument = line.split(":")[1]
             elif line.upper() == "YEAR":
                 year = line.split(":")[1].rstrip().lstrip()
@@ -277,7 +284,8 @@ def cnv_meta(cast, datafile):
         else:
             isData = True
     getShipName(cast)
-    getInstrumentName(cast)
+    if not xbt:
+        getInstrumentName(cast)
 
 ###########################################################################################################
 
@@ -285,8 +293,13 @@ def getInstrumentName(cast, instDF=inst_tk.createInstrumentDF()):
 
     number = ''.join(c for c in cast.Instrument if c.isdigit())
     i = instDF[instDF[1].str.match(number)]
-    iname = i.values[0][0]
-    cast.InstrumentName = iname
+    try:
+        iname = i.values[0][0]
+        cast.InstrumentName = iname
+    except Exception as e:
+        print(e.__str__())
+        print("Cannot Find Instrument name in file...\nSetting Instrument Name to Instrument Number: " + cast.Instrument)
+        cast.InstrumentName = cast.Instrument
 
 """
     # old method
