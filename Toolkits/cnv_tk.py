@@ -553,7 +553,7 @@ def df_press_depth(cast):
 
 ###########################################################################################################
 
- # Save changes of origional datafile as new datafile, (new changed file will be called the same as the origional but with extension '.new')
+ # Save changes of original datafile as new datafile, (new changed file will be called the same as the origional but with specified extension '.old' by default)
 def cnv_write(cast, df, ext=".old"):
     newfile = cast.datafile + ext
     writer = open(newfile, "w+")
@@ -568,7 +568,7 @@ def cnv_write(cast, df, ext=".old"):
 
 ###########################################################################################################
 
- # Save changes of origional datafile as new datafile, (new changed file will be called the same as the origional but with extension '.new')
+ # Create a simple text file from datafile (new changed file will be called the same as the original but with specified extension '.simple' by default)
 def cnv_write_simple(cast, df, ext=".simple"):
     newfile = cast.datafile + ext
     writer = open(newfile, "w+")
