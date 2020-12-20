@@ -6,6 +6,8 @@ import datetime
 import xlrd
 import os
 from Toolkits import dir_tk
+from Toolkits import ships_tk
+from Toolkits import inst_tk
 
 class Cast(object):
 
@@ -350,28 +352,10 @@ def convertLatLong(convert):
 
 ###########################################################################################################
 
-
-def getShipName(cast):
-
-    try:
-        Ships = open("ships.txt")
-    except:
-        try:
-            Ships = open("../Resources/ships.txt")
-        except Exception as e:
-            print(e.__str__())
-            return
-
-
-    for shipName in Ships:
-        number = shipName.replace("\n", "").split()[0]
-        try:
-            name = shipName.replace("\n", "").split()[1]
-        except:
-            continue
-        if number == cast.ship:
-            cast.ShipName = name
-            break
+def getShipName(cast, shipDF=ships_tk.createShipDF()):
+    s = shipDF[shipDF[0].str.match(cast.ship.__str__())]
+    sname = s.values[0][2]
+    cast.ShipName = sname
 
 ###########################################################################################################
 
@@ -452,23 +436,12 @@ def isMeta(data):
 
 ###########################################################################################################
 
-def getInstrumentName(cast, refFile):
+def getInstrumentName(cast, instDF=inst_tk.createInstrumentDF()):
 
-    try:
-        dfs = pd.read_excel(refFile, sheet_name="Sheet1")
-    except:
-        try:
-            dfs = pd.read_excel("../Resources/CTD Instrument Info.xlsx", sheet_name="Sheet1")
-        except Exception as e:
-            print(e.__str__())
-    #dfs = pd.read_csv(refFile, sep=" ", header=None)
-
-    try:
-        for i in dfs.index:
-            if cast.Instrument.__contains__(dfs['Serial Number (SN)'][i].__str__()):
-                cast.InstrumentName = dfs['Instrument Type (SBE-CTD)'][i]
-    except Exception as e:
-        print(e.__str__())
+    number = ''.join(c for c in cast.Instrument if c.isdigit())
+    i = instDF[instDF[1].str.match(number)]
+    iname = i.values[0][0]
+    cast.InstrumentName = iname
 
 ###########################################################################################################
 

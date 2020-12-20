@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/DashScr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web/DashScr.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,13 +15,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CTD_AutoQA/findStation27.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1076">
-              <caret line="115" column="36" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="36" />
+            <state relative-caret-position="391">
+              <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Toolkits/p_tk.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="552" column="61" lean-forward="true" selection-start-line="552" selection-start-column="61" selection-end-line="552" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -31,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-828">
+            <state>
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -42,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Thermograph/checkSample.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4636">
+            <state>
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -53,7 +64,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Thermograph/Ingestor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19120">
+            <state>
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -86,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CTD_META_QA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-250">
+            <state>
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -96,25 +107,14 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PFile/ctdviewer_v2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3803" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1637858127/nt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="1513">
               <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/Lib/codecs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="309" selection-start-line="309" selection-end-line="309" />
             </state>
           </provider>
         </entry>
@@ -264,6 +264,12 @@
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="Git" type="462c0819:PsiDirectoryNode" />
               <item name="Web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="Web" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
@@ -427,20 +433,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591206340805</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Breakdown of column naming for the binnedNC writer">
-      <created>1593521738607</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1593521738608</updated>
-    </task>
-    <task id="LOCAL-00017" summary="added script to write cnv meta to cnv">
-      <created>1594673934829</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1594673934829</updated>
     </task>
     <task id="LOCAL-00018" summary="added script to write cnv meta to cnv">
       <created>1594674471883</created>
@@ -771,24 +763,37 @@
       <option name="project" value="LOCAL" />
       <updated>1608137896035</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Changed displayed data columns">
+      <created>1608138009972</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1608138009972</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Added style sheet">
+      <created>1608138057582</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1608138057582</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13859275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1401919" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3347779" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3347779" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32286024" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32286024" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
@@ -840,8 +845,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added QA changes made to user input, can now see when df variables were changed&#10;added new column to midlayer check" />
-    <MESSAGE value="Added Distance calculation and values to dataframe" />
     <MESSAGE value="Added Distance calculation and values to dataframe&#10;Added Speed calculation and values to dataframe" />
     <MESSAGE value="Updated IGOSS reader&#10;Added IGOSS viewer for individual files" />
     <MESSAGE value="Made changes to speeds&#10;converted speeds to knots and added to dataframe" />
@@ -865,7 +868,9 @@
     <MESSAGE value="Updated Webapp to dynamically populate data table from database, also made changes to database reading." />
     <MESSAGE value="Added Script to locate station 27 and write files to subfolder" />
     <MESSAGE value="Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
+    <MESSAGE value="Changed displayed data columns" />
+    <MESSAGE value="Added style sheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added style sheet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1026,12 +1031,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Web/webapp/webapp/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/webapp/webapp/asgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/webapp/CTDHeaders/templates/CTDHeaders/home.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1297,16 +1296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Toolkits/p_tk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="223" column="29" selection-start-line="223" selection-start-column="25" selection-end-line="223" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Toolkits/dir_tk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1324,16 +1313,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1637858127/nt.py">
+    <entry file="file://$PROJECT_DIR$/Web/assets/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/findStation27.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+        <state relative-caret-position="391">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-828">
+        <state>
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -1342,7 +1340,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Thermograph/checkSample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4636">
+        <state>
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -1351,7 +1349,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Thermograph/Ingestor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19120">
+        <state>
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -1378,7 +1376,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CTD_META_QA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
+        <state>
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -1386,16 +1384,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PFile/ctdviewer_v2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1637858127/nt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3803" />
+        <state relative-caret-position="1513">
+          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/findStation27.py">
+    <entry file="file://$PROJECT_DIR$/Toolkits/p_tk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1076">
-          <caret line="115" column="36" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="36" />
+        <state relative-caret-position="204">
+          <caret line="552" column="61" lean-forward="true" selection-start-line="552" selection-start-column="61" selection-end-line="552" selection-end-column="61" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
