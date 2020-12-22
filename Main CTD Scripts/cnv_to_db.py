@@ -64,8 +64,8 @@ def database(cast, df):
     conn = sqlite3.connect(sqlite_file)
     c = conn.cursor()
 
-    def df2sqlite(dataframe, db_name="CNV.db", tbl_name="Data"):
-        conn = sqlite3.connect(db_name)
+    def df2sqlite(cast, dataframe, tbl_name="Data", conn=conn):
+        #conn = sqlite3.connect(db_name)
         cur = conn.cursor()
 
         wildcards = ','.join(['?'] * (len(dataframe.columns) + 2)) # + 2 for did cid
@@ -146,7 +146,17 @@ def database(cast, df):
 
         conn.commit()
         #TODO: implement df into db for cnv
-        #df2sqlite(cast, df)
+        #df2sqlite(cast, df, conn)
+        dff = cnv_tk.StandardizedDF(cast, df)
+        #df2sqlite(cast, dff, conn)
+        dff = dff.drop(["scan"], axis=1)
+        dff.columns = dff.columns.str.replace(' ', '')
+        cid = cast.id.__str__()
+        did = None
+        dff["cid"] = cast.id.__str__()
+        dff["did"] = None
+        dff.to_sql("Data", conn, schema=None, if_exists='append', index=False, index_label=None, chunksize=None,
+                         dtype=None, method=None)
 
 ###########################################################################################################
 
