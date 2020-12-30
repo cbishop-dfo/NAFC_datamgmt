@@ -149,7 +149,7 @@ def database(cast, df):
         #df2sqlite(cast, df, conn)
         dff = cnv_tk.StandardizedDF(cast, df)
         #df2sqlite(cast, dff, conn)
-        dff = dff.drop(["scan"], axis=1)
+        #dff = dff.drop(["scan"], axis=1)
         dff.columns = dff.columns.str.replace(' ', '')
         cid = cast.id.__str__()
         did = None

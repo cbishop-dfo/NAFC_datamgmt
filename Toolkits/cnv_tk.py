@@ -9,9 +9,9 @@ Toolkit for creating cast object types from cnv files
 cnv_to_dataframe: dynamically creates a pandas dataframe based on the fields within the datafile
 cnv_meta: Populates the fields within the Cast object
 
-Required Files:
-"CTD Instrument Info.xlsx"
-"ships.txt"
+Required Toolkits:
+ships_tk
+inst_tk
 
 Created By: Dylan Kennedy
 03-05-2020
@@ -572,14 +572,6 @@ def cnv_write(cast, df, ext=".old"):
 def cnv_write_simple(cast, df, ext=".simple"):
     newfile = cast.datafile + ext
     writer = open(newfile, "w+")
-    """
-    cast = Cast
-    writer.write(cast.ShipName + "\n" +
-                 cast.ShipName + "\n" +
-                 cast.ShipName + "\n" +
-                 cast.ShipName + "\n" +
-                 cast.ShipName + "\n" +)
-    """
     for l in cast.userInput:
         writer.write(l.replace("**", "") + "\n")
 

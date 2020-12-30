@@ -2,33 +2,28 @@ import sqlite3
 
 __author__ = 'KennedyDyl'
 """
-***Universal_CTD_Database.py****************************************************************************************************************************************
+***cnvDB.py****************************************************************************************************************************************
 
-Creates a Sqlite Database capable of storing P File and SBE Data. SBE and P files both store Meta data inside the 
-Casts Table, however SBE file data is stored in the "SBE_Data" table and P file data is stored in the "Data" table 
-inside the database, both file types share the same table for Meteorological Data called "Meteor".
+Creates a Sqlite Database capable of storing CNV Data. Database uses a Standardized Naming scheme in tandem the "cnv_tk.StandardizedDF()"
+So when adding data to database besure to convert column names to the Standard.
 
 Database also keeps a log of all INSERTS, UPDATES, and DELETES for Casts table. Logs can be found in CastLog table.
 
 *Note: If any data is deleted/added from/to their respective data table, user should update the DataLimit field inside the Casts
-table for the edited cast. DataLimit is a field used in other scripts to help optimize runtime, DataLimit is the number of lines of stored data for each cast.
+table for the edited cast. DataLimit is a field used in other scripts to help optimize runtime(not necessary, but will improve reading times), DataLimit is the number of lines of stored data for each cast.
 (updating not necessary just makes for quicker write times).
 
--------------------------------------------------------------------------------------
-The syntax to ADD A COLUMN in a table in SQLite (using the ALTER TABLE statement) is:
 
-ALTER TABLE table_name
-  ADD new_column_name column_definition;
+Example (Creating a DF to be used in the CNV database):
+                cast = cnv_tk.Cast(datafile)
+                cnv_tk.cnv_meta(cast, datafile)
+                df = cnv_tk.cnv_to_dataframe(cast)
+                cast.DataLimit = len(df.index)
+                databaseDF = cnv_tk.StandardizedDF(cast, df)
+                # Also want to remove spaces from pandas data columns
+                databaseDF.columns = databaseDF.columns.str.replace(' ', '')
 
-
--table_name: The name of the table to modify. (ie: "Data" or "SBE_Data")
-
--new_column_name: The name of the new column to add to the table.(ie: "T290C")
-
--column_definition: The datatype and definition of the column (NULL or NOT NULL, etc).
-
-ie: ALTER TABLE SBE_Data ADD Sal_11 Text;
--------------------------------------------------------------------------------------
+**CNV.db Database can also be used with the CTD webapp.py to view all meta data. Simply add db file to the same dir as the webapp.
 
 """
 
@@ -90,6 +85,7 @@ def main():
     create_data_table = """CREATE TABLE IF NOT EXISTS Data(
                                did INTEGER NOT NULL,
                                cid INTEGER NOT NULL,
+                               scan Integer,
                                Pressure float,
                                Depth  float,
                                Temperature float,
