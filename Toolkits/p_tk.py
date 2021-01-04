@@ -5,6 +5,7 @@ import pandas as pd
 import datetime
 import xlrd
 import os
+import seawater as sw
 from Toolkits import dir_tk
 from Toolkits import ships_tk
 from Toolkits import inst_tk
@@ -328,7 +329,7 @@ def pfile_meta(cast, datafile):
     cast.IceStage = cast.metData[47:48]
     cast.IceBergs = cast.metData[49:50]
 
-    getInstrumentName(cast, "CTD Instrument Info.xlsx")
+    getInstrumentName(cast)
     getShipName(cast)
 
 ###########################################################################################################
@@ -349,6 +350,29 @@ def convertLatLong(convert):
         return value
     else:
         return convert[0]
+
+###########################################################################################################
+def depthDF_to_PresDF(cast, df):
+    presArray = []
+    cast.Latitude = convertLatLong(cast.Latitude.lstrip().rstrip().split(" "))
+    cast.Longitude = convertLatLong(cast.Longitude.lstrip().rstrip().split(" "))
+    for d in df.values:
+        pres = calculatePress(float(d[1]), float(cast.Latitude))
+        presArray.append(pres)
+    df["pres"] = presArray
+    return df
+
+###########################################################################################################
+
+def calculateDepth(press, latitude):
+    depth = sw.dpth(press, latitude)
+    return depth
+
+###########################################################################################################
+
+def calculatePress(depth, latitude):
+    press = sw.pres(depth, latitude)
+    return press
 
 ###########################################################################################################
 
@@ -437,11 +461,13 @@ def isMeta(data):
 ###########################################################################################################
 
 def getInstrumentName(cast, instDF=inst_tk.createInstrumentDF()):
-
-    number = ''.join(c for c in cast.Instrument if c.isdigit())
-    i = instDF[instDF[1].str.match(number)]
-    iname = i.values[0][0]
-    cast.InstrumentName = iname
+    try:
+        number = ''.join(c for c in cast.Instrument if c.isdigit())
+        i = instDF[instDF[1].str.match(number)]
+        iname = i.values[0][0]
+        cast.InstrumentName = iname
+    except:
+        print("Instrument Number Not In Instrument Dataframe...\nNo Instrument Name Assigned.")
 
 ###########################################################################################################
 

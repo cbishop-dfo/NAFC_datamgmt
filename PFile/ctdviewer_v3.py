@@ -1,23 +1,10 @@
-import shutil
-import time
-from openpyxl import Workbook
-from openpyxl import load_workbook
-import matplotlib.pyplot as plt
-import numpy as np
-import glob
 import os
 import pandas as pd
-import sys
-from pylab import rcParams
-# sys.path.append(os.getcwd())
 from Toolkits import p_tk
 from Toolkits import dir_tk
-import plotly as plot
-from matplotlib.widgets import Button
-import matplotlib.gridspec as gridspec
-import pathlib
-import threading
-
+import plotly.express as px
+from plotly.subplots import make_subplots
+import plotly.graph_objects as go
 
 def loaddata(datafile):
     # Creates the cast object
@@ -37,6 +24,32 @@ def loaddata(datafile):
 
     return [cast, df]
 
+def plotVertical(cast, df):
+    # Vertical CTD
+    fig = px.scatter(df, x="temp", y="pres")
+    fig.update_layout(title_text="Vertical CTD Plot | Datafile: " + filename)
+    fig['layout']['xaxis']['title'] = 'Temperature'
+    fig['layout']['yaxis']['title'] = 'Pressure'
+    fig.show()
+
+def plotTowed(cast, df):
+    # Towed CTD
+    fig = make_subplots(rows=1, cols=2, subplot_titles=('Temperature Over Time', 'Pressure Over Time'))
+    fig.add_trace(
+        go.Scatter(x=df["scan"], y=df["temp"]),
+        row=1, col=1
+    )
+    fig.add_trace(
+        go.Scatter(x=df["scan"], y=df["pres"]),
+        row=1, col=2
+
+    )
+    fig.update_layout(height=720, width=1280, title_text="Towed CTD Plot | Datafile: " + filename)
+    fig['layout']['xaxis']['title'] = 'Time'
+    fig['layout']['xaxis2']['title'] = 'Time'
+    fig['layout']['yaxis']['title'] = 'Temperature'
+    fig['layout']['yaxis2']['title'] = 'Pressure'
+    fig.show()
 
 ########################################################################################
 # MAIN PART OF PROGRAM
@@ -46,15 +59,30 @@ if __name__ == '__main__':
     dirName = dir_path
     pd.options.plotting.backend = "plotly"
 
-    files = dir_tk.getListOfFiles(dirName)
-    for files in sorted(glob.glob('*.p[0-9][0-9][0-9][0-9]')):
+    #files = dir_tk.getListOfFiles(dirName)
+    files = dir_tk.confirmSelection()
+    for file in files: #sorted(glob.glob('*.p[0-9][0-9][0-9][0-9]')):
         # changes Dir back to original after writing to trimmed sub folder
         os.chdir(dirName)
-        datafile = files
+        datafile = file.name
         data = loaddata(datafile)
+        filename = datafile.split("/")
+        filename = filename[filename.__len__() - 1]
         cast = data[0]
         df = data[1]
-        fig = df.plot()
-        fig.show()
+        df.columns = df.columns.str.lower()
+        if filename.__contains__(".D"):
+            # Convert Dfile
+            df = p_tk.depthDF_to_PresDF(cast, df)
+
+        if cast.castType.upper() == "V":
+            plotVertical(cast, df)
+        elif cast.castType.upper() == "T":
+            plotTowed(cast, df)
+        else:
+            print("No Cast Type Provided in file...\nPlotting Towed and Vertical")
+            plotVertical(cast, df)
+            plotTowed(cast, df)
+
         print("Plotting " + datafile.__str__())
-        input("Press Enter To Load Next File")
+
