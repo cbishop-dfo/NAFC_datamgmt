@@ -1,3 +1,5 @@
+exec(open("C:\QA_paths\set_QA_paths.py").read())
+
 import sqlite3
 
 __author__ = 'KennedyDyl'

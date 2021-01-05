@@ -1,0 +1,5 @@
+INSTALL NOTES FOR QA CODES (using the github)
+
+1. clone github
+2. take set_QA_paths.py from main github repository and copy to your C:\ and edit paths accordingly.
+

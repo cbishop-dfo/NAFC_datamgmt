@@ -1,3 +1,6 @@
+exec(open("C:\QA_paths\set_QA_paths.py").read())
+
+
 import dash
 import dash_table
 import pandas as pd

@@ -1,3 +1,6 @@
+exec(open("C:\QA_paths\set_QA_paths.py").read())
+
+
 import os
 import tkinter as tk
 from tkinter import filedialog
