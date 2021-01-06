@@ -198,10 +198,16 @@ def cnv_meta(cast, datafile):
             if line.upper().__contains__("VESSEL"):
                 if filetype_v2 or xbt:
                     l = line.split(":")[1].lstrip().rstrip().split("_")
-                    cast.ShipName = l[0][:-3].lower()
-                    getShipNumber(cast)
-                    cast.trip = l[0][-3:]
-                    cast.station = l[2]
+                    # Some files contain ship name in line, some use ship number
+                    if l[0].isnumeric():
+                        cast.ship = l[0][0:2]
+                        cast.trip = l[0][2:5]
+                        cast.station = l[0][5:]
+                    else:
+                        cast.ShipName = l[0][:-3].lower()
+                        getShipNumber(cast)
+                        cast.trip = l[0][-3:]
+                        cast.station = l[2]
                 elif line.__contains__("_"):
                     l = line.split(":")[1].split("_")
                     cast.ship = l[0][0:4]
@@ -320,10 +326,15 @@ def getInstrumentName(cast, instDF=inst_tk.createInstrumentDF()):
 ###########################################################################################################
 
 def getShipName(cast, shipDF=ships_tk.createShipDF()):
+    try:
+        s = shipDF[shipDF[0].str.match(cast.ship.__str__())]
+        sname = s.values[0][2]
+        cast.ShipName = sname
+    except Exception as e:
+        print(e.__str__())
+        print(
+            "Cannot Find Ship Name In File...")
 
-    s = shipDF[shipDF[0].str.match(cast.ship.__str__())]
-    sname = s.values[0][2]
-    cast.ShipName = sname
 """
     # old method
     try:
@@ -349,9 +360,15 @@ def getShipName(cast, shipDF=ships_tk.createShipDF()):
 
 def getShipNumber(cast, shipDF=ships_tk.createShipDF()):
 
-    s = shipDF[shipDF[2].str.match(cast.ShipName.__str__())]
-    snumber = s.values[0][0]
-    cast.ship = snumber
+    try:
+        s = shipDF[shipDF[2].str.match(cast.ShipName.__str__())]
+        snumber = s.values[0][0]
+        cast.ship = snumber
+    except Exception as e:
+        print(e.__str__())
+        print(
+            "Cannot Find Ship Number In File...")
+
 """
     # old method
     try:

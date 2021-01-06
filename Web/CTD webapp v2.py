@@ -170,7 +170,8 @@ def writeFiles(ig, net, cv, shpSelected,tripSelected, stationSelected, lat, lon,
         # Cast id
         cid = c[0]
         # Data limit
-        dlmt = c[25]
+        # dlmt = c[25]
+        dlmt = c[c.__len__()-1]
         sql_to_df = pd.read_sql_query(
             "select * from Data where Data.cid = (Select id from Casts where id = '{dv}') limit '{lmt}'".format(
                 dv=cid, lmt=dlmt),
@@ -190,21 +191,11 @@ def writeFiles(ig, net, cv, shpSelected,tripSelected, stationSelected, lat, lon,
         cast.Instrument = c[8]
         cast.InstrumentName = c[9]
         cast.comment = c[10]
-        cast.NumScans = c[11]
-        cast.SamplingRate = c[12]
-        cast.ChannelCount = c[13]
-        cast.DataChannels = c[14]
-        cast.MinDepth = c[15]
-        cast.MaxDepth = c[16]
-        cast.CastDatetime = c[17]
-        cast.File = c[18]
-        cast.Language = c[19]
-        cast.Encoding = c[20]
-        cast.Contact = c[21]
-        cast.Country = c[22]
-        cast.MaintenanceContact = c[23]
-        cast.OrgName = c[24]
-        cast.DataLimit = c[25]
+        cast.CastDatetime = c[11]
+        cast.File = c[12]
+        cast.Country = c[13]
+        cast.OrgName = c[14]
+        cast.DataLimit = c[15]
         cast.datafile = cast.File
         cur = conn.cursor()
         # Get Header Data
