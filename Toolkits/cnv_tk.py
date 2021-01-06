@@ -133,7 +133,7 @@ def calculateDepth(press, latitude):
 
     return depth
     """
-    depth = sw.dpth(press, latitude)
+    depth = sw.dpth(float(press), float(latitude))
     return depth
 
 ###########################################################################################################
@@ -149,7 +149,7 @@ def calculatePress(depth, latitude):
 
     return press
     """
-    press = sw.pres(depth, latitude)
+    press = sw.pres(float(depth), float(latitude))
     return press
 
 ###########################################################################################################
