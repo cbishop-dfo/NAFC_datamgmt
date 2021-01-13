@@ -73,21 +73,35 @@ app.layout = html.Div([
         type='text',
         value=""
     ),
-    ' Latitude: ',
-    dcc.Input(
-        id='lat',
-        type='text',
-        value=""
-    ),
-    ' Longitude: ',
-    dcc.Input(
-        id='lon',
-        type='text',
-        value=""
-    ),
     ' Date: ',
     dcc.Input(
         id='date',
+        type='text',
+        value=""
+    ),
+    html.Br(),
+    html.Br(),
+    ' Latitude Min: ',
+    dcc.Input(
+        id='lat_min',
+        type='text',
+        value=""
+    ),
+    ' Latitude Max: ',
+    dcc.Input(
+        id='lat_max',
+        type='text',
+        value=""
+    ),
+    ' Longitude Min: ',
+    dcc.Input(
+        id='lon_min',
+        type='text',
+        value=""
+    ),
+    ' Longitude Max: ',
+    dcc.Input(
+        id='lon_max',
         type='text',
         value=""
     ),
@@ -139,16 +153,20 @@ app.layout = html.Div([
               Input('shipNumber', "value"),
               Input('trip', "value"),
               Input('station', "value"),
-              Input('lat', "value"),
-              Input('lon', "value"),
+              Input('lat_min', "value"),
+              Input('lat_max', "value"),
+              Input('lon_min', "value"),
+              Input('lon_max', "value"),
               Input('date', "value")
 
 )
-def writeFiles(ig, net, cv, shpSelected,tripSelected, stationSelected, lat, lon, date):
+def writeFiles(ig, net, cv, shpSelected,tripSelected, stationSelected, lat_min, lat_max, lon_min, lon_max, date):
     sql_to_df = pd.DataFrame()
     cast = cnv_tk.Cast()
     changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
     tempdf = df.copy()
+    tempdf["Latitude"] = tempdf["Latitude"].astype(float)
+    tempdf["Longitude"] = tempdf["Longitude"].astype(float)
     if not shpSelected == "":
         print("running")
         tempdf = dff[dff["Ship"] == shpSelected.__str__()]
@@ -156,10 +174,18 @@ def writeFiles(ig, net, cv, shpSelected,tripSelected, stationSelected, lat, lon,
         tempdf = tempdf[tempdf["Trip"] == tripSelected.__str__()]
     if not stationSelected == "":
         tempdf = tempdf[tempdf["Station"] == stationSelected.__str__()]
-    if not lat == "":
-        tempdf = tempdf[tempdf["Latitude"].str.contains(lat.__str__())]
-    if not lon == "":
-        tempdf = tempdf[tempdf["Longitude"].str.contains(lon.__str__())]
+    if not lat_min == "" and not lat_min == "-":
+        if not lat_max == "" and not lat_max == "-":
+            tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_max))]
+        else:
+            # If no max is set only look for min value
+            tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_max))]
+    if not lon_min == "" and not lon_min == "-":
+        if not lon_max == "" and not lon_max == "-":
+            tempdf = tempdf[tempdf["Longitude"].between(float(lon_min), float(lon_max))]
+        else:
+            # If no max is set only look for min value
+            tempdf = tempdf[tempdf["Longitude"].between(float(lon_min), float(lon_min))]
     if not date == "":
         tempdf = tempdf[tempdf["CastDatetime"].str.contains(date.__str__())]
 
@@ -275,26 +301,37 @@ def writeFiles(ig, net, cv, shpSelected,tripSelected, stationSelected, lat, lon,
     Input('shipNumber', "value"),
     Input('trip', "value"),
     Input('station', "value"),
-    Input('lat', "value"),
-    Input('lon', "value"),
+    Input('lat_min', "value"),
+    Input('lat_max', "value"),
+    Input('lon_min', "value"),
+    Input('lon_max', "value"),
     Input('date', "value"))
-def update_table(shpSelected,tripSelected, stationSelected, lat, lon, date):
+def update_table(shpSelected,tripSelected, stationSelected, lat_min, lat_max, lon_min, lon_max, date):
     print("Ship Number: " + shpSelected.__str__())
     print("Trip: " + tripSelected.__str__())
     print("Station: " + stationSelected.__str__())
     print("\n")
     tempdf = df.copy()
+    tempdf["Latitude"] = tempdf["Latitude"].astype(float)
+    tempdf["Longitude"] = tempdf["Longitude"].astype(float)
     if not shpSelected == "":
-        print("running")
         tempdf = dff[dff["Ship"] == shpSelected.__str__()]
     if not tripSelected == "":
         tempdf = tempdf[tempdf["Trip"] == tripSelected.__str__()]
     if not stationSelected == "":
         tempdf = tempdf[tempdf["Station"] == stationSelected.__str__()]
-    if not lat == "":
-        tempdf = tempdf[tempdf["Latitude"].str.contains(lat.__str__())]
-    if not lon == "":
-        tempdf = tempdf[tempdf["Longitude"].str.contains(lon.__str__())]
+    if not lat_min == "" and not lat_min == "-":
+        if not lat_max == "" and not lat_max == "-":
+            tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_max))]
+        else:
+            # If no max is set only look for min value
+            tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_max))]
+    if not lon_min == "" and not lon_min == "-":
+        if not lon_max == "" and not lon_max == "-":
+            tempdf = tempdf[tempdf["Longitude"].between(float(lon_min), float(lon_max))]
+        else:
+            # If no max is set only look for min value
+            tempdf = tempdf[tempdf["Longitude"].between(float(lon_min), float(lon_min))]
     if not date == "":
         tempdf = tempdf[tempdf["CastDatetime"].str.contains(date.__str__())]
 
