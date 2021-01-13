@@ -166,30 +166,45 @@ def NCWrite(cast, df):
     for c in cast.ColumnNames:
         name = c.replace("/", "+")
         if c.lower().__eq__('prdm'):
-            Dictionary['Pressure'] = [
-                nc_out.createVariable('Pressure', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            v = nc_out.createVariable('sea_water_pressure', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "dbar"
+            v.long_name = "Sea Water Pressure in dbar"
+            Dictionary['Pressure'] = [v, name]
 
         elif c.lower().__eq__('t090c'):
-            Dictionary['Temperature'] = [
-                nc_out.createVariable('Temperature', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
+            v = nc_out.createVariable('sea_water_temperature', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "degC"
+            v.long_name = "Sea Water Temperature"
+            Dictionary['Temperature'] = [v, name]
 
         elif c.lower().__eq__('t190c'):
-            Dictionary['Secondary Temperature'] = [
-                nc_out.createVariable('Secondary Temperature', np.float32, ('level'), zlib=True, fill_value=-9999),
-                name]
+            # TEMPS902	Temperature (ITS-90) of the water body by CTD or STD (second sensor)	CTDTmp90_2
+            v = nc_out.createVariable('TEMPS902', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "degC"
+            v.long_name = "Sea Water Temperature"
+            Dictionary['Secondary Temperature'] = [v, name]
 
         elif c.lower().__eq__('c0s/m'):
-            Dictionary['Conductivity'] = [
-                nc_out.createVariable('Conductivity', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            # Electrical conductivity of the water body by CTD
+            v = nc_out.createVariable('CNDCST01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "S/m"
+            v.long_name = "Sea Water Electrical Conductivity"
+            Dictionary['Conductivity'] = [v, name]
 
         elif c.lower().__eq__('c1s/m'):
-            Dictionary['Secondary Conductivity'] = [
-                nc_out.createVariable('Secondary Conductivity', np.float32, ('level'), zlib=True, fill_value=-9999),
-                name]
+            # Electrical conductivity of the water body by CTD (sensor 2)
+            v = nc_out.createVariable('CNDCST02', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "S/m"
+            v.long_name = "Sea Water Electrical Conductivity"
+            Dictionary['Secondary Conductivity'] = [v, name]
 
         elif c.lower().__eq__('cond'):
-            Dictionary['Conductivity'] = [
-                nc_out.createVariable('Conductivity', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            # Electrical conductivity of the water body by CTD
+            v = nc_out.createVariable('CNDCST01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "S/m"
+            v.long_name = "Sea Water Electrical Conductivity"
+            Dictionary['Conductivity'] = [v, name]
 
         elif c.lower().__eq__('cstarat0'):
             Dictionary['Transmissometer attenuation [l per m]'] = [
@@ -202,8 +217,10 @@ def NCWrite(cast, df):
                                       fill_value=-9999), name]
 
         elif c.lower().__eq__('depth'):
-            Dictionary['Depth'] = [nc_out.createVariable('Depth', np.float32, ('level'), zlib=True, fill_value=-9999),
-                                   name]
+            v = nc_out.createVariable('depth', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "m"
+            v.long_name = "Depth in meters"
+            Dictionary['Depth'] = [v, name]
 
         elif c.lower().__eq__('flag'):
             Dictionary['Flag'] = [nc_out.createVariable('Flag', np.float32, ('level'), zlib=True, fill_value=-9999),
@@ -219,12 +236,18 @@ def NCWrite(cast, df):
                 nc_out.createVariable('Fluorescence', np.float32, ('level'), zlib=True, fill_value=-9999), name]
 
         elif c.lower().__eq__('oxsatml/l'):
-            Dictionary['Oxygen Saturation'] = [
-                nc_out.createVariable('Oxygen Saturation', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            # Saturation of oxygen {O2 CAS 7782-44-7} in the water body [dissolved plus reactive particulate phase]
+            v = nc_out.createVariable('OXYSZZ01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "ml/l"
+            v.long_name = "Saturation of oxygen"
+            Dictionary['Oxygen Saturation'] = [v, name]
 
         elif c.lower().__eq__('oxy'):
-            Dictionary['Oxygen Saturation'] = [
-                nc_out.createVariable('Oxygen Saturation', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            # Saturation of oxygen {O2 CAS 7782-44-7} in the water body [dissolved plus reactive particulate phase]
+            v = nc_out.createVariable('OXYSZZ01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "ml/l"
+            v.long_name = "Saturation of oxygen"
+            Dictionary['Oxygen Saturation'] = [v, name]
 
         elif c.lower().__eq__('par'):
             Dictionary['Irradiance'] = [
@@ -239,24 +262,36 @@ def NCWrite(cast, df):
             Dictionary['pH'] = [nc_out.createVariable('pH', np.float32, ('level'), zlib=True, fill_value=-9999), name]
 
         elif c.lower().__eq__('pres'):
-            Dictionary['Pressure'] = [
-                nc_out.createVariable('Pressure', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            v = nc_out.createVariable('sea_water_pressure', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "dbar"
+            v.long_name = "Sea Water Pressure in dbar"
+            Dictionary['Pressure'] = [v, name]
 
         elif c.lower().__eq__('sal'):
-            Dictionary['Salinity'] = [
-                nc_out.createVariable('Salinity', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            # Practical salinity of the water body by CTD and computation using UNESCO 1983 algorithm
+            v = nc_out.createVariable('PSALST01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "PSS-78"
+            v.long_name = "sea_water_practical_salinity"
+            Dictionary['Salinity'] = [v, name]
 
         elif c.lower().__eq__('sal00'):
-            Dictionary['Salinity'] = [
-                nc_out.createVariable('Salinity', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            v = nc_out.createVariable('PSALST01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "PSS-78"
+            v.long_name = "sea_water_practical_salinity"
+            Dictionary['Salinity'] = [v, name]
 
         elif c.lower().__eq__('sal11'):
-            Dictionary['Secondary Salinity'] = [
-                nc_out.createVariable('Secondary Salinity', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            # Practical salinity of the water body by CTD (second sensor) and computation using UNESCO 1983 algorithm
+            v = nc_out.createVariable('PSALST02', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "PSS-78"
+            v.long_name = "sea_water_practical_salinity"
+            Dictionary['Secondary Salinity'] = [v, name]
 
         elif c.lower().__eq__('sbeox0ml/l'):
-            Dictionary['Oxygen'] = [nc_out.createVariable('Oxygen', np.float32, ('level'), zlib=True, fill_value=-9999),
-                                    name]
+            v = nc_out.createVariable('DOXYZZ01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "ml/l"
+            v.long_name = "Oxygen concentration"
+            Dictionary['Oxygen'] = [v, name]
 
         elif c.lower().__eq__('sbeox0v'):
             Dictionary['Oxygen Raw'] = [
@@ -287,16 +322,25 @@ def NCWrite(cast, df):
                 nc_out.createVariable('Density', np.float32, ('level'), zlib=True, fill_value=-9999), name]
 
         elif c.lower().__eq__('temp'):
-            Dictionary['Temperature'] = [
-                nc_out.createVariable('Temperature', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
+            v = nc_out.createVariable('sea_water_temperature', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "degC"
+            v.long_name = "Sea Water Temperature"
+            Dictionary['Temperature'] = [v, name]
 
         elif c.lower().__eq__('wetcdom'):
-            Dictionary['CDOM Fluorescence'] = [
-                nc_out.createVariable('CDOM Fluorescence', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            # Fluorescence of the water body by linear-response CDOM fluorometer
+            v = nc_out.createVariable('FLUOCDOM', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "mg/m^3"
+            v.long_name = "CDOM Fluorescence"
+            Dictionary['CDOM Fluorescence'] = [v, name]
 
         elif c.lower().__eq__('tv290c'):
-            Dictionary['Temperature'] = [
-                nc_out.createVariable('Temperature', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
+            v = nc_out.createVariable('sea_water_temperature', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "degC"
+            v.long_name = "Sea Water Temperature"
+            Dictionary['Temperature'] = [v, name]
 
         else:
             Dictionary[c] = [nc_out.createVariable(name, np.float32, ('level'), zlib=True, fill_value=-9999),
@@ -350,17 +394,19 @@ if __name__ == '__main__':
     dir_path = os.path.dirname(os.path.realpath(__file__))
     dirName = dir_path
 
-    files = dir_tk.getListOfFiles(dirName)
+    # files = dir_tk.getListOfFiles(dirName)
+    files = dir_tk.confirmSelection(dirName)
     isbinned = input("Would you like the data to be binned?\nY / N\n")
     for f in files:
         # changes Dir back to original after writing to trimmed sub folder
         os.chdir(dirName)
-        datafile = f
+        datafile = f.name
         if datafile.lower().endswith(".cnv"):
             print("Reading: " + datafile)
             cast = cnv_tk.Cast(datafile)
             cnv_tk.cnv_meta(cast, datafile)
-            df = cnv_tk.cnv_to_dataframe(cast)
+            #df = cnv_tk.cnv_to_dataframe(cast)
+            df = cnv_tk.df_press_depth(cast)
             # df = modifyDF(cast, df)
             # df = cnv_tk.cnv_sig_dataframe(cast)
             if isbinned.lower().__contains__("y"):

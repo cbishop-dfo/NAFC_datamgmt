@@ -7,7 +7,6 @@
     <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main CTD Scripts/CFNetCDF_Binned" beforeDir="false" afterPath="$PROJECT_DIR$/Main CTD Scripts/CFNetCDF_Binned" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/CTD webapp v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web/CTD webapp v2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Web/CTD webapp v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+            <state relative-caret-position="447">
+              <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
               <folding>
                 <element signature="e#51#62#0" expanded="true" />
               </folding>
@@ -400,13 +399,6 @@
       <option name="presentableId" value="Default" />
       <updated>1591206340805</updated>
     </task>
-    <task id="LOCAL-00025" summary="Created Prototype Server for webapp&#10;Setup basic HTML and HTTP requests and App URLs for server&#10;Created Reader for CNV db&#10;Cleaned up toolkit file locations and updated imports accordingly">
-      <created>1595433095930</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1595433095930</updated>
-    </task>
     <task id="LOCAL-00026" summary="update">
       <created>1596778775692</created>
       <option name="number" value="00026" />
@@ -743,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609916099764</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Implemented Area selection using min/max lat/lon variables">
+      <created>1610532083857</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1610532083858</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -833,7 +832,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="File selection changed&#10;WIP" />
     <MESSAGE value="Changed cnv meta header to include ID and CruiseID&#10;also changed csv file names to match trips" />
     <MESSAGE value="Added script to append all meta csv file to a master csv" />
     <MESSAGE value="Added Merge script for xlsx files&#10;Added file reading options to cnv_meta script" />
@@ -858,7 +856,8 @@
     <MESSAGE value="added DFile compatibility" />
     <MESSAGE value="Fixed Bug with pressure and depth conversions" />
     <MESSAGE value="Fixed issue with reading older file types" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with reading older file types" />
+    <MESSAGE value="Implemented Area selection using min/max lat/lon variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Area selection using min/max lat/lon variables" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1000,7 +999,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Web/CTD webapp v2.py</url>
-          <line>294</line>
+          <line>292</line>
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1050,22 +1049,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Web/CTD webapp v2.py</url>
-          <line>259</line>
+          <line>257</line>
           <option name="timeStamp" value="217" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Web/CTD webapp v2.py</url>
-          <line>209</line>
+          <line>207</line>
           <option name="timeStamp" value="220" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Web/CTD webapp v2.py</url>
-          <line>178</line>
+          <line>176</line>
           <option name="timeStamp" value="222" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Web/CTD webapp v2.py</url>
-          <line>318</line>
+          <line>316</line>
           <option name="timeStamp" value="223" />
         </line-breakpoint>
       </breakpoints>
@@ -1460,8 +1459,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/CTD webapp v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+        <state relative-caret-position="447">
+          <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
           <folding>
             <element signature="e#51#62#0" expanded="true" />
           </folding>
