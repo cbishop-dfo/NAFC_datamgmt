@@ -179,7 +179,7 @@ def writeFiles(ig, net, cv, shpSelected,tripSelected, stationSelected, lat_min, 
             tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_max))]
         else:
             # If no max is set only look for min value
-            tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_max))]
+            tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_min))]
     if not lon_min == "" and not lon_min == "-":
         if not lon_max == "" and not lon_max == "-":
             tempdf = tempdf[tempdf["Longitude"].between(float(lon_min), float(lon_max))]
@@ -325,7 +325,7 @@ def update_table(shpSelected,tripSelected, stationSelected, lat_min, lat_max, lo
             tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_max))]
         else:
             # If no max is set only look for min value
-            tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_max))]
+            tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_min))]
     if not lon_min == "" and not lon_min == "-":
         if not lon_max == "" and not lon_max == "-":
             tempdf = tempdf[tempdf["Longitude"].between(float(lon_min), float(lon_max))]
