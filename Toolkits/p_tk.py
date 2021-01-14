@@ -376,6 +376,24 @@ def calculatePress(depth, latitude):
 
 ###########################################################################################################
 
+def getCastType(cast):
+    if cast.castType == "":
+        numOfCols = cast.ColumnNames.__len__()
+        # less than 3 data columns is XBT (Vertical)
+        if numOfCols <= 3:
+            cast.castType = "V"
+            return
+        # Greater than 8 is Vertical
+        elif numOfCols >= 8:
+            cast.castType = "V"
+            return
+        # Else assume tow
+        else:
+            cast.castType = "T"
+            return
+
+###########################################################################################################
+
 def getShipName(cast, shipDF=ships_tk.createShipDF()):
     s = shipDF[shipDF[0].str.match(cast.ship.__str__())]
     sname = s.values[0][2]

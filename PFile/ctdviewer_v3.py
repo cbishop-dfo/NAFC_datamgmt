@@ -71,6 +71,7 @@ if __name__ == '__main__':
         cast = data[0]
         df = data[1]
         df.columns = df.columns.str.lower()
+        p_tk.getCastType(cast)
         if filename.__contains__(".D"):
             # Convert Dfile
             df = p_tk.depthDF_to_PresDF(cast, df)

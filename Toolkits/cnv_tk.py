@@ -410,7 +410,6 @@ def convertLatLong(convert):
     else:
         return convert[0]
 
-
 ###########################################################################################################
 
 def convertDate(cast, date):
@@ -491,9 +490,6 @@ def cnv_to_dataframe(cast):
             df[column] = np.nan
     return df
 
-
-
-
 ###########################################################################################################
 
 # Dynamically creates a data frame based on the columns provided in the datafile, returns the data frame
@@ -564,9 +560,6 @@ def df_press_depth(cast):
         except:
             df[column] = np.nan
     return df
-
-
-
 
 ###########################################################################################################
 
@@ -850,6 +843,25 @@ def cnv_sig_dataframe(cast):
     return df
 
 ###########################################################################################################
+def getCastType(cast):
+    if cast.castType == "":
+        for i in cast.InstrumentInfo:
+            if i.lower().__contains__("nquan"):
+                nquan = int(i.split("=")[1].lstrip().rstrip())
+                # less than 3 data columns is XBT (Vertical)
+                if nquan <= 3:
+                    cast.castType = "V"
+                    return
+                # Greater than 8 is Vertical
+                elif nquan >= 8:
+                    cast.castType = "V"
+                    return
+                # Else assume tow
+                else:
+                    cast.castType = "T"
+                    return
+###########################################################################################################
+
 # Fetches cast data from Database
 def FetchCastObject(cast, conn):
 
@@ -896,8 +908,6 @@ def FetchCastObject(cast, conn):
         cast.MaintenanceContact = row[23]
         cast.OrgName = row[24]
         cast.DataLimit = row[25]
-
-
 
 ###########################################################################################################
 
