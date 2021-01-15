@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFile/ctdviewer_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/PFile/ctdviewer_v3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toolkits/cnv_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/cnv_tk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PFile/testPtk.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Toolkits/p_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/p_tk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/CTD webapp v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Web/CTD webapp v2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/CTD webapp v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1930">
-              <caret line="183" column="52" lean-forward="true" selection-start-line="183" selection-start-column="52" selection-end-line="183" selection-end-column="52" />
+            <state>
+              <caret selection-end-column="48" />
               <folding>
                 <element signature="e#51#62#0" expanded="true" />
               </folding>
@@ -34,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="868" column="26" lean-forward="true" selection-start-line="851" selection-end-line="868" selection-end-column="26" />
+            <state relative-caret-position="-51">
+              <caret line="584" column="28" lean-forward="true" selection-start-line="584" selection-start-column="28" selection-end-line="584" selection-end-column="28" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -44,48 +42,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/LocalMap.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-352">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PFile/ctdviewer_v2.py">
+        <entry file="file://$PROJECT_DIR$/SampleFiles/Other/39200100.cnv">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main CTD Scripts/CFNetCDF_Binned">
+        <entry file="file://$PROJECT_DIR$/SampleFiles/Other/79001001.cnv.simple">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="341" column="49" lean-forward="true" selection-start-line="341" selection-start-column="49" selection-end-line="341" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PFile/ctdviewer_v3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="74" column="39" lean-forward="true" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="476">
+              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/findStation27.py">
+        <entry file="file://$PROJECT_DIR$/PFile/ctdviewer_v3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="111" column="46" selection-start-line="111" selection-start-column="46" selection-end-line="111" selection-end-column="46" />
+            <state relative-caret-position="269">
+              <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -96,17 +70,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="17">
               <caret line="132" column="37" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Toolkits/p_tk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="380" column="46" lean-forward="true" selection-start-line="380" selection-start-column="46" selection-end-line="380" selection-end-column="46" />
+            <state relative-caret-position="688">
+              <caret line="660" column="59" lean-forward="true" selection-start-line="660" selection-start-column="59" selection-end-line="660" selection-end-column="59" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -115,9 +89,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SampleFiles/Other/39200100.p2019">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PFile/39200101.p2019">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204" />
+            <state relative-caret-position="-102">
+              <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -152,6 +133,7 @@
       <find>write</find>
       <find>problem</find>
       <find>WriteFiles</find>
+      <find>cast.user</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,7 +149,6 @@
         <option value="$PROJECT_DIR$/CTD_AutoQA/CTD_META_QA.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py" />
         <option value="$PROJECT_DIR$/PFile Toolkit/p_tk.py" />
-        <option value="$PROJECT_DIR$/PFile/testPtk.py" />
         <option value="$PROJECT_DIR$/binnedNC.py" />
         <option value="$PROJECT_DIR$/cnvtest.py" />
         <option value="$PROJECT_DIR$/testerScript.py" />
@@ -207,10 +188,11 @@
         <option value="$PROJECT_DIR$/Main CTD Scripts/cnv_to_db.py" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/CFNetCDF_Binned" />
         <option value="$PROJECT_DIR$/Web/CTD webapp v2.py" />
-        <option value="$PROJECT_DIR$/Toolkits/cnv_tk.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/findStation27.py" />
         <option value="$PROJECT_DIR$/PFile/ctdviewer_v3.py" />
+        <option value="$PROJECT_DIR$/Toolkits/cnv_tk.py" />
         <option value="$PROJECT_DIR$/Toolkits/p_tk.py" />
+        <option value="$PROJECT_DIR$/PFile/testPtk.py" />
       </list>
     </option>
   </component>
@@ -225,7 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,13 +217,7 @@
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="Git" type="462c0819:PsiDirectoryNode" />
-              <item name="Datasets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Git" type="462c0819:PsiDirectoryNode" />
-              <item name="Datasets" type="462c0819:PsiDirectoryNode" />
-              <item name="AZMP" type="462c0819:PsiDirectoryNode" />
+              <item name="CTD_AutoQA" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
@@ -252,12 +227,24 @@
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="Git" type="462c0819:PsiDirectoryNode" />
-              <item name="Toolkits" type="462c0819:PsiDirectoryNode" />
+              <item name="SampleFiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="SampleFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="Other" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="Web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,7 +264,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ctdviewer_v3">
+  <component name="RunManager" selected="Python.testPtk">
     <configuration name="CFNetCDF_Binned" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -312,27 +299,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Web/CTD webapp v2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="binnedNCWriter" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Main CTD Scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -383,13 +349,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="testPtk" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PFile" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\dylan\PycharmProjects\Workspace\Git\PFile\create_sCTD.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.testPtk" />
+        <item itemvalue="Python.CTD webapp v2" />
         <item itemvalue="Python.ctdviewer_v3" />
         <item itemvalue="Python.findStation27" />
-        <item itemvalue="Python.CTD webapp v2" />
         <item itemvalue="Python.CFNetCDF_Binned" />
-        <item itemvalue="Python.binnedNCWriter" />
       </list>
     </recent_temporary>
   </component>
@@ -403,20 +390,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591206340805</updated>
-    </task>
-    <task id="LOCAL-00027" summary="updated toolkits and added ctdviewer version 3&#10;also updated cnv meta csv (fixed error in row)">
-      <created>1597134191328</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1597134191328</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Upadted cnv toolkit to process new files&#10;Upadted cnv toolkit to convert depths and pressures&#10;Updated ships text file">
-      <created>1597236393922</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1597236393922</updated>
     </task>
     <task id="LOCAL-00029" summary="added df_press_depth: creates a dataframe with both pressure and depth">
       <created>1597329354164</created>
@@ -747,25 +720,40 @@
       <option name="project" value="LOCAL" />
       <updated>1610532127931</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Added Cast Type check for missing values">
+      <created>1610638319795</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1610638319795</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Updated Lat, Lon For Single Parameter">
+      <created>1610638354004</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1610638354004</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14498934" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14658849" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48560768" weight="0.3347779" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7153518" visible="true" weight="0.39869988" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48400852" visible="true" weight="0.3347779" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.71428573" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49840087" weight="0.32286024" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49733475" weight="0.32286024" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.28464818" side_tool="true" visible="true" weight="0.39869988" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.51599145" side_tool="true" visible="true" weight="0.3347779" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -836,8 +824,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added script to append all meta csv file to a master csv" />
-    <MESSAGE value="Added Merge script for xlsx files&#10;Added file reading options to cnv_meta script" />
     <MESSAGE value="Added return function for dataframe&#10;ShipSpeeds df can now be used in outside scripts with CreateDF()" />
     <MESSAGE value="Added method for csvwriter&#10;- CreateCSV(df)" />
     <MESSAGE value="Added method for Ship speed plotter&#10;- plotMap(df)" />
@@ -861,7 +847,9 @@
     <MESSAGE value="Fixed issue with reading older file types" />
     <MESSAGE value="Implemented Area selection using min/max lat/lon variables" />
     <MESSAGE value="Update To NC Variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update To NC Variables" />
+    <MESSAGE value="Added Cast Type check for missing values" />
+    <MESSAGE value="Updated Lat, Lon For Single Parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Lat, Lon For Single Parameter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1023,12 +1011,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Toolkits/cnv_tk.py</url>
-          <line>1107</line>
+          <line>1098</line>
           <option name="timeStamp" value="207" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Toolkits/cnv_tk.py</url>
-          <line>769</line>
+          <line>762</line>
           <option name="timeStamp" value="208" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1053,7 +1041,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Toolkits/cnv_tk.py</url>
-          <line>854</line>
+          <line>847</line>
           <option name="timeStamp" value="224" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1062,9 +1050,9 @@
           <option name="timeStamp" value="227" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/PFile/ctdviewer_v3.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="228" />
+          <url>file://$PROJECT_DIR$/Toolkits/p_tk.py</url>
+          <line>631</line>
+          <option name="timeStamp" value="229" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1082,45 +1070,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/cnv_meta_csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="43" column="58" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Thermograph/generic_writer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Thermograph/depth_plotter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Toolkits/dir_tk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/assets/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1379,39 +1328,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="132" column="37" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CTD_AutoQA/LocalMap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-352">
+        <state relative-caret-position="119">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/findStation27.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="111" column="46" selection-start-line="111" selection-start-column="46" selection-end-line="111" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="868" column="26" lean-forward="true" selection-start-line="851" selection-end-line="868" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1421,42 +1343,94 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main CTD Scripts/CFNetCDF_Binned">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="341" column="49" lean-forward="true" selection-start-line="341" selection-start-column="49" selection-end-line="341" selection-end-column="49" />
+        <state relative-caret-position="5797">
+          <caret line="341" column="49" selection-start-line="341" selection-start-column="49" selection-end-line="341" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PFile/39200101.p2019">
+    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/findStation27.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204" />
+        <state relative-caret-position="1836">
+          <caret line="111" column="46" selection-start-line="111" selection-start-column="46" selection-end-line="111" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleFiles/Other/39200100.cnv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleFiles/Other/79001001.cnv.simple">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PFile/ctdviewer_v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="132" column="37" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleFiles/Other/39200100.p2019">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="584" column="28" lean-forward="true" selection-start-line="584" selection-start-column="28" selection-end-line="584" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/CTD webapp v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1930">
-          <caret line="183" column="52" lean-forward="true" selection-start-line="183" selection-start-column="52" selection-end-line="183" selection-end-column="52" />
+        <state>
+          <caret selection-end-column="48" />
           <folding>
             <element signature="e#51#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Toolkits/p_tk.py">
+    <entry file="file://$PROJECT_DIR$/PFile/39200101.p2019">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="380" column="46" lean-forward="true" selection-start-line="380" selection-start-column="46" selection-end-line="380" selection-end-column="46" />
+        <state relative-caret-position="-102">
+          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PFile/testPtk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PFile/ctdviewer_v3.py">
+    <entry file="file://$PROJECT_DIR$/Toolkits/p_tk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="74" column="39" lean-forward="true" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
+        <state relative-caret-position="688">
+          <caret line="660" column="59" lean-forward="true" selection-start-line="660" selection-start-column="59" selection-end-line="660" selection-end-column="59" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

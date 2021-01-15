@@ -1,3 +1,4 @@
+exec(open("C:\QA_paths\set_QA_paths.py").read())
 from Toolkits import p_tk
 from Toolkits import dir_tk
 import os
@@ -7,12 +8,12 @@ if __name__ == '__main__':
     dir_path = os.path.dirname(os.path.realpath(__file__))
     dirName = dir_path
 
-    files = dir_tk.getListOfFiles(dirName)
+    files = dir_tk.confirmSelection(dirName)
 
     for f in files:
 
         os.chdir(dirName)
-        datafile = f
+        datafile = f.name
 
         #TODO: improve file parsing later
         if datafile.lower().__contains__(".p") and not datafile.lower().__contains__(".py"):
@@ -22,7 +23,7 @@ if __name__ == '__main__':
 
                 # Adds QA text to be written to the new CNV, just append any wanted text to cast.QA
                 cast.QA = []
-                cast.QA.append("** QA Applied: converted from pfile to CNV.")
+                cast.QA.append("** QA Applied: converted from pfile to sCTD.")
 
                 # Records the header info
                 p_tk.read_pFile(cast, datafile)
@@ -40,10 +41,11 @@ if __name__ == '__main__':
                 p_tk.pfile_meta(cast, datafile)
 
                 # Writes the pfile as a cnv
-                p_tk.writeCNV(cast, df, datafile)
+                #p_tk.writeCNV(cast, df, datafile)
+                p_tk.writeCNV_With_MET(cast, df, datafile)
 
             except Exception as e:
-                print("Error Reading File\n" + e)
+                print("Error Reading File\n" + e.__str__())
         else:
             print("File Not Supported...")
 
