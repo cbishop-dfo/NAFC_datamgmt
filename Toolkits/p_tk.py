@@ -557,9 +557,11 @@ def getMetData(cast):
 
 def writeCNV(cast, df, datafile):
     newfile = datafile.split(".")[0] + ".cnv"
+    filename = datafile.split("/")
+    filename = filename[filename.__len__() - 1]
     writer = open(newfile, "w+")
     writer.write("* " + cast.InstrumentName + " Data File\n" +
-                 "* Filename = " + datafile + "\n")
+                 "* Filename = " + filename + "\n")
     try:
         for QA in cast.QA:
             writer.write(QA + "\n")
@@ -623,6 +625,79 @@ def writeCNV(cast, df, datafile):
         count = count + 1
     writer.write("*END*\n")
     writer.write(df.to_string(header=False, index=False))
+###########################################################################################################
+
+def writeCNV_With_MET(cast, df, datafile):
+    newfile = datafile.split(".")[0] + ".sCTD"
+    filename = datafile.split("/")
+    filename = filename[filename.__len__()-1]
+    writer = open(newfile, "w+")
+    writer.write("* " + cast.InstrumentName + " Data File\n" +
+                 "* Filename = " + filename + "\n")
+    try:
+        for QA in cast.QA:
+            writer.write(QA + "\n")
+    except:
+        print("QA Not Applied")
+
+    writer.write("** VESSEL/TRIP/SEQ STN: " + cast.id.__str__() +
+            "\n** VESSEL NAME: " + cast.ShipName.__str__() +
+            "\n** VESSEL NUMBER: " + cast.ship.__str__() +
+            "\n** TRIP NUMBER: " + cast.trip.__str__() +
+            "\n** STATION/SEQUENCE NUMBER: " + cast.station.__str__() +
+            "\n** LATITUDE: " + cast.Latitude.__str__() +
+            "\n** LONGITUDE: " + cast.Longitude.__str__() +
+            "\n** DATE: " + cast.CastDatetime.__str__() +
+            "\n** SOUNDING DEPTH: " + cast.SounderDepth.__str__() +
+            "\n** PROBE TYPE: " + cast.Instrument.__str__() +
+            "\n** PROBE NAME: " + cast.InstrumentName.__str__() +
+            "\n** CTD NUMBER: " + cast.setNumber.__str__() +
+            "\n** CAST TYPE: " + cast.castType.__str__() +
+            "\n** NUMBER OF SCANS: " + cast.NumScans.__str__() +
+            "\n** SAMPLING RATE: " + cast.SamplingRate.__str__() +
+            "\n** CHANNEL COUNT: " + cast.channelCount.__str__() +
+            "\n** DATA CHANNELS: " + cast.dataChannels.__str__() +
+            "\n** DOWNCAST: " + cast.downcast.__str__() +
+            "\n** SUBSAMPLE: " + cast.subsample.__str__() +
+            "\n** MIN DEPTH: " + cast.minDepth.__str__() +
+            "\n** MAX DEPTH: " + cast.maxDepth.__str__() +
+            "\n** FISHING STRATA: " + cast.fishingStrata.__str__() +
+            "\n** METDATA: " + cast.metData.__str__() +
+            "\n** CLOUD: " + cast.Cloud.__str__() +
+            "\n** WIND DIRECTION: " + cast.WinDir.__str__() +
+            "\n** WIND SPEED: " + cast.WinSPD.__str__() +
+            "\n** WW CODE: " + cast.wwCode.__str__() +
+            "\n** BAR PRESSURE: " + cast.BarPres.__str__() +
+            "\n** TEMP WET: " + cast.TempWet.__str__() +
+            "\n** TEMP DRY: " + cast.TempDry.__str__() +
+            "\n** WAVE PERIOD: " + cast.WavPeroid.__str__() +
+            "\n** WAVE HEIGHT: " + cast.WavHeight.__str__() +
+            "\n** SWELL DIRECTION: " + cast.SwellDir.__str__() +
+            "\n** SWELL PERIOD: " + cast.SwellPeroid.__str__() +
+            "\n** SWELL HEIGHT: " + cast.SwellHeight.__str__() +
+            "\n** ICE CONCENTRATION: " + cast.IceConc.__str__() +
+            "\n** ICE STAGE: " + cast.IceStage.__str__() +
+            "\n** ICE BERGS: " + cast.IceBergs.__str__() +
+            "\n** LANGUAGE: " + cast.language.__str__() +
+            "\n** ENCODING: " + cast.encoding.__str__() +
+            "\n** POINT OF CONTACT: " + cast.PointOfContact.__str__() +
+            "\n** MAINTENANCE CONTACT: " + cast.MaintenanceContact.__str__() +
+            "\n** ORGANIZATION: " + cast.OrgName.__str__() +
+            "\n** COUNTRY: " + cast.Country.__str__() +
+            "\n** DATA LINES: " + cast.DataLimit.__str__() +
+            "\n** COMMENTS: " + cast.comment +
+            #"\n** FILE TYPE: " + cast.filetype.__str__() +
+            #"\n** FILE NAME: " + cast.File.__str__() +
+            "\n")
+
+    count = 0
+    df = df.dropna(axis=1)
+    for c in df:
+        writer.write("# name " + count.__str__() + " = " + c + "\n")
+        count = count + 1
+    writer.write("*END*\n")
+    writer.write(df.to_string(header=True, index=False))
+
 
 ###########################################################################################################
 def rewritePFile(cast, df, datafile):
