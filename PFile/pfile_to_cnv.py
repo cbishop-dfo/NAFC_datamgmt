@@ -40,14 +40,13 @@ if __name__ == '__main__':
                 # Assigns meta data to the cast object ie: latitude, longitude, Sounder Depth, Meteorological data, ect
                 p_tk.pfile_meta(cast, datafile)
 
-                # Writes the pfile as a sCTD
-                #p_tk.writeCNV(cast, df, datafile)
-                p_tk.writeCNV_With_MET(cast, df, datafile)
+                # Writes the pfile as a cnv
+                p_tk.writeCNV(cast, df, datafile)
 
             except Exception as e:
                 print("Error Reading File\n" + e.__str__())
                 dir_tk.createProblemFolder()
-                newfile = datafile.replace(".p", "_") + ".error.sCTD"
+                newfile = datafile.replace(".p", "_") + ".error.p"
                 print("Error Reading File")
                 f = open(newfile, "w")
                 f.write(e.__str__())
