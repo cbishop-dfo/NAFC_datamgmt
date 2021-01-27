@@ -6,12 +6,28 @@ from tkinter.filedialog import askopenfilename
 
 ###########################################################################################################
 
-# If no subfolder called Problem_Files exists, creates new sub folder BadSampleSize to write files to.
-def createProblemFolder():
-    current_path = os.path.dirname(os.path.realpath(__file__))
-
+# If no subfolder called Problem_Files exists, creates new sub folder to write files to.
+def createProblemFolder(foldername="Problem_Files", dirName=os.path.dirname(os.path.realpath(__file__))):
+    # current_path = os.path.dirname(os.path.realpath(__file__))
+    current_path = dirName
     # If newpath doesnt exist, create a new folder to satisfy new path.
-    newpath = current_path + "\\Problem_Files\\"
+    newpath = current_path + "\\" + foldername + "\\"
+
+    if not os.path.exists(newpath):
+        os.makedirs(newpath)
+
+    # Changes dir
+    os.chdir(newpath)
+
+###########################################################################################################
+
+# If no subfolder called foldername exists, creates new sub folder to write files to.
+def createFolder(foldername="NewFolder", dirName=os.path.dirname(os.path.realpath(__file__))):
+
+    #current_path = os.path.dirname(os.path.realpath(__file__))
+    current_path = dirName
+    # If newpath doesnt exist, create a new folder to satisfy new path.
+    newpath = current_path + "\\" + foldername + "\\"
 
     if not os.path.exists(newpath):
         os.makedirs(newpath)

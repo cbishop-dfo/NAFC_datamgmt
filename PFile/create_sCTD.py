@@ -2,18 +2,19 @@ exec(open("C:\QA_paths\set_QA_paths.py").read())
 from Toolkits import p_tk
 from Toolkits import dir_tk
 import os
+import glob
 
 if __name__ == '__main__':
 
     dir_path = os.path.dirname(os.path.realpath(__file__))
     dirName = dir_path
 
-    files = dir_tk.confirmSelection(dirName)
+    #files = dir_tk.confirmSelection(dirName)
 
-    for f in files:
+    for files in sorted(glob.glob('*.p[0-9][0-9][0-9][0-9]')):
 
         os.chdir(dirName)
-        datafile = f.name
+        datafile = files
 
         #TODO: improve file parsing later
         if datafile.lower().__contains__(".p") and not datafile.lower().__contains__(".py"):
@@ -39,6 +40,9 @@ if __name__ == '__main__':
 
                 # Assigns meta data to the cast object ie: latitude, longitude, Sounder Depth, Meteorological data, ect
                 p_tk.pfile_meta(cast, datafile)
+
+                # Creates folder for writing files to
+                dir_tk.createFolder("P_TO_sCNV", dirName)
 
                 # Writes the pfile as a sCTD
                 #p_tk.writeCNV(cast, df, datafile)
