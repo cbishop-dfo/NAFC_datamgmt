@@ -39,7 +39,7 @@ if __name__ == '__main__':
         joinerDate.append(dat)
     Joiner["Date"] = joinerDate
 
-    newdf = pd.merge(Joiner, Master, how="inner", right_on=["Latitude", "Longitude", "Date", "GMT", "Section", "Station"], left_on=["Lat", "Lon", "Date", "TimeUTC", "Section", "Station"])
+    newdf = pd.merge(Joiner, Master, how="left", right_on=["Latitude", "Longitude", "Date", "GMT", "Section", "Station"], left_on=["Lat", "Lon", "Date", "TimeUTC", "Section", "Station"])
     newdf["SampleID"] = newdf["ID"]
     newdf = newdf[newdf['ShipTrip'].notna()]
     for n in range(24):

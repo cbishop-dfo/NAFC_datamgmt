@@ -34,26 +34,43 @@ if __name__ == '__main__':
     for d in Master["Date"].values:
         dat = d.split("T")[0]
         masterDate.append(dat)
-    Master["MDate"] = masterDate
+    Master["Date"] = masterDate
 
     for d in Joiner["Date"].values:
         dat = d.split()[0]
         joinerDate.append(dat)
-    Joiner["JDate"] = joinerDate
+    Joiner["Date"] = joinerDate
 
-    newdf = pd.merge(Joiner, Master, how="left", right_on=["Latitude", "Longitude", "MDate", "GMT", "Section", "Station"], left_on=["Lat", "Lon", "JDate", "TimeUTC", "Section", "Station"])
+    newdf = pd.merge(Joiner, Master, how="left", right_on=["Latitude", "Longitude", "Date", "GMT", "Section", "Station"], left_on=["Lat", "Lon", "Date", "TimeUTC", "Section", "Station"])
     newdf["SampleID"] = newdf["ID"]
 
     newdf.to_sql('BIO', con=engine)
     Master.to_sql('Master', con=engine)
     Joiner.to_sql('Joiner', con=engine)
 
+    # query = """
+    # UPDATE BIO
+    # SET SampleID = ID
+    # WHERE JDate = MDate
+    # """
+
+
+
     query = """
-    UPDATE BIO
-    SET SampleID = ID
-    WHERE JDate = MDate
-    """
-    engine.execute("UPDATE BIO SET SampleID = ID WHERE JDate = MDate AND Latitude = Lat AND Longitude = Lon AND GMT = TimeUTC")
+        Select ID
+        From Master
+        Left Join Joiner on Joiner.SampleID = ID
+        Where Master.Date = Joiner.Date
+        """
+
+    #query2 = """
+    #        Select SampleID
+    #        From Joiner
+    #        Left Join Master on Joiner.SampleID = Master.ID
+    #        Where Master.Date = Joiner.Date
+    #        """
+    engine.execute(query)
+    #engine.execute(query2)
     #engine.execute("Set Joiner.SampleID = Master.ID where "
     #               "Joiner.Latitude = Master.Lat AND"
     #               " Joiner.Longitude = Master.Lon AND"
@@ -70,9 +87,10 @@ if __name__ == '__main__':
     #               " AND Joiner.Section = Master.Section AND"
     #               " Joiner.Station = Master.Station")
 
-    rows = engine.execute("SELECT * FROM BIO").fetchall()
+    rows = engine.execute("SELECT * FROM Joiner").fetchall()
     row = engine.execute("SELECT * FROM Master").fetchall()
-    slDF = pd.read_sql_table("BIO", engine)
+    slDF = pd.read_sql_table("Joiner", engine)
+    s2DF = pd.read_sql_table("Master", engine)
     newdf = newdf[newdf['ShipTrip'].notna()]
     for n in range(24):
         i = len(newdf.columns)-1
