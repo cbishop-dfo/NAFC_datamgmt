@@ -7,9 +7,10 @@
     <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="added error checks for file conversion">
       <change afterPath="$PROJECT_DIR$/Biological/Scripts/BottleMerge.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Biological/Scripts/BottleMergeV2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PFile/pfile_to_cnv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PFile/create_sCTD.py" beforeDir="false" afterPath="$PROJECT_DIR$/PFile/create_sCTD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PFile/pfile_to_cnv.py" beforeDir="false" afterPath="$PROJECT_DIR$/PFile/pfile_to_cnv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Toolkits/dir_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/dir_tk.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,19 +21,57 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/sqlalchemy/__init__.py">
+        <entry file="file://$PROJECT_DIR$/Datasets/NAFC MULTISPECIES 1995 to 2020/AScript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="136" column="20" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
+            <state relative-caret-position="918">
+              <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+              <folding>
+                <element signature="e#49#74#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CNV_QA_def.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#86#113#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PFile/create_sCTD.py">
+        <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="49" column="68" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="68" />
+            <state relative-caret-position="9928">
+              <caret line="584" column="28" selection-start-line="584" selection-start-column="28" selection-end-line="584" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Biological/Scripts/BottleMerge.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+              <folding>
+                <element signature="e#50#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PFile/ctdviewer_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3927">
+              <caret line="247" column="62" selection-start-line="247" selection-start-column="4" selection-end-line="247" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -40,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PFile/pfile_to_cnv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="48" column="65" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
+            <state relative-caret-position="714">
+              <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="46" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -49,41 +88,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Toolkits/dir_tk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="221">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/renamePfile.py">
+        <entry file="file://$PROJECT_DIR$/Toolkits/p_tk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-462">
+            <state relative-caret-position="2329">
+              <caret line="147" column="4" selection-start-line="147" selection-start-column="4" selection-end-line="147" selection-end-column="4" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PFile/ctdviewer_v3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PFile/Universal_CTD_Writer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11900">
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PFile/CTD_Map.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8568">
-              <caret line="406" column="25" lean-forward="true" selection-start-line="406" selection-start-column="25" selection-end-line="406" selection-end-column="25" />
+            <state relative-caret-position="6749">
+              <caret line="406" column="25" selection-start-line="406" selection-start-column="25" selection-end-line="406" selection-end-column="25" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -104,20 +121,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PFile/Universal_CTD_Reader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="932" column="36" lean-forward="true" selection-start-line="927" selection-start-column="12" selection-end-line="932" selection-end-column="36" />
+            <state relative-caret-position="15708">
+              <caret line="932" column="36" selection-start-line="927" selection-start-column="12" selection-end-line="932" selection-end-column="36" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/pandas/core/reshape/merge.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -162,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CTD_AutoQA/CTD_META_QA.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/CTD_smallfiles_QA.py" />
         <option value="$PROJECT_DIR$/PFile Toolkit/p_tk.py" />
         <option value="$PROJECT_DIR$/binnedNC.py" />
@@ -183,7 +190,6 @@
         <option value="$PROJECT_DIR$/Main CTD Scripts/AZMP_master_META.py" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/cnv_meta_csv.py" />
         <option value="$USER_HOME$/OneDrive/Desktop/NCWriter/Script/TestSpeeds.py" />
-        <option value="$PROJECT_DIR$/Toolkits/dir_tk.py" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/ships.py" />
         <option value="$PROJECT_DIR$/Toolkits/inst_tk.py" />
@@ -212,7 +218,9 @@
         <option value="$PROJECT_DIR$/Biological/Scripts/BottleMerge.py" />
         <option value="$PROJECT_DIR$/Biological/Scripts/BottleMergeV2.py" />
         <option value="$PROJECT_DIR$/PFile/pfile_to_cnv.py" />
+        <option value="$PROJECT_DIR$/Toolkits/dir_tk.py" />
         <option value="$PROJECT_DIR$/PFile/create_sCTD.py" />
+        <option value="$PROJECT_DIR$/Datasets/NAFC MULTISPECIES 1995 to 2020/AScript.py" />
       </list>
     </option>
   </component>
@@ -253,7 +261,7 @@
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="Git" type="462c0819:PsiDirectoryNode" />
-              <item name="PFile" type="462c0819:PsiDirectoryNode" />
+              <item name="Datasets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
@@ -263,8 +271,7 @@
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="Git" type="462c0819:PsiDirectoryNode" />
-              <item name="SampleFiles" type="462c0819:PsiDirectoryNode" />
-              <item name="Other" type="462c0819:PsiDirectoryNode" />
+              <item name="Toolkits" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
@@ -295,7 +302,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.BottleMergeV2">
+  <component name="RunManager" selected="Python.AScript">
+    <configuration name="AScript" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Datasets/NAFC MULTISPECIES 1995 to 2020" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Datasets/NAFC MULTISPECIES 1995 to 2020/AScript.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="BottleMerge" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -338,28 +366,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="CTD webapp v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Web" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Web/CTD webapp v2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ctdviewer_v3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="create_sCTD" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -371,7 +378,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PFile/ctdviewer_v3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PFile/create_sCTD.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -380,7 +387,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testPtk" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pfile_to_cnv" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -392,7 +399,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\dylan\PycharmProjects\Workspace\Git\PFile\create_sCTD.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PFile/pfile_to_cnv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -403,11 +410,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AScript" />
+        <item itemvalue="Python.create_sCTD" />
+        <item itemvalue="Python.pfile_to_cnv" />
         <item itemvalue="Python.BottleMergeV2" />
         <item itemvalue="Python.BottleMerge" />
-        <item itemvalue="Python.testPtk" />
-        <item itemvalue="Python.CTD webapp v2" />
-        <item itemvalue="Python.ctdviewer_v3" />
       </list>
     </recent_temporary>
   </component>
@@ -421,13 +428,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591206340805</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Added method StandardizedDF to cnv toolkit to create df using midlayer names for columns.&#10;&#10;Also Reuploaded Binned Writer">
-      <created>1597415097042</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1597415097042</updated>
     </task>
     <task id="LOCAL-00032" summary="Added method StandardizedDF to cnv toolkit to create df using midlayer names for columns.">
       <created>1597415214800</created>
@@ -765,25 +765,42 @@
       <option name="project" value="LOCAL" />
       <updated>1610721169558</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="added error checks for file conversion">
+      <created>1611328721276</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1611328721277</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14658849" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14818764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48294243" weight="0.3347779" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.71268654" weight="0.39869988" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48134327" visible="true" weight="0.3347779" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.71162045" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49733475" weight="0.32286024" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.51865673" side_tool="true" visible="true" weight="0.3347779" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1104,6 +1121,11 @@
           <line>18</line>
           <option name="timeStamp" value="253" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PFile/pfile_to_cnv.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1115,14 +1137,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Main CTD Scripts/IGOSS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="34" column="77" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PFile/p_tk.py" />
     <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/plotly/graph_objects/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1256,9 +1270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PFile/ctdviewer_v2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main CTD Scripts/CFNetCDF_Binned">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5797">
@@ -1279,30 +1290,10 @@
     <entry file="file://$PROJECT_DIR$/SampleFiles/Other/39200100.p2019">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="584" column="28" selection-start-line="584" selection-start-column="28" selection-end-line="584" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PFile/39200101.p2019">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
           <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Toolkits/p_tk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="641" selection-start-line="641" selection-end-line="641" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1367,23 +1358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Biological/Scripts/BottleMerge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-          <folding>
-            <element signature="e#50#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Biological/Scripts/BottleMergeV2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1440,10 +1414,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PFile/create_sCTD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#49#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Biological/Scripts/BottleMergeV2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Biological/Scripts/BottleMerge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding>
+            <element signature="e#50#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PFile/ctdviewer_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3927">
+          <caret line="247" column="62" selection-start-line="247" selection-start-column="4" selection-end-line="247" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PFile/pfile_to_cnv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="46" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toolkits/dir_tk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toolkits/p_tk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2329">
+          <caret line="147" column="4" selection-start-line="147" selection-start-column="4" selection-end-line="147" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PFile/CTD_Map.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8568">
-          <caret line="406" column="25" lean-forward="true" selection-start-line="406" selection-start-column="25" selection-end-line="406" selection-end-column="25" />
+        <state relative-caret-position="6749">
+          <caret line="406" column="25" selection-start-line="406" selection-start-column="25" selection-end-line="406" selection-end-column="25" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
@@ -1452,32 +1484,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PFile/Universal_CTD_Reader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="932" column="36" lean-forward="true" selection-start-line="927" selection-start-column="12" selection-end-line="932" selection-end-column="36" />
+        <state relative-caret-position="15708">
+          <caret line="932" column="36" selection-start-line="927" selection-start-column="12" selection-end-line="932" selection-end-column="36" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Toolkits/dir_tk.py">
+    <entry file="file://$PROJECT_DIR$/Datasets/NAFC MULTISPECIES 1995 to 2020/AScript.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="918">
+          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+          <folding>
+            <element signature="e#49#74#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PFile/pfile_to_cnv.py">
+    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/CNV_QA_def.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="48" column="65" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
+        <state>
+          <folding>
+            <element signature="e#86#113#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PFile/create_sCTD.py">
+    <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="49" column="68" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="68" />
+        <state relative-caret-position="9928">
+          <caret line="584" column="28" selection-start-line="584" selection-start-column="28" selection-end-line="584" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
