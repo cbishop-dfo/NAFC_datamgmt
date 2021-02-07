@@ -181,6 +181,9 @@ def cnv_ascii(cast):
 # Stores all data in Cast object
 def cnv_meta(cast, datafile):
     f = open(datafile)
+    filename = datafile.split("/")
+    filename = filename[filename.__len__() - 1]
+    cast.filename = filename
     filetype_v2 = False # bool to tell if file uses different format type
     isData = False
     xbt = False
@@ -254,6 +257,8 @@ def cnv_meta(cast, datafile):
                 cast.SounderDepth = line.split(":")[1]
             elif line.upper().__contains__("COMMENTS"):
                 cast.comment = line.split(":")[1]
+            elif line.upper().__contains__("TRIP TAG"):
+                cast.triptag = line.split(":")[1].lstrip().rstrip()
             elif line.upper().__contains__("PROBE"):
                 if xbt:
                     cast.InstrumentName = line.split(":")[1].strip()
@@ -331,30 +336,10 @@ def getShipName(cast, shipDF=ships_tk.createShipDF()):
         sname = s.values[0][2]
         cast.ShipName = sname
     except Exception as e:
+        cast.ShipName = "xxx"
         print(e.__str__())
         print(
             "Cannot Find Ship Name In File...")
-
-"""
-    # old method
-    try:
-        Ships = open("ships.txt")
-    except:
-        try:
-            Ships = open("../Resources/ships.txt")
-        except:
-            Ships = open("Resources/ships.txt")
-
-    for shipName in Ships:
-        number = shipName.replace("\n", "").split()[0]
-        try:
-            name = shipName.replace("\n", "").split()[1]
-        except:
-            continue
-        if number == cast.ship:
-            cast.ShipName = name
-            break
-"""
 
 ###########################################################################################################
 
@@ -365,30 +350,11 @@ def getShipNumber(cast, shipDF=ships_tk.createShipDF()):
         snumber = s.values[0][0]
         cast.ship = snumber
     except Exception as e:
+        cast.ship = "00"
         print(e.__str__())
         print(
             "Cannot Find Ship Number In File...")
 
-"""
-    # old method
-    try:
-        Ships = open("ships.txt")
-    except:
-        try:
-            Ships = open("../Resources/ships.txt")
-        except:
-            Ships = open("Resources/ships.txt")
-
-    for shipName in Ships:
-        name = shipName.replace("\n", "").split()[2].lower()
-        try:
-            number = shipName.replace("\n", "").split()[0]
-        except:
-            continue
-        if name == cast.ShipName:
-            cast.ship = number
-            break
-"""
 ###########################################################################################################
 
 
@@ -1097,5 +1063,36 @@ def StandardizedDF(cast, df):
             cast.userInput.append(QA)
 
     return newdf
+
+###########################################################################################################
+def createTripTag(cast):
+    print("Select Tag for: " + cast.filename + "\n[1] AZMP\n[2] MULTISPECIES\n[3] NSRF\n[4] Station27\n[5] Calibration\n[6] Other DFO\n[7] Not Yet Classified\n[8] prompt for user input (last resort)")
+    tag = input()
+
+    for line in cast.userInput:
+        if line.upper().__contains__("TRIP TAG"):
+            cast.userInput.remove(line)
+
+    if tag == "1":
+        cast.userInput.append("** TRIP TAG: AZMP")
+    elif tag == "2":
+        cast.userInput.append("** TRIP TAG: MULTISPECIES")
+    elif tag == "3":
+        cast.userInput.append("** TRIP TAG: NSRF")
+    elif tag == "4":
+        cast.userInput.append("** TRIP TAG: Station27")
+    elif tag == "5":
+        cast.userInput.append("** TRIP TAG: Calibration")
+    elif tag == "6":
+        cast.userInput.append("** TRIP TAG: Other DFO")
+    elif tag == "7":
+        cast.userInput.append("** TRIP TAG: Not Yet Classified")
+    elif tag == "8":
+        print("\nEnter Custom Tag: ")
+        custom = input()
+        cast.userInput.append("** Trip Tag: " + custom)
+    else:
+        print("Invalid Tag Number!!")
+        return createTripTag(cast)
 
 ###########################################################################################################
