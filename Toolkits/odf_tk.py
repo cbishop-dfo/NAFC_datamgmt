@@ -1,5 +1,7 @@
 from Toolkits import ships_tk
 from Toolkits import inst_tk
+import pandas as pd
+import numpy as np
 from Toolkits import dir_tk
 import os
 import sys
@@ -151,9 +153,15 @@ def odf_meta(cast, datafile):
     filename = datafile.split("/")
     filename = filename[filename.__len__() - 1]
     cast.filename = filename
+    cast.columns = []
+
     filetype_v2 = False # bool to tell if file uses different format type
     isData = False
+    isParameter = False
     xbt = False
+
+
+
     count = 0
     for line in f:
         count = count + 1
@@ -220,6 +228,123 @@ def odf_meta(cast, datafile):
 
         elif line.__contains__("-- DATA --"):
             isData = True
+
+        elif line.__contains__("PARAMETER_HEADER"):
+            isParameter = True
+
+        if isParameter:
+            if line.__contains__("NAME="):
+                channel = line.split("=")[1]
+                if channel == 'CNTR_01':
+                    cast.columns.append("scan")
+                elif channel == 'SYTM_01':
+                    # Datetime get split into two different columns, date and time
+                    cast.columns.append("date")
+                    cast.columns.append("time")
+
+                # Pressure
+                elif channel == 'PRES_01':
+                    cast.columns.append("Pressure")
+
+                # Temperature
+                elif channel == 'TEMP_01':
+                    cast.columns.append("Temperature")
+
+                # Conductivity
+                elif channel == 'CRAT_01':
+                    cast.columns.append("Conductivity")
+
+                # Temperature 2
+                elif channel == 'TEMP_02':
+                    cast.columns.append("Secondary Temperature")
+
+                # Conductivity 2
+                elif channel == 'CRAT_02':
+                    cast.columns.append("Secondary Conductivity")
+
+                # Fluorescence, Seapoint Ultraviolet
+                elif channel == 'FSPUV_01':
+                    cast.columns.append("Fluorescence Ultraviolet")
+
+                # Fluorescence
+                elif channel == 'FSP_01':
+                    cast.columns.append("Fluorescence")
+
+                # Oxygen raw
+                elif channel == 'OXYV_01':
+                    cast.columns.append("Oxygen Raw")
+
+                # Oxygen raw 2
+                elif channel == 'OXYV_02':
+                    cast.columns.append("Secondary Oxygen Raw")
+
+                # Altimeter
+                elif channel == 'ALT_01':
+                    cast.columns.append("Altimeter")
+
+                # PAR/Logarithmic
+                elif channel == 'par/log':
+                    cast.columns.append("Photosynthetic Active Radiation")
+
+                # pH
+                elif channel == 'PHPH_01':
+                    cast.columns.append("pH")
+
+                #  Turbidity
+                elif channel == 'WETECOBB_01':
+                    cast.columns.append("Turbidity")
+
+                # SPAR/Surface Irradiance
+                elif channel == 'spar':
+                    cast.columns.append("Irradiance")
+
+                # Latitude
+                elif channel == 'LATD_01':
+                    cast.columns.append("Latitude")
+
+                # Longitude
+                elif channel == 'LOND_01':
+                    cast.columns.append("Longitude")
+
+                # Salinity
+                elif channel == 'PSAL_01':
+                    cast.columns.append("Salinity")
+
+                # Salinity 2
+                elif channel == 'PSAL_02':
+                    cast.columns.append("Secondary Salinity")
+
+                # Potential Temperature
+                elif channel == 'POTM_01':
+                    cast.columns.append("Potential Temperature")
+
+                # Potential Temperature 2
+                elif channel == 'POTM_02':
+                    cast.columns.append("Secondary Potential Temperature")
+
+                # Density
+                elif channel == 'sigma-é00':
+                    cast.columns.append("Density")
+
+                # Density 2
+                elif channel == 'sigma-é11':
+                    cast.columns.append("Secondary Density")
+
+                # Oxygen
+                elif channel == 'DOXY_01':
+                    cast.columns.append("Oxygen")
+
+                # Oxygen 2
+                elif channel == 'DOXY_02':
+                    cast.columns.append("Secondary Oxygen")
+
+                # number of scans per bin
+                elif channel == 'SNCNTR_01':
+                    cast.columns.append("scans per bin")
+
+                # flag
+                elif channel == 'FFFF_01':
+                    cast.columns.append("Flag")
 
         if line.__contains__("PROCESS=*"):
             nline = line.replace("PROCESS=", "")
@@ -305,5 +430,36 @@ def getShipNumber(cast, shipDF=ships_tk.createShipDF()):
         print(e.__str__())
         print(
             "Cannot Find Ship Number In File...")
+
+###########################################################################################################
+
+# Dynamically creates a data frame based on the columns provided in the datafile, returns the data frame
+def odf_to_dataframe(cast):
+
+    df = pd.DataFrame()
+    allColumns = cast.columns
+
+    Dictionary = {}
+    for c in allColumns:
+        Dictionary[c] = []
+        cast.ColumnNames.append(c)
+
+    for dat in cast.data:
+        try:
+            index = 0
+            for i in allColumns:
+                Dictionary[i].append(dat[index])
+                index = index + 1
+
+        except Exception as e:
+            print(e)
+            continue
+
+    for column in Dictionary:
+        try:
+            df[column] = Dictionary[column]
+        except:
+            df[column] = np.nan
+    return df
 
 ###########################################################################################################

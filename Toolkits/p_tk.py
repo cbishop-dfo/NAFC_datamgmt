@@ -714,3 +714,60 @@ def rewritePFile(cast, df, datafile):
     f.write("\n")
     f.write("-- DATA --\n")
     f.write(df.to_string(header=False, index=False))
+
+###########################################################################################################
+
+def drop_non_pfile(cast, df):
+    p_df = pd.DataFrame()
+
+
+    for c in df:
+        if c == "Pressure":
+            p_df["pres"] = df[c]
+            getChannelStats(cast, p_df, "pres")
+
+        elif c == "Temperature":
+            p_df["temp"] = df[c]
+            getChannelStats(cast, p_df, "temp")
+
+        elif c == "scan":
+            p_df["scan"] = df[c]
+            getChannelStats(cast, p_df, "scan")
+
+        elif c == "Conductivity":
+            p_df["cond"] = df[c]
+            getChannelStats(cast, p_df, "cond")
+
+        elif c == "Salinity":
+            p_df["sal"] = df[c]
+            getChannelStats(cast, p_df, "sal")
+
+        elif c == "Density":
+            p_df["sigt"] = df[c]
+            getChannelStats(cast, p_df, "sigt")
+
+        elif c == "Oxygen":
+            p_df["oxy"] = df[c]
+            getChannelStats(cast, p_df, "oxy")
+
+        elif c == "Fluorescence":
+            p_df["flor"] = df[c]
+            getChannelStats(cast, p_df, "flor")
+
+        elif c == "Photosynthetic Active Radiation":
+            p_df["par"] = df[c]
+            getChannelStats(cast, p_df, "par")
+
+        elif c == "pH":
+            p_df["ph"] = df[c]
+            getChannelStats(cast, p_df, "ph")
+
+    return p_df
+
+###########################################################################################################
+
+def getChannelStats(cast, df, c):
+       localmax = max(df[c]).__str__()
+       localmin = min(df[c]).__str__()
+       cstat = '{:<10s}{:>20s}{:>20s}{:>20s}'.format("# span ", c.__str__() + " = ", localmin + ", ", localmax)
+       cast.channel.append(cstat)
