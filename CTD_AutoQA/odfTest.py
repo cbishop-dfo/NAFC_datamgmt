@@ -22,4 +22,5 @@ if __name__ == '__main__':
             odf_tk.odf_meta(cast, datafile)
             df = odf_tk.odf_to_dataframe(cast)
             p_df = p_tk.drop_non_pfile(cast, df)
+            p_tk.write_pfile(cast, p_df)
             print()

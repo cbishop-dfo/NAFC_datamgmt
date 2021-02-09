@@ -767,7 +767,47 @@ def drop_non_pfile(cast, df):
 ###########################################################################################################
 
 def getChannelStats(cast, df, c):
-       localmax = max(df[c]).__str__()
-       localmin = min(df[c]).__str__()
-       cstat = '{:<10s}{:>20s}{:>20s}{:>20s}'.format("# span ", c.__str__() + " = ", localmin + ", ", localmax)
-       cast.channel.append(cstat)
+    localmax = max(df[c]).__str__()
+    localmin = min(df[c]).__str__()
+    cstat = '{:<10s}{:>20s}{:>20s}{:>20s}'.format("# span ", c.__str__() + " = ", localmin + ", ", localmax)
+    cast.channel.append(cstat)
+
+###########################################################################################################
+
+def write_pfile(cast, df):
+    # Line one in header
+    cid = cast.ship.__str__() + cast.trip.__str__() + cast.station.__str__()
+    lat = cast.Latitude
+    lon = cast.Longitude
+    date = cast.CastDatetime
+    soundDepth = cast.SounderDepth
+    inst = cast.Instrument
+    setNum = cast.setNumber
+    cType = cast.castType
+    comment = cast.comment
+
+    # Line two in header
+    numScans = df.values.__len__()
+
+    line1 = cid + " " + lat + " " + lon  + " " + date  + " " + soundDepth  + " " + inst  + " " + setNum  + " " + cType  + " " + comment + "\n"
+    line2 = cid + "\n"
+    line3 = cid + "\n"
+
+    year = date.split("-")[0]
+    filename = cid + ".p" + year
+    writer = open(filename, "w+")
+    writer.writelines("NAFC_Y2K_HEADER\n")
+    writer.writelines(line1)
+    writer.writelines(line2)
+    writer.writelines(line3)
+
+    writer.writelines("-- CHANNEL STATS -->\n")
+    for c in cast.channel:
+        writer.writelines(c + "\n")
+    writer.writelines("-- END --\n")
+
+    for name in df:
+        writer.write(name + "    ")
+
+    writer.writelines("\n-- DATA --\n")
+    writer.write(df.to_string(header=False, index=False))
