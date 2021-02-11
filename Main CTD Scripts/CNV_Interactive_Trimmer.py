@@ -5,17 +5,24 @@ from Toolkits import cnv_tk
 import pandas as pd
 
 def TrimData(cast, df):
+    # If you want, you can create a new dataframe and return it at the end. Or edit the existing one, up to you.
     trimmed_df = pd.DataFrame()
 
     # TODO: Create UI to trim the dataframe
+    # Here we want a UI that plots the data and allows the user to use mouse listeners with the plot to select data
+    # to be trimmed off.
+    # Additionally the data points should change color when deleted so we can see where data was deleted from.
+    # We also want to create a selection box, so when a user is holding left click it will draw a box of selected
+    # points over the plot.
 
-
+    # return a dataframe to be passed into cnv_write at the end of main().
     return trimmed_df
 
 if __name__ == '__main__':
     dir_path = os.path.dirname(os.path.realpath(__file__))
     dirName = dir_path
 
+    # Opens file selector UI
     files = dir_tk.confirmSelection()
     for f in files:
         # changes Dir back to original after writing to sub folder
