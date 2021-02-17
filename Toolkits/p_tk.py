@@ -719,12 +719,21 @@ def rewritePFile(cast, df, datafile):
 
 def drop_non_pfile(cast, df):
     p_df = pd.DataFrame()
-
+    """ 
+    XBT  scan depth temp pres cond sal sigt
+    CNV scan pres temp cond sal sigt oxy flor par ph trp tra wet
+    
+    NOTE: If cast was created from cnv_tk, cast.isXBT will either be
+    """
 
     for c in df:
         if c == "Pressure":
             p_df["pres"] = df[c]
             getChannelStats(cast, p_df, "pres")
+
+        elif c == "Depth":
+            p_df["depth"] = df[c]
+            getChannelStats(cast, p_df, "depth")
 
         elif c == "Temperature":
             p_df["temp"] = df[c]
@@ -762,6 +771,18 @@ def drop_non_pfile(cast, df):
             p_df["ph"] = df[c]
             getChannelStats(cast, p_df, "ph")
 
+        elif c == "Transmissometer attenuation":
+            p_df["tra"] = df[c]
+            getChannelStats(cast, p_df, "tra")
+
+        elif c == "Transmissometer transmission":
+            p_df["trp"] = df[c]
+            getChannelStats(cast, p_df, "trp")
+
+        elif c == "CDOM Fluorescence":
+            p_df["wet"] = df[c]
+            getChannelStats(cast, p_df, "wet")
+
     return p_df
 
 ###########################################################################################################
@@ -779,7 +800,8 @@ def write_pfile(cast, df):
     cid = cast.ship.__str__() + cast.trip.__str__() + cast.station.__str__()
     lat = cast.Latitude
     lon = cast.Longitude
-    date = cast.CastDatetime
+    date = cast.CastDatetime.split(" ")[0]
+    time = cast.CastDatetime.split(" ")[1]
     soundDepth = cast.SounderDepth
     inst = cast.Instrument
     setNum = cast.setNumber
@@ -789,7 +811,26 @@ def write_pfile(cast, df):
     # Line two in header
     numScans = df.values.__len__()
 
-    line1 = cid + " " + lat + " " + lon  + " " + date  + " " + soundDepth  + " " + inst  + " " + setNum  + " " + cType  + " " + comment + "\n"
+    # add checks for spacing issues and null values
+    if lat.__len__() > 8:
+        lat = lat[0:8]
+    elif lat.__len__() < 8:
+        n = 8 - int(lat.__len__())
+        for i in range(n):
+            lat = lat + "0"
+
+    if lon.__len__() > 8:
+        # TODO: if negative go to 9 if positive go to 8
+        lon = lon[0:9]
+    elif lon.__len__() < 8:
+        n = 8 - int(lon.__len__())
+        for i in range(n):
+            lon = lon + "0"
+
+    if time.__len__() > 4:
+        time = time[0:5]
+
+    line1 = cid + " " + lat + " " + lon + " " + date + " " + time + " " + soundDepth + " " + inst + " " + setNum + " " + cType + " " + comment + "\n"
     line2 = cid + "\n"
     line3 = cid + "\n"
 
