@@ -1,7 +1,7 @@
 import pandas as pd
 
-# Creates a df of ships number, name long, and name short
-# Creates and returns a pandas dataframe for ships
+# Creates a df of instrument name, and number
+# Creates and returns a pandas dataframe for instruments
 # indexes  ------------------------
 # [0] - instrument name
 # [1] - instrument number

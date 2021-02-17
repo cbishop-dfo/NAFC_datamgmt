@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Toolkits/cnv_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/cnv_tk.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Toolkits/inst_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/inst_tk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toolkits/p_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/p_tk.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Toolkits/config_deck.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="62" column="47" lean-forward="true" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+            <state relative-caret-position="391">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -365,20 +364,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591206340805</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Updated IGOSS reader&#10;Added IGOSS viewer for individual files">
-      <created>1598534360768</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1598534360768</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Made changes to speeds&#10;converted speeds to knots and added to dataframe">
-      <created>1598623901587</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1598623901587</updated>
     </task>
     <task id="LOCAL-00040" summary="Finished IGOSS.py&#10;- added missing header">
       <created>1598976132337</created>
@@ -709,7 +694,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613060344840</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Added extra data columns to drop_non_pfile(cast, df)">
+      <created>1613561488651</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1613561488651</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Created config_deck to keep only specified columns based on instrument number">
+      <created>1613561586628</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1613561586628</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -801,8 +800,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Made Changes for XBT reading and counting Vertical casts" />
-    <MESSAGE value="Updated Webapp to dynamically populate data table from database, also made changes to database reading." />
     <MESSAGE value="Added Script to locate station 27 and write files to subfolder" />
     <MESSAGE value="Updated" />
     <MESSAGE value="Changed displayed data columns" />
@@ -826,7 +823,9 @@
     <MESSAGE value="update" />
     <MESSAGE value="Added prototype pfile writer from odf" />
     <MESSAGE value="Created Template For CNV Trimmer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Template For CNV Trimmer" />
+    <MESSAGE value="Added extra data columns to drop_non_pfile(cast, df)" />
+    <MESSAGE value="Created config_deck to keep only specified columns based on instrument number" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created config_deck to keep only specified columns based on instrument number" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1323,8 +1322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Toolkits/config_deck.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="62" column="47" lean-forward="true" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+        <state relative-caret-position="391">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
