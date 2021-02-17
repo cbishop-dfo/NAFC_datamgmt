@@ -285,6 +285,8 @@ def cnv_meta(cast, datafile):
         elif line.startswith("* "):
             if line.upper().__contains__("XBT"):
                 xbt = True
+                # Setting permanent var here because it explicitly states it's an XBT
+                cast.isXBT = True
             cast.software.append(line)
         elif line.startswith("# "):
             cast.InstrumentInfo.append(line)
@@ -925,7 +927,17 @@ def StandardizedDF(cast, df):
             oldName = c
             newName = 'Transmissometer attenuation'
 
+        elif c.lower().__eq__('tra'):
+            newdf['Transmissometer attenuation'] = df[c].values
+            oldName = c
+            newName = 'Transmissometer attenuation'
+
         elif c.lower().__eq__('cstartr0'):
+            newdf['Transmissometer transmission'] = df[c].values
+            oldName = c
+            newName = 'Transmissometer transmission'
+
+        elif c.lower().__eq__('trp'):
             newdf['Transmissometer transmission'] = df[c].values
             oldName = c
             newName = 'Transmissometer transmission'
@@ -1040,6 +1052,11 @@ def StandardizedDF(cast, df):
             newName = 'Temperature'
 
         elif c.lower().__eq__('wetcdom'):
+            newdf['CDOM Fluorescence'] = df[c].values
+            oldName = c
+            newName = 'CDOM Fluorescence'
+
+        elif c.lower().__eq__('wet'):
             newdf['CDOM Fluorescence'] = df[c].values
             oldName = c
             newName = 'CDOM Fluorescence'
