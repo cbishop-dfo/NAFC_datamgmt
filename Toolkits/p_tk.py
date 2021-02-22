@@ -723,7 +723,7 @@ def drop_non_pfile(cast, df):
     XBT  scan depth temp pres cond sal sigt
     CNV scan pres temp cond sal sigt oxy flor par ph trp tra wet
     
-    NOTE: If cast was created from cnv_tk, cast.isXBT will either be
+    NOTE: If cast was created from cnv_tk, cast.isXBT will either be true or undefined
     """
 
     for c in df:
