@@ -45,6 +45,7 @@ class Cast(object):
         self.InstrumentName = ""
         self.setNumber = ""
         self.castType = ""
+        self.triptag = ""
         self.comment = ""
         self.NumScans = ""
         self.SamplingRate = ""
