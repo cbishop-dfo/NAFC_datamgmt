@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
+    <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="update to dropped columns">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Toolkits/cnv_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/cnv_tk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toolkits/config_deck.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/config_deck.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,10 +32,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/testenv.py">
+        <entry file="file://$PROJECT_DIR$/CTD_AutoQA/Overall_QA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="357">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#49#76#0" expanded="true" />
               </folding>
@@ -140,6 +139,7 @@
         <option value="$PROJECT_DIR$/CTD_AutoQA/00001191.p2020" />
         <option value="$PROJECT_DIR$/Toolkits/cnv_tk.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/testenv.py" />
+        <option value="$PROJECT_DIR$/CTD_AutoQA/Overall_QA.py" />
       </list>
     </option>
   </component>
@@ -343,20 +343,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591206340805</updated>
-    </task>
-    <task id="LOCAL-00043" summary="added ship speed dataframe to csv">
-      <created>1599768002441</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1599768002442</updated>
-    </task>
-    <task id="LOCAL-00044" summary="added script to rename new pfile filenames to old name scheme">
-      <created>1600357130164</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1600357130164</updated>
     </task>
     <task id="LOCAL-00045" summary="added script to rename new pfile filenames to old name scheme">
       <created>1600358003851</created>
@@ -687,7 +673,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613717022557</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Created Overall_QA">
+      <created>1614181951962</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1614181951963</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Changed how drop df works">
+      <created>1614182012622</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1614182012622</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -701,13 +701,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1673774" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1673774" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.47547975" visible="true" weight="0.3347779" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47547975" visible="true" weight="0.3347779" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7046908" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -778,8 +779,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added style sheet" />
-    <MESSAGE value="P_tk now uses the methods from the ship and inst toolkits" />
     <MESSAGE value="Added standardized dataframe to database." />
     <MESSAGE value="Updated Webapp, includes writing functionality.&#10;--- Outfile Types ---&#10;IGOSS - Complete&#10;CNV - Complete&#10;Simple CNV - Complete&#10;NETCDF - WIP" />
     <MESSAGE value="Added scan field to database to work with IGOSS and NCWriter" />
@@ -803,7 +802,9 @@
     <MESSAGE value="Moved template for cnv trimmer" />
     <MESSAGE value="Updated description" />
     <MESSAGE value="update to dropped columns" />
-    <option name="LAST_COMMIT_MESSAGE" value="update to dropped columns" />
+    <MESSAGE value="Created Overall_QA" />
+    <MESSAGE value="Changed how drop df works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed how drop df works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1345,10 +1346,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/testenv.py">
+    <entry file="file://$PROJECT_DIR$/CTD_AutoQA/Overall_QA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="357">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#49#76#0" expanded="true" />
           </folding>

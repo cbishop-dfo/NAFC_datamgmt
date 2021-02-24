@@ -2,8 +2,14 @@ import numpy as np
 import pandas as pd
 import math
 import seawater as sw
+import datetime
+import time as tt
 from Toolkits import ships_tk
 from Toolkits import inst_tk
+try:
+    import netCDF4 as nc
+except:
+    pass
 """
 Toolkit for creating cast object types from cnv files
 cnv_to_dataframe: dynamically creates a pandas dataframe based on the fields within the datafile
@@ -886,6 +892,7 @@ def StandardizedDF(cast, df):
     newdf = pd.DataFrame()
     oldName = ""
     newName = ""
+    cast.ColumnNames = []
     qa = False
 
     # for c in cast.ColumnNames:
@@ -1075,9 +1082,12 @@ def StandardizedDF(cast, df):
             newdf[c] = df[c].values
             qa = False
             print("UNKNOWN VARIABLE: " + c.__str__())
+            newName = c
         if qa:
             QA = "** QA Applied: variable " + oldName + " renamed to " + newName
             cast.userInput.append(QA)
+        if not newName.__eq__(""):
+            cast.ColumnNames.append(newName)
 
     return newdf
 
@@ -1113,3 +1123,387 @@ def createTripTag(cast):
         return createTripTag(cast)
 
 ###########################################################################################################
+
+def NCWrite(cast, df, nc_outfile="NCFile"):
+    """
+    Takes Cast object and dataframe and creates a NETCDF using a standard naming scheme for the variables
+    Variable names are converted to a standard name from cast.ColumnNames which is populated during function call
+    df = cnv_tk.cnv_to_dataframe(cast)
+
+    To create and populate needed params:
+    cast = cnv_tk.Cast(datafile)        # Creates an empty Cast type object
+    cnv_tk.cnv_meta(cast, datafile)     # Populates meta variables and data arrays within the Cast object
+    df = cnv_tk.cnv_to_dataframe(cast)  # Creates and returns a pandas dataframe using data from cast
+
+    :param cast:
+    :param df:
+    :return:
+    """
+    ####################################################################################################
+    # NETCDF CREATION HERE:
+    ####################################################################################################
+    #nc_outfile = cast.datafile.replace(".cnv", "").replace(".CNV", "") + "BINNED.nc"
+    nc_out = nc.Dataset(nc_outfile, 'w', format='NETCDF3_CLASSIC')
+    nc_out.Conventions = 'CF-1.6'
+    nc_out.title = 'AZMP netCDF file'
+    nc_out.institution = 'Northwest Atlantic Fisheries Centre, Fisheries and Oceans Canada'
+    nc_out.source = cast.datafile
+    nc_out.references = ''
+    nc_out.description = cast.comment
+    nc_out.created = 'Created ' + tt.ctime(tt.time())
+    # nc_out.processhistory = history
+    nc_out.trip_id = cast.id
+    nc_out.instrument_type = cast.InstrumentName
+    nc_out.instrument_ID = cast.Instrument
+    nc_out.shipname = cast.ShipName
+    nc_out.nafc_shipcode = cast.ship
+    nc_out.time_of_cast = cast.CastDatetime
+    nc_out.format_of_time = "YYYY-MM-DD HH:MM:SS"
+
+    history = []
+    # Here we are adding all header info into the history
+    for h in cast.header:
+        history.append(h.__str__().replace('\n', '').replace('(', '').replace(')', '').replace("'", ''))
+
+    num_history_lines = np.size(history)
+    # NOTE: ERROR when trying to exec only with map
+    # for i in range(0, num_history_lines):
+    # exec ('nc_out.processhistory_' + str(i) + ' = ' + ' \' ' + history[i].replace('\n','') + ' \' ')
+    # Create dimensions
+    time = nc_out.createDimension('time', 1)
+    # level = nc_out.createDimension('level', len(df_temp.columns))
+    level = nc_out.createDimension('level', df.shape[0])
+    # Create coordinate variables
+    times = nc_out.createVariable('time', np.float64, ('time',))
+    levels = nc_out.createVariable('level', np.float32, ('level',))
+    # **** NOTE: Maybe consider using ID instead of time for dimension **** #
+
+    # Create 1D variables
+    latitudes = nc_out.createVariable('latitude', np.float32, ('time'), zlib=True)
+    longitudes = nc_out.createVariable('longitude', np.float32, ('time'), zlib=True)
+    sounder_depths = nc_out.createVariable('sounder_depth', np.float32, ('time'), zlib=True)
+
+    Dictionary = {}
+    for c in df:
+        name = c.replace("/", "+")
+        if c.lower().__eq__('prdm') or c.__eq__('Pressure'):
+            v = nc_out.createVariable('Pressure', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "dbar"
+            v.long_name = "Sea Water Pressure in dbar"
+            Dictionary['Pressure'] = [v, name]
+
+        elif c.lower().__eq__('t090c') or c.__eq__('Temperature'):
+            # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
+            v = nc_out.createVariable('Temperature', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "degC"
+            v.long_name = "Sea Water Temperature"
+            Dictionary['Temperature'] = [v, name]
+
+        elif c.lower().__eq__('t190c') or c.__eq__('Secondary Temperature'):
+            # TEMPS902	Temperature (ITS-90) of the water body by CTD or STD (second sensor)	CTDTmp90_2
+            v = nc_out.createVariable('TEMPS902', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "degC"
+            v.long_name = "Sea Water Temperature"
+            Dictionary['Secondary Temperature'] = [v, name]
+
+        elif c.lower().__eq__('c0s/m') or c.__eq__('Conductivity'):
+            # Electrical conductivity of the water body by CTD
+            v = nc_out.createVariable('CNDCST01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "S/m"
+            v.long_name = "Sea Water Electrical Conductivity"
+            Dictionary['Conductivity'] = [v, name]
+
+        elif c.lower().__eq__('c1s/m') or c.__eq__('Secondary Conductivity'):
+            # Electrical conductivity of the water body by CTD (sensor 2)
+            v = nc_out.createVariable('CNDCST02', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "S/m"
+            v.long_name = "Sea Water Electrical Conductivity"
+            Dictionary['Secondary Conductivity'] = [v, name]
+
+        elif c.lower().__eq__('cond'):
+            # Electrical conductivity of the water body by CTD
+            v = nc_out.createVariable('CNDCST01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "S/m"
+            v.long_name = "Sea Water Electrical Conductivity"
+            Dictionary['Conductivity'] = [v, name]
+
+        elif c.lower().__eq__('cstarat0') or c.__eq__('Transmissometer attenuation [l per m]'):
+            Dictionary['Transmissometer attenuation [l per m]'] = [
+                nc_out.createVariable('Transmissometer attenuation [l per m]', np.float32, ('level'), zlib=True,
+                                      fill_value=-9999), name]
+
+        elif c.lower().__eq__('cstartr0') or c.__eq__('Transmissometer transmission [%]'):
+            Dictionary['Transmissometer transmission [%]'] = [
+                nc_out.createVariable('Transmissometer transmission [%]', np.float32, ('level'), zlib=True,
+                                      fill_value=-9999), name]
+
+        elif c.lower().__eq__('depth') or c.__eq__('Depth'):
+            v = nc_out.createVariable('depth', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "m"
+            v.long_name = "Depth in meters"
+            Dictionary['Depth'] = [v, name]
+
+        elif c.lower().__eq__('flag'):
+            Dictionary['Flag'] = [nc_out.createVariable('Flag', np.float32, ('level'), zlib=True, fill_value=-9999),
+                                  name]
+
+        elif c.lower().__eq__('fleco-afl') or c.__eq__('Chlorophyll A Fluorescence'):
+            Dictionary['Chlorophyll A Fluorescence'] = [
+                nc_out.createVariable('Chlorophyll A Fluorescence', np.float32, ('level'), zlib=True, fill_value=-9999),
+                name]
+
+        elif c.lower().__eq__('flor') or c.__eq__('Fluorescence'):
+            Dictionary['Fluorescence'] = [
+                nc_out.createVariable('Fluorescence', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('oxsatml/l') or c.__eq__('Oxygen Saturation'):
+            # Saturation of oxygen {O2 CAS 7782-44-7} in the water body [dissolved plus reactive particulate phase]
+            v = nc_out.createVariable('OXYSZZ01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "ml/l"
+            v.long_name = "Saturation of oxygen"
+            Dictionary['Oxygen Saturation'] = [v, name]
+
+        elif c.lower().__eq__('oxy'):
+            # Saturation of oxygen {O2 CAS 7782-44-7} in the water body [dissolved plus reactive particulate phase]
+            v = nc_out.createVariable('OXYSZZ01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "ml/l"
+            v.long_name = "Saturation of oxygen"
+            Dictionary['Oxygen Saturation'] = [v, name]
+
+        elif c.lower().__eq__('par') or c.__eq__('Irradiance'):
+            Dictionary['Irradiance'] = [
+                nc_out.createVariable('Irradiance', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('par/sat/log') or c.__eq__('Photosynthetic Active Radiation'):
+            Dictionary['Photosynthetic Active Radiation'] = [
+                nc_out.createVariable('Photosynthetic Active Radiation', np.float32, ('level'), zlib=True,
+                                      fill_value=-9999), name]
+
+        elif c.lower().__eq__('ph'):
+            Dictionary['pH'] = [nc_out.createVariable('pH', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('pres'):
+            v = nc_out.createVariable('sea_water_pressure', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "dbar"
+            v.long_name = "Sea Water Pressure in dbar"
+            Dictionary['Pressure'] = [v, name]
+
+        elif c.lower().__eq__('sal') or c.__eq__('Salinity'):
+            # Practical salinity of the water body by CTD and computation using UNESCO 1983 algorithm
+            v = nc_out.createVariable('PSALST01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "PSS-78"
+            v.long_name = "sea_water_practical_salinity"
+            Dictionary['Salinity'] = [v, name]
+
+        elif c.lower().__eq__('sal00'):
+            v = nc_out.createVariable('PSALST01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "PSS-78"
+            v.long_name = "sea_water_practical_salinity"
+            Dictionary['Salinity'] = [v, name]
+
+        elif c.lower().__eq__('sal11') or c.__eq__('Secondary Salinity'):
+            # Practical salinity of the water body by CTD (second sensor) and computation using UNESCO 1983 algorithm
+            v = nc_out.createVariable('PSALST02', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "PSS-78"
+            v.long_name = "sea_water_practical_salinity"
+            Dictionary['Secondary Salinity'] = [v, name]
+
+        elif c.lower().__eq__('sbeox0ml/l') or c.__eq__('Oxygen'):
+            v = nc_out.createVariable('DOXYZZ01', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "ml/l"
+            v.long_name = "Oxygen concentration"
+            Dictionary['Oxygen'] = [v, name]
+
+        elif c.lower().__eq__('sbeox0v') or c.__eq__('Oxygen Raw'):
+            Dictionary['Oxygen Raw'] = [
+                nc_out.createVariable('Oxygen Raw', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sbeox1ml/l') or c.__eq__('Secondary Oxygen'):
+            Dictionary['Secondary Oxygen'] = [
+                nc_out.createVariable('Secondary Oxygen', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sbeox1v') or c.__eq__('Secondary Oxygen Raw'):
+            Dictionary['Secondary Oxygen Raw'] = [
+                nc_out.createVariable('Secondary Oxygen Raw', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('scan'):
+            continue
+            # Dictionary['Scan'] = [nc_out.createVariable('Scan', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sigma-t00') or c.__eq__('Density'):
+            Dictionary['Density'] = [
+                nc_out.createVariable('Density', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sigma-t11') or c.__eq__('Secondary Density'):
+            Dictionary['Secondary Density'] = [
+                nc_out.createVariable('Secondary Density', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('sigt'):
+            Dictionary['Density'] = [
+                nc_out.createVariable('Density', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+
+        elif c.lower().__eq__('temp'):
+            # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
+            v = nc_out.createVariable('sea_water_temperature', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "degC"
+            v.long_name = "Sea Water Temperature"
+            Dictionary['Temperature'] = [v, name]
+
+        elif c.lower().__eq__('wetcdom') or c.__eq__('CDOM Fluorescence'):
+            # Fluorescence of the water body by linear-response CDOM fluorometer
+            v = nc_out.createVariable('FLUOCDOM', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "mg/m^3"
+            v.long_name = "CDOM Fluorescence"
+            Dictionary['CDOM Fluorescence'] = [v, name]
+
+        elif c.lower().__eq__('tv290c'):
+            # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
+            v = nc_out.createVariable('sea_water_temperature', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "degC"
+            v.long_name = "Sea Water Temperature"
+            Dictionary['Temperature'] = [v, name]
+
+        elif c.lower().__eq__('depth'):
+            # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
+            v = nc_out.createVariable('depth', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "m"
+            v.long_name = "Sea Water Depth"
+            Dictionary['Depth'] = [v, name]
+
+        else:
+            Dictionary[c] = [nc_out.createVariable(name, np.float32, ('level'), zlib=True, fill_value=-9999),
+                             name]
+            print("UNKNOWN VARIABLE: " + c.__str__())
+            input("HALT...Press Enter To Continue")
+
+    times.units = 'hours since 1900-01-01 00:00:00'
+    times.calendar = 'gregorian'
+
+    # temp[:] = df["temp"].values
+    for d in Dictionary:
+        index = Dictionary[d][1]
+        index = index.replace("+", "/")
+        v = Dictionary[d][0]
+        v[:] = df[index].values
+        Dictionary[d][0][:] = df[index].values
+
+    # Fill cast info
+    latitudes[:] = cast.Latitude
+    longitudes[:] = cast.Longitude
+    sounder_depths[:] = str(cast.SounderDepth)
+    # Fill time
+    try:
+        date = datetime.datetime.strptime(cast.CastDatetime, '%Y-%m-%d %H:%M:%S')
+    except:
+        cast.CastDatetime = cast.CastDatetime + ":00"
+        date = datetime.datetime.strptime(cast.CastDatetime, '%Y-%m-%d %H:%M:%S')
+    times[:] = nc.date2num(date, units=times.units, calendar=times.calendar)
+
+    # Typically the pressure/depth index
+    pressureIndex = 1
+    for row in cast.InstrumentInfo:
+        if row.lower().__contains__("pressure") and not cast.isPressure:
+            # cast.isPressure = True
+            sRow = row.split(" ")
+            pressureIndex = int(sRow[2])
+            break
+        elif row.lower().__contains__("depth") and not cast.isPressure:
+            # cast.isPressure = True
+            cast.hasDepth = True
+            sRow = row.split(" ")
+            pressureIndex = int(sRow[2])
+            break
+    try:
+        Pbin = np.array(df['scan'], dtype='float64')
+    except:
+        try:
+            Pbin = np.array(df['Depth'], dtype='float64')
+        except:
+            Pbin = np.array(df[cast.ColumnNames[pressureIndex]], dtype='float64')
+
+    levels[:] = Pbin
+    nc_out.close()
+
+###########################################################################################################
+
+def BinDF(cast, df):
+    # Typically the pressure/depth index
+    pressureIndex = 1
+    for row in cast.InstrumentInfo:
+        if row.lower().__contains__("pressure") and not cast.isPressure:
+            # cast.isPressure = True
+            sRow = row.split(" ")
+            pressureIndex = int(sRow[2])
+            break
+        elif row.lower().__contains__("depth") and not cast.isPressure:
+            # cast.isPressure = True
+            cast.hasDepth = True
+            sRow = row.split(" ")
+            pressureIndex = int(sRow[2])
+            break
+
+    df = df.astype(float)
+    # df['bin'] = pd.cut(df[cast.ColumnNames[pressureIndex]].astype(float), bins)
+    # df = df.dropna(axis='rows')
+    print("Binning")
+
+    # Here we are dropping any of the upcast values
+    lastdepth = 0
+    # array to hold the scans to drop *IMPORTANT: Scans need to be the first column in the dataframe
+    toDrop = []
+    for d in df.values:
+        current = float(d[pressureIndex])
+        if float(current) > lastdepth:
+            lastdepth = current
+        else:
+            # Append scans to drop, SCAN MUST BE FIRST COLUMN IN DATAFRAME
+            toDrop.append(int(d[0]))
+
+    for s in toDrop:
+        i = df.loc[df['scan'].astype(float) == float(s)].index
+        index = i.values
+        df = df.drop(index[0])
+
+    bins = []
+    depths = []
+    # Create bin with specified intervals and steps
+    for i in range(0, 1001, 1):
+        bins.append(i + 0.5)
+
+    """
+    #bins.append(1000)
+    for i in range(1000, 5000, 10):
+        bins.append(i)
+    """
+    count = 0
+    for b in bins:
+        depths.append(b + 0.5)
+
+        """
+        if count < 1001:
+            depths.append(b + 0.5)
+            count = count + 1
+        else:
+            nd = b + 5
+            depths.append(nd)
+            count = count + 1
+        """
+    # Here we bin all the data and calculate the mean for each bin
+    df = df.groupby(pd.cut(df[cast.ColumnNames[pressureIndex]].astype(float), bins)).mean()
+
+    # Had 1 too many values at end
+    depths.pop()
+
+    # Create
+    # s = df.values.shape[0]
+    # newpres = []
+    # for s in range(s):
+    #    newpres.append(s + 1)
+
+    # Replace mean pressures with bin values
+    df[cast.ColumnNames[pressureIndex]] = depths
+
+    # Drop all empty rows
+    df = df.dropna(axis=0)
+
+    return df
