@@ -66,17 +66,28 @@ def dropColumns(cast, df, deck=createDeckDF()):
 
     # list of columns to keep
     toKeep = []
-    dropped_df = pd.DataFrame()
     df = cnv_tk.StandardizedDF(cast, df)
+    dropped_df = df.copy()
 
+    match = False
     for d in deck.values:
         if cast.Instrument == d[1]:
             toKeep = d[2]
+            match = True
             break
+        else:
+            continue
 
-    for c in df:
+    if not match:
+        print("No Matching Serial Number!\nUsing Default: 'scan', 'Pressure', 'Depth', 'Temperature', 'Salinity', 'Density'")
+        toKeep = ['scan', 'Pressure', 'Depth', 'Temperature', 'Salinity', 'Density']
+
+    for c in dropped_df:
         if c in toKeep:
-            dropped_df[c] = df[c]
+            #dropped_df[c] = df[c]
+            continue
+        else:
+            dropped_df = dropped_df.drop([c], axis=1)
 
     return dropped_df
 
