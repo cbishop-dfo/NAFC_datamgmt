@@ -1429,7 +1429,8 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
 
 def BinDF(cast, df):
     # Typically the pressure/depth index
-    pressureIndex = 1
+    pressureIndex = 0
+    """
     for row in cast.InstrumentInfo:
         if row.lower().__contains__("pressure") and not cast.isPressure:
             # cast.isPressure = True
@@ -1442,6 +1443,14 @@ def BinDF(cast, df):
             sRow = row.split(" ")
             pressureIndex = int(sRow[2])
             break
+    """
+    # Look through df for index relating to pressure
+    for col in df:
+        if col.lower().__contains__("pressure"):
+            break
+        elif col.lower().__contains__("depth"):
+            break
+        pressureIndex = pressureIndex + 1
 
     df = df.astype(float)
     # df['bin'] = pd.cut(df[cast.ColumnNames[pressureIndex]].astype(float), bins)
@@ -1489,8 +1498,13 @@ def BinDF(cast, df):
             depths.append(nd)
             count = count + 1
         """
+    # Store column names into temp list
+    tempColumnNames = []
+    for c in df:
+        tempColumnNames.append(c)
+
     # Here we bin all the data and calculate the mean for each bin
-    df = df.groupby(pd.cut(df[cast.ColumnNames[pressureIndex]].astype(float), bins)).mean()
+    df = df.groupby(pd.cut(df[tempColumnNames[pressureIndex]].astype(float), bins)).mean()
 
     # Had 1 too many values at end
     depths.pop()
@@ -1502,7 +1516,7 @@ def BinDF(cast, df):
     #    newpres.append(s + 1)
 
     # Replace mean pressures with bin values
-    df[cast.ColumnNames[pressureIndex]] = depths
+    df[tempColumnNames[pressureIndex]] = depths
 
     # Drop all empty rows
     df = df.dropna(axis=0)
