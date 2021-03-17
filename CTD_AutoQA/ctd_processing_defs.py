@@ -164,7 +164,7 @@ def _despike(series, n1, n2, block, keep):
 
 @register_series_method
 @register_dataframe_method
-def despike(df, n1=2, n2=20, block=100, keep=0):
+def despike(df, n1=2, n2=20, block=25, keep=0):
     """
     Wild Edit Seabird-like function.  Passes with Standard deviation
     `n1` and `n2` with window size `block`.
