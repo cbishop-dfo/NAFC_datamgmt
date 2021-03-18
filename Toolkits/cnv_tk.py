@@ -590,6 +590,11 @@ def cnv_igoss(cast, df):
     :param df:
     :return:
     """
+    # dff = df.copy()
+
+    # Create dataframe specific to IGOSS
+    df = cnv_sig_dataframe(cast)
+
     def normalizeLength(str):
         str = str.replace(".", "")
         nstr = ""
