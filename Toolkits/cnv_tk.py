@@ -570,8 +570,11 @@ def cnv_igoss(cast, df):
     # output data to file
     """
     fille name is based on ship and trip followed by _IGOSS.DTA
-    header portion:
-    KKYY DAYMONTHYEAR HOUR|MIN Q|LAT(DEGMIN) LON 888|K1|K2 ?????
+    ###################################################################
+    Header portion:
+    ###################################################################
+
+    KKYY DAYMONTHYEAR HOUR|MIN Q|LAT(DEGMIN) LON 888|K1|K2 manufactType
     K1:
     7 - selected depths
     8 - significant depths
@@ -585,12 +588,31 @@ def cnv_igoss(cast, df):
     3	            South	    East
     5	            South   	West
     7	            North   	West
+
+    manufactType
+    if its a CTD cast, we use code 83099
+    The first three number give the type (830 is a CTD), in this case, 099 means unidentified and Dave seems to
+    use that for every CTD, so a CTD igoss will always use 83099
+    now, the first three numbers change if its an XBT,
+
+    an XBT-05 uses 011
+    XBT-06 uses 032
+    XBT-10 uses 061
+    XBT-07 uses 042
+
+    it appears that the second two numbers on an XBT is always "06" as opposed to the CTD using "99"
+
+    ###################################################################
+    Data portion:
+    ###################################################################
     2|depth 3|temp 4|salinity 55555=(section indicator for depth) 1|MaxDepth
     :param cast:
     :param df:
     :return:
+
+
+
     """
-    # dff = df.copy()
 
     # Create dataframe specific to IGOSS
     df = cnv_sig_dataframe(cast)
@@ -645,19 +667,32 @@ def cnv_igoss(cast, df):
     k2 = cast.k2
     info = "888" + k1 + k2
     inst = ""
+    isXBT = False
     if not cast.Instrument == "":
         if cast.Instrument.upper().__contains__("XBT") and cast.Instrument.upper().__contains__("05"):
             inst = "011"
+            isXBT = True
         elif cast.Instrument.upper().__contains__("XBT") and cast.Instrument.upper().__contains__("06"):
             inst = "032"
+            isXBT = True
         elif cast.Instrument.upper().__contains__("XBT") and cast.Instrument.upper().__contains__("07"):
             inst = "042"
+            isXBT = True
         elif cast.Instrument.upper().__contains__("XBT") and cast.Instrument.upper().__contains__("10"):
             inst = "061"
+            isXBT = True
         else:
-            inst = "099"
+            # Not XBT then it is a CTD
+            inst = "830"
 
-    header = dmy + " " + hourmin + " " + qlat_lon + " " + info + " 83" + inst + "\n"
+    if isXBT:
+        # XBT ends with 06
+        header = dmy + " " + hourmin + " " + qlat_lon + " " + info + inst + "06" + "\n"
+    else:
+        # CTD ends with 99
+        header = dmy + " " + hourmin + " " + qlat_lon + " " + info + inst + "99" + "\n"
+
+
     writer.writelines(header)
     # dep tmp sal
     # depth whole num
