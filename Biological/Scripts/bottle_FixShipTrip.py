@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
             f = pd.read_excel(datafile, header=1)
             cast = cnv_tk.Cast()
-            csvName = "NEW_AZMP.csv"
+            csvName = "NEW_AZMP_Bottle_Data.csv"
             #rows = f["Ship_Trip"].values
             FixedNames = []
             FixedDate = []
@@ -53,7 +53,7 @@ if __name__ == '__main__':
                     ships_biological.get_bio_ShipName(cast)
                     FixedNames.append(cast.ShipName.upper() + trip)
                 else:
-                    FixedNames.append(row)
+                    FixedNames.append(row[1])
 
                 FixedDate.append(newdate)
                 Latitudes.append(lat)
