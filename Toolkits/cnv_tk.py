@@ -347,8 +347,8 @@ def getShipName(cast, shipDF=ships_tk.createShipDF()):
     except Exception as e:
         cast.ShipName = "xxx"
         print(e.__str__())
-        print(
-            "Cannot Find Ship Name In File...")
+        print("Cannot Find Match Given Ship Number...")
+        print("Ship Number: " + cast.ship.__str__())
 
 ###########################################################################################################
 
@@ -361,8 +361,8 @@ def getShipNumber(cast, shipDF=ships_tk.createShipDF()):
     except Exception as e:
         cast.ship = "00"
         print(e.__str__())
-        print(
-            "Cannot Find Ship Number In File...")
+        print("Cannot Find Match Given Ship Name...")
+        print("Ship Name: " + cast.ShipName.__str__())
 
 ###########################################################################################################
 
