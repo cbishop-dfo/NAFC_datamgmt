@@ -24,7 +24,7 @@ def createShipDF():
         ['07', 'zagreb', 'xxx'],
         ['08', 'burin_bay', 'xxx'],
         ['09', 'nfld_hawk', 'hawk'],
-        ['10', 'tman', 'tman'],
+        ['10', 'tman', 'tem'],
         ['11', 'hammond', 'ham'],
         ['12', 'needler', 'ned'],
         ['13', 'cindy_elizabeth', 'xxx'],
@@ -129,7 +129,7 @@ def createShipDF():
 
 ###########################################################################################################
 
-def get_bio_ShipName(cast, shipDF=createShipDF()):
+def getShipName(cast, shipDF=createShipDF()):
     try:
         s = shipDF[shipDF[0].str.match(cast.ship.__str__())]
         sname = s.values[0][2]
@@ -137,10 +137,25 @@ def get_bio_ShipName(cast, shipDF=createShipDF()):
     except Exception as e:
         cast.ShipName = "xxx"
         print(e.__str__())
-        print(
-            "Cannot Find Ship Name In File...")
+        print("Cannot Find Match Given Ship Number...")
+        print("Ship Number: " + cast.ship.__str__())
 
 ###########################################################################################################
+
+def getShipNumber(cast, shipDF=createShipDF()):
+
+    try:
+        s = shipDF[shipDF[2].str.match(cast.ShipName.__str__())]
+        snumber = s.values[0][0]
+        cast.ship = snumber
+    except Exception as e:
+        cast.ship = "00"
+        print(e.__str__())
+        print("Cannot Find Match Given Ship Name...")
+        print("Ship Name: " + cast.ShipName.__str__())
+
+###########################################################################################################
+
 
 
 if __name__ == '__main__':
