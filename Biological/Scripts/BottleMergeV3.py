@@ -49,6 +49,7 @@ def MacthID( Bottle, Biomass):
                                 tempCast.trip = tempCast.trip + str(c)
                         ships_biological.getShipNumber(tempCast)
                         id = str(tempCast.ship) + str(tempCast.trip)
+                        # TODO: Investigate UID
                         uid = bot[2]
                         # Matching Latitudes
                         if bot[6] == bio[3]:
@@ -89,7 +90,7 @@ def MacthID( Bottle, Biomass):
         print("ERROR: " + e.__str__())
     print(Biomass.shape[0])
     print(ID_List.__len__())
-    Biomass["ShipTrip"] = ID_List
+    Biomass["NewShipTrip"] = ID_List
     Biomass["UID"] = UID
     Biomass["NewSampleID"] = BottleIDs
     Biomass.to_csv("NEWBIOMASS.csv", index=False)

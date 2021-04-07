@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="Fixed issue where binning for NC writer was not being based on pressure or depth">
-      <change afterPath="$PROJECT_DIR$/Biological/Scripts/BottleMergeV3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Biological/Scripts/NEWBIOMASS.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Biological/Scripts/NEW_AZMP_Bottle_Data.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CTD_AutoQA/cnv_pfile_plot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biological/NEW_AZMP_Bottle_Data.xlsx.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biological/Scripts/bottle_FixShipTrip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Biological/Scripts/bottle_FixShipTrip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biological/Scripts/BottleMergeV3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Biological/Scripts/BottleMergeV3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biological/zooplankton_biomass.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Biological/zooplankton_biomass.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CTD_AutoQA/CTD_META_QA.py" beforeDir="false" afterPath="$PROJECT_DIR$/CTD_AutoQA/CTD_META_QA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toolkits/cnv_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/cnv_tk.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Toolkits/dir_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/dir_tk.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Toolkits/ships_biological.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/ships_biological.py" afterDir="false" />
     </list>
@@ -26,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Biological/Scripts/BottleMergeV3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="127" column="31" lean-forward="true" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
+            <state relative-caret-position="340">
+              <caret line="50" column="68" lean-forward="true" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
               <folding>
                 <element signature="e#50#77#0" expanded="true" />
               </folding>
@@ -384,27 +381,6 @@
       <option name="presentableId" value="Default" />
       <updated>1591206340805</updated>
     </task>
-    <task id="LOCAL-00049" summary="File selection changed&#10;WIP">
-      <created>1602183581644</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1602183581644</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Changed cnv meta header to include ID and CruiseID&#10;also changed csv file names to match trips">
-      <created>1602184657035</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1602184657035</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Added script to append all meta csv file to a master csv">
-      <created>1602688543120</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1602688543120</updated>
-    </task>
     <task id="LOCAL-00052" summary="Added Merge script for xlsx files&#10;Added file reading options to cnv_meta script">
       <created>1603182505892</created>
       <option name="number" value="00052" />
@@ -727,7 +703,28 @@
       <option name="project" value="LOCAL" />
       <updated>1617041548973</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Renamed outfile">
+      <created>1617824345844</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1617824345844</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Joined Bottle ID's to biomass file&#10;Appended ship trip station as UID at end of file">
+      <created>1617824734823</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1617824734823</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Updates to Error Exceptions">
+      <created>1617825541384</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1617825541384</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -819,9 +816,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed Bug with pressure and depth conversions" />
-    <MESSAGE value="Fixed issue with reading older file types" />
-    <MESSAGE value="Implemented Area selection using min/max lat/lon variables" />
     <MESSAGE value="Update To NC Variables" />
     <MESSAGE value="Added Cast Type check for missing values" />
     <MESSAGE value="Updated Lat, Lon For Single Parameter" />
@@ -844,7 +838,10 @@
     <MESSAGE value="Fixed issue where binning for NC writer was not being based on pressure or depth" />
     <MESSAGE value="added new bottle file" />
     <MESSAGE value="Updated description of IGOSS writer and fixed manufacturer header value" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated description of IGOSS writer and fixed manufacturer header value" />
+    <MESSAGE value="Renamed outfile" />
+    <MESSAGE value="Joined Bottle ID's to biomass file&#10;Appended ship trip station as UID at end of file" />
+    <MESSAGE value="Updates to Error Exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to Error Exceptions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1121,12 +1118,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Biological/Scripts/BottleMergeV3.py</url>
-          <line>95</line>
+          <line>96</line>
           <option name="timeStamp" value="328" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Biological/Scripts/BottleMergeV3.py</url>
-          <line>89</line>
+          <line>90</line>
           <option name="timeStamp" value="344" />
         </line-breakpoint>
       </breakpoints>
@@ -1246,9 +1243,6 @@
           <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Biological/Scripts/PLANK_SORT.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/CTD_AutoQA/testenv.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1527,10 +1521,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Biological/Scripts/PLANK_SORT.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Biological/Scripts/BottleMergeV3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="127" column="31" lean-forward="true" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="31" />
+        <state relative-caret-position="340">
+          <caret line="50" column="68" lean-forward="true" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
           <folding>
             <element signature="e#50#77#0" expanded="true" />
           </folding>
