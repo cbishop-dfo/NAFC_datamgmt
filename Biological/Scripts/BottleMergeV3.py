@@ -49,16 +49,23 @@ def MacthID( Bottle, Biomass):
                                 tempCast.trip = tempCast.trip + str(c)
                         ships_biological.getShipNumber(tempCast)
                         id = str(tempCast.ship) + str(tempCast.trip)
-                        # TODO: Investigate UID
+                        # TODO: Investigate UID, UID is shiptripstation
                         uid = bot[2]
                         # Matching Latitudes
-                        if bot[6] == bio[3]:
+                        botLat = "{:.2f}".format(bot[6])
+                        biolat = "{:.2f}".format(bio[3])
+                        if botLat == biolat:
                             # Matching Longitudes
-                            if bot[7] == bio[4]:
+                            botLon = "{:.2f}".format(bot[7])
+                            biolon = "{:.2f}".format(bio[4])
+                            if botLon == biolon:
                                 # Matching dates
 
                                 # Formatting bio datetime
-                                datetime = bio[5].split("-")
+                                try:
+                                    datetime = bio[5].split("T")[0].split("-")
+                                except:
+                                    datetime = bio[5].split("-")
                                 day = datetime[2]
                                 month = datetime[1]
                                 year = datetime[0]
