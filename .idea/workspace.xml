@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="Fixed import">
+    <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="Fixed issue with mismatched datetime">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biological/Scripts/BottleMergeV3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Biological/Scripts/BottleMergeV3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biological/Scripts/NEWBIOMASS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Biological/Scripts/NEWBIOMASS.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biological/zooplankton_biomass.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Biological/zooplankton_biomass.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Biological/Scripts/BottleMergeV3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="142" column="36" lean-forward="true" selection-start-line="142" selection-start-column="36" selection-end-line="142" selection-end-column="36" />
+            <state relative-caret-position="357">
+              <caret line="57" column="49" lean-forward="true" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
               <folding>
                 <element signature="e#50#77#0" expanded="true" />
               </folding>
@@ -194,12 +192,6 @@
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="Git" type="462c0819:PsiDirectoryNode" />
               <item name="Biological" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Git" type="462c0819:PsiDirectoryNode" />
-              <item name="Biological" type="462c0819:PsiDirectoryNode" />
-              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
@@ -387,20 +379,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591206340805</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Added method for csvwriter&#10;- CreateCSV(df)">
-      <created>1603899915988</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1603899915989</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Added method for Ship speed plotter&#10;- plotMap(df)">
-      <created>1603900953097</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1603900953097</updated>
     </task>
     <task id="LOCAL-00056" summary="Added ships.py methods to cnv_toolkit&#10;Method added: createShipDF()&#10;returns dataframe of ship info&#10;&#10;dataframe[0] - ship number&#10;dataframe[1] - ship name long&#10;dataframe[2] - ship name short">
       <created>1605541430188</created>
@@ -731,7 +709,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617825709767</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="Fixed issue with mismatched datetime">
+      <created>1617901047510</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1617901047511</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Fixed issue with mismatched datetime">
+      <created>1617901145496</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1617901145496</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -745,20 +737,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4978678" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.46908316" visible="true" weight="0.3347779" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46908316" weight="0.3347779" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.69722813" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4946695" weight="0.32286024" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.53091687" side_tool="true" visible="true" weight="0.3347779" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -822,7 +815,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated Lat, Lon For Single Parameter" />
     <MESSAGE value="Creates simple CNV like file from pfile&#10;(Contains Meteorological Data)" />
     <MESSAGE value="added method to create sCTD files" />
     <MESSAGE value="added error checks for file conversion" />
@@ -847,7 +839,8 @@
     <MESSAGE value="Updates to Error Exceptions" />
     <MESSAGE value="Updated Names And Methods" />
     <MESSAGE value="Created Script for viewing ctd and pfiles side by side" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Script for viewing ctd and pfiles side by side" />
+    <MESSAGE value="Fixed issue with mismatched datetime" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with mismatched datetime" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1522,8 +1515,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Biological/Scripts/BottleMergeV3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="142" column="36" lean-forward="true" selection-start-line="142" selection-start-column="36" selection-end-line="142" selection-end-column="36" />
+        <state relative-caret-position="357">
+          <caret line="57" column="49" lean-forward="true" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
           <folding>
             <element signature="e#50#77#0" expanded="true" />
           </folding>
