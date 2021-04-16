@@ -42,6 +42,7 @@ def createShipDF():
         ['25', 'hood', 'hood'],
         ['26', 'mares', 'mar'],
         ['27', 'ccg206', 'ccg'],
+        ['27', 'ccg206', 'cg'], # Added duplicate to match biomass
         ['28', 'adair', 'adair'],
         ['29', 'lauzier', 'lauz'],
         ['30', 'nfld_lynx', 'lynx'],
@@ -81,7 +82,7 @@ def createShipDF():
         ['75', 'viking_s27', 'viks'],
         ['76', 'Cartier', 'cart'],
         ['77', 'Cabot', 'cabot'],
-        ['79', 'james_cook', 'cook'],
+        ['79', 'james_cook', 'coo'],
         ['80', 'afap80', 'afap80'],
         ['81', 'afap81', 'afap81'],
         ['82', 'afap82', 'afap82'],

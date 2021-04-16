@@ -50,7 +50,7 @@ if __name__ == '__main__':
                 lon = float("{0:.2f}".format(tlon))
                 if shipNum.isdigit():
                     cast.ship = shipNum
-                    ships_biological.get_bio_ShipName(cast)
+                    ships_biological.getShipName(cast)
                     FixedNames.append(cast.ShipName.upper() + trip)
                 else:
                     FixedNames.append(row[1])
