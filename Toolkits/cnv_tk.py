@@ -1356,16 +1356,22 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
             Dictionary['Oxygen'] = [v, name]
 
         elif c.lower().__eq__('sbeox0v') or c.__eq__('Oxygen Raw'):
-            Dictionary['Oxygen Raw'] = [
-                nc_out.createVariable('Oxygen Raw', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            # Raw signal (voltage) of instrument output by oxygen sensor
+            v = nc_out.createVariable('OXYVLTN1', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "V"
+            v.long_name = "Raw signal (voltage) of instrument output by in-situ microelectrode"
+            Dictionary['Oxygen Raw'] = [v, name]
 
         elif c.lower().__eq__('sbeox1ml/l') or c.__eq__('Secondary Oxygen'):
             Dictionary['Secondary Oxygen'] = [
                 nc_out.createVariable('Secondary Oxygen', np.float32, ('level'), zlib=True, fill_value=-9999), name]
 
         elif c.lower().__eq__('sbeox1v') or c.__eq__('Secondary Oxygen Raw'):
-            Dictionary['Secondary Oxygen Raw'] = [
-                nc_out.createVariable('Secondary Oxygen Raw', np.float32, ('level'), zlib=True, fill_value=-9999), name]
+            # Raw signal (voltage) of instrument output by oxygen sensor (second sensor)
+            v = nc_out.createVariable('OXYVLTN2', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v.units = "V"
+            v.long_name = "Raw signal (voltage) of instrument output by in-situ microelectrode (second sensor)"
+            Dictionary['Secondary Oxygen Raw'] = [v, name]
 
         elif c.lower().__eq__('scan'):
             continue
