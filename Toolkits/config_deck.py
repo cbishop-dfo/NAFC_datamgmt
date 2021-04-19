@@ -60,6 +60,33 @@ def createDeckDF():
     deck_df = pd.DataFrame.from_records(deck)
     return deck_df
 
+###########################################################################################################
+
+def dropByStandardizedList(cast, df, list=["scan", "Pressure","Temperature", "Salinity"]):
+    # makes call to convert df to Standardized names
+    dropped_df = cnv_tk.StandardizedDF(cast, df)
+    for c in dropped_df:
+        if c in list:
+            continue
+        else:
+            dropped_df = dropped_df.drop([c], axis=1)
+
+    return dropped_df
+
+###########################################################################################################
+
+def dropAny(df, list=["scan", "Pressure", "Temperature", "Salinity"]):
+    dropped_df = df.copy
+    for c in dropped_df:
+        if c in list:
+            continue
+        else:
+            dropped_df = dropped_df.drop([c], axis=1)
+
+    return dropped_df
+
+###########################################################################################################
+
 def dropColumns(cast, df, deck=createDeckDF()):
     # TODO create temp df with Standardized names, check for data index to drop, store names of index in list,
     #  drop original cols by name this way we can retain original naming scheme if needed
