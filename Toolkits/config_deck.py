@@ -76,7 +76,7 @@ def dropByStandardizedList(cast, df, list=["scan", "Pressure","Temperature", "Sa
 ###########################################################################################################
 
 def dropAny(df, list=["scan", "Pressure", "Temperature", "Salinity"]):
-    dropped_df = df.copy
+    dropped_df = df.copy()
     for c in dropped_df:
         if c in list:
             continue
