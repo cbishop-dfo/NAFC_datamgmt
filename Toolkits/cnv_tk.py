@@ -266,6 +266,8 @@ def cnv_meta(cast, datafile):
                 cast.comment = line.split(":")[1]
             elif line.upper().__contains__("TRIP TAG"):
                 cast.triptag = line.split(":")[1].lstrip().rstrip()
+            elif line.upper().__contains__("CAST TYPE"):
+                cast.castType = line.split(":")[1].lstrip().rstrip()
             elif line.upper().__contains__("PROBE"):
                 if xbt:
                     cast.InstrumentName = line.split(":")[1].strip()
