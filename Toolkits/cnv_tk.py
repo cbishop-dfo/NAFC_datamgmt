@@ -1262,14 +1262,14 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
     for c in df:
         name = c.replace("/", "+")
         if c.lower().__eq__('prdm') or c.__eq__('Pressure'):
-            v = nc_out.createVariable('Pressure', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('PRESPR01', np.float32, ('level'), zlib=True, fill_value=-9999)
             v.units = "dbar"
             v.long_name = "Sea Water Pressure in dbar"
             Dictionary['Pressure'] = [v, name]
 
         elif c.lower().__eq__('t090c') or c.__eq__('Temperature'):
             # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
-            v = nc_out.createVariable('Temperature', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('TEMPS901', np.float32, ('level'), zlib=True, fill_value=-9999)
             v.units = "degC"
             v.long_name = "Sea Water Temperature"
             Dictionary['Temperature'] = [v, name]
@@ -1358,7 +1358,7 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
             Dictionary['pH'] = [nc_out.createVariable('pH', np.float32, ('level'), zlib=True, fill_value=-9999), name]
 
         elif c.lower().__eq__('pres'):
-            v = nc_out.createVariable('sea_water_pressure', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('PRESPR01', np.float32, ('level'), zlib=True, fill_value=-9999)
             v.units = "dbar"
             v.long_name = "Sea Water Pressure in dbar"
             Dictionary['Pressure'] = [v, name]
@@ -1425,7 +1425,7 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
 
         elif c.lower().__eq__('temp'):
             # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
-            v = nc_out.createVariable('sea_water_temperature', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('TEMPS901', np.float32, ('level'), zlib=True, fill_value=-9999)
             v.units = "degC"
             v.long_name = "Sea Water Temperature"
             Dictionary['Temperature'] = [v, name]
@@ -1439,7 +1439,7 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
 
         elif c.lower().__eq__('tv290c'):
             # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
-            v = nc_out.createVariable('sea_water_temperature', np.float32, ('level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('TEMPS901', np.float32, ('level'), zlib=True, fill_value=-9999)
             v.units = "degC"
             v.long_name = "Sea Water Temperature"
             Dictionary['Temperature'] = [v, name]
