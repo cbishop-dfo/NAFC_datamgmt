@@ -71,11 +71,12 @@ def dropByStandardizedList(cast, df, list=["scan", "Pressure","Temperature", "Sa
         else:
             dropped_df = dropped_df.drop([c], axis=1)
 
+    fixColumnNames(cast, dropped_df)
     return dropped_df
 
 ###########################################################################################################
 
-def dropAny(df, list=["scan", "Pressure", "Temperature", "Salinity"]):
+def dropAny(cast, df, list=["scan", "Pressure", "Temperature", "Salinity"]):
     dropped_df = df.copy()
     for c in dropped_df:
         if c in list:
@@ -83,6 +84,7 @@ def dropAny(df, list=["scan", "Pressure", "Temperature", "Salinity"]):
         else:
             dropped_df = dropped_df.drop([c], axis=1)
 
+    fixColumnNames(cast, dropped_df)
     return dropped_df
 
 ###########################################################################################################
@@ -116,7 +118,17 @@ def dropColumns(cast, df, deck=createDeckDF()):
         else:
             dropped_df = dropped_df.drop([c], axis=1)
 
+    fixColumnNames(cast, dropped_df)
     return dropped_df
+
+###########################################################################################################
+
+def fixColumnNames(cast, df):
+    cast.ColumnNames = []
+    for c in df:
+        cast.ColumnNames.append(c)
+
+###########################################################################################################
 
 if __name__ == '__main__':
     df = createDeckDF()
