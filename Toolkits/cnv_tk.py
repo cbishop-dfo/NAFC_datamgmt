@@ -160,6 +160,38 @@ def calculatePress(depth, latitude):
     return press
 
 ###########################################################################################################
+
+def setInstrumentInfo(cast, df, c, count):
+    localmax = max(df[c]).__str__()
+    localmin = min(df[c]).__str__()
+    name = "# name " + count.__str__() + " = " + c.__str__()
+    # cstat = '{:<10s}{:>20s}{:>20s}{:>20s}'.format("# span ", c.__str__() + " = ", localmin + ", ", localmax)
+    cast.InstrumentInfo.append(name)
+
+
+###########################################################################################################
+
+def setSpanInfo(cast, df):
+    for c in df:
+        localmax = max(df[c]).__str__()
+        localmin = min(df[c]).__str__()
+        cstat = '{:<10s}{:>20s}{:>20s}{:>20s}'.format("# span ", c.__str__() + " = ", localmin + ", ", localmax)
+        cast.InstrumentInfo.append(cstat)
+
+
+###########################################################################################################
+
+def fixColumnNames(cast, df):
+    cast.ColumnNames = []
+    cast.InstrumentInfo = []
+    count = 0
+    for c in df:
+        cast.ColumnNames.append(c)
+        setInstrumentInfo(cast, df, c, count)
+        count = count + 1
+
+###########################################################################################################
+
 def cnv_ascii(cast):
     asciiName = cast.ship.__str__() + cast.trip.__str__() + ".txt"
     try:
