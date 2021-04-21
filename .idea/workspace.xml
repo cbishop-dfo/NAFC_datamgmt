@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="Made fixes to NEW_AZMP and NEWBIOMASS files">
+    <list default="true" id="91195319-1527-4f1c-af07-383df449d925" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toolkits/cnv_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/cnv_tk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Toolkits/config_deck.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/config_deck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Toolkits/p_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Toolkits/p_tk.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,15 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/pandas/core/internals/construction.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9605">
-              <caret line="610" selection-start-line="610" selection-end-line="610" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/pandas/core/reshape/merge.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Toolkits/config_deck.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="65" column="52" lean-forward="true" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
+            <state relative-caret-position="220">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -86,13 +76,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CTD_AutoQA/testenv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="136">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#49#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Toolkits/p_tk.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="589" column="60" lean-forward="true" selection-start-line="589" selection-start-column="60" selection-end-line="589" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,7 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda3/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5236">
+            <state relative-caret-position="473">
               <caret line="309" selection-start-line="309" selection-end-line="309" />
             </state>
           </provider>
@@ -147,7 +149,6 @@
         <option value="$PROJECT_DIR$/Main CTD Scripts/CNV_Interactive_Trimmer.py" />
         <option value="$PROJECT_DIR$/Toolkits/inst_tk.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/Trip_Tagging.py" />
-        <option value="$PROJECT_DIR$/Toolkits/p_tk.py" />
         <option value="$PROJECT_DIR$/set_QA_paths.py" />
         <option value="$PROJECT_DIR$/Main CTD Scripts/binnedNCWriter.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/00001191.p2020" />
@@ -166,12 +167,13 @@
         <option value="$PROJECT_DIR$/Toolkits/cnv_tk.py" />
         <option value="$PROJECT_DIR$/Toolkits/config_deck.py" />
         <option value="$PROJECT_DIR$/CTD_AutoQA/testenv.py" />
+        <option value="$PROJECT_DIR$/Toolkits/p_tk.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-20" />
-    <option name="y" value="-18" />
+    <option name="x" value="-10" />
+    <option name="y" value="-28" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -191,17 +193,17 @@
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="Git" type="462c0819:PsiDirectoryNode" />
-              <item name="Biological" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Git" type="462c0819:PsiDirectoryNode" />
               <item name="CTD_AutoQA" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
               <item name="Git" type="462c0819:PsiDirectoryNode" />
               <item name="interactive_cnv_plotter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Git" type="462c0819:PsiDirectoryNode" />
+              <item name="PFile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Git" type="b2602c69:ProjectViewProjectNode" />
@@ -380,34 +382,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591206340805</updated>
-    </task>
-    <task id="LOCAL-00059" summary="added simple dash test for viewing database">
-      <created>1606820707652</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1606820707652</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Updated Script For Generating INST file">
-      <created>1607453245414</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1607453245415</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Made Changes for XBT reading and counting Vertical casts">
-      <created>1607453332420</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1607453332420</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Updated Webapp to dynamically populate data table from database, also made changes to database reading.">
-      <created>1607453932394</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1607453932394</updated>
     </task>
     <task id="LOCAL-00063" summary="Added Script to locate station 27 and write files to subfolder">
       <created>1608137837829</created>
@@ -724,7 +698,35 @@
       <option name="project" value="LOCAL" />
       <updated>1618579712603</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="Made changes to NC Variables">
+      <created>1618828079188</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1618828079188</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Made changes to NC variables">
+      <created>1618828102269</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1618828102269</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Created two custom methods to drop columns">
+      <created>1618828162445</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1618828162445</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Fixed error with dropAny">
+      <created>1618886651654</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1618886651654</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TodoView">
@@ -738,14 +740,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49733475" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46855012" weight="0.3347779" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.6966951" visible="true" weight="0.39869988" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6966951" visible="true" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4978678" weight="0.32936078" />
@@ -815,10 +818,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added method to create sCTD files" />
-    <MESSAGE value="added error checks for file conversion" />
-    <MESSAGE value="Added merge for BIO" />
-    <MESSAGE value="added scripts for PFile conversion" />
     <MESSAGE value="update" />
     <MESSAGE value="Added prototype pfile writer from odf" />
     <MESSAGE value="Created Template For CNV Trimmer" />
@@ -840,7 +839,11 @@
     <MESSAGE value="Created Script for viewing ctd and pfiles side by side" />
     <MESSAGE value="Fixed issue with mismatched datetime" />
     <MESSAGE value="Made fixes to NEW_AZMP and NEWBIOMASS files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made fixes to NEW_AZMP and NEWBIOMASS files" />
+    <MESSAGE value="Made changes to NC Variables" />
+    <MESSAGE value="Made changes to NC variables" />
+    <MESSAGE value="Created two custom methods to drop columns" />
+    <MESSAGE value="Fixed error with dropAny" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed error with dropAny" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1037,7 +1040,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Toolkits/p_tk.py</url>
-          <line>631</line>
+          <line>632</line>
           <option name="timeStamp" value="229" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1072,17 +1075,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Toolkits/p_tk.py</url>
-          <line>836</line>
+          <line>837</line>
           <option name="timeStamp" value="296" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Toolkits/p_tk.py</url>
-          <line>814</line>
+          <line>815</line>
           <option name="timeStamp" value="297" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CTD_AutoQA/testenv.py</url>
-          <line>65</line>
+          <line>54</line>
           <option name="timeStamp" value="301" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1117,8 +1120,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CTD_AutoQA/testenv.py</url>
-          <line>61</line>
+          <line>50</line>
           <option name="timeStamp" value="313" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CTD_AutoQA/testenv.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Toolkits/config_deck.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="315" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1386,16 +1399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Toolkits/p_tk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4573">
-          <caret line="279" selection-start-line="279" selection-end-line="279" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/Lib/site-packages/xlrd/book.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1491,13 +1494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5236">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Toolkits/cnv_tk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -1508,10 +1504,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda3/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Toolkits/config_deck.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="65" column="52" lean-forward="true" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
+        <state relative-caret-position="220">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -1520,10 +1523,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CTD_AutoQA/testenv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        <state relative-caret-position="136">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#49#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Toolkits/p_tk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="589" column="60" lean-forward="true" selection-start-line="589" selection-start-column="60" selection-end-line="589" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

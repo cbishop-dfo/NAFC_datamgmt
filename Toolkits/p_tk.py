@@ -580,6 +580,7 @@ def writeCNV(cast, df, datafile):
             "\n** PROBE TYPE: " + cast.Instrument.__str__() +
             #"\n** PROBE NAME: " + cast.InstrumentName.__str__() +
             "\n** CTD NUMBER: " + cast.setNumber.__str__() +
+            "\n** CAST TYPE: " + cast.castType.__str__() +
             #"\n** CAST TYPE: " + cast.castType.__str__() +
             #"\n** NUMBER OF SCANS: " + cast.NumScans.__str__() +
             #"\n** SAMPLING RATE: " + cast.SamplingRate.__str__() +
