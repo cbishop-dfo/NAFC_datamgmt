@@ -5,6 +5,11 @@ Script file that launches a GUI application to allow the manipulation of CNV fil
 
 Created on Tue Mar  9 14:58:46 2021
 @author: BROWNRN
+
+Notes:
+    Selecting more variables after plotting may cause issues
+    Application wont load variables if the names are different than whats already coded, may have to add more names
+    Does not work with Tow plots at the moment.
 """
 exec(open("C:\QA_paths\set_QA_paths.py").read())
 import os
@@ -781,8 +786,14 @@ class Application(tk.Frame):
             self.graph_drawn = True
 
         
-
+    def tow_graph(self):
+        #TODO Similar to the graph() function, but with different axis setup and labeling/ticks
+        pass
         
+    def plot_variables_tow(self):
+        #TODO Similar to the plot_variables() function but with scan being plotted on the X axis and other 
+        #variables being plotted on the Y axis.
+        pass
         
     
         
@@ -859,6 +870,7 @@ class Application(tk.Frame):
                     
                 
         #Runs the graph function to erase and redraw the plot, updating it
+        #Will have to add an if statement here for differentiating between graph types such as Tow
         self.graph()
         
     def toggle_selector(self,event):
