@@ -1495,7 +1495,7 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
             pressureIndex = int(sRow[2])
             break
     try:
-        Pbin = np.array(df['scan'], dtype='float64')
+        Pbin = np.array(df['Pressure'], dtype='float64')
     except:
         try:
             Pbin = np.array(df['Depth'], dtype='float64')
