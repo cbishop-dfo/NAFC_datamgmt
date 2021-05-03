@@ -19,7 +19,8 @@ def MacthID( Bottle, Biomass):
     ID_List = []
     # Ship trip station id's (unique)
     UID = []
-    BottleIDs = []
+    bottomBottleIDs = []
+    topBottleIDs = []
     try:
         for bio in Biomass.values:
             perc = int(fileCount/totalFileCount*100)
@@ -29,6 +30,7 @@ def MacthID( Bottle, Biomass):
             fileCount = fileCount + 1
             id = None
             b_id = None
+            t_id = None
             uid = None
             shipTripStation = None
             tempBotIDs = []
@@ -87,19 +89,25 @@ def MacthID( Bottle, Biomass):
             except Exception as e:
                 print(e.__str__())
             if tempBotIDs.__len__() > 0:
+                # Bottom depth id
                 max_index = tempBotIDs.index(max(tempBotIDs))
                 b_id = tempBotIDs[max_index][1]
+                # 5m bottle id
+                min_index = tempBotIDs.index(min(tempBotIDs))
+                t_id = tempBotIDs[min_index][1]
 
             ID_List.append(id)
             UID.append(uid)
-            BottleIDs.append(b_id)
+            bottomBottleIDs.append(b_id)
+            topBottleIDs.append(t_id)
     except Exception as e:
         print("ERROR: " + e.__str__())
     print(Biomass.shape[0])
     print(ID_List.__len__())
     Biomass["NewShipTrip"] = ID_List
     Biomass["UID"] = UID
-    Biomass["NewSampleID"] = BottleIDs
+    Biomass["BottomSampleID"] = bottomBottleIDs
+    Biomass["TopSampleID"] = topBottleIDs
     Biomass.to_csv("NEWBIOMASS.csv", index=False)
     print()
 
@@ -136,64 +144,3 @@ if __name__ == '__main__':
     Joiner["Date"] = joinerDate
 
     MacthID(Master, Joiner)
-
-   # newdf = pd.merge(Joiner, Master, how="left", right_on=["Latitude", "Longitude", "Date", "GMT", "Section", "Station"], left_on=["Lat", "Lon", "Date", "TimeUTC", "Section", "Station"])
-   # newdf["SampleID"] = newdf["ID"]
-#
-   # newdf.to_sql('BIO', con=engine)
-   # Master.to_sql('Master', con=engine)
-   # Joiner.to_sql('Joiner', con=engine)
-#
-   # # query = """
-   # # UPDATE BIO
-   # # SET SampleID = ID
-   # # WHERE JDate = MDate
-   # # """
-#
-#
-#
-   # query = """
-   #     Select ID
-   #     From Master
-   #     Left Join Joiner on Joiner.SampleID = ID
-   #     Where Master.Date = Joiner.Date
-   #     """
-#
-   # #query2 = """
-   # #        Select SampleID
-   # #        From Joiner
-   # #        Left Join Master on Joiner.SampleID = Master.ID
-   # #        Where Master.Date = Joiner.Date
-   # #        """
-   # engine.execute(query)
-   # #engine.execute(query2)
-   # #engine.execute("Set Joiner.SampleID = Master.ID where "
-   # #               "Joiner.Latitude = Master.Lat AND"
-   # #               " Joiner.Longitude = Master.Lon AND"
-   # #               " Joiner.Date = Master.Date AND"
-   # #               " Joiner.GMT = Master.TimeUTC"
-   # #               " AND Joiner.Section = Master.Section AND"
-   # #               " Joiner.Station = Master.Station")
-#
-   # #engine.execute("Select ID From Master,Joiner where "
-   # #               "Joiner.Latitude = Master.Lat AND"
-   # #               " Joiner.Longitude = Master.Lon AND"
-   # #               " Joiner.Date = Master.Date AND"
-   # #               " Joiner.GMT = Master.TimeUTC"
-   # #               " AND Joiner.Section = Master.Section AND"
-   # #               " Joiner.Station = Master.Station")
-#
-   # rows = engine.execute("SELECT * FROM Joiner").fetchall()
-   # row = engine.execute("SELECT * FROM Master").fetchall()
-   # slDF = pd.read_sql_table("Joiner", engine)
-   # s2DF = pd.read_sql_table("Master", engine)
-   # newdf = newdf[newdf['ShipTrip'].notna()]
-   # for n in range(24):
-   #     i = len(newdf.columns)-1
-   #     newdf = newdf.drop(newdf.columns[i], axis=1)
-   # newdf = newdf.drop_duplicates()
-   # newdf = newdf.drop_duplicates(subset=['SampleID'])
-   # filename = input("Enter name for file: ")
-   # newdf.to_excel(filename, index=False)
-#
-   # print()
