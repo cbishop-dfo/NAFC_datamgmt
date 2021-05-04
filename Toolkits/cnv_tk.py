@@ -1245,9 +1245,10 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
     # for i in range(0, num_history_lines):
     # exec ('nc_out.processhistory_' + str(i) + ' = ' + ' \' ' + history[i].replace('\n','') + ' \' ')
     # Create dimensions
-    time = nc_out.createDimension('time', 1)
+    time = nc_out.createDimension('time', None) # changed "1" to "None" so the time dimension is UNLIMITED.
     # level = nc_out.createDimension('level', len(df_temp.columns))
     level = nc_out.createDimension('level', df.shape[0])
+    #level = nc_out.createDimension('level', None) #changed from df.shape[0] to None so dimension is unlimited, this is to add in merging multiple NC files afterwards - this failed
     # Create coordinate variables
     times = nc_out.createVariable('time', np.float64, ('time',))
     levels = nc_out.createVariable('level', np.float32, ('level',))
