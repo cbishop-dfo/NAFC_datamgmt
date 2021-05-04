@@ -36,14 +36,22 @@ def splitCast(new_df, pressure):
 #
 #@register_series_method
 #@register_dataframe_method
-def press_check(df):
+def press_check(inputdf):
     """
     Remove pressure reversals from the index.
     """
-    new_df = df.copy()
-    press = new_df.iloc[:,1]
+    press_df = inputdf.copy()
+    
+    #press = press_df.iloc[:,1].astype(float) #this doesn't work if location 1 isn't pressure.
+    if 'Pressure' in inputdf.columns:
+        press=press_df["Pressure"].astype('float')
+    elif 'pres' in inputdf.columns:
+        press=press_df["pres"].astype('float')
+    elif 'prDM' in inputdf.columns:
+        press=press_df["prDM"].astype('float')
 
-    ref = press[0]
+
+    ref = press[0].astype(float)
     #inversions = np.diff(np.r_[press, press[-1]]) < 0
     pressvec=pd.concat([press, pd.Series([-1])])
     inversions = np.diff(pressvec.astype(float)) < 0
@@ -53,8 +61,8 @@ def press_check(df):
             ref = press[k]
             cut = press[k + 1 :] < ref
             mask[k + 1 :][cut] = True
-    new_df[mask] = np.NaN
-    return new_df
+    press_df[mask] = np.NaN
+    return press_df
 
 #the following are the upper and lower bounds, should this just be a definition or should it be a funtion to do the actual restrictions itself?
 def restrict_values(df,variable_name):
