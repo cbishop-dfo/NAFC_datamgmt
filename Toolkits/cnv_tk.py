@@ -1507,7 +1507,7 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
 
 ###########################################################################################################
 
-def BinDF(cast, df):
+def BinDF(cast, df, dropNan=False):
     # Typically the pressure/depth index
     pressureIndex = 0
     """
@@ -1557,7 +1557,7 @@ def BinDF(cast, df):
     bins = []
     depths = []
     # Create bin with specified intervals and steps
-    for i in range(0, 1001, 1):
+    for i in range(0, 10001, 1):
         bins.append(i + 0.5)
 
     """
@@ -1599,6 +1599,7 @@ def BinDF(cast, df):
     df[tempColumnNames[pressureIndex]] = depths
 
     # Drop all empty rows
-    df = df.dropna(axis=0)
+    if dropNan:
+        df = df.dropna(axis=0)
 
     return df
