@@ -42,7 +42,14 @@ def press_check(inputdf):
     """
     press_df = inputdf.copy()
     
-    press = press_df.iloc[:,1].astype(float)
+    #press = press_df.iloc[:,1].astype(float) #this doesn't work if location 1 isn't pressure.
+    if 'Pressure' in inputdf.columns:
+        press=press_df["Pressure"].astype('float')
+    elif 'pres' in inputdf.columns:
+        press=press_df["pres"].astype('float')
+    elif 'prDM' in inputdf.columns:
+        press=press_df["prDM"].astype('float')
+
 
     ref = press[0].astype(float)
     #inversions = np.diff(np.r_[press, press[-1]]) < 0
