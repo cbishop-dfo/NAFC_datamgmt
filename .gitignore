@@ -1,3 +1,4 @@
 
 *.pyc
 CTD.db
+Toolkits/cnv_tk_edit.py

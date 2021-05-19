@@ -1222,17 +1222,17 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
     nc_out.Conventions = 'CF-1.6'
     nc_out.title = 'AZMP netCDF file'
     nc_out.institution = 'Northwest Atlantic Fisheries Centre, Fisheries and Oceans Canada'
-    nc_out.source = cast.datafile
+    #nc_out.source = cast.datafile
     nc_out.references = ''
-    nc_out.description = cast.comment
+    #nc_out.description = cast.comment
     nc_out.created = 'Created ' + tt.ctime(tt.time())
     # nc_out.processhistory = history
-    nc_out.trip_id = cast.id
-    nc_out.instrument_type = cast.InstrumentName
-    nc_out.instrument_ID = cast.Instrument
-    nc_out.shipname = cast.ShipName
-    nc_out.nafc_shipcode = cast.ship
-    nc_out.time_of_cast = cast.CastDatetime
+    #nc_out.trip_id = cast.id
+    #nc_out.instrument_type = cast.InstrumentName
+    #nc_out.instrument_ID = cast.Instrument
+    #nc_out.shipname = cast.ShipName
+    #nc_out.nafc_shipcode = cast.ship
+    #nc_out.time_of_cast = cast.CastDatetime
     nc_out.format_of_time = "YYYY-MM-DD HH:MM:SS"
 
     history = []
@@ -1248,16 +1248,34 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
     time = nc_out.createDimension('time', None) # changed "1" to "None" so the time dimension is UNLIMITED.
     # level = nc_out.createDimension('level', len(df_temp.columns))
     level = nc_out.createDimension('level', df.shape[0])
+    nchar = nc_out.createDimension('nchar', 20)
+    #str_dim = nc_out.createDimension('str_dim', 1)
+    
     #level = nc_out.createDimension('level', None) #changed from df.shape[0] to None so dimension is unlimited, this is to add in merging multiple NC files afterwards - this failed
     # Create coordinate variables
     times = nc_out.createVariable('time', np.float64, ('time',))
     levels = nc_out.createVariable('level', np.float32, ('level',))
     # **** NOTE: Maybe consider using ID instead of time for dimension **** #
-
+    
     # Create 1D variables
     latitudes = nc_out.createVariable('latitude', np.float32, ('time'), zlib=True)
     longitudes = nc_out.createVariable('longitude', np.float32, ('time'), zlib=True)
     sounder_depths = nc_out.createVariable('sounder_depth', np.float32, ('time'), zlib=True)
+    
+    
+    
+    #shipname_var = nc_out.createVariable('ShipName', str, ('time'), zlib=True)
+    #NAFC_tripid_var = nc_out.createVariable('trip_ID', str, ('time'), zlib=True)
+    #comments = nc_out.createVariable('Comments', str, ('time'), zlib=True)
+    #instrument_name_var = nc_out.createVariable('Instrument_type', str, ('time'), zlib=True)
+    #instrument_id_var = nc_out.createVariable('Instrument_ID', str, ('time'), zlib=True)
+    #datafile_source_var = nc_out.createVariable('Datafile_Source', str, ('time'), zlib=True)
+    
+    shipname = nc_out.createVariable('shipname', 'S1', ('time','nchar',), zlib=True)
+    NAFC_tripid = nc_out.createVariable('trip_ID', 'S1', ('time','nchar',), zlib=True)
+    instrument_name = nc_out.createVariable('Instrument_type', 'S1', ('time','nchar',), zlib=True)
+    instrument_id = nc_out.createVariable('Instrument_ID', 'S1', ('time','nchar',), zlib=True)
+    datafile_source = nc_out.createVariable('Datafile_Source', 'S1', ('time','nchar',), zlib=True)
 
     Dictionary = {}
     for c in df:
@@ -1465,14 +1483,38 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
     for d in Dictionary:
         index = Dictionary[d][1]
         index = index.replace("+", "/")
-        v = Dictionary[d][0]
-        v[:] = df[index].values
-        Dictionary[d][0][:] = df[index].values
+        #v = Dictionary[d][0]
+        v[0,:] = df[index].values
+        Dictionary[d][0][0,:] = df[index].values
 
     # Fill cast info
+    #latitudes[:] = cast.Latitude
     latitudes[:] = cast.Latitude
     longitudes[:] = cast.Longitude
+    
+    #sounder_depths[:] = str(cast.SounderDepth)
     sounder_depths[:] = str(cast.SounderDepth)
+    
+    str_out = nc.stringtochar(np.array([cast.ShipName], 'S20'))
+    
+    shipname[:] = str_out
+    
+    str_out = nc.stringtochar(np.array([cast.id], 'S20'))
+    NAFC_tripid[:] = str_out
+    
+    str_out = nc.stringtochar(np.array([cast.InstrumentName], 'S20'))
+    instrument_name[:] = str_out
+    
+    str_out = nc.stringtochar(np.array([cast.Instrument], 'S20'))
+    instrument_id[:] = str_out
+    
+    
+    str_out = nc.stringtochar(np.array([cast.datafile], 'S20'))
+    datafile_source[:] = str_out
+    
+    
+    
+    
     # Fill time
     try:
         date = datetime.datetime.strptime(cast.CastDatetime, '%Y-%m-%d %H:%M:%S')
