@@ -662,8 +662,8 @@ def writeCNV_With_MET(cast, df, datafile):
             "\n** SUBSAMPLE: " + cast.subsample.__str__() +
             "\n** MIN DEPTH: " + cast.minDepth.__str__() +
             "\n** MAX DEPTH: " + cast.maxDepth.__str__() +
-            "\n** FISHING STRATA: " + cast.fishingStrata.__str__() +
-            "\n** METDATA: " + cast.metData.__str__() +
+            #"\n** FISHING STRATA: " + cast.fishingStrata.__str__() +
+            #"\n** METDATA: " + cast.metData.__str__() +
             "\n** CLOUD: " + cast.Cloud.__str__() +
             "\n** WIND DIRECTION: " + cast.WinDir.__str__() +
             "\n** WIND SPEED: " + cast.WinSPD.__str__() +
