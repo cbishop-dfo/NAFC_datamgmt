@@ -41,9 +41,11 @@ def MacthID( Bottle, Biomass):
                     if bot[1] == bio[0]:
                         tempCast = cnv_tk.Cast()
                         shipTrip = bot[1]
-                        tempCast.shipName = ""
+                        tempCast.ShipName = ""
                         tempCast.ship = ""
                         tempCast.trip = ""
+                        tempCast.station = ""
+
                         for c in shipTrip:
                             if not c.isdigit():
                                 tempCast.ShipName = tempCast.ShipName + str(c).lower()
@@ -51,8 +53,18 @@ def MacthID( Bottle, Biomass):
                                 tempCast.trip = tempCast.trip + str(c)
                         ships_biological.getShipNumber(tempCast)
                         id = str(tempCast.ship) + str(tempCast.trip)
+                        try:
+                            tempCast.station = bio[2].split("-")[1]
+                        except:
+                            tempCast.station = bio[2].split(" Set ")[1]
+
+                        if tempCast.station.__len__() == 1:
+                            tempCast.station = "00" + tempCast.station
+
+                        elif tempCast.station.__len__() == 2:
+                            tempCast.station = "0" + tempCast.station
                         # TODO: Investigate UID, UID is shiptripstation
-                        uid = bot[2]
+                        uid = str(tempCast.ship) + str(tempCast.trip) + str(tempCast.station)
                         # Matching Latitudes
                         botLat = "{:.2f}".format(bot[6])
                         biolat = "{:.2f}".format(bio[3])
