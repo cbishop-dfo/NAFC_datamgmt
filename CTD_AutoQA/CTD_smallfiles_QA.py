@@ -71,7 +71,7 @@ if __name__ == '__main__':
 
     files = dir_tk.getListOfFiles(dirName)
     for f in files:
-        # changes Dir back to original after writing to trimmed sub folder
+        # changes Dir back to original after writing to sub folder
         os.chdir(dirName)
         datafile = f
         if datafile.lower().endswith(".cnv"):

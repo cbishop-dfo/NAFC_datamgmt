@@ -3,7 +3,9 @@ from Toolkits import cnv_tk
 from Toolkits import dir_tk
 import os
 
-
+"""
+Reads in a cnv file and adds a triptag to the meta data. 
+"""
 if __name__ == '__main__':
     dir_path = os.path.dirname(os.path.realpath(__file__))
     dirName = dir_path

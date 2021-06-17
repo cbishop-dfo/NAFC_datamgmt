@@ -4,7 +4,9 @@ from Toolkits import p_tk
 from Toolkits import dir_tk
 import plotly.graph_objects as go
 
-
+"""
+Plots cnv along side pfile
+"""
 def CompareFiles(cnv, cnv_df, p, p_df):
     # TODO: consider adding these lines at the end of the meta function for each toolkit
     if cnv.castType == "":

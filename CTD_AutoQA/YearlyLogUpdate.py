@@ -5,8 +5,6 @@ Creates Yearly Log File
 dir_path = os.path.dirname(os.path.realpath(__file__))
 dirName = dir_path
 
-
-
 def yearly_write():
     createFolder()
     f = "cruises." + year.__str__()
@@ -20,7 +18,7 @@ def yearly_write():
     writer.write(line)
 
 
-# If no folder called Station27 exists, creates new sub folder BadSampleSize to write files to.
+# Creates new sub folder.
 def createFolder():
     # Temp variable for the path, taken from datafile
     tf = dirName.__str__().split("\\")
@@ -30,7 +28,6 @@ def createFolder():
     newpath = ""
     for f in tf:
         newpath = newpath + f + "\\"
-    #newpath = newpath + "Station27\\STN27_" + cast.CastDatetime.split("-")[0] + "\\"
     newpath = newpath + "LOG\\LOG" + year + "\\"
 
     if not os.path.exists(newpath):
