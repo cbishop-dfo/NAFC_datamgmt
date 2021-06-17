@@ -18,6 +18,7 @@ def createShipDF():
         ['01', 'a.t.cameron', 'xxx'],
         ['02', 'gadus', 'gadus'],
         ['03', 'shamook', 'sham'],
+        ['03', 'shamook', 'sha'],
         ['04', 'marinus', 'mar'],
         ['05', 'kenda', 'ken'],
         ['06', 'martin&phillip', 'xxx'],
@@ -27,6 +28,7 @@ def createShipDF():
         ['10', 'tman', 'tem'],
         ['11', 'hammond', 'ham'],
         ['12', 'needler', 'ned'],
+        ['12', 'needler', 'nee'],
         ['13', 'cindy_elizabeth', 'xxx'],
         ['14', 'balder_cabot', 'xxx'],
         ['15', 'specials', 'spc'],
@@ -71,6 +73,7 @@ def createShipDF():
         ['59', 'pearkes', 'pearkes'],
         ['60', 'celtic_explorer', 'cel'],
         ['61', 'vladykov', 'vlad'],
+        ['61', 'vladykov', 'vla'],
         ['62', 'aqviq', 'aqv'],
         ['63', 'kinguk', 'kinguk'],
         ['64', 'katsheshuk', 'katsheshuk'],
@@ -147,6 +150,12 @@ def getShipNumber(cast, shipDF=createShipDF()):
 
     try:
         s = shipDF[shipDF[2].str.match(cast.ShipName.__str__())]
+        # If multiple match are returned
+        if s.shape[0] > 1:
+            ship = s.values[0]
+            cast.ship = ship[0]
+            return
+
         snumber = s.values[0][0]
         cast.ship = snumber
     except Exception as e:
