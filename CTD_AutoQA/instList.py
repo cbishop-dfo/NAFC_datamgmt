@@ -3,6 +3,9 @@ from Toolkits import cnv_tk
 from Toolkits import dir_tk
 
 """
+instList
+--------
+
 Writes all ctd instruments in a selected directory to an .inst file
 """
 dir_path = os.path.dirname(os.path.realpath(__file__))

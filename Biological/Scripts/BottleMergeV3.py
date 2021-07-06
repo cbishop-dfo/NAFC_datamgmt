@@ -9,9 +9,24 @@ import pandas as pd
 import sqlite3
 from sqlalchemy import create_engine
 
+"""
+BottleMergeV3
+-------------
+
+Script merges AZMP and Bottle files together.
+User is prompted to select the AZMP file and the Biomass file
+
+"""
+
+
 # Bottle = Master
 # Biomass = Joiner
-def MacthID( Bottle, Biomass):
+def MacthID(Bottle, Biomass):
+    """
+    :param Bottle: Pandas dataframe of the AZMP csv
+    :param Biomass: Pandas dataframe of the Biomass csv
+    :return: writes merged dataframes to NEWBIOMASS.csv
+    """
     fileCount = 0
     totalFileCount = Biomass.shape[0]
     lastPerc = 0

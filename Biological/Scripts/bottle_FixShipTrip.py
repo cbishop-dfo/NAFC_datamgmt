@@ -5,6 +5,13 @@ from Toolkits import ships_biological
 import os
 import csv
 import pandas as pd
+"""
+bottle_FixShipTrip
+------------------
+
+Script to fix Ship_Trip, Latitude, Longitude and Date columns of bottle file
+also appends new columns for Day, Month and Year to the file
+"""
 
 if __name__ == '__main__':
     dir_path = os.path.dirname(os.path.realpath(__file__))

@@ -4,6 +4,9 @@ from Toolkits import dir_tk
 import os
 
 """
+Trip_Tagging
+------------
+
 Reads in a cnv file and adds a triptag to the meta data. 
 """
 if __name__ == '__main__':

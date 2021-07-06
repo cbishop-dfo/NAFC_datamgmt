@@ -4,12 +4,19 @@ from Toolkits import cnv_tk
 from Toolkits import dir_tk
 
 """
+findStation27
+-------------
+
 Finds all station 27 files and copys them to a selected path.
 """
 dir_path = os.path.dirname(os.path.realpath(__file__))
 dirName = dir_path
 
 def chechk27(cast):
+    """
+    :param cast: Cast Object (Already populated)
+    :return:
+    """
     #validStation = ["STATION27", "STATION 27", "STN27","STN-27","STN 27","S27","S-27","S 27"]
     #VALID_TO= ["TOSTATION27", "TOSTATION 27", "TOSTN27","TOSTN-27","TOSTN 27","TOS27","TOS-27","TOS 27"]
     VALID = False
@@ -62,6 +69,11 @@ def chechk27(cast):
 
 
 def cnv_write27(cast, df):
+    """
+    :param cast: Cast Object (Already populated)
+    :param df: Cast Dataframe
+    :return:
+    """
     createStation27Folder(cast)
     f = cast.datafile.split("/")
     f = f[f.__len__()-1]
@@ -79,6 +91,10 @@ def cnv_write27(cast, df):
 
 # If no folder called Station27 exists, creates new sub folder BadSampleSize to write files to.
 def createStation27Folder(cast):
+    """
+    :param cast: Cast Object (Already populated)
+    :return:
+    """
     # Temp variable for the path, taken from datafile
     tf = cast.datafile.split("/")
     # remove file name to keep only the files dir

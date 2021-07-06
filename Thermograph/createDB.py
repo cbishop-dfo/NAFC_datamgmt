@@ -2,7 +2,11 @@ import sqlite3
 
 __author__ = 'KennedyDylan'
 
-
+"""
+createDB
+--------
+Creates a database to be used with thermograph files.
+"""
 def main():
     def setDirectory():
         # default path for DB.

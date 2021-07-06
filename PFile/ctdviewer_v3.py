@@ -5,7 +5,12 @@ from Toolkits import dir_tk
 import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
+"""
+ctdviewer_v3
+------------
 
+Cnv plotter for pfiles
+"""
 def loaddata(datafile):
     # Creates the cast object
     cast = p_tk.Cast(datafile)
