@@ -6,7 +6,12 @@ plt.switch_backend('TkAgg')
 
 
 __author__ = 'KennedyDyl'
+"""
+depth_plotter
+-------------
 
+Interactive plotter for viewing/writing thermographs.
+"""
 
 class Deployments(object):
 

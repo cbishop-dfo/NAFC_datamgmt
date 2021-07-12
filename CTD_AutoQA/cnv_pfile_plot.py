@@ -4,8 +4,20 @@ from Toolkits import p_tk
 from Toolkits import dir_tk
 import plotly.graph_objects as go
 
+"""
+cnv_pfile_plot
+--------------
 
+Plots cnv df along side pfile df
+"""
 def CompareFiles(cnv, cnv_df, p, p_df):
+    """
+    :param cnv: Cast Object from the cnv_tk (Already populated)
+    :param cnv_df: CNV Dataframe from the cnv_tk
+    :param p: Cast Object from the p_tk (Already populated)
+    :param p_df: Pfile Dataframe from the p_tk
+    :return:
+    """
     # TODO: consider adding these lines at the end of the meta function for each toolkit
     if cnv.castType == "":
         cnv_tk.getCastType(cnv)

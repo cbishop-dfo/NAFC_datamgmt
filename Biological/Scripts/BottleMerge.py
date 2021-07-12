@@ -1,7 +1,7 @@
 exec(open("C:\QA_paths\set_QA_paths.py").read())
 
 from Toolkits import cnv_tk
-from Toolkits import dir_tk
+from Toolkits import ships_biological
 import os
 import csv
 from tkinter.filedialog import askopenfile
@@ -10,45 +10,70 @@ import sqlite3
 from sqlalchemy import create_engine
 
 
+def MacthID(Plank):
+    fileCount = 0
+    totalFileCount = Plank.shape[0]
+    lastPerc = 0
+    perc = 0
+    ID_List = []
+    # Ship trip station id's (unique)
+    UID = []
+    bottomBottleIDs = []
+    topBottleIDs = []
+    for plk in Plank.values:
+        perc = int(fileCount / totalFileCount * 100)
+        if perc > lastPerc:
+            print(str(perc) + " %")
+            lastPerc = perc
+        fileCount = fileCount + 1
+        id = None
+        b_id = None
+        t_id = None
+        uid = None
+        shipTripStation = None
+        tempBotIDs = []
+        # Macthing shipTrip
+
+
+        tempCast = cnv_tk.Cast()
+        shipTrip = plk[0]
+        tempCast.ShipName = ""
+        tempCast.ship = "00"
+        tempCast.trip = ""
+        tempCast.station = "xxx"
+        for c in shipTrip:
+            if not c.isdigit():
+                tempCast.ShipName = tempCast.ShipName + str(c).lower()
+            else:
+                tempCast.trip = tempCast.trip + str(c)
+        ships_biological.getShipNumber(tempCast)
+        id = str(tempCast.ship) + str(tempCast.trip)
+
+        tempCast.station = plk[1].__str__()
+
+        if tempCast.station.__len__() == 1:
+            tempCast.station = "00" + tempCast.station
+        elif tempCast.station.__len__() == 2:
+            tempCast.station = "0" + tempCast.station
+        # TODO: Investigate UID, UID is shiptripstation
+        uid = str(tempCast.ship) + str(tempCast.trip) + str(tempCast.station)
+        ID_List.append(id)
+        UID.append(uid)
+
+    Plank["ShipTrip"] = ID_List
+    Plank["ShipTripStation"] = UID
+    Plank.to_csv("new_plank.csv", index=False)
+    print()
+
+
 if __name__ == '__main__':
     dir_path = os.path.dirname(os.path.realpath(__file__))
     dirName = dir_path
 
-    print("Select Master File")
+    engine = create_engine('sqlite://', echo=False)
+
+    print("Select Plank File")
     file1 = askopenfile().name
-    print("Select Joiner File")
-    file2 = askopenfile().name
+    Plank = pd.read_csv(file1)
 
-    Master = pd.read_excel(file1, header=1)
-    Joiner = pd.read_excel(file2)
-    Master["Date"] = Master["Date"].values.astype(str)
-    Joiner["Date"] = Joiner["Date"].values.astype(str)
-    Master["GMT"] = Master["GMT"].values.astype(str)
-    Joiner["TimeUTC"] = Joiner["TimeUTC"].values.astype(str)
-
-    masterDate = []
-    joinerDate = []
-
-    for d in Master["Date"].values:
-        dat = d.split("T")[0]
-        masterDate.append(dat)
-    Master["Date"] = masterDate
-
-    for d in Joiner["Date"].values:
-        dat = d.split()[0]
-        joinerDate.append(dat)
-    Joiner["Date"] = joinerDate
-
-    newdf = pd.merge(Joiner, Master, how="left", right_on=["Latitude", "Longitude", "Date", "GMT", "Section", "Station"], left_on=["Lat", "Lon", "Date", "TimeUTC", "Section", "Station"])
-    newdf["SampleID"] = newdf["ID"]
-    newdf = newdf[newdf['ShipTrip'].notna()]
-    for n in range(24):
-        i = len(newdf.columns)-1
-        newdf = newdf.drop(newdf.columns[i], axis=1)
-    newdf = newdf.drop_duplicates()
-    newdf = newdf.drop_duplicates(subset=['SampleID'])
-    filename = input("Enter name for file: ")
-    newdf.to_excel(filename, index=False)
-
-    print()
-
+    MacthID(Plank)

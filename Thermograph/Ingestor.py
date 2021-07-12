@@ -9,7 +9,12 @@ import json
 
 __author__ = 'KennedyDyl'
 
+"""
+Ingestor
+--------
 
+Script to read in thermograph datafiles to a thermograph database.
+"""
 class Deployments(object):
 
     def __init__(self, datafile=None):

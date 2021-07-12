@@ -3,15 +3,22 @@ from Toolkits import cnv_tk
 from Toolkits import dir_tk
 
 """
-checks for pressure column
-checks that column has more than 15 nan values
-checks that df has at least 2 valid columns excluding scan
+CTD_smallfiles_QA
+-----------------
+Checks for pressure column
+Checks that column has more than 15 nan values
+Checks that df has at least 2 valid columns excluding scan
 
 Writes failed QA scripts to log.txt in ProblemFiles Folder 
 
 """
 
 def QADataframe(cast, df):
+    """
+    :param cast: Cast Object (Already populated)
+    :param df: CTD Dataframe
+    :return:
+    """
     hasPressure = False
     validColumnCount = False
     validDatapointCount = True
@@ -71,7 +78,7 @@ if __name__ == '__main__':
 
     files = dir_tk.getListOfFiles(dirName)
     for f in files:
-        # changes Dir back to original after writing to trimmed sub folder
+        # changes Dir back to original after writing to sub folder
         os.chdir(dirName)
         datafile = f
         if datafile.lower().endswith(".cnv"):

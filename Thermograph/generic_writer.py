@@ -4,6 +4,17 @@ import datetime
 
 __author__ = 'KennedyDyl'
 
+"""
+generic_writer
+--------------
+
+Writer for thermographs files
+Filetypes:
+ JSON
+ RPF
+ ODF
+"""
+
 class Deployments(object):
 
     def __init__(self, datafile = None):

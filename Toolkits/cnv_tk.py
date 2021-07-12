@@ -24,6 +24,9 @@ Created By: Dylan Kennedy
 """
 
 class Cast(object):
+    """
+    Cast object used for storing both metadata and physical data
+    """
 
     def __init__(self, datafile=None):
         self.datafile = datafile
@@ -131,6 +134,13 @@ def getFilename(datafile):
 
 def calculateDepth(press, latitude):
     """
+    Converts pressure to depth
+
+    :param press: sensor pressure (float)
+    :param latitude: Latitude from metadata (float)
+    :return: depth
+    """
+    """
     x = math.pow(math.sin(latitude/57.29578), 2)
     g = 9.780318*(1*(5.2788*math.pow(10, -3)+2.36*math.pow(10, -5)*x)*x)+1.092*math.pow(10, -6)*press
 
@@ -147,6 +157,13 @@ def calculateDepth(press, latitude):
 
 def calculatePress(depth, latitude):
     """
+    Converts depth to pressure
+
+    :param depth: sensor depth (float)
+    :param latitude: Latitude from metadata (float)
+    :return: pressure
+    """
+    """
     x = math.pow(math.sin(latitude / 57.29578), 2)
     partial_g = 9.780318 * (1 * (5.2788 * math.pow(10, -3) + 2.36 * math.pow(10, -5) * x) * x)+1.092*math.pow(10, -6)
 
@@ -162,6 +179,16 @@ def calculatePress(depth, latitude):
 ###########################################################################################################
 
 def setInstrumentInfo(cast, df, c, count):
+
+    """
+    Set instrument/sensor metadata
+
+    :param cast: Cast Object
+    :param df: Cast Dataframe
+    :param c: column name
+    :param count: index number
+    :return:
+    """
     localmax = max(df[c]).__str__()
     localmin = min(df[c]).__str__()
     name = "# name " + count.__str__() + " = " + c.__str__()
@@ -172,6 +199,11 @@ def setInstrumentInfo(cast, df, c, count):
 ###########################################################################################################
 
 def setSpanInfo(cast, df):
+    """
+    :param cast: Cast Object
+    :param df: Cast Dataframe
+    :return:
+    """
     for c in df:
         localmax = max(df[c]).__str__()
         localmin = min(df[c]).__str__()
@@ -193,6 +225,12 @@ def fixColumnNames(cast, df):
 ###########################################################################################################
 
 def cnv_ascii(cast):
+    """
+    Creates basic ascii file containing cast metadata
+
+    :param cast: Cast Object
+    :return:
+    """
     asciiName = cast.ship.__str__() + cast.trip.__str__() + ".txt"
     try:
         # if read fails this indicates we need to create col names via exception.
@@ -219,6 +257,13 @@ def cnv_ascii(cast):
 
 # Stores all data in Cast object
 def cnv_meta(cast, datafile):
+    """
+    Stores all data in Cast object
+
+    :param cast: Cast Object
+    :param datafile: filename
+    :return:
+    """
     f = open(datafile)
     filename = datafile.split("/")
     filename = filename[filename.__len__() - 1]
@@ -344,6 +389,13 @@ def cnv_meta(cast, datafile):
 ###########################################################################################################
 
 def getInstrumentName(cast, instDF=inst_tk.createInstrumentDF()):
+    """
+    Assigns instrument name to cast object based in instrument number
+
+    :param cast: Cast Object
+    :param instDF: instrument dataframe created from the inst_tk
+    :return:
+    """
 
     number = ''.join(c for c in cast.Instrument if c.isdigit())
     i = instDF[instDF[1].str.match(number)]
@@ -374,6 +426,13 @@ def getInstrumentName(cast, instDF=inst_tk.createInstrumentDF()):
 ###########################################################################################################
 
 def getShipName(cast, shipDF=ships_tk.createShipDF()):
+    """
+    Assigns ship name to cast object based on ship number in cast
+
+    :param cast: Cast Object
+    :param shipDF: Ship dataframe created from the ships_tk
+    :return:
+    """
     try:
         s = shipDF[shipDF[0].str.match(cast.ship.__str__())]
         sname = s.values[0][2]
@@ -387,6 +446,13 @@ def getShipName(cast, shipDF=ships_tk.createShipDF()):
 ###########################################################################################################
 
 def getShipNumber(cast, shipDF=ships_tk.createShipDF()):
+    """
+    Assigns ship number to cast object based on ship name in cast
+
+    :param cast: Cast Object
+    :param shipDF: Ship dataframe created from the ships_tk
+    :return:
+    """
 
     try:
         s = shipDF[shipDF[2].str.match(cast.ShipName.__str__())]
@@ -403,6 +469,12 @@ def getShipNumber(cast, shipDF=ships_tk.createShipDF()):
 
 # Convert Lat / Long into decimals
 def convertLatLong(convert):
+    """
+    Converts Lat/Lon into decimal degrees
+
+    :param convert: array containing split latitude or longitude values
+    :return: decimal degrees (float)
+    """
     if convert.__len__() == 2:
         value = abs(float(convert[0])) + float(convert[1]) / 60
         value = float("{0:.2f}".format(value))
@@ -466,6 +538,12 @@ def convertDate(cast, date):
 
 # Dynamically creates a data frame based on the columns provided in the datafile, returns the data frame
 def cnv_to_dataframe(cast):
+    """
+    Dynamically creates a data frame based on the columns provided in the datafile, returns the data frame
+
+    :param cast: Cast Object (already populated)
+    :return: CTD Dataframe
+    """
 
     df = pd.DataFrame()
     allColumns = []
@@ -503,6 +581,12 @@ def cnv_to_dataframe(cast):
 
 # Dynamically creates a data frame based on the columns provided in the datafile, returns the data frame
 def df_press_depth(cast):
+    """
+    Creates a dataframe containing both a preassure and a depth column
+
+    :param cast: Cast Object (already populated)
+    :return: Dataframe containing both presassure and depth
+    """
 
     df = pd.DataFrame()
     allColumns = []
@@ -572,8 +656,16 @@ def df_press_depth(cast):
 
 ###########################################################################################################
 
- # Save changes of original datafile as new datafile, (new changed file will be called the same as the origional but with specified extension '.old' by default)
+ # Save changes of original datafile as new datafile, (new changed file will be called the same as the original but with specified extension '.old' by default)
 def cnv_write(cast, df, ext=".old"):
+    """
+    Save changes of original datafile as new datafile, (new changed file will be called the same as the original but with specified extension '.old' by default)
+
+    :param cast: Cast Object (already populated)
+    :param df: Cast Dataframe
+    :param ext: filetype extension (String, ie: '.txt', '.old', '.new', ect...)
+    :return:
+    """
     newfile = cast.datafile + ext
     writer = open(newfile, "w+")
     for l in cast.software:
@@ -589,6 +681,14 @@ def cnv_write(cast, df, ext=".old"):
 
  # Create a simple text file from datafile (new changed file will be called the same as the original but with specified extension '.simple' by default)
 def cnv_write_simple(cast, df, ext=".simple"):
+    """
+    Create a simple text file from datafile (new changed file will be called the same as the original but with specified extension '.simple' by default)
+
+    :param cast: Cast Object (already populated)
+    :param df: Cast Dataframe
+    :param ext: filetype extension (String, ie: '.txt', '.old', '.new', ect...)
+    :return:
+    """
     newfile = cast.datafile + ext
     writer = open(newfile, "w+")
     for l in cast.userInput:
@@ -604,9 +704,9 @@ def cnv_igoss(cast, df):
     # output data to file
     """
     fille name is based on ship and trip followed by _IGOSS.DTA
-    ###################################################################
+    *******************************************************************
     Header portion:
-    ###################################################################
+    *******************************************************************
 
     KKYY DAYMONTHYEAR HOUR|MIN Q|LAT(DEGMIN) LON 888|K1|K2 manufactType
     K1:
@@ -636,16 +736,15 @@ def cnv_igoss(cast, df):
 
     it appears that the second two numbers on an XBT is always "06" as opposed to the CTD using "99"
 
-    ###################################################################
+    *******************************************************************
     Data portion:
-    ###################################################################
+    *******************************************************************
     2|depth 3|temp 4|salinity 55555=(section indicator for depth) 1|MaxDepth
-    :param cast:
-    :param df:
+    """
+    """
+    :param cast: Cast Object
+    :param df: Cast Dataframe
     :return:
-
-
-
     """
 
     # Create dataframe specific to IGOSS
@@ -773,6 +872,13 @@ def cnv_igoss(cast, df):
 ###########################################################################################################
 # DF considers only the downcast, used for igoss writer
 def cnv_sig_dataframe(cast):
+    """
+     Creates DF for IGOSS writer. DF considers only the downcast, used for igoss writer
+     Assigns significant points from the datafile by using a bin smoothing technique.
+
+    :param cast: Cast Object (already populated)
+    :return: dataframe to be used with igoss writer
+    """
     cast.isPressure = False
     cast.isTemperature = False
     cast.isSalinity = False
@@ -893,6 +999,11 @@ def cnv_sig_dataframe(cast):
 
 ###########################################################################################################
 def getCastType(cast):
+    """
+    Assigns cast type variable to cast object V - Vertical or T - Tow
+    :param cast: Cast Object (already populated)
+    :return:
+    """
     if cast.castType == "":
         for i in cast.InstrumentInfo:
             if i.lower().__contains__("nquan"):
@@ -962,6 +1073,13 @@ def FetchCastObject(cast, conn):
 
 # Creates dataframe using midlayer variables as the columns in order to standardize the column names
 def StandardizedDF(cast, df):
+    """
+    Creates dataframe using midlayer variables as the columns in order to standardize the column names
+
+    :param cast: Cast Object (already populated)
+    :param df: Cast Dataframe
+    :return: Dataframe containing standardised names
+    """
 
     col = df.columns._values
     newdf = pd.DataFrame()
@@ -1168,6 +1286,11 @@ def StandardizedDF(cast, df):
 
 ###########################################################################################################
 def createTripTag(cast):
+    """
+    Appends a Trip Tag to the user input section of the metadata
+    :param cast: Cast Object (already populated)
+    :return:
+    """
     print("Select Tag for: " + cast.filename + "\n[1] AZMP\n[2] MULTISPECIES\n[3] NSRF\n[4] Station27\n[5] Calibration\n[6] Other DFO\n[7] Not Yet Classified\n[8] prompt for user input (last resort)")
     tag = input()
 
@@ -1210,8 +1333,8 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
     cnv_tk.cnv_meta(cast, datafile)     # Populates meta variables and data arrays within the Cast object
     df = cnv_tk.cnv_to_dataframe(cast)  # Creates and returns a pandas dataframe using data from cast
 
-    :param cast:
-    :param df:
+    :param cast: Cast Object (already populated)
+    :param df: Cast Dataframe
     :return:
     """
     ####################################################################################################
@@ -1551,6 +1674,13 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
 ###########################################################################################################
 
 def BinDF(cast, df, dropNan=False):
+    """
+    Creates a Dataframe using a binning technique for datapoint selection
+    :param cast:
+    :param df:
+    :param dropNan:
+    :return:
+    """
     # Typically the pressure/depth index
     pressureIndex = 0
     """

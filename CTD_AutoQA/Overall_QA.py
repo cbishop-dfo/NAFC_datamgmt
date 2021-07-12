@@ -7,7 +7,24 @@ import os
 from CTD_AutoQA import ctd_processing_defs
 import numpy as np
 from CTD_AutoQA import CNV_QA_def
+"""
+Overall_QA
+----------
+Script to automate the QA process
 
+-Creates Cast object
+-Populates cast variables from datafile
+-Creates dataframe from populated Cast object
+-Drops columns based on instrument number
+-Drops columns not found in pfiles
+-split into down and upcast
+-gets rid of pressure reversals
+-drop top 2m 
+-gets rid of spikes in the dataframe
+-Writes a cnv file using cast and passed in dataframe
+-Creates a binned dataframe using despiked df
+-writes out various NC files that contain varied dataframes
+"""
 if __name__ == '__main__':
     dir_path = os.path.dirname(os.path.realpath(__file__))
     dirName = dir_path

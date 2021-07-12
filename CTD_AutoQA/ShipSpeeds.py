@@ -5,6 +5,24 @@ import pandas as pd
 import datetime
 from geopy import distance
 import plotly.express as px
+"""
+ShipSpeeds
+----------
+
+plots casts on a mapbox, each point contains meta data for each cast.
+*******************
+Meta data includes:
+*******************
+Station
+Date
+Lat
+Lon
+Distance
+Speed (Knots)
+Delta Time (Seconds)
+Filename
+*******************
+"""
 
 # Creates dictionary to be used on each file in directory
 def createDict():
@@ -29,7 +47,7 @@ def PopulateDict(cast, Dictionary):
 
 ###########################################################################################################
 
-
+# Creates a distance array using passed in df
 def CreateDistanceArray(df):
     lastPoint = -999
     currentPoint = -999
@@ -95,7 +113,6 @@ def CreateSpeedArray(df):
 
 ###########################################################################################################
 def CreateDF(dirName):
-
 
     # Creating dictionary to store each files specified data to later convert to pandas Dataframe
     Dictionary = createDict()
