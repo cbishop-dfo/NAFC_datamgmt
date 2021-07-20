@@ -1343,7 +1343,7 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
     #nc_outfile = cast.datafile.replace(".cnv", "").replace(".CNV", "") + "BINNED.nc"
     nc_out = nc.Dataset(nc_outfile, 'w', format='NETCDF3_CLASSIC')
     nc_out.Conventions = 'CF-1.6'
-    nc_out.title = 'AZMP netCDF file'
+    nc_out.title = 'NAFC netCDF file'
     nc_out.institution = 'Northwest Atlantic Fisheries Centre, Fisheries and Oceans Canada'
     #nc_out.source = cast.datafile
     nc_out.references = ''

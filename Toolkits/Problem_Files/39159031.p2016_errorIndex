@@ -1,0 +1,43 @@
+NAFC_Y2K_HEADER
+39159031  47  0.00 -044  5.00 2016-05-14 20:16 0330 S0344 031 V  FC-30         1
+39159031 000961  8.00 A 10 #PTCSMOFLH----------            D 000 0002 0326 000 4
+39159031 9 24 21 40 1003.3 003.3 003.0 06 04 24 04 06                          8
+-- CHANNEL STATS -->
+# span     scan =     94.000, 16146.000
+# span     pres =      2.087,   326.577
+# span     temp =      1.507,     4.293
+# span     cond =      2.700,     3.282
+# span      sal =     30.285,    34.871
+# span     sigt =     24.196,    27.658
+# span      oxy =      5.434,     7.798
+# span     flor =      0.582,     2.307
+# span      par =      0.698,    65.477
+# span       ph =      8.511,     8.737
+-- END --
+-- HISTORY --> Thu Jun 30 10:47:27 2016
+>SELECT_PROBE S
+>READ # (DP) T C S O F L H  scan pres temp cond sal oxy flor par ph
+>/* READ # (DP) T C S O F L  scan pres temp cond sal oxy flor par */
+>/* STABILIZE_RESTRICT USING= pres 25.0 5 */
+>RESTRICT USING= pres 0.0 4000.0
+>RESTRICT USING= cond 2.0 5.0
+>RESTRICT USING= temp -2.0 20.0
+>MEDIANFILTER pres 21 1
+>MEDIANFILTER temp 21 1
+>MEDIANFILTER cond 21 1
+>MEDIANFILTER flor 21 1
+>MEDIANFILTER oxy 21 1
+>MEDIANFILTER par 21 1
+>SELECT_DN USING= pres
+>/*
+>SALINITY PRESSURE=pres CONDUCTIVITY=cond TEMPERATURE=temp RESULT=sal
+>RESTRICT USING= sal 26.0 37.0
+>*/
+>MEDIANFILTER sal 21 1
+>SIGMAT SALINITY=sal TEMPERATURE=temp RESULT=sigt
+>MEDIANFILTER sigt 21 1
+>HISTORY_ON
+>WRITEFILE .p???? scan pres temp cond sal sigt oxy flor par ph
+-- END --
+   scan   pres   temp   cond   sal   sigt   oxy   flor   par   ph
+list index out of range
