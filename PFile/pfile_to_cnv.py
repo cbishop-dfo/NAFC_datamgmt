@@ -1,6 +1,7 @@
 exec(open("C:\QA_paths\set_QA_paths.py").read())
 from Toolkits import p_tk
 from Toolkits import dir_tk
+from Toolkits import error_check
 import os
 import glob
 
@@ -21,33 +22,39 @@ if __name__ == '__main__':
         #TODO: improve file parsing later
         if datafile.lower().__contains__(".p") and not datafile.lower().__contains__(".py"):
             try:
-                # Creates the cast object
-                cast = p_tk.Cast(datafile)
 
-                # Adds QA text to be written to the new CNV, just append any wanted text to cast.QA
-                cast.QA = []
-                cast.QA.append("** QA Applied: converted from pfile to CNV.")
+                # Check if the ship trip station id is inline and matched
+                inline = error_check.checkPfileHeaderBlock(datafile)
 
-                # Records the header info
-                p_tk.read_pFile(cast, datafile)
+                if inline == True:
 
-                # Records Channel stats from the header
-                p_tk.getChannelInfo(cast, datafile)
+                    # Creates the cast object
+                    cast = p_tk.Cast(datafile)
 
-                # Creates Pandas Dataframe from the pfile
-                df = p_tk.pfile_to_dataframe(cast, datafile)
+                    # Adds QA text to be written to the new CNV, just append any wanted text to cast.QA
+                    cast.QA = []
+                    cast.QA.append("** QA Applied: converted from pfile to CNV.")
 
-                # Data limit is used alongside database if database is used (you can ignore this in this test example)
-                cast.DataLimit = len(df.index)
+                    # Records the header info
+                    p_tk.read_pFile(cast, datafile)
 
-                # Assigns meta data to the cast object ie: latitude, longitude, Sounder Depth, Meteorological data, ect
-                p_tk.pfile_meta(cast, datafile)
+                    # Records Channel stats from the header
+                    p_tk.getChannelInfo(cast, datafile)
 
-                # Creates folder for writing files to
-                dir_tk.createFolder("P_TO_CNV", dirName)
+                    # Creates Pandas Dataframe from the pfile
+                    df = p_tk.pfile_to_dataframe(cast, datafile)
 
-                # Writes the pfile as a cnv
-                p_tk.writeCNV(cast, df, datafile)
+                    # Data limit is used alongside database if database is used (you can ignore this in this test example)
+                    cast.DataLimit = len(df.index)
+
+                    # Assigns meta data to the cast object ie: latitude, longitude, Sounder Depth, Meteorological data, ect
+                    p_tk.pfile_meta(cast, datafile)
+
+                    # Creates folder for writing files to
+                    dir_tk.createFolder("P_TO_CNV", dirName)
+
+                    # Writes the pfile as a cnv
+                    p_tk.writeCNV(cast, df, datafile)
 
             except Exception as e:
                 print("Error Reading File\n" + e.__str__())
