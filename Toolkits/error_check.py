@@ -101,3 +101,16 @@ def QADataframe(cast, df, datafile):
         print("QA Failed... Check 'log.txt' in 'ProblemFiles' folder for info")
 
 ###########################################################################################################
+
+# Check if the ship trip station id is inline and matched
+def checkPfileHeaderBlock(path):
+    f = open(path, "r")
+    f.readline()
+    header1 = f.readline()
+    header2 = f.readline()
+    header3 = f.readline()
+
+    if header1[0:8] == header2[0:8] and header1[0:8] == header3[0:8]:
+        return True
+    else:
+        return False
