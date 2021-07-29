@@ -21,6 +21,7 @@ def createShipDF():
         ['09', 'nfld_hawk', 'hawk'],
         ['10', 'tman', 'tman'],
         ['11', 'hammond', 'ham'],
+        ['12', 'needler', 'ned'],
         ['12', 'needler', 'need'],
         ['13', 'cindy_elizabeth', 'xxx'],
         ['14', 'balder_cabot', 'xxx'],
