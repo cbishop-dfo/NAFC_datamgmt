@@ -1,4 +1,6 @@
 import os
+import glob
+import sys
 from tkinter.filedialog import askopenfiles
 from tkinter.filedialog import askopenfile
 
@@ -39,6 +41,7 @@ def createFolder(foldername="NewFolder", dirName=os.path.dirname(os.path.realpat
 def getListOfFiles(dirName):
     # create a list of file and sub directories
     # names in the given directory
+    os.chdir(dirName)
     listOfFile = os.listdir(dirName)
     allFiles = list()
     # Iterate over all the entries
@@ -60,13 +63,26 @@ def selectSingleFile():
 ###########################################################################################################
 
 def confirmSelection(dirName=os.path.dirname(os.path.realpath(__file__))):
-    select = input("Choose method for file selection\n[1] Read Files From: " + dirName + "\n[2] Manually Select Files\n")
+    select = input("Choose method for file selection\n[1] Read Files From: " + dirName + "\n[2] Manually Select Files\n"  + "[3] New Path\n")
     if select == "1":
         files = getListOfFiles(dirName)
         return files
     if select == "2":
         files = selectFiles()
         return files
+    if select == "3":
+        directory = sys.argv[1]
+        #file_extension = sys.argv[2]
+        print(directory)
+        fileList = []
+        for root, dirs, files in os.walk(directory):
+            for file in files:
+                if file.endswith(".new"):
+                    print(os.path.join(root, file))
+                    fileList.append(os.path.join(root, file))
+        files = sorted(glob.glob(directory))
+        print(len(fileList))
+        return fileList
     else:
         print("Invalid Input")
         select = input("Choose method for file selection\n[1] Read Files From: " + dirName + "\n[2] Manually Select Files\n")

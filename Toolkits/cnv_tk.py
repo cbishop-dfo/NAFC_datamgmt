@@ -1097,6 +1097,11 @@ def StandardizedDF(cast, df):
             oldName = c
             newName = 'Pressure'
 
+        elif c.lower().__eq__('Pressure'):
+            newdf['Pressure'] = df[c].values
+            oldName = c
+            newName = 'Pressure'
+
         elif c.lower().__eq__('t090c'):
             newdf['Temperature'] = df[c].values
             oldName = c
@@ -1106,6 +1111,11 @@ def StandardizedDF(cast, df):
             newdf['Secondary Temperature'] = df[c].values
             oldName = c
             newName = 'Secondary Temperature'
+
+        elif c.lower().__eq__('Temperature'):
+            newdf['Temperature'] = df[c].values
+            oldName = c
+            newName = 'Temperature'
 
         elif c.lower().__eq__('c0s/m'):
             newdf['Conductivity'] = df[c].values
@@ -1197,6 +1207,11 @@ def StandardizedDF(cast, df):
             oldName = c
             newName = 'Salinity'
 
+        elif c.lower().__eq__('Salinity'):
+            newdf['Salinity'] = df[c].values
+            oldName = c
+            newName = 'Salinity'
+
         elif c.lower().__eq__('sal00'):
             newdf['Salinity'] = df[c].values
             oldName = c
@@ -1242,6 +1257,11 @@ def StandardizedDF(cast, df):
             newName = 'Secondary Density'
 
         elif c.lower().__eq__('sigt'):
+            newdf['Density'] = df[c].values
+            oldName = c
+            newName = 'Density'
+
+        elif c.lower().__eq__('sigmat'):
             newdf['Density'] = df[c].values
             oldName = c
             newName = 'Density'

@@ -177,8 +177,11 @@ if __name__ == '__main__':
     for f in files:
 
         os.chdir(dirName)
-        datafile = f.name
-        if datafile.lower().endswith(".cnv"):
+        try:
+            datafile = f.name
+        except:
+            datafile = f
+        if datafile.lower().endswith(".cnv") or datafile.lower().endswith(".cnv.new"):
             try:
                 print("Reading: " + datafile)
                 cast = cnv_tk.Cast(datafile)

@@ -176,16 +176,16 @@ def writeFiles(ig, net, cv, shpSelected,tripSelected, stationSelected, lat_min, 
         tempdf = tempdf[tempdf["Station"] == stationSelected.__str__()]
     if not lat_min == "" and not lat_min == "-":
         if not lat_max == "" and not lat_max == "-":
-            tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_max))]
+            tempdf = tempdf[tempdf["Latitude"].astype(float).between(float(lat_min), float(lat_max))]
         else:
             # If no max is set only look for min value
-            tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_min))]
+            tempdf = tempdf[tempdf["Latitude"].astype(float).between(float(lat_min), float(lat_min))]
     if not lon_min == "" and not lon_min == "-":
         if not lon_max == "" and not lon_max == "-":
-            tempdf = tempdf[tempdf["Longitude"].between(float(lon_min), float(lon_max))]
+            tempdf = tempdf[tempdf["Longitude"].astype(float).between(float(lon_min), float(lon_max))]
         else:
             # If no max is set only look for min value
-            tempdf = tempdf[tempdf["Longitude"].between(float(lon_min), float(lon_min))]
+            tempdf = tempdf[tempdf["Longitude"].astype(float).between(float(lon_min), float(lon_min))]
     if not date == "":
         tempdf = tempdf[tempdf["CastDatetime"].str.contains(date.__str__())]
 
@@ -322,16 +322,16 @@ def update_table(shpSelected,tripSelected, stationSelected, lat_min, lat_max, lo
         tempdf = tempdf[tempdf["Station"] == stationSelected.__str__()]
     if not lat_min == "" and not lat_min == "-":
         if not lat_max == "" and not lat_max == "-":
-            tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_max))]
+            tempdf = tempdf[tempdf["Latitude"].astype(float).between(float(lat_min), float(lat_max))]
         else:
             # If no max is set only look for min value
-            tempdf = tempdf[tempdf["Latitude"].between(float(lat_min), float(lat_min))]
+            tempdf = tempdf[tempdf["Latitude"].astype(float).between(float(lat_min), float(lat_min))]
     if not lon_min == "" and not lon_min == "-":
         if not lon_max == "" and not lon_max == "-":
-            tempdf = tempdf[tempdf["Longitude"].between(float(lon_min), float(lon_max))]
+            tempdf = tempdf[tempdf["Longitude"].astype(float).between(float(lon_min), float(lon_max))]
         else:
             # If no max is set only look for min value
-            tempdf = tempdf[tempdf["Longitude"].between(float(lon_min), float(lon_min))]
+            tempdf = tempdf[tempdf["Longitude"].astype(float).between(float(lon_min), float(lon_min))]
     if not date == "":
         tempdf = tempdf[tempdf["CastDatetime"].str.contains(date.__str__())]
 
