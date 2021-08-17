@@ -96,7 +96,7 @@ def display_page(pathname):
         return cnvapp.layout
 
 ### CNV ###################################################################################################
-
+"""
 @app.callback(Output('container-button-timestamp', 'children'),
               Input('igoss', 'n_clicks'),
               Input('simple', 'n_clicks'),
@@ -246,7 +246,7 @@ def writeFiles(ig, net, cv, shpSelected,tripSelected, stationSelected, lat_min, 
     else:
         msg = ''
     return html.Div(msg)
-
+"""
 ###
 @app.callback(
     Output('table_cnv', 'data'),
