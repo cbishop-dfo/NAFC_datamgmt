@@ -106,6 +106,15 @@ app.layout = html.Div([
         value=""
     ),
     html.Hr(),
+    dcc.Checklist(
+    options=[
+        {'label': 'CTD', 'value': 'CTD'},
+        {'label': 'Biological', 'value': 'BIO'}
+    ],
+    value=[],
+    labelStyle={'display': 'inline-block'}
+),
+    html.Hr(),
     html.Button('Write IGOSS', id='igoss', n_clicks=0),
     html.Button('Write NETCDF', id='netcdf', n_clicks=0),
     html.Button('Write Simple CNV', id='simple', n_clicks=0),
