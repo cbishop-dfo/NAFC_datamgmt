@@ -57,16 +57,27 @@ del dff["Language"]
 del dff["MaintenanceContact"]
 
 mergedDF = dff.merge(data, left_on='id', right_on='cid')
-
+logo = "https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg"
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
-    dbc.Nav(
+    #dbc.Col(html.Img(src=logo, height="30px", style={'textAlign': 'center'})),
+    html.Div([
+        html.Img(
+            src=logo,
+            style={
+                'height': '50%',
+                'width': '50%'
+            })
+    ], style={'textAlign': 'center', "margin-top": "25px", "margin-bottom": "25px"}),
+    dbc.Navbar(
         [
             dbc.NavLink("CNV", href="/apps/cnvapp"),
             dbc.NavLink("AZMP", href="/apps/azmp"),
             dbc.NavLink("BIO", href="/apps/bio"),
 
-        ]
+        ],
+        color="#263152",
+        dark=True
     ),
     html.Div(id='page-content', children=[])
 ])
