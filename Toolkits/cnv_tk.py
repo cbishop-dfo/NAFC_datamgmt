@@ -1142,12 +1142,22 @@ def StandardizedDF(cast, df):
             oldName = c
             newName = 'Transmissometer attenuation'
 
+        elif c.lower().__eq__('tranmissometer attenuation'):
+            newdf['Transmissometer attenuation'] = df[c].values
+            oldName = c
+            newName = 'Transmissometer attenuation'
+
         elif c.lower().__eq__('cstartr0'):
             newdf['Transmissometer transmission'] = df[c].values
             oldName = c
             newName = 'Transmissometer transmission'
 
         elif c.lower().__eq__('trp'):
+            newdf['Transmissometer transmission'] = df[c].values
+            oldName = c
+            newName = 'Transmissometer transmission'
+
+        elif c.lower().__eq__('tranmissometer transmission'):
             newdf['Transmissometer transmission'] = df[c].values
             oldName = c
             newName = 'Transmissometer transmission'
@@ -1464,12 +1474,12 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
             v.long_name = "Sea Water Electrical Conductivity"
             Dictionary['Conductivity'] = [v, name]
 
-        elif c.lower().__eq__('cstarat0') or c.__eq__('Transmissometer attenuation [l per m]'):
+        elif c.lower().__eq__('cstarat0') or c.__eq__('Transmissometer attenuation [l per m]') or c.lower().__eq__('tranmissometer attenuation'):
             Dictionary['Transmissometer attenuation [l per m]'] = [
                 nc_out.createVariable('Transmissometer attenuation [l per m]', np.float32, ('time', 'level'), zlib=True,
                                       fill_value=-9999), name]
 
-        elif c.lower().__eq__('cstartr0') or c.__eq__('Transmissometer transmission [%]'):
+        elif c.lower().__eq__('cstartr0') or c.__eq__('Transmissometer transmission [%]') or c.lower().__eq__('transmissometer transmission'):
             Dictionary['Transmissometer transmission [%]'] = [
                 nc_out.createVariable('Transmissometer transmission [%]', np.float32, ('time', 'level'), zlib=True,
                                       fill_value=-9999), name]
