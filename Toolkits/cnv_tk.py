@@ -1475,14 +1475,16 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
             Dictionary['Conductivity'] = [v, name]
 
         elif c.lower().__eq__('cstarat0') or c.__eq__('Transmissometer attenuation [l per m]') or c.lower().__eq__('tranmissometer attenuation'):
-            Dictionary['Transmissometer attenuation [l per m]'] = [
-                nc_out.createVariable('Transmissometer attenuation [l per m]', np.float32, ('time', 'level'), zlib=True,
-                                      fill_value=-9999), name]
+            v = nc_out.createVariable('ATTNZS01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v.units = "1/m"
+            v.long_name = "Attenuation per unit length of the water body by WET Labs transmissometer"
+            Dictionary['Transmissometer attenuation [l per m]'] = [v, name]
 
         elif c.lower().__eq__('cstartr0') or c.__eq__('Transmissometer transmission [%]') or c.lower().__eq__('transmissometer transmission'):
-            Dictionary['Transmissometer transmission [%]'] = [
-                nc_out.createVariable('Transmissometer transmission [%]', np.float32, ('time', 'level'), zlib=True,
-                                      fill_value=-9999), name]
+            v = nc_out.createVariable('POPTDR01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v.units = "%"
+            v.long_name = "Transmittance per 25cm of the water body by WET Labs transmissometer"
+            Dictionary['Transmissometer transmission [%]'] = [v, name]
 
         elif c.lower().__eq__('depth') or c.__eq__('Depth'):
             v = nc_out.createVariable('depth', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
