@@ -1474,7 +1474,7 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
             v.long_name = "Sea Water Electrical Conductivity"
             Dictionary['Conductivity'] = [v, name]
 
-        elif c.lower().__eq__('cstarat0') or c.__eq__('Transmissometer attenuation [l per m]') or c.lower().__eq__('tranmissometer attenuation'):
+        elif c.lower().__eq__('cstarat0') or c.__eq__('Transmissometer attenuation [l per m]') or c.lower().__eq__('transmissometer attenuation'):
             v = nc_out.createVariable('ATTNZS01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
             v.units = "1/m"
             v.long_name = "Attenuation per unit length of the water body by WET Labs transmissometer"
