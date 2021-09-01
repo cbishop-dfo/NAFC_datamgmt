@@ -283,8 +283,8 @@ def cnv_meta(cast, datafile):
         elif line.__contains__("** ") or line.__contains__("**"):
             cast.userInput.append(line)
             if line.upper().__contains__("VESSEL"):
+                line = line.replace("-", "_")
                 if filetype_v2 or xbt:
-                    line = line.replace("-", "_")
                     l = line.split(":")[1].lstrip().rstrip().split("_")
                     # Some files contain ship name in line, some use ship number
                     if l[0].isnumeric():
