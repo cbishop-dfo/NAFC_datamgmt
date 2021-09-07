@@ -283,6 +283,7 @@ def cnv_meta(cast, datafile):
         elif line.__contains__("** ") or line.__contains__("**"):
             cast.userInput.append(line)
             if line.upper().__contains__("VESSEL"):
+                line = line.replace("-", "_")
                 if filetype_v2 or xbt:
                     l = line.split(":")[1].lstrip().rstrip().split("_")
                     # Some files contain ship name in line, some use ship number
@@ -306,6 +307,7 @@ def cnv_meta(cast, datafile):
                     cast.ship = cast.id[0:2]
                     cast.trip = cast.id[2:5]
                     cast.station = cast.id[5:8]
+
             elif line.upper().__contains__("DATE"):
                 l = line.split()
                 cast.CastDatetime = l[2] + " " + l[3]

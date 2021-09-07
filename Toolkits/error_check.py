@@ -1,7 +1,8 @@
 exec(open("C:\QA_paths\set_QA_paths.py").read())
 import pandas as pd
 from Toolkits import dir_tk
-
+from Toolkits import cnv_tk
+import os
 ###########################################################################################################
 # simple check to see if df has less than 15 rows of data
 def checkdf(df, minRows=15):
@@ -21,9 +22,13 @@ def checkdf(df, minRows=15):
 
 ###########################################################################################################
 # compares id in filename to actual id in file
-def compairFilename(cast, datafile):
+"""
+Checks if ship trip station matches ID in filename
+"""
+def compareFilename(cast, datafile):
     uid = str(cast.ship) + str(cast.trip) + str(cast.station)
     fileID = datafile.split("/")[-1:]
+    fileID = fileID[0].split(".")[0]
 
     if str(uid) == str(fileID):
         print("ID" + uid)
@@ -33,6 +38,47 @@ def compairFilename(cast, datafile):
         print("ID" + uid)
         print("FileID" + fileID)
         return False
+
+###########################################################################################################
+# compares id in filename to actual id in file
+"""
+Checks if ship trip station matches ID in filename
+"""
+def compareListOfFiles():
+
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    dirName = dir_path
+    files = dir_tk.confirmSelection(dirName)
+    for f in files:
+        # changes Dir back to original
+        os.chdir(dirName)
+        try:
+            datafile = f.name
+        except:
+            datafile = f
+
+        if datafile.lower().endswith(".cnv"):
+            print("File Path: " + datafile.__str__())
+            # Creates Cast object
+            cast = cnv_tk.Cast(datafile)
+
+            # Populates cast variables from datafile
+            cnv_tk.cnv_meta(cast, datafile)
+            uid = str(cast.ship) + str(cast.trip) + str(cast.station)
+            fileID = datafile.split("/")[-1:]
+            fileID = fileID[0].split(".")[0]
+
+            if str(uid) == str(fileID):
+                print("ID: " + uid)
+                print("FileID: " + fileID)
+                print("ID's Match!\n")
+                #return True
+            else:
+                print("ID: " + uid)
+                print("FileID: " + fileID)
+                print("ID's MISMATCHED!")
+                input("Compare Filename to SHPTRPSTN...Press Enter To Continue\n")
+                #return False
 
 ###########################################################################################################
 """
