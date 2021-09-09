@@ -1436,199 +1436,199 @@ def NCWrite(cast, df, nc_outfile="NCFile"):
     for c in df:
         name = c.replace("/", "+")
         if c.lower().__eq__('prdm') or c.__eq__('Pressure'):
-            v = nc_out.createVariable('PRESPR01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('PRESPR01', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "dbar"
             v.long_name = "Sea Water Pressure in dbar"
             Dictionary['Pressure'] = [v, name]
 
         elif c.lower().__eq__('t090c') or c.__eq__('Temperature'):
             # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
-            v = nc_out.createVariable('TEMPS901', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('TEMPS901', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "degC"
             v.long_name = "Sea Water Temperature"
             Dictionary['Temperature'] = [v, name]
 
         elif c.lower().__eq__('t190c') or c.__eq__('Secondary Temperature'):
             # TEMPS902	Temperature (ITS-90) of the water body by CTD or STD (second sensor)	CTDTmp90_2
-            v = nc_out.createVariable('TEMPS902', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('TEMPS902', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "degC"
             v.long_name = "Sea Water Temperature"
             Dictionary['Secondary Temperature'] = [v, name]
 
         elif c.lower().__eq__('c0s/m') or c.__eq__('Conductivity'):
             # Electrical conductivity of the water body by CTD
-            v = nc_out.createVariable('CNDCST01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('CNDCST01', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "S/m"
             v.long_name = "Sea Water Electrical Conductivity"
             Dictionary['Conductivity'] = [v, name]
 
         elif c.lower().__eq__('c1s/m') or c.__eq__('Secondary Conductivity'):
             # Electrical conductivity of the water body by CTD (sensor 2)
-            v = nc_out.createVariable('CNDCST02', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('CNDCST02', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "S/m"
             v.long_name = "Sea Water Electrical Conductivity"
             Dictionary['Secondary Conductivity'] = [v, name]
 
         elif c.lower().__eq__('cond'):
             # Electrical conductivity of the water body by CTD
-            v = nc_out.createVariable('CNDCST01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('CNDCST01', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "S/m"
             v.long_name = "Sea Water Electrical Conductivity"
             Dictionary['Conductivity'] = [v, name]
 
         elif c.lower().__eq__('cstarat0') or c.__eq__('Transmissometer attenuation [l per m]') or c.lower().__eq__('transmissometer attenuation'):
-            v = nc_out.createVariable('ATTNZS01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('ATTNZS01', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "1/m"
             v.long_name = "Attenuation per unit length of the water body by WET Labs transmissometer"
             Dictionary['Transmissometer attenuation [l per m]'] = [v, name]
 
         elif c.lower().__eq__('cstartr0') or c.__eq__('Transmissometer transmission [%]') or c.lower().__eq__('transmissometer transmission'):
-            v = nc_out.createVariable('POPTDR01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('POPTDR01', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "%"
             v.long_name = "Transmittance per 25cm of the water body by WET Labs transmissometer"
             Dictionary['Transmissometer transmission [%]'] = [v, name]
 
         elif c.lower().__eq__('depth') or c.__eq__('Depth'):
-            v = nc_out.createVariable('depth', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('depth', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "m"
             v.long_name = "Depth in meters"
             Dictionary['Depth'] = [v, name]
 
         elif c.lower().__eq__('flag'):
-            Dictionary['Flag'] = [nc_out.createVariable('Flag', np.float32, ('time', 'level'), zlib=True, fill_value=-9999),
+            Dictionary['Flag'] = [nc_out.createVariable('Flag', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan),
                                   name]
 
         elif c.lower().__eq__('fleco-afl') or c.__eq__('Chlorophyll A Fluorescence'):
             Dictionary['Chlorophyll A Fluorescence'] = [
-                nc_out.createVariable('Chlorophyll A Fluorescence', np.float32, ('time', 'level'), zlib=True, fill_value=-9999),
+                nc_out.createVariable('Chlorophyll A Fluorescence', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan),
                 name]
 
         elif c.lower().__eq__('flor') or c.__eq__('Fluorescence'):
             Dictionary['Fluorescence'] = [
-                nc_out.createVariable('Fluorescence', np.float32, ('time', 'level'), zlib=True, fill_value=-9999), name]
+                nc_out.createVariable('Fluorescence', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan), name]
 
         elif c.lower().__eq__('oxsatml/l') or c.__eq__('Oxygen Saturation'):
             # Saturation of oxygen {O2 CAS 7782-44-7} in the water body [dissolved plus reactive particulate phase]
-            v = nc_out.createVariable('OXYSZZ01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('OXYSZZ01', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "ml/l"
             v.long_name = "Saturation of oxygen"
             Dictionary['Oxygen Saturation'] = [v, name]
 
         elif c.lower().__eq__('oxy'):
             # Saturation of oxygen {O2 CAS 7782-44-7} in the water body [dissolved plus reactive particulate phase]
-            v = nc_out.createVariable('OXYSZZ01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('OXYSZZ01', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "ml/l"
             v.long_name = "Saturation of oxygen"
             Dictionary['Oxygen Saturation'] = [v, name]
 
         elif c.lower().__eq__('par') or c.__eq__('Irradiance'):
             Dictionary['Irradiance'] = [
-                nc_out.createVariable('Irradiance', np.float32, ('time', 'level'), zlib=True, fill_value=-9999), name]
+                nc_out.createVariable('Irradiance', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan), name]
 
         elif c.lower().__eq__('par/sat/log') or c.__eq__('Photosynthetic Active Radiation'):
             Dictionary['Photosynthetic Active Radiation'] = [
                 nc_out.createVariable('Photosynthetic Active Radiation', np.float32, ('time', 'level'), zlib=True,
-                                      fill_value=-9999), name]
+                                      fill_value=np.nan), name]
 
         elif c.lower().__eq__('ph'):
-            Dictionary['pH'] = [nc_out.createVariable('pH', np.float32, ('time', 'level'), zlib=True, fill_value=-9999), name]
+            Dictionary['pH'] = [nc_out.createVariable('pH', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan), name]
 
         elif c.lower().__eq__('pres'):
-            v = nc_out.createVariable('PRESPR01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('PRESPR01', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "dbar"
             v.long_name = "Sea Water Pressure in dbar"
             Dictionary['Pressure'] = [v, name]
 
         elif c.lower().__eq__('sal') or c.__eq__('Salinity'):
             # Practical salinity of the water body by CTD and computation using UNESCO 1983 algorithm
-            v = nc_out.createVariable('PSALST01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('PSALST01', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "PSS-78"
             v.long_name = "sea_water_practical_salinity"
             Dictionary['Salinity'] = [v, name]
 
         elif c.lower().__eq__('sal00'):
-            v = nc_out.createVariable('PSALST01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('PSALST01', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "PSS-78"
             v.long_name = "sea_water_practical_salinity"
             Dictionary['Salinity'] = [v, name]
 
         elif c.lower().__eq__('sal11') or c.__eq__('Secondary Salinity'):
             # Practical salinity of the water body by CTD (second sensor) and computation using UNESCO 1983 algorithm
-            v = nc_out.createVariable('PSALST02', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('PSALST02', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "PSS-78"
             v.long_name = "sea_water_practical_salinity"
             Dictionary['Secondary Salinity'] = [v, name]
 
         elif c.lower().__eq__('sbeox0ml/l') or c.__eq__('Oxygen'):
-            v = nc_out.createVariable('DOXYZZ01', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('DOXYZZ01', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "ml/l"
             v.long_name = "Oxygen concentration"
             Dictionary['Oxygen'] = [v, name]
 
         elif c.lower().__eq__('sbeox0v') or c.__eq__('Oxygen Raw'):
             # Raw signal (voltage) of instrument output by oxygen sensor
-            v = nc_out.createVariable('OXYVLTN1', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('OXYVLTN1', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "V"
             v.long_name = "Raw signal (voltage) of instrument output by in-situ microelectrode"
             Dictionary['Oxygen Raw'] = [v, name]
 
         elif c.lower().__eq__('sbeox1ml/l') or c.__eq__('Secondary Oxygen'):
             Dictionary['Secondary Oxygen'] = [
-                nc_out.createVariable('Secondary Oxygen', np.float32, ('time', 'level'), zlib=True, fill_value=-9999), name]
+                nc_out.createVariable('Secondary Oxygen', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan), name]
 
         elif c.lower().__eq__('sbeox1v') or c.__eq__('Secondary Oxygen Raw'):
             # Raw signal (voltage) of instrument output by oxygen sensor (second sensor)
-            v = nc_out.createVariable('OXYVLTN2', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('OXYVLTN2', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "V"
             v.long_name = "Raw signal (voltage) of instrument output by in-situ microelectrode (second sensor)"
             Dictionary['Secondary Oxygen Raw'] = [v, name]
 
         elif c.lower().__eq__('scan'):
             continue
-            # Dictionary['Scan'] = [nc_out.createVariable('Scan', np.float32, ('time', 'level'), zlib=True, fill_value=-9999), name]
+            # Dictionary['Scan'] = [nc_out.createVariable('Scan', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan), name]
 
         elif c.lower().__eq__('sigma-t00') or c.__eq__('Density'):
             Dictionary['Density'] = [
-                nc_out.createVariable('Density', np.float32, ('time', 'level'), zlib=True, fill_value=-9999), name]
+                nc_out.createVariable('Density', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan), name]
 
         elif c.lower().__eq__('sigma-t11') or c.__eq__('Secondary Density'):
             Dictionary['Secondary Density'] = [
-                nc_out.createVariable('Secondary Density', np.float32, ('time', 'level'), zlib=True, fill_value=-9999), name]
+                nc_out.createVariable('Secondary Density', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan), name]
 
         elif c.lower().__eq__('sigt'):
             Dictionary['Density'] = [
-                nc_out.createVariable('Density', np.float32, ('time', 'level'), zlib=True, fill_value=-9999), name]
+                nc_out.createVariable('Density', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan), name]
 
         elif c.lower().__eq__('temp'):
             # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
-            v = nc_out.createVariable('TEMPS901', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('TEMPS901', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "degC"
             v.long_name = "Sea Water Temperature"
             Dictionary['Temperature'] = [v, name]
 
         elif c.lower().__eq__('wetcdom') or c.__eq__('CDOM Fluorescence'):
             # Fluorescence of the water body by linear-response CDOM fluorometer
-            v = nc_out.createVariable('FLUOCDOM', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('FLUOCDOM', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "mg/m^3"
             v.long_name = "CDOM Fluorescence"
             Dictionary['CDOM Fluorescence'] = [v, name]
 
         elif c.lower().__eq__('tv290c'):
             # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
-            v = nc_out.createVariable('TEMPS901', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('TEMPS901', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "degC"
             v.long_name = "Sea Water Temperature"
             Dictionary['Temperature'] = [v, name]
 
         elif c.lower().__eq__('depth'):
             # TEMPS901 	Temperature (ITS-90) of the water body by CTD or STD	CTDTmp90
-            v = nc_out.createVariable('depth', np.float32, ('time', 'level'), zlib=True, fill_value=-9999)
+            v = nc_out.createVariable('depth', np.float32, ('time', 'level'), zlib=True, fill_value=np.nan)
             v.units = "m"
             v.long_name = "Sea Water Depth"
             Dictionary['Depth'] = [v, name]
 
         else:
-            Dictionary[c] = [nc_out.createVariable(name, np.float32, ('time', 'level'), zlib=True, fill_value=-9999),
+            Dictionary[c] = [nc_out.createVariable(name, np.float32, ('time', 'level'), zlib=True, fill_value=np.nan),
                              name]
             print("UNKNOWN VARIABLE: " + c.__str__())
             input("HALT...Press Enter To Continue")
