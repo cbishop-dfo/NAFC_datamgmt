@@ -32,6 +32,9 @@ def MacthID(Bottle, Biomass):
     lastPerc = 0
     perc = 0
     ID_List = []
+    Ship = []
+    Trip = []
+    Station = []
     # Ship trip station id's (unique)
     UID = []
     bottomBottleIDs = []
@@ -47,6 +50,9 @@ def MacthID(Bottle, Biomass):
             b_id = None
             t_id = None
             uid = None
+            ship = None
+            trip = None
+            station = None
             shipTripStation = None
             tempBotIDs = []
             try:
@@ -80,6 +86,9 @@ def MacthID(Bottle, Biomass):
                             tempCast.station = "0" + tempCast.station
                         # TODO: Investigate UID, UID is shiptripstation
                         uid = str(tempCast.ship) + str(tempCast.trip) + str(tempCast.station)
+                        ship = str(tempCast.ship)
+                        trip = str(tempCast.trip)
+                        station = str(tempCast.station)
                         # Matching Latitudes
                         botLat = "{:.2f}".format(bot[6])
                         biolat = "{:.2f}".format(bio[3])
@@ -124,6 +133,9 @@ def MacthID(Bottle, Biomass):
                 t_id = tempBotIDs[min_index][1]
 
             ID_List.append(id)
+            Ship.append(ship)
+            Trip.append(trip)
+            Station.append(station)
             UID.append(uid)
             bottomBottleIDs.append(b_id)
             topBottleIDs.append(t_id)
@@ -131,6 +143,9 @@ def MacthID(Bottle, Biomass):
         print("ERROR: " + e.__str__())
     print(Biomass.shape[0])
     print(ID_List.__len__())
+    Biomass["Ship"] = Ship
+    Biomass["Trip"] = Trip
+    Biomass["Set"] = Station
     Biomass["NewShipTrip"] = ID_List
     Biomass["UID"] = UID
     Biomass["BottomSampleID"] = bottomBottleIDs
