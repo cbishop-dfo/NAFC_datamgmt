@@ -1012,7 +1012,7 @@ def getCastType(cast):
                 nquan = int(i.split("=")[1].lstrip().rstrip())
                 # less than 3 data columns is XBT (Vertical)
                 if nquan <= 3:
-                    cast.castType = "V"
+                    cast.castType = "X"
                     return
                 # Greater than 8 is Vertical
                 elif nquan >= 8:
