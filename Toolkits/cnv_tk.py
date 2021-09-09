@@ -356,19 +356,19 @@ def cnv_meta(cast, datafile):
                 cast.VNET = line.split(":")[1]
             elif line.upper().__contains__("XBT NUMBER"):
                 cast.Instrument = line.split(":")[1]
-            elif line.upper() == "YEAR":
+            elif line.upper().__contains__("YEAR"):
                 year = line.split(":")[1].rstrip().lstrip()
-            elif line.upper() == "MONTH":
+            elif line.upper().__contains__("MONTH"):
                 month = line.split(":")[1].rstrip().lstrip()
-            elif line.upper() == "DAY":
+            elif line.upper().__contains__("DAY"):
                 day = line.split(":")[1].rstrip().lstrip()
-            elif line.upper() == "HOURS/MIN":
+            elif line.upper().__contains__("HOURS/MIN"):
                 time = line.split(":")[1].rstrip().lstrip()
                 time = time[0:2] + ":" + time[2:4]
                 casttime = year + "-" + month + "-" + day + " " + time
                 cast.CastDatetime = casttime
-            elif line.upper() == "FORMAT":
-                cast.castType = line.split(":")[1]
+            elif line.upper().__contains__("FORMAT"):
+                cast.castType = line.split(":")[1].lstrip().rstrip()
 
         elif line.startswith("* "):
             if line.upper().__contains__("XBT"):
