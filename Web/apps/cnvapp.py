@@ -64,55 +64,72 @@ layout = html.Div([
     ),
 
     html.Br(),
-    'Ship Number: ',
+    html.Br(),
     dcc.Input(
+        placeholder='Ship Number: ',
         id='shipNumber',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Trip: ',
     dcc.Input(
+        placeholder='Trip',
         id='trip',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Station: ',
     dcc.Input(
+        placeholder='Station',
         id='station',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Date: ',
     dcc.Input(
+        placeholder='Date',
         id='date',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
     html.Br(),
     html.Br(),
-    ' Latitude Min: ',
     dcc.Input(
+        placeholder='Latitude Min',
         id='lat_min',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Latitude Max: ',
     dcc.Input(
+        placeholder='Latitude Max',
         id='lat_max',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Longitude Min: ',
     dcc.Input(
+        placeholder='Longitude Min',
         id='lon_min',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Longitude Max: ',
     dcc.Input(
+        placeholder='Longitude Max',
         id='lon_max',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
     html.Hr(),
     #dcc.Checklist(

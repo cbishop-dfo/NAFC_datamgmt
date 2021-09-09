@@ -15,6 +15,8 @@ from apps import cnvapp
 from apps import bio
 from apps import azmp
 import assets
+import zipfile
+from dash_extensions.snippets import send_data_frame
 
 
 ### Dataframe imports ##################################################################################
@@ -45,6 +47,7 @@ data = pd.read_sql_query("SELECT * from Data", con)
 mergedDF = df.merge(data, left_on='id', right_on='cid')
 # Make a copy of the database to freely manipulate.
 dff = df.copy()
+tempdf = []
 
 # replace any empty strings with null values then drop columns that are completely null
 for col in dff:
@@ -376,6 +379,11 @@ def update_table(shpSelected,tripSelected, stationSelected, lat_min, lat_max, lo
 
     return tempdf.to_dict('records')
 ########################################################################################################
+@app.callback(Output("download", "data"), [Input("btn", "n_clicks")])
+def func(n_nlicks):
+    return send_data_frame(df.to_excel, "mydf.xls")
+########################################################################################################
+
 if __name__ == '__main__':
     app.run_server(debug=True)
     app.config['suppress_callback_exceptions'] = True

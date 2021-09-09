@@ -8,6 +8,8 @@ import sqlite3
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
+from dash_extensions import Download
+
 import numpy as np
 from dash.dependencies import Input, Output
 from Toolkits import cnv_tk
@@ -51,58 +53,75 @@ layout = html.Div([
     ),
 
     html.Br(),
-    'Ship Number: ',
-    dcc.Input(
+        dcc.Input(
+        placeholder='Ship Number: ',
         id='shipNumber',
         type='text',
         value="",
-        style={"margin-left": "5px", "margin-right": "5px"}
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Trip: ',
     dcc.Input(
+        placeholder='Trip',
         id='trip',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Station: ',
     dcc.Input(
+        placeholder='Station',
         id='station',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Date: ',
     dcc.Input(
+        placeholder='Date',
         id='date',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
     html.Br(),
     html.Br(),
-    ' Latitude Min: ',
     dcc.Input(
+        placeholder='Latitude Min',
         id='lat_min',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Latitude Max: ',
     dcc.Input(
+        placeholder='Latitude Max',
         id='lat_max',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Longitude Min: ',
     dcc.Input(
+        placeholder='Longitude Min',
         id='lon_min',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Longitude Max: ',
     dcc.Input(
+        placeholder='Longitude Max',
         id='lon_max',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
     html.Hr(),
+    html.Button("Download", id="btn"), Download(id="download"),
+    #html.Button("Download zip", id="btn_txt"), dcc.Download(id="download-text"),
     #dcc.Checklist(
     #options=[
     #    {'label': 'CTD', 'value': 'CTD'},
