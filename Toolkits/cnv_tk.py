@@ -271,6 +271,7 @@ def cnv_meta(cast, datafile):
     filetype_v2 = False # bool to tell if file uses different format type
     isData = False
     xbt = False
+    endTag = False
 
     for line in f:
         line = line.replace("\n", "")
@@ -382,8 +383,11 @@ def cnv_meta(cast, datafile):
                 dateArray = []
                 date = line.split("=")[1].split()
                 convertDate(cast, date)
+        elif line.__contains__("*END*"):
+            endTag = True
         else:
-            isData = True
+            if endTag:
+                isData = True
     getShipName(cast)
     if not xbt:
         getInstrumentName(cast)
