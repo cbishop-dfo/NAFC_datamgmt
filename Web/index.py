@@ -379,9 +379,63 @@ def update_table(shpSelected,tripSelected, stationSelected, lat_min, lat_max, lo
 
     return tempdf.to_dict('records')
 ########################################################################################################
-@app.callback(Output("download", "data"), [Input("btn", "n_clicks")])
-def func(n_nlicks):
-    return send_data_frame(df.to_excel, "mydf.xls")
+@app.callback(
+    Output("download", "data"),
+    Input("btn", "n_clicks"),
+    Input('shipNumber', "value"),
+    Input('trip', "value"),
+    Input('station', "value"),
+    Input('lat_min', "value"),
+    Input('lat_max', "value"),
+    Input('lon_min', "value"),
+    Input('lon_max', "value"),
+    Input('date', "value"))
+def downloadTable(clicks,shpSelected,tripSelected, stationSelected, lat_min, lat_max, lon_min, lon_max, date):
+    print("Ship Number: " + shpSelected.__str__())
+    print("Trip: " + tripSelected.__str__())
+    print("Station: " + stationSelected.__str__())
+    #print("Clicks: \n" + clicks)
+
+    if clicks != None:
+        tempdf = biodf.copy()
+        tempdf["Lat"] = tempdf["Lat"].astype(float)
+        tempdf["Lon"] = tempdf["Lon"].astype(float)
+        tempdf["Ship"] = tempdf["Ship"]
+        tempdf["Trip"] = tempdf["Trip"]
+        tempdf["Set"] = tempdf["Set"]
+
+        if not shpSelected == "":
+            tempdf = tempdf[tempdf["Ship"] == int(shpSelected)]
+        if not tripSelected == "":
+            tempdf = tempdf[tempdf["Trip"] == int(tripSelected)]
+        if not stationSelected == "":
+            tempdf = tempdf[tempdf["Set"] == int(stationSelected)]
+        if not lat_min == "" and not lat_min == "-":
+            if not lat_max == "" and not lat_max == "-":
+                tempdf = tempdf[tempdf["Lat"].astype(float).between(float(lat_min), float(lat_max))]
+            else:
+                # If no max is set only look for min value
+                tempdf = tempdf[tempdf["Lat"].astype(float).between(float(lat_min), float(lat_min))]
+        if not lon_min == "" and not lon_min == "-":
+            if not lon_max == "" and not lon_max == "-":
+                tempdf = tempdf[tempdf["Lon"].astype(float).between(float(lon_min), float(lon_max))]
+            else:
+                # If no max is set only look for min value
+                tempdf = tempdf[tempdf["Lon"].astype(float).between(float(lon_min), float(lon_min))]
+
+        if not date == "":
+            tempdf = tempdf[tempdf["Date"].str.contains(date.__str__())]
+
+        clicks = None
+        return send_data_frame(tempdf.to_excel, "mydf.xls")
+
+    else:
+        print("not clicked")
+
+
+
+
+
 ########################################################################################################
 
 if __name__ == '__main__':
