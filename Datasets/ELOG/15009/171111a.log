@@ -1,0 +1,144 @@
+$@MID@$: 1
+Date: Sat, 11 Nov 2017 22:31:43 +0000
+Reply to: 2, 3
+Event: 129
+Station: S27-01
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0175
+Sample_ID: 430410
+End_Sample_ID: 430419
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 2
+Date: Sat, 11 Nov 2017 22:39:11 +0000
+In reply to: 1
+Event: 129
+Station: S27-01
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0175
+Sample_ID: 430410
+End_Sample_ID: 430419
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 13/Nov/2017 08:59:15
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 4
+Date: Sat, 11 Nov 2017 23:16:45 +0000
+In reply to: 3
+Event: 129
+Station: S27-01
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0175
+Sample_ID: 430410
+End_Sample_ID: 430419
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 5
+Date: Sat, 11 Nov 2017 23:49:15 +0000
+Event: 130
+Station: S27-01
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 0175
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 12/Nov/2017 00:07:26
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 6
+Date: Sat, 11 Nov 2017 23:56:51 +0000
+Reply to: 7
+Event: 131
+Station: S27-01
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0175
+Sample_ID: 430410
+End_Sample_ID: 
+Wire Out: 0163
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3970
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 19/Nov/2017 22:26:58
+Attachment: 
+Encoding: plain
+========================================
+

@@ -1,0 +1,116 @@
+$@MID@$: 232
+Date: Mon, 20 Nov 2017 01:55:33 +0000
+Reply to: 233
+Event: 223
+Station: BB08TOSTJ-03
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0175
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-20 | 015450.00 | 48 16.201389 N | 51 56.57053 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 233
+Date: Mon, 20 Nov 2017 01:56:10 +0000
+In reply to: 232
+Event: 223
+Station: BB08TOSTJ-03
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0175
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-20 | 015527.00 | 48 16.125021 N | 51 56.616013 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 234
+Date: Mon, 20 Nov 2017 06:04:42 +0000
+Reply to: 235
+Event: 224
+Station: BB08TOSTJ-04
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0188
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-20 | 060359.00 | 47 44.969097 N | 52 16.304012 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 235
+Date: Mon, 20 Nov 2017 06:05:20 +0000
+In reply to: 234
+Event: 224
+Station: BB08TOSTJ-04
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0188
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-20 | 060437.00 | 47 44.890469 N | 52 16.357744 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

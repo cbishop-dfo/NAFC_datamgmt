@@ -1,0 +1,480 @@
+$@MID@$: 245
+Date: Tue, 20 Nov 2018 02:32:20 +0000
+Reply to: 246
+Event: 091
+Station: SEGBTOFC38-01
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 3450
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: 20118049
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 023103.00 | 41 45.1026 N | 48 11.7152 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 246
+Date: Tue, 20 Nov 2018 02:38:21 +0000
+In reply to: 245
+Event: 091
+Station: SEGBTOFC38-01
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 3450
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: 20118049
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 023704.00 | 41 45.4541 N | 48 11.3369 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 247
+Date: Tue, 20 Nov 2018 05:30:12 +0000
+Reply to: 248
+Event: 092
+Station: SEGBTOFC38-02
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 3000
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: BelangerD
+Seq_Number: 20118050
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 052855.00 | 42 10.4188 N | 47 43.0422 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 248
+Date: Tue, 20 Nov 2018 05:36:49 +0000
+In reply to: 247
+Event: 092
+Station: SEGBTOFC38-02
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 3000
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: BelangerD
+Seq_Number: 20118050
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 053532.00 | 42 10.835 N | 47 42.5615 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 249
+Date: Tue, 20 Nov 2018 08:26:56 +0000
+Reply to: 250
+Event: 093
+Station: SEGBTOFC38-03
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 3700
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: BelangerD
+Seq_Number: 20118051
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 082539.00 | 42 37.4756 N | 47 12.1867 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 250
+Date: Tue, 20 Nov 2018 08:32:54 +0000
+In reply to: 249
+Event: 093
+Station: SEGBTOFC38-03
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 3700
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: BelangerD
+Seq_Number: 20118051
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 083137.00 | 42 37.8405 N | 47 11.7531 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 251
+Date: Tue, 20 Nov 2018 11:25:20 +0000
+Reply to: 252
+Event: 094
+Station: SEGBTOFC38-04
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 4000
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: BelangerD
+Seq_Number: 20118052
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 112403.00 | 43 5.599 N | 46 39.8372 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 252
+Date: Tue, 20 Nov 2018 11:31:35 +0000
+In reply to: 251
+Event: 094
+Station: SEGBTOFC38-04
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 4000
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: BelangerD
+Seq_Number: 20118052
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 112903.00 | 43 5.599 N | 46 39.8372 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 20/Nov/2018 14:38:24
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 253
+Date: Tue, 20 Nov 2018 14:26:21 +0000
+Reply to: 254
+Event: 095
+Station: SEGBTOFC38-05
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 4000
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+Seq_Number: 20118053
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 142403.00 | 43 34.940 N | 46 05.8200 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 20/Nov/2018 14:39:28
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 254
+Date: Tue, 20 Nov 2018 14:32:17 +0000
+In reply to: 253
+Event: 095
+Station: SEGBTOFC38-05
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 4000
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+Seq_Number: 20118053
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 142903.00 | 43 34.940 N | 46 05.8200 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 20/Nov/2018 14:39:42
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 255
+Date: Tue, 20 Nov 2018 17:32:47 +0000
+Reply to: 256
+Event: 096
+Station: SEGBTOFC38-06
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 4000
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: 20118054
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 173130.00 | 44 3.6368 N | 45 32.296 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 256
+Date: Tue, 20 Nov 2018 17:38:23 +0000
+In reply to: 255
+Event: 096
+Station: SEGBTOFC38-06
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 4000
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: 20118054
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 173705.00 | 44 4.0393 N | 45 31.8207 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 257
+Date: Tue, 20 Nov 2018 20:31:41 +0000
+Reply to: 258
+Event: 097
+Station: SEGBTOFC38-07
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 4790
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: 20118055
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 203023.00 | 44 31.9832 N | 44 58.9495 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 258
+Date: Tue, 20 Nov 2018 20:37:23 +0000
+In reply to: 257
+Event: 097
+Station: SEGBTOFC38-07
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 4790
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: 20118055
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 203605.00 | 44 32.5433 N | 44 58.2601 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 260
+Date: Tue, 20 Nov 2018 23:34:54 +0000
+Reply to: 261
+Event: 098
+Station: SEGBTOFC38-08
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 4620
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoodyR
+Seq_Number: 20118056
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 233336.00 | 45 2.4675 N | 44 23.0925 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 261
+Date: Tue, 20 Nov 2018 23:40:52 +0000
+In reply to: 260
+Event: 098
+Station: SEGBTOFC38-08
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 4620
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoodyR
+Seq_Number: 20118056
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-20 | 233934.00 | 45 3.0489 N | 44 22.8098 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

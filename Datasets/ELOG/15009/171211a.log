@@ -1,0 +1,968 @@
+$@MID@$: 265
+Date: Mon, 11 Dec 2017 05:23:44 +0000
+Reply to: 266
+Event: 235
+Station: FC-04
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0124
+Sample_ID: 430634
+End_Sample_ID: 430642
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 052251.00 | 47 0.002253 N | 52 19.32387 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 266
+Date: Mon, 11 Dec 2017 05:27:52 +0000
+Reply to: 267
+In reply to: 265
+Event: 235
+Station: FC-04
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0124
+Sample_ID: 430634
+End_Sample_ID: 430642
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 052659.00 | 47 0.000641 N | 52 19.323271 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 267
+Date: Mon, 11 Dec 2017 05:41:42 +0000
+In reply to: 266
+Event: 235
+Station: FC-04
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0124
+Sample_ID: 430634
+End_Sample_ID: 430642
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 054049.00 | 47 0.002182 N | 52 19.322126 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 268
+Date: Mon, 11 Dec 2017 05:51:03 +0000
+Reply to: 269
+Event: 236
+Station: FC-04
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0124
+Sample_ID: 430634
+End_Sample_ID: 
+Wire Out: 0110
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3992
+Time|Position: 2017-12-11 | 055010.00 | 47 0.002736 N | 52 19.322975 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 269
+Date: Mon, 11 Dec 2017 05:58:23 +0000
+Reply to: 270
+In reply to: 268
+Event: 236
+Station: FC-04
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0124
+Sample_ID: 430634
+End_Sample_ID: 
+Wire Out: 0110
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3992
+Time|Position: 2017-12-11 | 055730.00 | 47 0.003253 N | 52 19.325058 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 270
+Date: Mon, 11 Dec 2017 06:09:10 +0000
+In reply to: 269
+Event: 236
+Station: FC-04
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0124
+Sample_ID: 430634
+End_Sample_ID: 
+Wire Out: 0110
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3992
+Time|Position: 2017-12-11 | 060817.00 | 47 0.001026 N | 52 19.323051 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 271
+Date: Mon, 11 Dec 2017 08:23:56 +0000
+Reply to: 272
+Event: 237
+Station: FC-05
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0138
+Sample_ID: 430643
+End_Sample_ID: 430651
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 082303.00 | 47 0.016207 N | 52 1.965513 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 272
+Date: Mon, 11 Dec 2017 08:27:49 +0000
+Reply to: 273
+In reply to: 271
+Event: 237
+Station: FC-05
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0138
+Sample_ID: 430643
+End_Sample_ID: 430651
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 082656.00 | 47 0.015546 N | 52 1.966286 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 273
+Date: Mon, 11 Dec 2017 08:42:17 +0000
+In reply to: 272
+Event: 237
+Station: FC-05
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0138
+Sample_ID: 430643
+End_Sample_ID: 430651
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 084124.00 | 47 0.016092 N | 52 1.966604 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 274
+Date: Mon, 11 Dec 2017 08:52:10 +0000
+Reply to: 275
+Event: 238
+Station: FC-05
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 0138
+Sample_ID: 430651
+End_Sample_ID: 
+Wire Out: 0123
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T8993
+Time|Position: 2017-12-11 | 085117.00 | 47 0.016125 N | 52 1.966655 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 275
+Date: Mon, 11 Dec 2017 09:00:53 +0000
+Reply to: 276
+In reply to: 274
+Event: 238
+Station: FC-05
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0138
+Sample_ID: 430651
+End_Sample_ID: 
+Wire Out: 0123
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T8993
+Time|Position: 2017-12-11 | 090000.00 | 47 0.014125 N | 52 1.965714 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 276
+Date: Mon, 11 Dec 2017 09:14:55 +0000
+In reply to: 275
+Event: 238
+Station: FC-05
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0138
+Sample_ID: 430651
+End_Sample_ID: 
+Wire Out: 0123
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T8993
+Time|Position: 2017-12-11 | 091402.00 | 47 0.017271 N | 52 1.967392 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 277
+Date: Mon, 11 Dec 2017 12:21:16 +0000
+Reply to: 278
+Event: 239
+Station: FC-06
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0099
+Sample_ID: 430652
+End_Sample_ID: 430659
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 122023.00 | 46 59.990902 N | 51 29.075378 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 278
+Date: Mon, 11 Dec 2017 12:24:33 +0000
+Reply to: 279
+In reply to: 277
+Event: 239
+Station: FC-06
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0099
+Sample_ID: 430652
+End_Sample_ID: 430659
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 122340.00 | 46 59.991955 N | 51 29.074194 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 279
+Date: Mon, 11 Dec 2017 12:36:33 +0000
+In reply to: 278
+Event: 239
+Station: FC-06
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0099
+Sample_ID: 430652
+End_Sample_ID: 430659
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 123540.00 | 46 59.993114 N | 51 29.073122 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 280
+Date: Mon, 11 Dec 2017 12:49:28 +0000
+Reply to: 281
+Event: 240
+Station: FC-06
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 0099
+Sample_ID: 430659
+End_Sample_ID: 
+Wire Out: 0084
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3994
+Time|Position: 2017-12-11 | 124835.00 | 46 59.993538 N | 51 29.072828 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 281
+Date: Mon, 11 Dec 2017 12:56:14 +0000
+Reply to: 282
+In reply to: 280
+Event: 240
+Station: FC-06
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0099
+Sample_ID: 430659
+End_Sample_ID: 
+Wire Out: 0084
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3994
+Time|Position: 2017-12-11 | 125521.00 | 46 59.992283 N | 51 29.074537 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 282
+Date: Mon, 11 Dec 2017 13:05:36 +0000
+In reply to: 281
+Event: 240
+Station: FC-06
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0099
+Sample_ID: 430659
+End_Sample_ID: 
+Wire Out: 0084
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3994
+Time|Position: 2017-12-11 | 130443.00 | 46 59.992409 N | 51 29.074162 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 283
+Date: Mon, 11 Dec 2017 15:46:58 +0000
+Reply to: 284
+Event: 241
+Station: FC-07
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0105
+Sample_ID: 430660
+End_Sample_ID: 430667
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 154605.00 | 47 0.006797 N | 50 59.988655 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 284
+Date: Mon, 11 Dec 2017 15:47:07 +0000
+Reply to: 285
+In reply to: 283
+Event: 241
+Station: FC-07
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0105
+Sample_ID: 430660
+End_Sample_ID: 430667
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 154614.00 | 47 0.006995 N | 50 59.988197 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 285
+Date: Mon, 11 Dec 2017 16:07:43 +0000
+In reply to: 284
+Event: 241
+Station: FC-07
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0105
+Sample_ID: 430660
+End_Sample_ID: 430667
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 5M BOTTLE MISFIRED
+Time|Position: 2017-12-11 | 160650.00 | 47 0.006753 N | 50 59.988544 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 11/Dec/2017 16:55:32
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 286
+Date: Mon, 11 Dec 2017 16:08:46 +0000
+Reply to: 287
+Event: 242
+Station: FC-07
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0105
+Sample_ID: 430660
+End_Sample_ID: 
+Wire Out: 90
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T-3995
+Time|Position: 2017-12-11 | 160753.00 | 47 0.007601 N | 50 59.987411 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 287
+Date: Mon, 11 Dec 2017 16:11:24 +0000
+Reply to: 288
+In reply to: 286
+Event: 242
+Station: FC-07
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0105
+Sample_ID: 430660
+End_Sample_ID: 
+Wire Out: 90
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T-3995
+Time|Position: 2017-12-11 | 161031.00 | 47 0.007875 N | 50 59.987976 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 288
+Date: Mon, 11 Dec 2017 16:15:10 +0000
+In reply to: 287
+Event: 242
+Station: FC-07
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0105
+Sample_ID: 430660
+End_Sample_ID: 
+Wire Out: 90
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T-3995
+Time|Position: 2017-12-11 | 161417.00 | 47 0.008143 N | 50 59.9879 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 289
+Date: Mon, 11 Dec 2017 18:26:53 +0000
+Reply to: 290
+Event: 243
+Station: FC-08
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0175
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: DIP ONLY
+Time|Position: 2017-12-11 | 182600.00 | 46 59.993717 N | 50 40.019787 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 290
+Date: Mon, 11 Dec 2017 18:30:48 +0000
+Reply to: 291
+In reply to: 289
+Event: 243
+Station: FC-08
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0175
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 182955.00 | 46 59.993584 N | 50 40.018234 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 291
+Date: Mon, 11 Dec 2017 18:35:34 +0000
+In reply to: 290
+Event: 243
+Station: FC-08
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0175
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 183441.00 | 46 59.994293 N | 50 40.018883 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 292
+Date: Mon, 11 Dec 2017 22:04:25 +0000
+Reply to: 293
+Event: 244
+Station: FC-09
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0085
+Sample_ID: 430668
+End_Sample_ID: 430674
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 220332.00 | 47 0.022989 N | 49 59.968319 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 293
+Date: Mon, 11 Dec 2017 22:06:31 +0000
+Reply to: 294
+In reply to: 292
+Event: 244
+Station: FC-09
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0085
+Sample_ID: 430668
+End_Sample_ID: 430674
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 220538.00 | 47 0.021763 N | 49 59.968643 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 294
+Date: Mon, 11 Dec 2017 22:22:37 +0000
+In reply to: 293
+Event: 244
+Station: FC-09
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0085
+Sample_ID: 430668
+End_Sample_ID: 430674
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-12-11 | 222144.00 | 47 0.021761 N | 49 59.969158 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 295
+Date: Mon, 11 Dec 2017 22:25:11 +0000
+Reply to: 296
+Event: 245
+Station: FC-09
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0085
+Sample_ID: 430668
+End_Sample_ID: 
+Wire Out: 70
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T-3996
+Time|Position: 2017-12-11 | 222418.00 | 47 0.022689 N | 49 59.970528 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 296
+Date: Mon, 11 Dec 2017 22:28:16 +0000
+Reply to: 297
+In reply to: 295
+Event: 245
+Station: FC-09
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0085
+Sample_ID: 430668
+End_Sample_ID: 
+Wire Out: 70
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T-3996
+Time|Position: 2017-12-11 | 222723.00 | 47 0.021061 N | 49 59.970169 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 297
+Date: Mon, 11 Dec 2017 22:31:13 +0000
+In reply to: 296
+Event: 245
+Station: FC-09
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0085
+Sample_ID: 430668
+End_Sample_ID: 
+Wire Out: 70
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T-3996
+Time|Position: 2017-12-11 | 223020.00 | 47 0.020823 N | 49 59.971485 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

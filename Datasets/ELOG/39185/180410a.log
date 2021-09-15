@@ -1,0 +1,209 @@
+$@MID@$: 41
+Date: Tue, 10 Apr 2018 13:07:59 +0000
+Reply to: 42
+Event: 020
+Station: ARGTOSPB001
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0220
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+Set_Number: 012
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-10 | 130617.00 | 47 18.4048 N | 54 6.9105 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 10/Apr/2018 17:13:31
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 42
+Date: Tue, 10 Apr 2018 13:08:51 +0000
+In reply to: 41
+Event: 020
+Station: ARGTOSPB001
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0220
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+Set_Number: 012
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-10 | 130709.00 | 47 18.3725 N | 54 6.9676 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 10/Apr/2018 17:13:52
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 43
+Date: Tue, 10 Apr 2018 17:12:02 +0000
+Event: 021
+Station: ARGTOSPB001-02
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0220
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RobarA
+Set_Number: 013
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-10 | 171020.00 | 47 7.5303 N | 54 24.7794 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 44
+Date: Tue, 10 Apr 2018 20:37:33 +0000
+Reply to: 45
+Event: 022
+Station: ARGTOSPB001-03
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0188
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RobarA
+Set_Number: 014
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-10 | 203551.00 | 46 57.3614 N | 54 51.9148 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 45
+Date: Tue, 10 Apr 2018 20:37:45 +0000
+In reply to: 44
+Event: 022
+Station: ARGTOSPB001-03
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0188
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RobarA
+Set_Number: 014
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-10 | 203603.00 | 46 57.3517 N | 54 51.9458 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 46
+Date: Tue, 10 Apr 2018 22:31:10 +0000
+Reply to: 47
+Event: 023
+Station: ARGTOSPB001-04
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0126
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 015
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-10 | 222928.00 | 46 49.2859 N | 55 8.9634 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 47
+Date: Tue, 10 Apr 2018 22:31:35 +0000
+In reply to: 46
+Event: 023
+Station: ARGTOSPB001-04
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0126
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 015
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-10 | 222953.00 | 46 49.2769 N | 55 9.049 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

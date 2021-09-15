@@ -1,0 +1,180 @@
+$@MID@$: 35
+Date: Sun, 08 Apr 2018 11:59:41 +0000
+Reply to: 36
+Event: 017
+Station: ARGENTIA-01
+Instrument: RingNet
+Attached: 20um
+Action: Deployed
+Sounding: 18
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 18
+Depth: 
+Author: HigdonJ
+Set_Number: 999
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-08 | 115758.00 | 47 18.8485 N | 53 56.5726 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 36
+Date: Sun, 08 Apr 2018 12:01:44 +0000
+In reply to: 35
+Event: 017
+Station: ARGENTIA-01
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 18
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 18
+Depth: 
+Author: HigdonJ
+Set_Number: 999
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-08 | 120001.00 | 47 18.8506 N | 53 56.5668 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 37
+Date: Sun, 08 Apr 2018 14:38:03 +0000
+Reply to: 38
+Event: 018
+Station: ARGENTIA-02
+Instrument: RingNet
+Attached: 20um
+Action: Deployed
+Sounding: 18
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 18
+Depth: 
+Author: HigdonJ
+Set_Number: 999
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-08 | 143620.00 | 47 18.8555 N | 53 56.5605 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 08/Apr/2018 17:16:57
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 38
+Date: Sun, 08 Apr 2018 14:40:19 +0000
+In reply to: 37
+Event: 018
+Station: ARGENTIA-02
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 18
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 18
+Depth: 
+Author: HigdonJ
+Set_Number: 999
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-08 | 143836.00 | 47 18.8583 N | 53 56.5634 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 08/Apr/2018 17:17:20
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 39
+Date: Sun, 08 Apr 2018 17:08:32 +0000
+Reply to: 40
+Event: 019
+Station: ARGENTIA-03
+Instrument: RingNet
+Attached: 20um
+Action: Deployed
+Sounding: 18
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 18
+Depth: 
+Author: HigdonJ
+Set_Number: 999
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-08 | 170648.00 | 47 18.8474 N | 53 56.5712 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 40
+Date: Sun, 08 Apr 2018 17:10:46 +0000
+In reply to: 39
+Event: 019
+Station: ARGENTIA-03
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 18
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 18
+Depth: 
+Author: HigdonJ
+Set_Number: 999
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-08 | 170903.00 | 47 18.8441 N | 53 56.5731 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

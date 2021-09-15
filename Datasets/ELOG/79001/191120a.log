@@ -1,0 +1,60 @@
+$@MID@$: 59
+Date: Wed, 20 Nov 2019 22:52:01 +0000
+Reply to: 60
+Event: 022
+Station: SWSPB-05
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0370
+Sample_ID: 434653
+End_Sample_ID: 434665
+Wire Out: 
+Depth: 
+Author: DoyleG
+Seq_Number: 79001014
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: CTD and rosette lost at beginning of cast - no water or CTD only nets and XBT
+Time|Position: 2019-11-20 | 225200.366 | 45 51.21231 N | 57 0.97282 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 60
+Date: Wed, 20 Nov 2019 22:52:11 +0000
+In reply to: 59
+Event: 022
+Station: SWSPB-05
+Instrument: CTD
+Attached: pH
+Action: Aborted
+Sounding: 0370
+Sample_ID: 434653
+End_Sample_ID: 434665
+Wire Out: 
+Depth: 
+Author: DoyleG
+Seq_Number: 79001014
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: CTD and rosette lost at beginning of cast - no water or CTD only nets and XBT
+Time|Position: 2019-11-20 | 225211.0043 | 45 51.21262 N | 57 0.972 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

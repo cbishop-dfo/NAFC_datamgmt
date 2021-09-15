@@ -1,0 +1,789 @@
+$@MID@$: 7
+Date: Sun, 12 Nov 2017 00:06:13 +0000
+Reply to: 8
+In reply to: 6
+Event: 131
+Station: S27-01
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0173
+Sample_ID: 430410
+End_Sample_ID: 
+Wire Out: 0163
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3970
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 19/Nov/2017 22:26:41
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 8
+Date: Sun, 12 Nov 2017 00:13:09 +0000
+In reply to: 7
+Event: 131
+Station: S27-01
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0173
+Sample_ID: 430410
+End_Sample_ID: 
+Wire Out: 0163
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3970
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 19/Nov/2017 22:27:10
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 9
+Date: Sun, 12 Nov 2017 00:26:50 +0000
+Reply to: 10
+Event: 132
+Station: S27-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 0173
+Sample_ID: 430419
+End_Sample_ID: 
+Wire Out: 0163
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3970
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 19/Nov/2017 22:27:34
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 10
+Date: Sun, 12 Nov 2017 00:33:42 +0000
+Reply to: 11
+In reply to: 9
+Event: 132
+Station: S27-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0173
+Sample_ID: 430419
+End_Sample_ID: 
+Wire Out: 0163
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3970
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 13/Nov/2017 08:56:11
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 11
+Date: Sun, 12 Nov 2017 00:39:37 +0000
+In reply to: 10
+Event: 132
+Station: S27-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0173
+Sample_ID: 430419
+End_Sample_ID: 
+Wire Out: 0163
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3970
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 13/Nov/2017 08:56:39
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 12
+Date: Sun, 12 Nov 2017 03:07:36 +0000
+Reply to: 15
+Event: 133
+Station: S27TOSI01-01
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0185
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 12/Nov/2017 05:20:04
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 13
+Date: Sun, 12 Nov 2017 05:11:09 +0000
+Reply to: 14
+Event: 134
+Station: S27TOSI01-02
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0179
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 14
+Date: Sun, 12 Nov 2017 05:11:37 +0000
+In reply to: 13
+Event: 134
+Station: S27TOSI01-02
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0179
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 15
+Date: Sun, 12 Nov 2017 05:20:16 +0000
+In reply to: 12
+Event: 133
+Station: S27TOSI01-01
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0185
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 12/Nov/2017 05:20:04
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 16
+Date: Sun, 12 Nov 2017 07:03:02 +0000
+Reply to: 17
+Event: 135
+Station: S27TOSI01-03
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0195
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 17
+Date: Sun, 12 Nov 2017 07:03:49 +0000
+In reply to: 16
+Event: 135
+Station: S27TOSI01-03
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0195
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+
+$@MID@$: 18
+Date: Sun, 12 Nov 2017 09:04:57 +0000
+Reply to: 19
+Event: 137
+Station: S27TOSI01-04
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0257
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 19
+Date: Sun, 12 Nov 2017 09:05:47 +0000
+In reply to: 18
+Event: 137
+Station: S27TOSI01-04
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0257
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 20
+Date: Sun, 12 Nov 2017 11:03:34 +0000
+Reply to: 21
+Event: 138
+Station: S27TOSI01-05
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0190
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 21
+Date: Sun, 12 Nov 2017 11:04:30 +0000
+In reply to: 20
+Event: 138
+Station: S27TOSI01-05
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0190
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 22
+Date: Sun, 12 Nov 2017 13:01:23 +0000
+Reply to: 21
+Event: 139
+Station: S27TOSI01-06
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0310
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 23
+Date: Sun, 12 Nov 2017 13:02:34 +0000
+In reply to: 22
+Event: 139
+Station: S27TOSI01-06
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0310
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 24
+Date: Sun, 12 Nov 2017 15:09:22 +0000
+Reply to: 25
+Event: 140
+Station: S27TOSI01-07
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0341
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 25
+Date: Sun, 12 Nov 2017 15:10:32 +0000
+In reply to: 24
+Event: 140
+Station: S27TOSI01-07
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0341
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 26
+Date: Sun, 12 Nov 2017 17:10:22 +0000
+Reply to: 25
+Event: 141
+Station: S27TOSI01-08
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0351
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 27
+Date: Sun, 12 Nov 2017 17:15:32 +0000
+In reply to: 26
+Event: 141
+Station: S27TOSI01-08
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0351
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+
+$@MID@$: 28
+Date: Sun, 12 Nov 2017 19:08:22 +0000
+Reply to: 27
+Event: 142
+Station: S27TOSI01-09
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0419
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 29
+Date: Sun, 12 Nov 2017 19:13:32 +0000
+In reply to: 28
+Event: 142
+Station: S27TOSI01-09
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0419
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+
+$@MID@$: 30
+Date: Sun, 12 Nov 2017 21:34:22 +0000
+Reply to: 29
+Event: 143
+Station: S27TOSI01-10
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0369
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 31
+Date: Sun, 12 Nov 2017 21:39:32 +0000
+In reply to: 30
+Event: 143
+Station: S27TOSI01-10
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0369
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+
+$@MID@$: 32
+Date: Sun, 12 Nov 2017 23:13:22 +0000
+Reply to: 31
+Event: 144
+Station: S27TOSI01-11
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0379
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CyrF
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+
+$@MID@$: 33
+Date: Sun, 12 Nov 2017 23:18:53 +0000
+In reply to: 32
+Event: 144
+Station: S27TOSI01-11
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0379
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: BaileyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 12/Nov/2017 21:20:55
+Attachment: 
+Encoding: plain
+========================================

@@ -1,0 +1,751 @@
+$@MID@$: 496
+Date: Wed, 04 Dec 2019 00:48:18 +0000
+Reply to: 497
+Event: 176
+Station: BB-13
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 1862
+Sample_ID: 435439
+End_Sample_ID: 435461
+Wire Out: 
+Depth: 
+Author: DoodyR
+Seq_Number: 79001102
+IMEI_No: 
+WMO_No: 
+S/N: S1257
+Name: 
+Comment: 
+Time|Position: 2019-12-04 | 004817.595 | 49 59.98549 N | 49 0.01273 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 497
+Date: Wed, 04 Dec 2019 01:16:11 +0000
+Reply to: 498
+In reply to: 496
+Event: 176
+Station: BB-13
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 1862
+Sample_ID: 435439
+End_Sample_ID: 435461
+Wire Out: 
+Depth: 
+Author: DoodyR
+Seq_Number: 79001102
+IMEI_No: 
+WMO_No: 
+S/N: S1257
+Name: 
+Comment: 
+Time|Position: 2019-12-04 | 011610.0018 | 49 59.98495 N | 49 0.01433 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 498
+Date: Wed, 04 Dec 2019 02:20:09 +0000
+In reply to: 497
+Event: 176
+Station: BB-13
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 1862
+Sample_ID: 435439
+End_Sample_ID: 435461
+Wire Out: 
+Depth: 
+Author: DoodyR
+Seq_Number: 79001102
+IMEI_No: 
+WMO_No: 
+S/N: S1257
+Name: 
+Comment: 
+Time|Position: 2019-12-04 | 022008.0014 | 49 59.98532 N | 49 0.01369 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 499
+Date: Wed, 04 Dec 2019 02:29:08 +0000
+Reply to: 500
+Event: 177
+Station: BB-13
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 1860
+Sample_ID: 435461
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: BelangerD
+Seq_Number: 79001102
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4374
+Time|Position: 2019-12-04 | 022907.610 | 49 59.98519 N | 49 0.01377 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 500
+Date: Wed, 04 Dec 2019 02:50:29 +0000
+Reply to: 501
+In reply to: 499
+Event: 177
+Station: BB-13
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 1860
+Sample_ID: 435461
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: BelangerD
+Seq_Number: 79001102
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4374
+Time|Position: 2019-12-04 | 025028.0010 | 49 59.98623 N | 49 0.01332 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 501
+Date: Wed, 04 Dec 2019 03:12:39 +0000
+In reply to: 500
+Event: 177
+Station: BB-13
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 1860
+Sample_ID: 435461
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: BelangerD
+Seq_Number: 79001102
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4374
+Time|Position: 2019-12-04 | 031238.0043 | 49 59.98663 N | 49 0.01472 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 502
+Date: Wed, 04 Dec 2019 06:05:33 +0000
+Reply to: 503
+Event: 178
+Station: BB-14
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 2470
+Sample_ID: 435462
+End_Sample_ID: 435484
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 79001103
+IMEI_No: 
+WMO_No: 
+S/N: S1257
+Name: 
+Comment: 
+Time|Position: 2019-12-04 | 060532.0006 | 50 10.59886 N | 48 28.25104 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 503
+Date: Wed, 04 Dec 2019 06:37:43 +0000
+Reply to: 504
+In reply to: 502
+Event: 178
+Station: BB-14
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 2470
+Sample_ID: 435462
+End_Sample_ID: 435484
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 79001103
+IMEI_No: 
+WMO_No: 
+S/N: S1257
+Name: 
+Comment: 
+Time|Position: 2019-12-04 | 063742.0005 | 50 10.59829 N | 48 28.24713 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 504
+Date: Wed, 04 Dec 2019 07:38:26 +0000
+In reply to: 503
+Event: 178
+Station: BB-14
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 2470
+Sample_ID: 435462
+End_Sample_ID: 435484
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 79001103
+IMEI_No: 
+WMO_No: 
+S/N: S1257
+Name: 
+Comment: 
+Time|Position: 2019-12-04 | 073824.657 | 50 10.59887 N | 48 28.24867 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 505
+Date: Wed, 04 Dec 2019 07:43:25 +0000
+Reply to: 506
+Event: 179
+Station: BB-14
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 2470
+Sample_ID: 435484
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: RockwoodH
+Seq_Number: 79001103
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4375
+Time|Position: 2019-12-04 | 074323.658 | 50 10.59951 N | 48 28.24906 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 506
+Date: Wed, 04 Dec 2019 08:18:37 +0000
+Reply to: 507, 508
+In reply to: 505
+Event: 179
+Station: BB-14
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 2470
+Sample_ID: 435484
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: RockwoodH
+Seq_Number: 79001103
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4375
+Time|Position: 2019-12-04 | 081837.658 | 50 10.59951 N | 48 28.24906 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 507
+Date: Wed, 04 Dec 2019 08:38:56 +0000
+In reply to: 506
+Event: 179
+Station: BB-14
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 2470
+Sample_ID: 435484
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: RockwoodH
+Seq_Number: 79001103
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4375
+Time|Position: 2019-12-04 | 083856.658 | 50 10.59951 N | 48 28.24906 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 509
+Date: Wed, 04 Dec 2019 11:45:18 +0000
+Event: 180
+Station: BB-15
+Instrument: Glider
+Attached: 
+Action: Deployed
+Sounding: 2674
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: 1514
+Name: SB Beluga
+Comment: Sailbuoy
+Time|Position: 2019-12-04 | 114517.0035 | 50 21.75968 N | 47 57.43963 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 510
+Date: Wed, 04 Dec 2019 12:23:42 +0000
+Event: 181
+Station: BB-15
+Instrument: Glider
+Attached: 
+Action: Deployed
+Sounding: 2673
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: 354
+Name: MUN Slocum Glider 354
+Comment: 
+Time|Position: 2019-12-04 | 122341.0046 | 50 21.57391 N | 47 57.52626 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 511
+Date: Wed, 04 Dec 2019 12:44:29 +0000
+Event: 182
+Station: BB-15
+Instrument: Glider
+Attached: 
+Action: Deployed
+Sounding: 2676
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: 473
+Name: MUN Slocum Glider
+Comment: leak detected @ 13:15, recovery to be done after station
+Time|Position: 2019-12-04 | 124428.0030 | 50 21.45861 N | 47 57.59015 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 04/Dec/2019 13:38:12
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 512
+Date: Wed, 04 Dec 2019 13:36:18 +0000
+Reply to: 513
+Event: 183
+Station: BB-15
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 2684
+Sample_ID: 435485
+End_Sample_ID: 435507
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: 79001104
+IMEI_No: 
+WMO_No: 
+S/N: S1257
+Name: 
+Comment: 
+Time|Position: 2019-12-04 | 133617.0013 | 50 20.16283 N | 47 56.62314 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 04/Dec/2019 13:37:25
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 513
+Date: Wed, 04 Dec 2019 14:03:10 +0000
+Reply to: 514
+In reply to: 512
+Event: 183
+Station: BB-15
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 2684
+Sample_ID: 435485
+End_Sample_ID: 435507
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: 79001104
+IMEI_No: 
+WMO_No: 
+S/N: S1257
+Name: 
+Comment: 
+Time|Position: 2019-12-04 | 140308.718 | 50 20.16539 N | 47 56.62896 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 04/Dec/2019 13:37:25
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 514
+Date: Wed, 04 Dec 2019 15:00:12 +0000
+In reply to: 513
+Event: 183
+Station: BB-15
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 2684
+Sample_ID: 435485
+End_Sample_ID: 435507
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: 79001104
+IMEI_No: 
+WMO_No: 
+S/N: S1257
+Name: 
+Comment: 
+Time|Position: 2019-12-04 | 150010.727 | 50 20.16568 N | 47 56.62844 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 04/Dec/2019 13:37:25
+Attachment: 
+Encoding: plain
+
+========================================
+$@MID@$: 515
+Date: Wed, 04 Dec 2019 16:00:00 +0000
+Event: 184
+Station: BB-15
+Instrument: Glider
+Attached: 
+Action: Recovered
+Sounding: 2673
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: 354
+Name: MUN Slocum Glider 473
+Comment: 
+Time|Position: 2019-12-04 | 160000.0046 | 50 22.60000 N | 47 56.12600 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+
+$@MID@$: 516
+Date: Wed, 04 Dec 2019 16:50:53 +0000
+Reply to: 517, 541
+Event: 185
+Station: BB-15
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 2686
+Sample_ID: 435507
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: BelangerD
+Seq_Number: 79001104
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4376
+Time|Position: 2019-12-04 | 165051.745 | 50 19.86017 N | 47 56.66143 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 517
+Date: Wed, 04 Dec 2019 17:14:16 +0000
+Reply to: 518
+In reply to: 516
+Event: 185
+Station: BB-15
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 2686
+Sample_ID: 435507
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: BelangerD
+Seq_Number: 79001104
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4376
+Time|Position: 2019-12-04 | 171414.749 | 50 19.84894 N | 47 56.60121 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 518
+Date: Wed, 04 Dec 2019 17:39:06 +0000
+In reply to: 517
+Event: 185
+Station: BB-15
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 2686
+Sample_ID: 435507
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: BelangerD
+Seq_Number: 79001104
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4376
+Time|Position: 2019-12-04 | 173905.0008 | 50 19.85232 N | 47 56.58307 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 519
+Date: Wed, 04 Dec 2019 19:33:20 +0000
+Event: 186
+Station: BB-15
+Instrument: Drifter
+Attached: 
+Action: Deployed
+Sounding: 4598
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+Seq_Number: 
+IMEI_No: 300234065714120
+WMO_No: 
+S/N: 65714120
+Name: 
+Comment: 
+Time|Position: 2019-12-04 | 193318.772 | 50 11.46038 N | 47 51.2905 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 520
+Date: Wed, 04 Dec 2019 19:34:08 +0000
+Event: 187
+Station: BB-15
+Instrument: Drifter
+Attached: 
+Action: Deployed
+Sounding: 4598
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+Seq_Number: 
+IMEI_No: 300234065714070
+WMO_No: 
+S/N: 65714070
+Name: 
+Comment: 
+Time|Position: 2019-12-04 | 193406.772 | 50 11.41451 N | 47 51.27397 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 521
+Date: Wed, 04 Dec 2019 23:58:25 +0000
+Reply to: 522
+Event: 187
+Station: BB15TOFC17-01
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 4051
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+Seq_Number: 79001105
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2019-12-04 | 235824.0039 | 49 51.76201 N | 47 43.74412 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

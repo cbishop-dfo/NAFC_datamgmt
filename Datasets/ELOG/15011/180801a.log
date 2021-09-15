@@ -1,0 +1,480 @@
+$@MID@$: 799
+Date: Wed, 01 Aug 2018 02:00:53 +0000
+Reply to: 800
+Event: 307
+Station: C6TOS2710-01
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0401
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+STN_ID: 15011151
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 020007.0006 | 52 18.8978 N | 53 32.5319 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 800
+Date: Wed, 01 Aug 2018 02:02:07 +0000
+In reply to: 799
+Event: 307
+Station: C6TOS2710-01
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0401
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+STN_ID: 15011151
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 020121.0013 | 52 18.69978 N | 53 32.42608 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 801
+Date: Wed, 01 Aug 2018 04:57:32 +0000
+Reply to: 802
+Event: 308
+Station: C6TOS2710-02
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0365
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+STN_ID: 15011152
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 045646.0031 | 51 52.06584 N | 53 16.19754 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 802
+Date: Wed, 01 Aug 2018 04:58:44 +0000
+In reply to: 801
+Event: 308
+Station: C6TOS2710-02
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0365
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RobarA
+STN_ID: 15011152
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 045758.0038 | 51 51.88135 N | 53 16.08559 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 803
+Date: Wed, 01 Aug 2018 07:51:34 +0000
+Reply to: 804
+Event: 309
+Station: C6TOS2710-03
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0271
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+STN_ID: 15011153
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 075047.0042 | 51 25.89899 N | 53 0.0673 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 804
+Date: Wed, 01 Aug 2018 07:52:25 +0000
+In reply to: 803
+Event: 309
+Station: C6TOS2710-03
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0271
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+STN_ID: 15011153
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 075139.0046 | 51 25.77314 N | 52 59.98882 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 805
+Date: Wed, 01 Aug 2018 10:54:16 +0000
+Reply to: 806
+Event: 310
+Station: C6TOS2710-04
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0369
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+STN_ID: 15011154
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 105439.0046 | 50 59.52314 N | 52 39.45882 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 806
+Date: Wed, 01 Aug 2018 10:55:22 +0000
+In reply to: 805
+Event: 310
+Station: C6TOS2710-04
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0369
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+STN_ID: 15011154
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 105639.0046 | 50 59.52314 N | 52 39.45882 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 807
+Date: Wed, 01 Aug 2018 13:51:51 +0000
+Reply to: 808
+Event: 311
+Station: C6TOS2710-05
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0222
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+STN_ID: 15011155
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 135105.0009 | 50 33.64518 N | 52 17.1265 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 808
+Date: Wed, 01 Aug 2018 13:52:28 +0000
+In reply to: 807
+Event: 311
+Station: C6TOS2710-05
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0222
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+STN_ID: 15011155
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 135142.0013 | 50 33.55089 N | 52 17.04135 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 809
+Date: Wed, 01 Aug 2018 16:53:55 +0000
+Reply to: 810
+Event: 312
+Station: C6TOS2710-06
+Instrument: XBT
+Attached: T-07
+Action: Deployed
+Sounding: 0281
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: BelangerD
+STN_ID: 15011156
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 165308.0031 | 50 6.89571 N | 51 55.48588 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 810
+Date: Wed, 01 Aug 2018 16:55:08 +0000
+In reply to: 809
+Event: 312
+Station: C6TOS2710-06
+Instrument: XBT
+Attached: T-07
+Action: Bottom
+Sounding: 0281
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: BelangerD
+STN_ID: 15011156
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 165422.0038 | 50 6.70888 N | 51 55.36684 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 811
+Date: Wed, 01 Aug 2018 19:57:00 +0000
+Reply to: 812
+Event: 313
+Station: C6TOS2710-07
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0224
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011157
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 195613.0013 | 49 39.84008 N | 51 36.8643 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 812
+Date: Wed, 01 Aug 2018 19:57:54 +0000
+In reply to: 811
+Event: 313
+Station: C6TOS2710-07
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0224
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011157
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 195707.0019 | 49 39.71004 N | 51 36.76922 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 813
+Date: Wed, 01 Aug 2018 23:01:32 +0000
+Reply to: 814
+Event: 314
+Station: C6TOS2710-08
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0333
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+STN_ID: 15011158
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 230045.0012 | 49 12.25341 N | 51 17.9729 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 814
+Date: Wed, 01 Aug 2018 23:02:44 +0000
+In reply to: 813
+Event: 314
+Station: C6TOS2710-08
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0333
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+STN_ID: 15011158
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-01 | 230157.0019 | 49 12.07666 N | 51 17.85414 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

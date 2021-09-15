@@ -1,0 +1,234 @@
+$@MID@$: 491
+Date: Tue, 18 Jul 2017 01:39:05 +0000
+Reply to: 492
+Event: 186
+Station: WB01TOSA-02
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0062
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-18 | 013802.00 | 50 51.1709 N | 55 50.5178 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 492
+Date: Tue, 18 Jul 2017 01:39:34 +0000
+In reply to: 491
+Event: 186
+Station: WB01TOSA-02
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0062
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-18 | 013831.00 | 50 51.2449 N | 55 50.461 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 493
+Date: Tue, 18 Jul 2017 03:31:24 +0000
+Reply to: 494
+Event: 187
+Station: WB01TOSA-03
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0113
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-18 | 033021.00 | 51 1.2737 N | 55 42.6407 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 494
+Date: Tue, 18 Jul 2017 03:31:53 +0000
+In reply to: 493
+Event: 187
+Station: WB01TOSA-03
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0113
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-18 | 033050.00 | 51 1.3153 N | 55 42.6071 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 495
+Date: Tue, 18 Jul 2017 05:39:27 +0000
+Reply to: 496
+Event: 188
+Station: WB01TOSA-04
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0094
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: couldnt create event 04 bc list is full need to increase max N and recompile GD 
+Time|Position: 2017-07-18 | 053823.00 | 51 12.3424 N | 55 35.4265 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 19/Jul/2017 15:55:22
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 496
+Date: Tue, 18 Jul 2017 05:39:43 +0000
+Reply to: 497
+In reply to: 495
+Event: 188
+Station: WB01TOSA-04
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0094
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-18 | 053839.00 | 51 12.3639 N | 55 35.4101 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 19/Jul/2017 15:53:50
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 497
+Date: Tue, 18 Jul 2017 07:29:19 +0000
+Reply to: 498
+In reply to: 496
+Event: 188
+Station: WB01TOSA-05
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0094
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-18 | 072815.00 | 51 16.5537 N | 55 33.5502 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 19/Jul/2017 15:55:46
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 498
+Date: Tue, 18 Jul 2017 07:29:27 +0000
+In reply to: 497
+Event: 188
+Station: WB01TOSA-05
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0094
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-18 | 072824.00 | 51 16.5549 N | 55 33.5521 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 19/Jul/2017 15:55:58
+Attachment: 
+Encoding: plain
+========================================
+

@@ -1,0 +1,512 @@
+$@MID@$: 600
+Date: Thu, 29 Nov 2018 00:03:59 +0000
+In reply to: 599
+Event: 218
+Station: BB-12
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 1355
+Sample_ID: 433081
+End_Sample_ID: 433090
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 20118111
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-29 | 000250.00 | 49 50.9953 N | 49 30.017 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 601
+Date: Thu, 29 Nov 2018 02:22:11 +0000
+Reply to: 602
+Event: 219
+Station: BB-13
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 1857
+Sample_ID: 433102
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: RastinS
+Seq_Number: 20118112
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4213
+Time|Position: 2018-11-29 | 022102.00 | 50 0.4556 N | 49 0.0778 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 602
+Date: Thu, 29 Nov 2018 02:56:55 +0000
+Reply to: 603
+In reply to: 601
+Event: 219
+Station: BB-13
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 1857
+Sample_ID: 433102
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: RastinS
+Seq_Number: 20118112
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4213
+Time|Position: 2018-11-29 | 025546.00 | 50 0.0762 N | 49 0.3061 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 603
+Date: Thu, 29 Nov 2018 03:32:10 +0000
+In reply to: 602
+Event: 219
+Station: BB-13
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 1857
+Sample_ID: 433102
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: RastinS
+Seq_Number: 20118112
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4213
+Time|Position: 2018-11-29 | 033101.00 | 49 59.8868 N | 49 0.1957 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 604
+Date: Thu, 29 Nov 2018 03:41:15 +0000
+Reply to: 605
+Event: 220
+Station: BB-13
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 1857
+Sample_ID: 433091
+End_Sample_ID: 433102
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 20118112
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-29 | 034006.00 | 49 59.8904 N | 49 0.1025 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 605
+Date: Thu, 29 Nov 2018 04:43:34 +0000
+Reply to: 606
+In reply to: 604
+Event: 220
+Station: BB-13
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 1857
+Sample_ID: 433091
+End_Sample_ID: 433102
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 20118112
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-29 | 044225.00 | 49 59.9385 N | 48 59.9798 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 606
+Date: Thu, 29 Nov 2018 05:38:10 +0000
+In reply to: 605
+Event: 220
+Station: BB-13
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 1857
+Sample_ID: 433091
+End_Sample_ID: 433102
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 20118112
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-29 | 053701.00 | 49 59.8018 N | 49 0.024 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 607
+Date: Thu, 29 Nov 2018 08:21:40 +0000
+Reply to: 610
+Event: 221
+Station: BB-14
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 2300
+Sample_ID: 433114
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: BelangerD
+Seq_Number: 20118113
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4214
+Time|Position: 2018-11-29 | 082031.00 | 50 10.7381 N | 48 27.9226 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 608
+Date: Thu, 29 Nov 2018 08:39:26 +0000
+Reply to: 609
+Event: 222
+Station: BB-14
+Instrument: RingNet
+Attached: 20um
+Action: Deployed
+Sounding: 2300
+Sample_ID: 433114
+End_Sample_ID: 
+Wire Out: 0030
+Depth: 
+Author: BelangerD
+Seq_Number: 20118113
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: good net - went strait down
+Time|Position: 2018-11-29 | 083817.00 | 50 10.5354 N | 48 28.1963 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 609
+Date: Thu, 29 Nov 2018 08:42:31 +0000
+In reply to: 608
+Event: 222
+Station: BB-14
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 2300
+Sample_ID: 433114
+End_Sample_ID: 
+Wire Out: 0030
+Depth: 
+Author: BelangerD
+Seq_Number: 20118113
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: good net - went strait down
+Time|Position: 2018-11-29 | 084122.00 | 50 10.5123 N | 48 28.2246 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 610
+Date: Thu, 29 Nov 2018 09:00:41 +0000
+Reply to: 611
+In reply to: 607
+Event: 221
+Station: BB-14
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 2300
+Sample_ID: 433114
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: BelangerD
+Seq_Number: 20118113
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4214
+Time|Position: 2018-11-29 | 085932.00 | 50 10.4558 N | 48 28.2831 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 611
+Date: Thu, 29 Nov 2018 09:35:29 +0000
+In reply to: 610
+Event: 221
+Station: BB-14
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 2300
+Sample_ID: 433114
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: BelangerD
+Seq_Number: 20118113
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4214 TORE ONE 202 NET
+Time|Position: 2018-11-29 | 093420.00 | 50 10.3089 N | 48 28.7255 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 29/Nov/2018 10:40:33
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 612
+Date: Thu, 29 Nov 2018 09:59:23 +0000
+Reply to: 613
+Event: 223
+Station: BB-14
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 2300
+Sample_ID: 433103
+End_Sample_ID: 433114
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 20118113
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-29 | 095814.00 | 50 10.6293 N | 48 28.5018 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 613
+Date: Thu, 29 Nov 2018 10:49:14 +0000
+Reply to: 614
+In reply to: 612
+Event: 223
+Station: BB-14
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 2300
+Sample_ID: 433103
+End_Sample_ID: 433114
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 20118113
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-29 | 104805.00 | 50 10.4621 N | 48 28.2637 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 614
+Date: Thu, 29 Nov 2018 11:54:19 +0000
+In reply to: 613
+Event: 223
+Station: BB-14
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 2300
+Sample_ID: 433103
+End_Sample_ID: 433114
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 20118113
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-29 | 115310.00 | 50 10.3976 N | 48 28.6457 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 615
+Date: Thu, 29 Nov 2018 13:21:35 +0000
+Event: 224
+Station: BB-14
+Instrument: ARGO
+Attached: 
+Action: Deployed
+Sounding: 2300
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: AD2700-17FR004, AI2600-17FR022, AI2600-17FR021, AI2600-17FR020, AI2600-17FR019
+Name: 
+Comment: 
+Time|Position: 2018-11-29 | 132026.00 | 50 10.4017 N | 48 32.8354 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 29/Nov/2018 14:31:05
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 616
+Date: Thu, 29 Nov 2018 13:23:21 +0000
+Event: 225
+Station: BB-14
+Instrument: Drifter
+Attached: 
+Action: Deployed
+Sounding: 2300
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: J16YK2
+Name: 
+Comment: 
+Time|Position: 2018-11-29 | 132212.00 | 50 10.4727 N | 48 32.6639 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

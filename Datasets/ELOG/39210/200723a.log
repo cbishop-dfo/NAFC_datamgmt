@@ -1,0 +1,934 @@
+$@MID@$: 300
+Date: Thu, 23 Jul 2020 01:01:42 +0000
+Reply to: 301
+Event: 106
+Station: BB01TOSI01-06
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0337
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: tel210_2020_065
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 010051.00 | 50 22.4434 N | 53 51.197 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 23/Jul/2020 01:02:57
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 301
+Date: Thu, 23 Jul 2020 01:02:43 +0000
+In reply to: 300
+Event: 106
+Station: BB01TOSI01-06
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0337
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: tel210_2020_065
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 010153.00 | 50 22.5908 N | 53 51.2937 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 302
+Date: Thu, 23 Jul 2020 02:56:42 +0000
+Reply to: 303
+Event: 107
+Station: BB01TOSI01-07
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0270
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: DoodyR
+Seq_Number: tel210_2020_066
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 025552.00 | 50 39.412 N | 54 1.6303 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 303
+Date: Thu, 23 Jul 2020 02:58:52 +0000
+In reply to: 302
+Event: 107
+Station: BB01TOSI01-07
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0270
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: DoodyR
+Seq_Number: tel210_2020_066
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 025802.00 | 50 39.727 N | 54 1.8127 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 304
+Date: Thu, 23 Jul 2020 04:51:58 +0000
+Reply to: 305
+Event: 108
+Station: BB01TOSI01-08
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0222
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+Seq_Number: tel210_2020_067
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 045108.00 | 50 56.2228 N | 54 11.7679 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 305
+Date: Thu, 23 Jul 2020 04:52:35 +0000
+In reply to: 304
+Event: 108
+Station: BB01TOSI01-08
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0222
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+Seq_Number: tel210_2020_067
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 045145.00 | 50 56.3115 N | 54 11.8192 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 306
+Date: Thu, 23 Jul 2020 06:43:23 +0000
+Reply to: 307
+Event: 109
+Station: BB01TOSI01-09
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0266
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: DoodyR
+Seq_Number: tel210_2020_068
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 064232.00 | 51 12.1875 N | 54 21.6692 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 307
+Date: Thu, 23 Jul 2020 06:44:59 +0000
+In reply to: 306
+Event: 109
+Station: BB01TOSI01-09
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0266
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: DoodyR
+Seq_Number: tel210_2020_068
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 064408.00 | 51 12.4209 N | 54 21.8135 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 308
+Date: Thu, 23 Jul 2020 08:52:48 +0000
+Reply to: 309
+Event: 110
+Station: BB01TOSI01-10
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0184
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+Seq_Number: tel210_2020_069
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 085158.00 | 51 30.5886 N | 54 32.5745 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 309
+Date: Thu, 23 Jul 2020 08:53:19 +0000
+In reply to: 308
+Event: 110
+Station: BB01TOSI01-10
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0184
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+Seq_Number: tel210_2020_069
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 085229.00 | 51 30.6552 N | 54 32.6173 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 23/Jul/2020 13:55:27
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 310
+Date: Thu, 23 Jul 2020 10:36:38 +0000
+Reply to: 311
+Event: 111
+Station: C5-04
+Instrument: Recover Mooring
+Attached: 
+Action: Attempt Comms
+Sounding: 0195
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: SnookS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 103547.00 | 51 35.7294 N | 54 36.269 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 311
+Date: Thu, 23 Jul 2020 12:04:28 +0000
+Reply to: 312
+In reply to: 310
+Event: 111
+Station: C5-04
+Instrument: Recover Mooring
+Attached: 
+Action: Release
+Sounding: 0195
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: SnookS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: USING DECK BOX 46040 TAlking with mooring
+Time|Position: 2020-07-23 | 120337.00 | 51 35.4165 N | 54 35.661 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 312
+Date: Thu, 23 Jul 2020 12:06:58 +0000
+Reply to: 313
+In reply to: 311
+Event: 111
+Station: C5-04
+Instrument: Recover Mooring
+Attached: 
+Action: Release
+Sounding: 0195
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: SnookS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: getting the bottom drop drag anchor ready for deployment
+Time|Position: 2020-07-23 | 120608.00 | 51 35.3913 N | 54 35.6391 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 313
+Date: Thu, 23 Jul 2020 16:34:09 +0000
+Reply to: 314
+In reply to: 312
+Event: 111
+Station: C5-04
+Instrument: Recover Mooring
+Attached: 
+Action: Release
+Sounding: 0195
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: SnookS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: getting the bottom drop drag anchor ready for deployment
+Time|Position: 2020-07-23 | 163319.00 | 51 35.7767 N | 54 35.8174 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 314
+Date: Thu, 23 Jul 2020 16:35:14 +0000
+Reply to: 315
+In reply to: 313
+Event: 111
+Station: C5-04
+Instrument: Recover Mooring
+Attached: 
+Action: Release
+Sounding: 0195
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: SnookS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: three passes made around mooring. attempting to recover.
+Time|Position: 2020-07-23 | 163424.00 | 51 35.7872 N | 54 35.8577 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 315
+Date: Thu, 23 Jul 2020 17:15:54 +0000
+In reply to: 314
+Event: 111
+Station: C5-04
+Instrument: Recover Mooring
+Attached: 
+Action: Aborted
+Sounding: 0195
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: SnookS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: pulled cables and grabs onboard with no success :(
+Time|Position: 2020-07-23 | 171503.00 | 51 35.0273 N | 54 34.9149 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 316
+Date: Thu, 23 Jul 2020 17:27:31 +0000
+Reply to: 317
+Event: 112
+Station: BB01TOSI01-11
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0187
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: tel210_2020_070
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 172641.00 | 51 35.1902 N | 54 33.5991 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 317
+Date: Thu, 23 Jul 2020 17:28:09 +0000
+In reply to: 316
+Event: 112
+Station: BB01TOSI01-11
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0187
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: tel210_2020_070
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 172719.00 | 51 35.2588 N | 54 33.4348 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 318
+Date: Thu, 23 Jul 2020 19:32:14 +0000
+Reply to: 319
+Event: 113
+Station: BB01TOSI01-12
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0320
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: tel210_2020_070
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 193124.00 | 51 49.6994 N | 54 1.5482 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 319
+Date: Thu, 23 Jul 2020 19:33:03 +0000
+In reply to: 318
+Event: 113
+Station: BB01TOSI01-12
+Instrument: XBT
+Attached: T-06
+Action: Aborted
+Sounding: 0320
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: tel210_2020_070
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: bad data
+Time|Position: 2020-07-23 | 193213.00 | 51 49.7975 N | 54 1.3374 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 23/Jul/2020 19:42:07
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 320
+Date: Thu, 23 Jul 2020 19:36:00 +0000
+Reply to: 321
+Event: 114
+Station: BB01TOSI01-12
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0330
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: tel210_2020_070
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 193510.00 | 51 50.1491 N | 54 0.5703 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 321
+Date: Thu, 23 Jul 2020 19:36:57 +0000
+In reply to: 320
+Event: 114
+Station: BB01TOSI01-12
+Instrument: XBT
+Attached: T-06
+Action: Aborted
+Sounding: 0330
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: tel210_2020_070
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: bad data
+Time|Position: 2020-07-23 | 193607.00 | 51 50.2612 N | 54 0.323 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 23/Jul/2020 19:41:53
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 322
+Date: Thu, 23 Jul 2020 19:39:45 +0000
+Reply to: 323
+Event: 115
+Station: BB01TOSI01-12
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0330
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: tel210_2020_070
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 193855.00 | 51 50.5901 N | 53 59.5921 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 323
+Date: Thu, 23 Jul 2020 19:40:28 +0000
+In reply to: 322
+Event: 115
+Station: BB01TOSI01-12
+Instrument: XBT
+Attached: T-06
+Action: Aborted
+Sounding: 0330
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: tel210_2020_070
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: bad data
+Time|Position: 2020-07-23 | 193938.00 | 51 50.676 N | 53 59.4075 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 23/Jul/2020 19:41:44
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 324
+Date: Thu, 23 Jul 2020 19:44:12 +0000
+Reply to: 325
+Event: 116
+Station: BB01TOSI01-12
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0333
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: tel210_2020_70
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 194322.00 | 51 51.044 N | 53 58.5644 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 325
+Date: Thu, 23 Jul 2020 19:44:38 +0000
+In reply to: 324
+Event: 116
+Station: BB01TOSI01-12
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0333
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Seq_Number: tel210_2020_70
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 194348.00 | 51 51.0849 N | 53 58.4706 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 326
+Date: Thu, 23 Jul 2020 21:33:42 +0000
+Reply to: 327
+Event: 117
+Station: BB01TOSI01-13
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0374
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: tel210_2020_071
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: BB01TOSI01-13
+Time|Position: 2020-07-23 | 213252.00 | 52 0.0479 N | 53 28.3874 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 327
+Date: Thu, 23 Jul 2020 21:34:33 +0000
+In reply to: 326
+Event: 117
+Station: BB01TOSI01-13
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0374
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: tel210_2020_071
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: BB01TOSI01-13
+Time|Position: 2020-07-23 | 213343.00 | 52 0.111 N | 53 28.1821 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 328
+Date: Thu, 23 Jul 2020 23:31:36 +0000
+Reply to: 329
+Event: 118
+Station: BB01TOSI01-14
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0234
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: GrandyM
+Seq_Number: tel210_2020_072
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 233046.00 | 52 15.4682 N | 53 1.57 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 329
+Date: Thu, 23 Jul 2020 23:32:07 +0000
+In reply to: 328
+Event: 118
+Station: BB01TOSI01-14
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0234
+Sample_ID: 
+End_Sample_ID: 
+T_Number: 
+Wire Out: 
+Depth: 
+Author: GrandyM
+Seq_Number: tel210_2020_072
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2020-07-23 | 233117.00 | 52 15.5083 N | 53 1.4787 W
+Cruise: tel210
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

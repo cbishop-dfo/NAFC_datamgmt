@@ -1,0 +1,424 @@
+$@MID@$: 45
+Date: Tue, 19 Nov 2019 03:54:54 +0000
+Reply to: 46
+Event: 017
+Station: SWSPB-03
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0070
+Sample_ID: 434629
+End_Sample_ID: 434637
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 79001012
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2019-11-19 | 035454.0002 | 46 10.73639 N | 56 30.98695 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 19/Nov/2019 06:45:35
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 46
+Date: Tue, 19 Nov 2019 03:55:03 +0000
+Reply to: 47
+In reply to: 45
+Event: 017
+Station: SWSPB-03
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0070
+Sample_ID: 434629
+End_Sample_ID: 434637
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 79001012
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2019-11-19 | 035503.0002 | 46 10.73615 N | 56 30.98644 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 19/Nov/2019 06:45:42
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 47
+Date: Tue, 19 Nov 2019 04:09:48 +0000
+In reply to: 46
+Event: 017
+Station: SWSPB-03
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0070
+Sample_ID: 434629
+End_Sample_ID: 434637
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 79001012
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2019-11-19 | 040947.910 | 46 10.73545 N | 56 30.98904 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 19/Nov/2019 06:45:48
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 48
+Date: Tue, 19 Nov 2019 04:39:25 +0000
+Reply to: 49
+Event: 018
+Station: SWSPB-03
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0070
+Sample_ID: 434629
+End_Sample_ID: 
+Wire Out: 0060
+Depth: 
+Author: RockwoodH
+Seq_Number: 79001012
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4328
+Time|Position: 2019-11-19 | 043924.915 | 46 10.73969 N | 56 30.98513 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 19/Nov/2019 06:45:53
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 49
+Date: Tue, 19 Nov 2019 04:44:26 +0000
+Reply to: 50
+In reply to: 48
+Event: 018
+Station: SWSPB-03
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0070
+Sample_ID: 434629
+End_Sample_ID: 
+Wire Out: 0060
+Depth: 
+Author: RockwoodH
+Seq_Number: 79001012
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4328
+Time|Position: 2019-11-19 | 044426.0037 | 46 10.7385 N | 56 30.98759 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 19/Nov/2019 06:45:59
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 50
+Date: Tue, 19 Nov 2019 04:48:35 +0000
+In reply to: 49
+Event: 018
+Station: SWSPB-03
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0070
+Sample_ID: 434629
+End_Sample_ID: 
+Wire Out: 0060
+Depth: 
+Author: RockwoodH
+Seq_Number: 79001012
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4328 - 70net torn
+Time|Position: 2019-11-19 | 044835.0044 | 46 10.73677 N | 56 30.98642 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 19/Nov/2019 17:00:57
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 51
+Date: Tue, 19 Nov 2019 12:51:59 +0000
+Reply to: 52
+Event: 019
+Station: SWSPB-04
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0070
+Sample_ID: 434652
+End_Sample_ID: 
+Wire Out: 0060
+Depth: 
+Author: RamsayD
+Seq_Number: 79001013
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4329
+Time|Position: 2019-11-19 | 125159.000 | 45 57.03526 N | 56 52.52168 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 20/Nov/2019 23:12:54
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 52
+Date: Tue, 19 Nov 2019 12:58:06 +0000
+In reply to: 51
+Event: 019
+Station: SWSPB-04
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0070
+Sample_ID: 434652
+End_Sample_ID: 
+Wire Out: 0060
+Depth: 
+Author: RamsayD
+Seq_Number: 79001013
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4329
+Time|Position: 2019-11-19 | 125806.001 | 45 57.13264 N | 56 52.50118 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 20/Nov/2019 23:13:12
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 53
+Date: Tue, 19 Nov 2019 13:28:57 +0000
+Reply to: 54
+Event: 020
+Station: SWSPB-04
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0070
+Sample_ID: 434638
+End_Sample_ID: 434652
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 79001013
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2019-11-19 | 132857.006 | 45 57.13311 N | 56 52.49849 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 19/Nov/2019 13:35:15
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 54
+Date: Tue, 19 Nov 2019 13:53:32 +0000
+In reply to: 53
+Event: 020
+Station: SWSPB-04
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0070
+Sample_ID: 434638
+End_Sample_ID: 434652
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 79001013
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2019-11-19 | 135332.011 | 45 57.13194 N | 56 52.49884 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 19/Nov/2019 13:35:15
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 55
+Date: Tue, 19 Nov 2019 15:17:14 +0000
+Reply to: 56
+Event: 021
+Station: SWSPB-05
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0375
+Sample_ID: 434653
+End_Sample_ID: 
+Wire Out: 0365
+Depth: 
+Author: RamsayD
+Seq_Number: 79001014
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4330
+Time|Position: 2019-11-19 | 151714.0035 | 45 51.19 N | 57 0.99956 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 56
+Date: Tue, 19 Nov 2019 15:27:22 +0000
+Reply to: 57
+In reply to: 55
+Event: 021
+Station: SWSPB-05
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0375
+Sample_ID: 434653
+End_Sample_ID: 
+Wire Out: 0365
+Depth: 
+Author: RamsayD
+Seq_Number: 79001014
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4330
+Time|Position: 2019-11-19 | 152722.027 | 45 51.18975 N | 57 0.99824 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 57
+Date: Tue, 19 Nov 2019 16:01:56 +0000
+Reply to: 58
+In reply to: 56
+Event: 021
+Station: SWSPB-05
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0375
+Sample_ID: 434653
+End_Sample_ID: 
+Wire Out: 0365
+Depth: 
+Author: RamsayD
+Seq_Number: 79001014
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4330; late recover entry - winch cable snapped on deck
+Time|Position: 2019-11-19 | 160156.033 | 45 51.18965 N | 57 0.99908 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 19/Nov/2019 16:02:46
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 58
+Date: Tue, 19 Nov 2019 16:03:29 +0000
+In reply to: 57
+Event: 021
+Station: SWSPB-05
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0375
+Sample_ID: 434653
+End_Sample_ID: 
+Wire Out: 0365
+Depth: 
+Author: RamsayD
+Seq_Number: 79001014
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4330; recovered 15:37- winch cable snapped on deck
+Time|Position: 2019-11-19 | 160329.0017 | 45 51.18859 N | 57 0.99795 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 19/Nov/2019 16:02:46
+Attachment: 
+Encoding: plain
+========================================
+

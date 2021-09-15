@@ -1,0 +1,757 @@
+$@MID@$: 29
+Date: Mon, 12 Nov 2018 03:09:39 +0000
+Reply to: 30
+Event: 013
+Station: PB01TOSWSPB1-1
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0224
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RamsayD
+Seq_Number: 20118011
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-12 | 030825.00 | 46 53.3026 N | 54 52.345 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 30
+Date: Mon, 12 Nov 2018 03:10:14 +0000
+In reply to: 29
+Event: 013
+Station: PB01TOSWSPB1-1
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0224
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RamsayD
+Seq_Number: 20118011
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-12 | 030900.00 | 46 53.2924 N | 54 52.3988 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 31
+Date: Mon, 12 Nov 2018 06:54:25 +0000
+Reply to: 32
+Event: 014
+Station: PB01TOSWSPB1-2
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0106
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+Seq_Number: 20118012
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-12 | 065311.00 | 46 50.1107 N | 55 12.913 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 32
+Date: Mon, 12 Nov 2018 06:54:45 +0000
+In reply to: 31
+Event: 014
+Station: PB01TOSWSPB1-2
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0106
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+Seq_Number: 20118012
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-11-12 | 065331.00 | 46 50.106 N | 55 12.9383 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 33
+Date: Mon, 12 Nov 2018 11:41:28 +0000
+Reply to: 34
+Event: 015
+Station: SWSPB-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 0095
+Sample_ID: 432527
+End_Sample_ID: 
+Wire Out: 0085
+Depth: 
+Author: DoyleG
+Seq_Number: 20118013
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: too windy for 70 net (GD SS)
+Time|Position: 2018-11-12 | 114014.00 | 46 46.4423 N | 55 37.0873 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 34
+Date: Mon, 12 Nov 2018 11:47:27 +0000
+Reply to: 35
+In reply to: 33
+Event: 015
+Station: SWSPB-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0095
+Sample_ID: 432527
+End_Sample_ID: 
+Wire Out: 0085
+Depth: 
+Author: DoyleG
+Seq_Number: 20118013
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: too windy for 70 net (GD SS) - T 4153
+Time|Position: 2018-11-12 | 114613.00 | 46 46.4056 N | 55 37.0381 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 35
+Date: Mon, 12 Nov 2018 11:53:03 +0000
+In reply to: 34
+Event: 015
+Station: SWSPB-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0095
+Sample_ID: 432527
+End_Sample_ID: 
+Wire Out: 0085
+Depth: 
+Author: DoyleG
+Seq_Number: 20118013
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: net dragged on btm had to redo
+Time|Position: 2018-11-12 | 115149.00 | 46 46.3797 N | 55 36.9543 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 12/Nov/2018 12:02:35
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 36
+Date: Mon, 12 Nov 2018 12:09:27 +0000
+Reply to: 37
+Event: 016
+Station: SWSPB-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 0095
+Sample_ID: 432527
+End_Sample_ID: 
+Wire Out: 0085
+Depth: 
+Author: DoyleG
+Seq_Number: 20118013
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: too windy for 70 net (GD SS) - T 4153
+Time|Position: 2018-11-12 | 120813.00 | 46 46.3649 N | 55 37.0212 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 12/Nov/2018 16:51:05
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 37
+Date: Mon, 12 Nov 2018 12:12:54 +0000
+Reply to: 38
+In reply to: 36
+Event: 016
+Station: SWSPB-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0095
+Sample_ID: 432527
+End_Sample_ID: 
+Wire Out: 0085
+Depth: 
+Author: DoyleG
+Seq_Number: 20118013
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: too windy for 70 net (GD SS) - T 4153
+Time|Position: 2018-11-12 | 121140.00 | 46 46.373 N | 55 36.9815 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 12/Nov/2018 16:51:20
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 38
+Date: Mon, 12 Nov 2018 12:17:46 +0000
+In reply to: 37
+Event: 016
+Station: SWSPB-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0095
+Sample_ID: 432527
+End_Sample_ID: 
+Wire Out: 0085
+Depth: 
+Author: DoyleG
+Seq_Number: 20118013
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: too windy for 70 net (GD SS) - T 4153
+Time|Position: 2018-11-12 | 121632.00 | 46 46.3596 N | 55 36.9657 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 12/Nov/2018 16:51:32
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 39
+Date: Mon, 12 Nov 2018 12:36:48 +0000
+Reply to: 40
+Event: 017
+Station: SWSPB-01
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0097
+Sample_ID: 432520
+End_Sample_ID: 432527
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 20118013
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-12 | 123534.00 | 46 46.368 N | 55 36.9692 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 40
+Date: Mon, 12 Nov 2018 12:38:13 +0000
+Reply to: 41
+In reply to: 39
+Event: 017
+Station: SWSPB-01
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0097
+Sample_ID: 432520
+End_Sample_ID: 432527
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 20118013
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-12 | 123659.00 | 46 46.3759 N | 55 36.9772 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 41
+Date: Mon, 12 Nov 2018 12:38:21 +0000
+In reply to: 40
+Event: 017
+Station: SWSPB-01
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0097
+Sample_ID: 432520
+End_Sample_ID: 432527
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 20118013
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: misfire for 432521 and too windy for 20um net 
+Time|Position: 2018-11-12 | 123707.00 | 46 46.3768 N | 55 36.9779 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 12/Nov/2018 13:07:51
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 42
+Date: Mon, 12 Nov 2018 16:47:07 +0000
+Reply to: 43
+Event: 018
+Station: SWSPB-02
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 0145
+Sample_ID: 432536
+End_Sample_ID: 
+Wire Out: 0135
+Depth: 
+Author: RamsayD
+Seq_Number: 20118014
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4154
+Time|Position: 2018-11-12 | 164553.00 | 46 30.2875 N | 56 2.1098 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 12/Nov/2018 16:49:55
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 43
+Date: Mon, 12 Nov 2018 16:54:06 +0000
+Reply to: 44
+In reply to: 42
+Event: 018
+Station: SWSPB-02
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0145
+Sample_ID: 432536
+End_Sample_ID: 
+Wire Out: 0135
+Depth: 
+Author: RamsayD
+Seq_Number: 20118014
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4154
+Time|Position: 2018-11-12 | 165252.00 | 46 30.2589 N | 56 2.054 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 12/Nov/2018 16:49:55
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 44
+Date: Mon, 12 Nov 2018 16:58:04 +0000
+In reply to: 43
+Event: 018
+Station: SWSPB-02
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0145
+Sample_ID: 432536
+End_Sample_ID: 
+Wire Out: 0135
+Depth: 
+Author: RamsayD
+Seq_Number: 20118014
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4154
+Time|Position: 2018-11-12 | 165650.00 | 46 30.1998 N | 56 2.0242 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 12/Nov/2018 16:49:55
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 45
+Date: Mon, 12 Nov 2018 17:16:51 +0000
+Reply to: 46
+Event: 019
+Station: SWSPB-02
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0145
+Sample_ID: 432528
+End_Sample_ID: 432536
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 20118014
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-12 | 171537.00 | 46 30.0875 N | 56 1.8914 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 46
+Date: Mon, 12 Nov 2018 17:39:39 +0000
+Reply to: 47
+In reply to: 45
+Event: 019
+Station: SWSPB-02
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0145
+Sample_ID: 432528
+End_Sample_ID: 432536
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 20118014
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-12 | 173825.00 | 46 30.0941 N | 56 1.7424 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 47
+Date: Mon, 12 Nov 2018 17:47:30 +0000
+In reply to: 46
+Event: 019
+Station: SWSPB-02
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0145
+Sample_ID: 432528
+End_Sample_ID: 432536
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 20118014
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-12 | 174616.00 | 46 30.0682 N | 56 1.5987 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 48
+Date: Mon, 12 Nov 2018 22:23:56 +0000
+Reply to: 49
+Event: 020
+Station: SWSPB-03
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0061
+Sample_ID: 432537
+End_Sample_ID: 
+Wire Out: 0050
+Depth: 
+Author: RastinS
+Seq_Number: 20118015
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4155
+Time|Position: 2018-11-12 | 222242.00 | 46 10.6945 N | 56 30.7047 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 49
+Date: Mon, 12 Nov 2018 22:26:53 +0000
+Reply to: 50
+In reply to: 48
+Event: 020
+Station: SWSPB-03
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0061
+Sample_ID: 432537
+End_Sample_ID: 
+Wire Out: 0050
+Depth: 
+Author: RastinS
+Seq_Number: 20118015
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4155
+Time|Position: 2018-11-12 | 222539.00 | 46 10.6754 N | 56 30.7234 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 50
+Date: Mon, 12 Nov 2018 22:29:59 +0000
+In reply to: 49
+Event: 020
+Station: SWSPB-03
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0061
+Sample_ID: 432537
+End_Sample_ID: 
+Wire Out: 0050
+Depth: 
+Author: RastinS
+Seq_Number: 20118015
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4155
+Time|Position: 2018-11-12 | 222845.00 | 46 10.6848 N | 56 30.6992 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 51
+Date: Mon, 12 Nov 2018 22:48:35 +0000
+Reply to: 52
+Event: 021
+Station: SWSPB-03
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0061
+Sample_ID: 432537
+End_Sample_ID: 432543
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 20118015
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-12 | 224721.00 | 46 10.794 N | 56 30.6626 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 52
+Date: Mon, 12 Nov 2018 23:01:27 +0000
+Reply to: 53
+In reply to: 51
+Event: 021
+Station: SWSPB-03
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0061
+Sample_ID: 432537
+End_Sample_ID: 432543
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 20118015
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-12 | 230013.00 | 46 10.7623 N | 56 30.6461 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 53
+Date: Mon, 12 Nov 2018 23:11:47 +0000
+In reply to: 52
+Event: 021
+Station: SWSPB-03
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0061
+Sample_ID: 432537
+End_Sample_ID: 432543
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 20118015
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-11-12 | 231033.00 | 46 10.7366 N | 56 30.5786 W
+Cruise: 20118
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Hudson
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
