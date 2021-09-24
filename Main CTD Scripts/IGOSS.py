@@ -27,7 +27,7 @@ if __name__ == '__main__':
         except:
             datafile = f
 
-        if datafile.lower().endswith(".cnv"):
+        if datafile.lower().endswith(".cnv") or datafile.lower().endswith(".cnv.new"):
             print("Reading: " + datafile)
             cast = cnv_tk.Cast(datafile)
             cnv_tk.cnv_meta(cast, datafile)
