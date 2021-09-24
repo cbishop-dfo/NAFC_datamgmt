@@ -1,0 +1,642 @@
+$@MID@$: 141
+Date: Thu, 16 Nov 2017 00:02:46 +0000
+Reply to: 142
+Event: 188
+Station: SI-13
+Instrument: RingNet
+Attached: 20um
+Action: Deployed
+Sounding: 1063
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T-3980
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 142
+Date: Thu, 16 Nov 2017 00:05:07 +0000
+In reply to: 141
+Event: 188
+Station: SI-13
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 1063
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 30
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T-3980
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 143
+Date: Thu, 16 Nov 2017 00:11:19 +0000
+Reply to: 144
+Event: 189
+Station: SI-13
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 1063
+Sample_ID: 430517
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T-3980
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 19/Nov/2017 18:35:17
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 144
+Date: Thu, 16 Nov 2017 00:58:23 +0000
+Reply to: 145
+In reply to: 143
+Event: 189
+Station: SI-13
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 1063
+Sample_ID: 430517
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: STOP 295M WE CONTINUE WITHOUT DP
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 19/Nov/2017 22:59:35
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 145
+Date: Thu, 16 Nov 2017 01:36:13 +0000
+In reply to: 144
+Event: 189
+Station: SI-13
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 1063
+Sample_ID: 430517
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T-3980
+Time|Position: Port Com 5 Not available!
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 19/Nov/2017 18:34:51
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 146
+Date: Thu, 16 Nov 2017 06:02:32 +0000
+Reply to: 147
+Event: 190
+Station: SI-14
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 2690
+Sample_ID: 430518
+End_Sample_ID: 430529
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 060147.00 | 55 4.020365 N | 52 29.969948 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 147
+Date: Thu, 16 Nov 2017 06:34:08 +0000
+Reply to: 148
+In reply to: 146
+Event: 190
+Station: SI-14
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 2690
+Sample_ID: 430518
+End_Sample_ID: 430529
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 063323.00 | 55 4.019874 N | 52 29.967787 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 148
+Date: Thu, 16 Nov 2017 07:27:28 +0000
+In reply to: 147
+Event: 190
+Station: SI-14
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 2690
+Sample_ID: 430518
+End_Sample_ID: 430529
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 072643.00 | 55 4.020278 N | 52 29.970732 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 149
+Date: Thu, 16 Nov 2017 07:42:57 +0000
+Reply to: 153
+Event: 191
+Station: SI-14
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 2687
+Sample_ID: 430518
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3981
+Time|Position: 2017-11-16 | 074212.00 | 55 4.019943 N | 52 29.968842 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 150
+Date: Thu, 16 Nov 2017 07:48:39 +0000
+Reply to: 151
+Event: 192
+Station: SI-14
+Instrument: RingNet
+Attached: 20um
+Action: Deployed
+Sounding: 2687
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 074754.00 | 55 4.020014 N | 52 29.969112 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 151
+Date: Thu, 16 Nov 2017 07:49:46 +0000
+Reply to: 152
+In reply to: 150
+Event: 192
+Station: SI-14
+Instrument: RingNet
+Attached: 20um
+Action: Bottom
+Sounding: 2687
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 074901.00 | 55 4.020154 N | 52 29.969765 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 152
+Date: Thu, 16 Nov 2017 07:51:21 +0000
+In reply to: 151
+Event: 192
+Station: SI-14
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 2687
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 075036.00 | 55 4.021066 N | 52 29.967823 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 153
+Date: Thu, 16 Nov 2017 08:15:30 +0000
+Reply to: 154
+In reply to: 149
+Event: 191
+Station: SI-14
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 2687
+Sample_ID: 430518
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3981
+Time|Position: 2017-11-16 | 081445.00 | 55 4.020168 N | 52 29.968603 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 154
+Date: Thu, 16 Nov 2017 08:45:43 +0000
+In reply to: 153
+Event: 191
+Station: SI-14
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 2687
+Sample_ID: 430518
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: PyeB
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 084458.00 | 55 4.020452 N | 52 29.968494 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 155
+Date: Thu, 16 Nov 2017 12:12:20 +0000
+Reply to: 156
+Event: 193
+Station: SI14TOBB14-01
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 2420
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 121135.00 | 54 39.0765 N | 52 4.508983 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 156
+Date: Thu, 16 Nov 2017 12:17:12 +0000
+In reply to: 155
+Event: 193
+Station: SI14TOBB14-01
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 2420
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 121627.00 | 54 38.673527 N | 52 4.086317 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 157
+Date: Thu, 16 Nov 2017 15:16:59 +0000
+Reply to: 158
+Event: 194
+Station: SI01TOBB14-02
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 2862
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 151614.00 | 54 12.92878 N | 51 42.476677 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 158
+Date: Thu, 16 Nov 2017 15:21:58 +0000
+In reply to: 157
+Event: 194
+Station: SI01TOBB14-02
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 2862
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 152113.00 | 54 12.484491 N | 51 42.164474 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 159
+Date: Thu, 16 Nov 2017 18:26:55 +0000
+Reply to: 160
+Event: 195
+Station: SI14TOBB14-03
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 2840
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 182610.00 | 53 47.483398 N | 51 22.303942 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 160
+Date: Thu, 16 Nov 2017 18:32:01 +0000
+In reply to: 159
+Event: 195
+Station: SI14TOBB14-03
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 2840
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 183116.00 | 53 47.001286 N | 51 21.946772 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 161
+Date: Thu, 16 Nov 2017 21:18:31 +0000
+Reply to: 162
+Event: 196
+Station: SI14TOBB14-04
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 2968
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 211746.00 | 53 24.515621 N | 51 1.756708 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 162
+Date: Thu, 16 Nov 2017 21:23:36 +0000
+In reply to: 161
+Event: 196
+Station: SI14TOBB14-04
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 2968
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-11-16 | 212251.00 | 53 24.108541 N | 51 1.412021 W
+Cruise: 15009
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: Fugro Discovery
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

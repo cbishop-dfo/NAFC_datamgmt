@@ -1,0 +1,240 @@
+$@MID@$: 248
+Date: Mon, 16 Apr 2018 13:03:47 +0000
+Reply to: 249
+Event: 099
+Station: SEGBTOFC35-02
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 2817
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+Set_Number: 050
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-16 | 130203.00 | 42 44.6059 N | 48 41.789 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 17/Apr/2018 22:15:23
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 249
+Date: Mon, 16 Apr 2018 13:09:55 +0000
+In reply to: 248
+Event: 099
+Station: SEGBTOFC35-02
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 2817
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+Set_Number: 050
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-16 | 130810.00 | 42 44.8936 N | 48 41.2436 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 17/Apr/2018 22:15:09
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 250
+Date: Mon, 16 Apr 2018 16:10:24 +0000
+Reply to: 251
+Event: 100
+Station: SEGBTOFC35-03
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 3040
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 051
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-16 | 160839.00 | 42 57.1193 N | 48 17.9925 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 16/Apr/2018 17:02:04
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 251
+Date: Mon, 16 Apr 2018 16:12:58 +0000
+In reply to: 250
+Event: 100
+Station: SEGBTOFC35-03
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 3040
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 051
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-16 | 161114.00 | 42 57.1944 N | 48 17.7968 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 16/Apr/2018 17:02:17
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 252
+Date: Mon, 16 Apr 2018 19:08:07 +0000
+Reply to: 253
+Event: 101
+Station: SEGBTOFC35-04
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 3352
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 052
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-16 | 190623.00 | 43 12.2646 N | 47 51.1295 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 253
+Date: Mon, 16 Apr 2018 19:14:05 +0000
+In reply to: 252
+Event: 101
+Station: SEGBTOFC35-04
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 3352
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 052
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-16 | 191221.00 | 43 12.5302 N | 47 50.6366 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 254
+Date: Mon, 16 Apr 2018 21:58:03 +0000
+Reply to: 255
+Event: 102
+Station: SEGBTOFC35-05
+Instrument: XBT
+Attached: T-05
+Action: Deployed
+Sounding: 3681
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RobarA
+Set_Number: 053
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-16 | 215619.00 | 43 22.811 N | 47 34.5054 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 17/Apr/2018 22:14:42
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 255
+Date: Mon, 16 Apr 2018 22:06:05 +0000
+In reply to: 254
+Event: 102
+Station: SEGBTOFC35-05
+Instrument: XBT
+Attached: T-05
+Action: Bottom
+Sounding: 3681
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RobarA
+Set_Number: 053
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-16 | 220421.00 | 43 23.1746 N | 47 33.8998 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 17/Apr/2018 22:14:28
+Attachment: 
+Encoding: plain
+========================================
+

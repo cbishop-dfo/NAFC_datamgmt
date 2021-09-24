@@ -1,0 +1,146 @@
+$@MID@$: 499
+Date: Wed, 19 Jul 2017 18:43:12 +0000
+Reply to: 500
+Event: 190
+Station: SATOC5-01
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0185
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-19 | 184207.00 | 51 31.145 N | 54 53.8222 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 500
+Date: Wed, 19 Jul 2017 18:43:37 +0000
+In reply to: 499
+Event: 190
+Station: SATOC5-01
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0185
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-19 | 184233.00 | 51 31.2092 N | 54 53.7413 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 501
+Date: Wed, 19 Jul 2017 20:21:30 +0000
+Reply to: 502
+Event: 191
+Station: C5_RECOVERY
+Instrument: Recover Mooring
+Attached: 
+Action: Attempt Comms
+Sounding: 0194
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-19 | 202026.00 | 51 35.718 N | 54 35.7828 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 502
+Date: Wed, 19 Jul 2017 20:21:39 +0000
+Reply to: 503
+In reply to: 501
+Event: 191
+Station: C5_RECOVERY
+Instrument: Recover Mooring
+Attached: 
+Action: Release
+Sounding: 0194
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-19 | 202035.00 | 51 35.7178 N | 54 35.7788 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 503
+Date: Wed, 19 Jul 2017 23:51:51 +0000
+In reply to: 502
+Event: 191
+Station: C5_RECOVERY
+Instrument: Recover Mooring
+Attached: 
+Action: On Deck
+Sounding: 0194
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-19 | 235047.00 | 51 35.8547 N | 54 36.0842 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

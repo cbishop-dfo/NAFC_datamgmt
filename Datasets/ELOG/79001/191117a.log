@@ -1,0 +1,336 @@
+$@MID@$: 1
+Date: Sun, 17 Nov 2019 16:48:31 +0000
+Reply to: 2
+Event: 001
+Station: S27-01
+Instrument: Deploy Mooring
+Attached: 
+Action: Start Deployment
+Sounding: 0181
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2019-11-17 | 164831.577 | 47 32.5614 N | 52 34.78793 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 2
+Date: Sun, 17 Nov 2019 18:48:42 +0000
+In reply to: 1
+Event: 001
+Station: S27-01
+Instrument: Deploy Mooring
+Attached: 
+Action: Anchor Away
+Sounding: 0181
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+Seq_Number: 
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2019-11-17 | 184843.0048 | 47 32.56176 N | 52 34.78817 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 3
+Date: Sun, 17 Nov 2019 20:06:14 +0000
+Reply to: 4
+Event: 002
+Station: S27-01
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0180
+Sample_ID: 434558
+End_Sample_ID: 434577
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 79001001
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2019-11-17 | 200614.590 | 47 32.81031 N | 52 35.21481 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 4
+Date: Sun, 17 Nov 2019 20:11:36 +0000
+Reply to: 5
+In reply to: 3
+Event: 002
+Station: S27-01
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0180
+Sample_ID: 434558
+End_Sample_ID: 434577
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 79001001
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2019-11-17 | 201137.0037 | 47 32.81037 N | 52 35.21495 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 5
+Date: Sun, 17 Nov 2019 20:34:56 +0000
+In reply to: 4
+Event: 002
+Station: S27-01
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0180
+Sample_ID: 434558
+End_Sample_ID: 434577
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 79001001
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2019-11-17 | 201637.0037 | 47 32.81037 N | 52 35.21495 W
+NA
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 6
+Date: Sun, 17 Nov 2019 21:18:48 +0000
+Reply to: 7
+Event: 003
+Station: S27-01
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0179
+Sample_ID: 434558
+End_Sample_ID: 
+Wire Out: 0169
+Depth: 
+Author: BelangerD
+Seq_Number: 79001001
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4324
+Time|Position: 2019-11-17 | 211849.0050 | 47 32.80997 N | 52 35.21537 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 7
+Date: Sun, 17 Nov 2019 21:25:22 +0000
+Reply to: 8
+In reply to: 6
+Event: 003
+Station: S27-01
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0179
+Sample_ID: 434558
+End_Sample_ID: 
+Wire Out: 0169
+Depth: 
+Author: BelangerD
+Seq_Number: 79001001
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4324
+Time|Position: 2019-11-17 | 212522.603 | 47 32.74852 N | 52 35.24873 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 8
+Date: Sun, 17 Nov 2019 21:36:30 +0000
+Reply to: 9
+In reply to: 7
+Event: 003
+Station: S27-01
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0179
+Sample_ID: 434558
+End_Sample_ID: 
+Wire Out: 0169
+Depth: 
+Author: BelangerD
+Seq_Number: 79001001
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4324
+Time|Position: 2019-11-17 | 213630.605 | 47 32.70554 N | 52 35.27331 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 9
+Date: Sun, 17 Nov 2019 21:38:46 +0000
+Reply to: 10
+In reply to: 8
+Event: 003
+Station: S27-01
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0179
+Sample_ID: 434558
+End_Sample_ID: 
+Wire Out: 0169
+Depth: 
+Author: BelangerD
+Seq_Number: 79001001
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4324
+Time|Position: 2019-11-17 | 213847.0033 | 47 32.69649 N | 52 35.27816 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 10
+Date: Sun, 17 Nov 2019 21:42:55 +0000
+Reply to: 11
+In reply to: 9
+Event: 003
+Station: S27-01
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0179
+Sample_ID: 434558
+End_Sample_ID: 
+Wire Out: 0169
+Depth: 
+Author: BelangerD
+Seq_Number: 79001001
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4324
+Time|Position: 2019-11-17 | 214256.0040 | 47 32.67423 N | 52 35.28991 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 11
+Date: Sun, 17 Nov 2019 21:49:21 +0000
+In reply to: 10
+Event: 003
+Station: S27-01
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0179
+Sample_ID: 434558
+End_Sample_ID: 
+Wire Out: 0169
+Depth: 
+Author: BelangerD
+Seq_Number: 79001001
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4324
+Time|Position: 2019-11-17 | 214756.0040 | 47 32.67423 N | 52 35.28991 W 
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 18/Nov/2019 01:45:49
+Attachment: 
+Encoding: plain
+========================================
+

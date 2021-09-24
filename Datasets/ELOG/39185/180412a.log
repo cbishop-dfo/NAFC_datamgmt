@@ -1,0 +1,1055 @@
+$@MID@$: 105
+Date: Thu, 12 Apr 2018 02:03:34 +0000
+Reply to: 106
+Event: 045
+Station: SPBTOSEGB-01
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0262
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 023
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 020151.00 | 45 45.0182 N | 56 45.3281 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 106
+Date: Thu, 12 Apr 2018 02:09:38 +0000
+In reply to: 105
+Event: 045
+Station: SPBTOSEGB-01
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0262
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 023
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 020755.00 | 45 45.2311 N | 56 44.1601 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 107
+Date: Thu, 12 Apr 2018 05:09:05 +0000
+Reply to: 108
+Event: 046
+Station: SPBTOSEGB-02
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0054
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+Set_Number: 024
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 050721.00 | 45 54.7319 N | 56 1.0972 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 11:09:46
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 108
+Date: Thu, 12 Apr 2018 05:09:30 +0000
+In reply to: 107
+Event: 046
+Station: SPBTOSEGB-02
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0054
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+Set_Number: 024
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 050747.00 | 45 54.7455 N | 56 1.0314 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 11:09:58
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 109
+Date: Thu, 12 Apr 2018 08:00:01 +0000
+Reply to: 110
+Event: 047
+Station: SPBTOSEGB-03
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0129
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+Set_Number: 025
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 075818.00 | 46 3.5363 N | 55 20.642 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 11:10:07
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 110
+Date: Thu, 12 Apr 2018 08:00:32 +0000
+In reply to: 109
+Event: 047
+Station: SPBTOSEGB-03
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0129
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+Set_Number: 025
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 075848.00 | 46 3.5612 N | 55 20.5179 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 11:10:54
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 111
+Date: Thu, 12 Apr 2018 11:05:23 +0000
+Reply to: 112
+Event: 048
+Station: SPBTOSEGB-04
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0126
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Set_Number: 026
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 110340.00 | 46 12.2958 N | 54 36.2322 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 112
+Date: Thu, 12 Apr 2018 11:05:37 +0000
+In reply to: 111
+Event: 048
+Station: SPBTOSEGB-04
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0126
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Set_Number: 026
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 110354.00 | 46 12.3078 N | 54 36.1759 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 113
+Date: Thu, 12 Apr 2018 14:01:01 +0000
+Reply to: 114
+Event: 049
+Station: SPBTOSEGB-05
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0105
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Set_Number: 027
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 135917.00 | 46 22.5031 N | 53 54.8891 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 114
+Date: Thu, 12 Apr 2018 14:01:25 +0000
+In reply to: 113
+Event: 049
+Station: SPBTOSEGB-05
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0105
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RastinS
+Set_Number: 027
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 135942.00 | 46 22.5254 N | 53 54.792 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 115
+Date: Thu, 12 Apr 2018 16:03:47 +0000
+Reply to: 116
+Event: 050
+Station: SPBTOSEGB-06
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0073
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 028
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 160204.00 | 46 27.6486 N | 53 29.8062 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 16:05:34
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 116
+Date: Thu, 12 Apr 2018 16:04:04 +0000
+In reply to: 115
+Event: 050
+Station: SPBTOSEGB-06
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0073
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 028
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 160221.00 | 46 27.6609 N | 53 29.7402 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 16:06:26
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 117
+Date: Thu, 12 Apr 2018 18:45:57 +0000
+Reply to: 120
+Event: 051
+Station: SEGB-01
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0055
+Sample_ID: 430928
+End_Sample_ID: 430933
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 029
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 184414.00 | 46 35.1898 N | 52 56.391 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 118
+Date: Thu, 12 Apr 2018 18:47:20 +0000
+Reply to: 119
+Event: 052
+Station: SEGB-01
+Instrument: RingNet
+Attached: 20um
+Action: Deployed
+Sounding: 0055
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 030
+Depth: 
+Author: RamsayD
+Set_Number: 029
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4022
+Time|Position: 2018-04-12 | 184537.00 | 46 35.1821 N | 52 56.4256 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 20:34:20
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 119
+Date: Thu, 12 Apr 2018 18:48:56 +0000
+In reply to: 118
+Event: 052
+Station: SEGB-01
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 0055
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 030
+Depth: 
+Author: RamsayD
+Set_Number: 029
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4022
+Time|Position: 2018-04-12 | 184712.00 | 46 35.171 N | 52 56.4632 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 20:34:41
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 120
+Date: Thu, 12 Apr 2018 18:57:50 +0000
+In reply to: 117
+Event: 051
+Station: SEGB-01
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0055
+Sample_ID: 430928
+End_Sample_ID: 430933
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 029
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 185607.00 | 46 35.134 N | 52 56.6981 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 121
+Date: Thu, 12 Apr 2018 19:06:14 +0000
+Reply to: 122
+Event: 053
+Station: SEGB-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 0054
+Sample_ID: 430933
+End_Sample_ID: 
+Wire Out: 0044
+Depth: 
+Author: RamsayD
+Set_Number: 029
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4022
+Time|Position: 2018-04-12 | 190430.00 | 46 35.1416 N | 52 56.9255 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 20:35:38
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 122
+Date: Thu, 12 Apr 2018 19:09:29 +0000
+Reply to: 123
+In reply to: 121
+Event: 053
+Station: SEGB-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0054
+Sample_ID: 430933
+End_Sample_ID: 
+Wire Out: 0044
+Depth: 
+Author: RamsayD
+Set_Number: 029
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4022
+Time|Position: 2018-04-12 | 190746.00 | 46 35.1253 N | 52 57.0077 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 20:35:55
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 123
+Date: Thu, 12 Apr 2018 19:11:11 +0000
+In reply to: 122
+Event: 053
+Station: SEGB-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0054
+Sample_ID: 430933
+End_Sample_ID: 
+Wire Out: 0044
+Depth: 
+Author: RamsayD
+Set_Number: 029
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4022
+Time|Position: 2018-04-12 | 190928.00 | 46 35.1104 N | 52 57.0517 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 20:36:13
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 124
+Date: Thu, 12 Apr 2018 20:29:46 +0000
+Reply to: 126
+Event: 054
+Station: SEGB-02
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0182
+Sample_ID: 430934
+End_Sample_ID: 430943
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 030
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 202802.00 | 46 30.1363 N | 52 51.3424 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 125
+Date: Thu, 12 Apr 2018 20:32:05 +0000
+Reply to: 127
+Event: 055
+Station: SEGB-02
+Instrument: RingNet
+Attached: 20um
+Action: Deployed
+Sounding: 0181
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 030
+Depth: 
+Author: RamsayD
+Set_Number: 030
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4023
+Time|Position: 2018-04-12 | 203022.00 | 46 30.1398 N | 52 51.3957 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 126
+Date: Thu, 12 Apr 2018 20:33:43 +0000
+Reply to: 128
+In reply to: 124
+Event: 054
+Station: SEGB-02
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0182
+Sample_ID: 430934
+End_Sample_ID: 430943
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 030
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 203200.00 | 46 30.1461 N | 52 51.4298 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 127
+Date: Thu, 12 Apr 2018 20:33:46 +0000
+In reply to: 125
+Event: 055
+Station: SEGB-02
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 0181
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 030
+Depth: 
+Author: RamsayD
+Set_Number: 030
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4023
+Time|Position: 2018-04-12 | 203203.00 | 46 30.1462 N | 52 51.4306 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 128
+Date: Thu, 12 Apr 2018 20:52:05 +0000
+In reply to: 126
+Event: 054
+Station: SEGB-02
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0182
+Sample_ID: 430934
+End_Sample_ID: 430943
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 030
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 205022.00 | 46 30.1791 N | 52 51.7505 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 129
+Date: Thu, 12 Apr 2018 20:58:39 +0000
+Reply to: 130
+Event: 056
+Station: SEGB-02
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0165
+Sample_ID: 430934
+End_Sample_ID: 
+Wire Out: 0155
+Depth: 
+Author: RamsayD
+Set_Number: 030
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4023
+Time|Position: 2018-04-12 | 205656.00 | 46 30.2175 N | 52 51.8438 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 21:53:00
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 130
+Date: Thu, 12 Apr 2018 21:06:34 +0000
+Reply to: 131
+In reply to: 129
+Event: 056
+Station: SEGB-02
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0165
+Sample_ID: 430934
+End_Sample_ID: 
+Wire Out: 0155
+Depth: 
+Author: RamsayD
+Set_Number: 030
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4023
+Time|Position: 2018-04-12 | 210451.00 | 46 30.218 N | 52 51.9274 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 21:53:39
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 131
+Date: Thu, 12 Apr 2018 21:09:31 +0000
+In reply to: 130
+Event: 056
+Station: SEGB-02
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0165
+Sample_ID: 430934
+End_Sample_ID: 
+Wire Out: 0155
+Depth: 
+Author: RamsayD
+Set_Number: 030
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4023
+Time|Position: 2018-04-12 | 210747.00 | 46 30.2307 N | 52 51.9901 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 12/Apr/2018 21:54:05
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 132
+Date: Thu, 12 Apr 2018 22:32:47 +0000
+Reply to: 133
+Event: 057
+Station: SEGB-03
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0172
+Sample_ID: 430944
+End_Sample_ID: 430953
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 012
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 223103.00 | 46 20.8423 N | 52 44.2267 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 133
+Date: Thu, 12 Apr 2018 22:36:18 +0000
+Reply to: 136
+In reply to: 132
+Event: 057
+Station: SEGB-03
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0172
+Sample_ID: 430944
+End_Sample_ID: 430953
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 012
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 223435.00 | 46 20.8154 N | 52 44.2254 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 134
+Date: Thu, 12 Apr 2018 22:36:53 +0000
+Reply to: 135
+Event: 058
+Station: SEGB-03
+Instrument: RingNet
+Attached: 20um
+Action: Deployed
+Sounding: 0172
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 030
+Depth: 
+Author: RamsayD
+Set_Number: 031
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4024
+Time|Position: 2018-04-12 | 223510.00 | 46 20.8112 N | 52 44.2254 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 135
+Date: Thu, 12 Apr 2018 22:38:43 +0000
+In reply to: 134
+Event: 058
+Station: SEGB-03
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 0172
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 030
+Depth: 
+Author: RamsayD
+Set_Number: 031
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4024
+Time|Position: 2018-04-12 | 223700.00 | 46 20.8051 N | 52 44.2189 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 136
+Date: Thu, 12 Apr 2018 22:53:11 +0000
+In reply to: 133
+Event: 057
+Station: SEGB-03
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0172
+Sample_ID: 430944
+End_Sample_ID: 430953
+Wire Out: 
+Depth: 
+Author: HigdonJ
+Set_Number: 012
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-04-12 | 225128.00 | 46 20.7566 N | 52 44.491 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 137
+Date: Thu, 12 Apr 2018 23:15:12 +0000
+Reply to: 138
+Event: 059
+Station: SEGB-03
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 0170
+Sample_ID: 430944
+End_Sample_ID: 
+Wire Out: 0160
+Depth: 
+Author: RamsayD
+Set_Number: 031
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4024
+Time|Position: 2018-04-12 | 231329.00 | 46 20.7556 N | 52 44.8619 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 138
+Date: Thu, 12 Apr 2018 23:21:54 +0000
+Reply to: 139
+In reply to: 137
+Event: 059
+Station: SEGB-03
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0170
+Sample_ID: 430944
+End_Sample_ID: 
+Wire Out: 0160
+Depth: 
+Author: RamsayD
+Set_Number: 031
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4024
+Time|Position: 2018-04-12 | 232011.00 | 46 20.7721 N | 52 44.9926 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 139
+Date: Thu, 12 Apr 2018 23:24:15 +0000
+In reply to: 138
+Event: 059
+Station: SEGB-03
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0170
+Sample_ID: 430944
+End_Sample_ID: 
+Wire Out: 0160
+Depth: 
+Author: RamsayD
+Set_Number: 031
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4024
+Time|Position: 2018-04-12 | 232232.00 | 46 20.765 N | 52 45.0402 W
+Cruise: 39185
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

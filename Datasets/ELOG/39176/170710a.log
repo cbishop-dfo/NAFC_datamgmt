@@ -1,0 +1,1872 @@
+$@MID@$: 86
+Date: Mon, 10 Jul 2017 01:29:24 +0000
+Reply to: 88
+Event: 034
+Station: FC-10
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0082
+Sample_ID: 429692
+End_Sample_ID: 429698
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 012904.00 | 47 0.0621 N | 49 7.0192 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 87
+Date: Mon, 10 Jul 2017 01:32:20 +0000
+Event: 034
+Station: FC-10
+Instrument: Ring Net
+Attached: 20um
+Action: Deployed
+Sounding: 0082
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RobarA
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 013200.00 | 47 0.0882 N | 49 6.9949 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 88
+Date: Mon, 10 Jul 2017 01:34:00 +0000
+Reply to: 89
+In reply to: 86
+Event: 034
+Station: FC-10
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0082
+Sample_ID: 429692
+End_Sample_ID: 429698
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 013341.00 | 47 0.1021 N | 49 6.9774 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 89
+Date: Mon, 10 Jul 2017 01:48:57 +0000
+In reply to: 88
+Event: 034
+Station: FC-10
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0082
+Sample_ID: 429692
+End_Sample_ID: 429698
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 014838.00 | 47 0.1593 N | 49 6.8522 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 90
+Date: Mon, 10 Jul 2017 01:58:31 +0000
+Reply to: 91
+Event: 035
+Station: FC-10
+Instrument: Vertical Net
+Attached: Dual 202um
+Action: Deployed
+Sounding: 0082
+Sample_ID: 429698
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HawkinsP
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3899
+Time|Position: 2017-07-10 | 015811.00 | 47 0.07 N | 49 6.8025 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 91
+Date: Mon, 10 Jul 2017 02:00:54 +0000
+Reply to: 92
+In reply to: 90
+Event: 035
+Station: FC-10
+Instrument: Vertical Net
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0082
+Sample_ID: 429698
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HawkinsP
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 020034.00 | 47 0.0716 N | 49 6.7855 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 92
+Date: Mon, 10 Jul 2017 02:03:13 +0000
+In reply to: 91
+Event: 035
+Station: FC-10
+Instrument: Vertical Net
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0082
+Sample_ID: 429698
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HawkinsP
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 020253.00 | 47 0.0784 N | 49 6.7684 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 93
+Date: Mon, 10 Jul 2017 04:27:02 +0000
+Reply to: 94
+Event: 036
+Station: FC-11
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0103
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: CTD only
+Time|Position: 2017-07-10 | 042642.00 | 46 59.8969 N | 48 36.9271 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 94
+Date: Mon, 10 Jul 2017 04:29:16 +0000
+Reply to: 95
+In reply to: 93
+Event: 036
+Station: FC-11
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0103
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 042857.00 | 46 59.8855 N | 48 36.9234 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 95
+Date: Mon, 10 Jul 2017 04:31:36 +0000
+In reply to: 94
+Event: 036
+Station: FC-11
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0103
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 043117.00 | 46 59.8726 N | 48 36.9159 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 96
+Date: Mon, 10 Jul 2017 06:43:23 +0000
+Reply to: 98
+Event: 037
+Station: FC-12
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0134
+Sample_ID: 429699
+End_Sample_ID: 429707
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 064303.00 | 47 0.0862 N | 48 6.9266 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 97
+Date: Mon, 10 Jul 2017 06:45:51 +0000
+Reply to: 99
+Event: 038
+Station: FC-12
+Instrument: Ring Net
+Attached: 20um
+Action: Deployed
+Sounding: 0133
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 064531.00 | 47 0.0686 N | 48 6.9091 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 98
+Date: Mon, 10 Jul 2017 06:46:51 +0000
+Reply to: 100
+In reply to: 96
+Event: 037
+Station: FC-12
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0134
+Sample_ID: 429699
+End_Sample_ID: 429707
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 064631.00 | 47 0.0642 N | 48 6.9022 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 99
+Date: Mon, 10 Jul 2017 06:49:17 +0000
+In reply to: 97
+Event: 038
+Station: FC-12
+Instrument: Ring Net
+Attached: 20um
+Action: Recovered
+Sounding: 0133
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 064857.00 | 47 0.0546 N | 48 6.8838 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 100
+Date: Mon, 10 Jul 2017 07:02:28 +0000
+In reply to: 98
+Event: 037
+Station: FC-12
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0134
+Sample_ID: 429699
+End_Sample_ID: 429707
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 070207.00 | 47 0.0239 N | 48 6.6718 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 101
+Date: Mon, 10 Jul 2017 07:11:38 +0000
+Reply to: 102
+Event: 039
+Station: FC-12
+Instrument: Vertical Net
+Attached: Dual 202um
+Action: Deployed
+Sounding: 0134
+Sample_ID: 429707
+End_Sample_ID: 
+Wire Out: 0124
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3900
+Time|Position: 2017-07-10 | 071118.00 | 46 59.9406 N | 48 6.5655 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 10/Jul/2017 07:14:05
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 102
+Date: Mon, 10 Jul 2017 07:16:12 +0000
+Reply to: 103
+In reply to: 101
+Event: 039
+Station: FC-12
+Instrument: Vertical Net
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0134
+Sample_ID: 429707
+End_Sample_ID: 
+Wire Out: 0124
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 071552.00 | 46 59.9327 N | 48 6.4618 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 10/Jul/2017 07:14:05
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 103
+Date: Mon, 10 Jul 2017 07:20:29 +0000
+In reply to: 102
+Event: 039
+Station: FC-12
+Instrument: Vertical Net
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0134
+Sample_ID: 429707
+End_Sample_ID: 
+Wire Out: 0124
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 072009.00 | 46 59.9219 N | 48 6.3478 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 10/Jul/2017 07:14:05
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 104
+Date: Mon, 10 Jul 2017 08:36:33 +0000
+Reply to: 105
+Event: 040
+Station: FC-13
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0165
+Sample_ID: 429708
+End_Sample_ID: 429717
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 083613.00 | 46 59.9951 N | 47 48.8085 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 105
+Date: Mon, 10 Jul 2017 08:41:31 +0000
+Reply to: 108
+In reply to: 104
+Event: 040
+Station: FC-13
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0165
+Sample_ID: 429708
+End_Sample_ID: 429717
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 084111.00 | 47 0.0014 N | 47 48.6366 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 106
+Date: Mon, 10 Jul 2017 08:41:50 +0000
+Reply to: 107
+Event: 041
+Station: FC-13
+Instrument: Ring Net
+Attached: 20um
+Action: Deployed
+Sounding: 0166
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 084130.00 | 46 59.9995 N | 47 48.6269 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 107
+Date: Mon, 10 Jul 2017 08:44:09 +0000
+In reply to: 106
+Event: 041
+Station: FC-13
+Instrument: Ring Net
+Attached: 20um
+Action: Recovered
+Sounding: 0166
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 084349.00 | 46 59.9708 N | 47 48.5857 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 108
+Date: Mon, 10 Jul 2017 08:58:03 +0000
+In reply to: 105
+Event: 040
+Station: FC-13
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0165
+Sample_ID: 429708
+End_Sample_ID: 429717
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 085743.00 | 46 59.8555 N | 47 48.2226 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 109
+Date: Mon, 10 Jul 2017 09:07:41 +0000
+Reply to: 110
+Event:   042
+Station: FC-13
+Instrument: Vertical Net
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0168
+Sample_ID: 429708
+End_Sample_ID: 
+Wire Out: 0158
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3901
+Time|Position: 2017-07-10 | 091303.00 | 46 59.7336 N | 47 47.8712 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 110
+Date: Mon, 10 Jul 2017 09:13:23 +0000
+Reply to: 111
+In reply to: 109
+Event:   042
+Station: FC-13
+Instrument: Vertical Net
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0168
+Sample_ID: 429708
+End_Sample_ID: 
+Wire Out: 0158
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 091303.00 | 46 59.7336 N | 47 47.8712 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 111
+Date: Mon, 10 Jul 2017 09:18:00 +0000
+In reply to: 110
+Event:   042
+Station: FC-13
+Instrument: Vertical Net
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0168
+Sample_ID: 429708
+End_Sample_ID: 
+Wire Out: 0158
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 091740.00 | 46 59.7152 N | 47 47.7174 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 112
+Date: Mon, 10 Jul 2017 10:42:27 +0000
+Reply to: 115
+Event: 043
+Station: FC-14
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0215
+Sample_ID: 429718
+End_Sample_ID: 429727
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 104207.00 | 46 59.8497 N | 47 29.87 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 113
+Date: Mon, 10 Jul 2017 10:43:44 +0000
+Reply to: 114
+Event: 044
+Station: FC-14
+Instrument: Ring Net
+Attached: 20um
+Action: Deployed
+Sounding: 0214
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 104324.00 | 46 59.8388 N | 47 29.8551 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 114
+Date: Mon, 10 Jul 2017 10:46:33 +0000
+In reply to: 113
+Event: 044
+Station: FC-14
+Instrument: Ring Net
+Attached: 20um
+Action: Recovered
+Sounding: 0214
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 104613.00 | 46 59.8024 N | 47 29.8341 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 115
+Date: Mon, 10 Jul 2017 10:47:32 +0000
+Reply to: 116
+In reply to: 112
+Event: 043
+Station: FC-14
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0215
+Sample_ID: 429718
+End_Sample_ID: 429727
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 104712.00 | 46 59.7948 N | 47 29.8192 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 116
+Date: Mon, 10 Jul 2017 11:04:12 +0000
+In reply to: 115
+Event: 043
+Station: FC-14
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0215
+Sample_ID: 429718
+End_Sample_ID: 429727
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 110352.00 | 46 59.6095 N | 47 29.651 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 117
+Date: Mon, 10 Jul 2017 11:14:39 +0000
+Reply to: 118
+Event: 045
+Station: FC-14
+Instrument: Vertical Net
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0214
+Sample_ID: 429718
+End_Sample_ID: 
+Wire Out: 0204
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3902
+Time|Position: 2017-07-10 | 111419.00 | 46 59.4697 N | 47 29.4845 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 118
+Date: Mon, 10 Jul 2017 11:20:33 +0000
+Reply to: 119
+In reply to: 117
+Event: 045
+Station: FC-14
+Instrument: Vertical Net
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0214
+Sample_ID: 429718
+End_Sample_ID: 
+Wire Out: 0204
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 112013.00 | 46 59.3973 N | 47 29.405 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 119
+Date: Mon, 10 Jul 2017 11:30:07 +0000
+In reply to: 118
+Event: 045
+Station: FC-14
+Instrument: Vertical Net
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0214
+Sample_ID: 429718
+End_Sample_ID: 
+Wire Out: 0204
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 112947.00 | 46 59.2463 N | 47 29.2953 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 120
+Date: Mon, 10 Jul 2017 12:38:05 +0000
+Reply to: 123
+Event: 046
+Station: FC-15
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0550
+Sample_ID: 429728
+End_Sample_ID: 429738
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 123745.00 | 46 59.8255 N | 47 14.815 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 121
+Date: Mon, 10 Jul 2017 12:40:49 +0000
+Reply to: 122
+Event: 047
+Station: FC-15
+Instrument: Ring Net
+Attached: 20um
+Action: Deployed
+Sounding: 0561
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 124029.00 | 46 59.8078 N | 47 14.7864 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 122
+Date: Mon, 10 Jul 2017 12:42:57 +0000
+In reply to: 121
+Event: 047
+Station: FC-15
+Instrument: Ring Net
+Attached: 20um
+Action: Recovered
+Sounding: 0561
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 124237.00 | 46 59.7937 N | 47 14.7614 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 123
+Date: Mon, 10 Jul 2017 12:54:25 +0000
+Reply to: 124
+In reply to: 120
+Event: 046
+Station: FC-15
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0550
+Sample_ID: 429728
+End_Sample_ID: 429738
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 125405.00 | 46 59.6984 N | 47 14.6549 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 124
+Date: Mon, 10 Jul 2017 13:18:45 +0000
+In reply to: 123
+Event: 046
+Station: FC-15
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0550
+Sample_ID: 429728
+End_Sample_ID: 429738
+Wire Out: 
+Depth: 
+Author: HigdonJ
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: Fired 2 bottles at 250...so I removed 30 m
+Time|Position: 2017-07-10 | 131825.00 | 46 59.498 N | 47 14.439 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 10/Jul/2017 13:55:08
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 125
+Date: Mon, 10 Jul 2017 13:29:38 +0000
+Reply to: 126
+Event: 048
+Station: FC-15
+Instrument: Vertical Net
+Attached: Dual 202um
+Action: Deployed
+Sounding: 0580
+Sample_ID: 429738
+End_Sample_ID: 
+Wire Out: 0570
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3903
+Time|Position: 2017-07-10 | 132918.00 | 46 59.4164 N | 47 14.2911 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 126
+Date: Mon, 10 Jul 2017 13:47:58 +0000
+Reply to: 127
+In reply to: 125
+Event: 048
+Station: FC-15
+Instrument: Vertical Net
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0580
+Sample_ID: 429738
+End_Sample_ID: 
+Wire Out: 0570
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 134738.00 | 46 59.2671 N | 47 14.1248 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 10/Jul/2017 13:48:14
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 127
+Date: Mon, 10 Jul 2017 14:05:14 +0000
+In reply to: 126
+Event: 048
+Station: FC-15
+Instrument: Vertical Net
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0580
+Sample_ID: 429738
+End_Sample_ID: 
+Wire Out: 0570
+Depth: 
+Author: CoffeyW
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 140454.00 | 46 59.0353 N | 47 14.1029 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 10/Jul/2017 13:48:14
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 128
+Date: Mon, 10 Jul 2017 14:37:31 +0000
+Reply to: 129
+Event: 049
+Station: FC-16
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0857
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 143711.00 | 46 59.9871 N | 47 10.0993 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 129
+Date: Mon, 10 Jul 2017 15:01:18 +0000
+Reply to: 130
+In reply to: 128
+Event: 049
+Station: FC-16
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0857
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 150057.00 | 46 59.7333 N | 47 10.1399 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 130
+Date: Mon, 10 Jul 2017 15:13:23 +0000
+In reply to: 129
+Event: 049
+Station: FC-16
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0857
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 151303.00 | 46 59.5933 N | 47 10.2614 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 131
+Date: Mon, 10 Jul 2017 16:10:25 +0000
+Reply to: 133
+Event: 050
+Station: FC-17
+Instrument: Ring Net
+Attached: 20um
+Action: Deployed
+Sounding: 1133
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RobarA
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 30
+Time|Position: 2017-07-10 | 161005.00 | 47 0.0141 N | 47 0.8772 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 11/Jul/2017 00:19:25
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 132
+Date: Mon, 10 Jul 2017 16:11:21 +0000
+Reply to: 134
+Event: 051
+Station: FC-17
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 1132
+Sample_ID: 429739
+End_Sample_ID: 429748
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 161101.00 | 47 0.007 N | 47 0.8844 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 133
+Date: Mon, 10 Jul 2017 16:18:59 +0000
+In reply to: 131
+Event: 050
+Station: FC-17
+Instrument: Ring Net
+Attached: 20um
+Action: Recovered
+Sounding: 1133
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RobarA
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 161839.00 | 46 59.9324 N | 47 0.948 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 11/Jul/2017 00:19:33
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 134
+Date: Mon, 10 Jul 2017 16:33:52 +0000
+Reply to: 135
+In reply to: 132
+Event: 051
+Station: FC-17
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 1132
+Sample_ID: 429739
+End_Sample_ID: 429748
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 163332.00 | 46 59.8564 N | 47 0.887 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 135
+Date: Mon, 10 Jul 2017 17:12:40 +0000
+In reply to: 134
+Event: 051
+Station: FC-17
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 1132
+Sample_ID: 429739
+End_Sample_ID: 429748
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 171220.00 | 46 59.6821 N | 47 0.6633 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 136
+Date: Mon, 10 Jul 2017 17:26:56 +0000
+Reply to: 137
+Event: 052
+Station: FC-17
+Instrument: Vertical Net
+Attached: Dual 202um
+Action: Deployed
+Sounding: 1132
+Sample_ID: 429748
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: HawkinsP
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3904
+Time|Position: 2017-07-10 | 172636.00 | 46 59.5867 N | 47 0.6145 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 10/Jul/2017 19:24:13
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 137
+Date: Mon, 10 Jul 2017 18:01:49 +0000
+Reply to: 138
+In reply to: 136
+Event: 052
+Station: FC-17
+Instrument: Vertical Net
+Attached: Dual 202um
+Action: Bottom
+Sounding: 1132
+Sample_ID: 429748
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: HawkinsP
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3904
+Time|Position: 2017-07-10 | 180129.00 | 46 59.38 N | 47 0.7134 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 138
+Date: Mon, 10 Jul 2017 18:32:55 +0000
+In reply to: 137
+Event: 052
+Station: FC-17
+Instrument: Vertical Net
+Attached: Dual 202um
+Action: Recovered
+Sounding: 1132
+Sample_ID: 429748
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: HawkinsP
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3904
+Time|Position: 2017-07-10 | 183235.00 | 46 59.1179 N | 47 0.4287 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 139
+Date: Mon, 10 Jul 2017 19:26:59 +0000
+Reply to: 142
+Event: 054
+Station: FC-18
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 1173
+Sample_ID: 429749
+End_Sample_ID: 429760
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 192638.00 | 46 59.985 N | 46 50.0972 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 10/Jul/2017 19:43:25
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 140
+Date: Mon, 10 Jul 2017 19:30:16 +0000
+Reply to: 141
+Event: 053
+Station: FC-18
+Instrument: Ring Net
+Attached: 20um
+Action: Deployed
+Sounding: 1174
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RobarA
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 30m
+Time|Position: 2017-07-10 | 192956.00 | 46 59.9684 N | 46 50.1513 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 141
+Date: Mon, 10 Jul 2017 19:30:29 +0000
+In reply to: 140
+Event: 053
+Station: FC-18
+Instrument: Ring Net
+Attached: 20um
+Action: Recovered
+Sounding: 1174
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RobarA
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 193009.00 | 46 59.9667 N | 46 50.1556 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 142
+Date: Mon, 10 Jul 2017 19:54:40 +0000
+Reply to: 143
+In reply to: 139
+Event: 054
+Station: FC-18
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 1173
+Sample_ID: 429749
+End_Sample_ID: 429760
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 195419.00 | 46 59.8721 N | 46 50.2368 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 10/Jul/2017 19:43:25
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 143
+Date: Mon, 10 Jul 2017 20:45:28 +0000
+In reply to: 142
+Event: 054
+Station: FC-18
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 1173
+Sample_ID: 429749
+End_Sample_ID: 429760
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 204508.00 | 46 59.7623 N | 46 50.3725 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 10/Jul/2017 19:43:25
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 144
+Date: Mon, 10 Jul 2017 20:58:06 +0000
+Reply to: 145
+Event: 055
+Station: FC-18
+Instrument: Vertical Net
+Attached: 70um/202um
+Action: Deployed
+Sounding: 1173
+Sample_ID: 429749
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: HawkinsP
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3905
+Time|Position: 2017-07-10 | 205746.00 | 46 59.7445 N | 46 50.5342 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 145
+Date: Mon, 10 Jul 2017 21:15:09 +0000
+Reply to: 146
+In reply to: 144
+Event: 055
+Station: FC-18
+Instrument: Vertical Net
+Attached: 70um/202um
+Action: Bottom
+Sounding: 1173
+Sample_ID: 429749
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: HawkinsP
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 211449.00 | 46 59.7201 N | 46 50.6199 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 146
+Date: Mon, 10 Jul 2017 21:56:43 +0000
+In reply to: 145
+Event: 055
+Station: FC-18
+Instrument: Vertical Net
+Attached: 70um/202um
+Action: Recovered
+Sounding: 1173
+Sample_ID: 429749
+End_Sample_ID: 
+Wire Out: 1000
+Depth: 
+Author: HawkinsP
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T3905
+Time|Position: 2017-07-10 | 215625.00 | 46 59.791 N | 46 50.7418 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 147
+Date: Mon, 10 Jul 2017 22:47:44 +0000
+Reply to: 148
+Event: 056
+Station: FC-19
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0938
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 224725.00 | 47 0.1443 N | 46 40.3042 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 148
+Date: Mon, 10 Jul 2017 23:10:06 +0000
+Reply to: 149
+In reply to: 147
+Event: 056
+Station: FC-19
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0938
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 230948.00 | 47 0.1355 N | 46 40.2544 W
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 149
+Date: Mon, 10 Jul 2017 23:28:37 +0000
+In reply to: 148
+Event: 056
+Station: FC-19
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0938
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2017-07-10 | 230948.00 | 47 0.1355 N | 46 40.2544 W 
+Cruise: 39176
+PIC: Lewis, Sara
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 11/Jul/2017 00:21:56
+Attachment: 
+Encoding: plain
+========================================
+

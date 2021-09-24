@@ -1,0 +1,60 @@
+$@MID@$: 61
+Date: Thu, 21 Nov 2019 23:53:56 +0000
+Reply to: 62
+Event: 023
+Station: SPBTOSEGB01-01
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0050
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 79001015
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2019-11-21 | 235356.0035 | 46 4.42329 N | 56 44.61817 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 62
+Date: Thu, 21 Nov 2019 23:54:12 +0000
+In reply to: 61
+Event: 023
+Station: SPBTOSEGB01-01
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0050
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 79001015
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2019-11-21 | 235411.636 | 46 4.42589 N | 56 44.60729 W
+Cruise: 79001
+PI: Snook, Steve
+Protocol: AZMP
+Platform: RRS James Cook
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

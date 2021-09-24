@@ -1,0 +1,91 @@
+$@MID@$: 9
+Date: Fri, 12 Apr 2019 23:31:53 +0000
+Reply to: 10
+Event: 004
+Station: S27-01
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0176
+Sample_ID: 433227
+End_Sample_ID: 433236
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 39197002
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2019-04-12 | 233310.00 | 47 32.8533 N | 52 35.3287 W
+Cruise: 39197
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 10
+Date: Fri, 12 Apr 2019 23:35:35 +0000
+Reply to: 11
+In reply to: 9
+Event: 004
+Station: S27-01
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0176
+Sample_ID: 433227
+End_Sample_ID: 433236
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 39197002
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2019-04-12 | 233510.00 | 47 32.8533 N | 52 35.3287 W
+Cruise: 39197
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 11
+Date: Fri, 12 Apr 2019 23:54:11 +0000
+In reply to: 10
+Event: 004
+Station: S27-01
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0176
+Sample_ID: 433227
+End_Sample_ID: 433236
+Wire Out: 
+Depth: 
+Author: PyeB
+Seq_Number: 39197002
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2019-04-12 | 235346.00 | 47 32.8762 N | 52 35.4135 W
+Cruise: 39197
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

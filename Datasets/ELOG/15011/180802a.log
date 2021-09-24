@@ -1,0 +1,1663 @@
+$@MID@$: 815
+Date: Thu, 02 Aug 2018 01:57:59 +0000
+Reply to: 816
+Event: 315
+Station: C6TOS2710-08
+Instrument: XBT
+Attached: T-06
+Action: Deployed
+Sounding: 0234
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+STN_ID: 15011159
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 015712.0011 | 48 46.74745 N | 51 0.38905 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 816
+Date: Thu, 02 Aug 2018 01:58:35 +0000
+In reply to: 815
+Event: 315
+Station: C6TOS2710-08
+Instrument: XBT
+Attached: T-06
+Action: Bottom
+Sounding: 0234
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: DoyleG
+STN_ID: 15011159
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 015748.0014 | 48 46.66244 N | 51 0.33419 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 817
+Date: Thu, 02 Aug 2018 04:54:36 +0000
+Reply to: 818
+Event: 316
+Station: C6TOS2710-10
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0174
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011160
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 045349.0021 | 48 21.80936 N | 50 43.79202 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 818
+Date: Thu, 02 Aug 2018 04:55:04 +0000
+In reply to: 817
+Event: 316
+Station: C6TOS2710-10
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0174
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011160
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 045417.119 | 48 21.74346 N | 50 43.74344 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 819
+Date: Thu, 02 Aug 2018 07:38:10 +0000
+Reply to: 820
+Event: 317
+Station: S27-10
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0138
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011161
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 073723.0049 | 47 59.45778 N | 50 28.7215 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 820
+Date: Thu, 02 Aug 2018 07:41:32 +0000
+Reply to: 821
+In reply to: 819
+Event: 317
+Station: S27-10
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0138
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011161
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 074045.0019 | 47 59.43527 N | 50 28.70442 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 821
+Date: Thu, 02 Aug 2018 07:51:23 +0000
+In reply to: 820
+Event: 317
+Station: S27-10
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0138
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011161
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 075036.0028 | 47 59.37228 N | 50 28.60449 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 822
+Date: Thu, 02 Aug 2018 09:08:59 +0000
+Reply to: 823
+Event: 318
+Station: S27-09
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0116
+Sample_ID: 432295
+End_Sample_ID: 432303
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011162
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 090812.0039 | 47 56.29323 N | 50 43.02229 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 823
+Date: Thu, 02 Aug 2018 09:12:43 +0000
+Reply to: 824
+In reply to: 822
+Event: 318
+Station: S27-09
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0116
+Sample_ID: 432295
+End_Sample_ID: 432303
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011162
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 091156.0011 | 47 56.25873 N | 50 42.97093 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 824
+Date: Thu, 02 Aug 2018 09:27:20 +0000
+In reply to: 823
+Event: 318
+Station: S27-09
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0116
+Sample_ID: 432295
+End_Sample_ID: 432303
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011162
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 092633.0046 | 47 56.12381 N | 50 42.73511 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 825
+Date: Thu, 02 Aug 2018 09:42:24 +0000
+Reply to: 826
+Event: 319
+Station: S27-09
+Instrument: RingNet
+Attached: 20um
+Action: Deployed
+Sounding: 0116
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011162
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 094137.0034 | 47 56.37524 N | 50 43.08273 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 826
+Date: Thu, 02 Aug 2018 09:44:38 +0000
+In reply to: 825
+Event: 319
+Station: S27-09
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 0116
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 0030
+Depth: 
+Author: SnookS
+STN_ID: 15011162
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 094351.0047 | 47 56.34679 N | 50 43.07359 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 827
+Date: Thu, 02 Aug 2018 09:47:11 +0000
+Reply to: 828
+Event: 320
+Station: S27-09
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0116
+Sample_ID: 432295
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011162
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4148
+Time|Position: 2018-08-02 | 094624.0012 | 47 56.3132 N | 50 43.03898 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 828
+Date: Thu, 02 Aug 2018 09:56:32 +0000
+Reply to: 829
+In reply to: 827
+Event: 320
+Station: S27-09
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0116
+Sample_ID: 432295
+End_Sample_ID: 
+Wire Out: 0106
+Depth: 
+Author: SnookS
+STN_ID: 15011162
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4148
+Time|Position: 2018-08-02 | 095545.0016 | 47 56.19695 N | 50 42.87263 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 829
+Date: Thu, 02 Aug 2018 09:56:40 +0000
+In reply to: 828
+Event: 320
+Station: S27-09
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0116
+Sample_ID: 432295
+End_Sample_ID: 
+Wire Out: 0106
+Depth: 
+Author: SnookS
+STN_ID: 15011162
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4148
+Time|Position: 2018-08-02 | 095553.299 | 47 56.19618 N | 50 42.86719 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 830
+Date: Thu, 02 Aug 2018 11:12:08 +0000
+Reply to: 831
+Event: 321
+Station: S27-08
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0128
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011163
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 111121.0047 | 47 53.35786 N | 50 57.03019 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 831
+Date: Thu, 02 Aug 2018 11:15:46 +0000
+Reply to: 832
+In reply to: 830
+Event: 321
+Station: S27-08
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0128
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011163
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 111459.344 | 47 53.32772 N | 50 57.00818 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 832
+Date: Thu, 02 Aug 2018 11:19:15 +0000
+In reply to: 831
+Event: 321
+Station: S27-08
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0128
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011163
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 111828.0037 | 47 53.30579 N | 50 56.9576 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 833
+Date: Thu, 02 Aug 2018 12:29:01 +0000
+Reply to: 834
+Event: 322
+Station: S27-07
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0177
+Sample_ID: 432304
+End_Sample_ID: 431313
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011164
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 122814.0030 | 47 50.25058 N | 51 11.36947 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 02/Aug/2018 12:57:10
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 834
+Date: Thu, 02 Aug 2018 12:32:23 +0000
+Reply to: 835
+In reply to: 833
+Event: 322
+Station: S27-07
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0177
+Sample_ID: 432304
+End_Sample_ID: 431313
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011164
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 123136.0049 | 47 50.18226 N | 51 11.33904 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 02/Aug/2018 12:57:21
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 835
+Date: Thu, 02 Aug 2018 12:50:39 +0000
+In reply to: 834
+Event: 322
+Station: S27-07
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0177
+Sample_ID: 432304
+End_Sample_ID: 431313
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011164
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 124952.0002 | 47 49.78592 N | 51 11.31547 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 02/Aug/2018 12:57:28
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 836
+Date: Thu, 02 Aug 2018 12:53:25 +0000
+Reply to: 837
+Event: 323
+Station: S27-07
+Instrument: RingNet
+Attached: 20um
+Action: Deployed
+Sounding: 0167
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011164
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 125238.0017 | 47 49.7392 N | 51 11.36437 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 837
+Date: Thu, 02 Aug 2018 12:56:45 +0000
+In reply to: 836
+Event: 323
+Station: S27-07
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 0167
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 0030
+Depth: 
+Author: SnookS
+STN_ID: 15011164
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 125558.0036 | 47 49.75733 N | 51 11.38876 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 838
+Date: Thu, 02 Aug 2018 13:11:42 +0000
+Reply to: 839
+Event: 324
+Station: S27-07
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 0177
+Sample_ID: 432313
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011164
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4149
+Time|Position: 2018-08-02 | 131055.0021 | 47 50.36712 N | 51 11.41465 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 839
+Date: Thu, 02 Aug 2018 13:19:27 +0000
+Reply to: 840
+In reply to: 838
+Event: 324
+Station: S27-07
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0177
+Sample_ID: 432313
+End_Sample_ID: 
+Wire Out: 0167
+Depth: 
+Author: SnookS
+STN_ID: 15011164
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4149
+Time|Position: 2018-08-02 | 131840.0014 | 47 50.38181 N | 51 11.46647 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 840
+Date: Thu, 02 Aug 2018 13:26:31 +0000
+In reply to: 839
+Event: 324
+Station: S27-07
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0177
+Sample_ID: 432313
+End_Sample_ID: 
+Wire Out: 0167
+Depth: 
+Author: SnookS
+STN_ID: 15011164
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4149
+Time|Position: 2018-08-02 | 132544.0004 | 47 50.31172 N | 51 11.54142 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 841
+Date: Thu, 02 Aug 2018 14:31:42 +0000
+Reply to: 842
+Event: 325
+Station: S27-06
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0145
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011165
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 143055.0024 | 47 47.35672 N | 51 25.25868 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 842
+Date: Thu, 02 Aug 2018 14:34:49 +0000
+Reply to: 843
+In reply to: 841
+Event: 325
+Station: S27-06
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0145
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011165
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 143402.456 | 47 47.36167 N | 51 25.27189 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 843
+Date: Thu, 02 Aug 2018 14:38:14 +0000
+In reply to: 842
+Event: 325
+Station: S27-06
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0145
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011165
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 143727.0011 | 47 47.3636 N | 51 25.31404 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 844
+Date: Thu, 02 Aug 2018 15:46:02 +0000
+Reply to: 845
+Event: 326
+Station: S27-05
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0163
+Sample_ID: 432314
+End_Sample_ID: 432323
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011166
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 154514.497 | 47 44.42353 N | 51 39.05847 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 845
+Date: Thu, 02 Aug 2018 15:49:27 +0000
+Reply to: 846
+In reply to: 844
+Event: 326
+Station: S27-05
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0163
+Sample_ID: 432314
+End_Sample_ID: 432323
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011166
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 154839.999 | 47 44.43758 N | 51 39.07809 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 846
+Date: Thu, 02 Aug 2018 16:07:02 +0000
+In reply to: 845
+Event: 326
+Station: S27-05
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0163
+Sample_ID: 432314
+End_Sample_ID: 432323
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011166
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 160615.0023 | 47 44.49549 N | 51 39.16076 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 847
+Date: Thu, 02 Aug 2018 16:09:26 +0000
+Reply to: 848
+Event: 327
+Station: S27-05
+Instrument: RingNet
+Attached: 20um
+Action: Deployed
+Sounding: 0164
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011166
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 160839.0037 | 47 44.50493 N | 51 39.17786 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 848
+Date: Thu, 02 Aug 2018 16:11:14 +0000
+In reply to: 847
+Event: 327
+Station: S27-05
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 0164
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011166
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 161027.012 | 47 44.51184 N | 51 39.19021 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 849
+Date: Thu, 02 Aug 2018 16:14:02 +0000
+Reply to: 850
+Event: 328
+Station: S27-05
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0164
+Sample_ID: 432314
+End_Sample_ID: 
+Wire Out: 0154
+Depth: 
+Author: PyeB
+STN_ID: 15011166
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4150
+Time|Position: 2018-08-02 | 161315.0015 | 47 44.5216 N | 51 39.21028 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 850
+Date: Thu, 02 Aug 2018 16:24:04 +0000
+Reply to: 851
+In reply to: 849
+Event: 328
+Station: S27-05
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0164
+Sample_ID: 432314
+End_Sample_ID: 
+Wire Out: 0154
+Depth: 
+Author: PyeB
+STN_ID: 15011166
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4150
+Time|Position: 2018-08-02 | 162317.020 | 47 44.57395 N | 51 39.28883 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 851
+Date: Thu, 02 Aug 2018 16:24:12 +0000
+In reply to: 850
+Event: 328
+Station: S27-05
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0164
+Sample_ID: 432314
+End_Sample_ID: 
+Wire Out: 0154
+Depth: 
+Author: PyeB
+STN_ID: 15011166
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4150
+Time|Position: 2018-08-02 | 162325.020 | 47 44.57431 N | 51 39.29123 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 852
+Date: Thu, 02 Aug 2018 17:35:58 +0000
+Reply to: 853
+Event: 329
+Station: S27-04
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0187
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011167
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 173511.0015 | 47 40.75582 N | 51 52.77144 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 853
+Date: Thu, 02 Aug 2018 17:40:45 +0000
+In reply to: 852
+Event: 329
+Station: S27-04
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0187
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011167
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 173958.067 | 47 40.73516 N | 51 52.75954 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 854
+Date: Thu, 02 Aug 2018 18:48:43 +0000
+Reply to: 855
+Event: 330
+Station: S27-03
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0174
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011168
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 184756.0028 | 47 37.96014 N | 52 6.86742 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 855
+Date: Thu, 02 Aug 2018 18:52:22 +0000
+Reply to: 856
+In reply to: 854
+Event: 330
+Station: S27-03
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0174
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011168
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 185135.112 | 47 37.96201 N | 52 6.89366 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 856
+Date: Thu, 02 Aug 2018 18:56:05 +0000
+In reply to: 855
+Event: 330
+Station: S27-03
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0174
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011168
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 185518.0025 | 47 37.97066 N | 52 6.88868 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 857
+Date: Thu, 02 Aug 2018 21:04:39 +0000
+Reply to: 858
+Event: 331
+Station: S27-01
+Instrument: CTD
+Attached: pH
+Action: Deployed
+Sounding: 0178
+Sample_ID: 432324
+End_Sample_ID: 432333
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011169
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 210352.0005 | 47 32.82228 N | 52 34.9713 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 858
+Date: Thu, 02 Aug 2018 21:08:03 +0000
+Reply to: 859
+In reply to: 857
+Event: 331
+Station: S27-01
+Instrument: CTD
+Attached: pH
+Action: Bottom
+Sounding: 0178
+Sample_ID: 432324
+End_Sample_ID: 432333
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011169
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 210716.0027 | 47 32.83117 N | 52 34.93558 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 859
+Date: Thu, 02 Aug 2018 21:24:00 +0000
+In reply to: 858
+Event: 331
+Station: S27-01
+Instrument: CTD
+Attached: pH
+Action: Recovered
+Sounding: 0178
+Sample_ID: 432324
+End_Sample_ID: 432333
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011169
+IMEI_No: 
+WMO_No: 
+S/N: S1221
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 212313.0030 | 47 32.81128 N | 52 34.77449 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 860
+Date: Thu, 02 Aug 2018 21:27:03 +0000
+Reply to: 861
+Event: 332
+Station: S27-01
+Instrument: RingNet
+Attached: 20um
+Action: Deployed
+Sounding: 0176
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011169
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 212616.0050 | 47 32.81078 N | 52 34.72654 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 861
+Date: Thu, 02 Aug 2018 21:29:27 +0000
+In reply to: 860
+Event: 332
+Station: S27-01
+Instrument: RingNet
+Attached: 20um
+Action: Recovered
+Sounding: 0176
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 15011169
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 212840.0015 | 47 32.81091 N | 52 34.69427 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 862
+Date: Thu, 02 Aug 2018 21:32:16 +0000
+Reply to: 863
+Event: 333
+Station: S27-01
+Instrument: RingNet
+Attached: 70um/202um
+Action: Deployed
+Sounding: 0176
+Sample_ID: 432324
+End_Sample_ID: 
+Wire Out: 0166
+Depth: 
+Author: PyeB
+STN_ID: 15011169
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4151
+Time|Position: 2018-08-02 | 213129.0034 | 47 32.80785 N | 52 34.6904 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 863
+Date: Thu, 02 Aug 2018 21:39:21 +0000
+Reply to: 864
+In reply to: 862
+Event: 333
+Station: S27-01
+Instrument: RingNet
+Attached: 70um/202um
+Action: Bottom
+Sounding: 0176
+Sample_ID: 432324
+End_Sample_ID: 
+Wire Out: 0166
+Depth: 
+Author: PyeB
+STN_ID: 15011169
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4151
+Time|Position: 2018-08-02 | 213834.0030 | 47 32.87148 N | 52 34.54884 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 864
+Date: Thu, 02 Aug 2018 21:48:16 +0000
+In reply to: 863
+Event: 333
+Station: S27-01
+Instrument: RingNet
+Attached: 70um/202um
+Action: Recovered
+Sounding: 0176
+Sample_ID: 432324
+End_Sample_ID: 
+Wire Out: 0166
+Depth: 
+Author: PyeB
+STN_ID: 15011169
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4151
+Time|Position: 2018-08-02 | 214729.0038 | 47 32.89343 N | 52 34.48085 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 865
+Date: Thu, 02 Aug 2018 21:53:44 +0000
+Reply to: 866
+Event: 334
+Station: S27-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Deployed
+Sounding: 0177
+Sample_ID: 432333
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011169
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4151
+Time|Position: 2018-08-02 | 215257.0023 | 47 32.88251 N | 52 34.38632 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 866
+Date: Thu, 02 Aug 2018 22:01:53 +0000
+Reply to: 867
+In reply to: 865
+Event: 334
+Station: S27-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Bottom
+Sounding: 0177
+Sample_ID: 432333
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011169
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4151
+Time|Position: 2018-08-02 | 220106.0026 | 47 32.92878 N | 52 34.19297 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 867
+Date: Thu, 02 Aug 2018 22:05:42 +0000
+In reply to: 866
+Event: 334
+Station: S27-01
+Instrument: RingNet
+Attached: Dual 202um
+Action: Recovered
+Sounding: 0177
+Sample_ID: 432333
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: SnookS
+STN_ID: 15011169
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: T4151
+Time|Position: 2018-08-02 | 220455.0001 | 47 32.96644 N | 52 34.06324 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 868
+Date: Thu, 02 Aug 2018 22:22:28 +0000
+Reply to: 869
+Event: 335
+Station: S27-01
+Instrument: Recover Mooring
+Attached: 
+Action: Release
+Sounding: 0176
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 222141.0011 | 47 32.95139 N | 52 34.00314 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 869
+Date: Thu, 02 Aug 2018 22:47:28 +0000
+In reply to: 868
+Event: 335
+Station: S27-01
+Instrument: Recover Mooring
+Attached: 
+Action: On Deck
+Sounding: 0176
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: PyeB
+STN_ID: 
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2018-08-02 | 224641.0025 | 47 32.8351 N | 52 33.91857 W
+Cruise: 15011
+PI: Lewis, Sara
+Protocol: AZMP
+Platform: RV Coriolis II
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+

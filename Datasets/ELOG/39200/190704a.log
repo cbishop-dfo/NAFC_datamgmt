@@ -1,0 +1,240 @@
+$@MID@$: 296
+Date: Thu, 04 Jul 2019 16:32:20 +0000
+Reply to: 297
+Event: 103
+Station: CVILTOMB12-01
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0020
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RamsayD
+Seq_Number: 39200062
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2019-07-04 | 163138.00 | 49 29.2703 N | 54 19.8248 W
+Cruise: 39200
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 297
+Date: Thu, 04 Jul 2019 16:32:36 +0000
+In reply to: 296
+Event: 103
+Station: CVILTOMB12-01
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0020
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RamsayD
+Seq_Number: 39200062
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2019-07-04 | 163154.00 | 49 29.2845 N | 54 19.8918 W
+Cruise: 39200
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 298
+Date: Thu, 04 Jul 2019 19:27:46 +0000
+Reply to: 299
+Event: 104
+Station: CVILTOMB12-02
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0166
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RamsayD
+Seq_Number: 39200063
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2019-07-04 | 192704.00 | 49 48.2637 N | 54 36.1584 W
+Cruise: 39200
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 299
+Date: Thu, 04 Jul 2019 19:28:56 +0000
+In reply to: 298
+Event: 104
+Station: CVILTOMB12-02
+Instrument: XBT
+Attached: T-10
+Action: Aborted
+Sounding: 0166
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RamsayD
+Seq_Number: 39200063
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: No data recording
+Time|Position: 2019-07-04 | 192814.00 | 49 48.3995 N | 54 36.183 W
+Cruise: 39200
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 300
+Date: Thu, 04 Jul 2019 19:30:20 +0000
+Reply to: 301
+Event: 105
+Station: CVILTOMB12-02
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0166
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RamsayD
+Seq_Number: 39200064
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2019-07-04 | 192938.00 | 49 48.5625 N | 54 36.2133 W
+Cruise: 39200
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 04/Jul/2019 19:33:09
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 301
+Date: Thu, 04 Jul 2019 19:31:01 +0000
+In reply to: 300
+Event: 105
+Station: CVILTOMB12-02
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0166
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: RamsayD
+Seq_Number: 39200064
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2019-07-04 | 193019.00 | 49 48.6444 N | 54 36.23 W
+Cruise: 39200
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 04/Jul/2019 19:33:00
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 302
+Date: Thu, 04 Jul 2019 22:31:35 +0000
+Reply to: 303
+Event: 106
+Station: CVILTOMB12-03
+Instrument: XBT
+Attached: T-10
+Action: Deployed
+Sounding: 0186
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 39200065
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2019-07-04 | 223053.00 | 50 10.0595 N | 54 40.7951 W
+Cruise: 39200
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
+$@MID@$: 303
+Date: Thu, 04 Jul 2019 22:31:46 +0000
+In reply to: 302
+Event: 106
+Station: CVILTOMB12-03
+Instrument: XBT
+Attached: T-10
+Action: Bottom
+Sounding: 0186
+Sample_ID: 
+End_Sample_ID: 
+Wire Out: 
+Depth: 
+Author: BaileyW
+Seq_Number: 39200065
+IMEI_No: 
+WMO_No: 
+S/N: 
+Name: 
+Comment: 
+Time|Position: 2019-07-04 | 223103.00 | 50 10.0808 N | 54 40.8005 W
+Cruise: 39200
+PI: Snook, Steve
+Protocol: AZMP
+Platform: CCGS Teleost
+Revisions: 
+Attachment: 
+Encoding: plain
+========================================
+
