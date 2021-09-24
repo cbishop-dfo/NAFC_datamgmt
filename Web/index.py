@@ -14,6 +14,7 @@ from Toolkits import cnv_tk
 from apps import cnvapp
 from apps import bio
 from apps import azmp
+from apps import elog
 import assets
 import zipfile
 from dash_extensions.snippets import send_data_frame
@@ -33,6 +34,17 @@ except:
         database = "CNV.db"
 
 try:
+    econ = sqlite3.connect("assets//ELOG.db")
+    elog_database = "assets//ELOG.db"
+except:
+    try:
+        econ = sqlite3.connect("assets/ELOG.db")
+        elog_database = "assets/ELOG.db"
+    except:
+        econ = sqlite3.connect("ELOG.db")
+        elog_database = "ELOG.db"
+
+try:
     azmpdf = pd.read_csv("assets//NEW_AZMP_Bottle_Data.csv")
 except:
     azmpdf = pd.read_csv("assets/NEW_AZMP_Bottle_Data.csv")
@@ -47,6 +59,7 @@ data = pd.read_sql_query("SELECT * from Data", con)
 mergedDF = df.merge(data, left_on='id', right_on='cid')
 # Make a copy of the database to freely manipulate.
 dff = df.copy()
+elogdf = pd.read_sql_query("SELECT * from ELOG", econ)
 tempdf = []
 
 # replace any empty strings with null values then drop columns that are completely null
@@ -77,6 +90,7 @@ app.layout = html.Div([
             dbc.NavLink("CNV", href="/apps/cnvapp"),
             dbc.NavLink("AZMP", href="/apps/azmp"),
             dbc.NavLink("BIO", href="/apps/bio"),
+            dbc.NavLink("ELOG", href="/apps/elog"),
 
         ],
         color="#263152",
@@ -94,6 +108,8 @@ def display_page(pathname):
         return bio.layout
     if pathname == '/apps/azmp':
         return azmp.layout
+    if pathname == '/apps/elog':
+        return elog.layout
     else:
         #return "404 Page Error! Please choose a link"
         return cnvapp.layout
