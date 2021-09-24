@@ -1103,7 +1103,7 @@ def StandardizedDF(cast, df):
             oldName = c
             newName = 'Pressure'
 
-        elif c.lower().__eq__('Pressure'):
+        elif c.lower().__eq__('pressure'):
             newdf['Pressure'] = df[c].values
             oldName = c
             newName = 'Pressure'
@@ -1114,24 +1114,39 @@ def StandardizedDF(cast, df):
             newName = 'Temperature'
 
         elif c.lower().__eq__('t190c'):
-            newdf['Secondary Temperature'] = df[c].values
+            newdf['Secondary_Temperature'] = df[c].values
             oldName = c
-            newName = 'Secondary Temperature'
+            newName = 'Secondary_Temperature'
 
-        elif c.lower().__eq__('Temperature'):
+        elif c.lower().__eq__('temperature'):
             newdf['Temperature'] = df[c].values
             oldName = c
             newName = 'Temperature'
+
+        elif c.lower().__eq__('secondary_temperature'):
+            newdf['Secondary_Temperature'] = df[c].values
+            oldName = c
+            newName = 'Secondary_Temperature'
 
         elif c.lower().__eq__('c0s/m'):
             newdf['Conductivity'] = df[c].values
             oldName = c
             newName = 'Conductivity'
 
-        elif c.lower().__eq__('c1s/m'):
-            newdf['Secondary Conductivity'] = df[c].values
+        elif c.lower().__eq__('conductivity'):
+            newdf['Conductivity'] = df[c].values
             oldName = c
-            newName = 'Secondary Conductivity'
+            newName = 'Conductivity'
+
+        elif c.lower().__eq__('secondary_conductivity'):
+            newdf['Secondary_Conductivity'] = df[c].values
+            oldName = c
+            newName = 'Secondary_Conductivity'
+
+        elif c.lower().__eq__('c1s/m'):
+            newdf['Secondary_Conductivity'] = df[c].values
+            oldName = c
+            newName = 'Secondary_Conductivity'
 
         elif c.lower().__eq__('cond'):
             newdf['Conductivity'] = df[c].values
@@ -1139,34 +1154,34 @@ def StandardizedDF(cast, df):
             newName = 'Conductivity'
 
         elif c.lower().__eq__('cstarat0'):
-            newdf['Transmissometer attenuation'] = df[c].values
+            newdf['Transmissometer_attenuation'] = df[c].values
             oldName = c
-            newName = 'Transmissometer attenuation'
+            newName = 'Transmissometer_attenuation'
 
         elif c.lower().__eq__('tra'):
-            newdf['Transmissometer attenuation'] = df[c].values
+            newdf['Transmissometer_attenuation'] = df[c].values
             oldName = c
-            newName = 'Transmissometer attenuation'
+            newName = 'Transmissometer_attenuation'
 
-        elif c.lower().__eq__('tranmissometer attenuation'):
-            newdf['Transmissometer attenuation'] = df[c].values
+        elif c.lower().__eq__('tranmissometer_attenuation'):
+            newdf['Transmissometer_attenuation'] = df[c].values
             oldName = c
-            newName = 'Transmissometer attenuation'
+            newName = 'Transmissometer_attenuation'
 
         elif c.lower().__eq__('cstartr0'):
-            newdf['Transmissometer transmission'] = df[c].values
+            newdf['Transmissometer_transmission'] = df[c].values
             oldName = c
-            newName = 'Transmissometer transmission'
+            newName = 'Transmissometer_transmission'
 
         elif c.lower().__eq__('trp'):
-            newdf['Transmissometer transmission'] = df[c].values
+            newdf['Transmissometer_transmission'] = df[c].values
             oldName = c
-            newName = 'Transmissometer transmission'
+            newName = 'Transmissometer_transmission'
 
-        elif c.lower().__eq__('tranmissometer transmission'):
-            newdf['Transmissometer transmission'] = df[c].values
+        elif c.lower().__eq__('tranmissometer_transmission'):
+            newdf['Transmissometer_transmission'] = df[c].values
             oldName = c
-            newName = 'Transmissometer transmission'
+            newName = 'Transmissometer_transmission'
 
         elif c.lower().__eq__('depth'):
             newdf['Depth'] = df[c].values
@@ -1179,34 +1194,59 @@ def StandardizedDF(cast, df):
             newName = 'Flag'
 
         elif c.lower().__eq__('fleco-afl'):
-            newdf['Chlorophyll A Fluorescence'] = df[c].values
+            newdf['Chlorophyll_A_Fluorescence'] = df[c].values
             oldName = c
-            newName = 'Chlorophyll A Fluorescence'
+            newName = 'Chlorophyll_A_Fluorescence'
+
+        elif c.lower().__eq__('chlorophyll_a_fluorescence'):
+            newdf['Chlorophyll_A_Fluorescence'] = df[c].values
+            oldName = c
+            newName = 'Chlorophyll_A_Fluorescence'
 
         elif c.lower().__eq__('flor'):
             newdf['Fluorescence'] = df[c].values
             oldName = c
             newName = 'Fluorescence'
 
-        elif c.lower().__eq__('oxsatml/l'):
-            newdf['Oxygen Saturation'] = df[c].values
+        elif c.lower().__eq__('fluorescence'):
+            newdf['Fluorescence'] = df[c].values
             oldName = c
-            newName = 'Oxygen Saturation'
+            newName = 'Fluorescence'
+
+        elif c.lower().__eq__('oxygen_saturation'):
+            newdf['Oxygen_Saturation'] = df[c].values
+            oldName = c
+            newName = 'Oxygen_Saturation'
+
+        elif c.lower().__eq__('oxsatml/l'):
+            newdf['Oxygen_Saturation'] = df[c].values
+            oldName = c
+            newName = 'Oxygen_Saturation'
 
         elif c.lower().__eq__('oxy'):
-            newdf['Oxygen Saturation'] = df[c].values
+            newdf['Oxygen_Saturation'] = df[c].values
             oldName = c
-            newName = 'Oxygen Saturation'
+            newName = 'Oxygen_Saturation'
 
         elif c.lower().__eq__('par'):
             newdf['Irradiance'] = df[c].values
             oldName = c
             newName = 'Irradiance'
 
-        elif c.lower().__eq__('par/sat/log'):
-            newdf['Photosynthetic Active Radiation'] = df[c].values
+        elif c.lower().__eq__('irradiance'):
+            newdf['Irradiance'] = df[c].values
             oldName = c
-            newName = 'Photosynthetic Active Radiation'
+            newName = 'Irradiance'
+
+        elif c.lower().__eq__('par/sat/log'):
+            newdf['Photosynthetic_Active_Radiation'] = df[c].values
+            oldName = c
+            newName = 'Photosynthetic_Active_Radiation'
+
+        elif c.lower().__eq__('photosynthetic_active_radiation'):
+            newdf['Photosynthetic_Active_Radiation'] = df[c].values
+            oldName = c
+            newName = 'Photosynthetic_Active_Radiation'
 
         elif c.lower().__eq__('ph'):
             newdf['pH'] = df[c].values
@@ -1223,10 +1263,15 @@ def StandardizedDF(cast, df):
             oldName = c
             newName = 'Salinity'
 
-        elif c.lower().__eq__('Salinity'):
+        elif c.lower().__eq__('salinity'):
             newdf['Salinity'] = df[c].values
             oldName = c
             newName = 'Salinity'
+
+        elif c.lower().__eq__('secondary_salinity'):
+            newdf['Secondary_Salinity'] = df[c].values
+            oldName = c
+            newName = 'Secondary_Salinity'
 
         elif c.lower().__eq__('sal00'):
             newdf['Salinity'] = df[c].values
@@ -1234,29 +1279,49 @@ def StandardizedDF(cast, df):
             newName = 'Salinity'
 
         elif c.lower().__eq__('sal11'):
-            newdf['Secondary Salinity'] = df[c].values
+            newdf['Secondary_Salinity'] = df[c].values
             oldName = c
-            newName = 'Secondary Salinity'
+            newName = 'Secondary_Salinity'
 
         elif c.lower().__eq__('sbeox0ml/l'):
             newdf['Oxygen'] = df[c].values
             oldName = c
             newName = 'Oxygen'
 
-        elif c.lower().__eq__('sbeox0v'):
-            newdf['Oxygen Raw'] = df[c].values
+        elif c.lower().__eq__('oxygen'):
+            newdf['Oxygen'] = df[c].values
             oldName = c
-            newName = 'Oxygen Raw'
+            newName = 'Oxygen'
+
+        elif c.lower().__eq__('sbeox0v'):
+            newdf['Oxygen_Raw'] = df[c].values
+            oldName = c
+            newName = 'Oxygen_Raw'
+
+        elif c.lower().__eq__('oxygen_raw'):
+            newdf['Oxygen_Raw'] = df[c].values
+            oldName = c
+            newName = 'Oxygen_Raw'
 
         elif c.lower().__eq__('sbeox1ml/l'):
-            newdf['Secondary Oxygen'] = df[c].values
+            newdf['Secondary_Oxygen'] = df[c].values
             oldName = c
-            newName = 'Secondary Oxygen'
+            newName = 'Secondary_Oxygen'
+
+        elif c.lower().__eq__('secondary_oxygen'):
+            newdf['Secondary_Oxygen'] = df[c].values
+            oldName = c
+            newName = 'Secondary_Oxygen'
 
         elif c.lower().__eq__('sbeox1v'):
-            newdf['Secondary Oxygen Raw'] = df[c].values
+            newdf['Secondary_Oxygen_Raw'] = df[c].values
             oldName = c
-            newName = 'Secondary Oxygen Raw'
+            newName = 'Secondary_Oxygen_Raw'
+
+        elif c.lower().__eq__('secondary_oxygen_raw'):
+            newdf['Secondary_Oxygen_Raw'] = df[c].values
+            oldName = c
+            newName = 'Secondary_Oxygen_Raw'
 
         elif c.lower().__eq__('scan'):
             newdf['scan'] = df[c].values
@@ -1268,9 +1333,9 @@ def StandardizedDF(cast, df):
             newName = 'Density'
 
         elif c.lower().__eq__('sigma-t11'):
-            newdf['Secondary Density'] = df[c].values
+            newdf['Secondary_Density'] = df[c].values
             oldName = c
-            newName = 'Secondary Density'
+            newName = 'Secondary_Density'
 
         elif c.lower().__eq__('sigt'):
             newdf['Density'] = df[c].values
@@ -1282,22 +1347,37 @@ def StandardizedDF(cast, df):
             oldName = c
             newName = 'Density'
 
+        elif c.lower().__eq__('density'):
+            newdf['Density'] = df[c].values
+            oldName = c
+            newName = 'Density'
+
         elif c.lower().__eq__('temp'):
             newdf['Temperature'] = df[c].values
             oldName = c
             newName = 'Temperature'
 
         elif c.lower().__eq__('wetcdom'):
-            newdf['CDOM Fluorescence'] = df[c].values
+            newdf['CDOM_Fluorescence'] = df[c].values
             oldName = c
-            newName = 'CDOM Fluorescence'
+            newName = 'CDOM_Fluorescence'
 
         elif c.lower().__eq__('wet'):
-            newdf['CDOM Fluorescence'] = df[c].values
+            newdf['CDOM_Fluorescence'] = df[c].values
             oldName = c
-            newName = 'CDOM Fluorescence'
+            newName = 'CDOM_Fluorescence'
+
+        elif c.lower().__eq__('cdom_fluorescence'):
+            newdf['CDOM_Fluorescence'] = df[c].values
+            oldName = c
+            newName = 'CDOM_Fluorescence'
 
         elif c.lower().__eq__('depsm'):
+            newdf['Depth'] = df[c].values
+            oldName = c
+            newName = 'Depth'
+
+        elif c.lower().__eq__('depth'):
             newdf['Depth'] = df[c].values
             oldName = c
             newName = 'Depth'
