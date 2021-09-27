@@ -957,31 +957,44 @@ def cnv_sig_dataframe(cast):
         Bin = []
         depthIndex = []
         sigIndex = []
-        numBins = math.ceil(math.sqrt(temperatureArray.__len__()))
-        width = math.ceil(temperatureArray.__len__() / numBins)
+        numBins = math.ceil(math.sqrt(depthArray.__len__()))
+        width = math.ceil(depthArray.__len__() / numBins)
+        sigIndex.append(0)  # First point
 
         count = 0
         index = 0
         row = []
         for t in temperatureArray:
             if count < width:
-                row.append(t)
+                row.append([t, index])
                 count = count + 1
                 index = index + 1
             else:
                 sum = 0
                 for r in row:
-                    sum = sum + r
-                avg = sum / row.__len__()
-                Bin.append(avg)
-                depthIndex.append(depthArray[index])
-                sigIndex.append(index)
-                count = 0
+                    sum = sum + r[0]
 
+                x = row.__len__()
+                avg = sum / x
+                sind = 0
+                lastdif = 999
+                for r in row:
+                    dif = abs(r[0] - avg)
+                    if lastdif > dif:
+                        sind = r[1]
+                        lastdif = dif
+
+                Bin.append(avg)
+                depthIndex.append(depthArray[sind])
+                sigIndex.append(sind)
+                count = 0
+                row = []
+        sigIndex.append(depthArray.__len__() - 1)  # Last point
         return sigIndex
 
     # return an array containing the significant indexes.
     sig = binSmoothing(depthArray, temperatureArray)
+
     ntem = []
     ndep = []
     nsal = []
