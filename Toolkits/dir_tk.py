@@ -77,7 +77,7 @@ def confirmSelection(dirName=os.path.dirname(os.path.realpath(__file__))):
         fileList = []
         for root, dirs, files in os.walk(directory):
             for file in files:
-                if file.endswith(".new"):
+                if file.endswith(".new") or file.endswith(".cnv"):
                     print(os.path.join(root, file))
                     fileList.append(os.path.join(root, file))
         files = sorted(glob.glob(directory))
