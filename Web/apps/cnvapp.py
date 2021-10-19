@@ -8,6 +8,7 @@ import sqlite3
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
+from dash_extensions import Download
 from dash.dependencies import Input, Output
 from Toolkits import cnv_tk
 
@@ -66,7 +67,7 @@ layout = html.Div([
     html.Br(),
     html.Br(),
     dcc.Input(
-        placeholder='Ship Number: ',
+        placeholder='Ship Number',
         id='shipNumber',
         type='text',
         value="",
@@ -132,6 +133,7 @@ layout = html.Div([
         persistence_type="memory"
     ),
     html.Hr(),
+    html.Button("Download", id="btn"), Download(id="download"),
     #dcc.Checklist(
     #options=[
     #    {'label': 'CTD', 'value': 'CTD'},
@@ -141,10 +143,11 @@ layout = html.Div([
     #labelStyle={'display': 'inline-block'}
     #),
     #html.Hr(),
-    html.Button('Write IGOSS', id='igoss', n_clicks=0),
-    html.Button('Write NETCDF', id='netcdf', n_clicks=0),
-    html.Button('Write Simple CNV', id='simple', n_clicks=0),
-    html.Button('Write CNV', id='cnv', n_clicks=0),
+
+    #html.Button('Write IGOSS', id='igoss', n_clicks=0),
+    #html.Button('Write NETCDF', id='netcdf', n_clicks=0),
+    #html.Button('Write Simple CNV', id='simple', n_clicks=0),
+    #html.Button('Write CNV', id='cnv', n_clicks=0),
 
     html.Br(),
 

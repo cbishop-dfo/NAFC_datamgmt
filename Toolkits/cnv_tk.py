@@ -459,7 +459,7 @@ def getShipNumber(cast, shipDF=ships_tk.createShipDF()):
     :param shipDF: Ship dataframe created from the ships_tk
     :return:
     """
-
+    
     try:
         s = shipDF[shipDF[2].str.match(cast.ShipName.__str__())]
         snumber = s.values[0][0]

@@ -72,6 +72,17 @@ del dff["Contact"]
 del dff["Language"]
 del dff["MaintenanceContact"]
 
+# Splitting Ship_Trip_Stn for AZMP file into separate columns
+azmpdf["Ship"] = azmpdf["Ship_Trip_Stn"].astype(str).str[0:2]
+azmpdf["Trip"] = azmpdf["Ship_Trip_Stn"].astype(str).str[2:5]
+azmpdf["Station Number"] = azmpdf["Ship_Trip_Stn"].astype(str).str[5:8]
+
+# Splitting Seq_number for ELOG DB into separate columns
+elogdf["Ship Name"] = elogdf["Seq_Number"].str[0:4]
+elogdf["Trip"] = elogdf["Seq_Number"].str[4:7]
+elogdf["Station Number"] = elogdf["Seq_Number"].str[13:]
+
+
 mergedDF = dff.merge(data, left_on='id', right_on='cid')
 logo = "https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg"
 app.layout = html.Div([
@@ -286,7 +297,7 @@ def update_table(shpSelected,tripSelected, stationSelected, lat_min, lat_max, lo
     tempdf["Latitude"] = tempdf["Latitude"].astype(float)
     tempdf["Longitude"] = tempdf["Longitude"].astype(float)
     if not shpSelected == "":
-        tempdf = dff[dff["Ship"] == shpSelected.__str__()]
+        tempdf = tempdf[tempdf["Ship"] == shpSelected.__str__()]
     if not tripSelected == "":
         tempdf = tempdf[tempdf["Trip"] == tripSelected.__str__()]
     if not stationSelected == "":
@@ -311,15 +322,15 @@ def update_table(shpSelected,tripSelected, stationSelected, lat_min, lat_max, lo
 ### AZMP ##################################################################################################
 @app.callback(
     Output('table_azmp', 'data'),
-    Input('shipTrip', "value"),
-    Input('sts', "value"),
+    Input('shipNumber', "value"),
+    Input('trip', "value"),
     Input('station', "value"),
     Input('lat_min', "value"),
     Input('lat_max', "value"),
     Input('lon_min', "value"),
     Input('lon_max', "value"),
     Input('date', "value"))
-def update_table(shptrpSelected,stsSelected, stationSelected, lat_min, lat_max, lon_min, lon_max, date):
+def update_table(shpSelected,tripSelected, stationSelected, lat_min, lat_max, lon_min, lon_max, date):
     #print("Ship Number: " + shptrpSelected.__str__())
     #print("Trip: " + stsSelected.__str__())
     #print("Station: " + stationSelected.__str__())
@@ -327,12 +338,12 @@ def update_table(shptrpSelected,stsSelected, stationSelected, lat_min, lat_max, 
     tempdf = azmpdf.copy()
     tempdf["Latitude"] = tempdf["Latitude"].astype(float)
     tempdf["Longitude"] = tempdf["Longitude"].astype(float)
-    if not shptrpSelected == "":
-        tempdf = tempdf[tempdf["Ship_Trip"] == shptrpSelected]
-    if not stsSelected == "":
-        tempdf = tempdf[tempdf["Ship_Trip_Stn"] == int(stsSelected)]
+    if not shpSelected == "":
+        tempdf = tempdf[tempdf["Ship"] == shpSelected.__str__()]
+    if not tripSelected == "":
+        tempdf = tempdf[tempdf["Trip"] == tripSelected.__str__()]
     if not stationSelected == "":
-        tempdf = tempdf[tempdf["Station"] == stationSelected.__str__()]
+        tempdf = tempdf[tempdf["Station Number"] == stationSelected.__str__()]
     if not lat_min == "" and not lat_min == "-":
         if not lat_max == "" and not lat_max == "-":
             tempdf = tempdf[tempdf["Latitude"].astype(float).between(float(lat_min), float(lat_max))]
@@ -411,7 +422,7 @@ def downloadTable(clicks,shpSelected,tripSelected, stationSelected, lat_min, lat
     print("Trip: " + tripSelected.__str__())
     print("Station: " + stationSelected.__str__())
     #print("Clicks: \n" + clicks)
-
+    Filename = ""
     if clicks != None:
         tempdf = biodf.copy()
         tempdf["Lat"] = tempdf["Lat"].astype(float)
@@ -422,10 +433,13 @@ def downloadTable(clicks,shpSelected,tripSelected, stationSelected, lat_min, lat
 
         if not shpSelected == "":
             tempdf = tempdf[tempdf["Ship"] == int(shpSelected)]
+            Filename = Filename + shpSelected.__str__()
         if not tripSelected == "":
             tempdf = tempdf[tempdf["Trip"] == int(tripSelected)]
+            Filename = Filename + tripSelected.__str__()
         if not stationSelected == "":
             tempdf = tempdf[tempdf["Set"] == int(stationSelected)]
+            Filename = Filename + stationSelected.__str__()
         if not lat_min == "" and not lat_min == "-":
             if not lat_max == "" and not lat_max == "-":
                 tempdf = tempdf[tempdf["Lat"].astype(float).between(float(lat_min), float(lat_max))]
@@ -443,7 +457,8 @@ def downloadTable(clicks,shpSelected,tripSelected, stationSelected, lat_min, lat
             tempdf = tempdf[tempdf["Date"].str.contains(date.__str__())]
 
         clicks = None
-        return send_data_frame(tempdf.to_excel, "mydf.xls")
+        Filename = Filename + ".xls"
+        return send_data_frame(tempdf.to_excel, Filename)
 
     else:
         print("not clicked")

@@ -10,6 +10,7 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 from dash_extensions import Download
 
+
 import numpy as np
 from dash.dependencies import Input, Output
 from Toolkits import cnv_tk
@@ -41,6 +42,11 @@ app = dash.Dash(__name__)
 server = app.server
 app.title = "DFO | ELOG Data"
 
+# Splitting Seq_number for ELOG DB into separate columns
+elogdf["Ship Name"] = elogdf["Seq_Number"].str[0:4]
+elogdf["Trip"] = elogdf["Seq_Number"].str[4:7]
+elogdf["Station Number"] = elogdf["Seq_Number"].str[13:]
+
 theme =  {
     'dark': True,
     'detail': '#007439',
@@ -60,7 +66,7 @@ layout = html.Div([
 
     html.Br(),
         dcc.Input(
-        placeholder='Ship Number: ',
+        placeholder='Ship Number',
         id='shipNumber',
         type='text',
         value="",

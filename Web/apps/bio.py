@@ -54,7 +54,7 @@ layout = html.Div([
 
     html.Br(),
         dcc.Input(
-        placeholder='Ship Number: ',
+        placeholder='Ship Number',
         id='shipNumber',
         type='text',
         value="",

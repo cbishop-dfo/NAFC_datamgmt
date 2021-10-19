@@ -8,6 +8,7 @@ import sqlite3
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
+from dash_extensions import Download
 import numpy as np
 from dash.dependencies import Input, Output
 from Toolkits import cnv_tk
@@ -33,6 +34,12 @@ app = dash.Dash(__name__)
 server = app.server
 app.title = "DFO | AZMP Bottle Data"
 
+
+# Splitting Ship_Trip_Stn for AZMP file into separate columns
+azmpdf["Ship"] = azmpdf["Ship_Trip_Stn"].astype(str).str[0:2]
+azmpdf["Trip"] = azmpdf["Ship_Trip_Stn"].astype(str).str[2:5]
+azmpdf["Station Number"] = azmpdf["Ship_Trip_Stn"].astype(str).str[5:8]
+
 theme =  {
     'dark': True,
     'detail': '#007439',
@@ -51,57 +58,74 @@ layout = html.Div([
     ),
 
     html.Br(),
-    'Ship Trip: ',
     dcc.Input(
-        id='shipTrip',
+        placeholder='Ship Number',
+        id='shipNumber',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Ship Trip Stn: ',
     dcc.Input(
-        id='sts',
+        placeholder='Trip',
+        id='trip',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Station: ',
     dcc.Input(
+        placeholder='Station',
         id='station',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Date: ',
     dcc.Input(
+        placeholder='Date',
         id='date',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
     html.Br(),
     html.Br(),
-    ' Latitude Min: ',
     dcc.Input(
+        placeholder='Latitude Min',
         id='lat_min',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Latitude Max: ',
     dcc.Input(
+        placeholder='Latitude Max',
         id='lat_max',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Longitude Min: ',
     dcc.Input(
+        placeholder='Longitude Min',
         id='lon_min',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
-    ' Longitude Max: ',
     dcc.Input(
+        placeholder='Longitude Max',
         id='lon_max',
         type='text',
-        value=""
+        value="",
+        persistence=True,
+        persistence_type="memory"
     ),
     html.Hr(),
+    html.Button("Download", id="btn"), Download(id="download"),
     #dcc.Checklist(
     #options=[
     #    {'label': 'CTD', 'value': 'CTD'},
