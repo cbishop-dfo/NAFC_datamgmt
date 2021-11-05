@@ -180,7 +180,7 @@ def odf_meta(cast, datafile):
 
         elif line.__contains__("START_DATE_TIME="):
             nline = line.replace("\\", "").replace(",", "").replace("'", "").split("=")[1].split()[0].split("-")
-            time = line.replace("\\", "").replace(",", "").replace("'", "").split("=")[1].split(" ")[1]
+            time = line.replace("\\", "").replace(",", "").replace("'", "").split("=")[1].lstrip().rstrip().split(" ")[1]
             day = nline[0]
             month = nline[1]
             year = nline[2]
@@ -230,6 +230,9 @@ def odf_meta(cast, datafile):
             isParameter = True
 
         if isParameter:
+            if cast.DataLimit == "":
+                if line.__contains__("NUMBER_VALID="):
+                    cast.DataLimit = int(line.split("=")[1].replace(",", "").lstrip().rstrip())
             if line.__contains__("NAME="):
                 channel = line.split("=")[1]
                 if channel == 'CNTR_01':
@@ -253,15 +256,15 @@ def odf_meta(cast, datafile):
 
                 # Temperature 2
                 elif channel == 'TEMP_02':
-                    cast.columns.append("Secondary Temperature")
+                    cast.columns.append("Secondary_Temperature")
 
                 # Conductivity 2
                 elif channel == 'CRAT_02':
-                    cast.columns.append("Secondary Conductivity")
+                    cast.columns.append("Secondary_Conductivity")
 
                 # Fluorescence, Seapoint Ultraviolet
                 elif channel == 'FSPUV_01':
-                    cast.columns.append("Fluorescence Ultraviolet")
+                    cast.columns.append("Fluorescence_Ultraviolet")
 
                 # Fluorescence
                 elif channel == 'FSP_01':
@@ -269,11 +272,11 @@ def odf_meta(cast, datafile):
 
                 # Oxygen raw
                 elif channel == 'OXYV_01':
-                    cast.columns.append("Oxygen Raw")
+                    cast.columns.append("Oxygen_Raw")
 
                 # Oxygen raw 2
                 elif channel == 'OXYV_02':
-                    cast.columns.append("Secondary Oxygen Raw")
+                    cast.columns.append("Secondary_Oxygen_Raw")
 
                 # Altimeter
                 elif channel == 'ALT_01':
@@ -281,7 +284,7 @@ def odf_meta(cast, datafile):
 
                 # PAR/Logarithmic
                 elif channel == 'par/log':
-                    cast.columns.append("Photosynthetic Active Radiation")
+                    cast.columns.append("Photosynthetic_Active_Radiation")
 
                 # pH
                 elif channel == 'PHPH_01':
@@ -309,15 +312,15 @@ def odf_meta(cast, datafile):
 
                 # Salinity 2
                 elif channel == 'PSAL_02':
-                    cast.columns.append("Secondary Salinity")
+                    cast.columns.append("Secondary_Salinity")
 
                 # Potential Temperature
                 elif channel == 'POTM_01':
-                    cast.columns.append("Potential Temperature")
+                    cast.columns.append("Potential_Temperature")
 
                 # Potential Temperature 2
                 elif channel == 'POTM_02':
-                    cast.columns.append("Secondary Potential Temperature")
+                    cast.columns.append("Secondary_Potential_Temperature")
 
                 # Density
                 elif channel == 'sigma-é00':
@@ -325,7 +328,7 @@ def odf_meta(cast, datafile):
 
                 # Density 2
                 elif channel == 'sigma-é11':
-                    cast.columns.append("Secondary Density")
+                    cast.columns.append("Secondary_Density")
 
                 # Oxygen
                 elif channel == 'DOXY_01':
@@ -333,26 +336,37 @@ def odf_meta(cast, datafile):
 
                 # Oxygen 2
                 elif channel == 'DOXY_02':
-                    cast.columns.append("Secondary Oxygen")
+                    cast.columns.append("Secondary_Oxygen")
 
                 # number of scans per bin
                 elif channel == 'SNCNTR_01':
-                    cast.columns.append("scans per bin")
+                    cast.columns.append("scans_per_bin")
 
                 # flag
                 elif channel == 'FFFF_01':
                     cast.columns.append("Flag")
+                else:
+                    cast.columns.append(channel.lstrip().rstrip())
 
         if line.__contains__("PROCESS=*"):
             nline = line.replace("PROCESS=", "")
+            cast.software.append(nline)
+        elif line.__contains__("PROCESS= *"):
+            nline = line.replace("PROCESS= ", "")
             cast.software.append(nline)
 
         if line.__contains__("PROCESS=**"):
             nline = line.replace("PROCESS=", "")
             cast.userInput.append(nline)
+        elif line.__contains__("PROCESS= **"):
+            nline = line.replace("PROCESS= ", "")
+            cast.userInput.append(nline)
 
         if line.__contains__("PROCESS=#"):
             nline = line.replace("PROCESS=", "")
+            cast.InstrumentInfo.append(nline)
+        elif line.__contains__("PROCESS= #"):
+            nline = line.replace("PROCESS= ", "")
             cast.InstrumentInfo.append(nline)
 
 ###########################################################################################################
@@ -454,8 +468,9 @@ def odf_to_dataframe(cast):
 
     for column in Dictionary:
         try:
-            df[column] = Dictionary[column]
-        except:
+            df[column] = Dictionary[column][:cast.DataLimit]
+        except Exception as e:
+            print(e.__str__())
             df[column] = np.nan
     return df
 
