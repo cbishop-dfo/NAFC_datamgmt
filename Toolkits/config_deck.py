@@ -54,7 +54,8 @@ def createDeckDF():
         ['SBE-9 Plus', '1145', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence']],
         ['SBE-911', '1221', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence', 'Irradiance', 'pH', 'Transmissometer transmission', 'Transmissometer attenuation', 'CDOM Fluorescence']],
         ['XBT', '1098', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence']],
-        ['SBE-911', ' S1460', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence', 'Irradiance', 'pH', 'Transmissometer transmission', 'Transmissometer attenuation', 'CDOM Fluorescence']]
+        ['SBE-911', ' S1460', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence', 'Irradiance', 'pH', 'Transmissometer transmission', 'Transmissometer attenuation', 'CDOM Fluorescence']],
+        ['SBE-911', ' XXXX', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence', 'Irradiance', 'pH', 'Transmissometer transmission', 'Transmissometer attenuation', 'CDOM Fluorescence']]
         
     ]
 
