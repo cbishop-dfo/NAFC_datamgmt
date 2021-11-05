@@ -799,8 +799,8 @@ def getChannelStats(cast, df, c):
 def write_pfile(cast, df):
     # Line one in header
     cid = cast.ship.__str__() + cast.trip.__str__() + cast.station.__str__()
-    lat = cast.Latitude
-    lon = cast.Longitude
+    lat = cast.Latitude.__str__()
+    lon = cast.Longitude.__str__()
     date = cast.CastDatetime.split(" ")[0]
     time = cast.CastDatetime.split(" ")[1]
     soundDepth = cast.SounderDepth
