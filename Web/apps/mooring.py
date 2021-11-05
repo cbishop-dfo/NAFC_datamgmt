@@ -10,27 +10,53 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 from dash_extensions import Download
 
-
 import numpy as np
 from dash.dependencies import Input, Output
 from Toolkits import cnv_tk
 
-
-# Read database into dataframe
-database = "CNV.db"
-con = sqlite3.connect(database)
 try:
-    econ = sqlite3.connect("assets//ELOG.db")
-    elog_database = "assets//ELOG.db"
+    moordf = pd.read_excel("assets//Mooring Summary.xlsx")
 except:
-    try:
-        econ = sqlite3.connect("assets/ELOG.db")
-        elog_database = "assets/ELOG.db"
-    except:
-        econ = sqlite3.connect("ELOG.db")
-        elog_database = "ELOG.db"
+    moordf = pd.read_csv("assets/Mooring Summary.xlsx")
 
-elogdf = pd.read_sql_query("SELECT * from ELOG", econ)
+def ReadMooring(df):
+    index = 0
+    depindex = 0
+    recindex = 0
+    toBeDeployedIndex = 0
+    MoorLostIndex = 0
+    for row in df.values:
+        if row[0] == "Moorings Recovered":
+            depindex = index
+
+        elif row[0] == "Moorings To Be Deployed":
+            toBeDeployedIndex = index
+
+        elif row[0] == "Moorings Lost":
+            MoorLostIndex = index
+
+        index = index + 1
+
+    dep = df.iloc[:depindex]
+    dep = dep.iloc[1::2, :]
+
+    rec = df.iloc[depindex+1:toBeDeployedIndex]
+    rec = rec.iloc[0::2, :]
+
+    tbd = df.iloc[toBeDeployedIndex+1:MoorLostIndex]
+    tbd = tbd.iloc[0::2, :]
+
+    mlost = df.iloc[MoorLostIndex+1:]
+    mlost = mlost.iloc[0::2, :]
+
+    dep["Status"] = "Mooring Deployed"
+    rec["Status"] = "Mooring Recovered"
+    tbd["Status"] = "To Be Deployed"
+    mlost["Status"] = "Mooring Lost"
+
+    result = pd.concat([dep, rec, tbd, mlost], ignore_index=True)
+
+    return result
 
 
 # # replace any empty strings with null values then drop columns that are completely null
@@ -40,12 +66,9 @@ elogdf = pd.read_sql_query("SELECT * from ELOG", econ)
 
 app = dash.Dash(__name__)
 server = app.server
-app.title = "DFO | ELOG Data"
+app.title = "DFO | Biomass Data"
 
-# Splitting Seq_number for ELOG DB into separate columns
-elogdf["Ship Name"] = elogdf["Seq_Number"].str[0:4]
-elogdf["Trip"] = elogdf["Seq_Number"].str[4:7]
-elogdf["Station Number"] = elogdf["Seq_Number"].str[13:]
+moordf = ReadMooring(moordf)
 
 theme =  {
     'dark': True,
@@ -53,44 +76,45 @@ theme =  {
     'primary': '#00EA64',
     'secondary': '#6E6E6E',
 }
+#biodf["Set"] = str(i).zfill(3) for i in biodf["Set"].values()
 
 # Create the app layout
 #app.layout = html.Div([
 layout = html.Div([
     dbc.Row(
         dbc.Col(
-            dbc.CardHeader("ELOG Data"),
+            dbc.CardHeader("Mooring Data"),
                     width={'size': 12, 'offset': 0},
             ),
     ),
 
     html.Br(),
         dcc.Input(
-        placeholder='Ship Number',
-        id='shipNumber',
+        placeholder='Mooring',
+        id='mooring',
         type='text',
         value="",
         persistence=True,
         persistence_type="memory"
     ),
     dcc.Input(
-        placeholder='Trip',
-        id='trip',
+        placeholder='Mooring Number',
+        id='moornum',
         type='text',
         value="",
         persistence=True,
         persistence_type="memory"
     ),
     dcc.Input(
-        placeholder='Station',
-        id='station',
+        placeholder='Instruments',
+        id='inst',
         type='text',
         value="",
         persistence=True,
         persistence_type="memory"
     ),
     dcc.Input(
-        placeholder='Date',
+        placeholder='Date In',
         id='date',
         type='text',
         value="",
@@ -139,22 +163,16 @@ layout = html.Div([
         persistence=True,
         persistence_type="memory"
     ),
+    dcc.Input(
+        placeholder='Status',
+        id='status',
+        type='text',
+        value="",
+        persistence=True,
+        persistence_type="memory"
+    ),
     html.Hr(),
-    html.Button("Download", id="btn"), Download(id="download"),
-    #html.Button("Download zip", id="btn_txt"), dcc.Download(id="download-text"),
-    #dcc.Checklist(
-    #options=[
-    #    {'label': 'CTD', 'value': 'CTD'},
-    #    {'label': 'Biological', 'value': 'BIO'}
-    #],
-    #value=[],
-    #labelStyle={'display': 'inline-block'}
-    #),
-    #html.Hr(),
-    #html.Button('Write IGOSS', id='igoss', n_clicks=0),
-    #html.Button('Write NETCDF', id='netcdf', n_clicks=0),
-    #html.Button('Write Simple CNV', id='simple', n_clicks=0),
-    #html.Button('Write CNV', id='cnv', n_clicks=0),
+    #html.Button("Download", id="btn"), Download(id="download"),
 
     html.Br(),
 
@@ -166,9 +184,9 @@ layout = html.Div([
         dbc.Col(
             dash_table.DataTable
             (
-                id='table_elog',
-                columns=[{"name": i, "id": i} for i in elogdf.columns],
-                data=elogdf.to_dict('records'),
+                id='table_mooring',
+                columns=[{"name": i, "id": i} for i in moordf.columns],
+                data=moordf.to_dict('records'),
 
                 style_cell_conditional=[
                     {

@@ -13,14 +13,12 @@ import numpy as np
 from dash.dependencies import Input, Output
 from Toolkits import cnv_tk
 
-
-# Read database into dataframe
-database = "CNV.db"
-con = sqlite3.connect(database)
 try:
-    azmpdf = pd.read_csv("assets//NEW_AZMP_Bottle_Data.csv")
+    azmpdf = pd.read_excel("assets//AZMP_Bottle_Data.xlsx", header=1)
+    #azmpdf = pd.read_csv("assets//NEW_AZMP_Bottle_Data.csv")
 except:
-    azmpdf = pd.read_csv("assets/NEW_AZMP_Bottle_Data.csv")
+    azmpdf = pd.read_excel("assets//AZMP_Bottle_Data.xlsx", header=1)
+    #azmpdf = pd.read_csv("assets/NEW_AZMP_Bottle_Data.csv")
 
 # Make a copy of the database to freely manipulate.
 #azmpdfdff = azmpdfdf.copy()
@@ -124,8 +122,16 @@ layout = html.Div([
         persistence=True,
         persistence_type="memory"
     ),
+    #dcc.Input(
+    #        placeholder='Comment',
+    #        id='comment',
+    #        type='text',
+    #        value="",
+    #        persistence=True,
+    #        persistence_type="memory"
+    #    ),
     html.Hr(),
-    html.Button("Download", id="btn"), Download(id="download"),
+    #html.Button("Download", id="btn"), Download(id="download"),
     #dcc.Checklist(
     #options=[
     #    {'label': 'CTD', 'value': 'CTD'},

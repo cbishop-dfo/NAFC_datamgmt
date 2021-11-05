@@ -11,8 +11,10 @@ import dash_bootstrap_components as dbc
 from dash_extensions import Download
 from dash.dependencies import Input, Output
 from Toolkits import cnv_tk
-
-
+import plotly.graph_objs as go
+import plotly.express as px
+px.set_mapbox_access_token(
+        "pk.eyJ1IjoiZG1rMzI0IiwiYSI6ImNrZnJ4cmQ0ZDAyZ3EyenMzbzd4b2xlOGsifQ.IEmRP5lFSKW1nyeonj0lLQ")
 # Read database into dataframe
 try:
     con = sqlite3.connect("assets//CNV.db")
@@ -56,6 +58,8 @@ app.title = "DFO | CTD Meta Data"
 
 # Create the app layout
 #app.layout = html.Div([
+df["Latitude"] = df["Latitude"].astype(float)
+df["Longitude"] = df["Longitude"].astype(float)
 layout = html.Div([
     dbc.Row(
         dbc.Col(
@@ -132,6 +136,14 @@ layout = html.Div([
         persistence=True,
         persistence_type="memory"
     ),
+    dcc.Input(
+        placeholder='Comment',
+        id='comment',
+        type='text',
+        value="",
+        persistence=True,
+        persistence_type="memory"
+    ),
     html.Hr(),
     html.Button("Download", id="btn"), Download(id="download"),
     #dcc.Checklist(
@@ -178,10 +190,15 @@ layout = html.Div([
                     'backgroundColor': 'rgb(230, 230, 230)',
                     'fontWeight': 'bold'
                 }
-            )
-
+            ),
         ),style={"margin-left": "5px"}
     ),
+    html.Div([
+            dcc.Graph(id='graph_cnv', config={'displayModeBar': False, 'scrollZoom': True},
+                style={'background':'#00FC87','padding-bottom':'2px','padding-left':'2px','height':'100vh'}
+            )
+        ],
+        ),
 ])
 
 if __name__ == '__main__':

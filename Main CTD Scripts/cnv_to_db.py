@@ -1,4 +1,4 @@
-exec(open("C:\QA_paths\set_QA_paths.py").read())
+#exec(open("C:\QA_paths\set_QA_paths.py").read())
 
 
 import os

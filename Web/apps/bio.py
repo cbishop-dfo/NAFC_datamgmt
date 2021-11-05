@@ -41,6 +41,7 @@ theme =  {
     'primary': '#00EA64',
     'secondary': '#6E6E6E',
 }
+#biodf["Set"] = str(i).zfill(3) for i in biodf["Set"].values()
 
 # Create the app layout
 #app.layout = html.Div([
@@ -114,6 +115,14 @@ layout = html.Div([
     dcc.Input(
         placeholder='Longitude Max',
         id='lon_max',
+        type='text',
+        value="",
+        persistence=True,
+        persistence_type="memory"
+    ),
+    dcc.Input(
+        placeholder='Comment',
+        id='comment',
         type='text',
         value="",
         persistence=True,

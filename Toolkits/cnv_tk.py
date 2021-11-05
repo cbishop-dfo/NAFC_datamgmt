@@ -310,8 +310,9 @@ def cnv_meta(cast, datafile):
                     cast.station = cast.id[5:8]
 
             elif line.upper().__contains__("DATE"):
-                l = line.split()
-                cast.CastDatetime = l[2] + " " + l[3]
+                if cast.CastDatetime == "":
+                    l = line.split()
+                    cast.CastDatetime = l[2] + " " + l[3]
 
             elif line.upper().__contains__("LATITUDE") or line.upper().__contains__("LAT"):
                 try:
