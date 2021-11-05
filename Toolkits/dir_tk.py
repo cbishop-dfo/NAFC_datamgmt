@@ -63,7 +63,7 @@ def selectSingleFile():
 ###########################################################################################################
 
 def confirmSelection(dirName=os.path.dirname(os.path.realpath(__file__))):
-    select = input("Choose method for file selection\n[1] Read Files From: " + dirName + "\n[2] Manually Select Files\n"  + "[3] New Path\n")
+    select = input("Choose method for file selection\n[1] Read Files From: " + dirName + "\n[2] Manually Select Files\n"  + "[3] Sys Arg\n")
     if select == "1":
         files = getListOfFiles(dirName)
         return files
@@ -77,9 +77,9 @@ def confirmSelection(dirName=os.path.dirname(os.path.realpath(__file__))):
         fileList = []
         for root, dirs, files in os.walk(directory):
             for file in files:
-                if file.endswith(".new") or file.endswith(".cnv"):
-                    print(os.path.join(root, file))
-                    fileList.append(os.path.join(root, file))
+                #if file.endswith(".new") or file.endswith(".cnv"):
+                print(os.path.join(root, file))
+                fileList.append(os.path.join(root, file))
         files = sorted(glob.glob(directory))
         print(len(fileList))
         return fileList
