@@ -274,7 +274,7 @@ def cnv_meta(cast, datafile):
     endTag = False
 
     for line in f:
-        line = line.replace("\n", "")
+        line = line.replace("\n", "").lstrip().rstrip()
         if isData:
             cast.data.append(line.replace("\n", "").lstrip().rstrip().split())
         if line.__contains__("System UpLoad Time"):
@@ -298,9 +298,10 @@ def cnv_meta(cast, datafile):
                         cast.trip = l[0][-3:]
                         cast.station = l[2]
                 elif line.__contains__("_"):
-                    l = line.split(":")[1].split("_")
-                    cast.ship = l[0][0:4]
-                    cast.trip = l[0][4:7]
+                    l = line.split(":")[1].replace(" ", "").split("_")
+                    cast.ShipName = l[0][0:3]
+                    getShipNumber(cast)
+                    cast.trip = l[0][3:6]
                     cast.station = l[2]
 
                 else:
@@ -410,7 +411,7 @@ def getInstrumentName(cast, instDF=inst_tk.createInstrumentDF()):
         iname = i.values[0][0]
         cast.InstrumentName = iname
     except Exception as e:
-        print(e.__str__())
+        #print(e.__str__())
         print("Cannot Find Instrument name in file...\nSetting Instrument Name to Instrument Number: " + cast.Instrument)
         cast.InstrumentName = cast.Instrument
 
@@ -1880,7 +1881,7 @@ def NCWrite4(cast, df, nc_outfile="NCFile"):
     shipname = nc_out.createVariable('shipname', str, ('time',), zlib=True)
     NAFC_tripid = nc_out.createVariable('trip_ID', str, ('time',), zlib=True)
     instrument_name = nc_out.createVariable('Instrument_type', str, ('time',), zlib=True)
-    instrument_id = nc_out.createVariable('Instrument_ID', str, ('time', zlib=True)
+    instrument_id = nc_out.createVariable('Instrument_ID', str, ('time',), zlib=True)
     datafile_source = nc_out.createVariable('Datafile_Source', str, ('time',), zlib=True)
 
     Dictionary = {}
