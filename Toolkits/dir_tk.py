@@ -71,19 +71,29 @@ def confirmSelection(dirName=os.path.dirname(os.path.realpath(__file__))):
         files = selectFiles()
         return files
     if select == "3":
+        fileList = []
         directory = sys.argv[1]
-        #file_extension = sys.argv[2]
+        for filename in glob.glob(directory):
+            fileList.append(filename)
+        return fileList
+    if select == "4":
+        directory = sys.argv[1]
+        wildcard = sys.argv[2]
+        # file_extension = sys.argv[2]
         print(directory)
         fileList = []
-        for root, dirs, files in os.walk(directory):
+        for (root, dirs, files) in os.walk(directory):
             for file in files:
-                #if file.endswith(".new") or file.endswith(".cnv"):
-                print(os.path.join(root, file))
-                fileList.append(os.path.join(root, file))
+                # if file.endswith(".new") or file.endswith(".cnv"):
+                if file.endswith(wildcard.__str__()):
+                    print(os.path.join(root, file))
+                    fileList.append(os.path.join(root, file))
         files = sorted(glob.glob(directory))
         print(len(fileList))
         return fileList
+
     else:
         print("Invalid Input")
         select = input("Choose method for file selection\n[1] Read Files From: " + dirName + "\n[2] Manually Select Files\n")
         confirmSelection(select)
+
