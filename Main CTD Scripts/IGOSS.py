@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../')
+exec(open("C:\QA_paths\set_QA_paths.py").read())
 from Toolkits import cnv_tk
 from Toolkits import dir_tk
 import pandas as pd
@@ -12,6 +12,7 @@ if __name__ == '__main__':
     dirName = dir_path
 
     files = dir_tk.confirmSelection(dirName)
+    print("Number of Files: " + len(files).__str__())
     showPlot = input("Show plots for each file\ny/n: ")
     showFig = False
     if showPlot.lower() == "y":
@@ -27,7 +28,7 @@ if __name__ == '__main__':
         except:
             datafile = f
 
-        if datafile.lower().endswith(".cnv") or datafile.lower().endswith(".cnv.new"):
+        if datafile.lower().endswith(".cnv") or datafile.lower().endswith(".new"):
             print("Reading: " + datafile)
             cast = cnv_tk.Cast(datafile)
             cnv_tk.cnv_meta(cast, datafile)
@@ -60,9 +61,3 @@ if __name__ == '__main__':
 
             if showFig:
                 fig.show()
-
-
-
-
-
-
