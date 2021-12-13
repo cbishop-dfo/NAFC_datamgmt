@@ -293,10 +293,26 @@ def cnv_meta(cast, datafile):
                         cast.trip = l[0][2:5]
                         cast.station = l[0][5:]
                     else:
-                        cast.ShipName = l[0][:-3].lower()
-                        getShipNumber(cast)
-                        cast.trip = l[0][-3:]
-                        cast.station = l[2]
+                        try:
+                            cast.ShipName = l[0][:-3].lower()
+                            getShipNumber(cast)
+                            cast.trip = l[0][-3:]
+                            cast.station = l[2]
+                        except Exception as e:
+                            print("Error with Ship Trip Station from VESSEL line: " + e.__str__() + "\nTrying to retrieve variables from file name...")
+                            try:
+                                x = datafile.split("/")
+                                x = x[len(x)-1]
+                                x = x.split(".")[0]
+                                x = x.split("_")
+                                cast.ShipName = x[0][:-3].lower()
+                                getShipNumber(cast)
+                                cast.trip = x[0][-3:]
+                                cast.station = x[2]
+                                print("Error Resolved!")
+                            except Exception as e2:
+                                print(e2.__str__())
+
                 elif line.__contains__("_"):
                     l = line.split(":")[1].replace(" ", "").split("_")
                     cast.ShipName = l[0][0:3]
