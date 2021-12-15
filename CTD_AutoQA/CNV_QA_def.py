@@ -23,7 +23,7 @@ def DropSurfaceDF(new_df):
     depth = new_df.columns.values[1]
 
     # Drop rows based on the condition: where depth < 2
-    new_df = new_df.drop(new_df[(new_df[depth].astype(float) < 1)].index)
+    new_df = new_df.drop(new_df[(new_df[depth].astype(float) < 2)].index)
     return new_df
 
 def splitCast(new_df, pressure):
