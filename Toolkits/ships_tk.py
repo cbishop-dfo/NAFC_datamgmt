@@ -75,6 +75,7 @@ def createShipDF():
         ['71', 'aquaculture2', 'aqua2'],
         ['72', 'aquaculture3', 'aqua3'],
         ['75', 'viking_s27', 'viks'],
+        ['75', 'viking_s27', 'v27'],
         ['76', 'Cartier', 'cart'],
         ['77', 'Cabot', 'cabot'],
         ['79', 'james_cook', 'cook'],
