@@ -66,6 +66,7 @@ class Cast(object):
         self.columns = ""
         self.language = "English (Default)"
         self.encoding = "UTF-8 (Default)"
+        self.SoftwareType = ""
 
         # Data Identification
         self.PointOfContact = "Charlie Bishop, Email: Charlie.Bishop@dfo-mpo.gc.ca"
@@ -281,6 +282,9 @@ def cnv_meta(cast, datafile):
             filetype_v2 = True
             tempdate = line.split("=")[1].split()
             convertDate(cast, tempdate)
+            cast.SoftwareType = "CTD v2"
+        if line.__contains__("viking_conversion"):
+            cast.SoftwareType = "viking"
         elif line.__contains__("** ") or line.__contains__("**"):
             cast.userInput.append(line)
             if line.upper().__contains__("VESSEL"):
@@ -314,11 +318,20 @@ def cnv_meta(cast, datafile):
                                 print(e2.__str__())
 
                 elif line.__contains__("_"):
-                    l = line.split(":")[1].replace(" ", "").split("_")
-                    cast.ShipName = l[0][0:3]
-                    getShipNumber(cast)
-                    cast.trip = l[0][3:6]
-                    cast.station = l[2]
+                    if cast.SoftwareType == "viking":
+                        l = line.split(":")[1].replace(" ", "").split("_")
+                        # may want to overwrite v27 name
+                        #cast.ShipName = "vik"
+                        cast.ShipName = l[0][0:3].lower()
+                        getShipNumber(cast)
+                        cast.trip = l[0][3:6]
+                        cast.station = l[2]
+                    else:
+                        l = line.split(":")[1].replace(" ", "").split("_")
+                        cast.ShipName = l[0][0:3]
+                        getShipNumber(cast)
+                        cast.trip = l[0][3:6]
+                        cast.station = l[2]
 
                 else:
                     cast.id = line.split(':')[1].lstrip().rstrip()
@@ -392,6 +405,7 @@ def cnv_meta(cast, datafile):
         elif line.startswith("* "):
             if line.upper().__contains__("XBT"):
                 xbt = True
+                cast.SoftwareType = "xbt"
                 # Setting permanent var here because it explicitly states it's an XBT
                 cast.isXBT = True
             cast.software.append(line)
@@ -1235,6 +1249,11 @@ def StandardizedDF(cast, df):
             newName = 'Chlorophyll_A_Fluorescence'
 
         elif c.lower().__eq__('flor'):
+            newdf['Fluorescence'] = df[c].values
+            oldName = c
+            newName = 'Fluorescence'
+
+        elif c.lower().__eq__('chlorofltc0'):
             newdf['Fluorescence'] = df[c].values
             oldName = c
             newName = 'Fluorescence'
