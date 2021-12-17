@@ -50,13 +50,25 @@ tv290c - Temperature
 
 def createDeckDF():
     deck = [
-
         ['SBE-9 Plus', '1145', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence']],
         ['SBE-911', '1221', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence', 'Irradiance', 'pH', 'Transmissometer transmission', 'Transmissometer attenuation', 'CDOM Fluorescence']],
         ['XBT', '1098', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence']],
-        ['SBE-911', ' S1460', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence', 'Irradiance', 'pH', 'Transmissometer transmission', 'Transmissometer attenuation', 'CDOM Fluorescence']],
-        ['SBE-911', ' XXXX', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence', 'Irradiance', 'pH', 'Transmissometer transmission', 'Transmissometer attenuation', 'CDOM Fluorescence']]
-        
+        ['SBE-911', 'S1460', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence', 'Irradiance', 'pH', 'Transmissometer transmission', 'Transmissometer attenuation', 'CDOM Fluorescence']],
+        ['SBE-911', 'S1101', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Fluorescence']],
+        ['SBE-911', 'S4020', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density']],
+        ['SBE-911', 'S1145', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Fluorescence']],
+        ['SBE-911', 'S8014', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density']],
+        ['SBE-911', 'S1098', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Fluorescence']],
+        ['SBE-911', 'S4579', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density']],
+        ['SBE-911', 'S4580', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density']],
+        ['SBE-911', 'S4578', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density']],
+        ['SBE-911', 'S1146', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence', 'Irradiance', 'pH', 'Transmissometer transmission', 'Transmissometer attenuation', 'CDOM Fluorescence']],
+        ['SBE-911', 'S7853', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density']],
+        ['SBE-911', 'S4777', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density']],
+        ['SBE-911', 'S4776', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density']],
+        ['SBE-911', 'S1221', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence', 'Irradiance', 'pH', 'Transmissometer transmission', 'Transmissometer attenuation', 'CDOM Fluorescence']],
+        ['SBE-911', 'S4582', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density']],
+        ['SBE-911', 'S1257', ['scan', 'Pressure', 'Temperature', 'Conductivity', 'Salinity', 'Density', 'Oxygen Saturation', 'Fluorescence', 'Irradiance', 'pH', 'Transmissometer transmission', 'Transmissometer attenuation', 'CDOM Fluorescence']]
     ]
 
     deck_df = pd.DataFrame.from_records(deck)
