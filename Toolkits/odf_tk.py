@@ -157,13 +157,7 @@ def odf_meta(cast, datafile):
     isParameter = False
     xbt = False
 
-
-
-    count = 0
     for line in f:
-        count = count + 1
-        if count == 879:
-            print()
 
         if not isData:
             line = line.lstrip().rstrip().replace("'", "").replace(",", "").replace("\\", "")
@@ -216,6 +210,259 @@ def odf_meta(cast, datafile):
 
         elif line.__contains__("EVENT_COMMENTS="):
             cast.comment = line.split("=")[1].lstrip().rstrip()
+
+        elif line.__contains__("ORGANIZATION="):
+            cast.OrgName = line.split("=")[1].lstrip().rstrip()
+
+        elif line.__contains__("CHIEF_SCIENTIST="):
+            cast.PointOfContact = line.split("=")[1].lstrip().rstrip()
+
+        elif line.__contains__("-- DATA --"):
+            isData = True
+
+        elif line.__contains__("PARAMETER_HEADER"):
+            isParameter = True
+
+        if isParameter:
+            if cast.DataLimit == "":
+                if line.__contains__("NUMBER_VALID="):
+                    cast.DataLimit = int(line.split("=")[1].replace(",", "").lstrip().rstrip())
+            if line.__contains__("NAME="):
+                channel = line.split("=")[1]
+                if channel == 'CNTR_01':
+                    cast.columns.append("scan")
+                elif channel == 'SYTM_01':
+                    # Datetime get split into two different columns, date and time
+                    cast.columns.append("date")
+                    cast.columns.append("time")
+
+                # Pressure
+                elif channel == 'PRES_01':
+                    cast.columns.append("Pressure")
+
+                # Temperature
+                elif channel == 'TEMP_01':
+                    cast.columns.append("Temperature")
+
+                # Conductivity
+                elif channel == 'CRAT_01':
+                    cast.columns.append("Conductivity")
+
+                # Temperature 2
+                elif channel == 'TEMP_02':
+                    cast.columns.append("Secondary_Temperature")
+
+                # Conductivity 2
+                elif channel == 'CRAT_02':
+                    cast.columns.append("Secondary_Conductivity")
+
+                # Fluorescence, Seapoint Ultraviolet
+                elif channel == 'FSPUV_01':
+                    cast.columns.append("Fluorescence_Ultraviolet")
+
+                # Fluorescence
+                elif channel == 'FSP_01':
+                    cast.columns.append("Fluorescence")
+
+                # Oxygen raw
+                elif channel == 'OXYV_01':
+                    cast.columns.append("Oxygen_Raw")
+
+                # Oxygen raw 2
+                elif channel == 'OXYV_02':
+                    cast.columns.append("Secondary_Oxygen_Raw")
+
+                # Altimeter
+                elif channel == 'ALT_01':
+                    cast.columns.append("Altimeter")
+
+                # PAR/Logarithmic
+                elif channel == 'par/log':
+                    cast.columns.append("Photosynthetic_Active_Radiation")
+
+                # pH
+                elif channel == 'PHPH_01':
+                    cast.columns.append("pH")
+
+                #  Turbidity
+                elif channel == 'WETECOBB_01':
+                    cast.columns.append("Turbidity")
+
+                # SPAR/Surface Irradiance
+                elif channel == 'spar':
+                    cast.columns.append("Irradiance")
+
+                # Latitude
+                elif channel == 'LATD_01':
+                    cast.columns.append("Latitude")
+
+                # Longitude
+                elif channel == 'LOND_01':
+                    cast.columns.append("Longitude")
+
+                # Salinity
+                elif channel == 'PSAL_01':
+                    cast.columns.append("Salinity")
+
+                # Salinity 2
+                elif channel == 'PSAL_02':
+                    cast.columns.append("Secondary_Salinity")
+
+                # Potential Temperature
+                elif channel == 'POTM_01':
+                    cast.columns.append("Potential_Temperature")
+
+                # Potential Temperature 2
+                elif channel == 'POTM_02':
+                    cast.columns.append("Secondary_Potential_Temperature")
+
+                # Density
+                elif channel == 'sigma-é00':
+                    cast.columns.append("Density")
+
+                # Density 2
+                elif channel == 'sigma-é11':
+                    cast.columns.append("Secondary_Density")
+
+                # Oxygen
+                elif channel == 'DOXY_01':
+                    cast.columns.append("Oxygen")
+
+                # Oxygen 2
+                elif channel == 'DOXY_02':
+                    cast.columns.append("Secondary_Oxygen")
+
+                # number of scans per bin
+                elif channel == 'SNCNTR_01':
+                    cast.columns.append("scans_per_bin")
+
+                # flag
+                elif channel == 'FFFF_01':
+                    cast.columns.append("Flag")
+                else:
+                    cast.columns.append(channel.lstrip().rstrip())
+
+        if line.__contains__("PROCESS=*"):
+            nline = line.replace("PROCESS=", "")
+            cast.software.append(nline)
+        elif line.__contains__("PROCESS= *"):
+            nline = line.replace("PROCESS= ", "")
+            cast.software.append(nline)
+
+        if line.__contains__("PROCESS=**"):
+            nline = line.replace("PROCESS=", "")
+            cast.userInput.append(nline)
+        elif line.__contains__("PROCESS= **"):
+            nline = line.replace("PROCESS= ", "")
+            cast.userInput.append(nline)
+
+        if line.__contains__("PROCESS=#"):
+            nline = line.replace("PROCESS=", "")
+            cast.InstrumentInfo.append(nline)
+        elif line.__contains__("PROCESS= #"):
+            nline = line.replace("PROCESS= ", "")
+            cast.InstrumentInfo.append(nline)
+
+###########################################################################################################
+
+# Stores all data in Cast object
+def odf_meta_artic(cast, datafile):
+    f = open(datafile)
+    filename = datafile.split("/")
+    filename = filename[filename.__len__() - 1]
+    cast.filename = filename
+    cast.columns = []
+
+    filetype_v2 = False # bool to tell if file uses different format type
+    isData = False
+    isParameter = False
+    xbt = False
+    shiptripstn = False # var to check if shp trp stn is populated
+
+    for line in f:
+
+        if shiptripstn == False:
+            if not cast.ship == "":
+                if not cast.trip == "":
+                    if not cast.station == "":
+                        if not cast.CastDatetime == "":
+                            vessel = cast.ship.__str__() + cast.trip.__str__() + "_" + cast.CastDatetime.split("-")[0] + "_" + cast.station
+                            cast.userInput.append("** VESSEL/TRIP/SEQ STN: " + vessel)
+                            cast.userInput.append("** SHIP: " + cast.ship)
+                            cast.userInput.append("** TRIP: " + cast.trip)
+                            cast.userInput.append("** STATION: " + cast.station)
+                            shiptripstn = True
+
+        if not isData:
+            line = line.lstrip().rstrip().replace("'", "").replace(",", "").replace("\\", "")
+
+        if isData:
+            row = line.replace("\n", "").replace("'", "").lstrip().rstrip().split()
+            cast.data.append(row)
+
+        elif line.__contains__("MODEL="):
+            cast.InstrumentName = line.split("=")[1].lstrip().rstrip()
+            cast.userInput.append("** PROBE TYPE: " + cast.InstrumentName)
+
+        elif line.__contains__("SERIAL_NUMBER="):
+            cast.Instrument = line.split("=")[1].lstrip().rstrip()
+            cast.userInput.append("** SERIAL NUMBER: " + cast.Instrument)
+
+        elif line.__contains__("START_DATE_TIME="):
+            nline = line.replace("\\", "").replace(",", "").replace("'", "").split("=")[1].split()[0].split("-")
+            time = line.replace("\\", "").replace(",", "").replace("'", "").split("=")[1].lstrip().rstrip().split(" ")[1]
+            day = nline[0]
+            month = nline[1]
+            year = nline[2]
+            tempdate = [month, day, year, time]
+            cast.CastDatetime = convertDate(cast, tempdate)
+            cast.userInput.append("** DATE/TIME: " + cast.CastDatetime)
+
+        elif line.__contains__("INITIAL_LATITUDE="):
+            lat = line.split("=")[1].replace(",", "")
+            cast.Latitude = lat
+            latitude = "** LATITUDE: " + lat.__str__()
+            cast.userInput.append(latitude)
+            #deg = lat.split(".")[0]
+            #min = lat.split(".")[1]
+            #lat = [deg, min]
+            #cast.Latitude = convertDecimalDeg_to_DegMin(lat)
+
+        elif line.__contains__("INITIAL_LONGITUDE="):
+            lon = line.split("=")[1].replace(",", "")
+            cast.Longitude = lon
+            longitude = "** LONGITUDE: " + lat.__str__()
+            cast.userInput.append(longitude)
+            #lon = line.split("=")[1].replace(",", "")
+            #deg = lon.split(".")[0]
+            #min = lon.split(".")[1]
+            #lon = [deg, min]
+            #cast.Longitude = convertDecimalDeg_to_DegMin(lon)
+
+        elif line.__contains__("CRUISE_NUMBER="):
+            cast.trip = line.split("-")[1].zfill(3)
+            #nline = line.split("=")[1].replace(",", "").lstrip().rstrip()
+            #cast.ShipName = nline[0:3]
+            #getShipNumber(cast)
+            #cast.trip = nline[-3:]
+            #print()
+
+        elif line.__contains__("PLATFORM="):
+            cast.ShipName = line.split("=")[1].lstrip().rstrip().upper()
+            getShipNumber(cast)
+
+        elif line.__contains__("EVENT_NUMBER="):
+            cast.station = line.split("=")[1].lstrip().rstrip().zfill(3)
+
+        elif line.__contains__("SOUNDING="):
+            cast.SounderDepth = line.split("=")[1].lstrip().rstrip()
+            sd = "** SOUNDING DEPTH (M): " + cast.SounderDepth
+            cast.userInput.append(sd)
+
+        elif line.__contains__("EVENTS_COMMENTS="):
+            cast.comment = line.split("=")[1].lstrip().rstrip()
+            com = "** COMMENTS: " + cast.comment
+            cast.userInput.append(com)
 
         elif line.__contains__("ORGANIZATION="):
             cast.OrgName = line.split("=")[1].lstrip().rstrip()
@@ -430,10 +677,10 @@ def getShipName(cast, shipDF=ships_tk.createShipDF()):
 
 ###########################################################################################################
 
-def getShipNumber(cast, shipDF=ships_tk.createShipDF()):
+def getShipNumber(cast, shipDF=ships_tk.createICES_df()):
 
     try:
-        s = shipDF[shipDF[2].str.match(cast.ShipName.__str__())]
+        s = shipDF[shipDF[1].str.match(cast.ShipName.__str__())]
         snumber = s.values[0][0]
         cast.ship = snumber
     except Exception as e:
