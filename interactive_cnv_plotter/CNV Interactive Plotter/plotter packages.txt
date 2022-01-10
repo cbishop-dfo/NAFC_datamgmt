@@ -1,0 +1,4 @@
+matplotlib=3.3.2
+tk=8.6.10
+cnv_tk
+dir_tk
