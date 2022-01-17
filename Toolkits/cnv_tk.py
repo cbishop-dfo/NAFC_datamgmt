@@ -46,6 +46,7 @@ class Cast(object):
         self.SounderDepth = ""
         self.Instrument = ""
         self.InstrumentName = ""
+        self.serialNumber = ""
         self.setNumber = ""
         self.castType = ""
         self.triptag = ""
@@ -392,6 +393,8 @@ def cnv_meta(cast, datafile):
                     cast.Instrument = line.split(":")[1]
             elif line.upper().__contains__("VNET"):
                 cast.VNET = line.split(":")[1]
+            elif line.upper().__contains__("SERIAL NUMBER"):
+                cast.serialNumber = line.split(":")[1]
             elif line.upper().__contains__("XBT NUMBER"):
                 cast.Instrument = line.split(":")[1]
             elif line.upper().__contains__("YEAR"):
@@ -710,7 +713,7 @@ def cnv_write(cast, df, ext=".old"):
     :param ext: filetype extension (String, ie: '.txt', '.old', '.new', ect...)
     :return:
     """
-    newfile = cast.datafile + ext
+    newfile = cast.datafile.split(".")[0] + ext
     writer = open(newfile, "w+")
     for l in cast.software:
         writer.write(l + "\n")
