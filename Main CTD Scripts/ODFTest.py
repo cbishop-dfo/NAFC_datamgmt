@@ -17,7 +17,7 @@ if __name__ == '__main__':
         try:
             print("Reading: " + datafile)
             cast = odf_tk.Cast(datafile)
-            odf_tk.odf_meta_artic(cast, datafile)
+            odf_tk.odf_meta_arctic(cast, datafile)
             df = odf_tk.odf_to_dataframe(cast)
             cnv_tk.cnv_write(cast, df, ext=".cnv")
 
