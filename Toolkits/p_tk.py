@@ -247,12 +247,8 @@ def pfile_to_dataframe(cast, filename):
 
 ###########################################################################################################
 
-
 def read_pFile(cast, datafile):
     print("Reading: " + datafile)
-
-
-
     bohist_ = '-- HISTORY -->'
     eohist_ = '-- END --'
     in_history = False
@@ -270,7 +266,6 @@ def read_pFile(cast, datafile):
                 cast.history.append(line)
             if line.startswith(eohist_):  # end-of-header
                 in_history = False
-
 
 ###########################################################################################################
 
@@ -352,6 +347,19 @@ def convertLatLong(convert):
         return convert[0]
 
 ###########################################################################################################
+
+# Convert Lat / Long from Decimal Deg to Degree Min
+def convertDecimalDeg_to_DegMin(convert):
+    deg = convert[0].lstrip().rstrip()
+    min = "." + convert[1].lstrip().rstrip()
+    min = float(min)
+    min = min *60
+    #min = float("{0:.2f}".format(min))*60
+    result = deg.__str__()+ " " + min.__str__()
+    return result
+
+###########################################################################################################
+
 def depthDF_to_PresDF(cast, df):
     presArray = []
     cast.Latitude = convertLatLong(cast.Latitude.lstrip().rstrip().split(" "))
@@ -764,7 +772,7 @@ def drop_non_pfile(cast, df):
             p_df["flor"] = df[c]
             getChannelStats(cast, p_df, "flor")
 
-        elif c == "Photosynthetic Active Radiation":
+        elif c == "Photosynthetic_Active_Radiation":
             p_df["par"] = df[c]
             getChannelStats(cast, p_df, "par")
 
@@ -772,15 +780,15 @@ def drop_non_pfile(cast, df):
             p_df["ph"] = df[c]
             getChannelStats(cast, p_df, "ph")
 
-        elif c == "Transmissometer attenuation":
+        elif c == "Transmissometer_attenuation":
             p_df["tra"] = df[c]
             getChannelStats(cast, p_df, "tra")
 
-        elif c == "Transmissometer transmission":
+        elif c == "Transmissometer_transmission":
             p_df["trp"] = df[c]
             getChannelStats(cast, p_df, "trp")
 
-        elif c == "CDOM Fluorescence":
+        elif c == "CDOM_Fluorescence":
             p_df["wet"] = df[c]
             getChannelStats(cast, p_df, "wet")
 
@@ -796,23 +804,94 @@ def getChannelStats(cast, df, c):
 
 ###########################################################################################################
 
+def populateChannelStats(cast, df):
+    for c in df:
+        localmax = max(df[c]).__str__()
+        localmin = min(df[c]).__str__()
+        cstat = '{:<10s}{:>20s}{:>20s}{:>20s}'.format("# span ", c.__str__() + " = ", localmin + ", ", localmax)
+        cast.channel.append(cstat)
+
+###########################################################################################################
+
 def write_pfile(cast, df):
     # Line one in header
     cid = cast.ship.__str__() + cast.trip.__str__() + cast.station.__str__()
-    lat = cast.Latitude.__str__()
-    lon = cast.Longitude.__str__()
-    date = cast.CastDatetime.split(" ")[0]
-    time = cast.CastDatetime.split(" ")[1]
-    soundDepth = cast.SounderDepth
-    inst = cast.Instrument
-    setNum = cast.setNumber
-    cType = cast.castType
-    comment = cast.comment
+    cLat = cast.Latitude.__str__().split(".")
+    lat = convertDecimalDeg_to_DegMin(cLat).lstrip().rstrip()
+    if lat.__len__() > 8:
+        lat = lat[0:8]
+    elif lat.__len__() < 8:
+        append = 8 - lat.__len__()
+        for i in range(append):
+            lat = lat + " "
+    cLon = cast.Longitude.__str__().split(".")
+    lon = convertDecimalDeg_to_DegMin(cLon)
+    lon = lon.replace("-", "")
+    lon = "-0" + lon.lstrip().rstrip()
+    if lon.__len__() > 10:
+        lon = lon[0:10]
+    elif lon.__len__() < 10:
+        append = 10 - lon.__len__()
+        for i in range(append):
+            lon = lon + " "
+
+    date = cast.CastDatetime.split(" ")[0].lstrip().rstrip()
+    time = cast.CastDatetime.split(" ")[1].lstrip().rstrip()
+    if time.__len__() > 5:
+        time = time[0:5]
+    elif time.__len__() < 5:
+        append = 5 - lon.__len__()
+        for i in range(append):
+            time = time + " "
+
+    soundDepth = cast.SounderDepth.lstrip().rstrip()
+    try:
+        soundDepth = cast.SounderDepth.lstrip().rstrip().split(".")[0]
+    except:
+        soundDepth = cast.SounderDepth.lstrip().rstrip()
+
+    if soundDepth.__len__() < 4:
+        soundDepth = soundDepth.zfill(4)
+    elif soundDepth.__len__() > 4:
+        soundDepth = soundDepth[0:4]
+
+
+
+    if not cast.serialNumber == "":
+        inst = cast.serialNumber.lstrip().rstrip()
+    else:
+        inst = cast.Instrument.lstrip().rstrip()
+
+    if inst.__len__() > 5:
+        inst = inst[0:5]
+    elif inst.__len__() < 5:
+        inst = inst.zfill(5)
+
+    setNum = cast.setNumber.lstrip().rstrip()
+    if setNum.__len__() > 3:
+        setNum = setNum[0:3]
+    elif setNum.__len__() < 3:
+        setNum = setNum.zfill(3)
+
+    cType = cast.castType.lstrip().rstrip()
+    if cType.__len__() > 1:
+        cType = cType[0:1]
+    else:
+        cType = " "
+
+    comment = cast.comment.lstrip().rstrip()
+    if comment.__len__() > 14:
+        comment = comment[0:14]
+    elif comment.__len__() < 14:
+        append = 14 - comment.__len__()
+        for i in range(append):
+            comment = comment + " "
 
     # Line two in header
     numScans = df.values.__len__()
 
     # add checks for spacing issues and null values
+    """
     if lat.__len__() > 8:
         lat = lat[0:8]
     elif lat.__len__() < 8:
@@ -830,13 +909,20 @@ def write_pfile(cast, df):
 
     if time.__len__() > 4:
         time = time[0:5]
-
-    line1 = cid + " " + lat + " " + lon + " " + date + " " + time + " " + soundDepth + " " + inst + " " + setNum + " " + cType + " " + comment + "\n"
-    line2 = cid + "\n"
-    line3 = cid + "\n"
+        """
+    numScan = len(df).__str__().zfill(6)
+    sampleRate = cast.SamplingRate
+    sampleRate = sampleRate.rjust(5, " ")
+    chanCount = cast.channel.__len__()
+    chanCount = str(chanCount).zfill(2)
+    line1 = cid + "  " + lat + " " + lon + " " + date + " " + time + " " + soundDepth + " " + inst + " " + setNum + " " + cType + " " + comment + " 1" + "\n"
+    line2 = cid + " " + numScan + " " + sampleRate + " A " + chanCount + " #-------------------            D 000 0000 0000 000 4" + "\n"
+    line3 = cid + "                                                                       8" + "\n"
 
     year = date.split("-")[0]
-    filename = cid + ".p" + year
+    ext = ".p" + year
+    newname = cast.filename.replace(".cnv", ext)
+    filename = cast.datafile.replace(cast.filename, newname)
     writer = open(filename, "w+")
     writer.writelines("NAFC_Y2K_HEADER\n")
     writer.writelines(line1)
