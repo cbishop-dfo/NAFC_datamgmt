@@ -366,7 +366,7 @@ def odf_meta(cast, datafile):
 ###########################################################################################################
 
 # Stores all data in Cast object
-def odf_meta_artic(cast, datafile):
+def odf_meta_arctic(cast, datafile):
     f = open(datafile)
     filename = datafile.split("/")
     filename = filename[filename.__len__() - 1]
@@ -431,7 +431,7 @@ def odf_meta_artic(cast, datafile):
         elif line.__contains__("INITIAL_LONGITUDE="):
             lon = line.split("=")[1].replace(",", "")
             cast.Longitude = lon
-            longitude = "** LONGITUDE: " + lat.__str__()
+            longitude = "** LONGITUDE: " + lon.__str__()
             cast.userInput.append(longitude)
             #lon = line.split("=")[1].replace(",", "")
             #deg = lon.split(".")[0]
