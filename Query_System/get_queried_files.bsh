@@ -1,0 +1,17 @@
+#!/bin/bash
+
+filename='/u01/user_scratch/seabird/full_collection_pfiles/st_marys_query.txt'
+#filename='filelist'
+
+echo Start
+while read p; do
+	echo working on file $p
+	cp $p /u01/user_scratch/seabird/full_collection_pfiles/query_results/$p
+	#b=$(basename $p)
+	#echo $b > filelist
+        #python3 pfiles_to_netcdf_v1.py
+#	rm *.p2018
+done < /u01/user_scratch/seabird/full_collection_pfiles/st_marys_query.txt
+#done < filelist
+
+#python3 pfiles_to_netcdf_v0.py filelist.txt
