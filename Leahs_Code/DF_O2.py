@@ -8,15 +8,16 @@ import geopandas
 def generate_bot_df(path: str) -> pandas.DataFrame:
     """
     This function generates a Pandas DataFrame from a CSV file located at the specified path.
-    Raises a FileNotFoundError if the file is not located in the working directory.
     The generated DataFrame contains only a subset of columns.
-    The resulting DataFrame is indexed by the "Stickr" column.
 
     Args:
         path (str): The file path to the CSV file containing the source data.
 
     Returns:
-        pandas.DataFrame: The generated DataFrame containing the specified columns and indexed by "Stickr".
+        pandas.DataFrame: The generated DataFrame containing the specified columns.
+
+    Raises:
+        FileNotFoundError: If the file at the specified path does not exist.
     """
     if not Path(path).exists():
         raise FileNotFoundError(
@@ -35,7 +36,6 @@ def generate_bot_df(path: str) -> pandas.DataFrame:
             "Sbeox1ML/L",
         ]
     )
-    bot_df = bot_df.set_index("Stickr")
 
     return bot_df
 
@@ -43,16 +43,17 @@ def generate_bot_df(path: str) -> pandas.DataFrame:
 def generate_o2_df(path: str) -> pandas.DataFrame:
     """
     This function generates a Pandas DataFrame from a text file located at the specified path.
-    Raises a FileNotFoundError if the file is not located in the working directory.
-    The header of the file is discarded, reads the rest of the file as CSV
+    The header of the file is discarded, reads the rest of the file as CSV.
     The generated DataFrame contains only a subset of columns.
-    The resulting DataFrame is indexed by the "Sample" column.
 
     Args:
         path (str): The file path to the text file containing the source data.
 
     Returns:
-        pandas.DataFrame: The generated DataFrame containing the specified columns and indexed by "Sample".
+        pandas.DataFrame: The generated DataFrame containing the specified columns.
+
+    Raises:
+        FileNotFoundError: If the file at the specified path does not exist.
     """
     mean_o2_file_path = Path(path)
     if not mean_o2_file_path.exists():
@@ -76,9 +77,40 @@ def generate_o2_df(path: str) -> pandas.DataFrame:
             "Rep_6(ml/l)",
         ]
     )
-    o2_df = o2_df.set_index("Sample")
 
     return o2_df
+
+
+def generate_met_df(path: str) -> pandas.DataFrame:
+    """
+    This function generates a Pandas DataFrame containing weather data from a CSV file located at the specified path.
+    Converts and renames the "Wind Speed" column from knots into metres per second.
+
+    Args:
+        path (str): A file path to the CSV file containing the weather data.
+
+    Returns:
+        pandas.DataFrame:
+        A DataFrame containing the weather data filtered to include only the columns 'Station',
+        'Wind Dir [deg/10]', and the converted 'Wind Speed [m/s]'.
+
+    Raises:
+        FileNotFoundError: If the file at the specified path does not exist.
+    """
+    if not Path(path).exists():
+        raise FileNotFoundError(
+            f"Expected {path} to be in the current working directory, but it was not found"
+        )
+
+    met_df = pandas.read_csv(path)
+    met_df = met_df.filter(items=["Station", "Wind Dir [deg/10]", "Wind Speed [kts]"])
+
+    met_df["Wind Speed [kts]"] = met_df["Wind Speed [kts]"].apply(
+        lambda x: round(x / 1.944, 4)  # decimal place tbd
+    )
+    met_df = met_df.rename(columns={"Wind Speed [kts]": "Wind Speed [m/s]"})
+
+    return met_df
 
 
 def filter_out_non_null_winkler_diff(df):
@@ -91,30 +123,80 @@ def filter_out_non_null_winkler_diff(df):
     return df
 
 
-def join_bot_and_o2_dfs(
-    bot_df: pandas.DataFrame, o2_df: pandas.DataFrame
+def join_bot_o2_met_dfs(
+    bot_df: pandas.DataFrame,
+    o2_df: pandas.DataFrame,
+    met_df: pandas.DataFrame,
 ) -> pandas.DataFrame:
-    # return bot_df.join(o2_df)
-    return bot_df.merge(o2_df, how="inner", left_index=True, right_index=True)
+    """
+    This function joins three pandas DataFrames: bot_df, o2_df, and met_df then returns a merged DataFrame.
+
+    Parameters:
+    bot_df: pandas.DataFrame
+        DataFrame containing the data of bot samples.
+    o2_df: pandas.DataFrame
+        DataFrame containing the O2 data.
+    met_df: pandas.DataFrame
+        DataFrame containing the data of meteorological samples.
+
+    Returns:
+    pandas.DataFrame
+        A merged DataFrame of all three input DataFrames, joined on common columns:
+        bot_df and met_df are joined on "ShTrpStn" and "Station".
+        o2_df and join_dfs are joined on "Stickr" and "Sample".
+
+    Raises:
+        None.
+    """
+
+    join_dfs = bot_df.merge(met_df, how="inner", left_on="ShTrpStn", right_on="Station")
+    join_dfs = join_dfs.merge(o2_df, how="inner", left_on="Stickr", right_on="Sample")
+    join_dfs.drop(["Station", "Sample"], axis=1, inplace=True)
+
+    return join_dfs
+
+
+def generate_oxy_graph():
+    #line graph will live here
+    return 1
+
+
+def generate_map(df):
+    """
+    Generate a GeoDataFrame from a DataFrame containing latitude and longitude columns.
+    Writes it as both GeoJSON and Shapefile formats in the "tmp" folder.
+
+    Args:
+        df (pandas.DataFrame): A DataFrame containing latitude and longitude columns.
+
+    Returns:
+        str: A message indicating that the geographical data has been added to the "tmp" folder.
+
+    Raises:
+        None.
+    """
+
+    joined_gdf = geopandas.GeoDataFrame(
+        df,
+        geometry=geopandas.points_from_xy(df.longitude, df.latitude),
+    )
+    joined_gdf.to_file("tmp/joined_gdf.geojson")
+    joined_gdf.to_file("tmp/joined_gdf.shp")
+
+    return f"Geographical data added to tmp folder"
 
 
 if __name__ == "__main__":
-    ship_num = int(input("Ship number: "))
+    year = int(input("Year: "))
     ship_name = input("Ship name: ")
-    ship_trip = int(input("Ship trip: "))
-    bot_df = generate_bot_df(f"{ship_num}{ship_trip}.bot")
+    ship_trip = input("Ship trip: ")
+    bot_df = generate_bot_df(f"{ship_name}{ship_trip}.bot")
     o2_df = generate_o2_df(f"{ship_name}{ship_trip}_meanO2.txt")
-    #in case of inconsistent file names, input full file names instead??
+    met_df = generate_met_df(f"{ship_name}{ship_trip}_{year}_met.csv")
 
-    joined_df = join_bot_and_o2_dfs(bot_df, o2_df)
-    output_file = f"{ship_name}{ship_trip}_joined_bot_and_o2.csv"
-    # joined_df.to_csv(output_file)
-    # print(f"Written joined bot and o2 DataFrame to {output_file}")
+    joined_df = join_bot_o2_met_dfs(bot_df, o2_df, met_df)
+    output_file = f"{ship_name}{ship_trip}_{year}_joined.csv"
+    joined_df.to_csv(output_file, index=False)
+    print(f"Written joined bot, o2 and met DataFrame to {output_file}")
 
-    # possible map code
-    joined_gdf = geopandas.GeoDataFrame(
-        joined_df,
-        geometry=geopandas.points_from_xy(joined_df.longitude, joined_df.latitude),
-    )
-
-    joined_gdf.to_file("tmp/joined_gdf.shp")
+    print(generate_map(joined_df))  # temp? checking purposes
