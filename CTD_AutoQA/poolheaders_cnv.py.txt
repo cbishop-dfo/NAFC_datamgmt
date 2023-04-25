@@ -1,0 +1,64 @@
+# pooled.py ----------------------------------------------------------------------------------
+#
+# Script to combine header information from CTD and XBT files for QA/QC checks.
+#
+# To run: python pooled.py
+#
+# This code works with Python 3.8.5.
+# S. Snook, February 2023
+#
+#---------------------------------------------------------------------------------------------
+
+# Clear any variables stored in Python.
+def clearall():
+    """clear all globals"""
+    for uniquevar in [var for var in globals().copy() if var[0] != "_" and var != 'clearall']:
+        del globals()[uniquevar]
+
+clearall()
+
+from pylab import *
+import glob, os
+import sys
+
+filepath = 'C:\CTDDATA'
+os.chdir(filepath)
+
+station, lat, lon, date_time, depth, probe, form, set_num, comments = [], [], [], [], [], [], [], [], []
+for file in glob.glob('*.cnv'):
+##for file in files:
+    d = open(file, 'r')
+    for num, line in enumerate(d,1):
+        if '** VESSEL' in line:
+            station.append(line.split(':')[1].lstrip().rstrip())
+        if '** LATITUDE' in line:
+            lat.append(line.split(':')[1].lstrip().rstrip())
+        if '** LONGITUDE' in line:
+            lon.append(line.split(':')[1].lstrip().rstrip())
+        if '** DATE/TIME' in line:
+            date_time.append(line.split(':',1)[1].lstrip().rstrip())
+        if '** SOUNDING DEPTH' in line:
+            depth.append(line.split(':')[1].lstrip().rstrip())
+        if '** PROBE TYPE' in line:
+            probe.append(line.split(':')[1].lstrip().rstrip())
+        if ('** CTD NUMBER' in line) or ('** XBT NUMBER' in line):
+            set_num.append(line.split(':')[1].lstrip().rstrip())
+        if '** FORMAT' in line:
+            form.append(line.split(':')[1].lstrip().rstrip())
+        if '** COMMENTS' in line:
+            comments.append(line.split(':')[1].lstrip().rstrip())
+        if '# nquan' in line:
+            break
+    d.close()
+
+pooled_file = open('POOLED.ALL', 'w')
+for i in range(0,len(station)):
+    pooled_file.writelines('%15s %10s %11s %16s %4s %5s %3s %1s %14s\n' %
+                           (station[i], lat[i], lon[i], date_time[i], depth[i], probe[i], set_num[i],
+                            form[i], comments[i].ljust(14)))
+pooled_file.close()
+
+# Free any unreferenced memory.
+import gc
+gc.collect()
+

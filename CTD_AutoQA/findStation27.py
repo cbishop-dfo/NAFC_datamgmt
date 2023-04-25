@@ -130,3 +130,6 @@ if __name__ == '__main__':
             is27 = chechk27(cast)
             if is27:
                 cnv_write27(cast, df)
+                
+                
+#check stn27 coords, add 0.5nm tolerance.
