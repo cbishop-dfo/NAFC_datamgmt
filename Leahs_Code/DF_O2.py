@@ -1,17 +1,34 @@
 from pathlib import Path
 from io import StringIO
+from typing import Tuple
+from matplotlib.widgets import RectangleSelector
+from PyQt5 import QtWidgets
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from scipy import stats
+from openpyxl import load_workbook
+from openpyxl.workbook import Workbook
+from openpyxl.drawing.image import Image
+from mpl_toolkits.basemap import Basemap
+from datetime import datetime
 
-import pandas
-import geopandas
+import matplotlib
+
+matplotlib.use("Qt5Agg")
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import re
 
 
-def generate_bot_df(path: str) -> pandas.DataFrame:
+def generate_bot_df(path: str) -> pd.DataFrame:
     """
     This function generates a Pandas DataFrame from a CSV file located at the specified path.
     The generated DataFrame contains only a subset of columns.
 
     Args:
-        path (str): The file path to the CSV file containing the source data.
+
 
     Returns:
         pandas.DataFrame: The generated DataFrame containing the specified columns.
@@ -24,10 +41,12 @@ def generate_bot_df(path: str) -> pandas.DataFrame:
             f"Expected {path} to be in the current working directory, but it was not found"
         )
 
-    bot_df = pandas.read_csv(path)
-    bot_df = bot_df.filter(
+    orig_bot_df = pd.read_csv(path)
+    bot_df = orig_bot_df.filter(
         items=[
             "Stickr",
+            "Station-ID",
+            "Date",
             "ShTrpStn",
             "latitude",
             "longitude",
@@ -37,10 +56,10 @@ def generate_bot_df(path: str) -> pandas.DataFrame:
         ]
     )
 
-    return bot_df
+    return orig_bot_df, bot_df
 
 
-def generate_o2_df(path: str) -> pandas.DataFrame:
+def generate_o2_df(path: str) -> pd.DataFrame:
     """
     This function generates a Pandas DataFrame from a text file located at the specified path.
     The header of the file is discarded, reads the rest of the file as CSV.
@@ -63,8 +82,8 @@ def generate_o2_df(path: str) -> pandas.DataFrame:
 
     mean_o2_file = mean_o2_file_path.read_text()
     _header, o2_csv = mean_o2_file.split("\n\n")
-    o2_df = pandas.read_csv(StringIO(o2_csv))
-    o2_df = o2_df.filter(
+    orig_o2_df = pd.read_csv(StringIO(o2_csv))
+    o2_df = orig_o2_df.filter(
         items=[
             "Sample",
             "[O2](ml/l)",
@@ -78,10 +97,10 @@ def generate_o2_df(path: str) -> pandas.DataFrame:
         ]
     )
 
-    return o2_df
+    return orig_o2_df, o2_df
 
 
-def generate_met_df(path: str) -> pandas.DataFrame:
+def generate_met_df(path: str) -> pd.DataFrame:
     """
     This function generates a Pandas DataFrame containing weather data from a CSV file located at the specified path.
     Converts and renames the "Wind Speed" column from knots into metres per second.
@@ -102,32 +121,65 @@ def generate_met_df(path: str) -> pandas.DataFrame:
             f"Expected {path} to be in the current working directory, but it was not found"
         )
 
-    met_df = pandas.read_csv(path)
+    met_df = pd.read_csv(path)
     met_df = met_df.filter(items=["Station", "Wind Dir [deg/10]", "Wind Speed [kts]"])
 
-    met_df["Wind Speed [kts]"] = met_df["Wind Speed [kts]"].apply(
-        lambda x: round(x / 1.944, 4)  # decimal place tbd
+    knot_to_mps_conversion = 1.944
+    met_df["Wind Speed [m/s]"] = met_df["Wind Speed [kts]"].apply(
+        lambda x: round(x / knot_to_mps_conversion, 4)
     )
-    met_df = met_df.rename(columns={"Wind Speed [kts]": "Wind Speed [m/s]"})
 
     return met_df
 
 
-def filter_out_non_null_winkler_diff(df):
-    # TODO WINKLER & other cols do not seem to exist, missing code??
+def generate_instrument_df(path: str):
+    """
+    TODO: write docstring
+    """
+    if not Path(path).exists():
+        raise FileNotFoundError(
+            f"Expected {path} to be in the current working directory, but it was not found"
+        )
 
-    # df["WINKLER-DIFF"] = abs(df["Rep_1(ml/l)"].astype(float)-df["Rep_2(ml/l)"].astype(float))
-    # df = df[pandas.notnull(df["WINKLER"])]
-    # filtered_df = df.loc[(df["WINKLER"] > 9) | (df["WINKLER"] < 2) | (df["WINKLER-DIFF"] > 0.2),["Sample","Station-ID","Sbeox0ML/L","WINKLER","WINKLER-DIFF"]]
-    # print(filtered_df)
-    return df
+    instr_df = pd.read_csv(path)
+
+    return instr_df
+
+
+def seperate_based_on_winkler_diff(
+    df: pd.DataFrame,
+) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """
+    TODO: write docstring
+    """
+    df["WINKLER-DIFF"] = df.apply(
+        lambda x: abs(round(x["Rep_1(ml/l)"] - x["Rep_2(ml/l)"], 4)), axis=1
+    )
+    df["WINKLER"] = df.apply(
+        lambda x: round((x["Rep_1(ml/l)"] + x["Rep_2(ml/l)"]) / 2, 4), axis=1
+    )
+
+    wanted_columns = ["Stickr", "Station-ID", "Sbeox0ML/L", "WINKLER", "WINKLER-DIFF"]
+
+    successful_titrations_df = df.loc[
+        (df["WINKLER"] <= 9) & (df["WINKLER"] >= 2) & (df["WINKLER-DIFF"] <= 0.2)
+    ]
+
+    failed_titrations_df = df.loc[
+        (df["WINKLER"] > 9) | (df["WINKLER"] < 2) | (df["WINKLER-DIFF"] > 0.2),
+        wanted_columns,
+    ]
+
+    print(failed_titrations_df)
+
+    return successful_titrations_df, failed_titrations_df
 
 
 def join_bot_o2_met_dfs(
-    bot_df: pandas.DataFrame,
-    o2_df: pandas.DataFrame,
-    met_df: pandas.DataFrame,
-) -> pandas.DataFrame:
+    bot_df: pd.DataFrame,
+    o2_df: pd.DataFrame,
+    met_df: pd.DataFrame,
+) -> pd.DataFrame:
     """
     This function joins three pandas DataFrames: bot_df, o2_df, and met_df then returns a merged DataFrame.
 
@@ -156,47 +208,489 @@ def join_bot_o2_met_dfs(
     return join_dfs
 
 
-def generate_oxy_graph():
-    #line graph will live here
-    return 1
+def join_instr(joined_df: pd.DataFrame, instr_df: pd.DataFrame):
+    join_dfs = joined_df.merge(instr_df, how="inner", left_on="Sh", right_on="Sample")
+    join_dfs.drop(["Station", "Sample"], axis=1, inplace=True)
 
 
-def generate_map(df):
+def generate_map(df: pd.DataFrame, bot_df: pd.DataFrame, title: str):
     """
-    Generate a GeoDataFrame from a DataFrame containing latitude and longitude columns.
-    Writes it as both GeoJSON and Shapefile formats in the "tmp" folder.
+
+    """
+    plt.figure()
+
+    m = Basemap(
+        projection="merc",
+        llcrnrlat=bot_df["latitude"].min() - 1.5,
+        urcrnrlat=bot_df["latitude"].max() + 1.5,
+        llcrnrlon=bot_df["longitude"].min() - 1.5,
+        urcrnrlon=bot_df["longitude"].max() + 1.5,
+        lat_ts=20,
+        resolution="h",
+    )
+
+    x, y = m(df["longitude"].values, df["latitude"].values)
+
+    all_x, all_y = m(bot_df["longitude"].values, bot_df["latitude"].values)
+
+    m.drawcoastlines()
+    m.scatter(all_x, all_y, s=7, color="blue", alpha=0.5, label="Occupied Stations")
+    m.scatter(x, y, s=7, color="red", alpha=0.5, label="Oxygen Samples")
+    plt.legend()
+    plt.title("Filtered Results: {}".format(title))
+
+    plt.savefig(f"{title}_map.png", dpi=100, bbox_inches="tight")
+
+
+def new_and_old_SOC_calculations(instr_df: pd.DataFrame, joined_df: pd.DataFrame):
+    """
+    Calculate the new and old dissolved oxygen Standard Output Calibration (SOC) values from an instrument and a dataset.
 
     Args:
-        df (pandas.DataFrame): A DataFrame containing latitude and longitude columns.
+        instr_df (pd.DataFrame): A DataFrame containing the primary and secondary old dissolved oxygen SOC values.
+        joined_df (pd.DataFrame): A DataFrame containing dissolved oxygen measurements and reference values.
 
     Returns:
-        str: A message indicating that the geographical data has been added to the "tmp" folder.
-
-    Raises:
-        None.
+        Tuple[List[float], float]: A tuple containing the new dissolved oxygen SOC values (as a list with primary and secondary
+        values) and the averaged Winkler oxygen calculation.
     """
 
-    joined_gdf = geopandas.GeoDataFrame(
-        df,
-        geometry=geopandas.points_from_xy(df.longitude, df.latitude),
-    )
-    joined_gdf.to_file("tmp/joined_gdf.geojson")
-    joined_gdf.to_file("tmp/joined_gdf.shp")
+    df = joined_df.copy()
+    winklerOx_calc = []
+    newSOC = []
 
-    return f"Geographical data added to tmp folder"
+    df["WinkOxCalc0"] = df.apply(
+        lambda x: round((x["WINKLER"] / x["Sbeox0ML/L"]), 4), axis=1
+    )
+    df["WinkOxCalc1"] = df.apply(
+        lambda x: round((x["WINKLER"] / x["Sbeox1ML/L"]), 4), axis=1
+    )
+
+    oldSOC = [
+        instr_df["Primary Oxygen Old SOC"].iloc[1],
+        instr_df["Secondary Oxygen Old SOC"].iloc[1],
+    ]
+    winklerOx_calc.extend(df["WinkOxCalc0"].values.tolist())
+    winklerOx_calc.extend(df["WinkOxCalc1"].values.tolist())
+    winklerOx_avg = round(sum(winklerOx_calc) / len(winklerOx_calc), 4)
+
+    newSOC.append(round(float((winklerOx_avg) * (oldSOC[0])), 4))
+    newSOC.append(round(float((winklerOx_avg) * (oldSOC[1])), 4))
+
+    return newSOC, oldSOC
+
+
+def filter_graph_data(joined_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Filters the joined dataframe to pass to the Plotter class.
+    """
+    graph_df = joined_df.filter(items=["Rep_1(ml/l)", "Sbeox0ML/L", "Sbeox1ML/L"])
+
+    return graph_df
+
+
+class Plotter(QtWidgets.QWidget):
+    def __init__(self, df):
+        super().__init__()
+
+        self.df = df.copy()
+        self.original_df = df.copy()
+
+        self.setWindowTitle("Plotter")
+        self.setGeometry(100, 100, 800, 600)
+
+        frame = QtWidgets.QFrame(self)
+        frame_layout = QtWidgets.QHBoxLayout(frame)
+
+        var_names = [c for c in df.columns if c not in ["index", "Rep_1(ml/l)"]]
+        self.var_selected = QtWidgets.QComboBox(self)
+        self.var_selected.addItems(var_names)
+        self.var_selected.currentIndexChanged.connect(self.update_plot)
+        frame_layout.addWidget(self.var_selected)
+
+        done_button = QtWidgets.QPushButton("Done", self)
+        done_button.clicked.connect(self.close)
+        frame_layout.addWidget(done_button)
+
+        save_image_button = QtWidgets.QPushButton("Save Plot as Image", self)
+        save_image_button.clicked.connect(self.save_image)
+        frame_layout.addWidget(save_image_button)
+
+        reset_button = QtWidgets.QPushButton("Reset Graph", self)
+        reset_button.clicked.connect(self.reset_plot)
+        frame_layout.addWidget(reset_button)
+
+        layout = QtWidgets.QVBoxLayout(self)
+        layout.addWidget(frame)
+
+        self.figure = plt.figure()
+        self.canvas = FigureCanvas(self.figure)
+
+        layout.addWidget(self.canvas)
+        self.canvas.ax = self.canvas.figure.subplots()
+
+        self.rs = RectangleSelector(
+            self.canvas.ax, self.onselect, interactive=True, useblit=True, button=[1]
+        )
+
+        self.update_plot()
+
+    def closeEvent(self, event):
+        self.df.to_csv(f"updated_data_{ship_name}{ship_trip}.csv", index=False)
+        app = QtWidgets.QApplication.instance()
+        app.quit()
+
+    def determine_outliers(self):
+        var = self.var_selected.currentText()
+
+        x_q1 = self.df[var].quantile(0.25)
+        x_q3 = self.df[var].quantile(0.75)
+        x_iqr = x_q3 - x_q1
+
+        y_q1 = self.df["Rep_1(ml/l)"].quantile(0.25)
+        y_q3 = self.df["Rep_1(ml/l)"].quantile(0.75)
+        y_iqr = y_q3 - y_q1
+
+        upper_bound_x = x_q3 + 1.5 * x_iqr
+        lower_bound_x = x_q1 - 1.5 * x_iqr
+
+        upper_bound_y = y_q3 + 1.5 * y_iqr
+        lower_bound_y = y_q1 - 1.5 * y_iqr
+
+        outliers = self.df.loc[
+            (self.df[var] < lower_bound_x)
+            | (self.df[var] > upper_bound_x)
+            | (self.df["Rep_1(ml/l)"] < lower_bound_y)
+            | (self.df["Rep_1(ml/l)"] > upper_bound_y)
+        ]
+
+        return outliers
+
+    def update_plot(self):
+        var = self.var_selected.currentText()
+        canvas = self.canvas
+        ax = canvas.ax
+        ax.clear()
+        ax.scatter(
+            self.df[var], self.df["Rep_1(ml/l)"], color="blue", label="Data Points"
+        )
+
+        outliers = self.determine_outliers()
+        ax.scatter(
+            outliers[var],
+            outliers["Rep_1(ml/l)"],
+            color="grey",
+            label="Suggested Outliers",
+        )
+
+        idx = np.isfinite(self.df[var]) & np.isfinite(self.df["Rep_1(ml/l)"])
+        z = np.polyfit(self.df[var][idx], self.df["Rep_1(ml/l)"][idx], 1)
+        slope = z[0]
+        intercept = z[1]
+        p = np.poly1d(z)
+
+        label = var.replace("ML/L", "")
+        self.df[f"Slope_{label}"] = z[0]
+        self.df[f"yint_{label}"] = z[1]
+
+        self.df[f"Trendline_{label}"] = p(self.df[var])
+        self.df = self.df.sort_values(by=[f"Trendline_{label}"])
+        ax = self.df.plot(
+            x=var,
+            y=f"Trendline_{label}",
+            color="red",
+            ax=ax,
+            label=f"Slope = {slope:.4f},  Y-Intercept: {intercept:.4f}",
+        )
+
+        ax.legend()
+
+        ax.set_xlabel(var)
+        ax.set_ylabel("Rep_1(ml/l)")
+        canvas.draw()
+
+    def reset_plot(self):
+        self.df = self.original_df
+        self.update_plot()
+
+    def save_image(self):
+        var = self.var_selected.currentText()
+        sample = var.replace("ML/L", "")
+        self.figure.savefig(f"plot_{sample}_{graphic_titles}.png")
+
+    def onselect(self, eclick, erelease):
+        if eclick.ydata > erelease.ydata:
+            eclick.ydata, erelease.ydata = erelease.ydata, eclick.ydata
+            if eclick.xdata > erelease.xdata:
+                eclick.xdata, erelease.xdata = erelease.xdata, eclick.xdata
+
+        x1, y1 = eclick.xdata, eclick.ydata
+        x2, y2 = erelease.xdata, erelease.ydata
+
+        var = self.var_selected.currentText()
+        selected_data = self.df[
+            (self.df[var] >= x1)
+            & (self.df[var] <= x2)
+            & (self.df["Rep_1(ml/l)"] >= y1)
+            & (self.df["Rep_1(ml/l)"] <= y2)
+        ]
+
+        self.df.loc[selected_data.index, var] = np.nan
+
+        self.update_plot()
+
+
+def generate_graph_df(path: str) -> pd.DataFrame:
+
+    if not Path(path).exists():
+        raise FileNotFoundError(
+            f"Expected {path} to be in the current working directory, but it was not found. Did you save both graphs?"
+        )
+
+    graph_df = pd.read_csv(path)
+
+    return graph_df
+
+
+def pressure_plot(graph_df: pd.DataFrame, joined_df):
+    """
+    TODO: write something here
+    """
+    
+    y = joined_df["PrDM"]
+
+    for i in range(2):
+        plt.clf()
+        x_orig = joined_df[f"Sbeox{i}ML/L"]
+        x_cal = graph_df[f"Trendline_Sbeox{i}"]
+
+        plt.scatter(x_orig, y, color="blue", label="Original")
+        plt.scatter(x_cal, y, color="red", label ="Calibrated")
+        plt.title(f"Original vs Calibrated Sbeox{i} values")
+        plt.xlabel(f"Sbeox{i}")
+        plt.ylabel("Pressure")
+        plt.legend()
+        plt.savefig(f"PrDM_plot{i}_{graphic_titles}.png")
+
+
+def regression_data(
+    instr_df: pd.DataFrame,
+    graph_df: pd.DataFrame,
+    newSOC: list,
+    oldSOC: list,
+):
+    """
+    This function takes in instrument data, graph data, newSOC, and oldSOC as inputs. It performs regression analysis
+    using the graph data and extracts relevant information from the instrument data. The results are returned as a
+    pandas DataFrame.
+
+    Args:
+        instr_df (pd.DataFrame): The instrument data DataFrame.
+        graph_df (pd.DataFrame): The graph data DataFrame.
+        newSOC (list): A list of newSOC values.
+        oldSOC (list): A list of oldSOC values.
+
+    Returns:
+        pd.DataFrame: A DataFrame summarizing the regression analysis results, including instrument information,
+        slope, y-intercept, oldSOC, and newSOC.
+
+    Raises:
+        (Any exceptions that the function might raise) 
+    """
+    summary = pd.DataFrame
+
+    primList = np.unique(instr_df["Primary Oxygen Serial Number"].values.tolist())
+    secList = np.unique(instr_df["Secondary Oxygen Serial Number"])
+    instr_list = np.append(primList, secList)
+    slope = [graph_df["Slope_Sbeox0"].iloc[0], graph_df["Slope_Sbeox1"].iloc[0]]
+    yint = [graph_df["yint_Sbeox0"].iloc[0], graph_df["yint_Sbeox1"].iloc[0]]
+
+    summary = pd.DataFrame(
+        {
+            "Instr": instr_list,
+            "Slope": slope,
+            "y-int": yint,
+            "OldSOC": oldSOC,
+            "NewSOC": newSOC,
+        }
+    )
+
+    return summary
+
+
+def stations_occupied(df: pd.DataFrame):
+    station_id = df["Station-ID"].drop_duplicates()
+    station_id = np.unique(df["Station-ID"].tolist())
+    station_dict = {}
+    for station in station_id:
+        val = re.split("-", station)
+        if val[0] not in station_dict:
+            station_dict[val[0]] = [val[1]]
+        else:
+            station_dict[val[0]].append(val[1])
+
+    station_list = []
+    for k in station_dict.keys():
+        stat = (k, ", ".join(station_dict.get(k)))
+        station_list.append(stat)
+
+    station_df = pd.DataFrame(station_list)
+
+    return station_df
+
+
+def instruments_used(df: pd.DataFrame):
+    primList = np.unique(df["Primary Oxygen Serial Number"].values.tolist())
+    secList = np.unique(df["Secondary Oxygen Serial Number"].values.tolist())
+
+    switch = False
+    if len(primList) or len(secList) > 1:
+        switch = True
+        
+    instr = pd.DataFrame(
+        {
+            "Primary": primList,
+            "Secondary": secList,
+        }
+    )
+    
+    return switch, instr
+
+
+def calibrated_dO2_sheet(orig_bot_df: pd.DataFrame, graph_df: pd.DataFrame) -> pd.DataFrame:
+
+    calibrated_df = orig_bot_df.copy()
+    calibrated_df["Sbeox0_Calibrated"] = graph_df["Trendline_Sbeox0"]
+    calibrated_df["Sbeox1_Calibrated"] = graph_df["Trendline_Sbeox1"]
+
+    return calibrated_df
+
+
+def write_to_DO2_excel(
+    bot_file,
+    txt_file,
+    fail_tit,
+    instr: pd.DataFrame,
+    title: str,
+    instr_used: pd.DataFrame,
+    station_id: pd.DataFrame,
+    reg_data: pd.DataFrame,
+    dO2_cal: pd. DataFrame,
+):
+    start_date = bot_file["Date"].min()
+    end_date = bot_file["Date"].max()
+
+    wb = Workbook()
+
+    # Summary sheet with map
+    ws = wb.active
+    ws.title = "Summary"
+    ws["A1"] = "Oxygen Calibration"
+    ws["A2"] = f"AZMP Survey for {ship_name} {ship_trip}"
+    ws["A3"] = f"{start_date} to {end_date}"
+
+    ws["A5"] = "The following instruments were used:"
+    ws["A11"] = "The following stations were occupied:"
+    ws["A18"] = "The regression data is:"
+
+    map_img = Image(f"{title}_map.png")
+    map_img.anchor = "I2"
+    ws.add_image(map_img)
+
+    ws = wb.create_sheet("Plots", 1)
+    wb.active = 1
+    plot0_png = Image(f"plot_Sbeox0_{graphic_titles}.png")
+    plot0_png.anchor = "A1"
+    plot1_png = Image(f"plot_Sbeox1_{graphic_titles}.png")
+    plot1_png.anchor = "A30"
+    ws.add_image(plot0_png)
+    ws.add_image(plot1_png)
+    wb.save(f"DO2_calibration_output_{title}.xlsx")
+    with pd.ExcelWriter(
+        f"DO2_calibration_output_{title}.xlsx",
+        mode="a",
+        engine="openpyxl",
+        if_sheet_exists="overlay",
+    ) as writer:
+        instr_used.to_excel(
+            writer, sheet_name="Summary", startrow=5, index=False, header=True
+        )
+        station_id.to_excel(
+            writer, sheet_name="Summary", startrow=11, index=False, header=False
+        )
+        reg_data.to_excel(
+            writer, sheet_name="Summary", startrow=18, index=False, header=True
+        )
+        # master_bot.to_excel(writer, sheet_name='Master bottle file')
+        # all_data.to_excel(writer, sheet_name='Data')
+        bot_file.to_excel(writer, sheet_name="Original bot file", index=False)
+        dO2_cal.to_excel(writer, sheet_name="Calibrated bot file", index=False)
+        txt_file.to_excel(writer, sheet_name="Original O2 text file", index=False)
+        fail_tit.to_excel(writer, sheet_name="Failed Titrations", index=False)
+        instr.to_excel(writer, sheet_name="Instruments", index=False)
+
+
+def write_to_bot_excel(bot_file, met_file, title: str):
+    """ """
+    with pd.ExcelWriter(f"master_bot_output_{title}.xlsx", mode="w") as writer:
+        met_file.to_excel(writer, sheet_name="met file", index=False)
+        bot_file.to_excel(writer, sheet_name="Original bot file", index=False)
 
 
 if __name__ == "__main__":
     year = int(input("Year: "))
     ship_name = input("Ship name: ")
     ship_trip = input("Ship trip: ")
-    bot_df = generate_bot_df(f"{ship_name}{ship_trip}.bot")
-    o2_df = generate_o2_df(f"{ship_name}{ship_trip}_meanO2.txt")
+    graphic_titles = f"{ship_name}{ship_trip}_{year}"
+
+    instr_df = generate_instrument_df(f"{ship_name}{ship_trip}_{year}_Instruments.csv")
+    switch, instr_used = instruments_used(instr_df)
+
+    orig_bot_df, bot_df = generate_bot_df(f"{ship_name}{ship_trip}.bot")
+    orig_o2_df, o2_df = generate_o2_df(f"{ship_name}{ship_trip}_meanO2.txt")
     met_df = generate_met_df(f"{ship_name}{ship_trip}_{year}_met.csv")
 
     joined_df = join_bot_o2_met_dfs(bot_df, o2_df, met_df)
-    output_file = f"{ship_name}{ship_trip}_{year}_joined.csv"
-    joined_df.to_csv(output_file, index=False)
-    print(f"Written joined bot, o2 and met DataFrame to {output_file}")
 
-    print(generate_map(joined_df))  # temp? checking purposes
+    successful_titration, failed_titrations = seperate_based_on_winkler_diff(
+        joined_df
+    )
+
+    joined_file = f"{ship_name}{ship_trip}_{year}_joined.csv"
+    print(f"Written joined bot, o2 and met DataFrame to {joined_file}")
+    successful_titration.to_csv(joined_file, index=False)
+
+    generate_map(joined_df, bot_df, graphic_titles)
+
+    if switch == True:
+        pass
+
+
+    newSOC, oldSOC = new_and_old_SOC_calculations(instr_df, successful_titration)
+    
+    # Generate + editing graph happens here
+    graph_df = filter_graph_data(joined_df)
+    app = QtWidgets.QApplication([])
+    plotter = Plotter(graph_df)
+    plotter.show()
+    app.exec_()
+    app.quit()
+
+    updated_graph_df = generate_graph_df(f"updated_data_{ship_name}{ship_trip}.csv")
+    prDMplt = pressure_plot(updated_graph_df, joined_df)
+    station_id = stations_occupied(joined_df)
+    reg_data = regression_data(instr_df, updated_graph_df, newSOC, oldSOC)
+    dO2_cal = calibrated_dO2_sheet(orig_bot_df, updated_graph_df)
+
+    write_to_DO2_excel(
+        orig_bot_df,
+        orig_o2_df,
+        failed_titrations,
+        instr_df,
+        graphic_titles,
+        instr_used,
+        station_id,
+        reg_data,
+        dO2_cal,
+    )
+    write_to_bot_excel(orig_bot_df, met_df, graphic_titles)
