@@ -22,9 +22,11 @@ import re
 import DF_O2
 
 """
-IMPORTANT: This code only works with trip data that has a switched sensor!!! No switch go to DF_O2.py
+IMPORTANT: This code only works with trip data that has a switched sensor!!! If no switch go to DF_O2.py
 
 This code should be excecuted as follows,
+
+Make sure you have all modules above downloaded!!!
 
 Make sure these essential files are in the current working directory BEFORE running this code!
 
@@ -101,6 +103,7 @@ def split_data(joined_df: pd.DataFrame, instr_df: pd.DataFrame) -> pd.DataFrame:
 def SOCcalc_split(split_df1: pd.DataFrame, split_df2: pd.DataFrame):
     """
     Calculates new SOC values based on oxygen measurements and old SOC values.
+    Also determines the r2 value of graph data.
 
     Args:
         split_df1 (pd.DataFrame): DataFrame containing the first set of split data.
@@ -110,6 +113,7 @@ def SOCcalc_split(split_df1: pd.DataFrame, split_df2: pd.DataFrame):
         tuple: A tuple containing two lists:
             - newSOC: List of new SOC values calculated for each oxygen measurement.
             - oldSOC: List of old SOC values corresponding to the oxygen measurements.
+            - r2_vals: List of r2 values.
 
     Raises:
         None.
@@ -414,12 +418,14 @@ def regression_data(
         graphB_df (pd.DataFrame): DataFrame containing regression data from graph B.
         newSOC (list): List of new SOC values.
         oldSOC (list): List of old SOC values.
+        r2_vals (list): List of r2 values.
 
     Returns:
         pd.DataFrame: Summary DataFrame with the following columns:
             - "Instr": Instrument information.
             - "Slope": Slope values from graph A and graph B.
             - "y-int": Y-intercept values from graph A and graph B.
+            - "r2": r2 values from graph A and graph B.
             - "OldSOC": Old SOC values.
             - "NewSOC": New SOC values.
 
@@ -452,7 +458,7 @@ def regression_data(
             "Instr": instr_list,
             "Slope": slope,
             "y-int": yint,
-            "r2 value": r2_vals,
+            "r2": r2_vals,
             "OldSOC": oldSOC,
             "NewSOC": newSOC,
         }
@@ -470,10 +476,6 @@ def find_split_for_calibration(instr_df: pd.DataFrame, orig_bot_df: pd.DataFrame
         df1["Secondary Oxygen Serial Number"]
         == instr_df["Secondary Oxygen Serial Number"].iloc[0]
     ]
-    # df3 = instr_df.merge(df1, on="Primary Oxygen Serial Number", how="left", indicator=True)
-    # df = df3.loc[df3["_merge"] == "left_only", "Primary Oxygen Serial Number"]
-    # anti_join = instr_df[instr_df["Primary Oxygen Serial Number"].isin(df)]
-    # anti_join.index = np.arange(0, len(anti_join))
 
     split_point = df1["Filename"].iloc[-1]
     stop_num = int(split_point[-3:])
