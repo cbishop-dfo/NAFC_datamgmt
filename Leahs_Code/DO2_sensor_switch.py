@@ -8,6 +8,7 @@ from openpyxl import load_workbook
 from openpyxl.workbook import Workbook
 from openpyxl.drawing.image import Image
 from mpl_toolkits.basemap import Basemap
+from sklearn.metrics import r2_score
 
 import matplotlib
 
@@ -30,6 +31,9 @@ Make sure these essential files are in the current working directory BEFORE runn
 .bot, meanO2.txt, met.csv, Instruments.csv, AND ***DF_O2.py***
 
 Once those are in the working directory, you can run the code, my preference is to manually run it with "python .\DO2_sensor_switch.py"
+
+Please make sure you have the proper input when prompted so the correct files are being accessed, user input should match info in file names (i.e. no capital letters, proper year, ship code, etc.)
+
 As code runs, it will create files such as:
     joined.csv
     map.png
@@ -37,8 +41,8 @@ As code runs, it will create files such as:
     plot_Sbeox0_1.png and plot_Sbeox1_1.png
     updated_data0.csv and updated_data1.csv
     DO2_calibration_output.xlsx
-
-If you don't save EVERY graph image you will have issues with both the updated data files and the excel, the code will quit. Just run it again and make sure you save ALL graphs as images!
+ 
+If you don't save EVERY graph image you will have issues with both the updated data files and the excel, the code will quit. Just run it again and make sure you save ALL graphs as images before pressing "Done" button!
 
 If you are not satisfied with something in the excel output, make sure the excel file is CLOSED before running again.
 You may need to delete the excel from the working directory if running the code does not immediately overwrite the excel.
@@ -47,8 +51,9 @@ In this case, the best thing to do is close excel, delete from working directory
 That should be all :)
 """
 
-def split_data(joined_df: pd.DataFrame, instr_df: pd.DataFrame):
-    """ 
+
+def split_data(joined_df: pd.DataFrame, instr_df: pd.DataFrame) -> pd.DataFrame:
+    """
     Splits the joined DataFrame based on the oxygen serial numbers.
 
     Args:
@@ -85,7 +90,10 @@ def split_data(joined_df: pd.DataFrame, instr_df: pd.DataFrame):
 
     anti_join = join_dfs[join_dfs["Primary Oxygen Serial Number"].isin(df)]
 
-    anti_join.index = np.arange(1, len(anti_join) + 1)
+    anti_join.index = np.arange(0, len(anti_join))
+
+    df1.to_csv("df1_sensor_switch.csv")
+    anti_join.to_csv("df2_sensor_switch.csv")
 
     return df1, anti_join
 
@@ -112,6 +120,7 @@ def SOCcalc_split(split_df1: pd.DataFrame, split_df2: pd.DataFrame):
 
     newSOC = []
     oldSOC = []
+    r2_vals = []
 
     df1["WinkOxCalc0"] = df1.apply(
         lambda x: round((x["WINKLER"] / x["Sbeox0ML/L"]), 4), axis=1
@@ -144,11 +153,16 @@ def SOCcalc_split(split_df1: pd.DataFrame, split_df2: pd.DataFrame):
         newSOC.append(round(float((winklerOx_avg) * (oldSOC_val[0])), 4))
         newSOC.append(round(float((winklerOx_avg) * (oldSOC_val[1])), 4))
 
-    return newSOC, oldSOC
+        r2_prim = r2_score(i["Sbeox0ML/L"], i["WINKLER"])
+        r2_sec = r2_score(i["Sbeox1ML/L"], i["WINKLER"])
+
+        r2_vals.extend([r2_prim, r2_sec])
+
+    return newSOC, oldSOC, r2_vals
 
 
 def instruments_used(df: pd.DataFrame):
-    """ 
+    """
      Extracts the unique primary and secondary oxygen serial numbers used in the DataFrame.
 
     Args:
@@ -156,7 +170,7 @@ def instruments_used(df: pd.DataFrame):
 
     Returns:
         tuple: A tuple containing:
-            - instr (pd.DataFrame): DataFrame with two columns: "Primary" and "Secondary" 
+            - instr (pd.DataFrame): DataFrame with two columns: "Primary" and "Secondary"
               listing the unique primary and secondary oxygen serial numbers.
             - primList (list): List of unique primary oxygen serial numbers.
             - secList (list): List of unique secondary oxygen serial numbers.
@@ -241,7 +255,7 @@ class Plotter(QtWidgets.QWidget):
         self.update_plot()
 
     def closeEvent(self, event):
-        self.df.to_csv(f"updated_data_{ship_name}{ship_trip}{df_num}.csv", index=False)
+        self.df.to_csv(f"updated_data_{ship_code}{ship_trip}{df_num}.csv", index=False)
         app = QtWidgets.QApplication.instance()
         app.quit()
 
@@ -390,8 +404,9 @@ def regression_data(
     graphB_df: pd.DataFrame,
     newSOC: list,
     oldSOC: list,
+    r2_vals: list,
 ):
-    """ 
+    """
     Generates a summary DataFrame with regression data, SOC values, and instrument information.
 
     Args:
@@ -437,6 +452,7 @@ def regression_data(
             "Instr": instr_list,
             "Slope": slope,
             "y-int": yint,
+            "r2 value": r2_vals,
             "OldSOC": oldSOC,
             "NewSOC": newSOC,
         }
@@ -445,46 +461,70 @@ def regression_data(
     return summary
 
 
+def find_split_for_calibration(instr_df: pd.DataFrame, orig_bot_df: pd.DataFrame):
+    df1 = instr_df[
+        instr_df["Primary Oxygen Serial Number"]
+        == instr_df["Primary Oxygen Serial Number"].iloc[0]
+    ]
+    df1 = df1[
+        df1["Secondary Oxygen Serial Number"]
+        == instr_df["Secondary Oxygen Serial Number"].iloc[0]
+    ]
+    # df3 = instr_df.merge(df1, on="Primary Oxygen Serial Number", how="left", indicator=True)
+    # df = df3.loc[df3["_merge"] == "left_only", "Primary Oxygen Serial Number"]
+    # anti_join = instr_df[instr_df["Primary Oxygen Serial Number"].isin(df)]
+    # anti_join.index = np.arange(0, len(anti_join))
+
+    split_point = df1["Filename"].iloc[-1]
+    stop_num = int(split_point[-3:])
+    orig_bot_df["ShTrpStn num"] = (
+        orig_bot_df["ShTrpStn"].astype(str).apply(lambda x: x[-3:]).astype(int)
+    )
+
+    bot_df1 = orig_bot_df[orig_bot_df["ShTrpStn num"] <= stop_num].copy()
+    bot_df2 = orig_bot_df[orig_bot_df["ShTrpStn num"] > stop_num].copy()
+
+    bot_df1.drop(["ShTrpStn num"], axis=1, inplace=True)
+    bot_df2.drop(["ShTrpStn num"], axis=1, inplace=True)
+
+    return bot_df1, bot_df2
+
+
 def calibrated_dO2_sheet(
-    orig_bot_df: pd.DataFrame, graphA_df: pd.DataFrame, graphB_df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Creates a calibrated dissolved oxygen (dO2) sheet DataFrame based on original bottom data and regression data.
-
-    Args:
-        orig_bot_df (pd.DataFrame): DataFrame containing the original bottom data.
-        graphA_df (pd.DataFrame): DataFrame containing regression data from graph A.
-        graphB_df (pd.DataFrame): DataFrame containing regression data from graph B.
-
-    Returns:
-        pd.DataFrame: Calibrated dO2 sheet DataFrame with additional columns:
-            - "Sbeox0_Calibrated_A": Calibrated dO2 values for Sbeox0 using regression data from graph A.
-            - "Sbeox1_Calibrated_A": Calibrated dO2 values for Sbeox1 using regression data from graph A.
-            - "Sbeox0_Calibrated_B": Calibrated dO2 values for Sbeox0 using regression data from graph B.
-            - "Sbeox1_Calibrated_B": Calibrated dO2 values for Sbeox1 using regression data from graph B.
-
-    Raises:
-        None.
-
-    """
+    orig_bot_df: pd.DataFrame,
+    df1: pd.DataFrame,
+    df2: pd.DataFrame,
+    graphA_df: pd.DataFrame,
+    graphB_df: pd.DataFrame,
+) -> pd.DataFrame:
+    """ """
     slope0A = graphA_df["Slope_Sbeox0"].iloc[0]
     slope1A = graphA_df["Slope_Sbeox1"].iloc[0]
     slope0B = graphB_df["Slope_Sbeox0"].iloc[0]
     slope1B = graphB_df["Slope_Sbeox1"].iloc[0]
 
-    calibrated_df = orig_bot_df.copy()
+    yint0A = graphA_df["yint_Sbeox0"].iloc[0]
+    yint1A = graphA_df["yint_Sbeox1"].iloc[0]
+    yint0B = graphB_df["yint_Sbeox0"].iloc[0]
+    yint1B = graphB_df["yint_Sbeox1"].iloc[0]
 
-    calibrated_df["Sbeox0_Calibrated_A"] = calibrated_df.apply(
-        lambda x: round((x["Sbeox0ML/L"] * slope0A), 4), axis=1
+    df1["Sbeox0_Calibrated"] = df1.apply(
+        lambda x: round((x["Sbeox0ML/L"] * slope0A) + yint0A, 4), axis=1
     )
-    calibrated_df["Sbeox1_Calibrated_A"] = calibrated_df.apply(
-        lambda x: round((x["Sbeox1ML/L"] * slope1A), 4), axis=1
+
+    df1["Sbeox1_Calibrated"] = df1.apply(
+        lambda x: round((x["Sbeox1ML/L"] * slope1A) + yint1A, 4), axis=1
     )
-    calibrated_df["Sbeox0_Calibrated_B"] = calibrated_df.apply(
-        lambda x: round((x["Sbeox0ML/L"] * slope0B), 4), axis=1
+
+    df2["Sbeox0_Calibrated"] = df2.apply(
+        lambda x: round((x["Sbeox0ML/L"] * slope0B) + yint0B, 4), axis=1
     )
-    calibrated_df["Sbeox1_Calibrated_B"] = calibrated_df.apply(
-        lambda x: round((x["Sbeox1ML/L"] * slope1B), 4), axis=1
+
+    df2["Sbeox1_Calibrated"] = df2.apply(
+        lambda x: round((x["Sbeox1ML/L"] * slope1B) + yint1B, 4), axis=1
     )
+
+    calibrated_df = pd.concat([df1, df2], join="outer", ignore_index=True)
 
     return calibrated_df
 
@@ -531,7 +571,7 @@ def write_to_DO2_excel(
     ws = wb.active
     ws.title = "Summary"
     ws["A1"] = "Oxygen Calibration"
-    ws["A2"] = f"AZMP Survey for {ship_name} {ship_trip}"
+    ws["A2"] = f"AZMP Survey for {ship_code} {ship_trip}"
     ws["A3"] = f"{start_date} to {end_date}"
 
     ws["A5"] = "The following instruments were used:"
@@ -573,7 +613,7 @@ def write_to_DO2_excel(
         reg_data.to_excel(
             writer, sheet_name="Summary", startrow=18, index=False, header=True
         )
-        
+
         bot_file.to_excel(writer, sheet_name="Original bot file", index=False)
         dO2_cal.to_excel(writer, sheet_name="Calibrated bot file", index=False)
         txt_file.to_excel(writer, sheet_name="O2.txt file", index=False)
@@ -582,7 +622,7 @@ def write_to_DO2_excel(
 
 
 def write_to_bot_excel(bot_file, met_file, title: str):
-    """ 
+    """
     Creates bot excel, in progress
     """
     with pd.ExcelWriter(f"master_bot_output_{title}.xlsx", mode="w") as writer:
@@ -592,18 +632,18 @@ def write_to_bot_excel(bot_file, met_file, title: str):
 
 if __name__ == "__main__":
     year = int(input("Year: "))
-    ship_name = input("Ship name: ")
+    ship_code = input("Ship code: ")
     ship_trip = input("Ship trip: ")
-    graphic_titles = f"{ship_name}{ship_trip}_{year}"
+    graphic_titles = f"{ship_code}{ship_trip}_{year}"
 
     instr_df = DF_O2.generate_instrument_df(
-        f"{ship_name}{ship_trip}_{year}_Instruments.csv"
+        f"{ship_code}{ship_trip}_{year}_Instruments.csv"
     )
     instr_used, primList, secList = instruments_used(instr_df)
 
-    orig_bot_df, bot_df = DF_O2.generate_bot_df(f"{ship_name}{ship_trip}.bot")
-    orig_o2_df, o2_df = DF_O2.generate_o2_df(f"{ship_name}{ship_trip}_meanO2.txt")
-    met_df = DF_O2.generate_met_df(f"{ship_name}{ship_trip}_{year}_met.csv")
+    orig_bot_df, bot_df = DF_O2.generate_bot_df(f"{ship_code}{ship_trip}.bot")
+    orig_o2_df, o2_df = DF_O2.generate_o2_df(f"{ship_code}{ship_trip}_meanO2.txt")
+    met_df = DF_O2.generate_met_df(f"{ship_code}{ship_trip}_{year}_met.csv")
 
     joined_df = DF_O2.join_bot_o2_met_dfs(bot_df, o2_df, met_df)
 
@@ -611,15 +651,15 @@ if __name__ == "__main__":
         joined_df
     )
 
-    joined_file = f"{ship_name}{ship_trip}_{year}_joined.csv"
-    print(f"Written joined bot, o2 and met DataFrame to {joined_file}")
+    joined_file = f"{ship_code}{ship_trip}_{year}_joined.csv"
     successful_titration.to_csv(joined_file, index=False)
+    print(f"Written joined bot, o2 and met DataFrame to {joined_file}")
 
     station_id = DF_O2.stations_occupied(joined_df)
     DF_O2.generate_map(joined_df, bot_df, graphic_titles)
 
     df1, df2 = split_data(successful_titration, instr_df)
-    newSOC, oldSOC = SOCcalc_split(df1, df2)
+    newSOC, oldSOC, r2_vals = SOCcalc_split(df1, df2)
 
     df_num = 0
     graphA_df = DF_O2.filter_graph_data(df1)
@@ -636,13 +676,17 @@ if __name__ == "__main__":
     app.quit()
 
     graphA_df, graphB_df = updated_graph_dfs(
-        f"updated_data_{ship_name}{ship_trip}0.csv",
-        f"updated_data_{ship_name}{ship_trip}1.csv",
+        f"updated_data_{ship_code}{ship_trip}0.csv",
+        f"updated_data_{ship_code}{ship_trip}1.csv",
     )
     # prDMplt = pressure_plot(updated_graph_df, joined_df) PRESSURE PLOT, not currently being used, does not exist in this code yet
 
-    reg_data = regression_data(graphA_df, graphB_df, newSOC, oldSOC)
-    dO2_cal = calibrated_dO2_sheet(orig_bot_df, graphA_df, graphB_df)
+    split_df1, split_df2 = find_split_for_calibration(instr_df, orig_bot_df)
+    reg_data = regression_data(graphA_df, graphB_df, newSOC, oldSOC, r2_vals)
+    bot_df1, bot_df2 = find_split_for_calibration(instr_df, orig_bot_df)
+    dO2_cal = calibrated_dO2_sheet(
+        orig_bot_df, split_df1, split_df2, graphA_df, graphB_df
+    )
 
     write_to_DO2_excel(
         orig_bot_df,

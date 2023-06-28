@@ -21,6 +21,33 @@ import numpy as np
 import matplotlib.pyplot as plt
 import re
 
+"""
+This file is to be used with AZMP survey data that does NOT have a switched sensor.
+If a sensor has been switched, you will be prompted to run the "DO2_sensor_switch.py", please follow the instructions in the mentioned file to get proper excel output.
+
+For this code you need the following files of trip data in the working directory:
+    .bot, 
+    meanO2.txt, 
+    met.csv, 
+    Instruments.csv
+
+Please make sure you have the proper input when prompted so the correct files are being accessed, user input should match info in file names (i.e. no capital letters, proper year, ship code, etc.)
+
+This file will create the following:
+    joined.csv
+    map.png
+    plot_Sbeox0.png and plot_Sbeox1.png
+    updated_data.csv
+    DO2_calibration_output.xlsx
+
+If you don't save BOTH graph images you will have issues with both the updated data files and the excel, the code will quit. Just run it again and make sure you save ALL graphs as images before pressing "Done" button!
+
+If you are not satisfied with something in the excel output, make sure the excel file is CLOSED before running again.
+You may need to delete the excel from the working directory if running the code does not immediately overwrite the excel.
+In this case, the best thing to do is close excel, delete from working directory, run code, open excel, open your cd folder and select from there and NOT the main excel menu.
+
+That should be all :)
+"""
 
 def generate_bot_df(path: str) -> pd.DataFrame:
     """
@@ -55,6 +82,8 @@ def generate_bot_df(path: str) -> pd.DataFrame:
             "Sbeox1ML/L",
         ]
     )
+
+    bot_df.to_csv("botdf.csv")
 
     return orig_bot_df, bot_df
 
@@ -134,7 +163,16 @@ def generate_met_df(path: str) -> pd.DataFrame:
 
 def generate_instrument_df(path: str):
     """
-    TODO: write docstring
+    Generates a DataFrame from a CSV file containing instrument data.
+
+    Args:
+        path (str): The file path to the CSV file.
+
+    Returns:
+        pd.DataFrame: A DataFrame containing the instrument data.
+
+    Raises:
+        FileNotFoundError: If the specified file path does not exist.
     """
     if not Path(path).exists():
         raise FileNotFoundError(
@@ -150,8 +188,21 @@ def seperate_based_on_winkler_diff(
     df: pd.DataFrame,
 ) -> Tuple[pd.DataFrame, pd.DataFrame]:
     """
-    TODO: write docstring
+    Separates the data into successful and failed titrations based on Winkler differences.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing the titration data.
+
+    Returns:
+        Tuple[pd.DataFrame, pd.DataFrame]: A tuple of two DataFrames. The first DataFrame
+            contains the data for successful titrations, and the second DataFrame contains
+            the data for failed titrations.
+
+    Raises:
+        None
+
     """
+    
     df["WINKLER-DIFF"] = df.apply(
         lambda x: abs(round(x["Rep_1(ml/l)"] - x["Rep_2(ml/l)"], 4)), axis=1
     )
@@ -170,7 +221,6 @@ def seperate_based_on_winkler_diff(
         wanted_columns,
     ]
 
-    print(failed_titrations_df)
 
     return successful_titrations_df, failed_titrations_df
 
@@ -208,13 +258,20 @@ def join_bot_o2_met_dfs(
     return join_dfs
 
 
-def join_instr(joined_df: pd.DataFrame, instr_df: pd.DataFrame):
-    join_dfs = joined_df.merge(instr_df, how="inner", left_on="Sh", right_on="Sample")
-    join_dfs.drop(["Station", "Sample"], axis=1, inplace=True)
-
-
 def generate_map(df: pd.DataFrame, bot_df: pd.DataFrame, title: str):
     """
+    Generates a map plot showing the locations of oxygen samples and occupied stations.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing the oxygen sample data.
+        bot_df (pd.DataFrame): DataFrame containing the occupied station data.
+        title (str): Title of the map plot.
+
+    Returns:
+        None
+
+    Raises:
+        None
 
     """
     plt.figure()
@@ -280,11 +337,34 @@ def new_and_old_SOC_calculations(instr_df: pd.DataFrame, joined_df: pd.DataFrame
     return newSOC, oldSOC
 
 
+def join_instr(joined_df:pd.DataFrame, instr_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Joins the data from the joined and instrument DataFrames based on a common key.
+
+    Args:
+        joined_df (pd.DataFrame): DataFrame containing the data to be joined.
+        instr_df (pd.DataFrame): DataFrame containing the instrument data.
+
+    Returns:
+        pd.DataFrame: DataFrame resulting from the inner join of the two input DataFrames.
+
+    Raises:
+        None.
+
+    """
+    join_dfs = joined_df.merge(
+        instr_df, how="inner", left_on="ShTrpStn", right_on="Filename"
+    )
+    join_dfs.drop(["Filename"], axis=1, inplace=True)
+
+    return join_dfs
+
+
 def filter_graph_data(joined_df: pd.DataFrame) -> pd.DataFrame:
     """
-    Filters the joined dataframe to pass to the Plotter class.
+    Filters the joined dataframe + instruments to pass to the Plotter class.
     """
-    graph_df = joined_df.filter(items=["Rep_1(ml/l)", "Sbeox0ML/L", "Sbeox1ML/L"])
+    graph_df = joined_df.filter(items=["Rep_1(ml/l)", "Sbeox0ML/L", "Sbeox1ML/L", "Primary Oxygen Serial Number", "Secondary Oxygen Serial Number"])
 
     return graph_df
 
@@ -302,7 +382,17 @@ class Plotter(QtWidgets.QWidget):
         frame = QtWidgets.QFrame(self)
         frame_layout = QtWidgets.QHBoxLayout(frame)
 
-        var_names = [c for c in df.columns if c not in ["index", "Rep_1(ml/l)"]]
+        var_names = [
+            c
+            for c in df.columns
+            if c
+            not in [
+                "index",
+                "Rep_1(ml/l)",
+                "Primary Oxygen Serial Number",
+                "Secondary Oxygen Serial Number",
+            ]
+        ]
         self.var_selected = QtWidgets.QComboBox(self)
         self.var_selected.addItems(var_names)
         self.var_selected.currentIndexChanged.connect(self.update_plot)
@@ -336,7 +426,7 @@ class Plotter(QtWidgets.QWidget):
         self.update_plot()
 
     def closeEvent(self, event):
-        self.df.to_csv(f"updated_data_{ship_name}{ship_trip}.csv", index=False)
+        self.df.to_csv(f"updated_data_{ship_code}{ship_trip}.csv", index=False)
         app = QtWidgets.QApplication.instance()
         app.quit()
 
@@ -402,6 +492,19 @@ class Plotter(QtWidgets.QWidget):
             ax=ax,
             label=f"Slope = {slope:.4f},  Y-Intercept: {intercept:.4f}",
         )
+        
+        if var == "Sbeox0ML/L":
+            instrument_num_col = "Primary Oxygen Serial Number"
+
+        if var == "Sbeox1ML/L":
+            instrument_num_col = "Secondary Oxygen Serial Number"
+
+        if instrument_num_col is not None:
+            instrument_number = self.df.loc[1, instrument_num_col]
+        else:
+            instrument_number = "Unknown"
+
+        self.canvas.ax.set_title(f"Instrument {instrument_number}")
 
         ax.legend()
 
@@ -441,7 +544,19 @@ class Plotter(QtWidgets.QWidget):
 
 
 def generate_graph_df(path: str) -> pd.DataFrame:
+    """
+    Reads the updated graph CSV file and returns a DataFrame containing graph data.
 
+    Args:
+        path (str): The path to the CSV file.
+
+    Returns:
+        pd.DataFrame: The DataFrame containing the graph data.
+
+    Raises:
+        FileNotFoundError: If the specified file path does not exist.
+
+    """
     if not Path(path).exists():
         raise FileNotFoundError(
             f"Expected {path} to be in the current working directory, but it was not found. Did you save both graphs?"
@@ -495,7 +610,7 @@ def regression_data(
         slope, y-intercept, oldSOC, and newSOC.
 
     Raises:
-        (Any exceptions that the function might raise) 
+        None 
     """
     summary = pd.DataFrame
 
@@ -519,6 +634,15 @@ def regression_data(
 
 
 def stations_occupied(df: pd.DataFrame):
+    """
+    Extracts the occupied station IDs from a DataFrame.
+
+    Args:
+        df (pd.DataFrame): The DataFrame containing station IDs.
+
+    Returns:
+        pd.DataFrame: A DataFrame with the extracted station IDs.
+    """
     station_id = df["Station-ID"].drop_duplicates()
     station_id = np.unique(df["Station-ID"].tolist())
     station_dict = {}
@@ -540,13 +664,21 @@ def stations_occupied(df: pd.DataFrame):
 
 
 def instruments_used(df: pd.DataFrame):
+    """
+    Extracts the unique oxygen instrument serial numbers used in a DataFrame.
+
+    Args:
+        df (pd.DataFrame): The DataFrame containing oxygen instrument serial numbers.
+
+    Returns:
+        Tuple[bool, pd.DataFrame]: A tuple containing a switch indicating if there is a switch in instruments
+        and a DataFrame with the unique instrument serial numbers.
+    """
     primList = np.unique(df["Primary Oxygen Serial Number"].values.tolist())
     secList = np.unique(df["Secondary Oxygen Serial Number"].values.tolist())
 
-    switch = False
-    if len(primList) or len(secList) > 1:
-        switch = True
-        
+    switch = len(primList) > 1 or len(secList) > 1
+     
     instr = pd.DataFrame(
         {
             "Primary": primList,
@@ -558,10 +690,27 @@ def instruments_used(df: pd.DataFrame):
 
 
 def calibrated_dO2_sheet(orig_bot_df: pd.DataFrame, graph_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Calibrates dissolved oxygen measurements in the original bottle file using the slope of the updated graph data.
 
+    Args:
+        orig_bot_df (pd.DataFrame): The original bottle file DataFrame.
+        graph_df (pd.DataFrame): The updated graph data DataFrame.
+
+    Returns:
+        pd.DataFrame: The calibrated bottle file DataFrame.
+    """
     calibrated_df = orig_bot_df.copy()
-    calibrated_df["Sbeox0_Calibrated"] = graph_df["Trendline_Sbeox0"]
-    calibrated_df["Sbeox1_Calibrated"] = graph_df["Trendline_Sbeox1"]
+    slope0 = graph_df["Slope_Sbeox0"].iloc[0]
+    slope1 = graph_df["Slope_Sbeox1"].iloc[0]
+    yint0 = graph_df["yint_Sbeox0"].iloc[0]
+    yint1 = graph_df["yint_Sbeox1"].iloc[0]
+
+    calibrated_df["Sbeox0_Calibrated"] = calibrated_df.apply(
+        lambda x: round((x["Sbeox0ML/L"] * slope0) + yint0, 4), axis=1
+    )
+    calibrated_df["Sbeox1_Calibrated"] = calibrated_df.apply(
+        lambda x: round((x["Sbeox1ML/L"] * slope1)+yint1, 4), axis=1)
 
     return calibrated_df
 
@@ -586,7 +735,7 @@ def write_to_DO2_excel(
     ws = wb.active
     ws.title = "Summary"
     ws["A1"] = "Oxygen Calibration"
-    ws["A2"] = f"AZMP Survey for {ship_name} {ship_trip}"
+    ws["A2"] = f"AZMP Survey for {ship_code} {ship_trip}"
     ws["A3"] = f"{start_date} to {end_date}"
 
     ws["A5"] = "The following instruments were used:"
@@ -631,7 +780,9 @@ def write_to_DO2_excel(
 
 
 def write_to_bot_excel(bot_file, met_file, title: str):
-    """ """
+    """ 
+    Not in use, creates the second excel with meteorological and bot information.
+    """
     with pd.ExcelWriter(f"master_bot_output_{title}.xlsx", mode="w") as writer:
         met_file.to_excel(writer, sheet_name="met file", index=False)
         bot_file.to_excel(writer, sheet_name="Original bot file", index=False)
@@ -639,16 +790,16 @@ def write_to_bot_excel(bot_file, met_file, title: str):
 
 if __name__ == "__main__":
     year = int(input("Year: "))
-    ship_name = input("Ship name: ")
+    ship_code = input("Ship code: ")
     ship_trip = input("Ship trip: ")
-    graphic_titles = f"{ship_name}{ship_trip}_{year}"
+    graphic_titles = f"{ship_code}{ship_trip}_{year}"
 
-    instr_df = generate_instrument_df(f"{ship_name}{ship_trip}_{year}_Instruments.csv")
+    instr_df = generate_instrument_df(f"{ship_code}{ship_trip}_{year}_Instruments.csv")
     switch, instr_used = instruments_used(instr_df)
 
-    orig_bot_df, bot_df = generate_bot_df(f"{ship_name}{ship_trip}.bot")
-    orig_o2_df, o2_df = generate_o2_df(f"{ship_name}{ship_trip}_meanO2.txt")
-    met_df = generate_met_df(f"{ship_name}{ship_trip}_{year}_met.csv")
+    orig_bot_df, bot_df = generate_bot_df(f"{ship_code}{ship_trip}.bot")
+    orig_o2_df, o2_df = generate_o2_df(f"{ship_code}{ship_trip}_meanO2.txt")
+    met_df = generate_met_df(f"{ship_code}{ship_trip}_{year}_met.csv")
 
     joined_df = join_bot_o2_met_dfs(bot_df, o2_df, met_df)
 
@@ -656,28 +807,29 @@ if __name__ == "__main__":
         joined_df
     )
 
-    joined_file = f"{ship_name}{ship_trip}_{year}_joined.csv"
+    joined_file = f"{ship_code}{ship_trip}_{year}_joined.csv"
     print(f"Written joined bot, o2 and met DataFrame to {joined_file}")
     successful_titration.to_csv(joined_file, index=False)
 
     generate_map(joined_df, bot_df, graphic_titles)
 
     if switch == True:
-        pass
-
+        print("A sensor has been switched, please run DO2_sensor_switch.py instead")
+        exit(0)
 
     newSOC, oldSOC = new_and_old_SOC_calculations(instr_df, successful_titration)
-    
+    joined_instr_df = join_instr(joined_df, instr_df)
+
     # Generate + editing graph happens here
-    graph_df = filter_graph_data(joined_df)
+    graph_df = filter_graph_data(joined_instr_df)
     app = QtWidgets.QApplication([])
     plotter = Plotter(graph_df)
     plotter.show()
     app.exec_()
     app.quit()
 
-    updated_graph_df = generate_graph_df(f"updated_data_{ship_name}{ship_trip}.csv")
-    prDMplt = pressure_plot(updated_graph_df, joined_df)
+    updated_graph_df = generate_graph_df(f"updated_data_{ship_code}{ship_trip}.csv")
+    #prDMplt = pressure_plot(updated_graph_df, joined_df)
     station_id = stations_occupied(joined_df)
     reg_data = regression_data(instr_df, updated_graph_df, newSOC, oldSOC)
     dO2_cal = calibrated_dO2_sheet(orig_bot_df, updated_graph_df)
