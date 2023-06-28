@@ -8,6 +8,7 @@ from openpyxl import load_workbook
 from openpyxl.workbook import Workbook
 from openpyxl.drawing.image import Image
 from mpl_toolkits.basemap import Basemap
+from sklearn.metrics import r2_score
 
 import matplotlib
 
@@ -50,8 +51,9 @@ In this case, the best thing to do is close excel, delete from working directory
 That should be all :)
 """
 
+
 def split_data(joined_df: pd.DataFrame, instr_df: pd.DataFrame) -> pd.DataFrame:
-    """ 
+    """
     Splits the joined DataFrame based on the oxygen serial numbers.
 
     Args:
@@ -118,6 +120,7 @@ def SOCcalc_split(split_df1: pd.DataFrame, split_df2: pd.DataFrame):
 
     newSOC = []
     oldSOC = []
+    r2_vals = []
 
     df1["WinkOxCalc0"] = df1.apply(
         lambda x: round((x["WINKLER"] / x["Sbeox0ML/L"]), 4), axis=1
@@ -150,11 +153,16 @@ def SOCcalc_split(split_df1: pd.DataFrame, split_df2: pd.DataFrame):
         newSOC.append(round(float((winklerOx_avg) * (oldSOC_val[0])), 4))
         newSOC.append(round(float((winklerOx_avg) * (oldSOC_val[1])), 4))
 
-    return newSOC, oldSOC
+        r2_prim = r2_score(i["Sbeox0ML/L"], i["WINKLER"])
+        r2_sec = r2_score(i["Sbeox1ML/L"], i["WINKLER"])
+
+        r2_vals.extend([r2_prim, r2_sec])
+
+    return newSOC, oldSOC, r2_vals
 
 
 def instruments_used(df: pd.DataFrame):
-    """ 
+    """
      Extracts the unique primary and secondary oxygen serial numbers used in the DataFrame.
 
     Args:
@@ -162,7 +170,7 @@ def instruments_used(df: pd.DataFrame):
 
     Returns:
         tuple: A tuple containing:
-            - instr (pd.DataFrame): DataFrame with two columns: "Primary" and "Secondary" 
+            - instr (pd.DataFrame): DataFrame with two columns: "Primary" and "Secondary"
               listing the unique primary and secondary oxygen serial numbers.
             - primList (list): List of unique primary oxygen serial numbers.
             - secList (list): List of unique secondary oxygen serial numbers.
@@ -313,7 +321,7 @@ class Plotter(QtWidgets.QWidget):
             ax=ax,
             label=f"Slope = {slope:.4f},  Y-Intercept: {intercept:.4f}",
         )
-        
+
         if var == "Sbeox0ML/L":
             instrument_num_col = "Primary Oxygen Serial Number"
 
@@ -396,8 +404,9 @@ def regression_data(
     graphB_df: pd.DataFrame,
     newSOC: list,
     oldSOC: list,
+    r2_vals: list,
 ):
-    """ 
+    """
     Generates a summary DataFrame with regression data, SOC values, and instrument information.
 
     Args:
@@ -443,6 +452,7 @@ def regression_data(
             "Instr": instr_list,
             "Slope": slope,
             "y-int": yint,
+            "r2 value": r2_vals,
             "OldSOC": oldSOC,
             "NewSOC": newSOC,
         }
@@ -452,25 +462,27 @@ def regression_data(
 
 
 def find_split_for_calibration(instr_df: pd.DataFrame, orig_bot_df: pd.DataFrame):
-
-    df1 = instr_df[instr_df["Primary Oxygen Serial Number"] == instr_df["Primary Oxygen Serial Number"].iloc[0]]
-    df1 = df1[df1["Secondary Oxygen Serial Number"] == instr_df["Secondary Oxygen Serial Number"].iloc[0]]
-    #df3 = instr_df.merge(df1, on="Primary Oxygen Serial Number", how="left", indicator=True)
-    #df = df3.loc[df3["_merge"] == "left_only", "Primary Oxygen Serial Number"]
-    #anti_join = instr_df[instr_df["Primary Oxygen Serial Number"].isin(df)]
-    #anti_join.index = np.arange(0, len(anti_join))
+    df1 = instr_df[
+        instr_df["Primary Oxygen Serial Number"]
+        == instr_df["Primary Oxygen Serial Number"].iloc[0]
+    ]
+    df1 = df1[
+        df1["Secondary Oxygen Serial Number"]
+        == instr_df["Secondary Oxygen Serial Number"].iloc[0]
+    ]
+    # df3 = instr_df.merge(df1, on="Primary Oxygen Serial Number", how="left", indicator=True)
+    # df = df3.loc[df3["_merge"] == "left_only", "Primary Oxygen Serial Number"]
+    # anti_join = instr_df[instr_df["Primary Oxygen Serial Number"].isin(df)]
+    # anti_join.index = np.arange(0, len(anti_join))
 
     split_point = df1["Filename"].iloc[-1]
-     
     stop_num = int(split_point[-3:])
-    print(stop_num)
+    orig_bot_df["ShTrpStn num"] = (
+        orig_bot_df["ShTrpStn"].astype(str).apply(lambda x: x[-3:]).astype(int)
+    )
 
-    orig_bot_df['ShTrpStn num'] = orig_bot_df['ShTrpStn'].astype(str).apply(lambda x: x[-3:]).astype(int)
-    
-    print(orig_bot_df["ShTrpStn num"])
-
-    bot_df1 = orig_bot_df[orig_bot_df["ShTrpStn num"] <= stop_num]
-    bot_df2 = orig_bot_df[orig_bot_df["ShTrpStn num"] > stop_num]
+    bot_df1 = orig_bot_df[orig_bot_df["ShTrpStn num"] <= stop_num].copy()
+    bot_df2 = orig_bot_df[orig_bot_df["ShTrpStn num"] > stop_num].copy()
 
     bot_df1.drop(["ShTrpStn num"], axis=1, inplace=True)
     bot_df2.drop(["ShTrpStn num"], axis=1, inplace=True)
@@ -479,11 +491,13 @@ def find_split_for_calibration(instr_df: pd.DataFrame, orig_bot_df: pd.DataFrame
 
 
 def calibrated_dO2_sheet(
-    orig_bot_df: pd.DataFrame, df1: pd.DataFrame, df2: pd.DataFrame, graphA_df: pd.DataFrame, graphB_df: pd.DataFrame) -> pd.DataFrame:
-    """
-    
-
-    """
+    orig_bot_df: pd.DataFrame,
+    df1: pd.DataFrame,
+    df2: pd.DataFrame,
+    graphA_df: pd.DataFrame,
+    graphB_df: pd.DataFrame,
+) -> pd.DataFrame:
+    """ """
     slope0A = graphA_df["Slope_Sbeox0"].iloc[0]
     slope1A = graphA_df["Slope_Sbeox1"].iloc[0]
     slope0B = graphB_df["Slope_Sbeox0"].iloc[0]
@@ -495,16 +509,20 @@ def calibrated_dO2_sheet(
     yint1B = graphB_df["yint_Sbeox1"].iloc[0]
 
     df1["Sbeox0_Calibrated"] = df1.apply(
-        lambda x: round((x["Sbeox0ML/L"] * slope0A) + yint0A, 4), axis=1)
-    
+        lambda x: round((x["Sbeox0ML/L"] * slope0A) + yint0A, 4), axis=1
+    )
+
     df1["Sbeox1_Calibrated"] = df1.apply(
-        lambda x: round((x["Sbeox1ML/L"] * slope1A) + yint1A, 4), axis=1)
-    
+        lambda x: round((x["Sbeox1ML/L"] * slope1A) + yint1A, 4), axis=1
+    )
+
     df2["Sbeox0_Calibrated"] = df2.apply(
-        lambda x: round((x["Sbeox0ML/L"] * slope0B) + yint0B, 4), axis=1)
-    
+        lambda x: round((x["Sbeox0ML/L"] * slope0B) + yint0B, 4), axis=1
+    )
+
     df2["Sbeox1_Calibrated"] = df2.apply(
-        lambda x: round((x["Sbeox1ML/L"] * slope1B) + yint1B, 4), axis=1)
+        lambda x: round((x["Sbeox1ML/L"] * slope1B) + yint1B, 4), axis=1
+    )
 
     calibrated_df = pd.concat([df1, df2], join="outer", ignore_index=True)
 
@@ -595,7 +613,7 @@ def write_to_DO2_excel(
         reg_data.to_excel(
             writer, sheet_name="Summary", startrow=18, index=False, header=True
         )
-        
+
         bot_file.to_excel(writer, sheet_name="Original bot file", index=False)
         dO2_cal.to_excel(writer, sheet_name="Calibrated bot file", index=False)
         txt_file.to_excel(writer, sheet_name="O2.txt file", index=False)
@@ -604,7 +622,7 @@ def write_to_DO2_excel(
 
 
 def write_to_bot_excel(bot_file, met_file, title: str):
-    """ 
+    """
     Creates bot excel, in progress
     """
     with pd.ExcelWriter(f"master_bot_output_{title}.xlsx", mode="w") as writer:
@@ -641,7 +659,7 @@ if __name__ == "__main__":
     DF_O2.generate_map(joined_df, bot_df, graphic_titles)
 
     df1, df2 = split_data(successful_titration, instr_df)
-    newSOC, oldSOC = SOCcalc_split(df1, df2)
+    newSOC, oldSOC, r2_vals = SOCcalc_split(df1, df2)
 
     df_num = 0
     graphA_df = DF_O2.filter_graph_data(df1)
@@ -663,9 +681,12 @@ if __name__ == "__main__":
     )
     # prDMplt = pressure_plot(updated_graph_df, joined_df) PRESSURE PLOT, not currently being used, does not exist in this code yet
 
-    reg_data = regression_data(graphA_df, graphB_df, newSOC, oldSOC)
+    split_df1, split_df2 = find_split_for_calibration(instr_df, orig_bot_df)
+    reg_data = regression_data(graphA_df, graphB_df, newSOC, oldSOC, r2_vals)
     bot_df1, bot_df2 = find_split_for_calibration(instr_df, orig_bot_df)
-    dO2_cal = calibrated_dO2_sheet(orig_bot_df, df1, df2, graphA_df, graphB_df)
+    dO2_cal = calibrated_dO2_sheet(
+        orig_bot_df, split_df1, split_df2, graphA_df, graphB_df
+    )
 
     write_to_DO2_excel(
         orig_bot_df,
