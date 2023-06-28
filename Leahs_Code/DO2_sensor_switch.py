@@ -425,7 +425,7 @@ def regression_data(
             - "Instr": Instrument information.
             - "Slope": Slope values from graph A and graph B.
             - "y-int": Y-intercept values from graph A and graph B.
-            - "r2 value: r2 values from graph A and graph B.
+            - "r2": r2 values from graph A and graph B.
             - "OldSOC": Old SOC values.
             - "NewSOC": New SOC values.
 
@@ -458,7 +458,7 @@ def regression_data(
             "Instr": instr_list,
             "Slope": slope,
             "y-int": yint,
-            "r2 value": r2_vals,
+            "r2": r2_vals,
             "OldSOC": oldSOC,
             "NewSOC": newSOC,
         }
