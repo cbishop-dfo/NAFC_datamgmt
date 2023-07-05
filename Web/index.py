@@ -1,5 +1,8 @@
-import dash_core_components as dcc
-import dash_html_components as html
+#import dash_core_components as dcc
+from dash import dcc
+#import dash_html_components as html
+from dash import html
+from dash.dcc import send_data_frame
 from dash.dependencies import Input, Output
 import sqlite3
 import pandas as pd
@@ -18,12 +21,13 @@ from apps import elog
 from apps import mooring
 import assets
 import zipfile
-from dash_extensions.snippets import send_data_frame
+#from dash_extensions.snippets import send_data_frame
 import plotly.graph_objs as go
 import plotly.express as px
 
 ### Dataframe imports ##################################################################################
 # Read database into dataframe
+# TODO: want to change how databases are read in. We shouldn't be trying to load data we don't have / want
 try:
     con = sqlite3.connect("assets//CNV.db")
     database = "assets//CNV.db"
@@ -32,8 +36,13 @@ except:
         con = sqlite3.connect("assets/CNV.db")
         database = "assets/CNV.db"
     except:
-        con = sqlite3.connect("CNV.db")
-        database = "CNV.db"
+        try:
+            con = sqlite3.connect("CNV.db")
+            database = "CNV.db"
+        except Exception as e:
+            database = None
+            print(e.__str__())
+            print("CNV Database not found in local directory")
 
 try:
     econ = sqlite3.connect("assets//ELOG.db")
@@ -43,25 +52,46 @@ except:
         econ = sqlite3.connect("assets/ELOG.db")
         elog_database = "assets/ELOG.db"
     except:
-        econ = sqlite3.connect("ELOG.db")
-        elog_database = "ELOG.db"
+        try:
+            econ = sqlite3.connect("ELOG.db")
+            elog_database = "ELOG.db"
+        except Exception as e:
+            elog_database = None
+            print(e.__str__())
+            print("ELOG Database not found in local directory")
+
 
 try:
-    azmpdf = pd.read_excel("assets//AZMP_Bottle_Data.xlsx", header=1)
+    azmpdf = pd.read_excel("assets//AZMP_Bottle_Data.xlsx", header=0)
     #azmpdf = pd.read_csv("assets//NEW_AZMP_Bottle_Data.csv")
 except:
-    azmpdf = pd.read_excel("assets/AZMP_Bottle_Data.xlsx", header=1)
-    #azmpdf = pd.read_csv("assets/NEW_AZMP_Bottle_Data.csv")
+    try:
+        azmpdf = pd.read_excel("assets/AZMP_Bottle_Data.xlsx", header=0)
+        #azmpdf = pd.read_csv("assets/NEW_AZMP_Bottle_Data.csv")
+    except Exception as e:
+        azmpdf = None
+        print(e.__str__())
+        print("AZMP Bottle Database not found in local directory")
 
 try:
     biodf = pd.read_csv("assets//NEWBIOMASS.csv")
 except:
-    biodf = pd.read_csv("assets/NEWBIOMASS.csv")
+    try:
+        biodf = pd.read_csv("assets/NEWBIOMASS.csv")
+    except Exception as e:
+        biodf = None
+        print(e.__str__())
+        print("BIOMASS Database not found in local directory")
 
 try:
     moordf = pd.read_excel("assets//Mooring Summary.xlsx")
 except:
-    moordf = pd.read_csv("assets/Mooring Summary.xlsx")
+    try:
+        moordf = pd.read_csv("assets/Mooring Summary.xlsx")
+    except Exception as e:
+        moordf = None
+        print(e.__str__())
+        print("Mooring Database not found in local directory")
 
 # Function to read mooring
 def ReadMooring(df):
@@ -106,10 +136,19 @@ def ReadMooring(df):
 df = pd.read_sql_query("SELECT * from Casts", con)
 data = pd.read_sql_query("SELECT * from Data", con)
 mergedDF = df.merge(data, left_on='id', right_on='cid')
+
 # Make a copy of the database to freely manipulate.
 dff = df.copy()
-elogdf = pd.read_sql_query("SELECT * from ELOG", econ)
-moordf = ReadMooring(moordf)
+# TODO: Change logic for loading/querying data
+# TODO: We often don't have ELOG or MOORING data. We should separate out the different data functions, and only load that we have
+try:
+    elogdf = pd.read_sql_query("SELECT * from ELOG", econ)
+except:
+    print("Error: ELOG Database")
+try:
+    moordf = ReadMooring(moordf)
+except:
+    print("Error: Mooring Database")
 tempdf = []
 mapbox_access_token = "pk.eyJ1IjoiZG1rMzI0IiwiYSI6ImNrZnJ4cmQ0ZDAyZ3EyenMzbzd4b2xlOGsifQ.IEmRP5lFSKW1nyeonj0lLQ"
 
@@ -129,9 +168,12 @@ azmpdf["Trip"] = azmpdf["Ship_Trip_Stn"].astype(str).str[2:5]
 azmpdf["Station Number"] = azmpdf["Ship_Trip_Stn"].astype(str).str[5:8]
 
 # Splitting Seq_number for ELOG DB into separate columns
-elogdf["Ship Name"] = elogdf["Seq_Number"].str[0:4]
-elogdf["Trip"] = elogdf["Seq_Number"].str[4:7]
-elogdf["Station Number"] = elogdf["Seq_Number"].str[13:]
+try:
+    elogdf["Ship Name"] = elogdf["Seq_Number"].str[0:4]
+    elogdf["Trip"] = elogdf["Seq_Number"].str[4:7]
+    elogdf["Station Number"] = elogdf["Seq_Number"].str[13:]
+except Exception as e:
+    print(e.__str__())
 
 
 mergedDF = dff.merge(data, left_on='id', right_on='cid')

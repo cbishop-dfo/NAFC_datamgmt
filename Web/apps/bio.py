@@ -5,10 +5,13 @@ import dash
 import dash_table
 import pandas as pd
 import sqlite3
-import dash_core_components as dcc
-import dash_html_components as html
+# import dash_core_components as dcc
+from dash import dcc
+# import dash_html_components as html
+from dash import html
 import dash_bootstrap_components as dbc
-from dash_extensions import Download
+# from dash_extensions import Download
+from dash.dcc import Download
 
 import numpy as np
 from dash.dependencies import Input, Output

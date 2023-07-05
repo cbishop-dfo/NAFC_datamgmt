@@ -1,14 +1,19 @@
 #exec(open("C:\QA_paths\set_QA_paths.py").read())
-
+from dash import dash_table
 import numpy as np
 import dash
-import dash_table
+from dash import dash_table
+from dash.dash_table.Format import Group
 import pandas as pd
 import sqlite3
-import dash_core_components as dcc
-import dash_html_components as html
+# import dash_core_components as dcc
+from dash import dcc
+# import dash_html_components as html
+from dash import html
 import dash_bootstrap_components as dbc
-from dash_extensions import Download
+from dash.dcc import Download
+from dash_extensions.enrich import DashProxy, html, Output, Input, dcc
+# from dash_extensions import Download
 from dash.dependencies import Input, Output
 from Toolkits import cnv_tk
 import plotly.graph_objs as go
@@ -27,6 +32,7 @@ except:
         con = sqlite3.connect("CNV.db")
         database = "CNV.db"
 
+# TODO: Add error check for empty database
 df = pd.read_sql_query("SELECT * from Casts", con)
 data = pd.read_sql_query("SELECT * from Data", con)
 mergedDF = df.merge(data, left_on='id', right_on='cid')

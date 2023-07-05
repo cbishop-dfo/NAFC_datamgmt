@@ -5,19 +5,20 @@ import dash
 import dash_table
 import pandas as pd
 import sqlite3
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 import dash_bootstrap_components as dbc
-from dash_extensions import Download
+# from dash_extensions import Download
+from dash.dcc import Download
 import numpy as np
 from dash.dependencies import Input, Output
 from Toolkits import cnv_tk
 
 try:
-    azmpdf = pd.read_excel("assets//AZMP_Bottle_Data.xlsx", header=1)
+    azmpdf = pd.read_excel("assets//AZMP_Bottle_Data.xlsx", header=0)
     #azmpdf = pd.read_csv("assets//NEW_AZMP_Bottle_Data.csv")
 except:
-    azmpdf = pd.read_excel("assets//AZMP_Bottle_Data.xlsx", header=1)
+    azmpdf = pd.read_excel("assets//AZMP_Bottle_Data.xlsx", header=0)
     #azmpdf = pd.read_csv("assets/NEW_AZMP_Bottle_Data.csv")
 
 # Make a copy of the database to freely manipulate.
