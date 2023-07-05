@@ -20,6 +20,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import re
 import DF_O2
+import os
 
 """
 IMPORTANT: This code only works with trip data that has a switched sensor!!! If no switch go to DF_O2.py
@@ -93,9 +94,6 @@ def split_data(joined_df: pd.DataFrame, instr_df: pd.DataFrame) -> pd.DataFrame:
     anti_join = join_dfs[join_dfs["Primary Oxygen Serial Number"].isin(df)]
 
     anti_join.index = np.arange(0, len(anti_join))
-
-    df1.to_csv("df1_sensor_switch.csv")
-    anti_join.to_csv("df2_sensor_switch.csv")
 
     return df1, anti_join
 
@@ -510,19 +508,19 @@ def calibrated_dO2_sheet(
     yint0B = graphB_df["yint_Sbeox0"].iloc[0]
     yint1B = graphB_df["yint_Sbeox1"].iloc[0]
 
-    df1["Sbeox0_Calibrated"] = df1.apply(
+    df1["Sbeox0ML/L_Calibrated"] = df1.apply(
         lambda x: round((x["Sbeox0ML/L"] * slope0A) + yint0A, 4), axis=1
     )
 
-    df1["Sbeox1_Calibrated"] = df1.apply(
+    df1["Sbeox1ML/L_Calibrated"] = df1.apply(
         lambda x: round((x["Sbeox1ML/L"] * slope1A) + yint1A, 4), axis=1
     )
 
-    df2["Sbeox0_Calibrated"] = df2.apply(
+    df2["Sbeox0ML/L_Calibrated"] = df2.apply(
         lambda x: round((x["Sbeox0ML/L"] * slope0B) + yint0B, 4), axis=1
     )
 
-    df2["Sbeox1_Calibrated"] = df2.apply(
+    df2["Sbeox1ML/L_Calibrated"] = df2.apply(
         lambda x: round((x["Sbeox1ML/L"] * slope1B) + yint1B, 4), axis=1
     )
 
@@ -576,7 +574,7 @@ def write_to_DO2_excel(
     ws["A2"] = f"AZMP Survey for {ship_code} {ship_trip}"
     ws["A3"] = f"{start_date} to {end_date}"
 
-    ws["A5"] = "The following instruments were used:"
+    ws["A5"] = "The following oxygen sensors were used:"
     ws["A11"] = "The following stations were occupied:"
     ws["A18"] = "The regression data is:"
 
@@ -618,7 +616,7 @@ def write_to_DO2_excel(
 
         bot_file.to_excel(writer, sheet_name="Original bot file", index=False)
         dO2_cal.to_excel(writer, sheet_name="Calibrated bot file", index=False)
-        txt_file.to_excel(writer, sheet_name="O2.txt file", index=False)
+        txt_file.to_excel(writer, sheet_name="meanO2.txt file", index=False)
         fail_tit.to_excel(writer, sheet_name="Failed Titrations", index=False)
         instr.to_excel(writer, sheet_name="Instruments", index=False)
 
@@ -653,9 +651,9 @@ if __name__ == "__main__":
         joined_df
     )
 
-    joined_file = f"{ship_code}{ship_trip}_{year}_joined.csv"
-    successful_titration.to_csv(joined_file, index=False)
-    print(f"Written joined bot, o2 and met DataFrame to {joined_file}")
+    #joined_file = f"{ship_code}{ship_trip}_{year}_joined.csv"
+    #successful_titration.to_csv(joined_file, index=False)
+    #print(f"Written joined bot, o2 and met DataFrame to {joined_file}")
 
     station_id = DF_O2.stations_occupied(joined_df)
     DF_O2.generate_map(joined_df, bot_df, graphic_titles)
@@ -702,3 +700,14 @@ if __name__ == "__main__":
         dO2_cal,
     )
     # write_to_bot_excel(orig_bot_df, met_df, graphic_titles). not being used, creates the second excel file
+
+    os.remove(f"updated_data_{ship_code}{ship_trip}0.csv")
+    os.remove(f"updated_data_{ship_code}{ship_trip}1.csv")
+    #os.remove(f"{ship_code}{ship_trip}_{year}_joined.csv")
+    os.remove(f"plot_Sbeox0_{ship_code}{ship_trip}_{year}_0.png")
+    os.remove(f"plot_Sbeox0_{ship_code}{ship_trip}_{year}_1.png")
+    os.remove(f"plot_Sbeox1_{ship_code}{ship_trip}_{year}_0.png")
+    os.remove(f"plot_Sbeox1_{ship_code}{ship_trip}_{year}_1.png")
+    os.remove(f"{ship_code}{ship_trip}_{year}_map.png")
+
+    
